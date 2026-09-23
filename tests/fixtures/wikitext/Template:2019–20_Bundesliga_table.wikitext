@@ -1,0 +1,77 @@
+<noinclude>'''READ THIS BEFORE UPDATING:''' Please do not forget to update the date ({{para|update}}).<br />'''AFTER UPDATING:''' Pages with the template might not be updated immediately so the page can be updated with a [[WP:NULL]] on the article in question.
+</noinclude>{{#invoke:Sports table|main|style=WDL
+|source=[https://www.dfb.de/bundesliga/spieltagtabelle/?spieledb_path=/competitions/12/seasons/17820/matchday&spieledb_path=%2Fcompetitions%2F12%2Fseasons%2F18010%2Fmatchday%2Fcurrent DFB]
+
+<!--Update team positions here-->
+|team_order=MUN, DOR, LEI, MÖN, LEV, HOF, WOL, FRE, FRA, BSC, UNB, SCH, MAI, KÖL, AUG, BRE, DÜS, PAD
+
+<!--Update team qualifications here (defined below)-->
+|result1=CLGS |result2=CLGS |result3=CLGS |result4=CLGS |result5=ELGS |result6=ELGS |result7=EL2Q
+|result16=RPO |result17=REL |result18=REL
+
+|note_res_ELGS=Since the winners of the [[2019–20 DFB-Pokal]], Bayern Munich, qualified for the Champions League based on league position, the Europa League group stage spot was passed to the sixth-placed team, and the Europa League second qualifying round spot was passed to the seventh-placed team.
+|note_res_EL2Q=ELGS
+
+<!--Update team results here and then (if needed) positions above. Don't forget to update the date (update parameter).-->
+|update=complete
+|win_AUG=9 |draw_AUG=9 |loss_AUG=16|gf_AUG=45|ga_AUG=63<!-- FC Augsburg -->
+|win_BSC=11|draw_BSC=8 |loss_BSC=15|gf_BSC=48|ga_BSC=59<!-- Hertha BSC -->
+|win_UNB=12|draw_UNB=5 |loss_UNB=17|gf_UNB=41|ga_UNB=58<!-- Union Berlin -->
+|win_BRE=8 |draw_BRE=7 |loss_BRE=19|gf_BRE=42|ga_BRE=69<!-- Werder Bremen -->
+|win_DOR=21|draw_DOR=6 |loss_DOR=7 |gf_DOR=84|ga_DOR=41<!-- Borussia Dortmund -->
+|win_DÜS=6 |draw_DÜS=12|loss_DÜS=16|gf_DÜS=36|ga_DÜS=67<!-- Fortuna Düsseldorf -->
+|win_FRA=13|draw_FRA=6 |loss_FRA=15|gf_FRA=59|ga_FRA=60<!-- Eintracht Frankfurt -->
+|win_FRE=13|draw_FRE=9 |loss_FRE=12|gf_FRE=48|ga_FRE=47<!-- SC Freiburg -->
+|win_HOF=15|draw_HOF=7 |loss_HOF=12|gf_HOF=53|ga_HOF=53<!-- 1899 Hoffenheim -->
+|win_KÖL=10|draw_KÖL=6 |loss_KÖL=18|gf_KÖL=51|ga_KÖL=69<!-- 1. FC Köln -->
+|win_LEI=18|draw_LEI=12|loss_LEI=4 |gf_LEI=81|ga_LEI=37<!-- RB Leipzig -->
+|win_LEV=19|draw_LEV=6 |loss_LEV=9 |gf_LEV=61|ga_LEV=44<!-- Bayer Leverkusen -->
+|win_MAI=11|draw_MAI=4 |loss_MAI=19|gf_MAI=44|ga_MAI=65<!-- Mainz 05 -->
+|win_MÖN=20|draw_MÖN=5 |loss_MÖN=9 |gf_MÖN=66|ga_MÖN=40<!-- Borussia Mönchengladbach -->
+|win_MUN=26|draw_MUN=4 |loss_MUN=4 |gf_MUN=100|ga_MUN=32<!-- Bayern Munich -->
+|win_PAD=4 |draw_PAD=8 |loss_PAD=22|gf_PAD=37|ga_PAD=74<!-- SC Paderborn -->
+|win_SCH=9 |draw_SCH=12|loss_SCH=13|gf_SCH=38|ga_SCH=58<!-- Schalke 04 -->
+|win_WOL=13|draw_WOL=10|loss_WOL=11|gf_WOL=48|ga_WOL=46<!-- VfL Wolfsburg -->
+
+<!--Status-->
+|status_BRE=O
+|status_DÜS=R
+|status_MUN=C
+|status_PAD=R
+
+<!--Team definitions (wikilinks in table)-->
+|name_AUG=[[FC Augsburg]]
+|name_BSC=[[Hertha BSC]]
+|name_UNB=[[1. FC Union Berlin|Union Berlin]]
+|name_BRE=[[SV Werder Bremen|Werder Bremen]]
+|name_DOR=[[Borussia Dortmund]]
+|name_DÜS=[[Fortuna Düsseldorf]]
+|name_FRA=[[Eintracht Frankfurt]]
+|name_FRE=[[SC Freiburg]]
+|name_HOF=[[TSG 1899 Hoffenheim|1899 Hoffenheim]]
+|name_KÖL=[[1. FC Köln]]
+|name_LEI=[[RB Leipzig]]
+|name_LEV=[[Bayer 04 Leverkusen|Bayer Leverkusen]]
+|name_MAI=[[1. FSV Mainz 05|Mainz 05]]
+|name_MÖN=[[Borussia Mönchengladbach]]
+|name_MUN=[[FC Bayern Munich|Bayern Munich]]
+|name_PAD=[[SC Paderborn 07|SC Paderborn]]
+|name_SCH=[[FC Schalke 04|Schalke 04]]
+|name_WOL=[[VfL Wolfsburg]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules=1) Points; 2) Goal difference; 3) Goals scored; 4) Head-to-head results; 5) Head-to-head away goals scored; 6) Away goals scored; 7) Play-off.<ref>{{cite web |url=https://media.dfl.de/sites/2/2020/05/Spielordnung-SpOL-2020-05-16-Stand.pdf |title=Spielordnung (SpOL) |trans-title=Match rules |website=DFL.de |publisher=[[Deutsche Fußball Liga]] |format=PDF |page=3 |date=16 May 2020 |access-date=15 June 2020 |language=de |url-status=live |archive-url=https://megalodon.jp/ref/2020-0615-1123-38/https://media.dfl.de:443/sites/2/2020/05/Spielordnung-SpOL-2020-05-16-Stand.pdf |archive-date=15 June 2020}}</ref>
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=QR
+|col_CLGS=green1 |text_CLGS=Qualification for the [[2020–21 UEFA Champions League#Group stage|Champions League group stage]]
+|col_ELGS=blue1  |text_ELGS=Qualification for the [[2020–21 UEFA Europa League#Group stage|Europa League group stage]]
+|col_EL2Q=blue2  |text_EL2Q=Qualification for the [[2020–21 UEFA Europa League#Second qualifying round|Europa League second qualifying round]]
+|col_RPO=red2    |text_RPO=Qualification for the [[2019–20 Bundesliga#Relegation play-offs|relegation play-offs]]
+|col_REL=red1    |text_REL=Relegation to [[2020–21 2. Bundesliga|2. Bundesliga]]
+}}<noinclude>
+{{Template reference list}}
+[[Category:Bundesliga table templates]]
+[[Category:2019–20 association football standings in Europe templates|Germany]]
+</noinclude>
