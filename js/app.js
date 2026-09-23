@@ -1,10 +1,10 @@
-import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.3.0';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.3.0';
-import { backDecision } from './navigation.js?v=0.3.0';
-import { prepareIndex } from './search.js?v=0.3.0';
-import { STRINGS } from './strings.js?v=0.3.0';
-import { VERSION } from './version.js?v=0.3.0';
-import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.3.0';
+import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadOpenLigaPlayers, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.3.2';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.3.2';
+import { backDecision } from './navigation.js?v=0.3.2';
+import { prepareIndex } from './search.js?v=0.3.2';
+import { STRINGS } from './strings.js?v=0.3.2';
+import { VERSION } from './version.js?v=0.3.2';
+import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.3.2';
 
 const root = document.querySelector('#app');
 
@@ -59,11 +59,9 @@ function stampVisitEntry(route) {
 }
 
 async function leagueRoute(league) {
-  const [index, historyData, clubs] = await Promise.all([loadIndex(), loadHistory(league), loadNames()]);
+  const [index, historyData] = await Promise.all([loadIndex(), loadHistory(league)]);
   if (!index.leagues.some((item) => item.id === league)) return notFoundView();
-  const compact = index.seasons.filter((item) => item.id.startsWith(`${league}-`));
-  const playerIds = compact.flatMap((item) => item.topScorers.map((scorer) => scorer.playerId));
-  return leagueView(league, index, historyData, clubs, await loadPlayers(playerIds));
+  return leagueView(league, index, historyData, historyData.clubs ?? {});
 }
 
 async function seasonRoute(league, year) {
@@ -102,8 +100,12 @@ async function clubRoute(id) {
 
 async function playerRoute(id) {
   const players = await loadPlayers([id]);
-  const names = await loadNames();
-  return playerView(id, players[id], names);
+  const player = players[id];
+  const [names, openLiga] = await Promise.all([
+    loadNames(),
+    player?.seasons?.some((season) => season.league === 'de') ? loadOpenLigaPlayers() : null,
+  ]);
+  return playerView(id, player, names, openLiga?.players?.[id] ?? null);
 }
 
 function todayKey(date = new Date()) {
