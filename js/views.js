@@ -1,7 +1,9 @@
-import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.1.2';
-import { minuteLabel, playerName, seasonLabel, signed } from './format.js?v=0.1.2';
-import { STRINGS } from './strings.js?v=0.1.2';
-import { VERSION } from './version.js?v=0.1.2';
+import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.2.0';
+import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.2.0';
+import { rubyPlain } from './ruby.js?v=0.2.0';
+import { search as runSearch } from './search.js?v=0.2.0';
+import { STRINGS } from './strings.js?v=0.2.0';
+import { VERSION } from './version.js?v=0.2.0';
 
 const LEAGUE_NAMES = Object.freeze({
   en: 'プレミアリーグ', es: 'ラ・リーガ', de: 'ブンデスリーガ', it: 'セリエA', fr: 'リーグ・アン',
@@ -34,7 +36,7 @@ function chip(colour) {
 }
 
 function clubName(club, fallback = 'クラブ') {
-  return club?.names?.ja ?? fallback;
+  return club?.name ?? club?.names?.ja ?? fallback;
 }
 
 function clubNameNodes(name) {
@@ -68,14 +70,14 @@ function canonicalClub(id, clubs) {
   const seen = new Set();
   while (!seen.has(current)) {
     seen.add(current);
-    const successor = clubs[current]?.lineage?.find((entry) => entry.relation === 'successor')?.club;
+    const successor = clubs[current]?.successor;
     if (!successor) return current;
     current = successor;
   }
   return id;
 }
 
-export function homeView(index) {
+export function homeView(index, searchOptions = null) {
   const cards = index.leagues.map((league) => {
     const champion = league.latest?.champion;
     return el('a', { class: `league-card league-${league.id}`, href: `#/l/${league.id}` }, [
@@ -86,8 +88,15 @@ export function homeView(index) {
         : el('p', { class: 'latest-champion' }, '優勝チームなし'),
     ]);
   });
+  const latestSeason = [...index.seasons].sort((a, b) => b.id.localeCompare(a.id))[0];
   return el('section', { class: 'page home-page' }, [
     el('div', { class: 'page-heading' }, [el('h1', {}, '欧州5大リーグ')]),
+    searchOptions ? searchComponent(searchOptions) : null,
+    el('div', { class: 'home-feature-grid' }, [
+      el('a', { class: 'feature-card japan-feature-card', href: '#/j' }, [rubyEl('h2', STRINGS.japanFeature), el('p', {}, '日本人選手をさがす')]),
+      latestSeason ? el('a', { class: 'feature-card meikan-feature-card', href: `#/z/${latestSeason.id.slice(0, 2)}/${latestSeason.id.slice(3)}` }, [rubyEl('h2', STRINGS.meikan), el('p', {}, '今シーズンの選手たち')]) : null,
+      el('a', { class: 'feature-card ranking-feature-card', href: '#/r' }, [rubyEl('h2', STRINGS.rankings), el('p', {}, 'ゴールと優勝回数')]),
+    ]),
     el('div', { class: 'league-grid' }, cards),
   ]);
 }
@@ -160,9 +169,11 @@ function matchRow(match, clubs, selectedClub) {
   const result = matchResult(match, selectedClub);
   return el('li', { class: `match-row match-${result}` }, [
     clubLink(match.home, clubs),
-    el('a', { class: 'score-link', href: `#/m/${match.key}` }, `${match.homeGoals}–${match.awayGoals}`),
+    el('span', { class: 'score-result' }, [
+      el('a', { class: 'score-link', href: `#/m/${match.key}` }, `${match.homeGoals}–${match.awayGoals}`),
+      resultMark(result),
+    ]),
     clubLink(match.away, clubs),
-    resultMark(result),
   ]);
 }
 
@@ -198,6 +209,7 @@ export function seasonView(season, clubs, players) {
       el('span', { class: 'rank' }, `${scorer.rank}位`), playerLink(scorer.playerId, players, scorer.player), clubLink(scorer.club, clubs), el('strong', {}, `${scorer.goals}得点`),
     ]))) : el('p', {}, '得点王の記録なし'), 'scorers-panel'),
     section('試合', [el('label', { for: 'club-results' }, 'クラブを選ぶ'), selector, results], 'results-panel'),
+    el('p', { class: 'meikan-entry-link' }, el('a', { class: 'button-link', href: `#/z/${season.league}/${season.year}` }, rubyNodes(STRINGS.meikan))),
   ]);
 }
 
@@ -237,7 +249,7 @@ export function matchView(season, match, clubs, players, openLiga = false) {
   ]);
 }
 
-export function clubView(club, relatedClubs, players) {
+export function clubView(club, relatedClubs) {
   const leagues = club.leagues.map((id) => LEAGUE_NAMES[id]).join('・') || 'リーグ記録なし';
   const titleItems = [...club.championSeasons].sort((a, b) => b.season.localeCompare(a.season));
   const opponents = Object.entries(club.headToHead).sort((a, b) => b[1].p - a[1].p || clubName(relatedClubs[a[0]], a[0]).localeCompare(clubName(relatedClubs[b[0]], b[0]), 'ja'));
@@ -249,14 +261,14 @@ export function clubView(club, relatedClubs, players) {
     section('対戦成績', el('div', { class: 'opponents-table-wrap' }, el('table', { class: 'opponents-table' }, [
       el('thead', {}, el('tr', {}, ['クラブ', '試合', '勝', '分', '負', '得点', '失点'].map((label) => el('th', { scope: 'col' }, label)))),
       el('tbody', {}, opponents.map(([opponent, stats]) => el('tr', {}, [
-        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, stats.matches.map((key, indexValue) => ({ key, result: { w: 'win', d: 'draw', l: 'loss' }[stats.outcomes[indexValue]] })).reverse().map((match) => el('li', { class: `opponent-match-row match-${match.result}` }, [
-          el('a', { href: `#/m/${match.key}` }, `${match.key.slice(3, 7)}–${String(Number(match.key.slice(3, 7)) + 1).slice(-2)}シーズンの試合`),
-          resultMark(match.result),
+        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, stats.matches.map((key, indexValue) => ({ key, score: stats.scores[indexValue], result: { w: 'win', d: 'draw', l: 'loss' }[stats.outcomes[indexValue]] })).reverse().map((match) => el('li', { class: `opponent-match-row match-${match.result}` }, [
+          el('span', {}, `${match.key.slice(3, 7)}–${String(Number(match.key.slice(3, 7)) + 1).slice(-2)}シーズン`),
+          el('span', { class: 'score-result' }, [el('a', { class: 'score-link', href: `#/m/${match.key}` }, match.score), resultMark(match.result)]),
         ])))])),
         ...['p', 'w', 'd', 'l', 'gf', 'ga'].map((key) => el('td', {}, String(stats[key]))),
       ]))),
     ])), 'head-to-head-panel'),
-    section('得点ランキング', club.topScorers.length ? el('ol', { class: 'scorer-list club-scorers' }, club.topScorers.map((item, indexValue) => el('li', {}, [el('span', { class: 'rank' }, `${indexValue + 1}位`), playerLink(item.player, players), el('strong', {}, `${item.goals}得点`)]))) : el('p', {}, '得点の記録なし'), 'club-scorers-panel'),
+    section('得点ランキング', club.topScorers.length ? el('ol', { class: 'scorer-list club-scorers' }, club.topScorers.map((item, indexValue) => el('li', {}, [el('span', { class: 'rank' }, `${indexValue + 1}位`), playerLink(item.player, {}, item.name), el('strong', {}, `${item.goals}得点`)]))) : el('p', {}, '得点の記録なし'), 'club-scorers-panel'),
   ]);
 }
 
@@ -272,6 +284,217 @@ export function creditsView() {
     section('変更したところ', el('p', {}, '必要な情報を選び、整理し、クラブと選手にキーを付け、日本語名を加えています。')),
     section('コード', el('p', {}, [text('サイトのコードは '), el('a', { href: 'https://github.com/masarusz/clubpedia' }, 'GitHub'), text(' で公開しています。') ])),
     section('エンブレムについて', el('p', {}, 'クラブのエンブレムやリーグのロゴは使っていません。クラブは名前とユニフォームの色で表しています。')),
+  ]);
+}
+
+function seasonIdLabel(seasonId) {
+  const year = seasonYear(seasonId);
+  return year == null ? seasonId : seasonLabel(year);
+}
+
+function playerSilhouette() {
+  return el('div', { class: 'player-silhouette', role: 'presentation' }, el('span', { class: 'silhouette-mark' }, '👤'));
+}
+
+const SEARCH_TYPE_LABELS = Object.freeze({ league: 'リーグ', club: 'クラブ', player: '選手', page: '特集' });
+
+function searchResultRow(result, names) {
+  const typeBadge = el('span', { class: `search-type search-type-${result.type}` }, SEARCH_TYPE_LABELS[result.type] ?? '');
+  if (result.type === 'league') {
+    return el('a', { class: 'search-result', href: `#/l/${result.id}` }, [typeBadge, leagueFlag(result.id), el('span', { class: 'search-result-name' }, result.label)]);
+  }
+  if (result.type === 'club') {
+    return el('a', { class: 'search-result', href: `#/c/${result.id}` }, [typeBadge, chip(names[result.id]?.colour), el('span', { class: 'search-result-name' }, result.label)]);
+  }
+  if (result.type === 'page') {
+    return el('a', { class: 'search-result', href: '#/j' }, [typeBadge, el('span', { class: 'search-result-name' }, result.label)]);
+  }
+  return el('a', { class: 'search-result', href: `#/p/${result.id}` }, [
+    typeBadge, result.japan ? el('span', { class: 'badge japan-badge' }, '日本') : null,
+    el('span', { class: 'search-result-name' }, result.label),
+  ]);
+}
+
+// The <input> node is created once and never replaced by re-rendering (only
+// `results` is swapped on typing) so iPad IME composition survives every
+// keystroke. The search index loads on first focus, never eagerly on ホーム.
+export function searchComponent({ initialQuery = '', eager = false, loadContext, updateUrl } = {}) {
+  const inputId = 'site-search-input';
+  const results = el('div', { class: 'search-results', role: 'region', 'aria-live': 'polite' });
+  const input = el('input', {
+    id: inputId, class: 'search-input', type: 'search', name: 'q', placeholder: rubyPlain(STRINGS.searchLabel),
+    autocomplete: 'off', autocorrect: 'off', autocapitalize: 'off', spellcheck: 'false', enterkeyhint: 'search',
+  });
+  input.value = initialQuery;
+  let context = null;
+  let loading = null;
+
+  const showMatches = () => {
+    const query = input.value;
+    if (!query) { results.replaceChildren(); return; }
+    const matches = runSearch(context.index, query);
+    results.replaceChildren(matches.length
+      ? el('div', { class: 'search-result-list' }, matches.map((result) => searchResultRow(result, context.names)))
+      : rubyEl('p', STRINGS.noSearchResults, { class: 'search-status' }));
+  };
+  const ensureReady = async () => {
+    if (context) { showMatches(); return; }
+    results.replaceChildren(rubyEl('p', STRINGS.loading, { class: 'search-status' }));
+    if (!loading) loading = loadContext();
+    try {
+      context = await loading;
+      showMatches();
+    } catch {
+      loading = null;
+      results.replaceChildren(rubyEl('p', STRINGS.dataError, { class: 'search-status' }));
+    }
+  };
+  input.addEventListener('focus', ensureReady);
+  input.addEventListener('input', () => {
+    if (updateUrl) updateUrl(input.value);
+    if (context) showMatches();
+    else void ensureReady();
+  });
+  if (eager || initialQuery) void ensureReady();
+  return el('div', { class: 'search-box', role: 'search' }, [rubyEl('label', STRINGS.searchLabel, { for: inputId }), input, results]);
+}
+
+export function searchView(searchOptions) {
+  return el('article', { class: 'page search-page' }, [
+    el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.search)]),
+    searchComponent({ ...searchOptions, eager: true }),
+  ]);
+}
+
+export function playerView(id, player, names) {
+  if (!player) return notFoundView();
+  const label = playerName(player, id);
+  const birth = birthDateLabel(player.birthDate);
+  const seasonKey = (league, year, club) => `${league}|${year}|${club}`;
+  const rows = new Map();
+  const historical = [];
+  for (const bucket of player.seasons) {
+    if (!bucket.club) { historical.push(bucket); continue; }
+    rows.set(seasonKey(bucket.league, seasonYear(bucket.season), bucket.club), { ...bucket, year: seasonYear(bucket.season) });
+  }
+  for (const jp of player.japan ?? []) {
+    const year = Number(String(jp.season).slice(0, 4));
+    const key = seasonKey(jp.league, year, jp.club);
+    const existing = rows.get(key);
+    if (existing) Object.assign(existing, { japanApps: jp.apps, japanGoals: jp.goals, japanSource: jp.source });
+    else rows.set(key, { league: jp.league, club: jp.club, year, goalMatches: [], japanApps: jp.apps, japanGoals: jp.goals, japanSource: jp.source });
+  }
+  const seasonRows = [...rows.values()].sort((a, b) => b.year - a.year || a.league.localeCompare(b.league));
+
+  const goalLinks = (goalMatches) => {
+    const counts = new Map();
+    for (const key of goalMatches ?? []) counts.set(key, (counts.get(key) ?? 0) + 1);
+    return el('ul', { class: 'player-goal-list' }, [...counts].map(([key, count]) => el('li', {}, [
+      el('a', { href: `#/m/${key}` }, '試合を見る'), count > 1 ? el('span', { class: 'badge' }, `×${count}`) : null,
+    ])));
+  };
+
+  const seasonCards = seasonRows.map((row) => el('section', { class: 'panel player-season-panel' }, [
+    el('h2', {}, [leagueFlag(row.league), text(` ${LEAGUE_NAMES[row.league]} `), text(seasonLabel(row.year))]),
+    row.club ? el('p', { class: 'player-season-club' }, clubLink(row.club, names)) : null,
+    row.goalMatches !== undefined && row.recordedGoals != null
+      ? el('p', {}, [text(`リーグ得点 ${row.recordedGoals}得点`), row.recordedGoals > 0 ? goalLinks(row.goalMatches) : null])
+      : null,
+    row.topScorerRank ? el('p', { class: 'player-finish' }, el('strong', {}, topScorerFinish(row.topScorerRank))) : null,
+    row.japanApps !== undefined ? el('p', { class: 'player-japan-stats' }, [
+      text(`出場 ${row.japanApps == null ? '記録なし' : `${row.japanApps}試合`}・ゴール ${row.japanGoals == null ? '記録なし' : `${row.japanGoals}得点`}`),
+      row.japanSource && row.japanSource !== 'ja' ? el('small', { class: 'record-source-note' }, row.japanSource === 'list' ? '出場記録のみ' : '英語版の記録') : null,
+    ]) : null,
+  ]));
+
+  return el('article', { class: 'page player-page' }, [
+    el('div', { class: 'page-heading' }, [el('h1', {}, label), birth ? el('p', { class: 'player-birth' }, birth) : null]),
+    seasonCards.length ? seasonCards : el('p', { class: 'panel' }, '記録なし'),
+    historical.length ? el('section', { class: 'panel player-historical-panel' }, [
+      el('h2', {}, '歴代得点王'),
+      el('ul', {}, historical.map((item) => el('li', {}, `${item.seasonLabel} ${LEAGUE_NAMES[item.league]} ${topScorerFinish(item.topScorerRank)}`))),
+    ]) : null,
+  ]);
+}
+
+export function japanView(japan, names) {
+  const leagues = Object.keys(LEAGUE_NAMES);
+  const sections = leagues.map((league) => {
+    const rows = japan.players
+      .map((player) => ({ player, seasons: player.seasons.filter((season) => season.league === league).sort((a, b) => b.season.localeCompare(a.season)) }))
+      .filter((row) => row.seasons.length)
+      .sort((a, b) => b.seasons[0].season.localeCompare(a.seasons[0].season) || playerName(a.player).localeCompare(playerName(b.player), 'ja'));
+    if (!rows.length) return null;
+    return el('section', { class: 'panel japan-league-panel' }, [
+      el('h2', {}, leagueTitle(league)),
+      el('ol', { class: 'japan-player-list' }, rows.map(({ player, seasons }) => el('li', { class: 'japan-player-row' }, [
+        playerLink(player.id, { [player.id]: player }, playerName(player)),
+        el('ul', { class: 'japan-season-list' }, seasons.map((season) => el('li', {}, [
+          clubLink(season.club, names), text(` ${seasonIdLabel(season.season)} ${season.goals}得点`),
+        ]))),
+      ]))),
+    ]);
+  }).filter(Boolean);
+  return el('article', { class: 'page japan-page' }, [
+    el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.japanFeature)]),
+    sections.length ? sections : el('p', { class: 'panel' }, '記録なし'),
+  ]);
+}
+
+function meikanCard(id, entry, players, names) {
+  const player = players[id];
+  const label = playerName(player, id);
+  return el('a', { class: 'meikan-card', href: `#/p/${id}` }, [
+    playerSilhouette(),
+    el('strong', { class: 'meikan-name' }, label),
+    entry.japan ? el('span', { class: 'badge japan-badge' }, '日本') : null,
+    el('span', { class: 'meikan-goals' }, `${entry.goals}得点`),
+    entry.topScorerRank ? el('span', { class: 'meikan-finish' }, topScorerFinish(entry.topScorerRank)) : null,
+  ]);
+}
+
+export function meikanView(season, names, players, clubId) {
+  const clubIds = Object.keys(season.players ?? {}).sort((a, b) => (names[a]?.name ?? a).localeCompare(names[b]?.name ?? b, 'ja'));
+  const selected = clubId && clubIds.includes(clubId) ? clubId : clubIds[0];
+  const entries = selected ? season.players[selected] ?? [] : [];
+  return el('article', { class: 'page meikan-page' }, [
+    el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.meikan), el('p', { class: 'eyebrow' }, [text(`${LEAGUE_NAMES[season.league]} `), text(seasonLabel(season.year))])]),
+    clubIds.length ? el('nav', { class: 'meikan-club-chips', 'aria-label': 'クラブを選ぶ' }, clubIds.map((id) =>
+      el('a', { href: `#/z/${season.league}/${season.year}/${id}`, 'aria-current': id === selected ? 'page' : null }, clubLink(id, names)))) : null,
+    selected ? el('div', { class: 'meikan-grid' }, entries.map((entry) => meikanCard(entry.id, entry, players, names))) : el('p', { class: 'panel' }, '記録なし'),
+  ]);
+}
+
+const PLAYER_RANKING_METRICS = Object.freeze([['goals', '通算ゴール'], ['topScorers', '得点王の回数']]);
+const CLUB_RANKING_METRICS = Object.freeze([['titles', '優勝回数'], ['seasonPoints', '勝点'], ['wins', '通算勝利数']]);
+
+function rankingRowValue(kind, metric, row) {
+  if (kind === 'players') return metric === 'goals' ? `${row.value}得点` : `${row.value}回`;
+  if (metric === 'titles') return `${row.value}回`;
+  if (metric === 'wins') return `${row.value}勝`;
+  return `${row.value}点`;
+}
+
+export function rankingsView(rankings, names, kind = 'players', metric = 'goals') {
+  const metrics = kind === 'players' ? PLAYER_RANKING_METRICS : CLUB_RANKING_METRICS;
+  const validMetric = metrics.some(([key]) => key === metric) ? metric : metrics[0][0];
+  const rows = kind === 'players' ? rankings.players[validMetric] : rankings.clubs[validMetric];
+  const caption = kind === 'players' && validMetric === 'goals' ? STRINGS.noGoalRecord : null;
+  return el('article', { class: 'page rankings-page' }, [
+    el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.rankings)]),
+    el('nav', { class: 'ranking-tabs', 'aria-label': 'ランキングの種類' }, [
+      el('a', { href: '#/r/players/goals', 'aria-current': kind === 'players' ? 'page' : null }, '選手'),
+      el('a', { href: '#/r/clubs/titles', 'aria-current': kind === 'clubs' ? 'page' : null }, 'クラブ'),
+    ]),
+    el('nav', { class: 'ranking-metrics', 'aria-label': 'ランキングの項目' }, metrics.map(([key, metricLabel]) =>
+      el('a', { href: `#/r/${kind}/${key}`, 'aria-current': key === validMetric ? 'page' : null }, metricLabel))),
+    caption ? rubyEl('p', caption, { class: 'ranking-caption' }) : null,
+    el('ol', { class: 'ranking-list' }, rows.map((row) => el('li', { class: `ranking-row rank-${Math.min(row.rank, 4)}` }, [
+      el('strong', { class: 'ranking-rank' }, `${row.rank}位`),
+      kind === 'players' ? el('a', { class: 'ranking-name', href: `#/p/${row.player}` }, row.name) : clubLink(row.club, names, 'ranking-name club-link', true),
+      el('strong', { class: 'ranking-value' }, rankingRowValue(kind, validMetric, row)),
+      validMetric === 'seasonPoints' ? el('span', { class: 'ranking-season' }, seasonIdLabel(row.season)) : null,
+    ]))),
   ]);
 }
 

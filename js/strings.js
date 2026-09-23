@@ -9,4 +9,12 @@ export const STRINGS = Object.freeze({
   champion: '{優勝|ゆうしょう}',
   topScorer: '{得点王|とくてんおう}',
   titleCount: '{優勝回数|ゆうしょうかいすう}',
+  japanFeature: '{日本人選手|にほんじんせんしゅ}',
+  meikan: '{選手名鑑|せんしゅめいかん}',
+  rankings: '{ランキング|らんきんぐ}',
+  search: '{検索|けんさく}',
+  searchLabel: '{選手|せんしゅ}や{クラブ|くらぶ}をさがす',
+  noSearchResults: '{見|み}つかりませんでした',
+  noRecord: '{記録|きろく}なし',
+  noGoalRecord: '{記録|きろく}のある{試合|しあい}だけ',
 });
