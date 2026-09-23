@@ -74,6 +74,24 @@ done
 shopt -u nullglob
 echo "== allowlist: ${#FILES[@]} files"
 
+# iCloud can leave conflict duplicates like `search 4.json` or `days 5/`.
+# Some can match the allowlist, so reject them before the generic completeness
+# check and before a dry run can report success.
+SYNC_CONFLICTS=()
+while IFS= read -r p; do
+  rel="${p#public/}"
+  [[ -n "$rel" ]] || continue
+  if [[ -f "$p" && "$rel" =~ \ [0-9]+(\.[^/]*)?$ ]]; then
+    SYNC_CONFLICTS+=( "$rel" )
+  elif [[ -d "$p" && "$rel" =~ (^|/)[^/]*\ [0-9]+$ ]]; then
+    SYNC_CONFLICTS+=( "$rel" )
+  fi
+done < <(find public \( -type f -o -type d \) -print)
+if [[ ${#SYNC_CONFLICTS[@]} -gt 0 ]]; then
+  for f in "${SYNC_CONFLICTS[@]}"; do echo "   public/$f" >&2; done
+  fail "sync-conflict duplicate(s) under public/ - delete them and rebuild"
+fi
+
 # Every public file should either ship or have an explicit reason not to.
 contains_path() {
   local needle="$1"
