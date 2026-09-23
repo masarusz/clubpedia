@@ -1,9 +1,9 @@
-import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.3.2';
-import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.3.2';
-import { rubyPlain } from './ruby.js?v=0.3.2';
-import { search as runSearch } from './search.js?v=0.3.2';
-import { STRINGS } from './strings.js?v=0.3.2';
-import { VERSION } from './version.js?v=0.3.2';
+import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.3.3';
+import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.3.3';
+import { rubyPlain } from './ruby.js?v=0.3.3';
+import { search as runSearch } from './search.js?v=0.3.3';
+import { STRINGS } from './strings.js?v=0.3.3';
+import { VERSION } from './version.js?v=0.3.3';
 
 const LEAGUE_NAMES = Object.freeze({
   en: 'プレミアリーグ', es: 'ラ・リーガ', de: 'ブンデスリーガ', it: 'セリエA', fr: 'リーグ・アン',
