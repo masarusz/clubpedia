@@ -22,6 +22,7 @@ import {
   unsafeName,
 } from '../tools/lib/source-api.mjs';
 import { runFetchSources, sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
+import { championClubTargets } from '../tools/lib/core-data.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const FIXTURES = join(ROOT, 'tests', 'fixtures');
@@ -80,6 +81,44 @@ export function register(test, equal, deepEqual) {
     const bare = extractTableClubs('{{#invoke:Sports table|main|team1=ABC|name_ABC=Bare Town}}');
     deepEqual(bare, [{ code: 'ABC', target: 'Bare Town', label: 'Bare Town', linked: false }]);
     equal(clubSeasonTitle(1999, old[0].target), '1999–2000 Manchester United F.C. season');
+  });
+
+  test('champion discovery includes linked and carried-forward club targets only from the editions section', async () => {
+    const targets = championClubTargets(await fixture('wikitext/champion-club-discovery.wikitext'), 'it');
+    deepEqual(targets, ['Ambrosiana-Inter', 'F.C. Pro Vercelli 1892', 'Juventus FC']);
+  });
+
+  test('refresh fetches metadata for every discovered champion identity', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-champion-fetch-test-'));
+    const out = join(temporary, 'sources');
+    const lockPath = join(temporary, 'sources.lock.json');
+    const list = await fixture('wikitext/champion-club-discovery.wikitext');
+    const metadataTitles = [];
+    const requester = new Requester({
+      sleep: async () => {}, minimumWikimediaDelay: 0,
+      fetchImpl: async (url) => {
+        const parsed = new URL(url);
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'revisions') {
+          return fakeResponse({ batchcomplete: true, query: { pages: [revisionPage('List of Italian football champions', list, 501)] } });
+        }
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'pageprops|langlinks') {
+          const titles = parsed.searchParams.get('titles').split('|');
+          metadataTitles.push(...titles);
+          return fakeResponse({ batchcomplete: true, query: { pages: titles.map((title) => ({ title, missing: true })) } });
+        }
+        throw new Error(`Unexpected champion-discovery fake URL: ${url}`);
+      },
+    });
+    try {
+      await runFetchSources({
+        out, lockPath, refresh: true, requester, quiet: true, leagues: [], startYears: [],
+        listTitles: ['List of Italian football champions'], topScorerLists: [], foreignLists: [],
+        openLigaYears: [], openfootball: false, minimumJapanesePlayers: 0,
+      });
+      deepEqual(metadataTitles.sort(), ['Ambrosiana-Inter', 'F.C. Pro Vercelli 1892', 'Juventus FC']);
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
   });
 
   test('player extraction reads match-box goals and top-scorer tables', async () => {

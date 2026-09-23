@@ -1,0 +1,1720 @@
+[
+  {
+    "actions": [
+      {
+        "evidence": "en.wikipedia 1999–2000 FC Barcelona season, match box 18 Sep 1999: 2–1",
+        "grid": "2–3",
+        "match": "es-1999-Q223620-Q7156",
+        "status": "played",
+        "to": "2–1",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "en.wikipedia 1999–2000 Real Sociedad season, match box 5 Mar 2000: 1–0",
+        "grid": "1–3",
+        "match": "es-1999-Q10315-Q8780",
+        "status": "played",
+        "to": "1–0",
+        "type": "correct-cell"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q7156",
+        "grid": "2–3",
+        "gridNote": null,
+        "home": "Q223620",
+        "match": "es-1999-Q223620-Q7156",
+        "proposed": "2–1"
+      },
+      {
+        "away": "Q8780",
+        "grid": "1–3",
+        "gridNote": null,
+        "home": "Q10315",
+        "match": "es-1999-Q10315-Q8780",
+        "proposed": "1–0"
+      }
+    ],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q7156",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -2,
+          "l": 1,
+          "w": -1
+        },
+        "results": {
+          "d": 7,
+          "ga": 46,
+          "gf": 72,
+          "l": 11,
+          "w": 20
+        },
+        "sourceTitle": "FC Barcelona",
+        "table": {
+          "d": 7,
+          "ga": 46,
+          "gf": 70,
+          "l": 12,
+          "w": 19
+        }
+      },
+      {
+        "club": "Q223620",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": 0,
+          "l": -1,
+          "w": 1
+        },
+        "results": {
+          "d": 10,
+          "ga": 39,
+          "gf": 41,
+          "l": 12,
+          "w": 16
+        },
+        "sourceTitle": "Deportivo Alavés",
+        "table": {
+          "d": 10,
+          "ga": 37,
+          "gf": 41,
+          "l": 11,
+          "w": 17
+        }
+      },
+      {
+        "club": "Q10315",
+        "delta": {
+          "d": 0,
+          "ga": -3,
+          "gf": 0,
+          "l": -1,
+          "w": 1
+        },
+        "results": {
+          "d": 14,
+          "ga": 52,
+          "gf": 42,
+          "l": 14,
+          "w": 10
+        },
+        "sourceTitle": "Real Sociedad",
+        "table": {
+          "d": 14,
+          "ga": 49,
+          "gf": 42,
+          "l": 13,
+          "w": 11
+        }
+      },
+      {
+        "club": "Q8780",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -3,
+          "l": 1,
+          "w": -1
+        },
+        "results": {
+          "d": 11,
+          "ga": 48,
+          "gf": 54,
+          "l": 14,
+          "w": 13
+        },
+        "sourceTitle": "RCD Espanyol",
+        "table": {
+          "d": 11,
+          "ga": 48,
+          "gf": 51,
+          "l": 15,
+          "w": 12
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "es-1999",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "club": "Q8780",
+        "evidence": "The en table is arithmetically impossible (total wins exceed total losses by 1; total draws odd). The en results grid and the es.wikipedia table (Primera División de España 2000-01: ganados 14, empates 8, perdidos 16, gf 46, gc 44) agree. Points become 50; position 9 is unchanged (Alavés 49), matching the es.wikipedia order.",
+        "to": {
+          "d": 8,
+          "ga": 44,
+          "gf": 46,
+          "l": 16,
+          "w": 14
+        },
+        "type": "correct-table-row"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q8780",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 0,
+          "l": 0,
+          "w": 1
+        },
+        "results": {
+          "d": 8,
+          "ga": 44,
+          "gf": 46,
+          "l": 16,
+          "w": 14
+        },
+        "sourceTitle": "RCD Espanyol",
+        "table": {
+          "d": 7,
+          "ga": 44,
+          "gf": 46,
+          "l": 16,
+          "w": 15
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "es-2000",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "clubs": [
+          "Q8687",
+          "Q8701"
+        ],
+        "evidence": "Tables (en and es.wikipedia) agree: Athletic 53–49, Atlético 51–53. Results grids (en and es.wikipedia) agree with each other and imply 51–47 and 53–55. No source states a score that reconciles them. The official table stands; match scores are shown as the grids give them.",
+        "type": "unreconciled"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q8687",
+        "delta": {
+          "d": 0,
+          "ga": 2,
+          "gf": 2,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 11,
+          "ga": 47,
+          "gf": 51,
+          "l": 12,
+          "w": 15
+        },
+        "sourceTitle": "Athletic Bilbao",
+        "table": {
+          "d": 11,
+          "ga": 49,
+          "gf": 53,
+          "l": 12,
+          "w": 15
+        }
+      },
+      {
+        "club": "Q8701",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": -2,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 55,
+          "gf": 53,
+          "l": 13,
+          "w": 15
+        },
+        "sourceTitle": "Atlético Madrid",
+        "table": {
+          "d": 10,
+          "ga": 53,
+          "gf": 51,
+          "l": 13,
+          "w": 15
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "es-2003",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "en.wikipedia 2012–13 FC Barcelona season (6 Apr 2013: 5–0) and es.wikipedia grid (partido_BAR_MLL=5-0)",
+        "grid": "5–1",
+        "match": "es-2012-Q7156-Q8835",
+        "status": "played",
+        "to": "5–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "en.wikipedia 2012–13 RCD Mallorca season (9 Dec 2012: 4–0) and es.wikipedia grid (partido_LEV_MLL=4-0)",
+        "grid": "4–2",
+        "match": "es-2012-Q8823-Q8835",
+        "status": "played",
+        "to": "4–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "en.wikipedia 2012–13 Real Valladolid season (1 Jun 2013: 4–2) and es.wikipedia grid (partido_MLL_VLD=4-2). es.wikipedia notes the match was declared lost for Mallorca in Sept 2013 (ineligible player Giovani dos Santos), but both tables still count the 4–2 win; keep the note, the table stands.",
+        "grid": "6–2",
+        "match": "es-2012-Q8835-Q10319",
+        "status": "played",
+        "to": "4–2",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "en grid, es.wikipedia grid and openfootball all give 5–2; both tables (en, es) give Real Madrid 42 against and Mallorca 43 for, which implies 5–0. The official table stands; the match shows 5–2.",
+        "grid": "5–2",
+        "match": "es-2012-Q8682-Q8835",
+        "status": "played",
+        "type": "unreconciled"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q8835",
+        "grid": "5–1",
+        "gridNote": null,
+        "home": "Q7156",
+        "match": "es-2012-Q7156-Q8835",
+        "proposed": "5–0"
+      },
+      {
+        "away": "Q8835",
+        "grid": "4–2",
+        "gridNote": null,
+        "home": "Q8823",
+        "match": "es-2012-Q8823-Q8835",
+        "proposed": "4–0"
+      },
+      {
+        "away": "Q10319",
+        "grid": "6–2",
+        "gridNote": null,
+        "home": "Q8835",
+        "match": "es-2012-Q8835-Q10319",
+        "proposed": "4–2"
+      },
+      {
+        "away": "Q8835",
+        "grid": "5–2",
+        "gridNote": null,
+        "home": "Q8682",
+        "match": "es-2012-Q8682-Q8835",
+        "proposed": "5–0"
+      }
+    ],
+    "crossCheck": {
+      "available": true,
+      "matches": [
+        {
+          "match": "es-2012-Q7156-Q8835",
+          "score": "5–0"
+        },
+        {
+          "match": "es-2012-Q8823-Q8835",
+          "score": "4–0"
+        },
+        {
+          "match": "es-2012-Q8835-Q10319",
+          "score": "4–2"
+        },
+        {
+          "match": "es-2012-Q8682-Q8835",
+          "score": "5–2"
+        }
+      ],
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q7156",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 4,
+          "ga": 41,
+          "gf": 115,
+          "l": 2,
+          "w": 32
+        },
+        "sourceTitle": "FC Barcelona",
+        "table": {
+          "d": 4,
+          "ga": 40,
+          "gf": 115,
+          "l": 2,
+          "w": 32
+        }
+      },
+      {
+        "club": "Q8682",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 44,
+          "gf": 103,
+          "l": 5,
+          "w": 26
+        },
+        "sourceTitle": "Real Madrid CF",
+        "table": {
+          "d": 7,
+          "ga": 42,
+          "gf": 103,
+          "l": 5,
+          "w": 26
+        }
+      },
+      {
+        "club": "Q8823",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 59,
+          "gf": 40,
+          "l": 16,
+          "w": 12
+        },
+        "sourceTitle": "Levante UD",
+        "table": {
+          "d": 10,
+          "ga": 57,
+          "gf": 40,
+          "l": 16,
+          "w": 12
+        }
+      },
+      {
+        "club": "Q10319",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 60,
+          "gf": 49,
+          "l": 17,
+          "w": 11
+        },
+        "sourceTitle": "Real Valladolid",
+        "table": {
+          "d": 10,
+          "ga": 58,
+          "gf": 49,
+          "l": 17,
+          "w": 11
+        }
+      },
+      {
+        "club": "Q8835",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -7,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 9,
+          "ga": 72,
+          "gf": 50,
+          "l": 20,
+          "w": 9
+        },
+        "sourceTitle": "RCD Mallorca",
+        "table": {
+          "d": 9,
+          "ga": 72,
+          "gf": 43,
+          "l": 20,
+          "w": 9
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "es-2012",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "Grid note: initially 0–1, declared a defeat for both teams with the score 0–0 (bribery scandal). The official table counts it in the draws column for both clubs and deducts 1 point from each (adjust_points), so each gets 0 points from it. Reconcile the double defeat as a draw in W/D/L; display it as a defeat for both.",
+        "grid": "0–0",
+        "match": "fr-1992-Q212269-Q132885",
+        "status": "double-defeat",
+        "type": "double-defeat"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q132885",
+        "delta": {
+          "d": 1,
+          "ga": 0,
+          "gf": 0,
+          "l": -1,
+          "w": 0
+        },
+        "results": {
+          "d": 9,
+          "ga": 36,
+          "gf": 71,
+          "l": 7,
+          "w": 22
+        },
+        "sourceTitle": "Olympique de Marseille",
+        "table": {
+          "d": 10,
+          "ga": 36,
+          "gf": 71,
+          "l": 6,
+          "w": 22
+        }
+      },
+      {
+        "club": "Q212269",
+        "delta": {
+          "d": 1,
+          "ga": 0,
+          "gf": 0,
+          "l": -1,
+          "w": 0
+        },
+        "results": {
+          "d": 11,
+          "ga": 56,
+          "gf": 42,
+          "l": 18,
+          "w": 9
+        },
+        "sourceTitle": "Valenciennes FC",
+        "table": {
+          "d": 12,
+          "ga": 56,
+          "gf": 42,
+          "l": 17,
+          "w": 9
+        }
+      }
+    ],
+    "reason": "The source models Valenciennes–Marseille as a 0–0 double defeat while its table W/D/L columns treat the score as a draw; keep the explicit match status and official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-1992",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "en and fr.wikipedia grids both give 3–2; en and fr.wikipedia tables both give Rennes 45–38 and Montpellier 53–50, which implies 2–1. No source states 2–1. The official table stands; the match shows 3–2.",
+        "grid": "3–2",
+        "match": "fr-1998-Q19509-Q19513",
+        "status": "played",
+        "type": "unreconciled"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q19513",
+        "grid": "3–2",
+        "gridNote": null,
+        "home": "Q19509",
+        "match": "fr-1998-Q19509-Q19513",
+        "proposed": "2–1"
+      }
+    ],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q19509",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 8,
+          "ga": 39,
+          "gf": 46,
+          "l": 9,
+          "w": 17
+        },
+        "sourceTitle": "Stade Rennais FC",
+        "table": {
+          "d": 8,
+          "ga": 38,
+          "gf": 45,
+          "l": 9,
+          "w": 17
+        }
+      },
+      {
+        "club": "Q19513",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 51,
+          "gf": 54,
+          "l": 13,
+          "w": 11
+        },
+        "sourceTitle": "Montpellier HSC",
+        "table": {
+          "d": 10,
+          "ga": 50,
+          "gf": 53,
+          "l": 13,
+          "w": 11
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-1998",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "decidedBy": "Conseil d'État, 25 June 2001 (fake-passport affair)",
+        "evidence": "fr.wikipedia Championnat de France de football 2000-2001: le résultat du match ASSE-TFC (1-0 sur le terrain) a été donné gagnant pour Toulouse sur tapis vert sur le score de 0-0. The official table counts a Toulouse win with no goals.",
+        "grid": "0–0",
+        "match": "fr-2000-Q19521-Q19518",
+        "officialScore": "0–0",
+        "pitchScore": "1–0",
+        "status": "played",
+        "type": "awarded",
+        "winner": "Q19518"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q19518",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 0,
+          "l": 0,
+          "w": 1
+        },
+        "results": {
+          "d": 11,
+          "ga": 49,
+          "gf": 34,
+          "l": 15,
+          "w": 8
+        },
+        "sourceTitle": "Toulouse FC",
+        "table": {
+          "d": 10,
+          "ga": 49,
+          "gf": 34,
+          "l": 15,
+          "w": 9
+        }
+      },
+      {
+        "club": "Q19521",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 0,
+          "l": 1,
+          "w": 0
+        },
+        "results": {
+          "d": 11,
+          "ga": 56,
+          "gf": 42,
+          "l": 15,
+          "w": 8
+        },
+        "sourceTitle": "AS Saint-Étienne",
+        "table": {
+          "d": 10,
+          "ga": 56,
+          "gf": 42,
+          "l": 16,
+          "w": 8
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2000",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "fr.wikipedia grid 2006-2007",
+        "grid": "4–0",
+        "match": "fr-2006-Q132885-Q19516",
+        "status": "played",
+        "to": "4–1",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2006-2007",
+        "grid": "2–1",
+        "match": "fr-2006-Q180305-Q19523",
+        "status": "played",
+        "to": "2–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2006-2007",
+        "grid": "2–0",
+        "match": "fr-2006-Q180305-Q704",
+        "status": "played",
+        "to": "1–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2006-2007",
+        "grid": "1–0",
+        "match": "fr-2006-Q608988-Q483020",
+        "status": "played",
+        "to": "2–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "Pinned en.wikipedia 2006–07 Stade Rennais F.C. season match box, 7 Apr 2007: Rennes 1–0 Lens",
+        "grid": "0–0",
+        "match": "fr-2006-Q19509-Q191843",
+        "status": "played",
+        "to": "1–0",
+        "type": "correct-cell"
+      },
+      {
+        "decidedBy": "LFP",
+        "evidence": "en grid note: French League proclaimed Toulouse to be winners of the match. The reviewed score corrections and this award reconcile the results to the official table.",
+        "grid": "0–0",
+        "match": "fr-2006-Q192071-Q19518",
+        "officialScore": null,
+        "pitchScore": "as in the grid",
+        "status": "played",
+        "type": "awarded",
+        "winner": "Q19518"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q704",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 9,
+          "ga": 28,
+          "gf": 64,
+          "l": 5,
+          "w": 24
+        },
+        "sourceTitle": "Olympique Lyonnais",
+        "table": {
+          "d": 9,
+          "ga": 27,
+          "gf": 64,
+          "l": 5,
+          "w": 24
+        }
+      },
+      {
+        "club": "Q132885",
+        "delta": {
+          "d": 0,
+          "ga": 1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 37,
+          "gf": 53,
+          "l": 12,
+          "w": 19
+        },
+        "sourceTitle": "Olympique de Marseille",
+        "table": {
+          "d": 7,
+          "ga": 38,
+          "gf": 53,
+          "l": 12,
+          "w": 19
+        }
+      },
+      {
+        "club": "Q19518",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 0,
+          "l": 0,
+          "w": 1
+        },
+        "results": {
+          "d": 8,
+          "ga": 43,
+          "gf": 44,
+          "l": 14,
+          "w": 16
+        },
+        "sourceTitle": "Toulouse FC",
+        "table": {
+          "d": 7,
+          "ga": 43,
+          "gf": 44,
+          "l": 14,
+          "w": 17
+        }
+      },
+      {
+        "club": "Q19509",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 1,
+          "l": 0,
+          "w": 1
+        },
+        "results": {
+          "d": 16,
+          "ga": 30,
+          "gf": 37,
+          "l": 9,
+          "w": 13
+        },
+        "sourceTitle": "Stade Rennais FC",
+        "table": {
+          "d": 15,
+          "ga": 30,
+          "gf": 38,
+          "l": 9,
+          "w": 14
+        }
+      },
+      {
+        "club": "Q191843",
+        "delta": {
+          "d": -1,
+          "ga": 1,
+          "gf": 0,
+          "l": 1,
+          "w": 0
+        },
+        "results": {
+          "d": 13,
+          "ga": 40,
+          "gf": 47,
+          "l": 10,
+          "w": 15
+        },
+        "sourceTitle": "RC Lens",
+        "table": {
+          "d": 12,
+          "ga": 41,
+          "gf": 47,
+          "l": 11,
+          "w": 15
+        }
+      },
+      {
+        "club": "Q180305",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 12,
+          "ga": 39,
+          "gf": 46,
+          "l": 13,
+          "w": 13
+        },
+        "sourceTitle": "AS Monaco FC",
+        "table": {
+          "d": 12,
+          "ga": 38,
+          "gf": 45,
+          "l": 13,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q19516",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": 1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 11,
+          "ga": 43,
+          "gf": 44,
+          "l": 14,
+          "w": 13
+        },
+        "sourceTitle": "Lille OSC",
+        "table": {
+          "d": 11,
+          "ga": 43,
+          "gf": 45,
+          "l": 14,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q19523",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 44,
+          "gf": 38,
+          "l": 15,
+          "w": 13
+        },
+        "sourceTitle": "AS Nancy Lorraine",
+        "table": {
+          "d": 10,
+          "ga": 44,
+          "gf": 37,
+          "l": 15,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q483020",
+        "delta": {
+          "d": 0,
+          "ga": 1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 12,
+          "ga": 41,
+          "gf": 42,
+          "l": 14,
+          "w": 12
+        },
+        "sourceTitle": "Paris Saint-Germain FC",
+        "table": {
+          "d": 12,
+          "ga": 42,
+          "gf": 42,
+          "l": 14,
+          "w": 12
+        }
+      },
+      {
+        "club": "Q608988",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": 1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 14,
+          "ga": 58,
+          "gf": 45,
+          "l": 17,
+          "w": 7
+        },
+        "sourceTitle": "CS Sedan Ardennes",
+        "table": {
+          "d": 14,
+          "ga": 58,
+          "gf": 46,
+          "l": 17,
+          "w": 7
+        }
+      },
+      {
+        "club": "Q192071",
+        "delta": {
+          "d": -1,
+          "ga": 0,
+          "gf": 0,
+          "l": 1,
+          "w": 0
+        },
+        "results": {
+          "d": 14,
+          "ga": 49,
+          "gf": 29,
+          "l": 17,
+          "w": 7
+        },
+        "sourceTitle": "FC Nantes",
+        "table": {
+          "d": 13,
+          "ga": 49,
+          "gf": 29,
+          "l": 18,
+          "w": 7
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2006",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "fr.wikipedia grid 2007-2008",
+        "grid": "0–1",
+        "match": "fr-2007-Q126334-Q19523",
+        "status": "played",
+        "to": "0–0",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2007-2008",
+        "grid": "0–2",
+        "match": "fr-2007-Q212269-Q185163",
+        "status": "played",
+        "to": "1–2",
+        "type": "correct-cell"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2007-2008",
+        "grid": "1–2",
+        "match": "fr-2007-Q182876-Q704",
+        "status": "played",
+        "to": "1–3",
+        "type": "correct-cell"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q19523",
+        "grid": "0–1",
+        "gridNote": null,
+        "home": "Q126334",
+        "match": "fr-2007-Q126334-Q19523",
+        "proposed": "0–0"
+      },
+      {
+        "away": "Q185163",
+        "grid": "0–2",
+        "gridNote": null,
+        "home": "Q212269",
+        "match": "fr-2007-Q212269-Q185163",
+        "proposed": "1–2"
+      },
+      {
+        "away": "Q704",
+        "grid": "1–2",
+        "gridNote": null,
+        "home": "Q182876",
+        "match": "fr-2007-Q182876-Q704",
+        "proposed": "1–3"
+      }
+    ],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q704",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": 1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 37,
+          "gf": 73,
+          "l": 7,
+          "w": 24
+        },
+        "sourceTitle": "Olympique Lyonnais",
+        "table": {
+          "d": 7,
+          "ga": 37,
+          "gf": 74,
+          "l": 7,
+          "w": 24
+        }
+      },
+      {
+        "club": "Q19523",
+        "delta": {
+          "d": 1,
+          "ga": 0,
+          "gf": -1,
+          "l": 0,
+          "w": -1
+        },
+        "results": {
+          "d": 14,
+          "ga": 30,
+          "gf": 45,
+          "l": 8,
+          "w": 16
+        },
+        "sourceTitle": "AS Nancy Lorraine",
+        "table": {
+          "d": 15,
+          "ga": 30,
+          "gf": 44,
+          "l": 8,
+          "w": 15
+        }
+      },
+      {
+        "club": "Q185163",
+        "delta": {
+          "d": 0,
+          "ga": 1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 16,
+          "ga": 29,
+          "gf": 35,
+          "l": 9,
+          "w": 13
+        },
+        "sourceTitle": "OGC Nice",
+        "table": {
+          "d": 16,
+          "ga": 30,
+          "gf": 35,
+          "l": 9,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q212269",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": 1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 9,
+          "ga": 40,
+          "gf": 41,
+          "l": 17,
+          "w": 12
+        },
+        "sourceTitle": "Valenciennes FC",
+        "table": {
+          "d": 9,
+          "ga": 40,
+          "gf": 42,
+          "l": 17,
+          "w": 12
+        }
+      },
+      {
+        "club": "Q182876",
+        "delta": {
+          "d": 0,
+          "ga": 1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 8,
+          "ga": 51,
+          "gf": 33,
+          "l": 18,
+          "w": 12
+        },
+        "sourceTitle": "AJ Auxerre",
+        "table": {
+          "d": 8,
+          "ga": 52,
+          "gf": 33,
+          "l": 18,
+          "w": 12
+        }
+      },
+      {
+        "club": "Q126334",
+        "delta": {
+          "d": 1,
+          "ga": -1,
+          "gf": 0,
+          "l": -1,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 56,
+          "gf": 34,
+          "l": 22,
+          "w": 9
+        },
+        "sourceTitle": "RC Strasbourg Alsace",
+        "table": {
+          "d": 8,
+          "ga": 55,
+          "gf": 34,
+          "l": 21,
+          "w": 9
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2007",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "decidedBy": "LFP, 12 February 2014 (Nantes fielded suspended player Abdoulaye Touré)",
+        "evidence": "fr.wikipedia Championnat de France de football 2013-2014, note a. The official table counts a Bastia win with no goals.",
+        "grid": "2–0",
+        "match": "fr-2013-Q192071-Q208399",
+        "officialScore": "0–0",
+        "pitchScore": "2–0",
+        "status": "played",
+        "type": "awarded",
+        "winner": "Q208399"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "file absent from pinned cache",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q208399",
+        "delta": {
+          "d": 0,
+          "ga": -2,
+          "gf": 0,
+          "l": -1,
+          "w": 1
+        },
+        "results": {
+          "d": 10,
+          "ga": 58,
+          "gf": 42,
+          "l": 16,
+          "w": 12
+        },
+        "sourceTitle": "SC Bastia",
+        "table": {
+          "d": 10,
+          "ga": 56,
+          "gf": 42,
+          "l": 15,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q192071",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -2,
+          "l": 1,
+          "w": -1
+        },
+        "results": {
+          "d": 10,
+          "ga": 43,
+          "gf": 40,
+          "l": 15,
+          "w": 13
+        },
+        "sourceTitle": "FC Nantes",
+        "table": {
+          "d": 10,
+          "ga": 43,
+          "gf": 38,
+          "l": 16,
+          "w": 12
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2013",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "decidedBy": "LFP",
+        "evidence": "fr.wikipedia 2016-2017 grid marks the match perdu 0-0 for Bastia; the official table counts a Lyon win with no goals.",
+        "grid": "0–3",
+        "match": "fr-2016-Q208399-Q704",
+        "officialScore": "0–0",
+        "pitchScore": "abandoned",
+        "status": "played",
+        "type": "awarded",
+        "winner": "Q704"
+      },
+      {
+        "evidence": "fr.wikipedia grid 2016-2017 (1-2), matching the official table",
+        "grid": "1–3",
+        "match": "fr-2016-Q845137-Q19521",
+        "status": "played",
+        "to": "1–2",
+        "type": "correct-cell"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": true,
+      "matches": [],
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q704",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -3,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 4,
+          "ga": 48,
+          "gf": 80,
+          "l": 13,
+          "w": 21
+        },
+        "sourceTitle": "Olympique Lyonnais",
+        "table": {
+          "d": 4,
+          "ga": 48,
+          "gf": 77,
+          "l": 13,
+          "w": 21
+        }
+      },
+      {
+        "club": "Q19521",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 14,
+          "ga": 42,
+          "gf": 42,
+          "l": 12,
+          "w": 12
+        },
+        "sourceTitle": "AS Saint-Étienne",
+        "table": {
+          "d": 14,
+          "ga": 42,
+          "gf": 41,
+          "l": 12,
+          "w": 12
+        }
+      },
+      {
+        "club": "Q845137",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 50,
+          "gf": 40,
+          "l": 18,
+          "w": 13
+        },
+        "sourceTitle": "Angers SCO",
+        "table": {
+          "d": 7,
+          "ga": 49,
+          "gf": 40,
+          "l": 18,
+          "w": 13
+        }
+      },
+      {
+        "club": "Q208399",
+        "delta": {
+          "d": 0,
+          "ga": -3,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 10,
+          "ga": 57,
+          "gf": 29,
+          "l": 20,
+          "w": 8
+        },
+        "sourceTitle": "SC Bastia",
+        "table": {
+          "d": 10,
+          "ga": 54,
+          "gf": 29,
+          "l": 20,
+          "w": 8
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2016",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "en.wikipedia 2024–25 Stade de Reims season and RC Lens season, 29 Nov 2024: 0–2",
+        "grid": "0–3",
+        "match": "fr-2024-Q208228-Q191843",
+        "status": "played",
+        "to": "0–2",
+        "type": "correct-cell"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q191843",
+        "grid": "0–3",
+        "gridNote": null,
+        "home": "Q208228",
+        "match": "fr-2024-Q208228-Q191843",
+        "proposed": "0–2"
+      }
+    ],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q191843",
+        "delta": {
+          "d": 0,
+          "ga": 0,
+          "gf": -1,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 7,
+          "ga": 39,
+          "gf": 43,
+          "l": 12,
+          "w": 15
+        },
+        "sourceTitle": "RC Lens",
+        "table": {
+          "d": 7,
+          "ga": 39,
+          "gf": 42,
+          "l": 12,
+          "w": 15
+        }
+      },
+      {
+        "club": "Q208228",
+        "delta": {
+          "d": 0,
+          "ga": -1,
+          "gf": 0,
+          "l": 0,
+          "w": 0
+        },
+        "results": {
+          "d": 9,
+          "ga": 48,
+          "gf": 33,
+          "l": 17,
+          "w": 8
+        },
+        "sourceTitle": "Stade de Reims",
+        "table": {
+          "d": 9,
+          "ga": 47,
+          "gf": 33,
+          "l": 17,
+          "w": 8
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2024",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "evidence": "en.wikipedia 2025–26 RC Lens season, 24 Apr 2026: 3–3",
+        "grid": "3–0",
+        "match": "fr-2025-Q218372-Q191843",
+        "status": "played",
+        "to": "3–3",
+        "type": "correct-cell"
+      }
+    ],
+    "changes": [
+      {
+        "away": "Q191843",
+        "grid": "3–0",
+        "gridNote": null,
+        "home": "Q218372",
+        "match": "fr-2025-Q218372-Q191843",
+        "proposed": "3–3"
+      }
+    ],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q191843",
+        "delta": {
+          "d": 1,
+          "ga": 0,
+          "gf": 3,
+          "l": -1,
+          "w": 0
+        },
+        "results": {
+          "d": 3,
+          "ga": 35,
+          "gf": 63,
+          "l": 9,
+          "w": 22
+        },
+        "sourceTitle": "RC Lens",
+        "table": {
+          "d": 4,
+          "ga": 35,
+          "gf": 66,
+          "l": 8,
+          "w": 22
+        }
+      },
+      {
+        "club": "Q218372",
+        "delta": {
+          "d": 1,
+          "ga": 3,
+          "gf": 0,
+          "l": 0,
+          "w": -1
+        },
+        "results": {
+          "d": 8,
+          "ga": 52,
+          "gf": 43,
+          "l": 15,
+          "w": 11
+        },
+        "sourceTitle": "Stade Brestois 29",
+        "table": {
+          "d": 9,
+          "ga": 55,
+          "gf": 43,
+          "l": 15,
+          "w": 10
+        }
+      }
+    ],
+    "reason": "Proposed minimal set of grid-cell changes that reconciles the official table.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "fr-2025",
+    "status": "reviewed"
+  },
+  {
+    "actions": [
+      {
+        "club": "Q759482",
+        "evidence": "it.wikipedia Serie A 1993-1994 Classifica finale: Cremonese 32 pts, 9-14-11, 41-41, equal to the en results grid. The en row (8-16-10) gives the same 32 points in the 2-point era, so points and position are unchanged; only W/D/L was mistyped.",
+        "to": {
+          "d": 14,
+          "ga": 41,
+          "gf": 41,
+          "l": 11,
+          "w": 9
+        },
+        "type": "correct-table-row"
+      }
+    ],
+    "changes": [],
+    "crossCheck": {
+      "available": false,
+      "reason": "outside pinned comparison window",
+      "source": "openfootball"
+    },
+    "differences": [
+      {
+        "club": "Q759482",
+        "delta": {
+          "d": 2,
+          "ga": 0,
+          "gf": 0,
+          "l": -1,
+          "w": -1
+        },
+        "results": {
+          "d": 14,
+          "ga": 41,
+          "gf": 41,
+          "l": 11,
+          "w": 9
+        },
+        "sourceTitle": "US Cremonese",
+        "table": {
+          "d": 16,
+          "ga": 41,
+          "gf": 41,
+          "l": 10,
+          "w": 8
+        }
+      }
+    ],
+    "reason": "No set of up to eight results-grid cell changes reconciles the official table; manual review required.",
+    "reviewedBy": "Claude, 2026-09-23",
+    "season": "it-1993",
+    "status": "reviewed"
+  }
+]

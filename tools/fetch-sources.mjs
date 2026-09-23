@@ -14,6 +14,7 @@ import {
   hasSportsTable,
   seasonArticleTitle,
 } from './lib/wikitext.mjs';
+import { championClubTargets } from './lib/core-data.mjs';
 import {
   Requester,
   cachePath,
@@ -42,6 +43,8 @@ export const CHAMPION_LISTS = Object.freeze([
   'List of Italian football champions',
   'List of French football champions',
 ]);
+
+const CHAMPION_LEAGUE_BY_TITLE = new Map(CHAMPION_LISTS.map((title, index) => [title, ['en', 'es', 'de', 'it', 'fr'][index]]));
 
 export const TOP_SCORER_LISTS = Object.freeze([
   'List of English football first tier top scorers',
@@ -500,6 +503,10 @@ export async function runFetchSources(options = {}) {
     }
 
     const clubTargets = new Set();
+    for (const [title, league] of CHAMPION_LEAGUE_BY_TITLE) {
+      const page = listPages.get(title);
+      if (page && !page.missing) for (const target of championClubTargets(page.content, league)) clubTargets.add(target);
+    }
     const clubSeasonSpecs = [];
     for (const spec of seasonSpecs) {
       const article = seasonPages.get(spec.title);

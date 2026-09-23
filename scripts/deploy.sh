@@ -50,6 +50,7 @@ PATTERNS=(
   "data/*.json"
   "data/s/*.json"
   "data/c/*.json"
+  "data/h/*.json"
   "data/o/*.json"
   "assets/*.png"
 )

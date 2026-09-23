@@ -2,6 +2,7 @@
 import { isDeepStrictEqual } from 'node:util';
 import { register as fetchTests } from './fetch.test.mjs';
 import { register as mutationTests } from './mutation.test.mjs';
+import { register as dataTests } from './data.test.mjs';
 
 const checks = [];
 const test = (name, run) => checks.push({ name, run });
@@ -14,6 +15,7 @@ const deepEqual = (actual, expected, context = '') => {
 };
 
 fetchTests(test, equal, deepEqual);
+dataTests(test, equal, deepEqual);
 mutationTests(test, equal);
 
 let passed = 0;

@@ -35,7 +35,7 @@ export function stripComments(text) {
   return text.replace(/<!--[\s\S]*?-->/g, '');
 }
 
-function splitTopLevel(text, separator = '|') {
+export function splitTopLevel(text, separator = '|') {
   const parts = [];
   let start = 0;
   let braces = 0;
@@ -192,7 +192,7 @@ export function clubSeasonTitle(startYear, clubArticleTitle) {
   return `${seasonLabel(startYear)} ${clubArticleTitle.trim()} season`;
 }
 
-function sectionRanges(text) {
+export function sectionRanges(text) {
   const headings = [...text.matchAll(HEADING)].map((match) => ({
     start: match.index,
     bodyStart: match.index + match[0].length,
@@ -206,6 +206,97 @@ function sectionRanges(text) {
     }
     return { ...heading, end, content: text.slice(heading.bodyStart, end) };
   });
+}
+
+/** Convert the small subset of wikitext used in data labels and notes to text. */
+export function plainText(value = '') {
+  let text = stripComments(String(value));
+  text = text
+    .replace(/<ref\b[^>]*>[\s\S]*?<\/ref\s*>/gi, '')
+    .replace(/<ref\b[^/>]*\/\s*>/gi, '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\[https?:\/\/[^\s\]]+\s*([^\]]*)\]/g, '$1');
+  // Resolve innermost templates repeatedly. Formatting templates retain their
+  // useful argument; citations, flags and references disappear.
+  for (let pass = 0; pass < 8 && /\{\{[^{}]*\}\}/.test(text); pass += 1) {
+    text = text.replace(/\{\{([^{}]*)\}\}/g, (_whole, body) => {
+      const parts = splitTopLevel(body).map((part) => part.trim());
+      const name = (parts.shift() ?? '').toLowerCase();
+      if (/^(?:small|nowrap|nobr|center|sort|sortname|abbr|tooltip|0|color box|font color)$/.test(name)) {
+        return parts.filter((part) => !part.includes('=')).at(-1) ?? '';
+      }
+      if (/^(?:convert|formatnum)$/.test(name)) return parts[0] ?? '';
+      return '';
+    });
+  }
+  text = text.replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]/g, (_whole, target, label) => label ?? target);
+  return text.replace(/'{2,}/g, '').replace(/&nbsp;|&#160;/gi, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function splitCells(line, delimiter) {
+  const cells = [];
+  let start = 0;
+  let braces = 0;
+  let brackets = 0;
+  for (let index = 0; index < line.length - 1; index += 1) {
+    const pair = line.slice(index, index + 2);
+    if (pair === '{{') { braces += 1; index += 1; }
+    else if (pair === '}}' && braces) { braces -= 1; index += 1; }
+    else if (pair === '[[') { brackets += 1; index += 1; }
+    else if (pair === ']]' && brackets) { brackets -= 1; index += 1; }
+    else if (!braces && !brackets && pair === delimiter) {
+      cells.push(line.slice(start, index));
+      start = index + 2;
+      index += 1;
+    }
+  }
+  cells.push(line.slice(start));
+  return cells;
+}
+
+function cellValue(raw) {
+  const value = raw.trim();
+  // Cell attributes precede a single pipe. Do not mistake pipes in links or
+  // templates for the attribute separator.
+  let braces = 0;
+  let brackets = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    const pair = value.slice(index, index + 2);
+    if (pair === '{{') { braces += 1; index += 1; }
+    else if (pair === '}}' && braces) { braces -= 1; index += 1; }
+    else if (pair === '[[') { brackets += 1; index += 1; }
+    else if (pair === ']]' && brackets) { brackets -= 1; index += 1; }
+    else if (value[index] === '|' && !braces && !brackets) return value.slice(index + 1).trim();
+  }
+  return value;
+}
+
+/** A deliberately small wikitable reader: rows and raw cells, with markup intact. */
+export function parseWikitables(source) {
+  const tables = [];
+  for (const match of stripComments(source).matchAll(/^\{\|[^\n]*\n([\s\S]*?)^\|\}\s*$/gm)) {
+    const rows = [];
+    for (const block of match[1].split(/^\s*\|-.*$/m)) {
+      const cells = [];
+      let pending = '';
+      const flush = () => {
+        if (!pending) return;
+        const marker = pending[0];
+        const body = pending.slice(1);
+        for (const part of splitCells(body, marker === '!' ? '!!' : '||')) cells.push(cellValue(part));
+        pending = '';
+      };
+      for (const line of block.split('\n')) {
+        if (/^[|!](?![}|])/.test(line)) { flush(); pending = line; }
+        else if (pending) pending += `\n${line}`;
+      }
+      flush();
+      if (cells.length) rows.push(cells);
+    }
+    if (rows.length) tables.push(rows);
+  }
+  return tables;
 }
 
 function plausiblePersonTarget(target) {
