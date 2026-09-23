@@ -1,9 +1,9 @@
-import { loadClub, loadClubs, loadHistory, loadIndex, loadOpenLiga, loadPlayers, loadSeason } from './data.js?v=0.1.0';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.1.0';
-import { backDecision } from './navigation.js?v=0.1.0';
-import { STRINGS } from './strings.js?v=0.1.0';
-import { VERSION } from './version.js?v=0.1.0';
-import { clubView, creditsView, errorView, homeView, leagueView, matchView, notFoundView, seasonView } from './views.js?v=0.1.0';
+import { loadClub, loadClubs, loadHistory, loadIndex, loadOpenLiga, loadPlayers, loadSeason } from './data.js?v=0.1.2';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.1.2';
+import { backDecision } from './navigation.js?v=0.1.2';
+import { STRINGS } from './strings.js?v=0.1.2';
+import { VERSION } from './version.js?v=0.1.2';
+import { clubView, creditsView, errorView, homeView, leagueView, matchView, notFoundView, seasonView } from './views.js?v=0.1.2';
 
 const root = document.querySelector('#app');
 

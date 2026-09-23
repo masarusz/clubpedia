@@ -9,6 +9,7 @@
   --accent: #d3922f;
   --border: #cbd7d1;
   --danger: #a63a37;
+  --win-soft: #b6ddc3;
   --shadow: 0 8px 24px rgb(21 35 31 / 9%);
   color-scheme: light;
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
@@ -40,7 +41,7 @@ button, a, summary, select { touch-action: manipulation; }
 .brand-mark { flex: 0 0 auto; border-radius: 8px; }
 .brand-copy { min-width: 0; display: flex; flex-direction: column; line-height: 1.15; }
 .brand-copy strong { font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: 1.25rem; letter-spacing: .025em; }
-.brand-copy small { color: #dcebe5; font-size: .76rem; }
+.brand-copy small { color: #dcebe5; font-size: .875rem; }
 .site-nav { margin-left: auto; display: flex; gap: 6px; }
 .site-nav a { min-height: 44px; padding: 8px 12px; display: inline-flex; align-items: center; color: #fff; border-radius: 8px; font-weight: 700; text-decoration: none; }
 .site-nav a:hover { background: rgb(255 255 255 / 12%); }
@@ -49,7 +50,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .page { padding: 34px 24px 54px; }
 .page-heading { margin-bottom: 24px; }
 .page-heading h1 { max-width: 100%; margin: 0; font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; overflow-wrap: anywhere; }
-.eyebrow { margin: 0 0 4px; color: var(--primary-bright); font-size: .82rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.eyebrow { margin: 0 0 4px; color: var(--primary-bright); font-size: .875rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.league-heading, .league-eyebrow { display: flex; align-items: center; gap: 10px; }
+.league-flag { width: 36px; height: 27px; flex: 0 0 auto; object-fit: cover; border: 1px solid rgb(21 35 31 / 24%); border-radius: 3px; box-shadow: 0 2px 5px rgb(21 35 31 / 12%); }
 .panel { min-width: 0; margin: 0 0 18px; padding: 22px; background: rgb(255 255 255 / 94%); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
 .panel > h2 { margin: 0 0 16px; font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: 1.42rem; line-height: 1.3; }
 .loading { margin: 48px 24px; font-weight: 800; }
@@ -59,9 +62,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .league-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
 .league-card { min-width: 0; min-height: 210px; padding: 18px; display: flex; flex-direction: column; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-top: 7px solid var(--primary-bright); border-radius: 15px; box-shadow: var(--shadow); text-decoration: none; }
 .league-card:nth-child(2n) { border-top-color: var(--accent); }
-.league-card h2 { margin: 14px 0 8px; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
-.league-code { color: var(--muted); font-size: .78rem; font-weight: 900; letter-spacing: .15em; }
-.latest-season { margin: auto 0 4px; color: var(--muted); font-size: .86rem; }
+.league-card-title { display: flex; align-items: center; gap: 9px; }
+.league-card h2 { margin: 0; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
+.latest-season { margin: auto 0 4px; color: var(--muted); font-size: .875rem; }
 .latest-champion { min-width: 0; margin: 0; display: flex; align-items: flex-start; gap: 7px; font-weight: 800; overflow-wrap: anywhere; }
 
 .club-chip { width: 1rem; height: 1rem; flex: 0 0 1rem; margin-top: .2em; display: inline-block; border: 2px solid rgb(21 35 31 / 25%); border-radius: 4px; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 45%); }
@@ -93,10 +96,10 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .standings-table td:nth-child(2), .opponents-table td:first-child { overflow-wrap: normal; }
 .standings-table td:nth-child(2) .club-link, .opponents-table td:first-child .club-link { overflow-wrap: normal; word-break: keep-all; }
 .standings-table tr.unreconciled { background: #fff4da; }
-.badge { margin-left: 5px; padding: 2px 6px; display: inline-block; color: #fff; background: var(--muted); border-radius: 999px; font-size: .75rem; font-weight: 900; white-space: nowrap; }
+.badge { margin-left: 5px; padding: 2px 6px; display: inline-block; color: #fff; background: var(--muted); border-radius: 999px; font-size: .875rem; font-weight: 900; white-space: nowrap; }
 .champion-badge { background: #9b6413; }
 .relegated-badge { background: var(--danger); }
-.row-note { display: block; color: #744f10; line-height: 1.35; }
+.row-note { display: block; color: #744f10; font-size: .875rem; line-height: 1.35; }
 .plain-note, .source-note, .special-note { padding: 10px 14px; background: #fff4da; border-left: 5px solid var(--accent); border-radius: 6px; }
 .footnotes { margin: 16px 0 0; padding-left: 1.35rem; }
 .footnotes li { margin-top: 7px; }
@@ -104,8 +107,13 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .scorer-list li { min-width: 0; min-height: 50px; padding: 4px 8px; display: grid; grid-template-columns: 3.2rem minmax(0, 1fr) minmax(0, 1fr) auto; align-items: center; gap: 8px 12px; border-bottom: 1px solid var(--border); }
 .club-select { min-width: min(100%, 28rem); min-height: 48px; margin: 0 0 16px 10px; padding: 7px 38px 7px 12px; color: var(--ink); background: var(--surface); border: 2px solid var(--primary-bright); border-radius: 10px; }
 .match-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-.match-row { min-width: 0; padding: 7px 9px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; background: var(--surface-strong); border-radius: 10px; }
-.match-row .club-link:last-child { justify-content: flex-end; text-align: right; }
+.match-row { min-width: 0; padding: 7px 9px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto; align-items: center; gap: 8px; background: var(--surface); border-radius: 10px; }
+.match-row > .club-link:nth-child(3) { justify-content: flex-end; text-align: right; }
+.match-draw, .match-loss { background: var(--surface); }
+.match-win { background: var(--win-soft); border-left: 4px solid var(--primary-bright); }
+.result-mark { min-width: 1.8rem; padding: 2px 5px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--muted); border-radius: 999px; font-size: .875rem; font-weight: 900; line-height: 1.35; white-space: nowrap; }
+.result-win { background: var(--primary-bright); }
+.result-loss { background: var(--danger); }
 .score-link { min-width: 3.7rem; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--primary); border-radius: 8px; font-size: 1.05rem; font-weight: 900; text-decoration: none; white-space: nowrap; }
 
 .match-hero { min-height: 180px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 22px; text-align: center; }
@@ -122,6 +130,8 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .title-total { display: block; margin-bottom: 12px; color: #9b6413; font-size: 2rem; }
 .season-chip-list { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; list-style: none; }
 .season-chip-list li { padding: 5px 10px; background: var(--surface-strong); border-radius: 999px; font-weight: 800; }
+.season-chip-list .extra-title { border-radius: 12px; }
+.title-note { display: block; font-size: .875rem; font-weight: 600; }
 .lineage-list li { min-height: 44px; display: flex; align-items: center; gap: 9px; }
 .position-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 20px; }
 .position-list li { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); }
@@ -133,6 +143,8 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .opponents-table summary .club-link { vertical-align: middle; }
 .opponent-matches { margin: 5px 0 10px; padding-left: 1.25rem; }
 .opponent-matches li { margin: 3px 0; }
+.opponent-match-row { min-height: 44px; padding: 3px 5px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; border-radius: 7px; }
+.opponent-match-row a { min-width: 0; overflow-wrap: anywhere; }
 .club-scorers li { grid-template-columns: 3.2rem minmax(0, 1fr) auto; }
 
 .credit-list { display: grid; gap: 8px; }

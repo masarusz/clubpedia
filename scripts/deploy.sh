@@ -53,7 +53,9 @@ PATTERNS=(
   "data/h/*.json"
   "data/o/*.json"
   "data/p/*.json"
-  "assets/*.png"
+  "assets/*.svg"
+  "assets/flags/*.svg"
+  "assets/flags/LICENSE-flag-icons.txt"
 )
 FILES=()
 shopt -s nullglob

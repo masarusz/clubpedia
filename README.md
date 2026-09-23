@@ -1,6 +1,6 @@
 # Clubpedia（クラブペディア）
 
-**5大リーグ大図鑑** — a kid-friendly encyclopedia of Europe's big five football
+**欧州5大リーグ大図鑑** — a kid-friendly encyclopedia of Europe's big five football
 leagues (England, Spain, Germany, Italy, France), 1992-93 to 2025-26, in
 Japanese: seasons, final tables, matches, clubs and players, plus every Japanese
 player who has played in those leagues. Built for two children (aged 8 and 10)
@@ -27,4 +27,8 @@ used. Code is MIT — see [LICENSE](LICENSE).
 
 ## Changelog
 
-No releases yet.
+- **v0.1.2** — First localhost release. Every season of the five leagues from
+  1992-93 to 2025-26 with official final tables, results and scorers; league
+  pages with every champion since each league began; club pages with titles,
+  positions and head-to-head records (wins highlighted); national flags;
+  a credits page. Not yet published.

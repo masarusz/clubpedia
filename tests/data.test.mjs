@@ -69,6 +69,27 @@ export function register(test, equal, deepEqual) {
     const french2019 = JSON.parse(await readFile(join(DATA, 's/fr-2019.json'), 'utf8'));
     equal(french2019.matches.length, 279);
   });
+  test('published title totals follow printed counts and club outcomes follow rulings', async () => {
+    const marseille = JSON.parse(await readFile(join(DATA, 'c/Q132885.json'), 'utf8'));
+    equal(marseille.titleCount, 10, 'Marseille includes the pre-coverage 1928-29 title');
+    const lillois = JSON.parse(await readFile(join(DATA, 'c/Q2338486.json'), 'utf8'));
+    equal(lillois.titleCount, 2, 'Olympique Lillois includes its pre-coverage amateur title');
+    const valenciennes = JSON.parse(await readFile(join(DATA, 'c/Q212269.json'), 'utf8'));
+    const valenciennesIndex = valenciennes.headToHead.Q132885.matches.indexOf('fr-1992-Q212269-Q132885');
+    equal(valenciennes.headToHead.Q132885.outcomes[valenciennesIndex], 'l', 'double defeat is a loss for Valenciennes');
+    const marseilleIndex = marseille.headToHead.Q212269.matches.indexOf('fr-1992-Q212269-Q132885');
+    equal(marseille.headToHead.Q212269.outcomes[marseilleIndex], 'l', 'double defeat is a loss for Marseille');
+  });
+  test('every club title total equals its complete list of title chips', async () => {
+    const mismatches = [];
+    for (const name of (await readdir(join(DATA, 'c'))).filter((value) => value.endsWith('.json')).sort()) {
+      const club = JSON.parse(await readFile(join(DATA, 'c', name), 'utf8'));
+      if (club.titleCount !== club.championSeasons.length) {
+        mismatches.push(`${club.id} ${club.names.ja}: ${club.titleCount} != ${club.championSeasons.length}`);
+      }
+    }
+    deepEqual(mismatches, [], 'title count/list mismatches');
+  });
   test('all five reviewed action types are represented in generated data', async () => {
     const corrected = JSON.parse(await readFile(join(DATA, 's/es-1999.json'), 'utf8'));
     const correctedMatch = corrected.matches.find((match) => match.key === 'es-1999-Q223620-Q7156');

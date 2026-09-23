@@ -1,10 +1,30 @@
-import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.1.0';
-import { minuteLabel, playerName, seasonLabel, signed } from './format.js?v=0.1.0';
-import { STRINGS } from './strings.js?v=0.1.0';
+import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.1.2';
+import { minuteLabel, playerName, seasonLabel, signed } from './format.js?v=0.1.2';
+import { STRINGS } from './strings.js?v=0.1.2';
+import { VERSION } from './version.js?v=0.1.2';
 
 const LEAGUE_NAMES = Object.freeze({
   en: 'プレミアリーグ', es: 'ラ・リーガ', de: 'ブンデスリーガ', it: 'セリエA', fr: 'リーグ・アン',
 });
+
+const LEAGUE_COUNTRIES = Object.freeze({
+  en: { name: 'イングランド', flag: 'gb-eng.svg' },
+  es: { name: 'スペイン', flag: 'es.svg' },
+  de: { name: 'ドイツ', flag: 'de.svg' },
+  it: { name: 'イタリア', flag: 'it.svg' },
+  fr: { name: 'フランス', flag: 'fr.svg' },
+});
+
+function leagueFlag(league) {
+  const country = LEAGUE_COUNTRIES[league];
+  return el('img', {
+    class: 'league-flag', src: `assets/flags/${country.flag}?v=${VERSION}`, alt: country.name, width: 36, height: 27,
+  });
+}
+
+function leagueTitle(league) {
+  return [leagueFlag(league), text(LEAGUE_NAMES[league])];
+}
 
 function chip(colour) {
   const node = el('span', { class: 'club-chip', role: 'presentation' });
@@ -59,8 +79,7 @@ export function homeView(index) {
   const cards = index.leagues.map((league) => {
     const champion = league.latest?.champion;
     return el('a', { class: `league-card league-${league.id}`, href: `#/l/${league.id}` }, [
-      el('span', { class: 'league-code' }, league.id.toUpperCase()),
-      el('h2', {}, league.name),
+      el('div', { class: 'league-card-title' }, [leagueFlag(league.id), el('h2', {}, league.name)]),
       el('p', { class: 'latest-season' }, `${league.latest?.season ?? ''}シーズン`),
       champion
         ? el('p', { class: 'latest-champion' }, [chip(champion.colour), text(`優勝 ${champion.name}`)])
@@ -68,7 +87,7 @@ export function homeView(index) {
     ]);
   });
   return el('section', { class: 'page home-page' }, [
-    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, 'ヨーロッパ'), el('h1', {}, '5大リーグ')]),
+    el('div', { class: 'page-heading' }, [el('h1', {}, '欧州5大リーグ')]),
     el('div', { class: 'league-grid' }, cards),
   ]);
 }
@@ -85,11 +104,14 @@ export function leagueView(league, index, history, clubs, players) {
   ]));
 
   const champions = [...history.champions].sort((a, b) => b.season.localeCompare(a.season));
-  const counts = new Map();
+  const entryCounts = new Map();
+  const printedCounts = new Map();
   for (const item of champions) if (item.champion) {
     const id = canonicalClub(item.champion, clubs);
-    counts.set(id, (counts.get(id) ?? 0) + 1);
+    entryCounts.set(id, (entryCounts.get(id) ?? 0) + 1);
+    if (item.printedCount != null) printedCounts.set(id, Math.max(printedCounts.get(id) ?? 0, item.printedCount));
   }
+  const counts = new Map([...entryCounts].map(([id, count]) => [id, Math.max(count, printedCounts.get(id) ?? 0)]));
   let previousCount = null;
   let previousRank = 0;
   const ranking = [...counts].sort((a, b) => b[1] - a[1] || clubName(clubs[a[0]], a[0]).localeCompare(clubName(clubs[b[0]], b[0]), 'ja'))
@@ -101,7 +123,7 @@ export function leagueView(league, index, history, clubs, players) {
     });
 
   return el('article', { class: 'page league-page' }, [
-    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, league.toUpperCase()), el('h1', {}, LEAGUE_NAMES[league])]),
+    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, LEAGUE_COUNTRIES[league].name), el('h1', { class: 'league-heading' }, leagueTitle(league))]),
     section('シーズン', el('ol', { class: 'season-list' }, seasonRows), 'season-panel'),
     section('優勝回数', el('ol', { class: 'title-ranking' }, ranking), 'title-panel'),
     section('歴代優勝チーム', el('ol', { class: 'history-list' }, champions.map((item) => el('li', {}, [
@@ -121,11 +143,26 @@ function deductionReason(reason) {
   return '規則により勝点が引かれました。';
 }
 
-function matchRow(match, clubs) {
-  return el('li', { class: 'match-row' }, [
+function matchResult(match, selectedClub) {
+  if (match.status === 'double-defeat') return 'loss';
+  if (match.status === 'awarded') return match.winner === selectedClub ? 'win' : 'loss';
+  const selectedGoals = match.home === selectedClub ? match.homeGoals : match.awayGoals;
+  const opposingGoals = match.home === selectedClub ? match.awayGoals : match.homeGoals;
+  return selectedGoals > opposingGoals ? 'win' : selectedGoals < opposingGoals ? 'loss' : 'draw';
+}
+
+function resultMark(result) {
+  const labels = { win: '勝', draw: '分', loss: '負' };
+  return el('span', { class: `result-mark result-${result}` }, labels[result]);
+}
+
+function matchRow(match, clubs, selectedClub) {
+  const result = matchResult(match, selectedClub);
+  return el('li', { class: `match-row match-${result}` }, [
     clubLink(match.home, clubs),
     el('a', { class: 'score-link', href: `#/m/${match.key}` }, `${match.homeGoals}–${match.awayGoals}`),
     clubLink(match.away, clubs),
+    resultMark(result),
   ]);
 }
 
@@ -146,14 +183,14 @@ export function seasonView(season, clubs, players) {
   const results = el('ol', { class: 'match-list' });
   const renderMatches = () => {
     const selected = selector.value || season.table[0].club;
-    results.replaceChildren(...season.matches.filter((match) => match.home === selected || match.away === selected).map((match) => matchRow(match, clubs)));
+    results.replaceChildren(...season.matches.filter((match) => match.home === selected || match.away === selected).map((match) => matchRow(match, clubs, selected)));
   };
   selector.addEventListener('change', renderMatches);
   if (!selector.value) selector.value = season.table[0].club;
   renderMatches();
 
   return el('article', { class: 'page season-page' }, [
-    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, LEAGUE_NAMES[season.league]), el('h1', {}, seasonLabel(season.year))]),
+    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow league-eyebrow' }, leagueTitle(season.league)), el('h1', {}, seasonLabel(season.year))]),
     season.champion ? el('p', { class: 'season-winner panel' }, [text('優勝 '), clubLink(season.champion, clubs)]) : el('p', { class: 'season-winner panel no-champion' }, '優勝チームなし'),
     section('順位表', [el('div', { class: 'table-shell' }, table), season.pointSystem?.win === 2 ? el('p', { class: 'plain-note' }, 'このころは勝ちが2点でした') : null,
       deductions.length ? el('ul', { class: 'footnotes' }, deductions.map((row) => el('li', {}, [clubLink(row.club, clubs), text(`は勝点が${Math.abs(row.adjustment)}引かれました。${deductionReason(row.adjustmentReason)}`)]))) : null], 'standings-panel'),
@@ -181,6 +218,9 @@ export function matchView(season, match, clubs, players, openLiga = false) {
   const ruling = match.status === 'awarded'
     ? el('p', { class: 'special-note' }, `試合のあとで、${winnerName}の勝ちになりました${/^\d+[–-]\d+$/.test(match.pitchScore ?? '') ? `（グラウンドでは ${match.pitchScore}）` : ''}`)
     : match.status === 'double-defeat' ? el('p', { class: 'special-note' }, '両チームとも負けになりました') : null;
+  const scorerHeading = match.status === 'awarded' && /^\d+[–-]\d+$/.test(match.pitchScore ?? '')
+    ? `グラウンドでの得点（${match.pitchScore.replace('–', '-')}）`
+    : '得点者';
   return el('article', { class: 'page match-page' }, [
     el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, `${LEAGUE_NAMES[season.league]} ${seasonLabel(season.year)}`), el('h1', {}, '試合')]),
     el('section', { class: 'match-hero panel' }, [
@@ -189,7 +229,7 @@ export function matchView(season, match, clubs, players, openLiga = false) {
       clubLink(match.away, clubs, 'match-club'),
     ]),
     ruling,
-    section('得点者', homeEvents.length || awayEvents.length ? el('div', { class: 'scoring-columns' }, [
+    section(scorerHeading, homeEvents.length || awayEvents.length ? el('div', { class: 'scoring-columns' }, [
       el('div', {}, [el('h3', {}, clubName(clubs[match.home], match.home)), el('ol', { class: 'goal-list' }, scorerRows(homeEvents, players))]),
       el('div', {}, [el('h3', {}, clubName(clubs[match.away], match.away)), el('ol', { class: 'goal-list' }, scorerRows(awayEvents, players))]),
     ]) : el('p', {}, '得点者の記録なし'), 'goals-panel'),
@@ -203,13 +243,16 @@ export function clubView(club, relatedClubs, players) {
   const opponents = Object.entries(club.headToHead).sort((a, b) => b[1].p - a[1].p || clubName(relatedClubs[a[0]], a[0]).localeCompare(clubName(relatedClubs[b[0]], b[0]), 'ja'));
   return el('article', { class: 'page club-page' }, [
     el('div', { class: 'page-heading club-heading' }, [chip(club.colour), el('div', {}, [el('p', { class: 'eyebrow' }, leagues), el('h1', {}, club.names.ja)])]),
-    section('優勝回数', [el('strong', { class: 'title-total' }, `${titleItems.length}回`), titleItems.length ? el('ul', { class: 'season-chip-list' }, titleItems.map((item) => el('li', {}, item.season))) : el('p', {}, '優勝の記録なし')], 'club-titles'),
+    section('優勝回数', [el('strong', { class: 'title-total' }, `${club.titleCount ?? titleItems.length}回`), titleItems.length ? el('ul', { class: 'season-chip-list' }, titleItems.map((item) => el('li', { class: item.note ? 'extra-title' : null }, [item.season, item.note ? el('span', { class: 'title-note' }, item.note) : null]))) : el('p', {}, '優勝の記録なし')], 'club-titles'),
     club.lineage.length ? section('クラブのつながり', el('ul', { class: 'lineage-list' }, club.lineage.map((item) => el('li', {}, [text(item.relation === 'predecessor' ? '前身 ' : '後継 '), clubLink(item.club, relatedClubs)]))), 'lineage-panel') : null,
     section('シーズン順位', el('ol', { class: 'position-list' }, club.positions.map((item) => el('li', {}, [el('a', { href: `#/s/${item.season.slice(0, 2)}/${item.season.slice(3)}` }, `${item.season.slice(3)}–${String(Number(item.season.slice(3)) + 1).slice(-2)}シーズン`), el('strong', {}, `${item.position}位`)]))), 'positions-panel'),
     section('対戦成績', el('div', { class: 'opponents-table-wrap' }, el('table', { class: 'opponents-table' }, [
       el('thead', {}, el('tr', {}, ['クラブ', '試合', '勝', '分', '負', '得点', '失点'].map((label) => el('th', { scope: 'col' }, label)))),
       el('tbody', {}, opponents.map(([opponent, stats]) => el('tr', {}, [
-        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, [...stats.matches].reverse().map((key) => el('li', {}, el('a', { href: `#/m/${key}` }, `${key.slice(3, 7)}–${String(Number(key.slice(3, 7)) + 1).slice(-2)}シーズンの試合`))))])),
+        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, stats.matches.map((key, indexValue) => ({ key, result: { w: 'win', d: 'draw', l: 'loss' }[stats.outcomes[indexValue]] })).reverse().map((match) => el('li', { class: `opponent-match-row match-${match.result}` }, [
+          el('a', { href: `#/m/${match.key}` }, `${match.key.slice(3, 7)}–${String(Number(match.key.slice(3, 7)) + 1).slice(-2)}シーズンの試合`),
+          resultMark(match.result),
+        ])))])),
         ...['p', 'w', 'd', 'l', 'gf', 'ga'].map((key) => el('td', {}, String(stats[key]))),
       ]))),
     ])), 'head-to-head-panel'),
@@ -224,6 +267,7 @@ export function creditsView() {
       el('li', {}, [el('a', { href: 'https://en.wikipedia.org/' }, '英語版Wikipedia'), text('・'), el('a', { href: 'https://ja.wikipedia.org/' }, '日本語版Wikipedia'), text(' — CC BY-SA 4.0')]),
       el('li', {}, [el('a', { href: 'https://www.wikidata.org/' }, 'Wikidata'), text(' — CC0')]),
       el('li', {}, [el('a', { href: 'https://openligadb.de/' }, 'OpenLigaDB'), text(' — ODbL 1.0')]),
+      el('li', {}, [el('a', { href: 'https://github.com/lipis/flag-icons' }, 'flag-icons'), text(' — MIT License')]),
     ])),
     section('変更したところ', el('p', {}, '必要な情報を選び、整理し、クラブと選手にキーを付け、日本語名を加えています。')),
     section('コード', el('p', {}, [text('サイトのコードは '), el('a', { href: 'https://github.com/masarusz/clubpedia' }, 'GitHub'), text(' で公開しています。') ])),

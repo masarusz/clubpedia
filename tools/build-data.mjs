@@ -348,6 +348,7 @@ export async function build() {
     colour: clubColours.get(id),
     leagues: [...new Set(names.seasons.map((season) => season.slice(0, 2)))].sort(),
     lineage: lineageFor(id),
+    titleCount: 0,
     championSeasons: [],
     positions: [],
     headToHead: {},
@@ -355,16 +356,40 @@ export async function build() {
   }]));
   for (const [league, champions] of Object.entries(championsByLeague)) for (const item of champions) if (item.champion) {
     const canonical = successorClub(item.champion, previousClubs);
-    if (clubData.has(canonical)) clubData.get(canonical).championSeasons.push({ league, season: item.season, ...(canonical !== item.champion ? { predecessor: item.champion } : {}) });
+    if (clubData.has(canonical)) {
+      const data = clubData.get(canonical);
+      data.championSeasons.push({ league, season: item.season, ...(canonical !== item.champion ? { predecessor: item.champion } : {}) });
+      data.titleCount = item.printedCount == null ? data.titleCount + 1 : Math.max(data.titleCount, item.printedCount);
+    }
+  }
+  for (const exception of countExceptions) {
+    const extraTitles = exception.extraTitles ?? [];
+    if (!extraTitles.length) continue;
+    if (exception.offset <= 0 || extraTitles.length !== exception.offset) {
+      throw new Error(`Champion-count exception ${exception.club} must identify one extra title for each positive offset`);
+    }
+    const canonical = successorClub(exception.club, previousClubs);
+    const data = clubData.get(canonical);
+    if (!data) throw new Error(`Champion-count exception refers to unknown club ${exception.club}`);
+    for (const title of extraTitles) {
+      if (!/^\d{4}–\d{2}$/.test(title.season) || !title.note) {
+        throw new Error(`Champion-count exception ${exception.club} has an invalid extra title`);
+      }
+      data.championSeasons.push({ league: exception.league, season: title.season, note: title.note });
+    }
   }
   for (const season of seasons) {
     for (const row of season.table) clubData.get(row.club).positions.push({ season: season.id, position: row.position });
     for (const match of season.matches) for (const homeSide of [true, false]) {
       const club = homeSide ? match.home : match.away; const opponent = homeSide ? match.away : match.home;
       const gf = homeSide ? match.homeGoals : match.awayGoals; const ga = homeSide ? match.awayGoals : match.homeGoals;
-      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [] };
-      h2h.p += 1; h2h.gf += gf; h2h.ga += ga; h2h.matches.push(match.key);
-      const result = matchOutcome(match)[homeSide ? 'home' : 'away'];
+      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [], outcomes: '' };
+      h2h.p += 1; h2h.gf += gf; h2h.ga += ga;
+      const result = match.status === 'double-defeat'
+        ? { w: 0, d: 0, l: 1 }
+        : matchOutcome(match)[homeSide ? 'home' : 'away'];
+      h2h.matches.push(match.key);
+      h2h.outcomes += result.w ? 'w' : result.d ? 'd' : 'l';
       h2h.w += result.w; h2h.d += result.d; h2h.l += result.l;
       clubData.get(club).headToHead[opponent] = h2h;
     }

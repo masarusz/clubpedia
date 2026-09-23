@@ -65,7 +65,7 @@ export function createStaticServer(directory) {
   });
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const [portText, directory] = process.argv.slice(2);
   const port = Number(portText);
   if (!Number.isInteger(port) || port < 1 || port > 65535 || !directory) {

@@ -1,5 +1,5 @@
 export const STRINGS = Object.freeze({
-  subtitle: '5{大|だい}リーグ{大図鑑|だいずかん}',
+  subtitle: '{欧州|おうしゅう}5{大|だい}リーグ{大図鑑|だいずかん}',
   home: 'ホーム',
   credits: 'クレジット',
   loading: '{読|よ}み{込|こ}み{中|ちゅう}…',
