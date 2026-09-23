@@ -43,6 +43,9 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v1.0.0** — Complete: every season, table, match, club and player of the
+  five leagues from 1992-93 to 2025-26, every Japanese player, search,
+  rankings, 今日は何の日, and 5,458 player photos, each checked by eye and credited.
 - **v0.3.4** — 4,253 player photos; photo credits show the plain author name
   instead of wiki signatures.
 - **v0.3.3** — 3,118 player photos; player data split into smaller files so
