@@ -492,18 +492,8 @@
             "player": "Q219354"
           },
           {
-            "display": "Rush",
-            "minute": "85",
-            "player": "Q219354"
-          },
-          {
             "display": "Barnes",
             "minute": "44",
-            "player": "Q10536"
-          },
-          {
-            "display": "Barnes",
-            "minute": "88",
             "player": "Q10536"
           },
           {
@@ -516,6 +506,16 @@
             "minute": "82",
             "penalty": true,
             "player": "Q762449"
+          },
+          {
+            "display": "Rush",
+            "minute": "85",
+            "player": "Q219354"
+          },
+          {
+            "display": "Barnes",
+            "minute": "88",
+            "player": "Q10536"
           }
         ]
       },
@@ -567,14 +567,14 @@
             "player": "Q294501"
           },
           {
-            "display": "McManaman",
-            "minute": "19",
-            "player": "Q294501"
-          },
-          {
             "display": "Marsh",
             "minute": "9",
             "player": "Q1338918"
+          },
+          {
+            "display": "McManaman",
+            "minute": "19",
+            "player": "Q294501"
           },
           {
             "display": "Rosenthal",
@@ -1157,14 +1157,14 @@
             "player": "Q545303"
           },
           {
-            "display": "Saunders",
-            "minute": "74",
-            "player": "Q545303"
-          },
-          {
             "display": "Atkinson",
             "minute": "71",
             "player": "Q494913"
+          },
+          {
+            "display": "Saunders",
+            "minute": "74",
+            "player": "Q545303"
           }
         ],
         "home": [
@@ -2890,14 +2890,14 @@
             "player": "Q1933404"
           },
           {
-            "display": "Newell",
-            "minute": "40",
-            "player": "Q1933404"
-          },
-          {
             "display": "Gallacher",
             "minute": "15",
             "player": "Q520644"
+          },
+          {
+            "display": "Newell",
+            "minute": "40",
+            "player": "Q1933404"
           }
         ]
       },
@@ -4101,12 +4101,12 @@
           {
             "display": "Quinn",
             "minute": "52",
-            "player": "Q3395220"
+            "player": null
           },
           {
             "display": "Quinn",
             "minute": "55",
-            "player": "Q3395220"
+            "player": null
           },
           {
             "display": "Rosario",
@@ -5520,11 +5520,6 @@
             "player": "Q1900410"
           },
           {
-            "display": "Robins",
-            "minute": "84",
-            "player": "Q1900410"
-          },
-          {
             "display": "Phillips",
             "minute": "72",
             "player": "Q194645"
@@ -5533,6 +5528,11 @@
             "display": "Fox",
             "minute": "82",
             "player": "Q2756563"
+          },
+          {
+            "display": "Robins",
+            "minute": "84",
+            "player": "Q1900410"
           }
         ],
         "home": [
@@ -6574,10 +6574,6 @@
         "goals": 17,
         "id": "Q3856930",
         "topScorerRank": 4
-      },
-      {
-        "goals": 2,
-        "id": "Q3395220"
       },
       {
         "goals": 1,

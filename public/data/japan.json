@@ -116,9 +116,8 @@
       "en": "Anrie Chase",
       "id": "Q110617216",
       "ja": {
-        "kanji": "チェイス アンリ",
-        "mode": "kanji",
-        "ruby": null
+        "display": "チェイス アンリ",
+        "mode": "katakana"
       },
       "seasons": [
         {
@@ -157,6 +156,25 @@
       ]
     },
     {
+      "birthDate": "2004-09-04",
+      "en": "Kōta Takai",
+      "id": "Q111113892",
+      "ja": {
+        "kanji": "高井幸大",
+        "mode": "kanji",
+        "ruby": "{高井|たかい} {幸大|こうた}"
+      },
+      "seasons": [
+        {
+          "apps": 8,
+          "club": "Q101959",
+          "goals": 0,
+          "league": "de",
+          "season": "2025–26"
+        }
+      ]
+    },
+    {
       "birthDate": "2006-10-16",
       "en": "Ryūnosuke Satō",
       "id": "Q111188721",
@@ -174,6 +192,28 @@
           "season": "2026–27"
         }
       ]
+    },
+    {
+      "birthDate": "2000-04-08",
+      "en": "Kaito Mizuta",
+      "id": "Q114075863",
+      "ja": {
+        "kanji": "水多海斗",
+        "mode": "kanji",
+        "ruby": "{水多|みずた} {海斗|かいと}"
+      },
+      "seasons": []
+    },
+    {
+      "birthDate": "2005-06-03",
+      "en": "Keisuke Gotō",
+      "id": "Q114736627",
+      "ja": {
+        "kanji": "後藤啓介",
+        "mode": "kanji",
+        "ruby": "{後藤|ごとう} {啓介|けいすけ}"
+      },
+      "seasons": []
     },
     {
       "birthDate": "1994-11-10",
@@ -279,7 +319,7 @@
       "seasons": [
         {
           "apps": 24,
-          "club": null,
+          "club": "Q501245",
           "goals": 1,
           "league": "it",
           "season": "1999–00"
@@ -336,14 +376,14 @@
       "seasons": [
         {
           "apps": 33,
-          "club": null,
+          "club": "Q16344",
           "goals": 10,
           "league": "it",
           "season": "1998–99"
         },
         {
           "apps": 15,
-          "club": null,
+          "club": "Q16344",
           "goals": 2,
           "league": "it",
           "season": "1999–00"
@@ -418,10 +458,43 @@
       "seasons": [
         {
           "apps": 0,
-          "club": null,
+          "club": "Q328658",
           "goals": 0,
           "league": "fr",
           "season": "2026–27"
+        }
+      ]
+    },
+    {
+      "birthDate": "1960-03-07",
+      "en": "Kazuo Ozaki",
+      "id": "Q1395840",
+      "ja": {
+        "kanji": "尾崎加寿夫",
+        "mode": "kanji",
+        "ruby": "{尾崎|おざき} {加寿夫|かずお}"
+      },
+      "seasons": [
+        {
+          "apps": 33,
+          "club": "Q105844",
+          "goals": 5,
+          "league": "de",
+          "season": "1983–84"
+        },
+        {
+          "apps": 23,
+          "club": "Q105844",
+          "goals": 4,
+          "league": "de",
+          "season": "1984–85"
+        },
+        {
+          "apps": 6,
+          "club": "Q6463",
+          "goals": 0,
+          "league": "de",
+          "season": "1988–89"
         }
       ]
     },
@@ -480,6 +553,32 @@
       ]
     },
     {
+      "birthDate": "1991-12-16",
+      "en": "Kazuki Nagasawa",
+      "id": "Q15427619",
+      "ja": {
+        "kanji": "長澤和輝",
+        "mode": "kanji",
+        "ruby": "{長澤|ながさわ} {和輝|かずき}"
+      },
+      "seasons": [
+        {
+          "apps": 10,
+          "club": "Q104770",
+          "goals": 0,
+          "league": "de",
+          "season": "2014–15"
+        },
+        {
+          "apps": 1,
+          "club": "Q104770",
+          "goals": 0,
+          "league": "de",
+          "season": "2015–16"
+        }
+      ]
+    },
+    {
       "birthDate": "1989-03-17",
       "en": "Shinji Kagawa",
       "id": "Q154708",
@@ -526,38 +625,64 @@
         },
         {
           "apps": 28,
-          "club": null,
+          "club": "Q41420",
           "goals": 5,
           "league": "de",
           "season": "2014–15"
         },
         {
           "apps": 29,
-          "club": null,
+          "club": "Q41420",
           "goals": 9,
           "league": "de",
           "season": "2015–16"
         },
         {
           "apps": 21,
-          "club": null,
+          "club": "Q41420",
           "goals": 1,
           "league": "de",
           "season": "2016–17"
         },
         {
           "apps": 19,
-          "club": null,
+          "club": "Q41420",
           "goals": 5,
           "league": "de",
           "season": "2017–18"
         },
         {
           "apps": 2,
-          "club": null,
+          "club": "Q41420",
           "goals": 0,
           "league": "de",
           "season": "2018–19"
+        }
+      ]
+    },
+    {
+      "birthDate": "1996-01-06",
+      "en": "Mitsuru Maruoka",
+      "id": "Q15524059",
+      "ja": {
+        "kanji": "丸岡満",
+        "mode": "kanji",
+        "ruby": "{丸岡|まるおか} {満|みつる}"
+      },
+      "seasons": [
+        {
+          "apps": 1,
+          "club": "Q41420",
+          "goals": 0,
+          "league": "de",
+          "season": "2014–15"
+        },
+        {
+          "apps": 0,
+          "club": "Q41420",
+          "goals": 0,
+          "league": "de",
+          "season": "2015–16"
         }
       ]
     },
@@ -706,7 +831,7 @@
       "ja": {
         "kanji": "オナイウ阿道",
         "mode": "kanji",
-        "ruby": null
+        "ruby": "オナイウ {阿道|あど}"
       },
       "seasons": [
         {
@@ -905,6 +1030,107 @@
       ]
     },
     {
+      "birthDate": "1997-01-27",
+      "en": "Kō Itakura",
+      "id": "Q20038711",
+      "ja": {
+        "kanji": "板倉滉",
+        "mode": "kanji",
+        "ruby": "{板倉|いたくら} {滉|こう}"
+      },
+      "seasons": [
+        {
+          "apps": 24,
+          "club": "Q101959",
+          "goals": 0,
+          "league": "de",
+          "season": "2022–23"
+        },
+        {
+          "apps": 20,
+          "club": "Q101959",
+          "goals": 3,
+          "league": "de",
+          "season": "2023–24"
+        },
+        {
+          "apps": 31,
+          "club": "Q101959",
+          "goals": 3,
+          "league": "de",
+          "season": "2024–25"
+        }
+      ]
+    },
+    {
+      "birthDate": "1996-08-05",
+      "en": "Daichi Kamada",
+      "id": "Q20039495",
+      "ja": {
+        "kanji": "鎌田大地",
+        "mode": "kanji",
+        "ruby": "{鎌田|かまだ} {大地|だいち}"
+      },
+      "seasons": [
+        {
+          "apps": 3,
+          "club": "Q38245",
+          "goals": 0,
+          "league": "de",
+          "season": "2017–18"
+        },
+        {
+          "apps": 28,
+          "club": "Q38245",
+          "goals": 2,
+          "league": "de",
+          "season": "2019–20"
+        },
+        {
+          "apps": 32,
+          "club": "Q38245",
+          "goals": 5,
+          "league": "de",
+          "season": "2020–21"
+        },
+        {
+          "apps": 32,
+          "club": "Q38245",
+          "goals": 4,
+          "league": "de",
+          "season": "2021–22"
+        },
+        {
+          "apps": 32,
+          "club": "Q38245",
+          "goals": 9,
+          "league": "de",
+          "season": "2022–23"
+        },
+        {
+          "apps": 29,
+          "club": "Q2609",
+          "goals": 2,
+          "league": "it",
+          "season": "2023–24"
+        },
+        {
+          "apps": 34,
+          "club": "Q19467",
+          "goals": 0,
+          "league": "en",
+          "season": "2024–25"
+        },
+        {
+          "apps": 28,
+          "club": "Q19467",
+          "goals": 0,
+          "league": "en",
+          "season": "2025–26"
+        }
+      ]
+    },
+    {
       "birthDate": "1992-05-28",
       "en": "Gaku Shibasaki",
       "id": "Q2011456",
@@ -927,6 +1153,46 @@
           "goals": 0,
           "league": "es",
           "season": "2018–19"
+        }
+      ]
+    },
+    {
+      "birthDate": "1986-06-13",
+      "en": "Keisuke Honda",
+      "id": "Q202054",
+      "ja": {
+        "kanji": "本田圭佑",
+        "mode": "kanji",
+        "ruby": "{本田|ほんだ} {圭佑|けいすけ}"
+      },
+      "seasons": [
+        {
+          "apps": 14,
+          "club": "Q1543",
+          "goals": 1,
+          "league": "it",
+          "season": "2013–14"
+        },
+        {
+          "apps": 29,
+          "club": "Q1543",
+          "goals": 6,
+          "league": "it",
+          "season": "2014–15"
+        },
+        {
+          "apps": 30,
+          "club": "Q1543",
+          "goals": 1,
+          "league": "it",
+          "season": "2015–16"
+        },
+        {
+          "apps": 8,
+          "club": "Q1543",
+          "goals": 1,
+          "league": "it",
+          "season": "2016–17"
         }
       ]
     },
@@ -985,6 +1251,25 @@
       ]
     },
     {
+      "birthDate": "1997-06-26",
+      "en": "Tatsuya Itō",
+      "id": "Q21018820",
+      "ja": {
+        "kanji": "伊藤達哉",
+        "mode": "kanji",
+        "ruby": "{伊藤|いとう} {達哉|たつや}"
+      },
+      "seasons": [
+        {
+          "apps": 20,
+          "club": "Q51974",
+          "goals": 0,
+          "league": "de",
+          "season": "2017–18"
+        }
+      ]
+    },
+    {
       "birthDate": "1998-11-05",
       "en": "Takehiro Tomiyasu",
       "id": "Q21286402",
@@ -996,21 +1281,21 @@
       "seasons": [
         {
           "apps": 29,
-          "club": null,
+          "club": "Q1893",
           "goals": 1,
           "league": "it",
           "season": "2019–20"
         },
         {
           "apps": 31,
-          "club": null,
+          "club": "Q1893",
           "goals": 2,
           "league": "it",
           "season": "2020–21"
         },
         {
           "apps": 1,
-          "club": null,
+          "club": "Q1893",
           "goals": 0,
           "league": "it",
           "season": "2021–22"
@@ -1278,7 +1563,7 @@
         },
         {
           "apps": 28,
-          "club": null,
+          "club": "Q8835",
           "goals": 1,
           "league": "es",
           "season": "2021–22"
@@ -1314,6 +1599,28 @@
       ]
     },
     {
+      "birthDate": "1998-09-10",
+      "en": "Ao Tanaka",
+      "id": "Q27920148",
+      "ja": {
+        "kanji": "田中碧",
+        "mode": "kanji",
+        "ruby": "{田中|たなか} {碧|あお}"
+      },
+      "seasons": []
+    },
+    {
+      "birthDate": "1997-10-20",
+      "en": "Daizen Maeda",
+      "id": "Q27990906",
+      "ja": {
+        "kanji": "前田大然",
+        "mode": "kanji",
+        "ruby": "{前田|まえだ} {大然|だいぜん}"
+      },
+      "seasons": []
+    },
+    {
       "birthDate": "2000-06-07",
       "en": "Ayumu Seko",
       "id": "Q27990922",
@@ -1325,7 +1632,7 @@
       "seasons": [
         {
           "apps": 30,
-          "club": null,
+          "club": "Q328658",
           "goals": 0,
           "league": "fr",
           "season": "2025–26"
@@ -1344,7 +1651,7 @@
       "seasons": [
         {
           "apps": 16,
-          "club": null,
+          "club": "Q6664",
           "goals": 0,
           "league": "it",
           "season": "2010–11"
@@ -1475,7 +1782,7 @@
     },
     {
       "birthDate": "1999-05-12",
-      "en": "Hiroki Itō (footballer, born 1999)",
+      "en": "Hiroki Itō",
       "id": "Q30933054",
       "ja": {
         "kanji": "伊藤洋輝",
@@ -1532,49 +1839,49 @@
       "seasons": [
         {
           "apps": 5,
-          "club": null,
+          "club": "Q2018",
           "goals": 1,
           "league": "it",
           "season": "2006–07"
         },
         {
           "apps": 14,
-          "club": null,
+          "club": "Q2018",
           "goals": 1,
           "league": "it",
           "season": "2007–08"
         },
         {
           "apps": 23,
-          "club": null,
+          "club": "Q2018",
           "goals": 7,
           "league": "it",
           "season": "2008–09"
         },
         {
           "apps": 27,
-          "club": null,
+          "club": "Q2018",
           "goals": 5,
           "league": "it",
           "season": "2009–10"
         },
         {
           "apps": 12,
-          "club": null,
+          "club": "Q2018",
           "goals": 1,
           "league": "it",
           "season": "2010–11"
         },
         {
           "apps": 18,
-          "club": null,
+          "club": "Q8416",
           "goals": 4,
           "league": "it",
           "season": "2011–12"
         },
         {
           "apps": 5,
-          "club": null,
+          "club": "Q2018",
           "goals": 0,
           "league": "it",
           "season": "2012–13"
@@ -1614,7 +1921,7 @@
         },
         {
           "apps": 1,
-          "club": null,
+          "club": "Q9617",
           "goals": 0,
           "league": "en",
           "season": "2013–14"
@@ -1865,14 +2172,14 @@
         },
         {
           "apps": 3,
-          "club": null,
+          "club": "Q18744",
           "goals": 0,
           "league": "en",
           "season": "2004–05"
         },
         {
           "apps": 22,
-          "club": null,
+          "club": "Q18744",
           "goals": 0,
           "league": "en",
           "season": "2005–06"
@@ -1912,17 +2219,24 @@
       "seasons": [
         {
           "apps": 13,
-          "club": null,
+          "club": "Q8835",
           "goals": 3,
           "league": "es",
           "season": "2004–05"
         },
         {
           "apps": 26,
-          "club": null,
+          "club": "Q8835",
           "goals": 2,
           "league": "es",
           "season": "2005–06"
+        },
+        {
+          "apps": 9,
+          "club": "Q101859",
+          "goals": 0,
+          "league": "de",
+          "season": "2008–09"
         }
       ]
     },
@@ -2169,21 +2483,21 @@
       "seasons": [
         {
           "apps": 15,
-          "club": null,
+          "club": "Q1457",
           "goals": 0,
           "league": "it",
           "season": "2003–04"
         },
         {
           "apps": 22,
-          "club": null,
+          "club": "Q29390",
           "goals": 0,
           "league": "it",
           "season": "2004–05"
         },
         {
           "apps": 7,
-          "club": null,
+          "club": "Q29390",
           "goals": 0,
           "league": "it",
           "season": "2005–06"
@@ -2309,8 +2623,19 @@
       ]
     },
     {
+      "birthDate": "1999-05-05",
+      "en": "Taichi Hara",
+      "id": "Q39244620",
+      "ja": {
+        "kanji": "原大智",
+        "mode": "kanji",
+        "ruby": "{原|はら} {大智|たいち}"
+      },
+      "seasons": []
+    },
+    {
       "birthDate": "1993-12-24",
-      "en": "Yūya Kubo (footballer)",
+      "en": "Yūya Kubo",
       "id": "Q4023294",
       "ja": {
         "kanji": "久保裕也",
@@ -2431,9 +2756,8 @@
       "en": "Mike Havenaar",
       "id": "Q467187",
       "ja": {
-        "kanji": "ハーフナー マイク",
-        "mode": "kanji",
-        "ruby": null
+        "display": "ハーフナー マイク",
+        "mode": "katakana"
       },
       "seasons": [
         {
@@ -2442,6 +2766,32 @@
           "goals": 0,
           "league": "es",
           "season": "2014–15"
+        }
+      ]
+    },
+    {
+      "birthDate": "1999-09-30",
+      "en": "Shūto Machino",
+      "id": "Q47582288",
+      "ja": {
+        "kanji": "町野修斗",
+        "mode": "kanji",
+        "ruby": "{町野|まちの} {修斗|しゅうと}"
+      },
+      "seasons": [
+        {
+          "apps": 32,
+          "club": "Q157828",
+          "goals": 11,
+          "league": "de",
+          "season": "2024–25"
+        },
+        {
+          "apps": 32,
+          "club": "Q101959",
+          "goals": 3,
+          "league": "de",
+          "season": "2025–26"
         }
       ]
     },
@@ -2785,6 +3135,17 @@
       ]
     },
     {
+      "birthDate": "1995-05-10",
+      "en": "Hidemasa Morita",
+      "id": "Q56254739",
+      "ja": {
+        "kanji": "守田英正",
+        "mode": "kanji",
+        "ruby": "{守田|もりた} {英正|ひでまさ}"
+      },
+      "seasons": []
+    },
+    {
       "birthDate": "1988-06-02",
       "en": "Takashi Inui",
       "id": "Q61886",
@@ -2859,17 +3220,65 @@
         },
         {
           "apps": 29,
-          "club": null,
+          "club": "Q770740",
           "goals": 2,
           "league": "es",
           "season": "2019–20"
         },
         {
           "apps": 28,
-          "club": null,
+          "club": "Q770740",
           "goals": 1,
           "league": "es",
           "season": "2020–21"
+        }
+      ]
+    },
+    {
+      "birthDate": "1996-10-22",
+      "en": "Tatsuhiro Sakamoto",
+      "id": "Q62085112",
+      "ja": {
+        "kanji": "坂元達裕",
+        "mode": "kanji",
+        "ruby": "{坂元|さかもと} {達裕|たつひろ}"
+      },
+      "seasons": []
+    },
+    {
+      "birthDate": "1998-08-28",
+      "en": "Ayase Ueda",
+      "id": "Q62085431",
+      "ja": {
+        "kanji": "上田綺世",
+        "mode": "kanji",
+        "ruby": "{上田|うえだ} {綺世|あやせ}"
+      },
+      "seasons": []
+    },
+    {
+      "birthDate": "2000-12-30",
+      "en": "Kaishū Sano",
+      "id": "Q65029955",
+      "ja": {
+        "kanji": "佐野海舟",
+        "mode": "kanji",
+        "ruby": "{佐野|さの} {海舟|かいしゅう}"
+      },
+      "seasons": [
+        {
+          "apps": 34,
+          "club": "Q105254",
+          "goals": 0,
+          "league": "de",
+          "season": "2024–25"
+        },
+        {
+          "apps": 34,
+          "club": "Q105254",
+          "goals": 1,
+          "league": "de",
+          "season": "2025–26"
         }
       ]
     },
@@ -2932,7 +3341,7 @@
       "ja": {
         "kanji": "藤田譲瑠チマ",
         "mode": "kanji",
-        "ruby": null
+        "ruby": "{藤田|ふじた} {譲瑠|じょえる}チマ"
       },
       "seasons": [
         {
@@ -3043,7 +3452,7 @@
         },
         {
           "apps": 11,
-          "club": null,
+          "club": "Q1130849",
           "goals": 3,
           "league": "en",
           "season": "2021–22"
@@ -3112,6 +3521,25 @@
       ]
     },
     {
+      "birthDate": "2001-07-30",
+      "en": "Sōta Kawasaki",
+      "id": "Q89448881",
+      "ja": {
+        "kanji": "川﨑颯太",
+        "mode": "kanji",
+        "ruby": "{川﨑|かわさき} {颯太|そうた}"
+      },
+      "seasons": [
+        {
+          "apps": 10,
+          "club": "Q105254",
+          "goals": 0,
+          "league": "de",
+          "season": "2025–26"
+        }
+      ]
+    },
+    {
       "birthDate": "1991-02-27",
       "en": "Hiroshi Ibusuki",
       "id": "Q942065",
@@ -3146,6 +3574,81 @@
           "goals": 0,
           "league": "de",
           "season": "2012–13"
+        }
+      ]
+    },
+    {
+      "birthDate": "1991-05-09",
+      "en": "Genki Haraguchi",
+      "id": "Q982163",
+      "ja": {
+        "kanji": "原口元気",
+        "mode": "kanji",
+        "ruby": "{原口|はらぐち} {元気|げんき}"
+      },
+      "seasons": [
+        {
+          "apps": 21,
+          "club": "Q102720",
+          "goals": 1,
+          "league": "de",
+          "season": "2014–15"
+        },
+        {
+          "apps": 32,
+          "club": "Q102720",
+          "goals": 2,
+          "league": "de",
+          "season": "2015–16"
+        },
+        {
+          "apps": 31,
+          "club": "Q102720",
+          "goals": 1,
+          "league": "de",
+          "season": "2016–17"
+        },
+        {
+          "apps": 7,
+          "club": "Q102720",
+          "goals": 0,
+          "league": "de",
+          "season": "2017–18"
+        },
+        {
+          "apps": 28,
+          "club": "Q33748",
+          "goals": 0,
+          "league": "de",
+          "season": "2018–19"
+        },
+        {
+          "apps": 30,
+          "club": "Q141971",
+          "goals": 2,
+          "league": "de",
+          "season": "2021–22"
+        },
+        {
+          "apps": 11,
+          "club": "Q141971",
+          "goals": 0,
+          "league": "de",
+          "season": "2022–23"
+        },
+        {
+          "apps": 11,
+          "club": "Q4512",
+          "goals": 0,
+          "league": "de",
+          "season": "2022–23"
+        },
+        {
+          "apps": 2,
+          "club": "Q4512",
+          "goals": 0,
+          "league": "de",
+          "season": "2023–24"
         }
       ]
     }

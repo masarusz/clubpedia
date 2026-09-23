@@ -4,8 +4,10 @@ import { parseRevisionResponse, safeName, stableJson } from '../tools/lib/source
 import { sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
 import { discrepancies } from '../tools/lib/core-data.mjs';
 import { leagueFootballBoxes, parseGoalSide } from '../tools/lib/scorers.mjs';
+import { compareGoalMinutes, mergeReadings } from '../tools/lib/build-scorers.mjs';
 import { parseDomesticSeasons, topFlightLeague } from '../tools/lib/japan-domestic.mjs';
 import { reconciledGoals } from '../tools/lib/openligadb.mjs';
+import { scorerIdentityIssue } from '../tools/lib/players.mjs';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -89,6 +91,27 @@ const mutations = [
     const reconciled = reconciledGoals(match, 0, 4);
     const tel = reconciled.away.find((event) => event.name === 'M. Tel');
     return tel?.minute === '90+4';
+  }],
+  ['club-first Japanese career table omitted (Kamada 2022-23)', () => {
+    const article = JSON.parse(readFileSync(resolve(CACHE, 'jawiki/%E9%8E%8C%E7%94%B0%E5%A4%A7%E5%9C%B0.json')));
+    return parseDomesticSeasons(article.content).some((item) => item.season === '2022–23' && item.apps === 32 && item.goals === 9);
+  }],
+  ['minute-only scorer disagreement rejected instead of preferring scorer club', () => {
+    const readings = [
+      { source: 'home', events: [{ player: 'p', display: 'P', minute: '74', isPenalty: false, ownGoal: false }] },
+      { source: 'away', events: [{ player: 'p', display: 'P', minute: '75', isPenalty: false, ownGoal: false }] },
+    ];
+    const merged = mergeReadings(readings, 'away', 'home');
+    return merged.ok && merged.events[0].minute === '75';
+  }],
+  ['football-minute ordering changed to lexical ordering', () => {
+    const events = [{ minute: '46' }, { minute: '45+2' }, { minute: '45' }, { minute: '90+11' }].sort(compareGoalMinutes);
+    return events.map((event) => event.minute).join(',') === '45,45+2,46,90+11';
+  }],
+  ['wrong-person occupation and age gates removed', () => {
+    const footballer = { claims: { P106: [{ mainsnak: { datavalue: { value: { id: 'Q937857' } } } }] } };
+    return scorerIdentityIssue({ entity: { claims: {} }, birth: { year: 1990 }, seasonYear: 2020 }) === 'not-footballer'
+      && scorerIdentityIssue({ entity: footballer, birth: { year: 1900 }, seasonYear: 2020 }) === 'age-over-45';
   }],
 ];
 

@@ -646,6 +646,28 @@
       "homeGoals": 1,
       "key": "es-1996-Q10308-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Šuker",
+            "minute": "16",
+            "player": "Q189217"
+          },
+          {
+            "display": "Šuker",
+            "minute": "78",
+            "penalty": true,
+            "player": "Q189217"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gus Poyet",
+            "minute": "50",
+            "player": "Q338595"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -838,13 +860,13 @@
             "player": "Q322073"
           },
           {
-            "display": "Penev",
-            "minute": "87",
+            "display": "Manuel",
+            "minute": "79",
             "player": null
           },
           {
-            "display": "Manuel",
-            "minute": "79",
+            "display": "Penev",
+            "minute": "87",
             "player": null
           }
         ],
@@ -1211,13 +1233,13 @@
             "player": null
           },
           {
-            "display": "Benjamin ,",
-            "minute": "38",
+            "display": "Fernando",
+            "minute": "15",
             "player": null
           },
           {
-            "display": "Fernando",
-            "minute": "15",
+            "display": "Benjamin ,",
+            "minute": "38",
             "player": null
           },
           {
@@ -1833,13 +1855,13 @@
             "player": null
           },
           {
-            "display": ",Fernando",
-            "minute": "69",
+            "display": "Quevedo",
+            "minute": "48",
             "player": null
           },
           {
-            "display": "Quevedo",
-            "minute": "48",
+            "display": ",Fernando",
+            "minute": "69",
             "player": null
           }
         ],
@@ -2055,22 +2077,6 @@
       "homeGoals": 1,
       "key": "es-1996-Q10333-Q7156",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Ronaldo",
-            "minute": "69",
-            "player": "Q529207"
-          }
-        ],
-        "home": [
-          {
-            "display": "Machado",
-            "minute": "40",
-            "player": "Q496376"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -2093,6 +2099,23 @@
       "homeGoals": 1,
       "key": "es-1996-Q10333-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Raúl",
+            "minute": "64",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Ortega",
+            "minute": "88",
+            "penalty": true,
+            "player": "Q296965"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2122,6 +2145,11 @@
             "player": null
           },
           {
+            "display": "Leandro ,",
+            "minute": "3",
+            "player": null
+          },
+          {
             "display": "Ortega ,",
             "minute": "26",
             "penalty": true,
@@ -2130,11 +2158,6 @@
           {
             "display": "Moya",
             "minute": "29",
-            "player": null
-          },
-          {
-            "display": "Leandro ,",
-            "minute": "3",
             "player": null
           },
           {
@@ -3581,13 +3604,13 @@
             "player": null
           },
           {
-            "display": "Maqueda ,",
-            "minute": "67",
+            "display": "Rivas",
+            "minute": "59",
             "player": null
           },
           {
-            "display": "Rivas",
-            "minute": "59",
+            "display": "Maqueda ,",
+            "minute": "67",
             "player": null
           }
         ]
@@ -4091,14 +4114,14 @@
             "player": "Q3325005"
           },
           {
-            "display": "Gudelj",
-            "minute": "75",
-            "player": "Q3325005"
-          },
-          {
             "display": "Geli",
             "minute": "68",
             "player": "Q3759283"
+          },
+          {
+            "display": "Gudelj",
+            "minute": "75",
+            "player": "Q3325005"
           }
         ],
         "home": []
@@ -4185,6 +4208,39 @@
       "homeGoals": 4,
       "key": "es-1996-Q7156-Q10308",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Garitano",
+            "minute": "81",
+            "penalty": true,
+            "player": "Q490518"
+          }
+        ],
+        "home": [
+          {
+            "display": "Abelardo",
+            "minute": "10",
+            "player": "Q318546"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "40",
+            "penalty": true,
+            "player": "Q529207"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "44",
+            "player": "Q529207"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "72",
+            "player": "Q529207"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4319,6 +4375,37 @@
       "homeGoals": 3,
       "key": "es-1996-Q7156-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ferreira",
+            "minute": "53",
+            "player": "Q3897989"
+          },
+          {
+            "display": "Karpin",
+            "minute": "58",
+            "player": "Q310571"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ronaldo",
+            "minute": "15",
+            "player": "Q529207"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "35",
+            "player": "Q529207"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "74",
+            "player": "Q529207"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4642,6 +4729,26 @@
       "homeGoals": 3,
       "key": "es-1996-Q7156-Q8723",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Óscar",
+            "minute": "43",
+            "player": "Q293353"
+          },
+          {
+            "display": "Stoichkov",
+            "minute": "74",
+            "player": "Q187125"
+          },
+          {
+            "display": "Luis Enrique",
+            "minute": "82",
+            "player": "Q222789"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5168,6 +5275,43 @@
       "homeGoals": 4,
       "key": "es-1996-Q8682-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Karpin",
+            "minute": "10",
+            "player": null
+          },
+          {
+            "display": "Mendieta",
+            "minute": "90",
+            "penalty": true,
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Suker",
+            "minute": "15",
+            "player": null
+          },
+          {
+            "display": "Suker",
+            "minute": "21",
+            "player": null
+          },
+          {
+            "display": "Suker",
+            "minute": "60",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "74",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5440,6 +5584,32 @@
       "homeGoals": 2,
       "key": "es-1996-Q8682-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Alfonso",
+            "minute": "6",
+            "player": "Q317322"
+          },
+          {
+            "display": "Finidi George",
+            "minute": "60",
+            "player": "Q379349"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mijatovic",
+            "minute": "18",
+            "player": "Q237964"
+          },
+          {
+            "display": "Panucci ,",
+            "minute": "52",
+            "player": "Q168287"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5449,31 +5619,6 @@
       "homeGoals": 4,
       "key": "es-1996-Q8682-Q8749",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Carlos",
-            "minute": "20",
-            "player": "Q429039"
-          },
-          {
-            "display": "Redondo",
-            "minute": "54",
-            "player": "Q295456"
-          },
-          {
-            "display": "Raúl",
-            "minute": "69",
-            "player": "Q11576"
-          },
-          {
-            "display": "Šuker",
-            "minute": "74",
-            "player": "Q189217"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -5729,11 +5874,6 @@
             "player": null
           },
           {
-            "display": "Ziganda ,",
-            "minute": "65",
-            "player": null
-          },
-          {
             "display": "Larrainzar",
             "minute": "34",
             "player": null
@@ -5741,6 +5881,11 @@
           {
             "display": "Guerrero ,",
             "minute": "60",
+            "player": null
+          },
+          {
+            "display": "Ziganda ,",
+            "minute": "65",
             "player": null
           },
           {
@@ -5835,13 +5980,8 @@
             "player": null
           },
           {
-            "display": "Guerrero ,,",
-            "minute": "40",
-            "player": null
-          },
-          {
-            "display": "Guerrero ,,",
-            "minute": "71",
+            "display": "Etxeberria",
+            "minute": "22",
             "player": null
           },
           {
@@ -5850,13 +5990,18 @@
             "player": null
           },
           {
+            "display": "Guerrero ,,",
+            "minute": "40",
+            "player": null
+          },
+          {
             "display": "Ziganda ,",
             "minute": "67",
             "player": null
           },
           {
-            "display": "Etxeberria",
-            "minute": "22",
+            "display": "Guerrero ,,",
+            "minute": "71",
             "player": null
           }
         ]
@@ -6300,6 +6445,21 @@
       "homeGoals": 0,
       "key": "es-1996-Q8701-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rivaldo",
+            "minute": "53",
+            "player": "Q483577"
+          },
+          {
+            "display": "Martins",
+            "minute": "74",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6373,14 +6533,14 @@
         "home": [
           {
             "display": "Alfonso",
-            "minute": "28",
-            "penalty": true,
-            "player": null
+            "minute": "4",
+            "player": "Q317322"
           },
           {
             "display": "Alfonso",
-            "minute": "4",
-            "player": "Q317322"
+            "minute": "28",
+            "penalty": true,
+            "player": null
           }
         ]
       },
@@ -6693,11 +6853,6 @@
             "player": null
           },
           {
-            "display": "Pier",
-            "minute": "71",
-            "player": null
-          },
-          {
             "display": "Roberto Rios",
             "minute": "53",
             "player": null
@@ -6705,6 +6860,11 @@
           {
             "display": "Roberto Rios",
             "minute": "67",
+            "player": null
+          },
+          {
+            "display": "Pier",
+            "minute": "71",
             "player": null
           }
         ]
@@ -7011,14 +7171,14 @@
             "player": "Q2778101"
           },
           {
-            "display": "Ratković",
-            "minute": "56",
-            "player": "Q2778101"
-          },
-          {
             "display": "Sánchez",
             "minute": "12",
             "player": "Q2447155"
+          },
+          {
+            "display": "Ratković",
+            "minute": "56",
+            "player": "Q2778101"
           },
           {
             "display": "Gudelj",
@@ -7288,31 +7448,6 @@
       "homeGoals": 4,
       "key": "es-1996-Q8749-Q8682",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Gudelj",
-            "minute": "10",
-            "player": "Q3325005"
-          },
-          {
-            "display": "Sánchez",
-            "minute": "48",
-            "player": "Q2447155"
-          },
-          {
-            "display": "Gudelj",
-            "minute": "8",
-            "player": "Q3325005"
-          },
-          {
-            "display": "Gudelj",
-            "minute": "89",
-            "player": "Q3325005"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -7683,6 +7818,10 @@
       "homeGoals": 0,
       "key": "es-1996-Q8760-Q8701",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8264,12 +8403,12 @@
           {
             "display": "Mijatovic",
             "minute": "22",
-            "player": "Q1932909"
+            "player": null
           },
           {
             "display": "Raúl",
             "minute": "78",
-            "player": "Q13415699"
+            "player": null
           }
         ],
         "home": [
@@ -8394,7 +8533,7 @@
         "id": "Q1340746"
       },
       {
-        "goals": 10,
+        "goals": 11,
         "id": "Q338595"
       },
       {
@@ -8415,6 +8554,10 @@
       },
       {
         "goals": 2,
+        "id": "Q928403"
+      },
+      {
+        "goals": 3,
         "id": "Q490518"
       },
       {
@@ -8428,16 +8571,16 @@
       {
         "goals": 2,
         "id": "Q2286919"
-      },
-      {
-        "goals": 2,
-        "id": "Q928403"
       }
     ],
     "Q10315": [
       {
         "goals": 2,
         "id": "Q313050"
+      },
+      {
+        "goals": 1,
+        "id": "Q3323711"
       },
       {
         "goals": 1,
@@ -8450,10 +8593,6 @@
       {
         "goals": 3,
         "id": "Q462237"
-      },
-      {
-        "goals": 1,
-        "id": "Q3323711"
       }
     ],
     "Q10319": [
@@ -8467,15 +8606,15 @@
       },
       {
         "goals": 1,
+        "id": "Q6748005"
+      },
+      {
+        "goals": 1,
         "id": "Q2783837"
       },
       {
         "goals": 1,
         "id": "Q2452996"
-      },
-      {
-        "goals": 1,
-        "id": "Q6748005"
       },
       {
         "goals": 16,
@@ -8511,12 +8650,16 @@
         "id": "Q295883"
       },
       {
-        "goals": 1,
-        "id": "Q496376"
+        "goals": 2,
+        "id": "Q296965"
       },
       {
         "goals": 1,
-        "id": "Q296965"
+        "id": "Q3897989"
+      },
+      {
+        "goals": 1,
+        "id": "Q310571"
       }
     ],
     "Q11963": [
@@ -8540,6 +8683,10 @@
     "Q12236": [
       {
         "goals": 1,
+        "id": "Q2561466"
+      },
+      {
+        "goals": 1,
         "id": "Q4001115"
       },
       {
@@ -8549,10 +8696,6 @@
       {
         "goals": 2,
         "id": "Q2606191"
-      },
-      {
-        "goals": 1,
-        "id": "Q2561466"
       }
     ],
     "Q12278": [
@@ -8620,8 +8763,13 @@
         "id": "Q325950"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q187125"
+      },
+      {
+        "goals": 17,
+        "id": "Q222789",
+        "topScorerRank": 7
       },
       {
         "goals": 1,
@@ -8633,28 +8781,27 @@
       },
       {
         "goals": 1,
-        "id": "Q342223"
+        "id": "Q318546"
       },
       {
-        "goals": 17,
-        "id": "Q222789",
-        "topScorerRank": 7
+        "goals": 1,
+        "id": "Q342223"
       },
       {
         "goals": 2,
         "id": "Q317004"
       },
       {
-        "goals": 3,
-        "id": "Q483145"
-      },
-      {
-        "goals": 3,
+        "goals": 4,
         "id": "Q293353"
       },
       {
         "goals": 2,
         "id": "Q943194"
+      },
+      {
+        "goals": 3,
+        "id": "Q483145"
       },
       {
         "goals": 34,
@@ -8692,7 +8839,7 @@
         "topScorerRank": 3
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q237964"
       },
       {
@@ -8700,20 +8847,12 @@
         "id": "Q545968"
       },
       {
-        "goals": 3,
+        "goals": 1,
+        "id": "Q168287"
+      },
+      {
+        "goals": 2,
         "id": "Q429039"
-      },
-      {
-        "goals": 1,
-        "id": "Q295456"
-      },
-      {
-        "goals": 1,
-        "id": "Q1932909"
-      },
-      {
-        "goals": 1,
-        "id": "Q13415699"
       }
     ],
     "Q8687": [
@@ -8742,12 +8881,12 @@
         "id": "Q263391"
       },
       {
-        "goals": 3,
-        "id": "Q62227"
-      },
-      {
         "goals": 1,
         "id": "Q624918"
+      },
+      {
+        "goals": 3,
+        "id": "Q62227"
       },
       {
         "goals": 2,
@@ -8764,7 +8903,7 @@
     ],
     "Q8723": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q379349"
       },
       {
@@ -8787,7 +8926,7 @@
         "id": "Q2778101"
       },
       {
-        "goals": 12,
+        "goals": 9,
         "id": "Q3325005"
       },
       {
@@ -8811,7 +8950,7 @@
         "id": "Q3391777"
       },
       {
-        "goals": 4,
+        "goals": 3,
         "id": "Q2447155"
       },
       {

@@ -28,6 +28,7 @@ export function articleJapaneseName(title, birthYear) {
 }
 
 const KATAKANA_ONLY = /^[ァ-ヺー＝\s]+$/u;
+const HAS_KANJI = /[\u3400-\u9fff\uf900-\ufaff]/u;
 
 /** Korean/Chinese kanji names are unreadable for the kids: prefer the ja
  * article's own katakana rendering if given (the infobox カタカナ表記 field),
@@ -68,6 +69,32 @@ export function rubyFromLead(content, expectedName) {
   const kanjiParts = kanji.split(/[\s　]+/u).filter(Boolean);
   const readingParts = reading.split(/[\s　]+/u).filter(Boolean);
   if (!kanjiParts.length || kanjiParts.length !== readingParts.length) return null;
-  if (!readingParts.every((part) => /^[ぁ-んー]+$/u.test(part))) return null;
-  return kanjiParts.map((part, index) => `{${part}|${readingParts[index]}}`).join(' ');
+  const rendered = [];
+  for (let index = 0; index < kanjiParts.length; index += 1) {
+    const written = kanjiParts[index];
+    const spoken = readingParts[index];
+    if (!HAS_KANJI.test(written)) {
+      if (normalizeJapaneseName(written) !== normalizeJapaneseName(spoken)) return null;
+      rendered.push(written);
+      continue;
+    }
+    // Mixed names keep the katakana portion literal.  The lead uses the same
+    // katakana in its reading (e.g. 譲瑠チマ / じょえるチマ), so only the
+    // kanji prefix needs ruby markup.
+    let commonSuffix = '';
+    const max = Math.min(written.length, spoken.length);
+    for (let size = 1; size <= max; size += 1) {
+      const suffix = written.slice(-size);
+      if (KATAKANA_ONLY.test(suffix) && spoken.endsWith(suffix)) commonSuffix = suffix;
+    }
+    const writtenBase = commonSuffix ? written.slice(0, -commonSuffix.length) : written;
+    const spokenBase = commonSuffix ? spoken.slice(0, -commonSuffix.length) : spoken;
+    if (!writtenBase || !spokenBase || !/^[ぁ-んー]+$/u.test(spokenBase)) return null;
+    rendered.push(`{${writtenBase}|${spokenBase}}${commonSuffix}`);
+  }
+  return rendered.join(' ');
+}
+
+export function needsJapaneseReading(name) {
+  return HAS_KANJI.test(String(name ?? ''));
 }

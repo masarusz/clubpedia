@@ -169,14 +169,14 @@
             "player": "Q26838056"
           },
           {
-            "display": "Dorgu",
-            "minute": "90+2",
-            "player": "Q121903982"
-          },
-          {
             "display": "Piccoli",
             "minute": "90",
             "player": "Q63244084"
+          },
+          {
+            "display": "Dorgu",
+            "minute": "90+2",
+            "player": "Q121903982"
           }
         ]
       },
@@ -363,14 +363,14 @@
             "player": "Q21484126"
           },
           {
-            "display": "Martínez",
-            "minute": "56",
-            "player": "Q21484126"
-          },
-          {
             "display": "Frattesi",
             "minute": "54",
             "player": "Q55366763"
+          },
+          {
+            "display": "Martínez",
+            "minute": "56",
+            "player": "Q21484126"
           },
           {
             "display": "De Vrij",
@@ -947,6 +947,16 @@
       "homeGoals": 1,
       "key": "it-2023-Q1422-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cambiaso",
+            "minute": "90+6",
+            "player": "Q69656941"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -960,6 +970,11 @@
         "away": [],
         "home": [
           {
+            "display": "Pulisic",
+            "minute": "6",
+            "player": "Q22279773"
+          },
+          {
             "display": "Giroud",
             "minute": "20",
             "player": "Q1911"
@@ -968,11 +983,6 @@
             "display": "Leão",
             "minute": "57",
             "player": "Q30055335"
-          },
-          {
-            "display": "Pulisic",
-            "minute": "6",
-            "player": "Q22279773"
           }
         ]
       },
@@ -1004,6 +1014,23 @@
       "homeGoals": 1,
       "key": "it-2023-Q1543-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Koopmeiners",
+            "minute": "42",
+            "penalty": true,
+            "player": "Q39498277"
+          }
+        ],
+        "home": [
+          {
+            "display": "Leão",
+            "minute": "3",
+            "player": "Q30055335"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1081,15 +1108,15 @@
       "scorers": {
         "away": [
           {
-            "display": "Ekuban",
-            "minute": "48",
-            "player": "Q16236115"
-          },
-          {
             "display": "Retegui",
             "minute": "5",
             "penalty": true,
             "player": "Q47002491"
+          },
+          {
+            "display": "Ekuban",
+            "minute": "48",
+            "player": "Q16236115"
           },
           {
             "display": "Thiaw",
@@ -1592,6 +1619,11 @@
       "scorers": {
         "away": [
           {
+            "display": "Belotti",
+            "minute": "6",
+            "player": "Q4754963"
+          },
+          {
             "display": "González",
             "minute": "19",
             "player": "Q43381082"
@@ -1599,11 +1631,6 @@
           {
             "display": "Belotti",
             "minute": "45+1",
-            "player": "Q4754963"
-          },
-          {
-            "display": "Belotti",
-            "minute": "6",
             "player": "Q4754963"
           }
         ],
@@ -1894,6 +1921,12 @@
         "away": [],
         "home": [
           {
+            "display": "Koopmeiners",
+            "minute": "8",
+            "penalty": true,
+            "player": "Q39498277"
+          },
+          {
             "display": "Éderson",
             "minute": "13",
             "player": "Q59150057"
@@ -1902,12 +1935,6 @@
             "display": "De Ketelaere",
             "minute": "14",
             "player": "Q68607008"
-          },
-          {
-            "display": "Koopmeiners",
-            "minute": "8",
-            "penalty": true,
-            "player": "Q39498277"
           },
           {
             "display": "Zappacosta",
@@ -2018,6 +2045,11 @@
         "away": [],
         "home": [
           {
+            "display": "Beukema",
+            "minute": "5",
+            "player": "Q40854589"
+          },
+          {
             "display": "Orsolini",
             "minute": "27",
             "player": "Q27881421"
@@ -2026,11 +2058,6 @@
             "display": "Orsolini",
             "minute": "49",
             "player": "Q27881421"
-          },
-          {
-            "display": "Beukema",
-            "minute": "5",
-            "player": "Q40854589"
           },
           {
             "display": "Odgaard",
@@ -2048,6 +2075,42 @@
       "homeGoals": 3,
       "key": "it-2023-Q1893-Q1422",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Chiesa",
+            "minute": "76",
+            "player": "Q26704703"
+          },
+          {
+            "display": "Milik",
+            "minute": "83",
+            "player": "Q137231"
+          },
+          {
+            "display": "Yıldız",
+            "minute": "84",
+            "player": "Q113184832"
+          }
+        ],
+        "home": [
+          {
+            "display": "Calafiori",
+            "minute": "2",
+            "player": "Q97999586"
+          },
+          {
+            "display": "Castro",
+            "minute": "4",
+            "player": "Q108114747"
+          },
+          {
+            "display": "Calafiori",
+            "minute": "53",
+            "player": "Q97999586"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3078,14 +3141,14 @@
         ],
         "home": [
           {
-            "display": "Duncan",
-            "minute": "25",
-            "player": "Q151518"
-          },
-          {
             "display": "González",
             "minute": "3",
             "player": "Q43381082"
+          },
+          {
+            "display": "Duncan",
+            "minute": "25",
+            "player": "Q151518"
           }
         ]
       },
@@ -3223,15 +3286,15 @@
         "away": [],
         "home": [
           {
+            "display": "González",
+            "minute": "3",
+            "player": "Q43381082"
+          },
+          {
             "display": "Dossena",
             "minute": "21",
             "ownGoal": true,
             "player": "Q28973485"
-          },
-          {
-            "display": "González",
-            "minute": "3",
-            "player": "Q43381082"
           },
           {
             "display": "Nzola",
@@ -3308,14 +3371,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Kvaratskhelia",
-            "minute": "57",
-            "player": "Q61780902"
-          },
-          {
             "display": "Rrahmani",
             "minute": "8",
             "player": "Q16147481"
+          },
+          {
+            "display": "Kvaratskhelia",
+            "minute": "57",
+            "player": "Q61780902"
           }
         ],
         "home": [
@@ -3552,6 +3615,12 @@
         "away": [],
         "home": [
           {
+            "display": "Beltrán",
+            "minute": "6",
+            "penalty": true,
+            "player": "Q59649459"
+          },
+          {
             "display": "Sottil",
             "minute": "18",
             "player": "Q58174760"
@@ -3560,12 +3629,6 @@
             "display": "Bonaventura",
             "minute": "56",
             "player": "Q726848"
-          },
-          {
-            "display": "Beltrán",
-            "minute": "6",
-            "penalty": true,
-            "player": "Q59649459"
           }
         ]
       },
@@ -3813,6 +3876,11 @@
       "scorers": {
         "away": [
           {
+            "display": "Biraghi",
+            "minute": "5",
+            "player": "Q824938"
+          },
+          {
             "display": "Bonaventura",
             "minute": "11",
             "player": "Q726848"
@@ -3821,11 +3889,6 @@
             "display": "González",
             "minute": "40",
             "player": "Q43381082"
-          },
-          {
-            "display": "Biraghi",
-            "minute": "5",
-            "player": "Q824938"
           },
           {
             "display": "Mandragora",
@@ -3914,14 +3977,14 @@
         ],
         "home": [
           {
-            "display": "Retegui",
-            "minute": "45",
-            "player": "Q47002491"
-          },
-          {
             "display": "Guðmundsson",
             "minute": "5",
             "player": "Q21171299"
+          },
+          {
+            "display": "Retegui",
+            "minute": "45",
+            "player": "Q47002491"
           },
           {
             "display": "Thorsby",
@@ -4239,15 +4302,15 @@
         ],
         "home": [
           {
-            "display": "Castellanos",
-            "minute": "11",
-            "player": "Q51133356"
-          },
-          {
             "display": "De Ketelaere",
             "minute": "5",
             "ownGoal": true,
             "player": "Q68607008"
+          },
+          {
+            "display": "Castellanos",
+            "minute": "11",
+            "player": "Q51133356"
           },
           {
             "display": "Vecino",
@@ -4463,14 +4526,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Thuram",
-            "minute": "66",
-            "player": "Q19903718"
-          },
-          {
             "display": "Martínez",
             "minute": "40",
             "player": "Q21484126"
+          },
+          {
+            "display": "Thuram",
+            "minute": "66",
+            "player": "Q19903718"
           }
         ],
         "home": []
@@ -4554,6 +4617,11 @@
         ],
         "home": [
           {
+            "display": "Felipe Anderson",
+            "minute": "7",
+            "player": "Q794628"
+          },
+          {
             "display": "Vecino",
             "minute": "14",
             "player": "Q2053358"
@@ -4561,11 +4629,6 @@
           {
             "display": "Felipe Anderson",
             "minute": "35",
-            "player": "Q794628"
-          },
-          {
-            "display": "Felipe Anderson",
-            "minute": "7",
             "player": "Q794628"
           },
           {
@@ -4738,14 +4801,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Posch",
-            "minute": "12",
-            "player": "Q41447930"
-          },
-          {
             "display": "Ndoye",
             "minute": "9",
             "player": "Q61439485"
+          },
+          {
+            "display": "Posch",
+            "minute": "12",
+            "player": "Q41447930"
           }
         ],
         "home": []
@@ -4792,14 +4855,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Bonaventura",
-            "minute": "63",
-            "player": "Q726848"
-          },
-          {
             "display": "Brekalo",
             "minute": "7",
             "player": "Q22342392"
+          },
+          {
+            "display": "Bonaventura",
+            "minute": "63",
+            "player": "Q726848"
           },
           {
             "display": "González",
@@ -5224,15 +5287,15 @@
       "scorers": {
         "away": [
           {
-            "display": "Leão",
-            "minute": "48",
-            "player": "Q30055335"
-          },
-          {
             "display": "Giroud",
             "minute": "9",
             "penalty": true,
             "player": "Q1911"
+          },
+          {
+            "display": "Leão",
+            "minute": "48",
+            "player": "Q30055335"
           }
         ],
         "home": [
@@ -5587,6 +5650,11 @@
             "player": "Q166317"
           },
           {
+            "display": "Sanches",
+            "minute": "8",
+            "player": "Q18394009"
+          },
+          {
             "display": "Grassi",
             "minute": "35",
             "ownGoal": true,
@@ -5596,11 +5664,6 @@
             "display": "Dybala",
             "minute": "55",
             "player": "Q166317"
-          },
-          {
-            "display": "Sanches",
-            "minute": "8",
-            "player": "Q18394009"
           },
           {
             "display": "Cristante",
@@ -5950,6 +6013,22 @@
       "homeGoals": 1,
       "key": "it-2023-Q2768-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lukaku",
+            "minute": "68",
+            "player": "Q313316"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zapata",
+            "minute": "85",
+            "player": "Q577481"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7204,14 +7283,14 @@
             "player": "Q196219"
           },
           {
-            "display": "Mkhitaryan",
-            "minute": "69",
-            "player": "Q196219"
-          },
-          {
             "display": "Thuram",
             "minute": "38",
             "player": "Q19903718"
+          },
+          {
+            "display": "Mkhitaryan",
+            "minute": "69",
+            "player": "Q196219"
           },
           {
             "display": "Çalhanoğlu",
@@ -7355,15 +7434,15 @@
             "player": "Q21484126"
           },
           {
-            "display": "Martínez",
-            "minute": "73",
-            "player": "Q21484126"
-          },
-          {
             "display": "Çalhanoğlu",
             "minute": "58",
             "penalty": true,
             "player": "Q763465"
+          },
+          {
+            "display": "Martínez",
+            "minute": "73",
+            "player": "Q21484126"
           }
         ]
       },
@@ -7771,14 +7850,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Koopmeiners",
-            "minute": "29",
-            "player": "Q39498277"
-          },
-          {
             "display": "Scamacca",
             "minute": "5",
             "player": "Q22237703"
+          },
+          {
+            "display": "Koopmeiners",
+            "minute": "29",
+            "player": "Q39498277"
           },
           {
             "display": "Scamacca",
@@ -7877,14 +7956,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Zaccagni",
-            "minute": "67",
-            "player": "Q28968068"
-          },
-          {
             "display": "Guendouzi",
             "minute": "9",
             "player": "Q27663808"
+          },
+          {
+            "display": "Zaccagni",
+            "minute": "67",
+            "player": "Q28968068"
           }
         ],
         "home": []
@@ -8215,14 +8294,14 @@
         ],
         "home": [
           {
-            "display": "Monterisi",
-            "minute": "24",
-            "player": "Q98046171"
-          },
-          {
             "display": "Harroui",
             "minute": "5",
             "player": "Q50133010"
+          },
+          {
+            "display": "Monterisi",
+            "minute": "24",
+            "player": "Q98046171"
           }
         ]
       },
@@ -8621,12 +8700,12 @@
         "away": [
           {
             "display": "Pinamonti",
-            "minute": "24",
+            "minute": "7",
             "player": "Q27981508"
           },
           {
             "display": "Pinamonti",
-            "minute": "7",
+            "minute": "24",
             "player": "Q27981508"
           }
         ],
@@ -8760,7 +8839,7 @@
           {
             "display": "Fazio",
             "minute": "42",
-            "player": "Q25162"
+            "player": null
           },
           {
             "display": "Candreva",
@@ -8812,12 +8891,12 @@
         "away": [
           {
             "display": "Zirkzee",
-            "minute": "20",
+            "minute": "9",
             "player": "Q65675442"
           },
           {
             "display": "Zirkzee",
-            "minute": "9",
+            "minute": "20",
             "player": "Q65675442"
           }
         ],
@@ -9352,14 +9431,14 @@
         ],
         "home": [
           {
-            "display": "Laurienté",
-            "minute": "10",
-            "player": "Q58009580"
-          },
-          {
             "display": "Pinamonti",
             "minute": "4",
             "player": "Q27981508"
+          },
+          {
+            "display": "Laurienté",
+            "minute": "10",
+            "player": "Q58009580"
           },
           {
             "display": "Laurienté",
@@ -9758,14 +9837,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Dia",
-            "minute": "17",
-            "player": "Q57603663"
-          },
-          {
             "display": "Ikwuemesi",
             "minute": "5",
             "player": "Q108588659"
+          },
+          {
+            "display": "Dia",
+            "minute": "17",
+            "player": "Q57603663"
           }
         ],
         "home": [
@@ -9861,6 +9940,33 @@
       "homeGoals": 2,
       "key": "it-2023-Q8639-Q1422",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vlahović",
+            "minute": "28",
+            "penalty": true,
+            "player": "Q23762815"
+          },
+          {
+            "display": "Rabiot",
+            "minute": "55",
+            "player": "Q18962"
+          }
+        ],
+        "home": [
+          {
+            "display": "Folorunsho",
+            "minute": "11",
+            "player": "Q65553869"
+          },
+          {
+            "display": "Noslin",
+            "minute": "11",
+            "player": "Q108783669"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -10376,7 +10482,7 @@
     ],
     "Q1422": [
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q137231"
       },
       {
@@ -10384,20 +10490,20 @@
         "id": "Q437329"
       },
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q26704703"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q18962"
-      },
-      {
-        "goals": 1,
-        "id": "Q551192"
       },
       {
         "goals": 2,
         "id": "Q15830919"
+      },
+      {
+        "goals": 1,
+        "id": "Q551192"
       },
       {
         "goals": 1,
@@ -10413,7 +10519,7 @@
         "id": "Q38693097"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q69656941"
       },
       {
@@ -10425,12 +10531,12 @@
         "id": "Q108491198"
       },
       {
-        "goals": 1,
-        "id": "Q105477844"
+        "goals": 2,
+        "id": "Q113184832"
       },
       {
         "goals": 1,
-        "id": "Q113184832"
+        "id": "Q105477844"
       }
     ],
     "Q1543": [
@@ -10472,7 +10578,7 @@
         "id": "Q23703372"
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q30055335"
       },
       {
@@ -10485,11 +10591,11 @@
       },
       {
         "goals": 1,
-        "id": "Q20740627"
+        "id": "Q20019273"
       },
       {
         "goals": 1,
-        "id": "Q20019273"
+        "id": "Q20740627"
       },
       {
         "goals": 2,
@@ -10514,12 +10620,12 @@
         "id": "Q84522640"
       },
       {
-        "goals": 2,
-        "id": "Q5241591"
-      },
-      {
         "goals": 11,
         "id": "Q21484766"
+      },
+      {
+        "goals": 2,
+        "id": "Q5241591"
       },
       {
         "goals": 12,
@@ -10547,7 +10653,7 @@
         "id": "Q59150057"
       },
       {
-        "goals": 10,
+        "goals": 11,
         "id": "Q39498277"
       },
       {
@@ -10575,6 +10681,10 @@
       {
         "goals": 1,
         "id": "Q41447930"
+      },
+      {
+        "goals": 2,
+        "id": "Q97999586"
       },
       {
         "goals": 1,
@@ -10615,6 +10725,10 @@
       {
         "goals": 2,
         "id": "Q26251603"
+      },
+      {
+        "goals": 1,
+        "id": "Q108114747"
       },
       {
         "goals": 5,
@@ -10839,7 +10953,8 @@
       },
       {
         "goals": 2,
-        "id": "Q20039495"
+        "id": "Q20039495",
+        "japan": true
       },
       {
         "goals": 2,
@@ -10909,12 +11024,16 @@
         "id": "Q30330390"
       },
       {
-        "goals": 3,
-        "id": "Q7197034"
+        "goals": 1,
+        "id": "Q454910"
       },
       {
         "goals": 8,
         "id": "Q6789694"
+      },
+      {
+        "goals": 3,
+        "id": "Q7197034"
       },
       {
         "goals": 1,
@@ -10923,10 +11042,6 @@
       {
         "goals": 1,
         "id": "Q14831282"
-      },
-      {
-        "goals": 1,
-        "id": "Q454910"
       },
       {
         "goals": 2,
@@ -10992,21 +11107,21 @@
         "id": "Q12984"
       },
       {
-        "goals": 3,
-        "id": "Q4754963"
-      },
-      {
         "goals": 13,
         "id": "Q166317",
         "topScorerRank": 6
       },
       {
-        "goals": 8,
-        "id": "Q19773058"
+        "goals": 3,
+        "id": "Q4241246"
       },
       {
         "goals": 3,
-        "id": "Q4241246"
+        "id": "Q4754963"
+      },
+      {
+        "goals": 8,
+        "id": "Q19773058"
       },
       {
         "goals": 4,
@@ -11039,8 +11154,12 @@
         "id": "Q28051511"
       },
       {
-        "goals": 11,
+        "goals": 12,
         "id": "Q577481"
+      },
+      {
+        "goals": 3,
+        "id": "Q29081863"
       },
       {
         "goals": 1,
@@ -11049,10 +11168,6 @@
       {
         "goals": 1,
         "id": "Q69991564"
-      },
-      {
-        "goals": 3,
-        "id": "Q29081863"
       },
       {
         "goals": 3,
@@ -11211,12 +11326,12 @@
         "id": "Q531302"
       },
       {
-        "goals": 2,
-        "id": "Q20090225"
-      },
-      {
         "goals": 1,
         "id": "Q195953"
+      },
+      {
+        "goals": 2,
+        "id": "Q20090225"
       },
       {
         "goals": 24,
@@ -11312,6 +11427,10 @@
         "id": "Q69580745"
       },
       {
+        "goals": 5,
+        "id": "Q16910143"
+      },
+      {
         "goals": 1,
         "id": "Q428983"
       },
@@ -11334,10 +11453,6 @@
       {
         "goals": 4,
         "id": "Q63117980"
-      },
-      {
-        "goals": 5,
-        "id": "Q16910143"
       },
       {
         "goals": 1,
@@ -11396,10 +11511,6 @@
       {
         "goals": 1,
         "id": "Q113852240"
-      },
-      {
-        "goals": 1,
-        "id": "Q25162"
       },
       {
         "goals": 1,
@@ -11490,11 +11601,11 @@
         "id": "Q59352209"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q65553869"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q108783669"
       },
       {

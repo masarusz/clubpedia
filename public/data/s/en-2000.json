@@ -1863,14 +1863,14 @@
             "player": "Q350807"
           },
           {
-            "display": "Beattie",
-            "minute": "90",
-            "player": "Q350807"
-          },
-          {
             "display": "Tessem",
             "minute": "37",
             "player": "Q1772597"
+          },
+          {
+            "display": "Beattie",
+            "minute": "90",
+            "player": "Q350807"
           }
         ]
       },
@@ -3905,14 +3905,14 @@
             "player": "Q10560"
           },
           {
-            "display": "Ljungberg",
-            "minute": "16",
-            "player": "Q10560"
-          },
-          {
             "display": "Wiltord",
             "minute": "8",
             "player": "Q217760"
+          },
+          {
+            "display": "Ljungberg",
+            "minute": "16",
+            "player": "Q10560"
           },
           {
             "display": "Kanu",
@@ -4413,14 +4413,14 @@
             "player": "Q223176"
           },
           {
-            "display": "Hasselbaink",
-            "minute": "87",
-            "player": "Q223176"
-          },
-          {
             "display": "Zola",
             "minute": "39",
             "player": "Q9354"
+          },
+          {
+            "display": "Hasselbaink",
+            "minute": "87",
+            "player": "Q223176"
           }
         ]
       },
@@ -4546,6 +4546,11 @@
             "player": "Q223176"
           },
           {
+            "display": "Zola",
+            "minute": "48",
+            "player": "Q9354"
+          },
+          {
             "display": "Hasselbaink",
             "minute": "52",
             "player": "Q223176"
@@ -4554,11 +4559,6 @@
             "display": "Hasselbaink",
             "minute": "58",
             "player": "Q223176"
-          },
-          {
-            "display": "Zola",
-            "minute": "48",
-            "player": "Q9354"
           },
           {
             "display": "Flo",
@@ -4715,14 +4715,14 @@
             "player": "Q338595"
           },
           {
-            "display": "Poyet",
-            "minute": "65",
-            "player": "Q338595"
-          },
-          {
             "display": "Wise",
             "minute": "58",
             "player": "Q326438"
+          },
+          {
+            "display": "Poyet",
+            "minute": "65",
+            "player": "Q338595"
           },
           {
             "display": "Hasselbaink",
@@ -4864,6 +4864,36 @@
       "homeGoals": 5,
       "key": "en-2000-Q9617-Q18716",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Henry",
+            "minute": "13",
+            "player": "Q45901"
+          },
+          {
+            "display": "Parlour",
+            "minute": "16",
+            "player": "Q377746"
+          },
+          {
+            "display": "Kanu",
+            "minute": "52",
+            "player": "Q599675"
+          },
+          {
+            "display": "Parlour",
+            "minute": "86",
+            "player": "Q377746"
+          },
+          {
+            "display": "Parlour",
+            "minute": "90+3",
+            "player": "Q377746"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5007,14 +5037,14 @@
             "player": "Q46347"
           },
           {
-            "display": "Vieira",
-            "minute": "61",
-            "player": "Q46347"
-          },
-          {
             "display": "Henry",
             "minute": "46",
             "player": "Q45901"
+          },
+          {
+            "display": "Vieira",
+            "minute": "61",
+            "player": "Q46347"
           },
           {
             "display": "Henry",
@@ -5065,24 +5095,24 @@
             "player": "Q45901"
           },
           {
-            "display": "Henry",
-            "minute": "66",
-            "player": "Q45901"
-          },
-          {
-            "display": "Henry",
-            "minute": "82",
-            "player": "Q45901"
-          },
-          {
             "display": "Vieira",
             "minute": "50",
             "player": "Q46347"
           },
           {
+            "display": "Henry",
+            "minute": "66",
+            "player": "Q45901"
+          },
+          {
             "display": "Ljungberg",
             "minute": "75",
             "player": "Q10560"
+          },
+          {
+            "display": "Henry",
+            "minute": "82",
+            "player": "Q45901"
           },
           {
             "display": "Adams",
@@ -5938,7 +5968,7 @@
     ],
     "Q9617": [
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q377746"
       },
       {
@@ -5975,7 +6005,7 @@
         "id": "Q113156"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q599675"
       },
       {

@@ -6,7 +6,8 @@ import { sectionRanges, plainText, extractLinks } from './wikitext.mjs';
  * trap. */
 export const COUNTRY_LEAGUE = Object.freeze({
   イングランド: { league: 'en', names: [/^プレミア(?:リーグ)?$/] },
-  ドイツ: { league: 'de', names: [/^ブンデス(?:リーガ|1部)$/] },
+  ドイツ: { league: 'de', names: [/^(?:1\.ブンデス|ブンデス(?:リーガ|1部)?)$/] },
+  西ドイツ: { league: 'de', names: [/^(?:1\.ブンデス|ブンデス1部)$/] },
   スペイン: { league: 'es', names: [/^(?:ラ・リーガ|リーガ・エスパニョーラ|プリメーラ(?:・ディビシオン)?|スペイン1部)$/] },
   イタリア: { league: 'it', names: [/^セリエ\s*A$/] },
   フランス: { league: 'fr', names: [/^リーグ(?:・)?1部?$/, /^リーグ・アン$/] },
@@ -17,6 +18,18 @@ export function topFlightLeague(country, leagueText) {
   if (!info) return null;
   const normalized = leagueText.trim();
   return info.names.some((pattern) => pattern.test(normalized)) ? info.league : null;
+}
+
+/** Literal club-first tables often omit country headers.  In that layout the
+ * division cell itself is the authoritative discriminator. */
+export function topFlightLeagueFromDivision(leagueText) {
+  const normalized = plainText(leagueText).replace(/\s+/gu, '').trim();
+  if (/^(?:プレミアリーグ|プレミア)$/.test(normalized)) return 'en';
+  if (/^(?:1\.ブンデス|ブンデスリーガ|ブンデス|ブンデス1部)$/.test(normalized)) return 'de';
+  if (/^(?:ラ・リーガ|リーガ・エスパニョーラ|プリメーラ(?:・ディビシオン)?|スペイン1部)$/.test(normalized)) return 'es';
+  if (/^セリエA$/i.test(normalized)) return 'it';
+  if (/^(?:リーグ(?:・)?1部?|リーグ・アン)$/.test(normalized)) return 'fr';
+  return null;
 }
 
 /**
@@ -107,8 +120,76 @@ function linkTarget(cellText) {
   return extractLinks(cellText)[0]?.target ?? null;
 }
 
+function gridRows(blockText, columnCount) {
+  const slots = new Array(columnCount).fill(null);
+  const output = [];
+  for (const cells of rowsForBlock(blockText)) {
+    const values = new Array(columnCount).fill(null);
+    let column = 0; let cellIndex = 0;
+    while (column < columnCount) {
+      if (slots[column]?.remaining > 0) {
+        values[column] = slots[column].value;
+        slots[column].remaining -= 1;
+        if (!slots[column].remaining) slots[column] = null;
+        column += 1;
+        continue;
+      }
+      const cell = cells[cellIndex++];
+      if (!cell) { column += 1; continue; }
+      for (let offset = 0; offset < cell.colspan && column + offset < columnCount; offset += 1) {
+        values[column + offset] = cell.value;
+        if (cell.rowspan > 1) slots[column + offset] = { value: cell.value, remaining: cell.rowspan - 1 };
+      }
+      column += cell.colspan;
+    }
+    output.push(values);
+  }
+  return output;
+}
+
+function integerCell(value) {
+  const text = plainText(value ?? '').replace(/\{\{[^{}]*\}\}/gu, '').trim();
+  return /^\d+$/.test(text) ? Number(text) : null;
+}
+
+function seasonLabel(value) {
+  const text = plainText(value ?? '').trim();
+  const found = text.match(/(?:19|20)\d{2}(?:\s*[–-]\s*\d{2,4})?/u);
+  return found ? found[0].replace(/\s*[–-]\s*/u, '–') : null;
+}
+
+/** Club-first literal wikitables: club, season, division, league apps/goals.
+ * They deliberately have no country row, so the division names above are
+ * used instead. */
+function parseClubFirstTables(content) {
+  const output = [];
+  for (const match of content.matchAll(/\{\|[^\n]*\n([\s\S]*?)\n\|\}/gu)) {
+    const table = match[0];
+    const header = plainText(table.slice(0, Math.min(table.length, 1200))).replace(/\s+/gu, '');
+    if (!header.includes('クラブ') || !header.includes('シーズン') || !header.includes('出場') || !header.includes('得点')) continue;
+    for (const values of gridRows(table, 24)) {
+      const season = seasonLabel(values[1]);
+      const league = values[2] ?? '';
+      const leagueKey = topFlightLeagueFromDivision(league);
+      const apps = integerCell(values[3]);
+      const goals = integerCell(values[4]);
+      if (!season || !leagueKey || apps == null || goals == null) continue;
+      output.push({
+        country: Object.entries(COUNTRY_LEAGUE).find(([, info]) => info.league === leagueKey)?.[0] ?? '',
+        season,
+        clubRaw: values[0] ?? '',
+        clubTarget: linkTarget(values[0] ?? ''),
+        league: plainText(league).trim(),
+        apps,
+        goals,
+      });
+    }
+  }
+  return output;
+}
+
 export function parseDomesticSeasons(articleText) {
-  const section = sectionRanges(articleText).find((item) => /^個人成績$/.test(plainText(item.title).trim()));
+  const section = sectionRanges(articleText).find((item) => /^(?:個人|選手)成績$/.test(plainText(item.title).trim()));
   if (!section) return [];
   let content = section.content.split('\n').filter((line) => !/^\{\{サッカー選手国内成績表\s+通算/.test(line.trim())).join('\n');
   // Stop at the international-record table if present in the same section.
@@ -127,24 +208,7 @@ export function parseDomesticSeasons(articleText) {
     const { country, index: start } = countryMarkers[index];
     const end = countryMarkers[index + 1]?.index ?? content.length;
     const block = content.slice(start, end);
-    const slots = new Array(COLUMN_COUNT).fill(null);
-    for (const cells of rowsForBlock(block)) {
-      const values = new Array(COLUMN_COUNT).fill(null);
-      let column = 0; let cellIndex = 0;
-      while (column < COLUMN_COUNT) {
-        if (slots[column] && slots[column].remaining > 0) {
-          values[column] = slots[column].value;
-          slots[column].remaining -= 1;
-          column += 1;
-          continue;
-        }
-        const cell = cells[cellIndex];
-        cellIndex += 1;
-        if (!cell) { column += 1; continue; }
-        for (let offset = 0; offset < cell.colspan && column + offset < COLUMN_COUNT; offset += 1) values[column + offset] = cell.value;
-        if (cell.rowspan > 1) slots[column] = { value: cell.value, remaining: cell.rowspan - 1 };
-        column += cell.colspan;
-      }
+    for (const values of gridRows(block, COLUMN_COUNT)) {
       const seasonLabel = plainText(values[0] ?? '').trim();
       const apps = Number(plainText(values[LEAGUE_APPS_COL] ?? '').trim());
       const goals = Number(plainText(values[LEAGUE_GOALS_COL] ?? '').trim());
@@ -159,5 +223,10 @@ export function parseDomesticSeasons(articleText) {
       });
     }
   }
-  return seasons;
+  const literal = parseClubFirstTables(content);
+  const unique = new Map([...seasons, ...literal].map((item) => [
+    `${item.season}|${item.clubTarget ?? plainText(item.clubRaw)}|${item.league}|${item.apps}|${item.goals}`,
+    item,
+  ]));
+  return [...unique.values()];
 }

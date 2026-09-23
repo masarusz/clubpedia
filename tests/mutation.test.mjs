@@ -7,6 +7,6 @@ export function register(test, equal) {
   test('wikitext, API, filename, and lock mutations are killed', () => {
     const output = execFileSync(process.execPath, [resolve(ROOT, 'tests/mutate.mjs')], { cwd: ROOT, encoding: 'utf8' });
     process.stdout.write(output);
-    equal(output.includes('mutations: 19/19 killed'), true);
+    equal(output.includes('mutations: 23/23 killed'), true);
   });
 }

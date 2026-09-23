@@ -2,48 +2,6 @@
   "league": "de",
   "licence": "ODbL-1.0",
   "matches": {
-    "de-2024-Q101859-Q105254": {
-      "away": [
-        {
-          "minute": "12",
-          "name": "P. Nebel",
-          "player": "Q97344548"
-        },
-        {
-          "minute": "39",
-          "name": "J. Burkardt",
-          "player": "Q56635612"
-        },
-        {
-          "minute": "66",
-          "name": "P. Nebel",
-          "player": "Q97344548"
-        }
-      ],
-      "home": [
-        {
-          "minute": "20",
-          "name": "M. Amoura",
-          "player": "Q107285723"
-        },
-        {
-          "minute": "58",
-          "name": "A. Hanche-Olsen",
-          "ownGoal": true,
-          "player": null
-        },
-        {
-          "minute": "84",
-          "name": "J. Wind",
-          "player": "Q52084298"
-        },
-        {
-          "minute": "90+4",
-          "name": "J. Wind",
-          "player": "Q52084298"
-        }
-      ]
-    },
     "de-2024-Q101859-Q106394": {
       "away": [
         {
@@ -82,7 +40,7 @@
           "minute": "14",
           "name": "C. Günter",
           "ownGoal": true,
-          "player": null
+          "player": "Q2668870"
         }
       ]
     },
@@ -216,32 +174,6 @@
         }
       ]
     },
-    "de-2024-Q106394-Q15755": {
-      "away": [
-        {
-          "minute": "65",
-          "name": "P. Tietz",
-          "player": "Q23290106"
-        }
-      ],
-      "home": [
-        {
-          "minute": "34",
-          "name": "V. Grifo",
-          "player": "Q1756602"
-        },
-        {
-          "minute": "37",
-          "name": "P. Lienhart",
-          "player": null
-        },
-        {
-          "minute": "45",
-          "name": "C. Günter",
-          "player": "Q2668870"
-        }
-      ]
-    },
     "de-2024-Q141971-Q101959": {
       "away": [
         {
@@ -357,42 +289,6 @@
         }
       ]
     },
-    "de-2024-Q157828-Q41420": {
-      "away": [
-        {
-          "minute": "71",
-          "name": "G. Reyna",
-          "player": "Q75019636"
-        },
-        {
-          "minute": "77",
-          "name": "J. Gittens",
-          "player": "Q111627959"
-        }
-      ],
-      "home": [
-        {
-          "minute": "27",
-          "name": "S. Machino",
-          "player": "Q47582288"
-        },
-        {
-          "minute": "32",
-          "name": "P. Harres",
-          "player": "Q106834540"
-        },
-        {
-          "minute": "49",
-          "name": "A. Bernhardsson",
-          "player": "Q76591341"
-        },
-        {
-          "minute": "90+8",
-          "name": "J.-F. Arp",
-          "player": null
-        }
-      ]
-    },
     "de-2024-Q15789-Q51976": {
       "away": [],
       "home": [
@@ -453,7 +349,7 @@
           "minute": "77",
           "name": "F. Agu",
           "ownGoal": true,
-          "player": null
+          "player": "Q52357690"
         }
       ],
       "home": [
@@ -466,6 +362,27 @@
           "minute": "90",
           "name": "R. Schmid",
           "player": "Q30080273"
+        }
+      ]
+    },
+    "de-2024-Q51976-Q157828": {
+      "away": [
+        {
+          "minute": "49",
+          "name": "P. Harres",
+          "player": "Q106834540"
+        }
+      ],
+      "home": [
+        {
+          "minute": "36",
+          "name": "J. Stage",
+          "player": "Q24901052"
+        },
+        {
+          "minute": "90",
+          "name": "O. Burke",
+          "player": "Q18125392"
         }
       ]
     },
@@ -493,42 +410,6 @@
           "name": "S. Nsoki",
           "ownGoal": true,
           "player": null
-        }
-      ]
-    },
-    "de-2024-Q702455-Q51976": {
-      "away": [
-        {
-          "minute": "26",
-          "name": "M. Weiser",
-          "player": "Q694852"
-        },
-        {
-          "minute": "90+3",
-          "name": "Oliver Burke",
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "23",
-          "name": "X. Simons",
-          "player": "Q65925174"
-        },
-        {
-          "minute": "35",
-          "name": "X. Simons",
-          "player": "Q65925174"
-        },
-        {
-          "minute": "47",
-          "name": "B. Sesko",
-          "player": null
-        },
-        {
-          "minute": "90",
-          "name": "C. Baumgartner",
-          "player": "Q55999670"
         }
       ]
     }

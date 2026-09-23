@@ -159,6 +159,27 @@
       "homeGoals": 2,
       "key": "es-2008-Q10286-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Higuaín",
+            "minute": "11",
+            "player": "Q483846"
+          }
+        ],
+        "home": [
+          {
+            "display": "Plašil",
+            "minute": "15",
+            "player": "Q193717"
+          },
+          {
+            "display": "Juanfran",
+            "minute": "60",
+            "player": "Q210914"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -195,6 +216,10 @@
       "homeGoals": 0,
       "key": "es-2008-Q10286-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -369,6 +394,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q10319-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Canobbio",
+            "minute": "48",
+            "player": "Q460541"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -405,6 +440,26 @@
       "homeGoals": 3,
       "key": "es-2008-Q10319-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Sesma",
+            "minute": "15",
+            "player": "Q777755"
+          },
+          {
+            "display": "López",
+            "minute": "25",
+            "player": "Q1374070"
+          },
+          {
+            "display": "León",
+            "minute": "56",
+            "player": "Q310007"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -586,6 +641,42 @@
       "homeGoals": 2,
       "key": "es-2008-Q10329-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Raúl",
+            "minute": "45+1",
+            "player": "Q11576"
+          },
+          {
+            "display": "Raúl",
+            "minute": "63",
+            "player": "Q11576"
+          },
+          {
+            "display": "Raúl",
+            "minute": "66",
+            "player": "Q11576"
+          },
+          {
+            "display": "Marcelo",
+            "minute": "90+2",
+            "player": "Q38136"
+          }
+        ],
+        "home": [
+          {
+            "display": "Renato",
+            "minute": "15",
+            "player": "Q29097"
+          },
+          {
+            "display": "Capel",
+            "minute": "79",
+            "player": "Q314315"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -622,6 +713,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q10329-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Perotti",
+            "minute": "90",
+            "player": "Q438340"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -754,11 +855,6 @@
             "player": "Q83006"
           },
           {
-            "display": "Villa",
-            "minute": "89",
-            "player": "Q83006"
-          },
-          {
             "display": "Mata",
             "minute": "72",
             "player": "Q168740"
@@ -767,6 +863,11 @@
             "display": "Vicente",
             "minute": "83",
             "player": "Q296180"
+          },
+          {
+            "display": "Villa",
+            "minute": "89",
+            "player": "Q83006"
           }
         ]
       },
@@ -957,6 +1058,26 @@
       "homeGoals": 3,
       "key": "es-2008-Q10333-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mata",
+            "minute": "29",
+            "player": "Q168740"
+          },
+          {
+            "display": "Silva",
+            "minute": "32",
+            "player": "Q161069"
+          },
+          {
+            "display": "Baraja",
+            "minute": "68",
+            "player": "Q299488"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1054,43 +1175,6 @@
       "homeGoals": 4,
       "key": "es-2008-Q10333-Q8760",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Renan",
-            "minute": "11",
-            "ownGoal": true,
-            "player": "Q371215"
-          },
-          {
-            "display": "Lafita",
-            "minute": "85",
-            "player": "Q251736"
-          }
-        ],
-        "home": [
-          {
-            "display": "Mata",
-            "minute": "35",
-            "player": "Q168740"
-          },
-          {
-            "display": "Villa",
-            "minute": "49",
-            "player": "Q83006"
-          },
-          {
-            "display": "Villa",
-            "minute": "82",
-            "player": "Q83006"
-          },
-          {
-            "display": "Joaquín",
-            "minute": "69",
-            "player": "Q294204"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -1266,6 +1350,32 @@
       "homeGoals": 2,
       "key": "es-2008-Q10407-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Alexis",
+            "minute": "35",
+            "player": "Q312942"
+          },
+          {
+            "display": "Villa",
+            "minute": "69",
+            "player": "Q83006"
+          }
+        ],
+        "home": [
+          {
+            "display": "Piatti",
+            "minute": "20",
+            "player": "Q319890"
+          },
+          {
+            "display": "Negredo",
+            "minute": "39",
+            "player": "Q210916"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1413,6 +1523,21 @@
       "homeGoals": 0,
       "key": "es-2008-Q10407-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bojan",
+            "minute": "52",
+            "player": "Q179172"
+          },
+          {
+            "display": "Bojan",
+            "minute": "55",
+            "player": "Q179172"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1426,7 +1551,7 @@
         "away": [
           {
             "display": "Raúl",
-            "minute": "38",
+            "minute": "37",
             "player": "Q11576"
           }
         ],
@@ -1807,6 +1932,16 @@
       "homeGoals": 0,
       "key": "es-2008-Q12158-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rodríguez",
+            "minute": "74",
+            "player": "Q439805"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1979,6 +2114,21 @@
       "homeGoals": 0,
       "key": "es-2008-Q12236-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "de la Red",
+            "minute": "53",
+            "player": "Q212925"
+          },
+          {
+            "display": "van Nistelrooy",
+            "minute": "73",
+            "player": "Q45626"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2015,6 +2165,10 @@
       "homeGoals": 0,
       "key": "es-2008-Q12236-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2198,6 +2352,16 @@
       "homeGoals": 0,
       "key": "es-2008-Q12249-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marcelo",
+            "minute": "49",
+            "player": "Q38136"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2234,6 +2398,27 @@
       "homeGoals": 1,
       "key": "es-2008-Q12249-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Verdú",
+            "minute": "17",
+            "player": "Q359038"
+          },
+          {
+            "display": "Álvarez",
+            "minute": "49",
+            "player": "Q240811"
+          }
+        ],
+        "home": [
+          {
+            "display": "Colunga",
+            "minute": "44",
+            "player": "Q377835"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2457,6 +2642,40 @@
       "homeGoals": 3,
       "key": "es-2008-Q12278-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sergio",
+            "minute": "67",
+            "penalty": true,
+            "player": "Q145808"
+          },
+          {
+            "display": "Riki",
+            "minute": "85",
+            "penalty": true,
+            "player": "Q372386"
+          }
+        ],
+        "home": [
+          {
+            "display": "Morán",
+            "minute": "48",
+            "player": "Q2635950"
+          },
+          {
+            "display": "Barral",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q737044"
+          },
+          {
+            "display": "José Ángel",
+            "minute": "71",
+            "player": "Q1068786"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2634,6 +2853,37 @@
       "homeGoals": 3,
       "key": "es-2008-Q12297-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van der Vaart",
+            "minute": "46",
+            "player": "Q163974"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "88",
+            "player": "Q483846"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pires",
+            "minute": "17",
+            "player": "Q113156"
+          },
+          {
+            "display": "Cani",
+            "minute": "63",
+            "player": "Q358329"
+          },
+          {
+            "display": "Capedvila",
+            "minute": "90",
+            "player": "Q188793"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2670,6 +2920,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q12297-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cazorla",
+            "minute": "27",
+            "player": "Q185225"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2846,6 +3106,36 @@
       "homeGoals": 5,
       "key": "es-2008-Q7156-Q10407",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "5",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Henry",
+            "minute": "13",
+            "player": "Q45901"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "20",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "23",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Alves",
+            "minute": "36",
+            "player": "Q172720"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2870,11 +3160,6 @@
             "player": "Q615"
           },
           {
-            "display": "Messi",
-            "minute": "75",
-            "player": "Q615"
-          },
-          {
             "display": "Eto'o",
             "minute": "52",
             "player": "Q1255625"
@@ -2883,6 +3168,11 @@
             "display": "Henry",
             "minute": "70",
             "player": "Q45901"
+          },
+          {
+            "display": "Messi",
+            "minute": "75",
+            "player": "Q615"
           }
         ]
       },
@@ -2989,15 +3279,15 @@
             "player": "Q219048"
           },
           {
-            "display": "Llorente",
-            "minute": "90+1",
-            "player": "Q219048"
-          },
-          {
             "display": "Fernández",
             "minute": "77",
             "penalty": true,
             "player": "Q310657"
+          },
+          {
+            "display": "Llorente",
+            "minute": "90+1",
+            "player": "Q219048"
           }
         ],
         "home": [
@@ -3097,14 +3387,14 @@
             "player": "Q1255625"
           },
           {
-            "display": "Eto'o",
-            "minute": "17",
-            "player": "Q1255625"
-          },
-          {
             "display": "Messi",
             "minute": "8",
             "player": "Q615"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "17",
+            "player": "Q1255625"
           },
           {
             "display": "Guðjohnsen",
@@ -3181,14 +3471,14 @@
             "player": "Q45901"
           },
           {
-            "display": "Henry",
-            "minute": "82",
-            "player": "Q45901"
-          },
-          {
             "display": "Eto'o",
             "minute": "41",
             "player": "Q1255625"
+          },
+          {
+            "display": "Henry",
+            "minute": "82",
+            "player": "Q45901"
           },
           {
             "display": "Eto'o",
@@ -3316,14 +3606,14 @@
             "player": "Q45901"
           },
           {
-            "display": "Alves",
-            "minute": "50",
-            "player": "Q172720"
-          },
-          {
             "display": "Eto'o",
             "minute": "43",
             "player": "Q1255625"
+          },
+          {
+            "display": "Alves",
+            "minute": "50",
+            "player": "Q172720"
           },
           {
             "display": "Eto'o",
@@ -3341,6 +3631,32 @@
       "homeGoals": 3,
       "key": "es-2008-Q8682-Q10286",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nekounam",
+            "minute": "20",
+            "player": "Q315008"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ramos",
+            "minute": "50",
+            "player": "Q483309"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "63",
+            "player": "Q483846"
+          },
+          {
+            "display": "Robben",
+            "minute": "90+2",
+            "player": "Q43913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3350,6 +3666,21 @@
       "homeGoals": 2,
       "key": "es-2008-Q8682-Q10319",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "44",
+            "player": "Q11576"
+          },
+          {
+            "display": "Robben",
+            "minute": "82",
+            "player": "Q43913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3359,6 +3690,47 @@
       "homeGoals": 3,
       "key": "es-2008-Q8682-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Adriano",
+            "minute": "3",
+            "player": "Q94850"
+          },
+          {
+            "display": "Romaric",
+            "minute": "22",
+            "player": "Q159319"
+          },
+          {
+            "display": "Kanouté",
+            "minute": "39",
+            "player": "Q218394"
+          },
+          {
+            "display": "Renato",
+            "minute": "85",
+            "player": "Q29097"
+          }
+        ],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "19",
+            "player": "Q11576"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "69",
+            "player": "Q483846"
+          },
+          {
+            "display": "Gago",
+            "minute": "71",
+            "player": "Q187426"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3416,6 +3788,48 @@
       "homeGoals": 4,
       "key": "es-2008-Q8682-Q12158",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Moreno",
+            "minute": "6",
+            "player": "Q2494806"
+          },
+          {
+            "display": "Barkero",
+            "minute": "22",
+            "player": "Q2409704"
+          },
+          {
+            "display": "Moreno",
+            "minute": "56",
+            "player": "Q2494806"
+          }
+        ],
+        "home": [
+          {
+            "display": "Guti",
+            "minute": "19",
+            "player": "Q194461"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "25",
+            "player": "Q483846"
+          },
+          {
+            "display": "van der Vaart",
+            "minute": "33",
+            "player": "Q163974"
+          },
+          {
+            "display": "Cisma",
+            "minute": "40",
+            "ownGoal": true,
+            "player": "Q718664"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3425,6 +3839,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q12236",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Higuaín",
+            "minute": "49",
+            "player": "Q483846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3434,6 +3858,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q12249",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Sneijder",
+            "minute": "39",
+            "player": "Q124086"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3443,6 +3877,52 @@
       "homeGoals": 7,
       "key": "es-2008-Q8682-Q12278",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mateo",
+            "minute": "53",
+            "player": "Q3772134"
+          }
+        ],
+        "home": [
+          {
+            "display": "van der Vaart",
+            "minute": "17",
+            "player": "Q163974"
+          },
+          {
+            "display": "van der Vaart",
+            "minute": "32",
+            "player": "Q163974"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "36",
+            "player": "Q483846"
+          },
+          {
+            "display": "van der Vaart",
+            "minute": "46",
+            "player": "Q163974"
+          },
+          {
+            "display": "Robben",
+            "minute": "50",
+            "player": "Q43913"
+          },
+          {
+            "display": "Raúl",
+            "minute": "58",
+            "player": "Q11576"
+          },
+          {
+            "display": "Raúl",
+            "minute": "63",
+            "player": "Q11576"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3452,6 +3932,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q12297",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Robben",
+            "minute": "32",
+            "player": "Q43913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3469,11 +3959,6 @@
             "player": "Q45901"
           },
           {
-            "display": "Henry",
-            "minute": "57",
-            "player": "Q45901"
-          },
-          {
             "display": "Puyol",
             "minute": "20",
             "player": "Q17158"
@@ -3482,6 +3967,11 @@
             "display": "Messi",
             "minute": "35",
             "player": "Q615"
+          },
+          {
+            "display": "Henry",
+            "minute": "57",
+            "player": "Q45901"
           },
           {
             "display": "Messi",
@@ -3497,12 +3987,12 @@
         "home": [
           {
             "display": "Higuaín",
-            "minute": "13",
+            "minute": "14",
             "player": "Q483846"
           },
           {
             "display": "Ramos",
-            "minute": "55",
+            "minute": "56",
             "player": "Q483309"
           }
         ]
@@ -3516,6 +4006,38 @@
       "homeGoals": 3,
       "key": "es-2008-Q8682-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Etxeberria",
+            "minute": "34",
+            "player": "Q310354"
+          },
+          {
+            "display": "Iraola",
+            "minute": "44",
+            "penalty": true,
+            "player": "Q317216"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sneijder",
+            "minute": "12",
+            "player": "Q124086"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "28",
+            "player": "Q483846"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "59",
+            "player": "Q483846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3525,6 +4047,22 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Forlán",
+            "minute": "38",
+            "player": "Q261534"
+          }
+        ],
+        "home": [
+          {
+            "display": "Huntelaar",
+            "minute": "57",
+            "player": "Q26069"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3543,6 +4081,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q8760",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "39",
+            "player": "Q11576"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3552,6 +4100,33 @@
       "homeGoals": 2,
       "key": "es-2008-Q8682-Q8780",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tamudo",
+            "minute": "20",
+            "penalty": true,
+            "player": "Q312946"
+          },
+          {
+            "display": "García",
+            "minute": "31",
+            "player": "Q440855"
+          }
+        ],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "24",
+            "player": "Q11576"
+          },
+          {
+            "display": "Raúl",
+            "minute": "44",
+            "player": "Q11576"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3561,6 +4136,37 @@
       "homeGoals": 3,
       "key": "es-2008-Q8682-Q8806",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Soldado",
+            "minute": "9",
+            "player": "Q218401"
+          },
+          {
+            "display": "Albín",
+            "minute": "84",
+            "player": "Q519484"
+          }
+        ],
+        "home": [
+          {
+            "display": "Higuaín",
+            "minute": "45",
+            "player": "Q483846"
+          },
+          {
+            "display": "Guti",
+            "minute": "85",
+            "player": "Q194461"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "90+1",
+            "player": "Q483846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3570,6 +4176,32 @@
       "homeGoals": 1,
       "key": "es-2008-Q8682-Q8835",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Arango",
+            "minute": "26",
+            "player": "Q313143"
+          },
+          {
+            "display": "Cléber Santana",
+            "minute": "57",
+            "player": "Q514375"
+          },
+          {
+            "display": "Keita",
+            "minute": "68",
+            "player": "Q726407"
+          }
+        ],
+        "home": [
+          {
+            "display": "Higuaín",
+            "minute": "20",
+            "player": "Q483846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3579,6 +4211,49 @@
       "homeGoals": 4,
       "key": "es-2008-Q8682-Q8857",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eliseu",
+            "minute": "6",
+            "player": "Q72802"
+          },
+          {
+            "display": "Baha",
+            "minute": "17",
+            "player": "Q1996694"
+          },
+          {
+            "display": "Apoño",
+            "minute": "69",
+            "penalty": true,
+            "player": "Q159110"
+          }
+        ],
+        "home": [
+          {
+            "display": "Higuaín",
+            "minute": "8",
+            "player": "Q483846"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "37",
+            "penalty": true,
+            "player": "Q483846"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "70",
+            "player": "Q483846"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "77",
+            "player": "Q483846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3755,6 +4430,49 @@
       "homeGoals": 2,
       "key": "es-2008-Q8687-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Robben",
+            "minute": "22",
+            "player": "Q43913"
+          },
+          {
+            "display": "Heinze",
+            "minute": "34",
+            "player": "Q63659"
+          },
+          {
+            "display": "Huntelaar",
+            "minute": "47",
+            "player": "Q26069"
+          },
+          {
+            "display": "Huntelaar",
+            "minute": "61",
+            "player": "Q26069"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "85",
+            "penalty": true,
+            "player": "Q483846"
+          }
+        ],
+        "home": [
+          {
+            "display": "Heinze",
+            "minute": "36",
+            "ownGoal": true,
+            "player": "Q63659"
+          },
+          {
+            "display": "Llorente",
+            "minute": "45+1",
+            "player": "Q187891"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3782,6 +4500,16 @@
       "homeGoals": 0,
       "key": "es-2008-Q8687-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Álvarez",
+            "minute": "85",
+            "player": "Q240811"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3945,14 +4673,14 @@
             "player": "Q45901"
           },
           {
-            "display": "Henry",
-            "minute": "73",
-            "player": "Q45901"
-          },
-          {
             "display": "Messi",
             "minute": "30",
             "player": "Q615"
+          },
+          {
+            "display": "Henry",
+            "minute": "73",
+            "player": "Q45901"
           }
         ],
         "home": [
@@ -3962,15 +4690,15 @@
             "player": "Q261534"
           },
           {
+            "display": "Agüero",
+            "minute": "56",
+            "player": "Q119562"
+          },
+          {
             "display": "Forlán",
             "minute": "79",
             "penalty": true,
             "player": "Q261534"
-          },
-          {
-            "display": "Agüero",
-            "minute": "56",
-            "player": "Q119562"
           },
           {
             "display": "Agüero",
@@ -3988,6 +4716,28 @@
       "homeGoals": 1,
       "key": "es-2008-Q8701-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van Nistelrooy",
+            "minute": "1",
+            "player": "Q45626"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "90+6",
+            "penalty": true,
+            "player": "Q483846"
+          }
+        ],
+        "home": [
+          {
+            "display": "Simão",
+            "minute": "89",
+            "player": "Q203665"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4015,6 +4765,37 @@
       "homeGoals": 4,
       "key": "es-2008-Q8701-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Luís",
+            "minute": "86",
+            "player": "Q350547"
+          }
+        ],
+        "home": [
+          {
+            "display": "Heitinga",
+            "minute": "26",
+            "player": "Q946457"
+          },
+          {
+            "display": "Forlán",
+            "minute": "52",
+            "player": "Q261534"
+          },
+          {
+            "display": "Rodríguez",
+            "minute": "67",
+            "player": "Q190929"
+          },
+          {
+            "display": "Forlán",
+            "minute": "81",
+            "player": "Q261534"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4208,6 +4989,27 @@
       "homeGoals": 1,
       "key": "es-2008-Q8723-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Heinze",
+            "minute": "18",
+            "player": "Q63659"
+          },
+          {
+            "display": "van Nistelrooy",
+            "minute": "90+1",
+            "player": "Q45626"
+          }
+        ],
+        "home": [
+          {
+            "display": "García",
+            "minute": "54",
+            "player": "Q313201"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4235,6 +5037,26 @@
       "homeGoals": 0,
       "key": "es-2008-Q8723-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Riki",
+            "minute": "60",
+            "player": "Q372386"
+          },
+          {
+            "display": "Lafita",
+            "minute": "79",
+            "player": "Q251736"
+          },
+          {
+            "display": "Lafita",
+            "minute": "87",
+            "player": "Q251736"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4280,6 +5102,10 @@
       "homeGoals": 0,
       "key": "es-2008-Q8760-Q10286",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4289,6 +5115,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q10319",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Nouioui",
+            "minute": "8",
+            "player": "Q368345"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4298,6 +5134,32 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fabiano",
+            "minute": "50",
+            "player": "Q192963"
+          },
+          {
+            "display": "Renato",
+            "minute": "78",
+            "player": "Q29097"
+          },
+          {
+            "display": "Capel",
+            "minute": "90",
+            "player": "Q314315"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bodipo",
+            "minute": "34",
+            "player": "Q350232"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4307,6 +5169,22 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Villa",
+            "minute": "24",
+            "player": "Q83006"
+          }
+        ],
+        "home": [
+          {
+            "display": "Piscu",
+            "minute": "79",
+            "player": "Q195214"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4325,7 +5203,7 @@
             "player": "Q359038"
           },
           {
-            "display": "Lassad",
+            "display": "Nouioui",
             "minute": "68",
             "player": "Q368345"
           }
@@ -4340,6 +5218,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q12158",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lafita",
+            "minute": "13",
+            "player": "Q251736"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4349,6 +5237,52 @@
       "homeGoals": 5,
       "key": "es-2008-Q8760-Q12236",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pereira",
+            "minute": "1",
+            "player": "Q511704"
+          },
+          {
+            "display": "Žigić",
+            "minute": "32",
+            "player": "Q201373"
+          },
+          {
+            "display": "Berrocal",
+            "minute": "79",
+            "player": "Q3822530"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rodríguez",
+            "minute": "25",
+            "player": "Q439805"
+          },
+          {
+            "display": "Riki",
+            "minute": "50",
+            "player": "Q372386"
+          },
+          {
+            "display": "Lafita",
+            "minute": "58",
+            "player": "Q251736"
+          },
+          {
+            "display": "Riki",
+            "minute": "59",
+            "player": "Q372386"
+          },
+          {
+            "display": "Verdú",
+            "minute": "67",
+            "player": "Q359038"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4358,6 +5292,39 @@
       "homeGoals": 4,
       "key": "es-2008-Q8760-Q12249",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Colunga",
+            "minute": "24",
+            "penalty": true,
+            "player": "Q377835"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lopo",
+            "minute": "9",
+            "player": "Q359030"
+          },
+          {
+            "display": "Sergio",
+            "minute": "20",
+            "penalty": true,
+            "player": "Q145808"
+          },
+          {
+            "display": "Bodipo",
+            "minute": "44",
+            "player": "Q350232"
+          },
+          {
+            "display": "Luís",
+            "minute": "90",
+            "player": "Q350547"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4367,6 +5334,27 @@
       "homeGoals": 0,
       "key": "es-2008-Q8760-Q12278",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Barral",
+            "minute": "22",
+            "penalty": true,
+            "player": "Q737044"
+          },
+          {
+            "display": "Carmelo",
+            "minute": "26",
+            "player": "Q2421796"
+          },
+          {
+            "display": "Castro",
+            "minute": "84",
+            "player": "Q553163"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4376,6 +5364,26 @@
       "homeGoals": 3,
       "key": "es-2008-Q8760-Q12297",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lafita",
+            "minute": "1",
+            "player": "Q251736"
+          },
+          {
+            "display": "Lafita",
+            "minute": "62",
+            "player": "Q251736"
+          },
+          {
+            "display": "Riki",
+            "minute": "67",
+            "player": "Q372386"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4410,6 +5418,27 @@
       "homeGoals": 2,
       "key": "es-2008-Q8760-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van Nistelrooy",
+            "minute": "47",
+            "player": "Q45626"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mista",
+            "minute": "27",
+            "player": "Q1787955"
+          },
+          {
+            "display": "Lopo",
+            "minute": "51",
+            "player": "Q359030"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4419,6 +5448,33 @@
       "homeGoals": 3,
       "key": "es-2008-Q8760-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Martínez",
+            "minute": "71",
+            "player": "Q201752"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zé Castro",
+            "minute": "20",
+            "player": "Q247456"
+          },
+          {
+            "display": "Verdú",
+            "minute": "43",
+            "penalty": true,
+            "player": "Q359038"
+          },
+          {
+            "display": "Guardado",
+            "minute": "90",
+            "player": "Q19364"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4428,6 +5484,27 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Agüero",
+            "minute": "45",
+            "player": "Q119562"
+          },
+          {
+            "display": "Simão",
+            "minute": "69",
+            "player": "Q203665"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bodipo",
+            "minute": "87",
+            "player": "Q350232"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4437,6 +5514,22 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "García",
+            "minute": "32",
+            "player": "Q313201"
+          }
+        ],
+        "home": [
+          {
+            "display": "Verdú",
+            "minute": "8",
+            "player": "Q359038"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4446,6 +5539,16 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q8780",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Guardado",
+            "minute": "37",
+            "player": "Q19364"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4455,6 +5558,22 @@
       "homeGoals": 1,
       "key": "es-2008-Q8760-Q8806",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Soldado",
+            "minute": "46",
+            "player": "Q218401"
+          }
+        ],
+        "home": [
+          {
+            "display": "Riki",
+            "minute": "86",
+            "player": "Q372386"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4464,6 +5583,10 @@
       "homeGoals": 0,
       "key": "es-2008-Q8760-Q8835",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4473,6 +5596,22 @@
       "homeGoals": 2,
       "key": "es-2008-Q8760-Q8857",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lafita",
+            "minute": "65",
+            "player": "Q251736"
+          },
+          {
+            "display": "Bravo",
+            "minute": "69",
+            "penalty": true,
+            "player": "Q311091"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4633,6 +5772,21 @@
       "homeGoals": 0,
       "key": "es-2008-Q8780-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Guti",
+            "minute": "67",
+            "player": "Q194461"
+          },
+          {
+            "display": "Raúl",
+            "minute": "72",
+            "player": "Q11576"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4669,6 +5823,33 @@
       "homeGoals": 3,
       "key": "es-2008-Q8780-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nouioui",
+            "minute": "42",
+            "player": "Q368345"
+          }
+        ],
+        "home": [
+          {
+            "display": "Alonso",
+            "minute": "12",
+            "player": "Q562663"
+          },
+          {
+            "display": "de la Peña",
+            "minute": "39",
+            "player": "Q317004"
+          },
+          {
+            "display": "Lopo",
+            "minute": "90",
+            "ownGoal": true,
+            "player": "Q359030"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4860,6 +6041,32 @@
       "homeGoals": 3,
       "key": "es-2008-Q8806-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Saviola",
+            "minute": "54",
+            "player": "Q186071"
+          }
+        ],
+        "home": [
+          {
+            "display": "Albín",
+            "minute": "2",
+            "player": "Q519484"
+          },
+          {
+            "display": "Albín",
+            "minute": "47",
+            "player": "Q519484"
+          },
+          {
+            "display": "Uche",
+            "minute": "83",
+            "player": "Q376183"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4900,6 +6107,28 @@
       "homeGoals": 1,
       "key": "es-2008-Q8806-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bodipo",
+            "minute": "6",
+            "player": "Q350232"
+          },
+          {
+            "display": "Sergio",
+            "minute": "80",
+            "penalty": true,
+            "player": "Q145808"
+          }
+        ],
+        "home": [
+          {
+            "display": "del Moral",
+            "minute": "15",
+            "player": "Q359056"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5071,6 +6300,26 @@
       "homeGoals": 0,
       "key": "es-2008-Q8835-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Robben",
+            "minute": "3",
+            "player": "Q43913"
+          },
+          {
+            "display": "Raúl",
+            "minute": "17",
+            "player": "Q11576"
+          },
+          {
+            "display": "Ramos",
+            "minute": "66",
+            "player": "Q483309"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5107,6 +6356,23 @@
       "homeGoals": 1,
       "key": "es-2008-Q8835-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Verdú",
+            "minute": "77",
+            "penalty": true,
+            "player": "Q359038"
+          }
+        ],
+        "home": [
+          {
+            "display": "Aduriz",
+            "minute": "55",
+            "player": "Q54105"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5287,14 +6553,14 @@
             "player": "Q17500"
           },
           {
-            "display": "Xavi",
-            "minute": "53",
-            "player": "Q17500"
-          },
-          {
             "display": "Messi",
             "minute": "19",
             "player": "Q615"
+          },
+          {
+            "display": "Xavi",
+            "minute": "53",
+            "player": "Q17500"
           },
           {
             "display": "Weligton",
@@ -5320,6 +6586,16 @@
       "homeGoals": 0,
       "key": "es-2008-Q8857-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Higuaín",
+            "minute": "48",
+            "player": "Q483846"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5356,6 +6632,22 @@
       "homeGoals": 1,
       "key": "es-2008-Q8857-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sergio",
+            "minute": "49",
+            "player": "Q145808"
+          }
+        ],
+        "home": [
+          {
+            "display": "Luque",
+            "minute": "33",
+            "player": "Q311372"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5394,14 +6686,38 @@
       },
       {
         "goals": 1,
+        "id": "Q210914"
+      },
+      {
+        "goals": 1,
+        "id": "Q193717"
+      },
+      {
+        "goals": 1,
         "id": "Q115101"
       },
       {
         "goals": 1,
         "id": "Q459738"
+      },
+      {
+        "goals": 1,
+        "id": "Q315008"
       }
     ],
     "Q10319": [
+      {
+        "goals": 1,
+        "id": "Q460541"
+      },
+      {
+        "goals": 1,
+        "id": "Q777755"
+      },
+      {
+        "goals": 1,
+        "id": "Q1374070"
+      },
       {
         "goals": 1,
         "id": "Q27777"
@@ -5411,7 +6727,7 @@
         "id": "Q361153"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q310007"
       },
       {
@@ -5421,16 +6737,32 @@
     ],
     "Q10329": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q218394"
       },
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q29097"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q94850"
+      },
+      {
+        "goals": 1,
+        "id": "Q192963"
+      },
+      {
+        "goals": 2,
+        "id": "Q314315"
+      },
+      {
+        "goals": 1,
+        "id": "Q438340"
+      },
+      {
+        "goals": 1,
+        "id": "Q159319"
       }
     ],
     "Q10333": [
@@ -5447,7 +6779,7 @@
         "id": "Q297845"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q161069"
       },
       {
@@ -5459,7 +6791,7 @@
         "id": "Q277533"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q299488"
       },
       {
@@ -5467,7 +6799,7 @@
         "id": "Q296180"
       },
       {
-        "goals": 4,
+        "goals": 3,
         "id": "Q294204"
       },
       {
@@ -5476,11 +6808,15 @@
       },
       {
         "goals": 1,
-        "id": "Q216260"
+        "id": "Q4599"
       },
       {
         "goals": 1,
-        "id": "Q4599"
+        "id": "Q312942"
+      },
+      {
+        "goals": 1,
+        "id": "Q216260"
       }
     ],
     "Q10407": [
@@ -5493,12 +6829,16 @@
         "id": "Q623113"
       },
       {
-        "goals": 18,
+        "goals": 19,
         "id": "Q210916"
       },
       {
         "goals": 4,
         "id": "Q719608"
+      },
+      {
+        "goals": 8,
+        "id": "Q215474"
       },
       {
         "goals": 1,
@@ -5509,10 +6849,6 @@
         "id": "Q377949"
       },
       {
-        "goals": 8,
-        "id": "Q215474"
-      },
-      {
         "goals": 1,
         "id": "Q1332402"
       },
@@ -5521,12 +6857,12 @@
         "id": "Q562340"
       },
       {
-        "goals": 1,
-        "id": "Q600333"
+        "goals": 5,
+        "id": "Q319890"
       },
       {
-        "goals": 4,
-        "id": "Q319890"
+        "goals": 1,
+        "id": "Q600333"
       },
       {
         "goals": 1,
@@ -5539,7 +6875,7 @@
     ],
     "Q12158": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2409704"
       },
       {
@@ -5553,11 +6889,15 @@
       {
         "goals": 1,
         "id": "Q927813"
+      },
+      {
+        "goals": 2,
+        "id": "Q2494806"
       }
     ],
     "Q12236": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q201373"
       },
       {
@@ -5569,31 +6909,39 @@
         "id": "Q277801"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q511704"
+      },
+      {
+        "goals": 1,
+        "id": "Q3822530"
       }
     ],
     "Q12249": [
       {
         "goals": 2,
         "id": "Q460218"
+      },
+      {
+        "goals": 2,
+        "id": "Q377835"
       }
     ],
     "Q12278": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2635950"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q737044"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q553163"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2421796"
       },
       {
@@ -5602,16 +6950,32 @@
       },
       {
         "goals": 1,
+        "id": "Q1068786"
+      },
+      {
+        "goals": 2,
         "id": "Q3772134"
       }
     ],
     "Q12297": [
       {
+        "goals": 1,
+        "id": "Q113156"
+      },
+      {
+        "goals": 1,
+        "id": "Q185225"
+      },
+      {
+        "goals": 1,
+        "id": "Q188793"
+      },
+      {
         "goals": 4,
         "id": "Q219048"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q358329"
       },
       {
@@ -5629,7 +6993,11 @@
     ],
     "Q7156": [
       {
-        "goals": 18,
+        "goals": 2,
+        "id": "Q179172"
+      },
+      {
+        "goals": 19,
         "id": "Q45901"
       },
       {
@@ -5641,7 +7009,7 @@
         "id": "Q184277"
       },
       {
-        "goals": 27,
+        "goals": 30,
         "id": "Q1255625"
       },
       {
@@ -5653,16 +7021,16 @@
         "id": "Q17158"
       },
       {
+        "goals": 5,
+        "id": "Q172720"
+      },
+      {
         "goals": 23,
         "id": "Q615"
       },
       {
         "goals": 4,
         "id": "Q43729"
-      },
-      {
-        "goals": 4,
-        "id": "Q172720"
       },
       {
         "goals": 1,
@@ -5683,34 +7051,78 @@
     ],
     "Q8682": [
       {
-        "goals": 2,
+        "goals": 5,
+        "id": "Q163974"
+      },
+      {
+        "goals": 6,
+        "id": "Q43913"
+      },
+      {
+        "goals": 4,
+        "id": "Q45626"
+      },
+      {
+        "goals": 5,
         "id": "Q26069"
       },
       {
-        "goals": 1,
+        "goals": 13,
         "id": "Q11576"
       },
       {
         "goals": 2,
+        "id": "Q63659"
+      },
+      {
+        "goals": 21,
         "id": "Q483846"
       },
       {
+        "goals": 3,
+        "id": "Q194461"
+      },
+      {
         "goals": 1,
+        "id": "Q186071"
+      },
+      {
+        "goals": 3,
         "id": "Q483309"
       },
       {
         "goals": 1,
+        "id": "Q212925"
+      },
+      {
+        "goals": 2,
+        "id": "Q124086"
+      },
+      {
+        "goals": 3,
         "id": "Q38136"
+      },
+      {
+        "goals": 1,
+        "id": "Q187426"
       }
     ],
     "Q8687": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q201752"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q187891"
+      },
+      {
+        "goals": 1,
+        "id": "Q310354"
+      },
+      {
+        "goals": 1,
+        "id": "Q317216"
       },
       {
         "goals": 1,
@@ -5727,7 +7139,11 @@
     ],
     "Q8701": [
       {
-        "goals": 4,
+        "goals": 1,
+        "id": "Q946457"
+      },
+      {
+        "goals": 7,
         "id": "Q261534"
       },
       {
@@ -5735,12 +7151,16 @@
         "id": "Q342690"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q190929"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q119562"
+      },
+      {
+        "goals": 2,
+        "id": "Q203665"
       },
       {
         "goals": 1,
@@ -5775,34 +7195,90 @@
       {
         "goals": 1,
         "id": "Q632132"
+      },
+      {
+        "goals": 2,
+        "id": "Q313201"
       }
     ],
     "Q8760": [
       {
-        "goals": 1,
-        "id": "Q350232"
+        "goals": 4,
+        "id": "Q145808"
       },
       {
         "goals": 1,
+        "id": "Q1787955"
+      },
+      {
+        "goals": 5,
+        "id": "Q350232"
+      },
+      {
+        "goals": 2,
+        "id": "Q359030"
+      },
+      {
+        "goals": 6,
+        "id": "Q372386"
+      },
+      {
+        "goals": 1,
+        "id": "Q247456"
+      },
+      {
+        "goals": 2,
+        "id": "Q439805"
+      },
+      {
+        "goals": 7,
         "id": "Q251736"
       },
       {
         "goals": 2,
+        "id": "Q19364"
+      },
+      {
+        "goals": 7,
         "id": "Q359038"
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q350547"
+      },
+      {
+        "goals": 2,
+        "id": "Q240811"
+      },
+      {
+        "goals": 3,
         "id": "Q368345"
+      },
+      {
+        "goals": 1,
+        "id": "Q195214"
+      },
+      {
+        "goals": 1,
+        "id": "Q311091"
       }
     ],
     "Q8780": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q317004"
       },
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q312946"
+      },
+      {
+        "goals": 3,
         "id": "Q562663"
+      },
+      {
+        "goals": 1,
+        "id": "Q440855"
       },
       {
         "goals": 2,
@@ -5819,16 +7295,24 @@
     ],
     "Q8806": [
       {
+        "goals": 2,
+        "id": "Q218401"
+      },
+      {
         "goals": 1,
         "id": "Q718878"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q376183"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q359056"
+      },
+      {
+        "goals": 3,
+        "id": "Q519484"
       },
       {
         "goals": 1,
@@ -5837,19 +7321,19 @@
     ],
     "Q8835": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q313143"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q54105"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q726407"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q514375"
       },
       {
@@ -5859,12 +7343,24 @@
     ],
     "Q8857": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q311372"
       },
       {
         "goals": 2,
         "id": "Q703661"
+      },
+      {
+        "goals": 1,
+        "id": "Q72802"
+      },
+      {
+        "goals": 1,
+        "id": "Q1996694"
+      },
+      {
+        "goals": 1,
+        "id": "Q159110"
       },
       {
         "goals": 1,

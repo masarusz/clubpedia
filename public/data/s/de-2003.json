@@ -112,6 +112,11 @@
         ],
         "home": [
           {
+            "display": "Thiam",
+            "minute": "9",
+            "player": "Q704880"
+          },
+          {
             "display": "Klimowicz",
             "minute": "14",
             "player": "Q47029"
@@ -120,11 +125,6 @@
             "display": "Petrov",
             "minute": "75",
             "player": "Q206644"
-          },
-          {
-            "display": "Thiam",
-            "minute": "9",
-            "player": "Q704880"
           }
         ]
       },
@@ -279,6 +279,16 @@
       "homeGoals": 1,
       "key": "de-2003-Q101859-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Klimowicz",
+            "minute": "10",
+            "player": "Q47029"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -841,14 +851,14 @@
             "player": "Q160363"
           },
           {
-            "display": "Aílton",
-            "minute": "65",
-            "player": "Q160363"
-          },
-          {
             "display": "Micoud",
             "minute": "21",
             "player": "Q169995"
+          },
+          {
+            "display": "Aílton",
+            "minute": "65",
+            "player": "Q160363"
           }
         ],
         "home": []
@@ -1781,14 +1791,14 @@
             "player": "Q276207"
           },
           {
-            "display": "Hashemian",
-            "minute": "83",
-            "player": "Q276207"
-          },
-          {
             "display": "Madsen",
             "minute": "60",
             "player": "Q700558"
+          },
+          {
+            "display": "Hashemian",
+            "minute": "83",
+            "player": "Q276207"
           },
           {
             "display": "Madsen",
@@ -1876,14 +1886,14 @@
             "player": "Q432218"
           },
           {
-            "display": "Antar",
-            "minute": "79",
-            "player": "Q432218"
-          },
-          {
             "display": "Sanou",
             "minute": "23",
             "player": "Q44266"
+          },
+          {
+            "display": "Antar",
+            "minute": "79",
+            "player": "Q432218"
           }
         ]
       },
@@ -3290,6 +3300,37 @@
       "homeGoals": 3,
       "key": "de-2003-Q38245-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hashemian",
+            "minute": "30",
+            "player": "Q276207"
+          },
+          {
+            "display": "Wosz",
+            "minute": "49",
+            "player": "Q644323"
+          }
+        ],
+        "home": [
+          {
+            "display": "Preuß",
+            "minute": "13",
+            "player": "Q591508"
+          },
+          {
+            "display": "Puljiz",
+            "minute": "19",
+            "player": "Q640844"
+          },
+          {
+            "display": "Amanatidis",
+            "minute": "51",
+            "player": "Q318563"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3586,14 +3627,14 @@
             "player": "Q819582"
           },
           {
-            "display": "Hristov",
-            "minute": "52",
-            "player": "Q819582"
-          },
-          {
             "display": "Klose",
             "minute": "48",
             "player": "Q80471"
+          },
+          {
+            "display": "Hristov",
+            "minute": "52",
+            "player": "Q819582"
           }
         ],
         "home": [
@@ -4311,6 +4352,52 @@
       "homeGoals": 5,
       "key": "de-2003-Q51976-Q101859",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Biliškov",
+            "minute": "40",
+            "player": "Q708642"
+          },
+          {
+            "display": "Streit",
+            "minute": "54",
+            "player": "Q704296"
+          },
+          {
+            "display": "Karhan",
+            "minute": "65",
+            "player": "Q353181"
+          }
+        ],
+        "home": [
+          {
+            "display": "Aílton",
+            "minute": "2",
+            "player": "Q160363"
+          },
+          {
+            "display": "Aílton",
+            "minute": "21",
+            "player": "Q160363"
+          },
+          {
+            "display": "Stalteri",
+            "minute": "41",
+            "player": "Q312091"
+          },
+          {
+            "display": "Micoud",
+            "minute": "57",
+            "player": "Q169995"
+          },
+          {
+            "display": "Klasnić",
+            "minute": "58",
+            "player": "Q153003"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4388,6 +4475,11 @@
             "player": "Q712145"
           },
           {
+            "display": "Bierofka",
+            "minute": "13",
+            "player": "Q66186"
+          },
+          {
             "display": "França",
             "minute": "21",
             "player": "Q712145"
@@ -4396,11 +4488,6 @@
             "display": "França",
             "minute": "61",
             "player": "Q712145"
-          },
-          {
-            "display": "Bierofka",
-            "minute": "13",
-            "player": "Q66186"
           },
           {
             "display": "Berbatov",
@@ -4486,6 +4573,11 @@
         "home": [
           {
             "display": "Aílton",
+            "minute": "6",
+            "player": "Q160363"
+          },
+          {
+            "display": "Aílton",
             "minute": "15",
             "player": "Q160363"
           },
@@ -4493,11 +4585,6 @@
             "display": "Aílton",
             "minute": "50",
             "penalty": true,
-            "player": "Q160363"
-          },
-          {
-            "display": "Aílton",
-            "minute": "6",
             "player": "Q160363"
           }
         ]
@@ -5035,7 +5122,7 @@
         "id": "Q704880"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q708642"
       },
       {
@@ -5048,7 +5135,7 @@
         "topScorerRank": 8
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q353181"
       },
       {
@@ -5078,6 +5165,10 @@
       {
         "goals": 1,
         "id": "Q3888396"
+      },
+      {
+        "goals": 1,
+        "id": "Q704296"
       }
     ],
     "Q101959": [
@@ -5168,7 +5259,7 @@
     ],
     "Q105861": [
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q644323"
       },
       {
@@ -5386,6 +5477,10 @@
         "id": "Q1901644"
       },
       {
+        "goals": 2,
+        "id": "Q591508"
+      },
+      {
         "goals": 1,
         "id": "Q1118463"
       },
@@ -5394,7 +5489,7 @@
         "id": "Q310971"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q318563"
       },
       {
@@ -5419,7 +5514,7 @@
       },
       {
         "goals": 1,
-        "id": "Q591508"
+        "id": "Q640844"
       }
     ],
     "Q41420": [
@@ -5538,11 +5633,11 @@
         "id": "Q160890"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q312091"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q169995"
       },
       {

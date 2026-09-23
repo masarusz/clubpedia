@@ -198,6 +198,10 @@
       "homeGoals": 0,
       "key": "fr-2003-Q126334-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -286,6 +290,27 @@
       "homeGoals": 1,
       "key": "fr-2003-Q132885-Q180305",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Squillaci",
+            "minute": "58",
+            "player": "Q1942"
+          },
+          {
+            "display": "Giuly",
+            "minute": "66",
+            "player": "Q219771"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mido",
+            "minute": "44",
+            "player": "Q294387"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -561,14 +586,14 @@
             "player": "Q294387"
           },
           {
-            "display": "Mido",
-            "minute": "86",
-            "player": "Q294387"
-          },
-          {
             "display": "Sychev",
             "minute": "68",
             "player": "Q299383"
+          },
+          {
+            "display": "Mido",
+            "minute": "86",
+            "player": "Q294387"
           }
         ]
       },
@@ -664,7 +689,7 @@
         "away": [
           {
             "display": "Fiorèse",
-            "minute": "90",
+            "minute": "87",
             "player": "Q604757"
           }
         ],
@@ -912,6 +937,26 @@
       "homeGoals": 3,
       "key": "fr-2003-Q172476-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Feindouno",
+            "minute": "21",
+            "player": "Q350502"
+          },
+          {
+            "display": "Feindouno",
+            "minute": "51",
+            "player": "Q350502"
+          },
+          {
+            "display": "Chamakh",
+            "minute": "74",
+            "player": "Q42010"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -970,6 +1015,16 @@
       "homeGoals": 1,
       "key": "fr-2003-Q180305-Q132885",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Giuly",
+            "minute": "90",
+            "player": "Q219771"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1173,6 +1228,11 @@
             "player": "Q386876"
           },
           {
+            "display": "Morientes",
+            "minute": "48",
+            "player": "Q45567"
+          },
+          {
             "display": "Adebayor",
             "minute": "56",
             "player": "Q386876"
@@ -1181,11 +1241,6 @@
             "display": "Adebayor",
             "minute": "71",
             "player": "Q386876"
-          },
-          {
-            "display": "Morientes",
-            "minute": "48",
-            "player": "Q45567"
           }
         ]
       },
@@ -1396,15 +1451,15 @@
             "player": "Q45567"
           },
           {
-            "display": "Morientes",
-            "minute": "38",
-            "player": "Q45567"
-          },
-          {
             "display": "Pršo",
             "minute": "28",
             "penalty": true,
             "player": "Q296467"
+          },
+          {
+            "display": "Morientes",
+            "minute": "38",
+            "player": "Q45567"
           }
         ]
       },
@@ -1644,6 +1699,22 @@
       "homeGoals": 1,
       "key": "fr-2003-Q182876-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cana",
+            "minute": "80",
+            "player": "Q311155"
+          }
+        ],
+        "home": [
+          {
+            "display": "D. Cissé",
+            "minute": "45",
+            "player": "Q1936"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1870,6 +1941,27 @@
       "homeGoals": 1,
       "key": "fr-2003-Q185163-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pierre-Fanfan",
+            "minute": "80",
+            "player": "Q541920"
+          },
+          {
+            "display": "Sorín",
+            "minute": "87",
+            "player": "Q220746"
+          }
+        ],
+        "home": [
+          {
+            "display": "Laslandes",
+            "minute": "16",
+            "player": "Q956723"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2088,6 +2180,16 @@
       "homeGoals": 1,
       "key": "fr-2003-Q191843-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Coridon",
+            "minute": "31",
+            "player": "Q2607271"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2299,6 +2401,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q192071-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fiorèse",
+            "minute": "61",
+            "player": "Q604757"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2539,6 +2651,22 @@
       "homeGoals": 1,
       "key": "fr-2003-Q19509-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fiorèse",
+            "minute": "48",
+            "player": "Q604757"
+          }
+        ],
+        "home": [
+          {
+            "display": "Frei",
+            "minute": "73",
+            "player": "Q193024"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2780,6 +2908,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q19512-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pauleta",
+            "minute": "20",
+            "player": "Q218165"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3003,6 +3141,37 @@
       "homeGoals": 3,
       "key": "fr-2003-Q19513-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Reinaldo",
+            "minute": "18",
+            "player": "Q180968"
+          },
+          {
+            "display": "Reinaldo",
+            "minute": "72",
+            "player": "Q180968"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bamogo",
+            "minute": "57",
+            "player": "Q194224"
+          },
+          {
+            "display": "Bamogo",
+            "minute": "64",
+            "player": "Q194224"
+          },
+          {
+            "display": "Pataca",
+            "minute": "84",
+            "player": "Q3452982"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3224,6 +3393,16 @@
       "homeGoals": 1,
       "key": "fr-2003-Q19516-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Tapia",
+            "minute": "45",
+            "player": "Q1642864"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3448,6 +3627,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q19518-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ljuboja",
+            "minute": "28",
+            "player": "Q433125"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3669,6 +3858,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q208399-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pauleta",
+            "minute": "53",
+            "player": "Q218165"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3862,6 +4061,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q210864-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ljuboja",
+            "minute": "67",
+            "player": "Q433125"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4079,6 +4288,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q221525-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Leroy",
+            "minute": "65",
+            "player": "Q2383031"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4324,6 +4543,11 @@
             "player": "Q342608"
           },
           {
+            "display": "Malouda",
+            "minute": "68",
+            "player": "Q1913"
+          },
+          {
             "display": "Luyindula",
             "minute": "71",
             "player": "Q342608"
@@ -4332,11 +4556,6 @@
             "display": "Luyindula",
             "minute": "88",
             "player": "Q342608"
-          },
-          {
-            "display": "Malouda",
-            "minute": "68",
-            "player": "Q1913"
           }
         ],
         "home": [
@@ -4545,6 +4764,22 @@
       "homeGoals": 0,
       "key": "fr-2003-Q459148-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fiorèse",
+            "minute": "65",
+            "player": "Q604757"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "70",
+            "penalty": true,
+            "player": "Q218165"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4578,6 +4813,37 @@
       "homeGoals": 3,
       "key": "fr-2003-Q483020-Q126334",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ljuboja",
+            "minute": "13",
+            "player": "Q433125"
+          },
+          {
+            "display": "Fahmi",
+            "minute": "79",
+            "player": "Q2821067"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bošković",
+            "minute": "20",
+            "player": "Q698113"
+          },
+          {
+            "display": "Reinaldo",
+            "minute": "61",
+            "player": "Q180968"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "67",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4603,7 +4869,7 @@
           },
           {
             "display": "Pauleta",
-            "minute": "62",
+            "minute": "61",
             "player": "Q218165"
           }
         ]
@@ -4617,6 +4883,27 @@
       "homeGoals": 2,
       "key": "fr-2003-Q483020-Q172476",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Celades",
+            "minute": "17",
+            "player": "Q459099"
+          }
+        ],
+        "home": [
+          {
+            "display": "Reinaldo",
+            "minute": "35",
+            "player": "Q180968"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "47",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4634,11 +4921,6 @@
             "player": "Q219771"
           },
           {
-            "display": "Giuly",
-            "minute": "90",
-            "player": "Q219771"
-          },
-          {
             "display": "Adebayor",
             "minute": "37",
             "player": "Q386876"
@@ -4647,6 +4929,11 @@
             "display": "Squillaci",
             "minute": "56",
             "player": "Q1942"
+          },
+          {
+            "display": "Giuly",
+            "minute": "90",
+            "player": "Q219771"
           }
         ],
         "home": [
@@ -4671,6 +4958,16 @@
       "homeGoals": 1,
       "key": "fr-2003-Q483020-Q182876",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "9",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4693,6 +4990,16 @@
       "homeGoals": 0,
       "key": "fr-2003-Q483020-Q191843",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Moreira",
+            "minute": "78",
+            "player": "Q2460894"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4702,6 +5009,38 @@
       "homeGoals": 3,
       "key": "fr-2003-Q483020-Q192071",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pujol",
+            "minute": "16",
+            "player": "Q128915"
+          },
+          {
+            "display": "Ziani",
+            "minute": "89",
+            "player": "Q3087952"
+          }
+        ],
+        "home": [
+          {
+            "display": "Armand",
+            "minute": "34",
+            "ownGoal": true,
+            "player": "Q372480"
+          },
+          {
+            "display": "Bošković",
+            "minute": "68",
+            "player": "Q698113"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "75",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4711,6 +5050,16 @@
       "homeGoals": 1,
       "key": "fr-2003-Q483020-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Déhu",
+            "minute": "60",
+            "player": "Q553578"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4720,6 +5069,23 @@
       "homeGoals": 1,
       "key": "fr-2003-Q483020-Q19512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Santos",
+            "minute": "54",
+            "player": "Q431320"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "49",
+            "penalty": true,
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4729,6 +5095,47 @@
       "homeGoals": 6,
       "key": "fr-2003-Q483020-Q19513",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Džodić",
+            "minute": "53",
+            "player": "Q2635227"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ljuboja",
+            "minute": "7",
+            "player": "Q433125"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "20",
+            "player": "Q218165"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "49",
+            "player": "Q218165"
+          },
+          {
+            "display": "Ljuboja",
+            "minute": "55",
+            "player": "Q433125"
+          },
+          {
+            "display": "Bošković",
+            "minute": "75",
+            "player": "Q698113"
+          },
+          {
+            "display": "Reinaldo",
+            "minute": "76",
+            "player": "Q180968"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4738,6 +5145,17 @@
       "homeGoals": 1,
       "key": "fr-2003-Q483020-Q19516",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Tavlaridis",
+            "minute": "12",
+            "ownGoal": true,
+            "player": "Q391248"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4747,6 +5165,28 @@
       "homeGoals": 2,
       "key": "fr-2003-Q483020-Q19518",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dieuze",
+            "minute": "59",
+            "player": "Q968062"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dieuze",
+            "minute": "25",
+            "ownGoal": true,
+            "player": "Q968062"
+          },
+          {
+            "display": "Heinze",
+            "minute": "65",
+            "player": "Q63659"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4756,6 +5196,10 @@
       "homeGoals": 0,
       "key": "fr-2003-Q483020-Q208399",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4765,6 +5209,42 @@
       "homeGoals": 5,
       "key": "fr-2003-Q483020-Q210864",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Molefe",
+            "minute": "12",
+            "player": "Q2429264"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "28",
+            "player": "Q218165"
+          },
+          {
+            "display": "Fiorèse",
+            "minute": "38",
+            "player": "Q604757"
+          },
+          {
+            "display": "Fiorèse",
+            "minute": "62",
+            "player": "Q604757"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "63",
+            "player": "Q218165"
+          },
+          {
+            "display": "Reinaldo",
+            "minute": "90",
+            "player": "Q180968"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4787,6 +5267,17 @@
       "homeGoals": 1,
       "key": "fr-2003-Q483020-Q270051",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "67",
+            "penalty": true,
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4796,6 +5287,21 @@
       "homeGoals": 2,
       "key": "fr-2003-Q483020-Q459148",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "M'Bami",
+            "minute": "23",
+            "player": null
+          },
+          {
+            "display": "Ljuboja",
+            "minute": "83",
+            "player": "Q433125"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4974,11 +5480,6 @@
             "player": "Q203451"
           },
           {
-            "display": "Juninho",
-            "minute": "73",
-            "player": "Q203451"
-          },
-          {
             "display": "Malouda",
             "minute": "28",
             "player": "Q1913"
@@ -4992,6 +5493,11 @@
             "display": "Govou",
             "minute": "45",
             "player": "Q1934"
+          },
+          {
+            "display": "Juninho",
+            "minute": "73",
+            "player": "Q203451"
           }
         ]
       },
@@ -5013,6 +5519,11 @@
             "player": "Q203451"
           },
           {
+            "display": "Réveillère",
+            "minute": "25",
+            "player": "Q1922"
+          },
+          {
             "display": "Juninho",
             "minute": "41",
             "player": "Q203451"
@@ -5021,11 +5532,6 @@
             "display": "Juninho",
             "minute": "57",
             "player": "Q203451"
-          },
-          {
-            "display": "Réveillère",
-            "minute": "25",
-            "player": "Q1922"
           }
         ]
       },
@@ -5334,7 +5840,7 @@
   "players": {
     "Q126334": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q433125"
       },
       {
@@ -5348,6 +5854,10 @@
       {
         "goals": 1,
         "id": "Q342707"
+      },
+      {
+        "goals": 1,
+        "id": "Q2821067"
       }
     ],
     "Q132885": [
@@ -5365,7 +5875,7 @@
         "topScorerRank": 3
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q294387"
       },
       {
@@ -5403,8 +5913,16 @@
         "id": "Q215435"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q42010"
+      },
+      {
+        "goals": 1,
+        "id": "Q459099"
+      },
+      {
+        "goals": 2,
+        "id": "Q350502"
       },
       {
         "goals": 1,
@@ -5429,13 +5947,17 @@
         "id": "Q259801"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q1942"
       },
       {
         "goals": 13,
         "id": "Q219771",
         "topScorerRank": 9
+      },
+      {
+        "goals": 2,
+        "id": "Q193717"
       },
       {
         "goals": 8,
@@ -5452,10 +5974,6 @@
       {
         "goals": 1,
         "id": "Q419159"
-      },
-      {
-        "goals": 2,
-        "id": "Q193717"
       }
     ],
     "Q182876": [
@@ -5479,7 +5997,7 @@
     ],
     "Q185163": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q956723"
       },
       {
@@ -5497,8 +6015,12 @@
         "id": "Q1369762"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2460894"
+      },
+      {
+        "goals": 1,
+        "id": "Q2607271"
       },
       {
         "goals": 1,
@@ -5507,12 +6029,20 @@
     ],
     "Q192071": [
       {
+        "goals": 1,
+        "id": "Q3087952"
+      },
+      {
         "goals": 2,
         "id": "Q518577"
       },
       {
         "goals": 1,
         "id": "Q342375"
+      },
+      {
+        "goals": 1,
+        "id": "Q128915"
       }
     ],
     "Q19509": [
@@ -5526,16 +6056,16 @@
         "id": "Q387465"
       },
       {
+        "goals": 1,
+        "id": "Q3034957"
+      },
+      {
         "goals": 2,
         "id": "Q214124"
       },
       {
         "goals": 1,
         "id": "Q44698"
-      },
-      {
-        "goals": 1,
-        "id": "Q3034957"
       }
     ],
     "Q19512": [
@@ -5573,12 +6103,24 @@
         "id": "Q2093651"
       },
       {
+        "goals": 1,
+        "id": "Q3452982"
+      },
+      {
+        "goals": 1,
+        "id": "Q2635227"
+      },
+      {
         "goals": 0,
         "id": "Q1907596",
         "japan": true
       }
     ],
     "Q19516": [
+      {
+        "goals": 1,
+        "id": "Q1642864"
+      },
       {
         "goals": 13,
         "id": "Q389113",
@@ -5609,6 +6151,10 @@
       {
         "goals": 1,
         "id": "Q3506979"
+      },
+      {
+        "goals": 1,
+        "id": "Q968062"
       }
     ],
     "Q208399": [
@@ -5633,6 +6179,10 @@
       {
         "goals": 1,
         "id": "Q381515"
+      },
+      {
+        "goals": 1,
+        "id": "Q2429264"
       }
     ],
     "Q221525": [
@@ -5699,7 +6249,15 @@
     ],
     "Q483020": [
       {
+        "goals": 5,
+        "id": "Q433125"
+      },
+      {
         "goals": 1,
+        "id": "Q220746"
+      },
+      {
+        "goals": 2,
         "id": "Q63659"
       },
       {
@@ -5709,11 +6267,31 @@
       },
       {
         "goals": 1,
+        "id": "Q2383031"
+      },
+      {
+        "goals": 6,
         "id": "Q604757"
       },
       {
         "goals": 1,
+        "id": "Q553578"
+      },
+      {
+        "goals": 1,
+        "id": "Q311155"
+      },
+      {
+        "goals": 1,
+        "id": "Q541920"
+      },
+      {
+        "goals": 7,
         "id": "Q180968"
+      },
+      {
+        "goals": 3,
+        "id": "Q698113"
       }
     ],
     "Q704": [

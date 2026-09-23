@@ -100,6 +100,32 @@
       "homeGoals": 3,
       "key": "de-2006-Q101859-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gekas",
+            "minute": "66",
+            "player": "Q201885"
+          }
+        ],
+        "home": [
+          {
+            "display": "Boakye",
+            "minute": "22",
+            "player": "Q1189509"
+          },
+          {
+            "display": "Madlung",
+            "minute": "26",
+            "player": "Q621792"
+          },
+          {
+            "display": "Marcelinho",
+            "minute": "83",
+            "player": "Q262954"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -152,6 +178,22 @@
       "homeGoals": 1,
       "key": "de-2006-Q101859-Q15786",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Saenko",
+            "minute": "7",
+            "player": "Q361441"
+          }
+        ],
+        "home": [
+          {
+            "display": "Menseguez",
+            "minute": "84",
+            "player": "Q707048"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -161,6 +203,16 @@
       "homeGoals": 1,
       "key": "de-2006-Q101859-Q15789",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hanke",
+            "minute": "35",
+            "player": "Q107430"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -247,6 +299,22 @@
       "homeGoals": 1,
       "key": "de-2006-Q101859-Q4512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gómez",
+            "minute": "31",
+            "player": "Q45766"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hanke",
+            "minute": "26",
+            "player": "Q107430"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -701,6 +769,42 @@
       "homeGoals": 3,
       "key": "de-2006-Q102720-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gekas",
+            "minute": "39",
+            "player": "Q201885"
+          },
+          {
+            "display": "Misimović",
+            "minute": "45+1",
+            "player": "Q158243"
+          },
+          {
+            "display": "Misimović",
+            "minute": "47",
+            "player": "Q158243"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pantelić",
+            "minute": "9",
+            "player": "Q207399"
+          },
+          {
+            "display": "Van Burik",
+            "minute": "58",
+            "player": "Q705931"
+          },
+          {
+            "display": "Zecke",
+            "minute": "80",
+            "player": "Q96238"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -862,14 +966,14 @@
             "player": "Q207399"
           },
           {
-            "display": "Pantelić",
-            "minute": "63",
-            "player": "Q207399"
-          },
-          {
             "display": "Dárdai",
             "minute": "31",
             "player": "Q742429"
+          },
+          {
+            "display": "Pantelić",
+            "minute": "63",
+            "player": "Q207399"
           },
           {
             "display": "Ebert",
@@ -940,14 +1044,14 @@
         ],
         "home": [
           {
-            "display": "Pantelic",
-            "minute": "14",
-            "player": "Q207399"
-          },
-          {
             "display": "Friedrich",
             "minute": "9",
             "player": "Q63676"
+          },
+          {
+            "display": "Pantelić",
+            "minute": "14",
+            "player": "Q207399"
           }
         ]
       },
@@ -1003,14 +1107,14 @@
             "player": "Q107796"
           },
           {
-            "display": "Rosenberg",
-            "minute": "82",
-            "player": "Q107796"
-          },
-          {
             "display": "Diego",
             "minute": "60",
             "player": "Q109428"
+          },
+          {
+            "display": "Rosenberg",
+            "minute": "82",
+            "player": "Q107796"
           }
         ],
         "home": [
@@ -3000,6 +3104,22 @@
       "homeGoals": 1,
       "key": "de-2006-Q15786-Q101859",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Krzynówek",
+            "minute": "18",
+            "player": "Q249669"
+          }
+        ],
+        "home": [
+          {
+            "display": "Wolf",
+            "minute": "23",
+            "player": "Q501304"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3213,6 +3333,26 @@
       "homeGoals": 3,
       "key": "de-2006-Q15786-Q15789",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Saenko",
+            "minute": "13",
+            "player": "Q361441"
+          },
+          {
+            "display": "Schroth",
+            "minute": "71",
+            "player": "Q879747"
+          },
+          {
+            "display": "Vittek",
+            "minute": "86",
+            "player": "Q207403"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3445,6 +3585,11 @@
         ],
         "home": [
           {
+            "display": "Makaay",
+            "minute": "9",
+            "player": "Q152725"
+          },
+          {
             "display": "Sagnol",
             "minute": "15",
             "player": "Q44513"
@@ -3458,11 +3603,6 @@
             "display": "Podolski",
             "minute": "78",
             "player": "Q134976"
-          },
-          {
-            "display": "Makaay",
-            "minute": "9",
-            "player": "Q152725"
           }
         ]
       },
@@ -3781,6 +3921,27 @@
       "homeGoals": 1,
       "key": "de-2006-Q15789-Q51974",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Van der Vaart",
+            "minute": "71",
+            "player": "Q163974"
+          },
+          {
+            "display": "Guerrero",
+            "minute": "76",
+            "player": "Q156802"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pizarro",
+            "minute": "35",
+            "player": "Q109397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5030,14 +5191,14 @@
             "player": "Q45766"
           },
           {
-            "display": "Gómez",
-            "minute": "59",
-            "player": "Q45766"
-          },
-          {
             "display": "Cacau",
             "minute": "53",
             "player": "Q57148"
+          },
+          {
+            "display": "Gómez",
+            "minute": "59",
+            "player": "Q45766"
           }
         ]
       },
@@ -5163,6 +5324,21 @@
       "homeGoals": 2,
       "key": "de-2006-Q4512-Q15789",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cacau",
+            "minute": "24",
+            "player": "Q57148"
+          },
+          {
+            "display": "Cacau",
+            "minute": "25",
+            "player": "Q57148"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5575,6 +5751,28 @@
       "homeGoals": 1,
       "key": "de-2006-Q51974-Q15789",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Makaay",
+            "minute": "57",
+            "player": "Q152725"
+          },
+          {
+            "display": "Pizarro",
+            "minute": "78",
+            "player": "Q109397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Van der Vaart",
+            "minute": "18",
+            "penalty": true,
+            "player": "Q163974"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5696,12 +5894,12 @@
         ],
         "home": [
           {
-            "display": "Jarolim",
+            "display": "Jarolím",
             "minute": "66",
             "player": "Q155440"
           },
           {
-            "display": "Olic",
+            "display": "Olić",
             "minute": "75",
             "player": "Q150484"
           }
@@ -6016,19 +6214,23 @@
         "id": "Q47029"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q249669"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q262954"
       },
       {
-        "goals": 4,
+        "goals": 1,
+        "id": "Q707048"
+      },
+      {
+        "goals": 5,
         "id": "Q621792"
       },
       {
-        "goals": 4,
+        "goals": 6,
         "id": "Q107430"
       },
       {
@@ -6036,7 +6238,7 @@
         "id": "Q66278"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q1189509"
       },
       {
@@ -6068,7 +6270,7 @@
     ],
     "Q102720": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q705931"
       },
       {
@@ -6078,6 +6280,10 @@
       {
         "goals": 1,
         "id": "Q317357"
+      },
+      {
+        "goals": 1,
+        "id": "Q96238"
       },
       {
         "goals": 3,
@@ -6278,12 +6484,17 @@
         "id": "Q49806"
       },
       {
-        "goals": 5,
+        "goals": 7,
         "id": "Q158243"
       },
       {
         "goals": 2,
         "id": "Q568265"
+      },
+      {
+        "goals": 20,
+        "id": "Q201885",
+        "topScorerRank": 1
       },
       {
         "goals": 3,
@@ -6292,11 +6503,6 @@
       {
         "goals": 1,
         "id": "Q346635"
-      },
-      {
-        "goals": 20,
-        "id": "Q201885",
-        "topScorerRank": 1
       },
       {
         "goals": 2,
@@ -6406,7 +6612,7 @@
     ],
     "Q15786": [
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q879747"
       },
       {
@@ -6418,11 +6624,11 @@
         "id": "Q354774"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q207403"
       },
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q361441"
       },
       {
@@ -6444,6 +6650,10 @@
       {
         "goals": 2,
         "id": "Q310803"
+      },
+      {
+        "goals": 1,
+        "id": "Q501304"
       },
       {
         "goals": 1,
@@ -6472,7 +6682,7 @@
         "id": "Q152492"
       },
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q109397"
       },
       {
@@ -6592,17 +6802,21 @@
     ],
     "Q38245": [
       {
+        "goals": 1,
+        "id": "Q591508"
+      },
+      {
         "goals": 3,
         "id": "Q318563"
       },
       {
-        "goals": 2,
+        "goals": 11,
         "id": "Q331975",
         "japan": true
       },
       {
-        "goals": 1,
-        "id": "Q591508"
+        "goals": 4,
+        "id": "Q704296"
       },
       {
         "goals": 1,
@@ -6611,10 +6825,6 @@
       {
         "goals": 3,
         "id": "Q276731"
-      },
-      {
-        "goals": 4,
-        "id": "Q704296"
       },
       {
         "goals": 1,
@@ -6706,7 +6916,7 @@
         "id": "Q503395"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q156802"
       },
       {
@@ -6722,7 +6932,7 @@
         "id": "Q154303"
       },
       {
-        "goals": 5,
+        "goals": 7,
         "id": "Q163974"
       },
       {

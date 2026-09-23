@@ -1,7 +1,7 @@
 {
   "Q100144493": {
     "birthDate": "2003-04-29",
-    "en": "Miguel Rodríguez (footballer, born April 2003)",
+    "en": "Miguel Rodríguez",
     "id": "Q100144493",
     "ja": {
       "display": "ミゲル ロドリゲス",
@@ -44,7 +44,7 @@
   },
   "Q1050055": {
     "birthDate": "1984-08-09",
-    "en": "Paul Gallagher (footballer)",
+    "en": "Paul Gallagher",
     "id": "Q1050055",
     "ja": {
       "display": "ポール ギャラガー",
@@ -63,6 +63,13 @@
         "goals": 2,
         "league": "en",
         "season": "en-2004",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q19446",
+        "goals": 1,
+        "league": "en",
+        "season": "en-2006",
         "topScorerRank": null
       }
     ]
@@ -338,14 +345,14 @@
     "seasons": [
       {
         "club": "Q19509",
-        "goals": 6,
+        "goals": 7,
         "league": "fr",
         "season": "fr-2012",
         "topScorerRank": null
       },
       {
         "club": "Q19509",
-        "goals": 3,
+        "goals": 4,
         "league": "fr",
         "season": "fr-2013",
         "topScorerRank": null
@@ -377,6 +384,13 @@
     "seasons": [
       {
         "club": "Q12297",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2013",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q12297",
         "goals": 3,
         "league": "es",
         "season": "es-2014",
@@ -394,6 +408,42 @@
         "goals": 1,
         "league": "it",
         "season": "it-2018",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q117037979": {
+    "birthDate": "2003-04-09",
+    "en": "Jorge Pascual",
+    "id": "Q117037979",
+    "ja": {
+      "display": "Jorge Pascual",
+      "mode": "latin"
+    },
+    "seasons": [
+      {
+        "club": "Q12297",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2022",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1191798": {
+    "birthDate": "1989-08-21",
+    "en": "Giuseppe Bellusci",
+    "id": "Q1191798",
+    "ja": {
+      "display": "ジュゼッペ ベッルーシ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q6703",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2016",
         "topScorerRank": null
       }
     ]
@@ -418,10 +468,10 @@
   },
   "Q1220489": {
     "birthDate": "1984-01-16",
-    "en": "Diego León (footballer, born 1984)",
+    "en": "Diego León",
     "id": "Q1220489",
     "ja": {
-      "display": "Diego León (footballer, born 1984)",
+      "display": "Diego León",
       "mode": "latin"
     },
     "seasons": [
@@ -490,10 +540,10 @@
   },
   "Q1343384": {
     "birthDate": "1983-07-31",
-    "en": "Reginaldo (footballer, born 1983)",
+    "en": "Reginaldo",
     "id": "Q1343384",
     "ja": {
-      "display": "レジナルド フェレイラ ダ シルヴァ",
+      "display": "Reginaldo",
       "mode": "katakana"
     },
     "seasons": [
@@ -505,8 +555,15 @@
         "topScorerRank": null
       },
       {
+        "club": "Q2693",
+        "goals": 3,
+        "league": "it",
+        "season": "it-2007",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2756",
-        "goals": 1,
+        "goals": 3,
         "league": "it",
         "season": "it-2012",
         "topScorerRank": null
@@ -563,6 +620,24 @@
         "goals": 1,
         "league": "fr",
         "season": "fr-2007",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1407338": {
+    "birthDate": "1983-12-15",
+    "en": "Marco Bernacci",
+    "id": "Q1407338",
+    "ja": {
+      "display": "Marco Bernacci",
+      "mode": "latin"
+    },
+    "seasons": [
+      {
+        "club": "Q1893",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2008",
         "topScorerRank": null
       }
     ]
@@ -638,7 +713,7 @@
       },
       {
         "club": "Q101859",
-        "goals": 8,
+        "goals": 9,
         "league": "de",
         "season": "de-2012",
         "topScorerRank": null
@@ -652,7 +727,7 @@
       },
       {
         "club": "Q101859",
-        "goals": 4,
+        "goals": 5,
         "league": "de",
         "season": "de-2014",
         "topScorerRank": null
@@ -668,7 +743,7 @@
   },
   "Q15113616": {
     "birthDate": "1995-11-06",
-    "en": "André Silva (footballer, born 1995)",
+    "en": "André Silva",
     "id": "Q15113616",
     "ja": {
       "display": "アンドレ シルヴァ",
@@ -691,7 +766,7 @@
       },
       {
         "club": "Q702455",
-        "goals": 10,
+        "goals": 11,
         "league": "de",
         "season": "de-2021",
         "topScorerRank": null
@@ -736,6 +811,13 @@
         "goals": 9,
         "league": "es",
         "season": "es-2025",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2017",
         "topScorerRank": null
       }
     ]
@@ -800,14 +882,14 @@
       },
       {
         "club": "Q8760",
-        "goals": 2,
+        "goals": 16,
         "league": "es",
         "season": "es-2000",
         "topScorerRank": null
       },
       {
         "club": "Q8760",
-        "goals": 1,
+        "goals": 11,
         "league": "es",
         "season": "es-2001",
         "topScorerRank": null
@@ -890,10 +972,10 @@
   },
   "Q15690382": {
     "birthDate": "1994-10-14",
-    "en": "Wallace (footballer, born October 1994)",
+    "en": "Wallace",
     "id": "Q15690382",
     "ja": {
-      "display": "ワラシ フォルトゥナ ドス サントス",
+      "display": "Wallace",
       "mode": "katakana"
     },
     "seasons": [
@@ -902,6 +984,13 @@
         "goals": 1,
         "league": "fr",
         "season": "fr-2015",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2609",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2016",
         "topScorerRank": null
       }
     ]
@@ -917,7 +1006,7 @@
     "seasons": [
       {
         "club": "Q33748",
-        "goals": 1,
+        "goals": 2,
         "league": "de",
         "season": "de-2013",
         "topScorerRank": null
@@ -977,7 +1066,7 @@
       },
       {
         "club": "Q51976",
-        "goals": 5,
+        "goals": 9,
         "league": "de",
         "season": "de-2009",
         "topScorerRank": null
@@ -998,21 +1087,21 @@
       },
       {
         "club": "Q51976",
-        "goals": 9,
+        "goals": 10,
         "league": "de",
         "season": "de-2012",
         "topScorerRank": null
       },
       {
         "club": "Q51976",
-        "goals": 6,
+        "goals": 7,
         "league": "de",
         "season": "de-2013",
         "topScorerRank": null
       },
       {
         "club": "Q101859",
-        "goals": 1,
+        "goals": 2,
         "league": "de",
         "season": "de-2014",
         "topScorerRank": null
@@ -1081,10 +1170,10 @@
   },
   "Q163750": {
     "birthDate": "1964-08-17",
-    "en": "Jorginho (footballer, born 1964)",
+    "en": "Jorginho",
     "id": "Q163750",
     "ja": {
-      "display": "ジョルジ デ アモリン カンポス",
+      "display": "Jorginho",
       "mode": "katakana"
     },
     "seasons": [
@@ -1149,10 +1238,10 @@
   },
   "Q1732454": {
     "birthDate": "1979-01-21",
-    "en": "Lee Marshall (footballer, born 1979)",
+    "en": "Lee Marshall",
     "id": "Q1732454",
     "ja": {
-      "display": "Lee Marshall (footballer, born 1979)",
+      "display": "Lee Marshall",
       "mode": "latin"
     },
     "seasons": [
@@ -1161,6 +1250,42 @@
         "goals": 1,
         "league": "en",
         "season": "en-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1737891": {
+    "birthDate": "1984-09-01",
+    "en": "Kei Kamara",
+    "id": "Q1737891",
+    "ja": {
+      "display": "ケイ カマラ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q18721",
+        "goals": 1,
+        "league": "en",
+        "season": "en-2012",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q177511": {
+    "birthDate": "1963-07-16",
+    "en": "Srečko Katanec",
+    "id": "Q177511",
+    "ja": {
+      "display": "スレチコ カタネッツ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q1457",
+        "goals": 1,
+        "league": "it",
+        "season": "it-1993",
         "topScorerRank": null
       }
     ]
@@ -1190,14 +1315,14 @@
       },
       {
         "club": "Q10499",
-        "goals": 5,
+        "goals": 4,
         "league": "es",
         "season": "es-2014",
         "topScorerRank": null
       },
       {
         "club": "Q8760",
-        "goals": 12,
+        "goals": 11,
         "league": "es",
         "season": "es-2016",
         "topScorerRank": null
@@ -1285,7 +1410,7 @@
       },
       {
         "club": "Q2739",
-        "goals": 3,
+        "goals": 10,
         "league": "it",
         "season": "it-2020",
         "topScorerRank": null
@@ -1303,9 +1428,16 @@
     "seasons": [
       {
         "club": "Q9617",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2010",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q9617",
+        "goals": 2,
+        "league": "en",
+        "season": "en-2011",
         "topScorerRank": null
       },
       {
@@ -1317,14 +1449,14 @@
       },
       {
         "club": "Q9617",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2013",
         "topScorerRank": null
       },
       {
         "club": "Q9617",
-        "goals": 2,
+        "goals": 3,
         "league": "en",
         "season": "en-2014",
         "topScorerRank": null
@@ -1398,6 +1530,27 @@
       },
       {
         "club": "Q483020",
+        "goals": 2,
+        "league": "fr",
+        "season": "fr-2011",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2012",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
+        "goals": 3,
+        "league": "fr",
+        "season": "fr-2013",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
         "goals": 1,
         "league": "fr",
         "season": "fr-2015",
@@ -1412,21 +1565,21 @@
       },
       {
         "club": "Q2074",
-        "goals": 3,
+        "goals": 4,
         "league": "it",
         "season": "it-2008",
         "topScorerRank": null
       },
       {
         "club": "Q631",
-        "goals": 4,
+        "goals": 3,
         "league": "it",
         "season": "it-2009",
         "topScorerRank": null
       },
       {
         "club": "Q631",
-        "goals": 3,
+        "goals": 4,
         "league": "it",
         "season": "it-2010",
         "topScorerRank": null
@@ -1458,9 +1611,16 @@
       },
       {
         "club": "Q631",
-        "goals": 4,
+        "goals": 5,
         "league": "it",
         "season": "it-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2693",
+        "goals": 3,
+        "league": "it",
+        "season": "it-2001",
         "topScorerRank": null
       }
     ]
@@ -1476,7 +1636,7 @@
     "seasons": [
       {
         "club": "Q2052",
-        "goals": 7,
+        "goals": 9,
         "league": "it",
         "season": "it-2000",
         "topScorerRank": null
@@ -1501,7 +1661,7 @@
     "seasons": [
       {
         "club": "Q12249",
-        "goals": 1,
+        "goals": 2,
         "league": "es",
         "season": "es-2007",
         "topScorerRank": null
@@ -1549,6 +1709,13 @@
         "topScorerRank": null
       },
       {
+        "club": "Q8639",
+        "goals": 3,
+        "league": "it",
+        "season": "it-2017",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2609",
         "goals": 1,
         "league": "it",
@@ -1591,7 +1758,28 @@
         "club": "Q1543",
         "goals": 1,
         "league": "it",
+        "season": "it-2017",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2018",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 1,
+        "league": "it",
         "season": "it-2019",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2020",
         "topScorerRank": null
       },
       {
@@ -1664,7 +1852,7 @@
     "seasons": [
       {
         "club": "Q50602",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2005",
         "topScorerRank": null
@@ -1750,7 +1938,7 @@
     "seasons": [
       {
         "club": "Q19446",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2008",
         "topScorerRank": null
@@ -1793,9 +1981,16 @@
     "seasons": [
       {
         "club": "Q2052",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-1992",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 1,
+        "league": "it",
+        "season": "it-1993",
         "topScorerRank": null
       }
     ]
@@ -1812,6 +2007,20 @@
       {
         "club": "Q2074",
         "goals": 1,
+        "league": "it",
+        "season": "it-2008",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2074",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2009",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2074",
+        "goals": 2,
         "league": "it",
         "season": "it-2018",
         "topScorerRank": null
@@ -1841,7 +2050,7 @@
   },
   "Q217507": {
     "birthDate": "1989-11-30",
-    "en": "Vladimír Weiss (footballer, born 1989)",
+    "en": "Vladimír Weiss",
     "id": "Q217507",
     "ja": {
       "display": "ヴラディミル ヴァイス",
@@ -1900,6 +2109,24 @@
       }
     ]
   },
+  "Q2300461": {
+    "birthDate": "1982-07-28",
+    "en": "Grégory Cerdan",
+    "id": "Q2300461",
+    "ja": {
+      "display": "Grégory Cerdan",
+      "mode": "latin"
+    },
+    "seasons": [
+      {
+        "club": "Q210864",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2008",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q23007684": {
     "birthDate": "1991-02-10",
     "en": "Nuno da Costa",
@@ -1911,14 +2138,14 @@
     "seasons": [
       {
         "club": "Q126334",
-        "goals": 4,
+        "goals": 5,
         "league": "fr",
         "season": "fr-2017",
         "topScorerRank": null
       },
       {
         "club": "Q126334",
-        "goals": 6,
+        "goals": 8,
         "league": "fr",
         "season": "fr-2018",
         "topScorerRank": null
@@ -1978,7 +2205,7 @@
       },
       {
         "club": "Q19467",
-        "goals": 4,
+        "goals": 5,
         "league": "en",
         "season": "en-2018",
         "topScorerRank": null
@@ -2095,7 +2322,7 @@
       },
       {
         "club": "Q704",
-        "goals": 1,
+        "goals": 2,
         "league": "fr",
         "season": "fr-2018",
         "topScorerRank": null
@@ -2156,6 +2383,24 @@
       }
     ]
   },
+  "Q2481812": {
+    "birthDate": "1991-11-11",
+    "en": "Salvador Agra",
+    "id": "Q2481812",
+    "ja": {
+      "display": "サルバドール アグラ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q8723",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2012",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q26251608": {
     "birthDate": "1999-01-23",
     "en": "Mounir Chouiar",
@@ -2185,7 +2430,7 @@
     "seasons": [
       {
         "club": "Q8476",
-        "goals": 3,
+        "goals": 4,
         "league": "it",
         "season": "it-2000",
         "topScorerRank": null
@@ -2196,6 +2441,13 @@
         "league": "it",
         "season": "it-2001",
         "topScorerRank": 10
+      },
+      {
+        "club": "Q2037",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2002",
+        "topScorerRank": null
       },
       {
         "club": "Q8408",
@@ -2310,6 +2562,13 @@
         "league": "it",
         "season": "it-2012",
         "topScorerRank": null
+      },
+      {
+        "club": "Q2768",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2012",
+        "topScorerRank": null
       }
     ]
   },
@@ -2331,6 +2590,24 @@
       }
     ]
   },
+  "Q27531": {
+    "birthDate": "1986-03-26",
+    "en": "Lluís Sastre",
+    "id": "Q27531",
+    "ja": {
+      "display": "Lluís Sastre",
+      "mode": "latin"
+    },
+    "seasons": [
+      {
+        "club": "Q10319",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2012",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q27649": {
     "birthDate": "1978-03-31",
     "en": "Jérôme Rothen",
@@ -2342,6 +2619,27 @@
     "seasons": [
       {
         "club": "Q483020",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2004",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2005",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
+        "goals": 2,
+        "league": "fr",
+        "season": "fr-2006",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q483020",
         "goals": 2,
         "league": "fr",
         "season": "fr-2007",
@@ -2349,7 +2647,7 @@
       },
       {
         "club": "Q483020",
-        "goals": 1,
+        "goals": 3,
         "league": "fr",
         "season": "fr-2008",
         "topScorerRank": null
@@ -2374,7 +2672,7 @@
     "seasons": [
       {
         "club": "Q2609",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-2016",
         "topScorerRank": null
@@ -2392,7 +2690,7 @@
     "seasons": [
       {
         "club": "Q10308",
-        "goals": 2,
+        "goals": 3,
         "league": "es",
         "season": "es-2012",
         "topScorerRank": null
@@ -2518,10 +2816,10 @@
   },
   "Q294881": {
     "birthDate": "1976-09-25",
-    "en": "Petit (Portuguese footballer)",
+    "en": "Petit",
     "id": "Q294881",
     "ja": {
-      "display": "アルマンド テイシェイラ",
+      "display": "Petit",
       "mode": "katakana"
     },
     "seasons": [
@@ -2579,6 +2877,13 @@
         "topScorerRank": null
       },
       {
+        "club": "Q9616",
+        "goals": 1,
+        "league": "en",
+        "season": "en-2012",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1130849",
         "goals": 1,
         "league": "en",
@@ -2590,6 +2895,13 @@
         "goals": 3,
         "league": "en",
         "season": "en-2014",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18747",
+        "goals": 1,
+        "league": "en",
+        "season": "en-2015",
         "topScorerRank": null
       },
       {
@@ -2633,7 +2945,7 @@
       },
       {
         "club": "Q18741",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2005",
         "topScorerRank": null
@@ -2691,7 +3003,7 @@
   },
   "Q296410": {
     "birthDate": "1979-07-19",
-    "en": "Luke Young (footballer, born 1979)",
+    "en": "Luke Young",
     "id": "Q296410",
     "ja": {
       "display": "ルーク ヤング",
@@ -2766,6 +3078,13 @@
         "topScorerRank": null
       },
       {
+        "club": "Q208399",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2012",
+        "topScorerRank": null
+      },
+      {
         "club": "Q459148",
         "goals": 1,
         "league": "fr",
@@ -2788,7 +3107,7 @@
       },
       {
         "club": "Q193377",
-        "goals": 2,
+        "goals": 3,
         "league": "fr",
         "season": "fr-2018",
         "topScorerRank": null
@@ -2809,6 +3128,13 @@
         "goals": 1,
         "league": "fr",
         "season": "fr-2007",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q19509",
+        "goals": 1,
+        "league": "fr",
+        "season": "fr-2009",
         "topScorerRank": null
       }
     ]
@@ -2888,6 +3214,24 @@
       }
     ]
   },
+  "Q310710": {
+    "birthDate": "1980-02-01",
+    "en": "Paulo da Silva",
+    "id": "Q310710",
+    "ja": {
+      "display": "パウロ ダ シルバ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q10308",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2011",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q311043": {
     "birthDate": "1986-06-16",
     "en": "Urby Emanuelson",
@@ -2909,6 +3253,13 @@
         "goals": 2,
         "league": "it",
         "season": "it-2011",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1543",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2012",
         "topScorerRank": null
       }
     ]
@@ -2952,7 +3303,7 @@
       },
       {
         "club": "Q19451",
-        "goals": 6,
+        "goals": 7,
         "league": "en",
         "season": "en-2005",
         "topScorerRank": null
@@ -3019,7 +3370,7 @@
       },
       {
         "club": "Q41420",
-        "goals": 14,
+        "goals": 17,
         "league": "de",
         "season": "de-1993",
         "topScorerRank": null
@@ -3086,7 +3437,7 @@
       },
       {
         "club": "Q10308",
-        "goals": 1,
+        "goals": 2,
         "league": "es",
         "season": "es-1998",
         "topScorerRank": null
@@ -3163,38 +3514,52 @@
     },
     "seasons": [
       {
+        "club": "Q2693",
+        "goals": 1,
+        "league": "it",
+        "season": "it-1998",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2798",
-        "goals": 3,
+        "goals": 2,
+        "league": "it",
+        "season": "it-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2798",
+        "goals": 5,
         "league": "it",
         "season": "it-2000",
         "topScorerRank": null
       },
       {
         "club": "Q2609",
-        "goals": 2,
+        "goals": 3,
+        "league": "it",
+        "season": "it-2001",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2609",
+        "goals": 6,
         "league": "it",
         "season": "it-2002",
         "topScorerRank": null
       },
       {
         "club": "Q2609",
-        "goals": 1,
+        "goals": 8,
         "league": "it",
         "season": "it-2003",
         "topScorerRank": null
       },
       {
         "club": "Q2052",
-        "goals": 6,
+        "goals": 5,
         "league": "it",
         "season": "it-2005",
-        "topScorerRank": null
-      },
-      {
-        "club": "Q2768",
-        "goals": 1,
-        "league": "it",
-        "season": "it-2006",
         "topScorerRank": null
       }
     ]
@@ -3287,6 +3652,13 @@
     },
     "seasons": [
       {
+        "club": "Q101859",
+        "goals": 1,
+        "league": "de",
+        "season": "de-2008",
+        "topScorerRank": null
+      },
+      {
         "club": "Q160532",
         "goals": 1,
         "league": "de",
@@ -3309,6 +3681,24 @@
         "goals": 1,
         "league": "en",
         "season": "en-2020",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q342599": {
+    "birthDate": "1973-11-12",
+    "en": "Ibrahim Ba",
+    "id": "Q342599",
+    "ja": {
+      "display": "イブラヒム バ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q1543",
+        "goals": 1,
+        "league": "it",
+        "season": "it-1997",
         "topScorerRank": null
       }
     ]
@@ -3354,6 +3744,20 @@
       "mode": "katakana"
     },
     "seasons": [
+      {
+        "club": "Q2798",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2001",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2798",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2003",
+        "topScorerRank": null
+      },
       {
         "club": "Q2052",
         "goals": 1,
@@ -3538,7 +3942,7 @@
       },
       {
         "club": "Q18729",
-        "goals": 7,
+        "goals": 10,
         "league": "en",
         "season": "en-2007",
         "topScorerRank": null
@@ -3563,7 +3967,7 @@
     "seasons": [
       {
         "club": "Q697353",
-        "goals": 3,
+        "goals": 4,
         "league": "es",
         "season": "es-1997",
         "topScorerRank": null
@@ -3622,10 +4026,10 @@
   },
   "Q376394": {
     "birthDate": "1991-03-06",
-    "en": "Rodrigo (footballer, born 1991)",
+    "en": "Rodrigo",
     "id": "Q376394",
     "ja": {
-      "display": "ロドリゴ モレノ マチャド",
+      "display": "Rodrigo",
       "mode": "katakana"
     },
     "seasons": [
@@ -3762,14 +4166,14 @@
       },
       {
         "club": "Q18750",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2011",
         "topScorerRank": null
       },
       {
         "club": "Q18747",
-        "goals": 2,
+        "goals": 3,
         "league": "en",
         "season": "en-2012",
         "topScorerRank": null
@@ -3783,7 +4187,7 @@
       },
       {
         "club": "Q19477",
-        "goals": 2,
+        "goals": 3,
         "league": "en",
         "season": "en-2014",
         "topScorerRank": null
@@ -3951,7 +4355,7 @@
   },
   "Q3953574": {
     "birthDate": "1991-01-08",
-    "en": "Sean Morrison (footballer)",
+    "en": "Sean Morrison",
     "id": "Q3953574",
     "ja": {
       "display": "ショーン モリソン",
@@ -3960,7 +4364,7 @@
     "seasons": [
       {
         "club": "Q18729",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2012",
         "topScorerRank": null
@@ -4048,29 +4452,36 @@
     },
     "seasons": [
       {
+        "club": "Q6703",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2014",
+        "topScorerRank": null
+      },
+      {
         "club": "Q610621",
-        "goals": 2,
+        "goals": 3,
         "league": "it",
         "season": "it-2015",
         "topScorerRank": null
       },
       {
         "club": "Q1893",
-        "goals": 1,
+        "goals": 6,
         "league": "it",
         "season": "it-2016",
         "topScorerRank": null
       },
       {
         "club": "Q1893",
-        "goals": 2,
+        "goals": 10,
         "league": "it",
         "season": "it-2017",
         "topScorerRank": null
       },
       {
         "club": "Q2641",
-        "goals": 1,
+        "goals": 3,
         "league": "it",
         "season": "it-2018",
         "topScorerRank": null
@@ -4080,6 +4491,13 @@
         "goals": 2,
         "league": "it",
         "season": "it-2019",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2768",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2020",
         "topScorerRank": null
       },
       {
@@ -4134,14 +4552,14 @@
     "seasons": [
       {
         "club": "Q2739",
-        "goals": 2,
+        "goals": 9,
         "league": "it",
         "season": "it-1992",
         "topScorerRank": null
       },
       {
         "club": "Q2739",
-        "goals": 1,
+        "goals": 3,
         "league": "it",
         "season": "it-1993",
         "topScorerRank": null
@@ -4225,7 +4643,7 @@
   },
   "Q45321959": {
     "birthDate": "1992-04-20",
-    "en": "Sergio González (footballer, born 1992)",
+    "en": "Sergio González",
     "id": "Q45321959",
     "ja": {
       "display": "セルヒオ ゴンサレス ポイリエル",
@@ -4259,7 +4677,7 @@
       },
       {
         "club": "Q19477",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2013",
         "topScorerRank": null
@@ -4370,7 +4788,7 @@
   },
   "Q459356": {
     "birthDate": "1985-05-04",
-    "en": "Fernandinho (footballer, born May 1985)",
+    "en": "Fernandinho",
     "id": "Q459356",
     "ja": {
       "display": "フェルナンジーニョ",
@@ -4379,7 +4797,7 @@
     "seasons": [
       {
         "club": "Q50602",
-        "goals": 3,
+        "goals": 5,
         "league": "en",
         "season": "en-2013",
         "topScorerRank": null
@@ -4393,7 +4811,7 @@
       },
       {
         "club": "Q50602",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2015",
         "topScorerRank": null
@@ -4518,14 +4936,14 @@
     "seasons": [
       {
         "club": "Q10300",
-        "goals": 2,
+        "goals": 3,
         "league": "es",
         "season": "es-2000",
         "topScorerRank": null
       },
       {
         "club": "Q10300",
-        "goals": 1,
+        "goals": 3,
         "league": "es",
         "season": "es-2001",
         "topScorerRank": null
@@ -4543,9 +4961,16 @@
     "seasons": [
       {
         "club": "Q6703",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q6703",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2003",
         "topScorerRank": null
       },
       {
@@ -4554,6 +4979,34 @@
         "league": "it",
         "season": "it-2005",
         "topScorerRank": 4
+      },
+      {
+        "club": "Q2739",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2006",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q6767",
+        "goals": 4,
+        "league": "it",
+        "season": "it-2007",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q6767",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2009",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q6703",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2014",
+        "topScorerRank": null
       }
     ]
   },
@@ -4603,15 +5056,29 @@
     },
     "seasons": [
       {
+        "club": "Q6641",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2009",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1886",
         "goals": 1,
+        "league": "it",
+        "season": "it-2011",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1886",
+        "goals": 3,
         "league": "it",
         "season": "it-2016",
         "topScorerRank": null
       },
       {
         "club": "Q1886",
-        "goals": 2,
+        "goals": 4,
         "league": "it",
         "season": "it-2017",
         "topScorerRank": null
@@ -4620,7 +5087,7 @@
   },
   "Q498579": {
     "birthDate": "1978-07-05",
-    "en": "Andreas Johansson (footballer, born 1978)",
+    "en": "Andreas Johansson",
     "id": "Q498579",
     "ja": {
       "display": "アンドレーアス ヨハンソン",
@@ -4647,7 +5114,7 @@
     "seasons": [
       {
         "club": "Q8780",
-        "goals": 2,
+        "goals": 3,
         "league": "es",
         "season": "es-2012",
         "topScorerRank": null
@@ -4693,14 +5160,14 @@
       },
       {
         "club": "Q10333",
-        "goals": 4,
+        "goals": 6,
         "league": "es",
         "season": "es-2013",
         "topScorerRank": null
       },
       {
         "club": "Q10333",
-        "goals": 9,
+        "goals": 11,
         "league": "es",
         "season": "es-2014",
         "topScorerRank": null
@@ -4714,7 +5181,7 @@
       },
       {
         "club": "Q7156",
-        "goals": 2,
+        "goals": 3,
         "league": "es",
         "season": "es-2016",
         "topScorerRank": null
@@ -4911,7 +5378,7 @@
   },
   "Q528557": {
     "birthDate": "1978-09-19",
-    "en": "Jorge López (footballer, born 1978)",
+    "en": "Jorge López",
     "id": "Q528557",
     "ja": {
       "display": "ホルヘ ロペス モンターニャ",
@@ -4940,6 +5407,13 @@
         "topScorerRank": null
       },
       {
+        "club": "Q12236",
+        "goals": 1,
+        "league": "es",
+        "season": "es-2007",
+        "topScorerRank": null
+      },
+      {
         "club": "Q10308",
         "goals": 1,
         "league": "es",
@@ -4959,14 +5433,14 @@
     "seasons": [
       {
         "club": "Q1886",
-        "goals": 1,
+        "goals": 3,
         "league": "it",
         "season": "it-2008",
         "topScorerRank": null
       },
       {
         "club": "Q1886",
-        "goals": 2,
+        "goals": 4,
         "league": "it",
         "season": "it-2009",
         "topScorerRank": null
@@ -4980,7 +5454,7 @@
       },
       {
         "club": "Q2693",
-        "goals": 2,
+        "goals": 4,
         "league": "it",
         "season": "it-2012",
         "topScorerRank": null
@@ -5107,7 +5581,7 @@
   },
   "Q55640545": {
     "birthDate": "1998-03-23",
-    "en": "Gonzalo Villar (footballer)",
+    "en": "Gonzalo Villar",
     "id": "Q55640545",
     "ja": {
       "display": "ゴンサロ ビジャール デル フライレ",
@@ -5175,7 +5649,7 @@
   },
   "Q56223006": {
     "birthDate": "1999-01-07",
-    "en": "Carlos Augusto (footballer)",
+    "en": "Carlos Augusto",
     "id": "Q56223006",
     "ja": {
       "display": "カルロス アウグスト ゾポラト ネヴェス",
@@ -5207,7 +5681,7 @@
   },
   "Q56703599": {
     "birthDate": "1996-05-25",
-    "en": "Daniel Muñoz (footballer)",
+    "en": "Daniel Muñoz",
     "id": "Q56703599",
     "ja": {
       "display": "ダニエル ムニョス",
@@ -5284,7 +5758,7 @@
     "seasons": [
       {
         "club": "Q48911",
-        "goals": 3,
+        "goals": 4,
         "league": "fr",
         "season": "fr-2008",
         "topScorerRank": null
@@ -5367,7 +5841,7 @@
   },
   "Q59428": {
     "birthDate": "1990-04-01",
-    "en": "Ashley Westwood (footballer, born 1990)",
+    "en": "Ashley Westwood",
     "id": "Q59428",
     "ja": {
       "display": "アシュリー ウェストウッド",
@@ -5456,6 +5930,13 @@
         "club": "Q1900",
         "goals": 1,
         "league": "it",
+        "season": "it-2024",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1900",
+        "goals": 1,
+        "league": "it",
         "season": "it-2025",
         "topScorerRank": null
       }
@@ -5472,28 +5953,28 @@
     "seasons": [
       {
         "club": "Q2798",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-1997",
         "topScorerRank": null
       },
       {
         "club": "Q2798",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-1998",
         "topScorerRank": null
       },
       {
         "club": "Q2798",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-1999",
         "topScorerRank": null
       },
       {
         "club": "Q1893",
-        "goals": 2,
+        "goals": 4,
         "league": "it",
         "season": "it-2002",
         "topScorerRank": null
@@ -5502,12 +5983,19 @@
         "club": "Q1893",
         "goals": 1,
         "league": "it",
+        "season": "it-2003",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1893",
+        "goals": 2,
+        "league": "it",
         "season": "it-2004",
         "topScorerRank": null
       },
       {
         "club": "Q2756",
-        "goals": 1,
+        "goals": 2,
         "league": "it",
         "season": "it-2005",
         "topScorerRank": null
@@ -5559,10 +6047,10 @@
   },
   "Q611923": {
     "birthDate": "1989-10-06",
-    "en": "Pizzi (Portuguese footballer)",
+    "en": "Pizzi",
     "id": "Q611923",
     "ja": {
-      "display": "ルイス ミゲル アフォンソ フェルナンデス",
+      "display": "Pizzi",
       "mode": "katakana"
     },
     "seasons": [
@@ -5575,7 +6063,7 @@
       },
       {
         "club": "Q8760",
-        "goals": 6,
+        "goals": 7,
         "league": "es",
         "season": "es-2012",
         "topScorerRank": null
@@ -5600,7 +6088,7 @@
     "seasons": [
       {
         "club": "Q271574",
-        "goals": 2,
+        "goals": 3,
         "league": "es",
         "season": "es-2000",
         "topScorerRank": null
@@ -5700,7 +6188,7 @@
     "seasons": [
       {
         "club": "Q51974",
-        "goals": 2,
+        "goals": 3,
         "league": "de",
         "season": "de-2010",
         "topScorerRank": null
@@ -5746,7 +6234,7 @@
     "seasons": [
       {
         "club": "Q1457",
-        "goals": 1,
+        "goals": 3,
         "league": "it",
         "season": "it-1993",
         "topScorerRank": null
@@ -5788,9 +6276,23 @@
       },
       {
         "club": "Q2641",
-        "goals": 7,
+        "goals": 8,
         "league": "it",
         "season": "it-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1120838",
+        "goals": 3,
+        "league": "it",
+        "season": "it-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8408",
+        "goals": 2,
+        "league": "it",
+        "season": "it-2003",
         "topScorerRank": null
       },
       {
@@ -5815,6 +6317,13 @@
         "topScorerRank": null
       },
       {
+        "club": "Q2768",
+        "goals": 4,
+        "league": "it",
+        "season": "it-2008",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1886",
         "goals": 1,
         "league": "it",
@@ -5823,7 +6332,7 @@
       },
       {
         "club": "Q2693",
-        "goals": 2,
+        "goals": 5,
         "league": "it",
         "season": "it-2009",
         "topScorerRank": null
@@ -5832,10 +6341,10 @@
   },
   "Q6297594": {
     "birthDate": "1974-09-29",
-    "en": "Joyce Moreno (footballer)",
+    "en": "Joyce Moreno",
     "id": "Q6297594",
     "ja": {
-      "display": "Joyce Moreno (footballer)",
+      "display": "Joyce Moreno",
       "mode": "latin"
     },
     "seasons": [
@@ -5868,10 +6377,10 @@
   },
   "Q641425": {
     "birthDate": "1993-10-23",
-    "en": "Fabinho (footballer, born 1993)",
+    "en": "Fabinho",
     "id": "Q641425",
     "ja": {
-      "display": "ファビオ エンリケ タバレス",
+      "display": "Fabinho",
       "mode": "katakana"
     },
     "seasons": [
@@ -5971,10 +6480,10 @@
   },
   "Q649788": {
     "birthDate": "1993-05-20",
-    "en": "Juanmi (footballer, born 1993)",
+    "en": "Juanmi",
     "id": "Q649788",
     "ja": {
-      "display": "フアン ミゲル ヒメネス ロペス",
+      "display": "Juanmi",
       "mode": "katakana"
     },
     "seasons": [
@@ -6008,14 +6517,14 @@
       },
       {
         "club": "Q8857",
-        "goals": 6,
+        "goals": 8,
         "league": "es",
         "season": "es-2014",
         "topScorerRank": null
       },
       {
         "club": "Q10315",
-        "goals": 10,
+        "goals": 11,
         "league": "es",
         "season": "es-2016",
         "topScorerRank": null
@@ -6326,6 +6835,24 @@
       }
     ]
   },
+  "Q705929": {
+    "birthDate": "1972-09-30",
+    "en": "Sergei Gurenko",
+    "id": "Q705929",
+    "ja": {
+      "display": "セルゲイ グレンコ",
+      "mode": "katakana"
+    },
+    "seasons": [
+      {
+        "club": "Q459794",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q706757": {
     "birthDate": "1970-03-08",
     "en": "Harry Decheiver",
@@ -6465,14 +6992,14 @@
       },
       {
         "club": "Q15789",
-        "goals": 3,
+        "goals": 5,
         "league": "de",
         "season": "de-2008",
         "topScorerRank": null
       },
       {
         "club": "Q51976",
-        "goals": 2,
+        "goals": 4,
         "league": "de",
         "season": "de-2009",
         "topScorerRank": null
@@ -6488,6 +7015,13 @@
       "mode": "katakana"
     },
     "seasons": [
+      {
+        "club": "Q2641",
+        "goals": 1,
+        "league": "it",
+        "season": "it-2016",
+        "topScorerRank": null
+      },
       {
         "club": "Q2641",
         "goals": 1,
@@ -6526,7 +7060,7 @@
     "seasons": [
       {
         "club": "Q172476",
-        "goals": 2,
+        "goals": 3,
         "league": "fr",
         "season": "fr-2021",
         "topScorerRank": null
@@ -6644,7 +7178,7 @@
       },
       {
         "club": "Q19477",
-        "goals": 1,
+        "goals": 2,
         "league": "en",
         "season": "en-2016",
         "topScorerRank": null

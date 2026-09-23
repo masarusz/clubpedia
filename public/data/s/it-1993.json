@@ -45,6 +45,27 @@
       "homeGoals": 0,
       "key": "it-1993-Q13391-Q1457",
       "note": "The match was played at Stadio San Nicola.",
+      "scorers": {
+        "away": [
+          {
+            "display": "Vierchowod",
+            "minute": "53",
+            "player": "Q351990"
+          },
+          {
+            "display": "Ceramicola",
+            "minute": "86",
+            "ownGoal": true,
+            "player": null
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "90",
+            "player": "Q48330"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -54,6 +75,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q13391-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Boban",
+            "minute": "51",
+            "player": "Q231468"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -90,6 +121,27 @@
       "homeGoals": 1,
       "key": "it-1993-Q13391-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Winter",
+            "minute": "31",
+            "player": "Q311046"
+          },
+          {
+            "display": "Casiraghi",
+            "minute": "90",
+            "player": "Q378583"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gazzani",
+            "minute": "22",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -99,6 +151,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q13391-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fonseca",
+            "minute": "51",
+            "player": "Q462842"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -117,6 +179,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q13391-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lanna",
+            "minute": "80",
+            "player": "Q2269798"
+          },
+          {
+            "display": "Balbo",
+            "minute": "88",
+            "player": "Q318387"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -240,6 +317,27 @@
       "homeGoals": 1,
       "key": "it-1993-Q139399-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gullit",
+            "minute": "24",
+            "player": "Q173972"
+          },
+          {
+            "display": "Lombardo",
+            "minute": "77",
+            "player": "Q758145"
+          }
+        ],
+        "home": [
+          {
+            "display": "Roy",
+            "minute": "12",
+            "player": "Q238857"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -249,6 +347,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q139399-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Boban",
+            "minute": "80",
+            "player": "Q231468"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kolyvanov",
+            "minute": "60",
+            "player": "Q1359619"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -285,6 +399,37 @@
       "homeGoals": 4,
       "key": "it-1993-Q139399-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bokšić",
+            "minute": "51",
+            "player": "Q313518"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Biagio",
+            "minute": "18",
+            "player": "Q314053"
+          },
+          {
+            "display": "Cappellini",
+            "minute": "38",
+            "player": "Q1538897"
+          },
+          {
+            "display": "Mandelli",
+            "minute": "84",
+            "player": "Q3894212"
+          },
+          {
+            "display": "Cappellini",
+            "minute": "90",
+            "player": "Q1538897"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -294,6 +439,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q139399-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Canio",
+            "minute": "61",
+            "player": "Q44655"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -312,6 +467,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q139399-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giannini",
+            "minute": "74",
+            "player": "Q445694"
+          }
+        ],
+        "home": [
+          {
+            "display": "De Vincenzo",
+            "minute": "16",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -417,14 +588,14 @@
             "player": "Q299493"
           },
           {
-            "display": "Ravanelli",
-            "minute": "67",
-            "player": "Q299493"
-          },
-          {
             "display": "R. Baggio",
             "minute": "51",
             "player": "Q67964"
+          },
+          {
+            "display": "Ravanelli",
+            "minute": "67",
+            "player": "Q299493"
           }
         ]
       },
@@ -581,6 +752,11 @@
             "player": "Q67964"
           },
           {
+            "display": "Möller",
+            "minute": "51",
+            "player": "Q155919"
+          },
+          {
             "display": "R. Baggio",
             "minute": "56",
             "player": "Q67964"
@@ -590,11 +766,6 @@
             "minute": "77",
             "penalty": true,
             "player": "Q67964"
-          },
-          {
-            "display": "Möller",
-            "minute": "51",
-            "player": "Q155919"
           }
         ]
       },
@@ -622,16 +793,6 @@
             "player": "Q239688"
           },
           {
-            "display": "Vialli",
-            "minute": "73",
-            "player": "Q239688"
-          },
-          {
-            "display": "Vialli",
-            "minute": "83",
-            "player": "Q239688"
-          },
-          {
             "display": "Bacci",
             "minute": "10",
             "ownGoal": true,
@@ -641,6 +802,16 @@
             "display": "Kohler",
             "minute": "14",
             "player": "Q308925"
+          },
+          {
+            "display": "Vialli",
+            "minute": "73",
+            "player": "Q239688"
+          },
+          {
+            "display": "Vialli",
+            "minute": "83",
+            "player": "Q239688"
           },
           {
             "display": "R. Baggio",
@@ -658,17 +829,6 @@
       "homeGoals": 1,
       "key": "it-1993-Q1422-Q2641",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Ferrara",
-            "minute": "28",
-            "ownGoal": true,
-            "player": "Q314078"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -870,6 +1030,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q1457-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gérson Caçapa",
+            "minute": "44",
+            "player": "Q3104371"
+          }
+        ],
+        "home": [
+          {
+            "display": "Jugovic",
+            "minute": "42",
+            "player": "Q146119"
+          },
+          {
+            "display": "Platt",
+            "minute": "79",
+            "player": "Q312143"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -879,6 +1060,42 @@
       "homeGoals": 6,
       "key": "it-1993-Q1457-Q139399",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Nicoli",
+            "minute": "1",
+            "ownGoal": true,
+            "player": null
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "8",
+            "player": "Q48330"
+          },
+          {
+            "display": "Gullit",
+            "minute": "60",
+            "player": "Q173972"
+          },
+          {
+            "display": "Platt",
+            "minute": "81",
+            "player": "Q312143"
+          },
+          {
+            "display": "Platt",
+            "minute": "88",
+            "player": "Q312143"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "90",
+            "player": "Q48330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -914,6 +1131,38 @@
       "homeGoals": 3,
       "key": "it-1993-Q1457-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Albertini",
+            "minute": "11",
+            "player": "Q245011"
+          },
+          {
+            "display": "B. Laudrup",
+            "minute": "25",
+            "player": "Q212854"
+          }
+        ],
+        "home": [
+          {
+            "display": "Katanec",
+            "minute": "56",
+            "player": "Q177511"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "71",
+            "penalty": true,
+            "player": "Q48330"
+          },
+          {
+            "display": "Gullit",
+            "minute": "78",
+            "player": "Q173972"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -923,6 +1172,32 @@
       "homeGoals": 3,
       "key": "it-1993-Q1457-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Valentini",
+            "minute": "85",
+            "player": "Q3852944"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gullit",
+            "minute": "30",
+            "player": "Q173972"
+          },
+          {
+            "display": "Gullit",
+            "minute": "35",
+            "player": "Q173972"
+          },
+          {
+            "display": "Lombardo",
+            "minute": "53",
+            "player": "Q758145"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -932,6 +1207,28 @@
       "homeGoals": 1,
       "key": "it-1993-Q1457-Q1900",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Allegri",
+            "minute": "68",
+            "player": "Q354529"
+          },
+          {
+            "display": "Matteoli",
+            "minute": "70",
+            "penalty": true,
+            "player": "Q1522453"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bertarelli",
+            "minute": "3",
+            "player": "Q1407974"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -941,6 +1238,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q1457-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vink",
+            "minute": "14",
+            "player": "Q2306769"
+          }
+        ],
+        "home": [
+          {
+            "display": "Jugović",
+            "minute": "15",
+            "player": "Q146119"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -950,6 +1263,49 @@
       "homeGoals": 3,
       "key": "it-1993-Q1457-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Casiraghi",
+            "minute": "21",
+            "player": "Q378583"
+          },
+          {
+            "display": "Dall'Igna",
+            "minute": "59",
+            "ownGoal": true,
+            "player": "Q3767086"
+          },
+          {
+            "display": "Signori",
+            "minute": "64",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "70",
+            "player": "Q334684"
+          }
+        ],
+        "home": [
+          {
+            "display": "Corino",
+            "minute": "23",
+            "ownGoal": true,
+            "player": null
+          },
+          {
+            "display": "Lombardo",
+            "minute": "54",
+            "player": "Q758145"
+          },
+          {
+            "display": "Bertarelli",
+            "minute": "68",
+            "player": "Q1407974"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -959,6 +1315,37 @@
       "homeGoals": 4,
       "key": "it-1993-Q1457-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fonseca",
+            "minute": "51",
+            "player": "Q462842"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lombardo",
+            "minute": "34",
+            "player": "Q758145"
+          },
+          {
+            "display": "Gullit",
+            "minute": "52",
+            "player": "Q173972"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "85",
+            "player": "Q48330"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "90",
+            "player": "Q48330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -968,6 +1355,23 @@
       "homeGoals": 1,
       "key": "it-1993-Q1457-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sacchetti",
+            "minute": "29",
+            "ownGoal": true,
+            "player": "Q3497990"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lombardo",
+            "minute": "3",
+            "player": "Q758145"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -977,6 +1381,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q1457-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Balbo",
+            "minute": "44",
+            "player": "Q318387"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -986,6 +1400,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1457-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Gullit",
+            "minute": "13",
+            "player": "Q173972"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -995,6 +1419,54 @@
       "homeGoals": 6,
       "key": "it-1993-Q1457-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pizzi",
+            "minute": "52",
+            "player": "Q3740398"
+          },
+          {
+            "display": "Desideri",
+            "minute": "58",
+            "player": "Q2278399"
+          }
+        ],
+        "home": [
+          {
+            "display": "Platt",
+            "minute": "9",
+            "player": "Q312143"
+          },
+          {
+            "display": "Jugović",
+            "minute": "20",
+            "penalty": true,
+            "player": "Q146119"
+          },
+          {
+            "display": "Jugović",
+            "minute": "30",
+            "player": "Q146119"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "51",
+            "player": "Q48330"
+          },
+          {
+            "display": "Amoruso",
+            "minute": "60",
+            "player": "Q62244"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "70",
+            "penalty": true,
+            "player": "Q48330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1004,6 +1476,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1457-Q289707",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lombardo",
+            "minute": "55",
+            "player": "Q758145"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1013,6 +1495,29 @@
       "homeGoals": 2,
       "key": "it-1993-Q1457-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bucchioni",
+            "minute": "43",
+            "ownGoal": true,
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Jugovic",
+            "minute": "35",
+            "player": "Q146119"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "45",
+            "penalty": true,
+            "player": "Q48330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1057,6 +1562,33 @@
       "homeGoals": 3,
       "key": "it-1993-Q1457-Q759482",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dezotti",
+            "minute": "45",
+            "player": "Q974253"
+          }
+        ],
+        "home": [
+          {
+            "display": "Platt",
+            "minute": "36",
+            "player": "Q312143"
+          },
+          {
+            "display": "Gullit",
+            "minute": "67",
+            "player": "Q173972"
+          },
+          {
+            "display": "Gullit",
+            "minute": "89",
+            "penalty": true,
+            "player": "Q173972"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1066,6 +1598,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q1543-Q13391",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1075,6 +1611,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q139399",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kolyvanov",
+            "minute": "66",
+            "player": "Q1359619"
+          }
+        ],
+        "home": [
+          {
+            "display": "Boban",
+            "minute": "45",
+            "player": "Q231468"
+          },
+          {
+            "display": "Massaro",
+            "minute": "54",
+            "player": "Q352826"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1110,6 +1667,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1543-Q1457",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Massaro",
+            "minute": "25",
+            "player": "Q352826"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1119,6 +1686,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q1886",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Papin",
+            "minute": "23",
+            "player": "Q13494"
+          },
+          {
+            "display": "Răducioiu",
+            "minute": "52",
+            "player": "Q358783"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1137,6 +1719,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1543-Q2074",
       "note": "The match was played at Stadio San Paolo.",
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Massaro",
+            "minute": "40",
+            "player": "Q352826"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1146,6 +1738,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q1543-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1155,6 +1751,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pecchia",
+            "minute": "45",
+            "player": "Q1087530"
+          }
+        ],
+        "home": [
+          {
+            "display": "Panucci",
+            "minute": "61",
+            "player": "Q168287"
+          },
+          {
+            "display": "Albertini",
+            "minute": "90",
+            "player": "Q245011"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1164,6 +1781,23 @@
       "homeGoals": 1,
       "key": "it-1993-Q1543-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zola",
+            "minute": "84",
+            "penalty": true,
+            "player": "Q9354"
+          }
+        ],
+        "home": [
+          {
+            "display": "Massaro",
+            "minute": "73",
+            "player": "Q352826"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1173,6 +1807,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Papin",
+            "minute": "45",
+            "player": "Q13494"
+          },
+          {
+            "display": "Nava",
+            "minute": "70",
+            "player": "Q3497980"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1182,6 +1831,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1543-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Răducioiu",
+            "minute": "27",
+            "player": "Q358783"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1191,6 +1850,32 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Borgonovo",
+            "minute": "69",
+            "player": "Q538794"
+          },
+          {
+            "display": "Rossitto",
+            "minute": "71",
+            "player": "Q2519072"
+          }
+        ],
+        "home": [
+          {
+            "display": "Boban",
+            "minute": "60",
+            "player": "Q231468"
+          },
+          {
+            "display": "Simone",
+            "minute": "70",
+            "player": "Q439332"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1200,6 +1885,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q1543-Q289707",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Esposito",
+            "minute": "71",
+            "player": "Q3851021"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1209,6 +1904,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q1543-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Massaro",
+            "minute": "72",
+            "player": "Q352826"
+          },
+          {
+            "display": "Papin",
+            "minute": "76",
+            "player": "Q13494"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1249,6 +1959,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q1543-Q759482",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Simone",
+            "minute": "63",
+            "player": "Q439332"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1312,6 +2032,38 @@
       "homeGoals": 1,
       "key": "it-1993-Q1886-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gullit",
+            "minute": "19",
+            "player": "Q173972"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "34",
+            "player": "Q48330"
+          },
+          {
+            "display": "Gullit",
+            "minute": "58",
+            "player": "Q173972"
+          },
+          {
+            "display": "Platt",
+            "minute": "64",
+            "player": "Q312143"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sauzée",
+            "minute": "65",
+            "penalty": true,
+            "player": "Q516192"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1321,6 +2073,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q1886-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Massaro",
+            "minute": "55",
+            "player": "Q352826"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1348,6 +2110,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q1886-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Matteo",
+            "minute": "17",
+            "player": "Q193348"
+          }
+        ],
+        "home": [
+          {
+            "display": "Orlandini",
+            "minute": "47",
+            "player": "Q1102718"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1357,6 +2135,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q1886-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Buso",
+            "minute": "15",
+            "player": "Q427398"
+          }
+        ],
+        "home": [
+          {
+            "display": "Morfeo",
+            "minute": "8",
+            "player": "Q326497"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1375,6 +2169,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q1886-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Balbo",
+            "minute": "23",
+            "player": "Q318387"
+          }
+        ],
+        "home": [
+          {
+            "display": "Saurini",
+            "minute": "79",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1497,6 +2307,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q1900-Q1457",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1506,6 +2320,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q1900-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1533,6 +2351,38 @@
       "homeGoals": 4,
       "key": "it-1993-Q1900-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cravero",
+            "minute": "36",
+            "penalty": true,
+            "player": "Q2714696"
+          }
+        ],
+        "home": [
+          {
+            "display": "Matteoli",
+            "minute": "32",
+            "player": "Q1522453"
+          },
+          {
+            "display": "Cappioli",
+            "minute": "43",
+            "player": "Q1539223"
+          },
+          {
+            "display": "Dely Valdés",
+            "minute": "67",
+            "player": "Q553353"
+          },
+          {
+            "display": "Luís Oliveira",
+            "minute": "89",
+            "player": "Q723383"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1560,6 +2410,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q1900-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Häßler",
+            "minute": "73",
+            "player": "Q155911"
+          }
+        ],
+        "home": [
+          {
+            "display": "Oliveira",
+            "minute": "37",
+            "player": "Q723383"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1676,6 +2542,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2074-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Platt",
+            "minute": "43",
+            "player": "Q312143"
+          }
+        ],
+        "home": [
+          {
+            "display": "Routolo",
+            "minute": "1",
+            "player": "Q2250972"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1685,6 +2567,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2074-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1712,6 +2598,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2074-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Signori",
+            "minute": "62",
+            "player": "Q334684"
+          }
+        ],
+        "home": [
+          {
+            "display": "Onorati",
+            "minute": "59",
+            "player": "Q3436953"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1721,6 +2623,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2074-Q2641",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1739,6 +2645,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2074-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lorenzini",
+            "minute": "42",
+            "player": "Q3938909"
+          },
+          {
+            "display": "Nappi",
+            "minute": "83",
+            "player": "Q3846311"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1812,6 +2733,26 @@
       "homeGoals": 3,
       "key": "it-1993-Q2609-Q13391",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Winter",
+            "minute": "27",
+            "player": "Q311046"
+          },
+          {
+            "display": "Cravero",
+            "minute": "45",
+            "player": "Q2714696"
+          },
+          {
+            "display": "Bokšić",
+            "minute": "77",
+            "player": "Q313518"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1821,6 +2762,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2609-Q139399",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1866,6 +2811,23 @@
       "homeGoals": 1,
       "key": "it-1993-Q2609-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gullit",
+            "minute": "6",
+            "player": "Q173972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "37",
+            "penalty": true,
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1875,6 +2837,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q2609-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Massaro",
+            "minute": "45",
+            "player": "Q352826"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1884,6 +2856,32 @@
       "homeGoals": 3,
       "key": "it-1993-Q2609-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Valentini",
+            "minute": "50",
+            "player": "Q3852944"
+          }
+        ],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "66",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "76",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "90",
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1893,6 +2891,32 @@
       "homeGoals": 4,
       "key": "it-1993-Q2609-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "24",
+            "penalty": true,
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "51",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "64",
+            "player": "Q334684"
+          },
+          {
+            "display": "Gascoigne",
+            "minute": "88",
+            "player": "Q13002"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1902,6 +2926,32 @@
       "homeGoals": 4,
       "key": "it-1993-Q2609-Q2074",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fuser",
+            "minute": "3",
+            "player": "Q976301"
+          },
+          {
+            "display": "Signori",
+            "minute": "51",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "76",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "82",
+            "penalty": true,
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1920,6 +2970,28 @@
       "homeGoals": 2,
       "key": "it-1993-Q2609-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zola",
+            "minute": "40",
+            "player": "Q9354"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fuser",
+            "minute": "28",
+            "player": "Q976301"
+          },
+          {
+            "display": "Cravero",
+            "minute": "48",
+            "penalty": true,
+            "player": "Q2714696"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1929,6 +3001,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q2609-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "6",
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1938,6 +3020,28 @@
       "homeGoals": 1,
       "key": "it-1993-Q2609-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Silenzi",
+            "minute": "67",
+            "penalty": true,
+            "player": "Q1153183"
+          },
+          {
+            "display": "Gregucci",
+            "minute": "80",
+            "player": "Q742534"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bokšić",
+            "minute": "9",
+            "player": "Q313518"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1947,6 +3051,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q2609-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Branca",
+            "minute": "60",
+            "player": "Q778104"
+          }
+        ],
+        "home": [
+          {
+            "display": "Winter",
+            "minute": "17",
+            "player": "Q311046"
+          },
+          {
+            "display": "Signori",
+            "minute": "40",
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1956,6 +3081,22 @@
       "homeGoals": 2,
       "key": "it-1993-Q2609-Q289707",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Matteo",
+            "minute": "45",
+            "player": "Q193348"
+          },
+          {
+            "display": "Cravero",
+            "minute": "50",
+            "penalty": true,
+            "player": "Q2714696"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1965,6 +3106,17 @@
       "homeGoals": 1,
       "key": "it-1993-Q2609-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1987,6 +3139,43 @@
       "homeGoals": 4,
       "key": "it-1993-Q2609-Q759482",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cristiani",
+            "minute": "26",
+            "player": null
+          },
+          {
+            "display": "Bergodi",
+            "minute": "90",
+            "ownGoal": true,
+            "player": "Q545682"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cravero",
+            "minute": "16",
+            "player": "Q2714696"
+          },
+          {
+            "display": "Casiraghi",
+            "minute": "35",
+            "player": "Q378583"
+          },
+          {
+            "display": "Signori",
+            "minute": "66",
+            "player": "Q334684"
+          },
+          {
+            "display": "Signori",
+            "minute": "75",
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1996,6 +3185,32 @@
       "homeGoals": 3,
       "key": "it-1993-Q2641-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Padalino",
+            "minute": "32",
+            "player": "Q3897112"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fonseca",
+            "minute": "27",
+            "player": "Q462842"
+          },
+          {
+            "display": "Policano",
+            "minute": "76",
+            "player": "Q3939068"
+          },
+          {
+            "display": "Pecchia",
+            "minute": "82",
+            "player": "Q1087530"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2005,6 +3220,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2641-Q139399",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Roy",
+            "minute": "25",
+            "player": "Q238857"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bia",
+            "minute": "50",
+            "player": "Q1403478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2027,6 +3258,27 @@
       "homeGoals": 1,
       "key": "it-1993-Q2641-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Platt",
+            "minute": "31",
+            "player": "Q312143"
+          },
+          {
+            "display": "Gullit",
+            "minute": "43",
+            "player": "Q173972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bresciani",
+            "minute": "81",
+            "player": "Q1466733"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2036,6 +3288,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q2641-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Canio",
+            "minute": "79",
+            "player": "Q44655"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2063,6 +3325,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2641-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van 't Schip",
+            "minute": "45",
+            "player": "Q529563"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Canio",
+            "minute": "72",
+            "player": "Q44655"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2081,6 +3359,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2641-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Buso",
+            "minute": "20",
+            "player": "Q427398"
+          },
+          {
+            "display": "Ferrara",
+            "minute": "45",
+            "player": "Q314078"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2099,6 +3392,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2641-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2108,6 +3405,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q2641-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Branca",
+            "minute": "40",
+            "player": "Q778104"
+          }
+        ],
+        "home": [
+          {
+            "display": "Altomare",
+            "minute": "12",
+            "player": "Q913596"
+          },
+          {
+            "display": "Bia",
+            "minute": "68",
+            "player": "Q1403478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2126,6 +3444,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2641-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2148,6 +3470,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q2641-Q759482",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gualco",
+            "minute": "80",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Fonseca",
+            "minute": "4",
+            "player": "Q462842"
+          },
+          {
+            "display": "Fonseca",
+            "minute": "12",
+            "player": "Q462842"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2200,6 +3543,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q2693-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jugović",
+            "minute": "28",
+            "player": "Q146119"
+          }
+        ],
+        "home": [
+          {
+            "display": "Minotti",
+            "minute": "78",
+            "player": "Q553175"
+          },
+          {
+            "display": "Zola",
+            "minute": "90",
+            "player": "Q9354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2209,6 +3573,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2693-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2245,6 +3613,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2693-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Chiara",
+            "minute": "3",
+            "player": "Q1098369"
+          },
+          {
+            "display": "Asprilla",
+            "minute": "89",
+            "player": "Q361409"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2254,6 +3637,32 @@
       "homeGoals": 1,
       "key": "it-1993-Q2693-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gambaro",
+            "minute": "3",
+            "player": "Q3726535"
+          },
+          {
+            "display": "Fonseca",
+            "minute": "60",
+            "player": "Q462842"
+          },
+          {
+            "display": "Thern",
+            "minute": "82",
+            "player": "Q535027"
+          }
+        ],
+        "home": [
+          {
+            "display": "Brolin",
+            "minute": "33",
+            "player": "Q361435"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2263,6 +3672,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q2693-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Balbo",
+            "minute": "18",
+            "player": "Q318387"
+          },
+          {
+            "display": "Festa",
+            "minute": "89",
+            "player": "Q1157089"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2358,6 +3782,26 @@
       "homeGoals": 3,
       "key": "it-1993-Q2739-Q13391",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rizzitelli",
+            "minute": "21",
+            "player": "Q577885"
+          },
+          {
+            "display": "Balbo",
+            "minute": "45",
+            "player": "Q318387"
+          },
+          {
+            "display": "Cappioli",
+            "minute": "56",
+            "player": "Q1539223"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2367,6 +3811,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2739-Q139399",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2406,6 +3854,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q2739-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "R. Mancini",
+            "minute": "25",
+            "player": "Q48330"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2415,6 +3873,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q2739-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Massaro",
+            "minute": "11",
+            "player": "Q352826"
+          },
+          {
+            "display": "Maldini",
+            "minute": "77",
+            "player": "Q483027"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2424,6 +3897,27 @@
       "homeGoals": 2,
       "key": "it-1993-Q2739-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ganz",
+            "minute": "45",
+            "player": "Q703956"
+          }
+        ],
+        "home": [
+          {
+            "display": "Balbo",
+            "minute": "53",
+            "player": "Q318387"
+          },
+          {
+            "display": "Häßler",
+            "minute": "65",
+            "player": "Q155911"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2433,6 +3927,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2739-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rizzitelli",
+            "minute": "5",
+            "player": "Q577885"
+          },
+          {
+            "display": "Balbo",
+            "minute": "63",
+            "player": "Q318387"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2442,6 +3951,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2739-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Skuhravý",
+            "minute": "39",
+            "player": "Q444293"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cappioli",
+            "minute": "62",
+            "player": "Q1539223"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2451,6 +3976,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2739-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Mauro",
+            "minute": "78",
+            "player": "Q1136788"
+          }
+        ],
+        "home": [
+          {
+            "display": "Piacentini",
+            "minute": "60",
+            "player": "Q3767932"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2460,6 +4001,37 @@
       "homeGoals": 2,
       "key": "it-1993-Q2739-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Buso",
+            "minute": "25",
+            "player": "Q427398"
+          },
+          {
+            "display": "Di Canio",
+            "minute": "51",
+            "player": "Q44655"
+          },
+          {
+            "display": "Ferrara",
+            "minute": "67",
+            "player": "Q314078"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rizzitelli",
+            "minute": "45",
+            "player": "Q577885"
+          },
+          {
+            "display": "Bonacina",
+            "minute": "54",
+            "player": "Q1448449"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2469,6 +4041,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2739-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Comi",
+            "minute": "18",
+            "player": "Q1873018"
+          },
+          {
+            "display": "Cappioli",
+            "minute": "74",
+            "player": "Q1539223"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2478,6 +4065,21 @@
       "homeGoals": 2,
       "key": "it-1993-Q2739-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Balbo",
+            "minute": "32",
+            "player": "Q318387"
+          },
+          {
+            "display": "Cappioli",
+            "minute": "64",
+            "player": "Q1539223"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2487,6 +4089,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q2739-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pizzi",
+            "minute": "25",
+            "player": "Q3740398"
+          },
+          {
+            "display": "Branca",
+            "minute": "38",
+            "player": "Q778104"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2496,6 +4113,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2739-Q289707",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2505,6 +4126,33 @@
       "homeGoals": 3,
       "key": "it-1993-Q2739-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Iacobelli",
+            "minute": "45",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Rizzitelli",
+            "minute": "22",
+            "player": "Q577885"
+          },
+          {
+            "display": "Carannante",
+            "minute": "26",
+            "ownGoal": true,
+            "player": "Q601257"
+          },
+          {
+            "display": "Carboni",
+            "minute": "39",
+            "player": "Q460603"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2539,6 +4187,28 @@
       "homeGoals": 1,
       "key": "it-1993-Q2739-Q759482",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dezotti",
+            "minute": "30",
+            "penalty": true,
+            "player": "Q974253"
+          },
+          {
+            "display": "Tentoni",
+            "minute": "74",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Benedetti",
+            "minute": "49",
+            "player": "Q1404366"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2591,6 +4261,38 @@
       "homeGoals": 2,
       "key": "it-1993-Q2768-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sacchetti",
+            "minute": "47",
+            "player": "Q3497990"
+          },
+          {
+            "display": "Gullit",
+            "minute": "53",
+            "player": "Q173972"
+          },
+          {
+            "display": "Cois",
+            "minute": "64",
+            "ownGoal": true,
+            "player": "Q933236"
+          }
+        ],
+        "home": [
+          {
+            "display": "Silenzi",
+            "minute": "40",
+            "player": "Q1153183"
+          },
+          {
+            "display": "Poggi",
+            "minute": "90",
+            "player": "Q3894393"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2600,6 +4302,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2768-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2636,6 +4342,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2768-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Casiraghi",
+            "minute": "73",
+            "player": "Q378583"
+          }
+        ],
+        "home": [
+          {
+            "display": "Francescoli",
+            "minute": "87",
+            "player": "Q210083"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2645,6 +4367,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q2768-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fonseca",
+            "minute": "70",
+            "player": "Q462842"
+          }
+        ],
+        "home": [
+          {
+            "display": "Carbone",
+            "minute": "51",
+            "player": "Q1540229"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2663,6 +4401,23 @@
       "homeGoals": 1,
       "key": "it-1993-Q2768-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giannini",
+            "minute": "55",
+            "penalty": true,
+            "player": "Q445694"
+          }
+        ],
+        "home": [
+          {
+            "display": "Carbone",
+            "minute": "64",
+            "player": "Q1540229"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2780,6 +4535,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q2798-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Platt",
+            "minute": "54",
+            "player": "Q312143"
+          },
+          {
+            "display": "R. Mancini",
+            "minute": "74",
+            "player": "Q48330"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2789,6 +4559,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2798-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2825,6 +4599,33 @@
       "homeGoals": 2,
       "key": "it-1993-Q2798-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Winter",
+            "minute": "24",
+            "player": "Q311046"
+          },
+          {
+            "display": "Signori",
+            "minute": "38",
+            "player": "Q334684"
+          }
+        ],
+        "home": [
+          {
+            "display": "Borgonovo",
+            "minute": "23",
+            "player": "Q538794"
+          },
+          {
+            "display": "Pizzi",
+            "minute": "29",
+            "penalty": true,
+            "player": "Q3740398"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2852,6 +4653,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q2798-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2947,6 +4752,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q289707-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Amoruso",
+            "minute": "66",
+            "player": "Q62244"
+          }
+        ],
+        "home": [
+          {
+            "display": "Esposito",
+            "minute": "72",
+            "player": "Q3851021"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2956,6 +4777,16 @@
       "homeGoals": 0,
       "key": "it-1993-Q289707-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Desailly",
+            "minute": "28",
+            "player": "Q193625"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2992,6 +4823,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q289707-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3001,6 +4836,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q289707-Q2641",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Padovano",
+            "minute": "69",
+            "player": "Q1931119"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3019,6 +4864,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q289707-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3114,6 +4963,28 @@
       "homeGoals": 2,
       "key": "it-1993-Q459794-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lombardo",
+            "minute": "84",
+            "penalty": true,
+            "player": "Q758145"
+          }
+        ],
+        "home": [
+          {
+            "display": "Piovani",
+            "minute": "31",
+            "player": "Q3763751"
+          },
+          {
+            "display": "Ferrante",
+            "minute": "67",
+            "player": "Q1851160"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3123,6 +4994,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q459794-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3159,6 +5034,27 @@
       "homeGoals": 1,
       "key": "it-1993-Q459794-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Negro",
+            "minute": "60",
+            "player": "Q561227"
+          },
+          {
+            "display": "Di Matteo",
+            "minute": "72",
+            "player": "Q193348"
+          }
+        ],
+        "home": [
+          {
+            "display": "Piovani",
+            "minute": "59",
+            "player": "Q3763751"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3168,6 +5064,22 @@
       "homeGoals": 1,
       "key": "it-1993-Q459794-Q2641",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bia",
+            "minute": "18",
+            "player": "Q1403478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Papais",
+            "minute": "28",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3186,6 +5098,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q459794-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Piovani",
+            "minute": "59",
+            "player": "Q3763751"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3374,27 +5296,6 @@
       "homeGoals": 3,
       "key": "it-1993-Q631-Q1457",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Battistini",
-            "minute": "4",
-            "player": "Q1318816"
-          },
-          {
-            "display": "Jugović",
-            "minute": "29",
-            "player": "Q146119"
-          },
-          {
-            "display": "Bergkamp",
-            "minute": "56",
-            "penalty": true,
-            "player": "Q185389"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -3519,14 +5420,14 @@
             "player": "Q2250972"
           },
           {
-            "display": "Ruotolo",
-            "minute": "90",
-            "player": "Q2250972"
-          },
-          {
             "display": "Skuhravý",
             "minute": "26",
             "player": "Q444293"
+          },
+          {
+            "display": "Ruotolo",
+            "minute": "90",
+            "player": "Q2250972"
           }
         ],
         "home": [
@@ -3826,6 +5727,10 @@
       "homeGoals": 0,
       "key": "it-1993-Q759482-Q1457",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3835,6 +5740,21 @@
       "homeGoals": 0,
       "key": "it-1993-Q759482-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Papin",
+            "minute": "9",
+            "player": "Q13494"
+          },
+          {
+            "display": "Simone",
+            "minute": "20",
+            "player": "Q439332"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3871,6 +5791,16 @@
       "homeGoals": 1,
       "key": "it-1993-Q759482-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Nicolini",
+            "minute": "19",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3898,6 +5828,23 @@
       "homeGoals": 1,
       "key": "it-1993-Q759482-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Balbo",
+            "minute": "9",
+            "player": "Q318387"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maspero",
+            "minute": "33",
+            "penalty": true,
+            "player": "Q3934523"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3990,6 +5937,14 @@
       {
         "goals": 1,
         "id": "Q950088"
+      },
+      {
+        "goals": 1,
+        "id": "Q3104371"
+      },
+      {
+        "goals": 1,
+        "id": "Q3897112"
       }
     ],
     "Q139399": [
@@ -3999,8 +5954,20 @@
         "topScorerRank": 10
       },
       {
+        "goals": 1,
+        "id": "Q3894212"
+      },
+      {
         "goals": 2,
+        "id": "Q1359619"
+      },
+      {
+        "goals": 3,
         "id": "Q314053"
+      },
+      {
+        "goals": 2,
+        "id": "Q1538897"
       }
     ],
     "Q1422": [
@@ -4034,23 +6001,26 @@
         "id": "Q26580"
       },
       {
-        "goals": 5,
-        "id": "Q624"
-      },
-      {
         "goals": 1,
         "id": "Q493906"
+      },
+      {
+        "goals": 5,
+        "id": "Q624"
       }
     ],
     "Q1457": [
       {
-        "goals": 1,
+        "goals": 8,
         "id": "Q758145"
       },
       {
-        "goals": 15,
-        "id": "Q173972",
-        "topScorerRank": 6
+        "goals": 9,
+        "id": "Q312143"
+      },
+      {
+        "goals": 6,
+        "id": "Q146119"
       },
       {
         "goals": 12,
@@ -4058,8 +6028,25 @@
         "topScorerRank": 10
       },
       {
-        "goals": 1,
+        "goals": 15,
+        "id": "Q173972",
+        "topScorerRank": 6
+      },
+      {
+        "goals": 2,
+        "id": "Q1407974"
+      },
+      {
+        "goals": 2,
         "id": "Q351990"
+      },
+      {
+        "goals": 1,
+        "id": "Q177511"
+      },
+      {
+        "goals": 3,
+        "id": "Q62244"
       },
       {
         "goals": 1,
@@ -4067,39 +6054,79 @@
       },
       {
         "goals": 1,
-        "id": "Q62244"
+        "id": "Q3497990"
       }
     ],
     "Q1543": [
+      {
+        "goals": 2,
+        "id": "Q358783"
+      },
       {
         "goals": 1,
         "id": "Q1363939"
       },
       {
         "goals": 1,
-        "id": "Q245011"
+        "id": "Q193625"
       },
       {
-        "goals": 1,
-        "id": "Q13494"
-      },
-      {
-        "goals": 1,
+        "goals": 2,
         "id": "Q168287"
       },
       {
-        "goals": 1,
+        "goals": 3,
+        "id": "Q245011"
+      },
+      {
+        "goals": 5,
+        "id": "Q13494"
+      },
+      {
+        "goals": 3,
+        "id": "Q439332"
+      },
+      {
+        "goals": 9,
         "id": "Q352826"
+      },
+      {
+        "goals": 1,
+        "id": "Q212854"
+      },
+      {
+        "goals": 1,
+        "id": "Q483027"
+      },
+      {
+        "goals": 4,
+        "id": "Q231468"
+      },
+      {
+        "goals": 1,
+        "id": "Q3497980"
       }
     ],
     "Q1886": [
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q516192"
+      },
+      {
+        "goals": 3,
         "id": "Q703956"
       },
       {
         "goals": 2,
+        "id": "Q3852944"
+      },
+      {
+        "goals": 3,
         "id": "Q1102718"
+      },
+      {
+        "goals": 1,
+        "id": "Q326497"
       }
     ],
     "Q1900": [
@@ -4109,37 +6136,77 @@
         "topScorerRank": 9
       },
       {
+        "goals": 1,
+        "id": "Q354529"
+      },
+      {
+        "goals": 1,
+        "id": "Q1539223"
+      },
+      {
+        "goals": 1,
+        "id": "Q4015499"
+      },
+      {
         "goals": 12,
         "id": "Q723383",
         "topScorerRank": 10
       },
       {
-        "goals": 1,
-        "id": "Q4015499"
+        "goals": 2,
+        "id": "Q1522453"
       }
     ],
     "Q2074": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q444293"
+      },
+      {
+        "goals": 1,
+        "id": "Q2306769"
       },
       {
         "goals": 1,
         "id": "Q287664"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q2250972"
+      },
+      {
+        "goals": 1,
+        "id": "Q3436953"
+      },
+      {
+        "goals": 1,
+        "id": "Q3938909"
+      },
+      {
+        "goals": 1,
+        "id": "Q3846311"
+      },
+      {
+        "goals": 1,
+        "id": "Q529563"
       }
     ],
     "Q2609": [
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q193348"
       },
       {
-        "goals": 1,
+        "goals": 4,
+        "id": "Q378583"
+      },
+      {
+        "goals": 4,
         "id": "Q313518"
+      },
+      {
+        "goals": 2,
+        "id": "Q976301"
       },
       {
         "goals": 23,
@@ -4147,20 +6214,76 @@
         "topScorerRank": 1
       },
       {
-        "goals": 1,
+        "goals": 4,
+        "id": "Q311046"
+      },
+      {
+        "goals": 2,
         "id": "Q13002"
+      },
+      {
+        "goals": 1,
+        "id": "Q1136788"
+      },
+      {
+        "goals": 5,
+        "id": "Q2714696"
+      },
+      {
+        "goals": 1,
+        "id": "Q561227"
       }
     ],
     "Q2641": [
       {
+        "goals": 4,
+        "id": "Q44655"
+      },
+      {
         "goals": 15,
         "id": "Q462842",
         "topScorerRank": 6
+      },
+      {
+        "goals": 3,
+        "id": "Q427398"
+      },
+      {
+        "goals": 1,
+        "id": "Q3939068"
+      },
+      {
+        "goals": 2,
+        "id": "Q314078"
+      },
+      {
+        "goals": 2,
+        "id": "Q1087530"
+      },
+      {
+        "goals": 3,
+        "id": "Q1403478"
+      },
+      {
+        "goals": 1,
+        "id": "Q1466733"
+      },
+      {
+        "goals": 1,
+        "id": "Q913596"
+      },
+      {
+        "goals": 1,
+        "id": "Q3726535"
+      },
+      {
+        "goals": 1,
+        "id": "Q535027"
       }
     ],
     "Q2693": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q361409"
       },
       {
@@ -4169,27 +6292,55 @@
         "topScorerRank": 2
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q361435"
+      },
+      {
+        "goals": 2,
+        "id": "Q553175"
+      },
+      {
+        "goals": 1,
+        "id": "Q1098369"
       },
       {
         "goals": 1,
         "id": "Q602873"
-      },
-      {
-        "goals": 1,
-        "id": "Q553175"
       }
     ],
     "Q2739": [
+      {
+        "goals": 2,
+        "id": "Q155911"
+      },
+      {
+        "goals": 4,
+        "id": "Q577885"
+      },
+      {
+        "goals": 1,
+        "id": "Q2269798"
+      },
+      {
+        "goals": 3,
+        "id": "Q445694"
+      },
       {
         "goals": 12,
         "id": "Q318387",
         "topScorerRank": 10
       },
       {
+        "goals": 5,
+        "id": "Q1539223"
+      },
+      {
         "goals": 1,
-        "id": "Q445694"
+        "id": "Q1404366"
+      },
+      {
+        "goals": 1,
+        "id": "Q1873018"
       },
       {
         "goals": 1,
@@ -4197,43 +6348,87 @@
       },
       {
         "goals": 1,
-        "id": "Q1539223"
+        "id": "Q1157089"
+      },
+      {
+        "goals": 1,
+        "id": "Q3767932"
+      },
+      {
+        "goals": 1,
+        "id": "Q1448449"
+      },
+      {
+        "goals": 1,
+        "id": "Q460603"
       }
     ],
     "Q2768": [
       {
         "goals": 2,
-        "id": "Q325170"
+        "id": "Q1540229"
+      },
+      {
+        "goals": 2,
+        "id": "Q3894393"
+      },
+      {
+        "goals": 1,
+        "id": "Q210083"
+      },
+      {
+        "goals": 1,
+        "id": "Q742534"
       },
       {
         "goals": 1,
         "id": "Q3929168"
       },
       {
-        "goals": 1,
-        "id": "Q3894393"
+        "goals": 17,
+        "id": "Q1153183",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 2,
+        "id": "Q325170"
       },
       {
         "goals": 1,
         "id": "Q933236"
-      },
-      {
-        "goals": 17,
-        "id": "Q1153183",
-        "topScorerRank": 3
       }
     ],
     "Q2798": [
       {
+        "goals": 3,
+        "id": "Q3740398"
+      },
+      {
+        "goals": 2,
+        "id": "Q538794"
+      },
+      {
+        "goals": 1,
+        "id": "Q2278399"
+      },
+      {
         "goals": 14,
         "id": "Q778104",
         "topScorerRank": 8
+      },
+      {
+        "goals": 1,
+        "id": "Q2519072"
       }
     ],
     "Q289707": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1931119"
+      },
+      {
+        "goals": 2,
+        "id": "Q3851021"
       },
       {
         "goals": 1,
@@ -4242,13 +6437,21 @@
     ],
     "Q459794": [
       {
+        "goals": 3,
+        "id": "Q3763751"
+      },
+      {
+        "goals": 1,
+        "id": "Q1851160"
+      },
+      {
         "goals": 1,
         "id": "Q599248"
       }
     ],
     "Q631": [
       {
-        "goals": 8,
+        "goals": 7,
         "id": "Q185389"
       },
       {
@@ -4259,10 +6462,6 @@
         "goals": 16,
         "id": "Q463979",
         "topScorerRank": 5
-      },
-      {
-        "goals": 1,
-        "id": "Q146119"
       },
       {
         "goals": 5,
@@ -4277,7 +6476,7 @@
         "id": "Q505376"
       },
       {
-        "goals": 3,
+        "goals": 2,
         "id": "Q1318816"
       },
       {
@@ -4287,6 +6486,16 @@
       {
         "goals": 1,
         "id": "Q2255418"
+      }
+    ],
+    "Q759482": [
+      {
+        "goals": 2,
+        "id": "Q974253"
+      },
+      {
+        "goals": 1,
+        "id": "Q3934523"
       }
     ]
   },

@@ -952,6 +952,32 @@
       "homeGoals": 2,
       "key": "de-1992-Q105861-Q141931",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Stevic",
+            "minute": "19",
+            "player": "Q567434"
+          },
+          {
+            "display": "Stevic",
+            "minute": "36",
+            "player": "Q567434"
+          }
+        ],
+        "home": [
+          {
+            "display": "Reekers",
+            "minute": "52",
+            "player": "Q25476"
+          },
+          {
+            "display": "Dreßel",
+            "minute": "90",
+            "player": "Q1548823"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -976,14 +1002,14 @@
             "player": "Q1225986"
           },
           {
-            "display": "Moutas",
-            "minute": "76",
-            "player": "Q1225986"
-          },
-          {
             "display": "Wegmann",
             "minute": "69",
             "player": "Q878703"
+          },
+          {
+            "display": "Moutas",
+            "minute": "76",
+            "player": "Q1225986"
           }
         ]
       },
@@ -2828,6 +2854,38 @@
       "homeGoals": 4,
       "key": "de-1992-Q38245-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Wegmann",
+            "minute": "25",
+            "player": "Q878703"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bein",
+            "minute": "11",
+            "penalty": true,
+            "player": "Q455161"
+          },
+          {
+            "display": "Yeboah",
+            "minute": "68",
+            "player": "Q379603"
+          },
+          {
+            "display": "Yeboah",
+            "minute": "75",
+            "player": "Q379603"
+          },
+          {
+            "display": "Schmitt",
+            "minute": "88",
+            "player": "Q314268"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2989,11 +3047,6 @@
             "player": "Q379603"
           },
           {
-            "display": "Yeboah",
-            "minute": "85",
-            "player": "Q379603"
-          },
-          {
             "display": "Bein",
             "minute": "46",
             "penalty": true,
@@ -3003,6 +3056,11 @@
             "display": "Studer",
             "minute": "74",
             "player": "Q2337780"
+          },
+          {
+            "display": "Yeboah",
+            "minute": "85",
+            "player": "Q379603"
           }
         ]
       },
@@ -3138,14 +3196,14 @@
             "player": "Q1572946"
           },
           {
-            "display": "Andersen",
-            "minute": "58",
-            "player": "Q1572946"
-          },
-          {
             "display": "Schmitt",
             "minute": "14",
             "player": "Q314268"
+          },
+          {
+            "display": "Andersen",
+            "minute": "58",
+            "player": "Q1572946"
           },
           {
             "display": "Schmitt",
@@ -4554,7 +4612,7 @@
     ],
     "Q105861": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q25476"
       },
       {
@@ -4570,7 +4628,7 @@
         "id": "Q1080288"
       },
       {
-        "goals": 12,
+        "goals": 13,
         "id": "Q878703"
       },
       {
@@ -4580,6 +4638,10 @@
       {
         "goals": 9,
         "id": "Q1624459"
+      },
+      {
+        "goals": 2,
+        "id": "Q1548823"
       },
       {
         "goals": 2,
@@ -4599,10 +4661,6 @@
       },
       {
         "goals": 1,
-        "id": "Q1548823"
-      },
-      {
-        "goals": 1,
         "id": "Q973981"
       }
     ],
@@ -4614,6 +4672,10 @@
       {
         "goals": 1,
         "id": "Q178482"
+      },
+      {
+        "goals": 2,
+        "id": "Q567434"
       },
       {
         "goals": 2,
@@ -4752,11 +4814,11 @@
         "id": "Q90154"
       },
       {
-        "goals": 14,
+        "goals": 16,
         "id": "Q379603"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q314268"
       },
       {
@@ -4764,7 +4826,7 @@
         "id": "Q605817"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q455161"
       },
       {

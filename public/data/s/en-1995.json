@@ -210,11 +210,6 @@
             "player": "Q1027452"
           },
           {
-            "display": "Ruddock",
-            "minute": "90",
-            "player": "Q1027452"
-          },
-          {
             "display": "Fowler",
             "minute": "62",
             "penalty": true,
@@ -229,6 +224,11 @@
             "display": "Collymore",
             "minute": "89",
             "player": "Q444975"
+          },
+          {
+            "display": "Ruddock",
+            "minute": "90",
+            "player": "Q1027452"
           }
         ]
       },
@@ -646,11 +646,6 @@
             "player": "Q219354"
           },
           {
-            "display": "Rush",
-            "minute": "64",
-            "player": "Q219354"
-          },
-          {
             "display": "Redknapp",
             "minute": "5",
             "player": "Q317810"
@@ -661,14 +656,19 @@
             "player": "Q206548"
           },
           {
+            "display": "Ruddock",
+            "minute": "53",
+            "player": "Q1027452"
+          },
+          {
             "display": "Fowler",
             "minute": "60",
             "player": "Q206548"
           },
           {
-            "display": "Ruddock",
-            "minute": "53",
-            "player": "Q1027452"
+            "display": "Rush",
+            "minute": "64",
+            "player": "Q219354"
           }
         ]
       },
@@ -1430,6 +1430,27 @@
       "homeGoals": 2,
       "key": "en-1995-Q18716-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rush",
+            "minute": "11",
+            "player": "Q219354"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ferdinand",
+            "minute": "3",
+            "player": "Q311709"
+          },
+          {
+            "display": "Watson",
+            "minute": "89",
+            "player": "Q2347391"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1673,14 +1694,14 @@
             "player": "Q311709"
           },
           {
-            "display": "Ferdinand",
-            "minute": "63",
-            "player": "Q311709"
-          },
-          {
             "display": "Clark",
             "minute": "59",
             "player": "Q2608437"
+          },
+          {
+            "display": "Ferdinand",
+            "minute": "63",
+            "player": "Q311709"
           },
           {
             "display": "Albert",
@@ -1713,14 +1734,14 @@
             "player": "Q465004"
           },
           {
-            "display": "Lee",
-            "minute": "74",
-            "player": "Q465004"
-          },
-          {
             "display": "Ginola",
             "minute": "25",
             "player": "Q42601"
+          },
+          {
+            "display": "Lee",
+            "minute": "74",
+            "player": "Q465004"
           }
         ]
       },
@@ -1943,14 +1964,14 @@
             "player": "Q1366485"
           },
           {
-            "display": "Gillespie",
-            "minute": "71",
-            "player": "Q1366485"
-          },
-          {
             "display": "Ferdinand",
             "minute": "65",
             "player": "Q311709"
+          },
+          {
+            "display": "Gillespie",
+            "minute": "71",
+            "player": "Q1366485"
           }
         ],
         "home": [
@@ -2988,14 +3009,14 @@
             "player": "Q311709"
           },
           {
-            "display": "Ferdinand",
-            "minute": "84",
-            "player": "Q311709"
-          },
-          {
             "display": "Lee",
             "minute": "77",
             "player": "Q465004"
+          },
+          {
+            "display": "Ferdinand",
+            "minute": "84",
+            "player": "Q311709"
           }
         ],
         "home": [
@@ -3213,14 +3234,14 @@
             "player": "Q387740"
           },
           {
-            "display": "Holdsworth",
-            "minute": "65",
-            "player": "Q387740"
-          },
-          {
             "display": "Ekoku",
             "minute": "21",
             "player": "Q2562240"
+          },
+          {
+            "display": "Holdsworth",
+            "minute": "65",
+            "player": "Q387740"
           }
         ]
       },
@@ -4021,14 +4042,14 @@
             "player": "Q563065"
           },
           {
-            "display": "Albert",
-            "minute": "81",
-            "player": "Q563065"
-          },
-          {
             "display": "Asprilla",
             "minute": "71",
             "player": "Q361409"
+          },
+          {
+            "display": "Albert",
+            "minute": "81",
+            "player": "Q563065"
           }
         ],
         "home": [
@@ -4797,7 +4818,7 @@
         "id": "Q10536"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q219354"
       },
       {
@@ -4890,7 +4911,7 @@
         "id": "Q465004"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q2347391"
       },
       {

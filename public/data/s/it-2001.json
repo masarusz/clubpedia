@@ -23,6 +23,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q13391-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "José Mari",
+            "minute": "78",
+            "player": "Q382074"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -41,6 +51,21 @@
       "homeGoals": 0,
       "key": "it-2001-Q13391-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rossini",
+            "minute": "4",
+            "player": "Q351279"
+          },
+          {
+            "display": "Doni",
+            "minute": "82",
+            "player": "Q350489"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -50,6 +75,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q13391-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cirillo",
+            "minute": "37",
+            "player": "Q455809"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -59,6 +94,37 @@
       "homeGoals": 2,
       "key": "it-2001-Q13391-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Legrottaglie",
+            "minute": "16",
+            "player": "Q311578"
+          },
+          {
+            "display": "Perrotta",
+            "minute": "73",
+            "player": "Q232789"
+          },
+          {
+            "display": "Eriberto",
+            "minute": "79",
+            "player": "Q954346"
+          }
+        ],
+        "home": [
+          {
+            "display": "Chevanton",
+            "minute": "26",
+            "player": "Q259247"
+          },
+          {
+            "display": "Chevanton",
+            "minute": "39",
+            "player": "Q259247"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -77,6 +143,28 @@
       "homeGoals": 1,
       "key": "it-2001-Q13391-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "58",
+            "penalty": true,
+            "player": "Q160206"
+          },
+          {
+            "display": "S. Inzaghi",
+            "minute": "61",
+            "player": "Q314670"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cirillo",
+            "minute": "66",
+            "player": "Q455809"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -86,6 +174,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q13391-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Vaio",
+            "minute": "71",
+            "player": "Q136940"
+          }
+        ],
+        "home": [
+          {
+            "display": "Chevantón",
+            "minute": "2",
+            "player": "Q259247"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -95,6 +199,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q13391-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Candela",
+            "minute": "34",
+            "player": "Q299624"
+          }
+        ],
+        "home": [
+          {
+            "display": "Vugrinec",
+            "minute": "74",
+            "player": "Q992248"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -202,7 +322,7 @@
         "home": [
           {
             "display": "Chamot",
-            "minute": "78",
+            "minute": "68",
             "ownGoal": true,
             "player": "Q350279"
           }
@@ -342,6 +462,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1422-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Adriano",
+            "minute": "15",
+            "player": "Q170452"
+          }
+        ],
+        "home": [
+          {
+            "display": "Trezeguet",
+            "minute": "11",
+            "player": "Q183967"
+          },
+          {
+            "display": "Del Piero",
+            "minute": "30",
+            "player": "Q624"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -354,8 +495,8 @@
       "scorers": {
         "away": [
           {
-            "display": "López",
-            "minute": "25",
+            "display": "C. López",
+            "minute": "24",
             "player": "Q295883"
           }
         ],
@@ -391,14 +532,14 @@
             "player": "Q183967"
           },
           {
-            "display": "Trezeguet",
-            "minute": "90+5",
-            "player": "Q183967"
-          },
-          {
             "display": "Del Piero",
             "minute": "75",
             "player": "Q624"
+          },
+          {
+            "display": "Trezeguet",
+            "minute": "90+5",
+            "player": "Q183967"
           }
         ]
       },
@@ -461,14 +602,14 @@
             "player": "Q624"
           },
           {
-            "display": "Del Piero",
-            "minute": "25",
-            "player": "Q624"
-          },
-          {
             "display": "Tudor",
             "minute": "12",
             "player": "Q276544"
+          },
+          {
+            "display": "Del Piero",
+            "minute": "25",
+            "player": "Q624"
           }
         ]
       },
@@ -590,24 +731,24 @@
             "player": "Q183967"
           },
           {
-            "display": "Trezeguet",
-            "minute": "76",
-            "player": "Q183967"
-          },
-          {
-            "display": "Trezeguet",
-            "minute": "89",
-            "player": "Q183967"
-          },
-          {
             "display": "Del Piero",
             "minute": "71",
             "player": "Q624"
           },
           {
+            "display": "Trezeguet",
+            "minute": "76",
+            "player": "Q183967"
+          },
+          {
             "display": "Del Piero",
             "minute": "80",
             "player": "Q624"
+          },
+          {
+            "display": "Trezeguet",
+            "minute": "89",
+            "player": "Q183967"
           }
         ]
       },
@@ -639,6 +780,26 @@
       "homeGoals": 3,
       "key": "it-2001-Q1543-Q13391",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Kaladze",
+            "minute": "6",
+            "player": "Q192031"
+          },
+          {
+            "display": "Ambrosini",
+            "minute": "44",
+            "player": "Q188564"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "48",
+            "player": "Q41244"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -674,6 +835,23 @@
       "homeGoals": 1,
       "key": "it-2001-Q1543-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bazzani",
+            "minute": "46",
+            "player": "Q924087"
+          }
+        ],
+        "home": [
+          {
+            "display": "Serginho",
+            "minute": "17",
+            "penalty": true,
+            "player": "Q312140"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -683,6 +861,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q1886",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -692,6 +874,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -701,6 +887,38 @@
       "homeGoals": 3,
       "key": "it-2001-Q1543-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marazzina",
+            "minute": "26",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Corradi",
+            "minute": "29",
+            "player": "Q471641"
+          }
+        ],
+        "home": [
+          {
+            "display": "Inzaghi",
+            "minute": "14",
+            "player": "Q126503"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "58",
+            "penalty": true,
+            "player": "Q41244"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "65",
+            "player": "Q41244"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -730,11 +948,6 @@
             "player": "Q41244"
           },
           {
-            "display": "Shevchenko",
-            "minute": "52",
-            "player": "Q41244"
-          },
-          {
             "display": "Laursen",
             "minute": "40",
             "player": "Q313207"
@@ -743,6 +956,11 @@
             "display": "Inzaghi",
             "minute": "45",
             "player": "Q126503"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "52",
+            "player": "Q41244"
           },
           {
             "display": "Serginho",
@@ -760,6 +978,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q1543-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Inzaghi",
+            "minute": "41",
+            "player": "Q126503"
+          },
+          {
+            "display": "Laursen",
+            "minute": "56",
+            "player": "Q313207"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -769,6 +1002,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q1543-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Vaio",
+            "minute": "14",
+            "player": "Q136940"
+          }
+        ],
+        "home": [
+          {
+            "display": "Inzaghi",
+            "minute": "48",
+            "player": "Q126503"
+          },
+          {
+            "display": "Pirlo",
+            "minute": "77",
+            "player": "Q43926"
+          },
+          {
+            "display": "Inzaghi",
+            "minute": "90",
+            "player": "Q126503"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -778,6 +1037,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -787,6 +1050,28 @@
       "homeGoals": 2,
       "key": "it-2001-Q1543-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ferrante",
+            "minute": "63",
+            "penalty": true,
+            "player": "Q1851160"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kaladze",
+            "minute": "51",
+            "player": "Q192031"
+          },
+          {
+            "display": "Ambrosini",
+            "minute": "79",
+            "player": "Q188564"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -796,6 +1081,37 @@
       "homeGoals": 2,
       "key": "it-2001-Q1543-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Muzzi",
+            "minute": "33",
+            "player": "Q1396445"
+          },
+          {
+            "display": "Scarlato",
+            "minute": "52",
+            "player": "Q1081920"
+          },
+          {
+            "display": "Jørgensen",
+            "minute": "78",
+            "player": "Q312516"
+          }
+        ],
+        "home": [
+          {
+            "display": "Shevchenko",
+            "minute": "5",
+            "player": "Q41244"
+          },
+          {
+            "display": "Serginho",
+            "minute": "13",
+            "player": "Q312140"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -805,6 +1121,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -814,6 +1134,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q1543-Q501245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bazzani",
+            "minute": "61",
+            "player": "Q924087"
+          }
+        ],
+        "home": [
+          {
+            "display": "Shevchenko",
+            "minute": "43",
+            "player": "Q41244"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -823,6 +1159,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vieri",
+            "minute": "78",
+            "player": "Q188696"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -832,6 +1178,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1543-Q6651",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -841,6 +1191,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1543-Q8639",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "P. Cannavaro",
+            "minute": "70",
+            "player": "Q311956"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ambrosini",
+            "minute": "58",
+            "player": "Q188564"
+          },
+          {
+            "display": "Contra",
+            "minute": "90",
+            "player": "Q296215"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -873,14 +1244,14 @@
             "player": "Q624"
           },
           {
-            "display": "Del Piero",
-            "minute": "62",
-            "player": "Q624"
-          },
-          {
             "display": "C. Zenoni",
             "minute": "57",
             "player": "Q955963"
+          },
+          {
+            "display": "Del Piero",
+            "minute": "62",
+            "player": "Q624"
           }
         ],
         "home": []
@@ -894,6 +1265,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q16344-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kaladze",
+            "minute": "67",
+            "player": "Q192031"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bazzani",
+            "minute": "57",
+            "player": "Q924087"
+          },
+          {
+            "display": "Tedesco",
+            "minute": "75",
+            "player": "Q736304"
+          },
+          {
+            "display": "Vryzas",
+            "minute": "78",
+            "player": "Q163437"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -903,6 +1300,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q16344-Q1886",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Bazzani",
+            "minute": "52",
+            "player": "Q924087"
+          },
+          {
+            "display": "Bazzani",
+            "minute": "90+1",
+            "player": "Q924087"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -912,6 +1324,17 @@
       "homeGoals": 1,
       "key": "it-2001-Q16344-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zé Maria",
+            "minute": "51",
+            "penalty": true,
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -921,6 +1344,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q16344-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bernardo Corradi",
+            "minute": "22",
+            "player": "Q471641"
+          },
+          {
+            "display": "Bernardo Corradi",
+            "minute": "49",
+            "player": "Q471641"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fabio Bazzani",
+            "minute": "34",
+            "player": "Q924087"
+          },
+          {
+            "display": "Mauro Milanese",
+            "minute": "68",
+            "player": "Q3852879"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -954,6 +1403,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q16344-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -963,6 +1416,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q16344-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bonazzoli",
+            "minute": "66",
+            "player": "Q1337293"
+          }
+        ],
+        "home": [
+          {
+            "display": "Vryzas",
+            "minute": "8",
+            "player": "Q163437"
+          },
+          {
+            "display": "Bazzani",
+            "minute": "29",
+            "player": "Q924087"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -972,6 +1446,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q16344-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1044,6 +1522,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1886-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cirillo",
+            "minute": "56",
+            "player": "Q455809"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rossini",
+            "minute": "25",
+            "player": "Q351279"
+          },
+          {
+            "display": "Pinardi",
+            "minute": "30",
+            "player": "Q3610712"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1077,6 +1576,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Shevchenko",
+            "minute": "57",
+            "player": "Q41244"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sala",
+            "minute": "32",
+            "player": "Q763613"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1086,6 +1601,28 @@
       "homeGoals": 2,
       "key": "it-2001-Q1886-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tedesco",
+            "minute": "16",
+            "player": "Q736304"
+          }
+        ],
+        "home": [
+          {
+            "display": "Blasi",
+            "minute": "36",
+            "ownGoal": true,
+            "player": "Q445976"
+          },
+          {
+            "display": "Zauri",
+            "minute": "68",
+            "player": "Q519625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1095,6 +1632,33 @@
       "homeGoals": 2,
       "key": "it-2001-Q1886-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Olive",
+            "minute": "41",
+            "player": "Q3932741"
+          },
+          {
+            "display": "Brioschi",
+            "minute": "90",
+            "player": "Q1485543"
+          }
+        ],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "10",
+            "penalty": true,
+            "player": "Q350489"
+          },
+          {
+            "display": "Berretta",
+            "minute": "22",
+            "player": "Q1407765"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1104,6 +1668,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marazzina",
+            "minute": "60",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Cossato",
+            "minute": "77",
+            "player": "Q3741684"
+          }
+        ],
+        "home": [
+          {
+            "display": "Berretta",
+            "minute": "5",
+            "player": "Q1407765"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1117,9 +1702,9 @@
         "away": [],
         "home": [
           {
-            "display": "Pià",
+            "display": "Piá",
             "minute": "35",
-            "player": null
+            "player": "Q1302822"
           },
           {
             "display": "Doni",
@@ -1137,6 +1722,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q1886-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Poborský",
+            "minute": "78",
+            "player": "Q224033"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1146,6 +1741,37 @@
       "homeGoals": 4,
       "key": "it-2001-Q1886-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Micoud",
+            "minute": "68",
+            "player": "Q169995"
+          }
+        ],
+        "home": [
+          {
+            "display": "Berretta",
+            "minute": "23",
+            "player": "Q1407765"
+          },
+          {
+            "display": "Sala",
+            "minute": "43",
+            "player": "Q763613"
+          },
+          {
+            "display": "Doni",
+            "minute": "58",
+            "player": "Q350489"
+          },
+          {
+            "display": "Comandini",
+            "minute": "66",
+            "player": "Q1872817"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1155,6 +1781,23 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Assunção",
+            "minute": "54",
+            "player": "Q2089039"
+          }
+        ],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "75",
+            "penalty": true,
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1164,6 +1807,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Franco",
+            "minute": "50",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Berretta",
+            "minute": "15",
+            "player": "Q1407765"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1173,6 +1832,43 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jørgensen",
+            "minute": "5",
+            "player": "Q312516"
+          },
+          {
+            "display": "Jørgensen",
+            "minute": "62",
+            "player": "Q312516"
+          },
+          {
+            "display": "Iaquinta",
+            "minute": "76",
+            "player": "Q191869"
+          },
+          {
+            "display": "Muzzi",
+            "minute": "81",
+            "player": "Q1396445"
+          },
+          {
+            "display": "Muzzi",
+            "minute": "86",
+            "penalty": true,
+            "player": "Q1396445"
+          }
+        ],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "57",
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1182,6 +1878,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cardone",
+            "minute": "71",
+            "player": "Q498837"
+          }
+        ],
+        "home": [
+          {
+            "display": "Comandini",
+            "minute": "45+1",
+            "player": "Q1872817"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1191,6 +1903,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q501245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rossini",
+            "minute": "30",
+            "player": "Q351279"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1200,6 +1922,44 @@
       "homeGoals": 2,
       "key": "it-2001-Q1886-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Biagio",
+            "minute": "9",
+            "player": "Q314053"
+          },
+          {
+            "display": "Kallon",
+            "minute": "46",
+            "player": "Q466127"
+          },
+          {
+            "display": "Vieri",
+            "minute": "60",
+            "penalty": true,
+            "player": "Q188696"
+          },
+          {
+            "display": "Vieri",
+            "minute": "75",
+            "player": "Q188696"
+          }
+        ],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "16",
+            "player": "Q350489"
+          },
+          {
+            "display": "Doni",
+            "minute": "22",
+            "penalty": true,
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1209,6 +1969,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q1886-Q6651",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1218,6 +1982,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q1886-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "27",
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1227,6 +2001,47 @@
       "homeGoals": 4,
       "key": "it-2001-Q1893-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Popescu",
+            "minute": "19",
+            "player": "Q313205"
+          },
+          {
+            "display": "Popescu",
+            "minute": "37",
+            "player": "Q313205"
+          },
+          {
+            "display": "Chevantón",
+            "minute": "68",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Pecchia",
+            "minute": "13",
+            "player": "Q1087530"
+          },
+          {
+            "display": "Cruz",
+            "minute": "65",
+            "player": "Q297397"
+          },
+          {
+            "display": "Signori",
+            "minute": "72",
+            "player": "Q334684"
+          },
+          {
+            "display": "Fresi",
+            "minute": "82",
+            "player": "Q1091577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1249,6 +2064,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fresi",
+            "minute": "3",
+            "player": "Q1091577"
+          },
+          {
+            "display": "Cruz",
+            "minute": "24",
+            "player": "Q297397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1258,6 +2088,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tedesco II",
+            "minute": "22",
+            "player": "Q736304"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pecchia",
+            "minute": "28",
+            "player": "Q1087530"
+          },
+          {
+            "display": "Fresi",
+            "minute": "45",
+            "player": "Q1091577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1267,6 +2118,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q1886",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "19",
+            "player": "Q334684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1276,6 +2137,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q1893-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Luigi Beghetto",
+            "minute": "73",
+            "player": "Q1319461"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zauli",
+            "minute": "40",
+            "player": "Q3826352"
+          },
+          {
+            "display": "Cruz",
+            "minute": "70",
+            "player": "Q297397"
+          },
+          {
+            "display": "Zauli",
+            "minute": "90",
+            "player": "Q3826352"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1301,17 +2188,17 @@
         "home": [
           {
             "display": "Fresi",
-            "minute": "13",
+            "minute": "12",
             "player": "Q1091577"
           },
           {
             "display": "Fresi",
-            "minute": "18",
+            "minute": "17",
             "player": "Q1091577"
           },
           {
             "display": "Zauli",
-            "minute": "33",
+            "minute": "32",
             "player": "Q3826352"
           }
         ]
@@ -1325,6 +2212,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Signori",
+            "minute": "51",
+            "player": "Q334684"
+          },
+          {
+            "display": "Pecchia",
+            "minute": "88",
+            "player": "Q1087530"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1334,6 +2236,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cruz",
+            "minute": "58",
+            "player": "Q297397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1343,6 +2255,32 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Samuel",
+            "minute": "3",
+            "player": "Q193702"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "16",
+            "player": "Q170376"
+          },
+          {
+            "display": "Assunção",
+            "minute": "40",
+            "player": "Q2089039"
+          }
+        ],
+        "home": [
+          {
+            "display": "Womé",
+            "minute": "38",
+            "player": "Q343950"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1352,6 +2290,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Olive",
+            "minute": "5",
+            "player": "Q3932741"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1361,6 +2309,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q1893-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jørgensen",
+            "minute": "56",
+            "player": "Q312516"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1370,6 +2328,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tosto",
+            "minute": "3",
+            "player": "Q330798"
+          },
+          {
+            "display": "Di Francesco",
+            "minute": "50",
+            "player": "Q396154"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fresi",
+            "minute": "62",
+            "player": "Q1091577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1379,6 +2358,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q1893-Q501245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Maniero",
+            "minute": "24",
+            "player": "Q1086666"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bellucci",
+            "minute": "60",
+            "player": "Q607364"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1388,6 +2383,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Seedorf",
+            "minute": "89",
+            "player": "Q484909"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pecchia",
+            "minute": "56",
+            "player": "Q1087530"
+          },
+          {
+            "display": "Zauli",
+            "minute": "74",
+            "player": "Q3826352"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1397,6 +2413,28 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q6651",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Toni",
+            "minute": "43",
+            "player": "Q186478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Petruzzi",
+            "minute": "10",
+            "ownGoal": true,
+            "player": "Q3737804"
+          },
+          {
+            "display": "Nervo",
+            "minute": "30",
+            "player": "Q3659664"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1406,6 +2444,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q1893-Q8639",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gilardino",
+            "minute": "75",
+            "player": "Q182451"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fresi",
+            "minute": "78",
+            "player": "Q1091577"
+          },
+          {
+            "display": "Cruz",
+            "minute": "90",
+            "player": "Q297397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1415,6 +2474,28 @@
       "homeGoals": 2,
       "key": "it-2001-Q2037-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cimirotič",
+            "minute": "52",
+            "player": "Q2339787"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marazzina",
+            "minute": "22",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Corini",
+            "minute": "77",
+            "penalty": true,
+            "player": "Q511092"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1432,8 +2513,8 @@
             "player": "Q314078"
           },
           {
-            "display": "Moro",
-            "minute": "68",
+            "display": "Fabio Moro",
+            "minute": "47",
             "ownGoal": true,
             "player": "Q2254897"
           },
@@ -1446,7 +2527,7 @@
         ],
         "home": [
           {
-            "display": "Marazzina",
+            "display": "Massimo Marazzina",
             "minute": "59",
             "player": "Q2629845"
           }
@@ -1461,6 +2542,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2037-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Inzaghi",
+            "minute": "13",
+            "player": "Q126503"
+          }
+        ],
+        "home": [
+          {
+            "display": "Moro",
+            "minute": "22",
+            "player": "Q2254897"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1470,6 +2567,22 @@
       "homeGoals": 2,
       "key": "it-2001-Q2037-Q16344",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Corini",
+            "minute": "27",
+            "penalty": true,
+            "player": "Q511092"
+          },
+          {
+            "display": "D'Anna",
+            "minute": "77",
+            "player": "Q3836930"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1479,6 +2592,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q2037-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rossini",
+            "minute": "53",
+            "player": "Q351279"
+          }
+        ],
+        "home": [
+          {
+            "display": "Corradi",
+            "minute": "58",
+            "player": "Q471641"
+          },
+          {
+            "display": "Cossato",
+            "minute": "75",
+            "player": "Q3741684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1488,6 +2622,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2037-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Corradi",
+            "minute": "13",
+            "player": "Q471641"
+          },
+          {
+            "display": "Cossato",
+            "minute": "85",
+            "player": "Q3741684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1512,13 +2661,13 @@
         ],
         "home": [
           {
-            "display": "Corini",
+            "display": "Eugenio Corini",
             "minute": "46",
             "penalty": true,
             "player": "Q511092"
           },
           {
-            "display": "D'Anna",
+            "display": "Lorenzo D'Anna",
             "minute": "86",
             "player": "Q3836930"
           }
@@ -1533,6 +2682,33 @@
       "homeGoals": 3,
       "key": "it-2001-Q2037-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "C. López",
+            "minute": "7",
+            "player": "Q295883"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marazzina",
+            "minute": "46",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Corini",
+            "minute": "78",
+            "player": "Q511092"
+          },
+          {
+            "display": "Corini",
+            "minute": "88",
+            "penalty": true,
+            "player": "Q511092"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1542,6 +2718,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2037-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Corradi",
+            "minute": "24",
+            "player": "Q471641"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1551,6 +2737,26 @@
       "homeGoals": 0,
       "key": "it-2001-Q2037-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Emerson",
+            "minute": "26",
+            "player": "Q215952"
+          },
+          {
+            "display": "Samuel",
+            "minute": "76",
+            "player": "Q193702"
+          },
+          {
+            "display": "Tommasi",
+            "minute": "90+2",
+            "player": "Q350271"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1560,6 +2766,26 @@
       "homeGoals": 3,
       "key": "it-2001-Q2037-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Marazzina",
+            "minute": "31",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Manfredini",
+            "minute": "50",
+            "player": "Q463890"
+          },
+          {
+            "display": "Eriberto",
+            "minute": "82",
+            "player": "Q954346"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1569,6 +2795,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2037-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Per Krøldrup",
+            "minute": "17",
+            "player": "Q346694"
+          },
+          {
+            "display": "Roberto Muzzi",
+            "minute": "68",
+            "player": "Q1396445"
+          }
+        ],
+        "home": [
+          {
+            "display": "Federico Cossato",
+            "minute": "89",
+            "player": "Q3741684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1578,6 +2825,43 @@
       "homeGoals": 4,
       "key": "it-2001-Q2037-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hübner",
+            "minute": "8",
+            "player": "Q945726"
+          },
+          {
+            "display": "Hübner",
+            "minute": "87",
+            "player": "Q945726"
+          }
+        ],
+        "home": [
+          {
+            "display": "Corini",
+            "minute": "14",
+            "penalty": true,
+            "player": "Q511092"
+          },
+          {
+            "display": "Manfredini",
+            "minute": "37",
+            "player": "Q463890"
+          },
+          {
+            "display": "Perrotta",
+            "minute": "47",
+            "player": "Q232789"
+          },
+          {
+            "display": "Corini",
+            "minute": "68",
+            "player": "Q511092"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1596,6 +2880,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2037-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dalmat",
+            "minute": "46",
+            "player": "Q703959"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "60",
+            "player": "Q529207"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marazzina",
+            "minute": "41",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Cossato",
+            "minute": "90",
+            "player": "Q3741684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1605,6 +2915,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2037-Q6651",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Luca Toni",
+            "minute": "80",
+            "player": "Q186478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bernardo Corradi",
+            "minute": "42",
+            "player": "Q471641"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1802,12 +3128,12 @@
         "away": [
           {
             "display": "Perrotta",
-            "minute": "6",
+            "minute": "5",
             "player": "Q232789"
           },
           {
             "display": "Marazzina",
-            "minute": "55",
+            "minute": "53",
             "player": "Q2629845"
           }
         ],
@@ -1845,7 +3171,7 @@
         "away": [
           {
             "display": "Di Vaio",
-            "minute": "81",
+            "minute": "82",
             "player": "Q136940"
           },
           {
@@ -1880,7 +3206,7 @@
           },
           {
             "display": "Emerson",
-            "minute": "90",
+            "minute": "75",
             "player": "Q215952"
           }
         ],
@@ -2064,6 +3390,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2609-Q13391",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fiore",
+            "minute": "68",
+            "player": "Q318226"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2092,6 +3428,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2609-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Shevchenko",
+            "minute": "90",
+            "player": "Q41244"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stanković",
+            "minute": "20",
+            "player": "Q192640"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2101,6 +3453,36 @@
       "homeGoals": 5,
       "key": "it-2001-Q2609-Q16344",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "S. Inzaghi",
+            "minute": "9",
+            "player": "Q314670"
+          },
+          {
+            "display": "C. López",
+            "minute": "32",
+            "player": "Q295883"
+          },
+          {
+            "display": "Fiore",
+            "minute": "52",
+            "player": "Q318226"
+          },
+          {
+            "display": "Stanković",
+            "minute": "57",
+            "player": "Q192640"
+          },
+          {
+            "display": "Negro",
+            "minute": "63",
+            "player": "Q561227"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2110,6 +3492,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2609-Q1886",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "C. López",
+            "minute": "42",
+            "player": "Q295883"
+          },
+          {
+            "display": "Couto",
+            "minute": "71",
+            "player": "Q313468"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2119,6 +3516,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2609-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cruz",
+            "minute": "41",
+            "player": "Q297397"
+          },
+          {
+            "display": "Zaccardo",
+            "minute": "76",
+            "player": "Q154478"
+          }
+        ],
+        "home": [
+          {
+            "display": "C. López",
+            "minute": "19",
+            "player": "Q295883"
+          },
+          {
+            "display": "C. López",
+            "minute": "34",
+            "player": "Q295883"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2128,6 +3551,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2609-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nicola Legrottaglie",
+            "minute": "85",
+            "player": "Q311578"
+          }
+        ],
+        "home": [
+          {
+            "display": "S. Inzaghi",
+            "minute": "31",
+            "player": "Q314670"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2147,7 +3586,7 @@
           },
           {
             "display": "Crespo",
-            "minute": "59",
+            "minute": "56",
             "player": "Q160206"
           },
           {
@@ -2166,6 +3605,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q2609-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2175,6 +3618,42 @@
       "homeGoals": 1,
       "key": "it-2001-Q2609-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Montella",
+            "minute": "13",
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "30",
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "37",
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "64",
+            "player": "Q297768"
+          },
+          {
+            "display": "Totti",
+            "minute": "72",
+            "player": "Q20110"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stanković",
+            "minute": "59",
+            "player": "Q192640"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2184,6 +3663,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q2609-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2193,6 +3676,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2609-Q2798",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Stanković",
+            "minute": "32",
+            "player": "Q192640"
+          },
+          {
+            "display": "Fiore",
+            "minute": "79",
+            "player": "Q318226"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2202,6 +3700,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2609-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Matuzalém",
+            "minute": "77",
+            "player": "Q381207"
+          }
+        ],
+        "home": [
+          {
+            "display": "C. López",
+            "minute": "17",
+            "player": "Q295883"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2211,6 +3725,43 @@
       "homeGoals": 4,
       "key": "it-2001-Q2609-Q501245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bettarini",
+            "minute": "67",
+            "player": "Q1409074"
+          },
+          {
+            "display": "Maniero",
+            "minute": "73",
+            "player": "Q1086666"
+          }
+        ],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "24",
+            "player": "Q160206"
+          },
+          {
+            "display": "Pancaro",
+            "minute": "45",
+            "player": "Q545922"
+          },
+          {
+            "display": "Crespo",
+            "minute": "45+3",
+            "penalty": true,
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "74",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2220,6 +3771,42 @@
       "homeGoals": 4,
       "key": "it-2001-Q2609-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vieri",
+            "minute": "12",
+            "player": "Q188696"
+          },
+          {
+            "display": "Di Biagio",
+            "minute": "24",
+            "player": "Q314053"
+          }
+        ],
+        "home": [
+          {
+            "display": "Poborský",
+            "minute": "19",
+            "player": "Q224033"
+          },
+          {
+            "display": "Poborský",
+            "minute": "45",
+            "player": "Q224033"
+          },
+          {
+            "display": "Simeone",
+            "minute": "55",
+            "player": "Q258115"
+          },
+          {
+            "display": "S. Inzaghi",
+            "minute": "73",
+            "player": "Q314670"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2229,6 +3816,36 @@
       "homeGoals": 5,
       "key": "it-2001-Q2609-Q6651",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "6",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "32",
+            "player": "Q160206"
+          },
+          {
+            "display": "S. Inzaghi",
+            "minute": "39",
+            "player": "Q314670"
+          },
+          {
+            "display": "Stanković",
+            "minute": "63",
+            "player": "Q192640"
+          },
+          {
+            "display": "Crespo",
+            "minute": "79",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2238,6 +3855,58 @@
       "homeGoals": 5,
       "key": "it-2001-Q2609-Q8639",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Frick",
+            "minute": "9",
+            "player": "Q315787"
+          },
+          {
+            "display": "Colucci",
+            "minute": "79",
+            "player": "Q1819086"
+          },
+          {
+            "display": "Cossato",
+            "minute": "88",
+            "player": "Q3856568"
+          },
+          {
+            "display": "Adaílton",
+            "minute": "90",
+            "player": "Q352726"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stam",
+            "minute": "29",
+            "player": "Q216917"
+          },
+          {
+            "display": "C. López",
+            "minute": "31",
+            "penalty": true,
+            "player": "Q295883"
+          },
+          {
+            "display": "Stanković",
+            "minute": "45",
+            "player": "Q192640"
+          },
+          {
+            "display": "Stanković",
+            "minute": "51",
+            "player": "Q192640"
+          },
+          {
+            "display": "Crespo",
+            "minute": "76",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2247,6 +3916,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2693-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vugrinec",
+            "minute": "89",
+            "player": "Q992248"
+          }
+        ],
+        "home": [
+          {
+            "display": "Djetou",
+            "minute": "56",
+            "player": "Q2530250"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2275,6 +3960,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q2693-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Inzaghi",
+            "minute": "30",
+            "player": "Q126503"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2284,6 +3979,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vryzas",
+            "minute": "68",
+            "player": "Q163437"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "19",
+            "player": "Q136940"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "90+2",
+            "player": "Q136940"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2293,6 +4009,23 @@
       "homeGoals": 1,
       "key": "it-2001-Q2693-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Comandini",
+            "minute": "39",
+            "penalty": true,
+            "player": "Q1872817"
+          }
+        ],
+        "home": [
+          {
+            "display": "Micoud",
+            "minute": "90+2",
+            "player": "Q169995"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2302,6 +4035,27 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pecchia",
+            "minute": "53",
+            "player": "Q1087530"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cannavaro",
+            "minute": "7",
+            "player": "Q102027"
+          },
+          {
+            "display": "Şükür",
+            "minute": "16",
+            "player": "Q192974"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2311,6 +4065,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q2693-Q2037",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2330,7 +4088,7 @@
           },
           {
             "display": "Di Vaio",
-            "minute": "82",
+            "minute": "81",
             "player": "Q136940"
           }
         ]
@@ -2344,6 +4102,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2693-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "68",
+            "player": "Q136940"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2353,6 +4121,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2693-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Assunção",
+            "minute": "49",
+            "player": "Q2089039"
+          },
+          {
+            "display": "Fuser",
+            "minute": "77",
+            "player": "Q976301"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "31",
+            "player": "Q136940"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2362,6 +4151,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q2693-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Comotto",
+            "minute": "89",
+            "player": "Q1873302"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2371,6 +4170,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q2798",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Diana",
+            "minute": "24",
+            "player": "Q405636"
+          },
+          {
+            "display": "Şükür",
+            "minute": "76",
+            "player": "Q192974"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2380,6 +4194,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hübner",
+            "minute": "50",
+            "player": "Q945726"
+          },
+          {
+            "display": "Hübner",
+            "minute": "73",
+            "player": "Q945726"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "40",
+            "player": "Q136940"
+          },
+          {
+            "display": "Djetou",
+            "minute": "80",
+            "player": "Q2530250"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2389,6 +4229,28 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q501245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Maniero",
+            "minute": "7",
+            "player": "Q1086666"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "44",
+            "penalty": true,
+            "player": "Q136940"
+          },
+          {
+            "display": "Micoud",
+            "minute": "80",
+            "player": "Q169995"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2398,6 +4260,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Materazzi",
+            "minute": "10",
+            "player": "Q185081"
+          },
+          {
+            "display": "Ventola",
+            "minute": "29",
+            "player": "Q707173"
+          }
+        ],
+        "home": [
+          {
+            "display": "Milošević",
+            "minute": "28",
+            "player": "Q240456"
+          },
+          {
+            "display": "Bonazzoli",
+            "minute": "85",
+            "player": "Q1337293"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2407,6 +4295,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2693-Q6651",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Nakata",
+            "minute": "87",
+            "player": "Q128725"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2416,6 +4314,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2693-Q8639",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Frick",
+            "minute": "20",
+            "player": "Q315787"
+          },
+          {
+            "display": "Mutu",
+            "minute": "44",
+            "player": "Q202645"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Vaio",
+            "minute": "57",
+            "player": "Q136940"
+          },
+          {
+            "display": "Bonazzoli",
+            "minute": "89",
+            "player": "Q1337293"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2425,6 +4349,43 @@
       "homeGoals": 5,
       "key": "it-2001-Q2739-Q13391",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Chevantón",
+            "minute": "64",
+            "player": "Q259247"
+          }
+        ],
+        "home": [
+          {
+            "display": "Totti",
+            "minute": "8",
+            "player": "Q20110"
+          },
+          {
+            "display": "Samuel",
+            "minute": "38",
+            "player": "Q193702"
+          },
+          {
+            "display": "Candela",
+            "minute": "70",
+            "player": "Q299624"
+          },
+          {
+            "display": "Totti",
+            "minute": "78",
+            "penalty": true,
+            "player": "Q20110"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "86",
+            "player": "Q170376"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2447,6 +4408,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2739-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Totti",
+            "minute": "44",
+            "player": "Q20110"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2456,6 +4427,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2739-Q16344",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Montella",
+            "minute": "59",
+            "player": "Q297768"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2465,6 +4446,33 @@
       "homeGoals": 3,
       "key": "it-2001-Q2739-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "84",
+            "player": "Q350489"
+          }
+        ],
+        "home": [
+          {
+            "display": "Montella",
+            "minute": "17",
+            "player": "Q297768"
+          },
+          {
+            "display": "Carrera",
+            "minute": "29",
+            "ownGoal": true,
+            "player": "Q980189"
+          },
+          {
+            "display": "Montella",
+            "minute": "68",
+            "player": "Q297768"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2474,6 +4482,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q2739-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cruz",
+            "minute": "82",
+            "player": "Q297397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Montella",
+            "minute": "33",
+            "player": "Q297768"
+          },
+          {
+            "display": "Emerson",
+            "minute": "42",
+            "player": "Q215952"
+          },
+          {
+            "display": "Emerson",
+            "minute": "52",
+            "player": "Q215952"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2483,6 +4517,37 @@
       "homeGoals": 5,
       "key": "it-2001-Q2739-Q2037",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Montella",
+            "minute": "25",
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "34",
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "50",
+            "penalty": true,
+            "player": "Q297768"
+          },
+          {
+            "display": "Emerson",
+            "minute": "74",
+            "player": "Q215952"
+          },
+          {
+            "display": "Cassano",
+            "minute": "81",
+            "player": "Q180993"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2492,27 +4557,6 @@
       "homeGoals": 2,
       "key": "it-2001-Q2739-Q2052",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Adani",
-            "minute": "8",
-            "player": "Q868488"
-          }
-        ],
-        "home": [
-          {
-            "display": "Totti",
-            "minute": "12",
-            "player": "Q20110"
-          },
-          {
-            "display": "Panucci",
-            "minute": "87",
-            "player": "Q168287"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -2522,6 +4566,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2739-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Delvecchio",
+            "minute": "49",
+            "player": "Q250093"
+          },
+          {
+            "display": "Totti",
+            "minute": "90+2",
+            "player": "Q20110"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2531,6 +4590,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q2739-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lamouchi",
+            "minute": "43",
+            "player": "Q1883"
+          }
+        ],
+        "home": [
+          {
+            "display": "Delvecchio",
+            "minute": "7",
+            "player": "Q250093"
+          },
+          {
+            "display": "Cassano",
+            "minute": "41",
+            "player": "Q180993"
+          },
+          {
+            "display": "Samuel",
+            "minute": "46",
+            "player": "Q193702"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2540,6 +4625,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2739-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Totti",
+            "minute": "24",
+            "player": "Q20110"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2549,6 +4644,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2739-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Muzzi",
+            "minute": "90+1",
+            "player": "Q1396445"
+          }
+        ],
+        "home": [
+          {
+            "display": "Tommasi",
+            "minute": "66",
+            "player": "Q350271"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2558,6 +4669,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q2739-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Assunção",
+            "minute": "15",
+            "player": "Q2089039"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "77",
+            "player": "Q170376"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2567,6 +4693,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2739-Q501245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fuser",
+            "minute": "90+1",
+            "player": "Q976301"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2576,6 +4712,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q2739-Q631",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2585,6 +4725,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q2739-Q6651",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2594,6 +4738,37 @@
       "homeGoals": 3,
       "key": "it-2001-Q2739-Q8639",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "44",
+            "player": "Q202645"
+          },
+          {
+            "display": "Mutu",
+            "minute": "53",
+            "player": "Q202645"
+          }
+        ],
+        "home": [
+          {
+            "display": "Assunção",
+            "minute": "54",
+            "player": "Q2089039"
+          },
+          {
+            "display": "Cassano",
+            "minute": "63",
+            "player": "Q180993"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "90",
+            "player": "Q170376"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2647,6 +4822,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2768-Q1543",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lucarelli",
+            "minute": "27",
+            "player": "Q310034"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2665,6 +4850,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2768-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "45+1",
+            "player": "Q350489"
+          },
+          {
+            "display": "Colombo",
+            "minute": "70",
+            "player": "Q1872075"
+          }
+        ],
+        "home": [
+          {
+            "display": "Galante",
+            "minute": "14",
+            "player": "Q287664"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2674,6 +4880,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2768-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cruz",
+            "minute": "51",
+            "player": "Q297397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Scarchilli",
+            "minute": "20",
+            "player": "Q3610577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2683,6 +4905,32 @@
       "homeGoals": 2,
       "key": "it-2001-Q2768-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bernardo Corradi",
+            "minute": "20",
+            "player": "Q471641"
+          },
+          {
+            "display": "Bernardo Corradi",
+            "minute": "53",
+            "player": "Q471641"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marco Ferrante",
+            "minute": "35",
+            "player": "Q1851160"
+          },
+          {
+            "display": "Riccardo Maspero",
+            "minute": "59",
+            "player": "Q3934523"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2711,6 +4959,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2768-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lucarelli",
+            "minute": "61",
+            "player": "Q310034"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2720,6 +4978,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q2768-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ferrante",
+            "minute": "45+1",
+            "player": "Q1851160"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2729,6 +4997,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q2768-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cassano",
+            "minute": "68",
+            "player": "Q180993"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2825,6 +5103,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2798-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Shevchenko",
+            "minute": "14",
+            "player": "Q41244"
+          },
+          {
+            "display": "Inzaghi",
+            "minute": "54",
+            "player": "Q126503"
+          }
+        ],
+        "home": [
+          {
+            "display": "Muzzi",
+            "minute": "74",
+            "player": "Q1396445"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2843,6 +5142,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2798-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "56",
+            "player": "Q350489"
+          },
+          {
+            "display": "Pinardi",
+            "minute": "90+5",
+            "player": "Q3610712"
+          }
+        ],
+        "home": [
+          {
+            "display": "Manfredini",
+            "minute": "23",
+            "player": "Q650243"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2852,6 +5172,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q2798-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cruz",
+            "minute": "12",
+            "player": "Q297397"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2861,6 +5191,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q2798-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Perrotta",
+            "minute": "20",
+            "player": "Q232789"
+          },
+          {
+            "display": "Eriberto",
+            "minute": "23",
+            "player": "Q954346"
+          }
+        ],
+        "home": [
+          {
+            "display": "Caballero",
+            "minute": "38",
+            "player": "Q1008051"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2900,6 +5251,37 @@
       "homeGoals": 1,
       "key": "it-2001-Q2798-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "54",
+            "player": "Q160206"
+          },
+          {
+            "display": "Liverani",
+            "minute": "74",
+            "player": "Q381262"
+          },
+          {
+            "display": "C. López",
+            "minute": "84",
+            "player": "Q295883"
+          },
+          {
+            "display": "Crespo",
+            "minute": "89",
+            "player": "Q160206"
+          }
+        ],
+        "home": [
+          {
+            "display": "Caballero",
+            "minute": "78",
+            "player": "Q1008051"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2909,6 +5291,38 @@
       "homeGoals": 3,
       "key": "it-2001-Q2798-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Vaio",
+            "minute": "1",
+            "player": "Q136940"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "3",
+            "player": "Q136940"
+          }
+        ],
+        "home": [
+          {
+            "display": "Muzzi",
+            "minute": "24",
+            "player": "Q1396445"
+          },
+          {
+            "display": "Muzzi",
+            "minute": "33",
+            "penalty": true,
+            "player": "Q1396445"
+          },
+          {
+            "display": "Jørgensen",
+            "minute": "53",
+            "player": "Q312516"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2918,6 +5332,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q2798-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Batistuta",
+            "minute": "82",
+            "player": "Q170376"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Michele",
+            "minute": "48",
+            "player": "Q560651"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3009,6 +5439,17 @@
       "homeGoals": 0,
       "key": "it-2001-Q459794-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Serginho",
+            "minute": "66",
+            "penalty": true,
+            "player": "Q312140"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3027,6 +5468,28 @@
       "homeGoals": 1,
       "key": "it-2001-Q459794-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "59",
+            "player": "Q350489"
+          },
+          {
+            "display": "Doni",
+            "minute": "82",
+            "player": "Q350489"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "8",
+            "penalty": true,
+            "player": "Q945726"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3036,6 +5499,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q459794-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "51",
+            "player": "Q945726"
+          },
+          {
+            "display": "Hübner",
+            "minute": "63",
+            "player": "Q945726"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3083,6 +5561,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q459794-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "69",
+            "player": "Q945726"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3092,6 +5580,38 @@
       "homeGoals": 2,
       "key": "it-2001-Q459794-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Vaio",
+            "minute": "30",
+            "player": "Q136940"
+          },
+          {
+            "display": "Micoud",
+            "minute": "43",
+            "player": "Q169995"
+          },
+          {
+            "display": "Boghossian",
+            "minute": "73",
+            "player": "Q350738"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "80",
+            "player": "Q945726"
+          },
+          {
+            "display": "Hübner",
+            "minute": "90+4",
+            "penalty": true,
+            "player": "Q945726"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3101,6 +5621,21 @@
       "homeGoals": 2,
       "key": "it-2001-Q459794-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "39",
+            "player": "Q945726"
+          },
+          {
+            "display": "Di Francesco",
+            "minute": "50",
+            "player": "Q396154"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3155,6 +5690,27 @@
       "homeGoals": 3,
       "key": "it-2001-Q459794-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Volpi",
+            "minute": "25",
+            "player": "Q1361215"
+          },
+          {
+            "display": "Hübner",
+            "minute": "47",
+            "penalty": true,
+            "player": "Q945726"
+          },
+          {
+            "display": "Hübner",
+            "minute": "84",
+            "player": "Q945726"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3203,6 +5759,37 @@
       "homeGoals": 1,
       "key": "it-2001-Q501245-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kaladze",
+            "minute": "12",
+            "player": "Q192031"
+          },
+          {
+            "display": "Javi Moreno",
+            "minute": "68",
+            "player": "Q554928"
+          },
+          {
+            "display": "Contra",
+            "minute": "74",
+            "player": "Q296215"
+          },
+          {
+            "display": "Javi Moreno",
+            "minute": "80",
+            "player": "Q554928"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maniero",
+            "minute": "16",
+            "player": "Q1086666"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3221,6 +5808,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q501245-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rossini",
+            "minute": "86",
+            "player": "Q351279"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3230,6 +5827,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q501245-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zauli",
+            "minute": "90",
+            "player": "Q3826352"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3239,6 +5846,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q501245-Q2037",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3272,6 +5883,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q501245-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3281,6 +5896,48 @@
       "homeGoals": 3,
       "key": "it-2001-Q501245-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Vaio",
+            "minute": "19",
+            "player": "Q136940"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "24",
+            "player": "Q136940"
+          },
+          {
+            "display": "Bonazzoli",
+            "minute": "38",
+            "player": "Q1337293"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "90+1",
+            "player": "Q136940"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bettarini",
+            "minute": "5",
+            "player": "Q1409074"
+          },
+          {
+            "display": "Maniero",
+            "minute": "45",
+            "penalty": true,
+            "player": "Q1086666"
+          },
+          {
+            "display": "Maniero",
+            "minute": "89",
+            "player": "Q1086666"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3290,6 +5947,34 @@
       "homeGoals": 2,
       "key": "it-2001-Q501245-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Montella",
+            "minute": "87",
+            "penalty": true,
+            "player": "Q297768"
+          },
+          {
+            "display": "Montella",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q297768"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maniero",
+            "minute": "61",
+            "player": "Q1086666"
+          },
+          {
+            "display": "De Franceschi",
+            "minute": "80",
+            "player": "Q3804933"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3397,6 +6082,42 @@
       "homeGoals": 2,
       "key": "it-2001-Q631-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Shevchenko",
+            "minute": "59",
+            "player": "Q41244"
+          },
+          {
+            "display": "Contra",
+            "minute": "61",
+            "player": "Q296215"
+          },
+          {
+            "display": "Inzaghi",
+            "minute": "66",
+            "player": "Q126503"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "77",
+            "player": "Q41244"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ventola",
+            "minute": "13",
+            "player": "Q707173"
+          },
+          {
+            "display": "Kallon",
+            "minute": "90",
+            "player": "Q466127"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3415,6 +6136,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q631-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sala",
+            "minute": "43",
+            "player": "Q763613"
+          },
+          {
+            "display": "Berretta",
+            "minute": "63",
+            "player": "Q1407765"
+          }
+        ],
+        "home": [
+          {
+            "display": "Vieri",
+            "minute": "47",
+            "player": "Q188696"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3424,6 +6166,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q631-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Georgatos",
+            "minute": "24",
+            "player": "Q2546619"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3433,6 +6185,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q631-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Corradi",
+            "minute": "20",
+            "player": "Q471641"
+          },
+          {
+            "display": "Marazzina",
+            "minute": "54",
+            "player": "Q2629845"
+          }
+        ],
+        "home": [
+          {
+            "display": "Vieri",
+            "minute": "25",
+            "player": "Q188696"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3466,6 +6239,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q631-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3475,6 +6252,22 @@
       "homeGoals": 2,
       "key": "it-2001-Q631-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Sensini",
+            "minute": "3",
+            "ownGoal": true,
+            "player": "Q369133"
+          },
+          {
+            "display": "Vieri",
+            "minute": "84",
+            "player": "Q188696"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3484,6 +6277,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q631-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Totti",
+            "minute": "57",
+            "player": "Q20110"
+          }
+        ],
+        "home": [
+          {
+            "display": "Recoba",
+            "minute": "2",
+            "player": "Q204108"
+          },
+          {
+            "display": "Vieri",
+            "minute": "43",
+            "player": "Q188696"
+          },
+          {
+            "display": "Recoba",
+            "minute": "71",
+            "player": "Q204108"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3590,6 +6409,33 @@
       "homeGoals": 2,
       "key": "it-2001-Q6651-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Brocchi",
+            "minute": "50",
+            "player": "Q311619"
+          },
+          {
+            "display": "Shevchenko",
+            "minute": "63",
+            "penalty": true,
+            "player": "Q41244"
+          }
+        ],
+        "home": [
+          {
+            "display": "Tare",
+            "minute": "36",
+            "player": "Q472159"
+          },
+          {
+            "display": "Tare",
+            "minute": "40",
+            "player": "Q472159"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3608,6 +6454,42 @@
       "homeGoals": 3,
       "key": "it-2001-Q6651-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sala",
+            "minute": "28",
+            "player": "Q763613"
+          },
+          {
+            "display": "Doni",
+            "minute": "30",
+            "player": "Q350489"
+          },
+          {
+            "display": "Comandini",
+            "minute": "45",
+            "player": "Q1872817"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baggio",
+            "minute": "25",
+            "player": "Q67964"
+          },
+          {
+            "display": "Baggio",
+            "minute": "75",
+            "player": "Q67964"
+          },
+          {
+            "display": "Baggio",
+            "minute": "90+2",
+            "player": "Q67964"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3617,6 +6499,26 @@
       "homeGoals": 3,
       "key": "it-2001-Q6651-Q1893",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Bachini",
+            "minute": "48",
+            "player": "Q987930"
+          },
+          {
+            "display": "Baggio I",
+            "minute": "74",
+            "player": "Q67964"
+          },
+          {
+            "display": "Toni",
+            "minute": "88",
+            "player": "Q186478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3626,6 +6528,33 @@
       "homeGoals": 2,
       "key": "it-2001-Q6651-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marazzina",
+            "minute": "11",
+            "player": "Q2629845"
+          },
+          {
+            "display": "Cossato",
+            "minute": "77",
+            "player": "Q3741684"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baggio",
+            "minute": "61",
+            "penalty": true,
+            "player": "Q67964"
+          },
+          {
+            "display": "Sussi",
+            "minute": "83",
+            "player": "Q374387"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3664,6 +6593,23 @@
       "homeGoals": 1,
       "key": "it-2001-Q6651-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "56",
+            "player": "Q160206"
+          }
+        ],
+        "home": [
+          {
+            "display": "Yllana",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q3616520"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3673,6 +6619,37 @@
       "homeGoals": 1,
       "key": "it-2001-Q6651-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Micoud",
+            "minute": "5",
+            "player": "Q169995"
+          },
+          {
+            "display": "Şükür",
+            "minute": "8",
+            "player": "Q192974"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "20",
+            "player": "Q136940"
+          },
+          {
+            "display": "Di Vaio",
+            "minute": "90+4",
+            "player": "Q136940"
+          }
+        ],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "68",
+            "player": "Q186478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3682,6 +6659,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q6651-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3736,6 +6717,10 @@
       "homeGoals": 0,
       "key": "it-2001-Q6651-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3789,6 +6774,27 @@
       "homeGoals": 1,
       "key": "it-2001-Q8639-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Inzaghi",
+            "minute": "65",
+            "player": "Q126503"
+          },
+          {
+            "display": "Pirlo",
+            "minute": "82",
+            "player": "Q43926"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "28",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3807,6 +6813,34 @@
       "homeGoals": 3,
       "key": "it-2001-Q8639-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "80",
+            "player": "Q350489"
+          }
+        ],
+        "home": [
+          {
+            "display": "Italiano",
+            "minute": "9",
+            "player": "Q1091404"
+          },
+          {
+            "display": "Mutu",
+            "minute": "43",
+            "penalty": true,
+            "player": "Q202645"
+          },
+          {
+            "display": "Oddo",
+            "minute": "90+1",
+            "penalty": true,
+            "player": "Q125438"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3816,6 +6850,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q8639-Q1893",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fresi",
+            "minute": "33",
+            "player": "Q1091577"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3825,6 +6869,40 @@
       "homeGoals": 3,
       "key": "it-2001-Q8639-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eriberto",
+            "minute": "33",
+            "player": "Q954346"
+          },
+          {
+            "display": "Corini",
+            "minute": "37",
+            "penalty": true,
+            "player": "Q511092"
+          }
+        ],
+        "home": [
+          {
+            "display": "Oddo",
+            "minute": "40",
+            "penalty": true,
+            "player": "Q125438"
+          },
+          {
+            "display": "Lanna",
+            "minute": "70",
+            "ownGoal": true,
+            "player": "Q970864"
+          },
+          {
+            "display": "Camoranesi",
+            "minute": "73",
+            "player": "Q189716"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3864,6 +6942,32 @@
       "homeGoals": 3,
       "key": "it-2001-Q8639-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "55",
+            "player": "Q160206"
+          }
+        ],
+        "home": [
+          {
+            "display": "Camoranesi",
+            "minute": "41",
+            "player": "Q189716"
+          },
+          {
+            "display": "Colucci",
+            "minute": "66",
+            "player": "Q1819086"
+          },
+          {
+            "display": "Mutu",
+            "minute": "72",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3873,6 +6977,17 @@
       "homeGoals": 1,
       "key": "it-2001-Q8639-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "84",
+            "penalty": true,
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3882,6 +6997,22 @@
       "homeGoals": 1,
       "key": "it-2001-Q8639-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Samuel",
+            "minute": "45+1",
+            "player": "Q193702"
+          }
+        ],
+        "home": [
+          {
+            "display": "Oddo",
+            "minute": "75",
+            "player": "Q125438"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3891,6 +7022,16 @@
       "homeGoals": 0,
       "key": "it-2001-Q8639-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Franco",
+            "minute": "26",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3900,6 +7041,16 @@
       "homeGoals": 1,
       "key": "it-2001-Q8639-Q2798",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Frick",
+            "minute": "33",
+            "player": "Q315787"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3942,13 +7093,25 @@
   "players": {
     "Q13391": [
       {
+        "goals": 2,
+        "id": "Q313205"
+      },
+      {
         "goals": 11,
         "id": "Q259247",
         "topScorerRank": 15
       },
       {
-        "goals": 1,
+        "goals": 3,
+        "id": "Q455809"
+      },
+      {
+        "goals": 3,
         "id": "Q992248"
+      },
+      {
+        "goals": 1,
+        "id": "Q2339787"
       }
     ],
     "Q1422": [
@@ -3974,12 +7137,12 @@
         "topScorerRank": 1
       },
       {
-        "goals": 3,
-        "id": "Q314078"
-      },
-      {
         "goals": 1,
         "id": "Q26580"
+      },
+      {
+        "goals": 3,
+        "id": "Q314078"
       },
       {
         "goals": 16,
@@ -4009,7 +7172,7 @@
     ],
     "Q1543": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q313207"
       },
       {
@@ -4018,16 +7181,40 @@
         "topScorerRank": 8
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q382074"
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q554928"
+      },
+      {
+        "goals": 10,
         "id": "Q126503"
       },
       {
-        "goals": 1,
+        "goals": 3,
+        "id": "Q188564"
+      },
+      {
+        "goals": 2,
+        "id": "Q43926"
+      },
+      {
+        "goals": 4,
         "id": "Q312140"
+      },
+      {
+        "goals": 1,
+        "id": "Q311619"
+      },
+      {
+        "goals": 4,
+        "id": "Q192031"
+      },
+      {
+        "goals": 3,
+        "id": "Q296215"
       }
     ],
     "Q16344": [
@@ -4037,10 +7224,18 @@
       },
       {
         "goals": 1,
-        "id": "Q2089380"
+        "id": "Q3852879"
       },
       {
         "goals": 1,
+        "id": "Q2089380"
+      },
+      {
+        "goals": 3,
+        "id": "Q736304"
+      },
+      {
+        "goals": 4,
         "id": "Q163437"
       },
       {
@@ -4048,7 +7243,7 @@
         "id": "Q327759"
       },
       {
-        "goals": 1,
+        "goals": 7,
         "id": "Q924087"
       }
     ],
@@ -4059,28 +7254,104 @@
         "topScorerRank": 6
       },
       {
+        "goals": 4,
+        "id": "Q763613"
+      },
+      {
+        "goals": 5,
+        "id": "Q1407765"
+      },
+      {
+        "goals": 5,
+        "id": "Q351279"
+      },
+      {
+        "goals": 1,
+        "id": "Q519625"
+      },
+      {
+        "goals": 4,
+        "id": "Q1872817"
+      },
+      {
+        "goals": 2,
+        "id": "Q3610712"
+      },
+      {
+        "goals": 1,
+        "id": "Q1302822"
+      },
+      {
         "goals": 1,
         "id": "Q13372463"
+      },
+      {
+        "goals": 1,
+        "id": "Q1872075"
       }
     ],
     "Q1893": [
       {
-        "goals": 2,
-        "id": "Q1091577"
-      },
-      {
-        "goals": 2,
-        "id": "Q3826352"
+        "goals": 1,
+        "id": "Q343950"
       },
       {
         "goals": 1,
+        "id": "Q154478"
+      },
+      {
+        "goals": 3,
+        "id": "Q334684"
+      },
+      {
+        "goals": 5,
+        "id": "Q1087530"
+      },
+      {
+        "goals": 1,
+        "id": "Q607364"
+      },
+      {
+        "goals": 1,
+        "id": "Q3659664"
+      },
+      {
+        "goals": 8,
+        "id": "Q1091577"
+      },
+      {
+        "goals": 6,
+        "id": "Q3826352"
+      },
+      {
+        "goals": 2,
+        "id": "Q3932741"
+      },
+      {
+        "goals": 10,
         "id": "Q297397"
+      },
+      {
+        "goals": 1,
+        "id": "Q1485543"
       }
     ],
     "Q2037": [
       {
-        "goals": 1,
+        "goals": 10,
+        "id": "Q471641"
+      },
+      {
+        "goals": 8,
         "id": "Q511092"
+      },
+      {
+        "goals": 1,
+        "id": "Q1319461"
+      },
+      {
+        "goals": 4,
+        "id": "Q954346"
       },
       {
         "goals": 13,
@@ -4088,22 +7359,34 @@
         "topScorerRank": 10
       },
       {
-        "goals": 1,
-        "id": "Q3836930"
+        "goals": 2,
+        "id": "Q311578"
+      },
+      {
+        "goals": 4,
+        "id": "Q232789"
+      },
+      {
+        "goals": 6,
+        "id": "Q3741684"
       },
       {
         "goals": 1,
-        "id": "Q232789"
+        "id": "Q2254897"
+      },
+      {
+        "goals": 2,
+        "id": "Q3836930"
+      },
+      {
+        "goals": 2,
+        "id": "Q463890"
       }
     ],
     "Q2052": [
       {
         "goals": 2,
         "id": "Q703956"
-      },
-      {
-        "goals": 1,
-        "id": "Q122294"
       },
       {
         "goals": 5,
@@ -4115,22 +7398,26 @@
       },
       {
         "goals": 1,
+        "id": "Q122294"
+      },
+      {
+        "goals": 1,
+        "id": "Q868488"
+      },
+      {
+        "goals": 1,
         "id": "Q3362674"
+      },
+      {
+        "goals": 1,
+        "id": "Q516528"
       },
       {
         "goals": 5,
         "id": "Q193568"
       },
       {
-        "goals": 2,
-        "id": "Q868488"
-      },
-      {
-        "goals": 1,
-        "id": "Q980775"
-      },
-      {
-        "goals": 5,
+        "goals": 6,
         "id": "Q170452"
       },
       {
@@ -4139,7 +7426,7 @@
       },
       {
         "goals": 1,
-        "id": "Q516528"
+        "id": "Q980775"
       }
     ],
     "Q2609": [
@@ -4149,11 +7436,39 @@
         "topScorerRank": 10
       },
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q258115"
+      },
+      {
+        "goals": 10,
         "id": "Q295883"
       },
       {
         "goals": 1,
+        "id": "Q561227"
+      },
+      {
+        "goals": 1,
+        "id": "Q313468"
+      },
+      {
+        "goals": 1,
+        "id": "Q545922"
+      },
+      {
+        "goals": 5,
+        "id": "Q314670"
+      },
+      {
+        "goals": 7,
+        "id": "Q192640"
+      },
+      {
+        "goals": 3,
+        "id": "Q318226"
+      },
+      {
+        "goals": 2,
         "id": "Q381262"
       },
       {
@@ -4161,18 +7476,38 @@
         "id": "Q2618473"
       },
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q224033"
+      },
+      {
+        "goals": 1,
+        "id": "Q216917"
       }
     ],
     "Q2693": [
+      {
+        "goals": 5,
+        "id": "Q169995"
+      },
+      {
+        "goals": 2,
+        "id": "Q2530250"
+      },
+      {
+        "goals": 3,
+        "id": "Q192974"
+      },
       {
         "goals": 1,
         "id": "Q128725",
         "japan": true
       },
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q240456"
+      },
+      {
+        "goals": 3,
         "id": "Q1883"
       },
       {
@@ -4182,6 +7517,18 @@
       },
       {
         "goals": 1,
+        "id": "Q102027"
+      },
+      {
+        "goals": 1,
+        "id": "Q350738"
+      },
+      {
+        "goals": 1,
+        "id": "Q405636"
+      },
+      {
+        "goals": 5,
         "id": "Q1337293"
       }
     ],
@@ -4192,57 +7539,109 @@
         "topScorerRank": 10
       },
       {
-        "goals": 1,
+        "goals": 6,
         "id": "Q2089039"
       },
       {
-        "goals": 1,
+        "goals": 5,
+        "id": "Q193702"
+      },
+      {
+        "goals": 5,
         "id": "Q180993"
       },
       {
-        "goals": 1,
+        "goals": 5,
         "id": "Q215952"
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q976301"
+      },
+      {
+        "goals": 6,
         "id": "Q170376"
       },
       {
-        "goals": 1,
-        "id": "Q168287"
+        "goals": 2,
+        "id": "Q250093"
       },
       {
-        "goals": 1,
+        "goals": 7,
         "id": "Q20110"
+      },
+      {
+        "goals": 2,
+        "id": "Q299624"
+      },
+      {
+        "goals": 2,
+        "id": "Q350271"
       }
     ],
     "Q2768": [
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q310034"
       },
       {
         "goals": 1,
+        "id": "Q287664"
+      },
+      {
+        "goals": 5,
+        "id": "Q1851160"
+      },
+      {
+        "goals": 2,
         "id": "Q3934523"
       },
       {
         "goals": 2,
-        "id": "Q1851160"
-      },
-      {
-        "goals": 1,
         "id": "Q3610577"
       },
       {
         "goals": 1,
         "id": "Q818107"
+      },
+      {
+        "goals": 1,
+        "id": "Q1873302"
       }
     ],
     "Q2798": [
       {
+        "goals": 1,
+        "id": "Q560651"
+      },
+      {
         "goals": 14,
         "id": "Q1396445",
         "topScorerRank": 8
+      },
+      {
+        "goals": 5,
+        "id": "Q312516"
+      },
+      {
+        "goals": 1,
+        "id": "Q191869"
+      },
+      {
+        "goals": 1,
+        "id": "Q1081920"
+      },
+      {
+        "goals": 1,
+        "id": "Q346694"
+      },
+      {
+        "goals": 1,
+        "id": "Q650243"
+      },
+      {
+        "goals": 2,
+        "id": "Q1008051"
       }
     ],
     "Q459794": [
@@ -4255,17 +7654,29 @@
         "id": "Q3081099"
       },
       {
+        "goals": 2,
+        "id": "Q396154"
+      },
+      {
         "goals": 24,
         "id": "Q945726",
         "topScorerRank": 1
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1361215"
       },
       {
         "goals": 1,
+        "id": "Q498837"
+      },
+      {
+        "goals": 2,
         "id": "Q381207"
+      },
+      {
+        "goals": 1,
+        "id": "Q330798"
       }
     ],
     "Q501245": [
@@ -4277,21 +7688,61 @@
       {
         "goals": 2,
         "id": "Q939480"
+      },
+      {
+        "goals": 2,
+        "id": "Q1409074"
+      },
+      {
+        "goals": 1,
+        "id": "Q924087"
+      },
+      {
+        "goals": 1,
+        "id": "Q3804933"
       }
     ],
     "Q631": [
+      {
+        "goals": 1,
+        "id": "Q703959"
+      },
+      {
+        "goals": 2,
+        "id": "Q707173"
+      },
+      {
+        "goals": 1,
+        "id": "Q529207"
+      },
       {
         "goals": 22,
         "id": "Q188696",
         "topScorerRank": 3
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q484909"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q466127"
+      },
+      {
+        "goals": 2,
+        "id": "Q314053"
+      },
+      {
+        "goals": 1,
+        "id": "Q185081"
+      },
+      {
+        "goals": 2,
+        "id": "Q204108"
+      },
+      {
+        "goals": 1,
+        "id": "Q2546619"
       }
     ],
     "Q6651": [
@@ -4304,6 +7755,22 @@
         "goals": 11,
         "id": "Q67964",
         "topScorerRank": 15
+      },
+      {
+        "goals": 1,
+        "id": "Q987930"
+      },
+      {
+        "goals": 1,
+        "id": "Q3616520"
+      },
+      {
+        "goals": 2,
+        "id": "Q472159"
+      },
+      {
+        "goals": 1,
+        "id": "Q374387"
       }
     ],
     "Q8639": [
@@ -4313,16 +7780,40 @@
         "topScorerRank": 14
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q1819086"
       },
       {
         "goals": 1,
+        "id": "Q182451"
+      },
+      {
+        "goals": 1,
+        "id": "Q352726"
+      },
+      {
+        "goals": 3,
         "id": "Q189716"
       },
       {
         "goals": 1,
+        "id": "Q3856568"
+      },
+      {
+        "goals": 4,
         "id": "Q125438"
+      },
+      {
+        "goals": 1,
+        "id": "Q1091404"
+      },
+      {
+        "goals": 1,
+        "id": "Q311956"
+      },
+      {
+        "goals": 3,
+        "id": "Q315787"
       }
     ]
   },

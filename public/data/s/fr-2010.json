@@ -41,6 +41,33 @@
       "homeGoals": 2,
       "key": "fr-2010-Q132885-Q180305",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Niculae",
+            "minute": "15",
+            "player": "Q360753"
+          },
+          {
+            "display": "Park",
+            "minute": "79",
+            "player": "Q210928"
+          }
+        ],
+        "home": [
+          {
+            "display": "Valbuena",
+            "minute": "42",
+            "player": "Q1919"
+          },
+          {
+            "display": "Adriano",
+            "minute": "81",
+            "ownGoal": true,
+            "player": "Q375987"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -100,14 +127,14 @@
             "player": "Q516921"
           },
           {
-            "display": "A. Ayew",
-            "minute": "90",
-            "player": "Q516921"
-          },
-          {
             "display": "J. Ayew",
             "minute": "78",
             "player": "Q367861"
+          },
+          {
+            "display": "A. Ayew",
+            "minute": "90",
+            "player": "Q516921"
           }
         ]
       },
@@ -252,6 +279,27 @@
       "homeGoals": 1,
       "key": "fr-2010-Q132885-Q19516",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hazard",
+            "minute": "10",
+            "player": "Q214204"
+          },
+          {
+            "display": "Frau",
+            "minute": "90+1",
+            "player": "Q723943"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rémy",
+            "minute": "55",
+            "player": "Q114859"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -485,7 +533,7 @@
       "scorers": {
         "away": [
           {
-            "display": "Lisandro",
+            "display": "López",
             "minute": "35",
             "player": "Q296133"
           }
@@ -702,6 +750,17 @@
       "homeGoals": 1,
       "key": "fr-2010-Q172476-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Diabaté",
+            "minute": "6",
+            "penalty": true,
+            "player": "Q31744"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1131,6 +1190,21 @@
       "homeGoals": 0,
       "key": "fr-2010-Q180305-Q704",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Diakhaté",
+            "minute": "67",
+            "player": "Q704034"
+          },
+          {
+            "display": "López",
+            "minute": "82",
+            "player": "Q296133"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1333,6 +1407,16 @@
       "homeGoals": 1,
       "key": "fr-2010-Q182876-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Chafni",
+            "minute": "86",
+            "player": "Q44694"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1586,6 +1670,26 @@
       "homeGoals": 0,
       "key": "fr-2010-Q185163-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giuly",
+            "minute": "24",
+            "player": "Q219771"
+          },
+          {
+            "display": "Hoarau",
+            "minute": "43",
+            "player": "Q313164"
+          },
+          {
+            "display": "Armand",
+            "minute": "75",
+            "player": "Q372480"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1765,11 +1869,6 @@
             "player": "Q208025"
           },
           {
-            "display": "Gervinho",
-            "minute": "87",
-            "player": "Q208025"
-          },
-          {
             "display": "Frau",
             "minute": "79",
             "player": "Q723943"
@@ -1778,6 +1877,11 @@
             "display": "Frau",
             "minute": "81",
             "player": "Q723943"
+          },
+          {
+            "display": "Gervinho",
+            "minute": "87",
+            "player": "Q208025"
           }
         ],
         "home": [
@@ -1851,6 +1955,22 @@
       "homeGoals": 0,
       "key": "fr-2010-Q191843-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Yahia",
+            "minute": "50",
+            "ownGoal": true,
+            "player": "Q726639"
+          },
+          {
+            "display": "Nenê",
+            "minute": "90+2",
+            "player": "Q316836"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2123,6 +2243,27 @@
       "homeGoals": 1,
       "key": "fr-2010-Q193377-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jallet",
+            "minute": "13",
+            "player": "Q442457"
+          },
+          {
+            "display": "Chantôme",
+            "minute": "69",
+            "player": "Q468457"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hamouma",
+            "minute": "90+3",
+            "player": "Q2377727"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2168,7 +2309,7 @@
           {
             "display": "N'Diaye",
             "minute": "77",
-            "player": "Q6085001"
+            "player": null
           }
         ]
       },
@@ -2375,6 +2516,16 @@
       "homeGoals": 1,
       "key": "fr-2010-Q19509-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Brahimi",
+            "minute": "19",
+            "player": "Q767469"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2607,6 +2758,32 @@
       "homeGoals": 3,
       "key": "fr-2010-Q19512-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hoarau",
+            "minute": "50",
+            "player": "Q313164"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maïga",
+            "minute": "14",
+            "player": "Q650638"
+          },
+          {
+            "display": "Ideye",
+            "minute": "20",
+            "player": "Q266436"
+          },
+          {
+            "display": "Perquis",
+            "minute": "45+1",
+            "player": "Q211547"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2835,6 +3012,22 @@
       "homeGoals": 1,
       "key": "fr-2010-Q19513-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giuly",
+            "minute": "37",
+            "player": "Q219771"
+          }
+        ],
+        "home": [
+          {
+            "display": "Estrada",
+            "minute": "42",
+            "player": "Q361068"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2891,7 +3084,7 @@
             "player": "Q114859"
           },
           {
-            "display": "González",
+            "display": "Lucho",
             "minute": "71",
             "player": "Q244894"
           },
@@ -3389,25 +3582,25 @@
             "player": "Q314373"
           },
           {
-            "display": "Sow",
-            "minute": "49",
-            "player": "Q314373"
-          },
-          {
-            "display": "Sow",
-            "minute": "82",
-            "player": "Q314373"
-          },
-          {
             "display": "Baca",
             "minute": "18",
             "ownGoal": true,
             "player": "Q2449027"
           },
           {
+            "display": "Sow",
+            "minute": "49",
+            "player": "Q314373"
+          },
+          {
             "display": "Gervinho",
             "minute": "58",
             "player": "Q208025"
+          },
+          {
+            "display": "Sow",
+            "minute": "82",
+            "player": "Q314373"
           },
           {
             "display": "Frau",
@@ -3635,6 +3828,21 @@
       "homeGoals": 0,
       "key": "fr-2010-Q19518-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sakho",
+            "minute": "11",
+            "player": "Q312183"
+          },
+          {
+            "display": "Erdinç",
+            "minute": "56",
+            "player": "Q440846"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3875,6 +4083,22 @@
       "homeGoals": 1,
       "key": "fr-2010-Q19521-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bodmer",
+            "minute": "90+1",
+            "player": "Q266827"
+          }
+        ],
+        "home": [
+          {
+            "display": "Guilavogui",
+            "minute": "70",
+            "player": "Q2637126"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4138,6 +4362,21 @@
       "homeGoals": 2,
       "key": "fr-2010-Q19523-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hadji",
+            "minute": "66",
+            "player": "Q537464"
+          },
+          {
+            "display": "Hadji",
+            "minute": "83",
+            "player": "Q537464"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4393,6 +4632,27 @@
       "homeGoals": 1,
       "key": "fr-2010-Q212269-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nenê",
+            "minute": "47",
+            "player": "Q316836"
+          },
+          {
+            "display": "Nenê",
+            "minute": "84",
+            "player": "Q316836"
+          }
+        ],
+        "home": [
+          {
+            "display": "Aboubakar",
+            "minute": "82",
+            "player": "Q116743"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4627,6 +4887,33 @@
       "homeGoals": 2,
       "key": "fr-2010-Q218372-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bodmer",
+            "minute": "20",
+            "player": "Q266827"
+          },
+          {
+            "display": "Kantari",
+            "minute": "87",
+            "ownGoal": true,
+            "player": "Q44656"
+          }
+        ],
+        "home": [
+          {
+            "display": "Touré",
+            "minute": "37",
+            "player": "Q39716"
+          },
+          {
+            "display": "Grougi",
+            "minute": "45",
+            "player": "Q39730"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4859,6 +5146,27 @@
       "homeGoals": 1,
       "key": "fr-2010-Q222837-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Erdinç",
+            "minute": "18",
+            "player": "Q440846"
+          },
+          {
+            "display": "Erdinç",
+            "minute": "49",
+            "player": "Q440846"
+          }
+        ],
+        "home": [
+          {
+            "display": "N'Diaye",
+            "minute": "57",
+            "player": "Q2466277"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4932,6 +5240,27 @@
       "homeGoals": 1,
       "key": "fr-2010-Q483020-Q172476",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Diarra",
+            "minute": "67",
+            "player": "Q1926"
+          },
+          {
+            "display": "Ciani",
+            "minute": "90+4",
+            "player": "Q438722"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hoarau",
+            "minute": "76",
+            "player": "Q313164"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4962,7 +5291,7 @@
           },
           {
             "display": "Nenê",
-            "minute": "52",
+            "minute": "53",
             "player": "Q316836"
           }
         ]
@@ -4976,6 +5305,37 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q182876",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mignot",
+            "minute": "4",
+            "player": "Q716178"
+          },
+          {
+            "display": "Contout",
+            "minute": "11",
+            "player": "Q1979802"
+          },
+          {
+            "display": "Quercia",
+            "minute": "24",
+            "player": "Q2325268"
+          }
+        ],
+        "home": [
+          {
+            "display": "Nenê",
+            "minute": "1",
+            "player": "Q316836"
+          },
+          {
+            "display": "Nenê",
+            "minute": "68",
+            "player": "Q316836"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4985,6 +5345,10 @@
       "homeGoals": 0,
       "key": "fr-2010-Q483020-Q185163",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4994,6 +5358,10 @@
       "homeGoals": 0,
       "key": "fr-2010-Q483020-Q191843",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5003,6 +5371,27 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q193377",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "El-Arabi",
+            "minute": "85",
+            "player": "Q456482"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hoarau",
+            "minute": "40",
+            "player": "Q313164"
+          },
+          {
+            "display": "Erdinç",
+            "minute": "50",
+            "player": "Q440846"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5012,6 +5401,10 @@
       "homeGoals": 0,
       "key": "fr-2010-Q483020-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5021,6 +5414,27 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q19512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Maïga",
+            "minute": "14",
+            "player": "Q650638"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sakho",
+            "minute": "16",
+            "player": "Q312183"
+          },
+          {
+            "display": "Giuly",
+            "minute": "23",
+            "player": "Q219771"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5030,6 +5444,33 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q19513",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giroud",
+            "minute": "47",
+            "player": "Q1911"
+          },
+          {
+            "display": "Giroud",
+            "minute": "59",
+            "player": "Q1911"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hoarau",
+            "minute": "11",
+            "player": "Q313164"
+          },
+          {
+            "display": "Yanga-Mbiwa",
+            "minute": "13",
+            "ownGoal": true,
+            "player": "Q438796"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5060,7 +5501,7 @@
           },
           {
             "display": "Bodmer",
-            "minute": "73",
+            "minute": "72",
             "player": "Q266827"
           }
         ]
@@ -5074,6 +5515,28 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q19518",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tabanou",
+            "minute": "62",
+            "player": "Q60594"
+          }
+        ],
+        "home": [
+          {
+            "display": "Armand",
+            "minute": "28",
+            "player": "Q372480"
+          },
+          {
+            "display": "Gunino",
+            "minute": "38",
+            "ownGoal": true,
+            "player": "Q2416431"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5083,6 +5546,32 @@
       "homeGoals": 3,
       "key": "fr-2010-Q483020-Q19521",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Payet",
+            "minute": "39",
+            "player": "Q376247"
+          }
+        ],
+        "home": [
+          {
+            "display": "Erdinç",
+            "minute": "5",
+            "player": "Q440846"
+          },
+          {
+            "display": "Sessègnon",
+            "minute": "42",
+            "player": "Q150207"
+          },
+          {
+            "display": "Nenê",
+            "minute": "83",
+            "player": "Q316836"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5092,6 +5581,33 @@
       "homeGoals": 2,
       "key": "fr-2010-Q483020-Q19523",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nguémo",
+            "minute": "21",
+            "penalty": true,
+            "player": "Q31792"
+          },
+          {
+            "display": "Hadji",
+            "minute": "69",
+            "player": "Q537464"
+          }
+        ],
+        "home": [
+          {
+            "display": "Erdinç",
+            "minute": "4",
+            "player": "Q440846"
+          },
+          {
+            "display": "Camara",
+            "minute": "45",
+            "player": "Q227053"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5101,6 +5617,32 @@
       "homeGoals": 3,
       "key": "fr-2010-Q483020-Q212269",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pujol",
+            "minute": "44",
+            "player": "Q128915"
+          }
+        ],
+        "home": [
+          {
+            "display": "Nenê",
+            "minute": "10",
+            "player": "Q316836"
+          },
+          {
+            "display": "Bodmer",
+            "minute": "22",
+            "player": "Q266827"
+          },
+          {
+            "display": "Sakho",
+            "minute": "88",
+            "player": "Q312183"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5110,6 +5652,32 @@
       "homeGoals": 3,
       "key": "fr-2010-Q483020-Q218372",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Roux",
+            "minute": "53",
+            "player": "Q561020"
+          }
+        ],
+        "home": [
+          {
+            "display": "Nenê",
+            "minute": "5",
+            "player": "Q316836"
+          },
+          {
+            "display": "Bodmer",
+            "minute": "59",
+            "player": "Q266827"
+          },
+          {
+            "display": "Giuly",
+            "minute": "77",
+            "player": "Q219771"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5119,6 +5687,31 @@
       "homeGoals": 4,
       "key": "fr-2010-Q483020-Q222837",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hoarau",
+            "minute": "18",
+            "player": "Q313164"
+          },
+          {
+            "display": "Sakho",
+            "minute": "29",
+            "player": "Q312183"
+          },
+          {
+            "display": "Nenê",
+            "minute": "49",
+            "player": "Q316836"
+          },
+          {
+            "display": "Nenê",
+            "minute": "56",
+            "player": "Q316836"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5128,6 +5721,10 @@
       "homeGoals": 0,
       "key": "fr-2010-Q483020-Q48911",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5372,6 +5969,22 @@
       "homeGoals": 1,
       "key": "fr-2010-Q48911-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nenê",
+            "minute": "90",
+            "player": "Q316836"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kitambala",
+            "minute": "32",
+            "player": "Q771232"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5421,7 +6034,7 @@
         ],
         "home": [
           {
-            "display": "Lisandro",
+            "display": "López",
             "minute": "25",
             "penalty": true,
             "player": "Q296133"
@@ -5795,6 +6408,11 @@
             "player": "Q296133"
           },
           {
+            "display": "Pjanić",
+            "minute": "18",
+            "player": "Q146907"
+          },
+          {
             "display": "López",
             "minute": "51",
             "player": "Q296133"
@@ -5803,11 +6421,6 @@
             "display": "López",
             "minute": "55",
             "player": "Q296133"
-          },
-          {
-            "display": "Pjanić",
-            "minute": "18",
-            "player": "Q146907"
           },
           {
             "display": "Bastos",
@@ -5825,32 +6438,6 @@
       "homeGoals": 2,
       "key": "fr-2010-Q704-Q483020",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Nenê",
-            "minute": "63",
-            "player": "Q316836"
-          },
-          {
-            "display": "Hoarau",
-            "minute": "83",
-            "player": "Q313164"
-          }
-        ],
-        "home": [
-          {
-            "display": "Cissokho",
-            "minute": "54",
-            "player": "Q18881"
-          },
-          {
-            "display": "Gomis",
-            "minute": "86",
-            "player": "Q11966"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -5869,14 +6456,14 @@
             "player": "Q11966"
           },
           {
-            "display": "Gomis",
-            "minute": "56",
-            "player": "Q11966"
-          },
-          {
             "display": "Källström",
             "minute": "53",
             "player": "Q214124"
+          },
+          {
+            "display": "Gomis",
+            "minute": "56",
+            "player": "Q11966"
           }
         ]
       },
@@ -5919,7 +6506,7 @@
         "id": "Q1940"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q1919"
       },
       {
@@ -5942,11 +6529,19 @@
       },
       {
         "goals": 2,
+        "id": "Q1926"
+      },
+      {
+        "goals": 2,
         "id": "Q31760"
       },
       {
         "goals": 1,
-        "id": "Q1926"
+        "id": "Q438722"
+      },
+      {
+        "goals": 1,
+        "id": "Q31744"
       },
       {
         "goals": 1,
@@ -5960,18 +6555,18 @@
       },
       {
         "goals": 1,
-        "id": "Q552597"
-      },
-      {
-        "goals": 9,
-        "id": "Q210928"
-      },
-      {
-        "goals": 1,
         "id": "Q941916"
       },
       {
-        "goals": 3,
+        "goals": 1,
+        "id": "Q552597"
+      },
+      {
+        "goals": 10,
+        "id": "Q210928"
+      },
+      {
+        "goals": 4,
         "id": "Q360753"
       },
       {
@@ -6010,11 +6605,19 @@
     "Q182876": [
       {
         "goals": 1,
+        "id": "Q934029"
+      },
+      {
+        "goals": 1,
+        "id": "Q716178"
+      },
+      {
+        "goals": 1,
         "id": "Q472513"
       },
       {
         "goals": 1,
-        "id": "Q934029"
+        "id": "Q44694"
       },
       {
         "goals": 1,
@@ -6022,10 +6625,14 @@
       },
       {
         "goals": 1,
+        "id": "Q1979802"
+      },
+      {
+        "goals": 1,
         "id": "Q367789"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q2325268"
       },
       {
@@ -6070,11 +6677,11 @@
       },
       {
         "goals": 1,
-        "id": "Q27772"
+        "id": "Q768977"
       },
       {
         "goals": 1,
-        "id": "Q768977"
+        "id": "Q27772"
       },
       {
         "goals": 1,
@@ -6105,14 +6712,18 @@
       },
       {
         "goals": 1,
-        "id": "Q1377559"
+        "id": "Q2377727"
       },
       {
         "goals": 1,
-        "id": "Q6085001"
+        "id": "Q1377559"
       }
     ],
     "Q19509": [
+      {
+        "goals": 1,
+        "id": "Q767469"
+      },
       {
         "goals": 2,
         "id": "Q969544"
@@ -6147,6 +6758,10 @@
       },
       {
         "goals": 1,
+        "id": "Q211547"
+      },
+      {
+        "goals": 1,
         "id": "Q31684"
       },
       {
@@ -6164,12 +6779,16 @@
         "id": "Q348266"
       },
       {
-        "goals": 3,
+        "goals": 5,
         "id": "Q1911"
       },
       {
         "goals": 1,
         "id": "Q922086"
+      },
+      {
+        "goals": 1,
+        "id": "Q361068"
       }
     ],
     "Q19516": [
@@ -6191,7 +6810,7 @@
         "topScorerRank": 7
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q214204"
       },
       {
@@ -6199,7 +6818,7 @@
         "id": "Q1908"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q723943"
       },
       {
@@ -6240,9 +6859,17 @@
       {
         "goals": 1,
         "id": "Q734685"
+      },
+      {
+        "goals": 1,
+        "id": "Q60594"
       }
     ],
     "Q19521": [
+      {
+        "goals": 1,
+        "id": "Q2637126"
+      },
       {
         "goals": 1,
         "id": "Q213091"
@@ -6252,7 +6879,7 @@
         "id": "Q60596"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q376247"
       },
       {
@@ -6270,8 +6897,16 @@
     ],
     "Q19523": [
       {
+        "goals": 3,
+        "id": "Q537464"
+      },
+      {
         "goals": 2,
         "id": "Q1657832"
+      },
+      {
+        "goals": 1,
+        "id": "Q31792"
       },
       {
         "goals": 2,
@@ -6280,17 +6915,21 @@
     ],
     "Q212269": [
       {
-        "goals": 1,
-        "id": "Q530033"
-      },
-      {
         "goals": 17,
         "id": "Q128915",
         "topScorerRank": 3
       },
       {
         "goals": 1,
+        "id": "Q530033"
+      },
+      {
+        "goals": 1,
         "id": "Q116586"
+      },
+      {
+        "goals": 1,
+        "id": "Q128889"
       },
       {
         "goals": 1,
@@ -6302,12 +6941,16 @@
       },
       {
         "goals": 1,
-        "id": "Q128889"
+        "id": "Q116743"
       }
     ],
     "Q218372": [
       {
         "goals": 1,
+        "id": "Q39716"
+      },
+      {
+        "goals": 2,
         "id": "Q39730"
       },
       {
@@ -6325,9 +6968,17 @@
       {
         "goals": 1,
         "id": "Q44671"
+      },
+      {
+        "goals": 1,
+        "id": "Q561020"
       }
     ],
     "Q222837": [
+      {
+        "goals": 1,
+        "id": "Q2466277"
+      },
       {
         "goals": 1,
         "id": "Q305322"
@@ -6335,29 +6986,49 @@
     ],
     "Q483020": [
       {
+        "goals": 1,
+        "id": "Q150207"
+      },
+      {
+        "goals": 4,
+        "id": "Q312183"
+      },
+      {
+        "goals": 4,
+        "id": "Q219771"
+      },
+      {
         "goals": 14,
         "id": "Q316836",
         "topScorerRank": 10
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q372480"
+      },
+      {
+        "goals": 5,
         "id": "Q266827"
       },
       {
-        "goals": 1,
-        "id": "Q227053"
-      },
-      {
-        "goals": 2,
+        "goals": 8,
         "id": "Q440846"
       },
       {
-        "goals": 3,
+        "goals": 8,
         "id": "Q313164"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q468457"
+      },
+      {
+        "goals": 1,
+        "id": "Q442457"
+      },
+      {
+        "goals": 2,
+        "id": "Q227053"
       }
     ],
     "Q48911": [
@@ -6371,7 +7042,7 @@
         "topScorerRank": 2
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q771232"
       }
     ],
@@ -6385,16 +7056,12 @@
         "id": "Q342312"
       },
       {
-        "goals": 10,
+        "goals": 9,
         "id": "Q11966"
       },
       {
         "goals": 1,
         "id": "Q13306"
-      },
-      {
-        "goals": 1,
-        "id": "Q18881"
       },
       {
         "goals": 3,
@@ -6428,6 +7095,10 @@
         "goals": 17,
         "id": "Q296133",
         "topScorerRank": 3
+      },
+      {
+        "goals": 1,
+        "id": "Q704034"
       },
       {
         "goals": 3,

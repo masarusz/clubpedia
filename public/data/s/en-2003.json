@@ -310,14 +310,14 @@
             "player": "Q45901"
           },
           {
-            "display": "Henry",
-            "minute": "33",
-            "player": "Q45901"
-          },
-          {
             "display": "Pires",
             "minute": "16",
             "player": "Q113156"
+          },
+          {
+            "display": "Henry",
+            "minute": "33",
+            "player": "Q45901"
           },
           {
             "display": "Gilberto Silva",
@@ -573,6 +573,11 @@
         "away": [],
         "home": [
           {
+            "display": "Owen",
+            "minute": "7",
+            "player": "Q128829"
+          },
+          {
             "display": "Todd",
             "minute": "22",
             "ownGoal": true,
@@ -581,11 +586,6 @@
           {
             "display": "Owen",
             "minute": "24",
-            "player": "Q128829"
-          },
-          {
-            "display": "Owen",
-            "minute": "7",
             "player": "Q128829"
           },
           {
@@ -1484,6 +1484,28 @@
       "homeGoals": 1,
       "key": "en-2003-Q18708-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Heskey",
+            "minute": "17",
+            "player": "Q191162"
+          },
+          {
+            "display": "Murphy",
+            "minute": "89",
+            "penalty": true,
+            "player": "Q296589"
+          }
+        ],
+        "home": [
+          {
+            "display": "Saha",
+            "minute": "43",
+            "player": "Q484968"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1624,6 +1646,47 @@
       "homeGoals": 3,
       "key": "en-2003-Q18708-Q19446",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cole",
+            "minute": "23",
+            "player": "Q216928"
+          },
+          {
+            "display": "Douglas",
+            "minute": "49",
+            "player": "Q742372"
+          },
+          {
+            "display": "Amoruso",
+            "minute": "51",
+            "player": "Q738873"
+          },
+          {
+            "display": "Stead",
+            "minute": "75",
+            "player": "Q1524891"
+          }
+        ],
+        "home": [
+          {
+            "display": "John",
+            "minute": "26",
+            "player": "Q703648"
+          },
+          {
+            "display": "John",
+            "minute": "45+2",
+            "player": "Q703648"
+          },
+          {
+            "display": "Boa Morte",
+            "minute": "60",
+            "player": "Q316512"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1733,6 +1796,33 @@
       "homeGoals": 2,
       "key": "en-2003-Q18708-Q50602",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Knight",
+            "minute": "31",
+            "ownGoal": true,
+            "player": "Q148312"
+          },
+          {
+            "display": "Wanchope",
+            "minute": "90",
+            "player": "Q211126"
+          }
+        ],
+        "home": [
+          {
+            "display": "Malbranque",
+            "minute": "73",
+            "player": "Q13054"
+          },
+          {
+            "display": "Saha",
+            "minute": "79",
+            "player": "Q484968"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2372,14 +2462,14 @@
             "player": "Q483583"
           },
           {
-            "display": "Shearer",
-            "minute": "77",
-            "player": "Q483583"
-          },
-          {
             "display": "Jenas",
             "minute": "35",
             "player": "Q296621"
+          },
+          {
+            "display": "Shearer",
+            "minute": "77",
+            "player": "Q483583"
           }
         ]
       },
@@ -2734,14 +2824,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Bowyer",
-            "minute": "35",
-            "player": "Q353520"
-          },
-          {
             "display": "Ameobi",
             "minute": "7",
             "player": "Q313085"
+          },
+          {
+            "display": "Bowyer",
+            "minute": "35",
+            "player": "Q353520"
           },
           {
             "display": "Ambrose",
@@ -3003,14 +3093,14 @@
             "player": "Q266613"
           },
           {
-            "display": "Rooney",
-            "minute": "77",
-            "player": "Q266613"
-          },
-          {
             "display": "Ferguson",
             "minute": "33",
             "player": "Q465623"
+          },
+          {
+            "display": "Rooney",
+            "minute": "77",
+            "player": "Q266613"
           }
         ],
         "home": [
@@ -3430,14 +3520,14 @@
             "player": "Q188746"
           },
           {
-            "display": "Defoe",
-            "minute": "89",
-            "player": "Q188746"
-          },
-          {
             "display": "Keane",
             "minute": "28",
             "player": "Q184612"
+          },
+          {
+            "display": "Defoe",
+            "minute": "89",
+            "player": "Q188746"
           }
         ]
       },
@@ -3470,6 +3560,11 @@
             "player": "Q184612"
           },
           {
+            "display": "Kanouté",
+            "minute": "50",
+            "player": "Q218394"
+          },
+          {
             "display": "Keane",
             "minute": "75",
             "player": "Q184612"
@@ -3478,11 +3573,6 @@
             "display": "Keane",
             "minute": "83",
             "player": "Q184612"
-          },
-          {
-            "display": "Kanouté",
-            "minute": "50",
-            "player": "Q218394"
           },
           {
             "display": "Dalmat",
@@ -3579,11 +3669,6 @@
         "away": [],
         "home": [
           {
-            "display": "Kanouté",
-            "minute": "71",
-            "player": "Q218394"
-          },
-          {
             "display": "Poyet",
             "minute": "46",
             "player": "Q338595"
@@ -3592,6 +3677,11 @@
             "display": "Keane",
             "minute": "46",
             "player": "Q184612"
+          },
+          {
+            "display": "Kanouté",
+            "minute": "71",
+            "player": "Q218394"
           }
         ]
       },
@@ -3623,6 +3713,33 @@
       "homeGoals": 2,
       "key": "en-2003-Q18741-Q9617",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vieira",
+            "minute": "3",
+            "player": "Q46347"
+          },
+          {
+            "display": "Pires",
+            "minute": "35",
+            "player": "Q113156"
+          }
+        ],
+        "home": [
+          {
+            "display": "Redknapp",
+            "minute": "62",
+            "player": "Q317810"
+          },
+          {
+            "display": "Keane",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q184612"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4134,7 +4251,7 @@
         ],
         "home": [
           {
-            "display": "Stead",
+            "display": "Jon Stead",
             "minute": "85",
             "player": "Q1524891"
           }
@@ -4159,7 +4276,7 @@
         ],
         "home": [
           {
-            "display": "Cole",
+            "display": "Andy Cole",
             "minute": "52",
             "player": "Q216928"
           }
@@ -4226,11 +4343,6 @@
             "player": "Q148699"
           },
           {
-            "display": "Nolan",
-            "minute": "78",
-            "player": "Q148699"
-          },
-          {
             "display": "Djorkaeff",
             "minute": "43",
             "player": "Q217482"
@@ -4239,6 +4351,11 @@
             "display": "Giannakopoulos",
             "minute": "73",
             "player": "Q49821"
+          },
+          {
+            "display": "Nolan",
+            "minute": "78",
+            "player": "Q148699"
           }
         ],
         "home": [
@@ -7169,6 +7286,27 @@
       "homeGoals": 2,
       "key": "en-2003-Q9616-Q18708",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pembridge",
+            "minute": "18",
+            "player": "Q327187"
+          }
+        ],
+        "home": [
+          {
+            "display": "Guðjohnsen",
+            "minute": "7",
+            "player": "Q187396"
+          },
+          {
+            "display": "Duff",
+            "minute": "30",
+            "player": "Q192971"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7246,6 +7384,42 @@
       "homeGoals": 4,
       "key": "en-2003-Q9616-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kanouté",
+            "minute": "25",
+            "player": "Q218394"
+          },
+          {
+            "display": "Kanouté",
+            "minute": "87",
+            "player": "Q218394"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lampard",
+            "minute": "34",
+            "player": "Q41533"
+          },
+          {
+            "display": "Mutu",
+            "minute": "37",
+            "player": "Q202645"
+          },
+          {
+            "display": "Mutu",
+            "minute": "75",
+            "player": "Q202645"
+          },
+          {
+            "display": "Hasselbaink",
+            "minute": "90",
+            "player": "Q223176"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7570,14 +7744,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Owen",
-            "minute": "42",
-            "player": "Q128829"
-          },
-          {
             "display": "Hyypiä",
             "minute": "5",
             "player": "Q192840"
+          },
+          {
+            "display": "Owen",
+            "minute": "42",
+            "player": "Q128829"
           }
         ],
         "home": [
@@ -8053,6 +8227,27 @@
       "homeGoals": 2,
       "key": "en-2003-Q9617-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "7",
+            "player": "Q160206"
+          }
+        ],
+        "home": [
+          {
+            "display": "Edu",
+            "minute": "5",
+            "player": "Q314750"
+          },
+          {
+            "display": "Henry",
+            "minute": "75",
+            "player": "Q45901"
+          }
+        ]
+      },
       "status": "played"
     }
   ],
@@ -8118,11 +8313,11 @@
         "id": "Q204429"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q191162"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q296589"
       },
       {
@@ -8218,7 +8413,7 @@
         "id": "Q2608437"
       },
       {
-        "goals": 9,
+        "goals": 11,
         "id": "Q484968"
       },
       {
@@ -8226,7 +8421,7 @@
         "id": "Q2885751"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q13054"
       },
       {
@@ -8238,12 +8433,12 @@
         "id": "Q1132567"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q311191",
         "japan": true
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q316512"
       },
       {
@@ -8251,7 +8446,11 @@
         "id": "Q314366"
       },
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q327187"
+      },
+      {
+        "goals": 4,
         "id": "Q703648"
       }
     ],
@@ -8379,6 +8578,10 @@
     "Q18741": [
       {
         "goals": 1,
+        "id": "Q317810"
+      },
+      {
+        "goals": 1,
         "id": "Q363608"
       },
       {
@@ -8391,7 +8594,7 @@
         "topScorerRank": 10
       },
       {
-        "goals": 5,
+        "goals": 7,
         "id": "Q218394"
       },
       {
@@ -8485,7 +8688,7 @@
         "id": "Q5524127"
       },
       {
-        "goals": 10,
+        "goals": 11,
         "id": "Q216928"
       },
       {
@@ -8513,8 +8716,16 @@
         "id": "Q294419"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1524891"
+      },
+      {
+        "goals": 1,
+        "id": "Q742372"
+      },
+      {
+        "goals": 3,
+        "id": "Q738873"
       },
       {
         "goals": 3,
@@ -8531,10 +8742,6 @@
       {
         "goals": 2,
         "id": "Q535050"
-      },
-      {
-        "goals": 2,
-        "id": "Q738873"
       },
       {
         "goals": 1,
@@ -8758,7 +8965,7 @@
         "id": "Q433702"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q211126"
       },
       {
@@ -8771,6 +8978,14 @@
         "id": "Q375487"
       },
       {
+        "goals": 1,
+        "id": "Q721231"
+      },
+      {
+        "goals": 1,
+        "id": "Q202329"
+      },
+      {
         "goals": 7,
         "id": "Q192747"
       },
@@ -8779,20 +8994,12 @@
         "id": "Q316695"
       },
       {
-        "goals": 1,
-        "id": "Q202329"
-      },
-      {
         "goals": 5,
         "id": "Q516985"
       },
       {
         "goals": 1,
         "id": "Q1163856"
-      },
-      {
-        "goals": 1,
-        "id": "Q721231"
       }
     ],
     "Q5794": [
@@ -8831,11 +9038,11 @@
     ],
     "Q9616": [
       {
-        "goals": 12,
+        "goals": 13,
         "id": "Q223176"
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q41533"
       },
       {
@@ -8843,11 +9050,11 @@
         "id": "Q312354"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q192971"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q187396"
       },
       {
@@ -8879,7 +9086,7 @@
         "id": "Q213989"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q160206"
       },
       {
@@ -8887,7 +9094,7 @@
         "id": "Q185208"
       },
       {
-        "goals": 4,
+        "goals": 6,
         "id": "Q202645"
       },
       {
@@ -8901,7 +9108,7 @@
         "id": "Q185389"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q46347"
       },
       {
@@ -8927,7 +9134,7 @@
         "id": "Q217760"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q314750"
       },
       {

@@ -115,14 +115,14 @@
             "player": "Q342707"
           },
           {
-            "display": "Niang",
-            "minute": "40",
-            "player": "Q342707"
-          },
-          {
             "display": "Civelli",
             "minute": "13",
             "player": "Q523900"
+          },
+          {
+            "display": "Niang",
+            "minute": "40",
+            "player": "Q342707"
           }
         ]
       },
@@ -1607,6 +1607,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q185163-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Vahirua",
+            "minute": "1",
+            "player": "Q518577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1656,14 +1666,14 @@
             "player": "Q1912"
           },
           {
-            "display": "Benzema",
-            "minute": "90+1",
-            "player": "Q1912"
-          },
-          {
             "display": "Tiago",
             "minute": "74",
             "player": "Q210944"
+          },
+          {
+            "display": "Benzema",
+            "minute": "90+1",
+            "player": "Q1912"
           }
         ],
         "home": [
@@ -1766,6 +1776,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q191843-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1838,6 +1852,28 @@
       "homeGoals": 1,
       "key": "fr-2006-Q191843-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Diané",
+            "minute": "2",
+            "player": "Q454773"
+          },
+          {
+            "display": "Armand",
+            "minute": "72",
+            "player": "Q372480"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rozehnal",
+            "minute": "52",
+            "ownGoal": true,
+            "player": "Q298484"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1882,11 +1918,6 @@
             "player": "Q203451"
           },
           {
-            "display": "Juninho",
-            "minute": "62",
-            "player": "Q203451"
-          },
-          {
             "display": "Malouda",
             "minute": "34",
             "player": "Q1913"
@@ -1895,6 +1926,11 @@
             "display": "Cris",
             "minute": "51",
             "player": "Q299367"
+          },
+          {
+            "display": "Juninho",
+            "minute": "62",
+            "player": "Q203451"
           }
         ],
         "home": []
@@ -2073,6 +2109,22 @@
       "homeGoals": 1,
       "key": "fr-2006-Q192071-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kalou",
+            "minute": "1",
+            "player": "Q343965"
+          }
+        ],
+        "home": [
+          {
+            "display": "Da Rocha",
+            "minute": "75",
+            "player": "Q317882"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2226,6 +2278,10 @@
       "homeGoals": 1,
       "key": "fr-2006-Q19509-Q191843",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2271,6 +2327,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q19509-Q19521",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2307,6 +2367,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q19509-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Briand",
+            "minute": "76",
+            "player": "Q342312"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2435,6 +2505,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q19512-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2498,6 +2572,38 @@
       "homeGoals": 3,
       "key": "fr-2006-Q19512-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pauleta",
+            "minute": "70",
+            "player": "Q218165"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "75",
+            "player": "Q218165"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ziani",
+            "minute": "30",
+            "player": "Q313159"
+          },
+          {
+            "display": "Sène",
+            "minute": "36",
+            "player": "Q373668"
+          },
+          {
+            "display": "Ziani",
+            "minute": "82",
+            "penalty": true,
+            "player": "Q313159"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2705,6 +2811,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q19516-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Makoun",
+            "minute": "75",
+            "player": "Q213119"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2933,6 +3049,32 @@
       "homeGoals": 1,
       "key": "fr-2006-Q19518-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Luyindula",
+            "minute": "32",
+            "player": "Q342608"
+          },
+          {
+            "display": "Cissé",
+            "minute": "44",
+            "player": "Q274268"
+          },
+          {
+            "display": "Rothen",
+            "minute": "90+3",
+            "player": "Q27649"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mansaré",
+            "minute": "8",
+            "player": "Q940068"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3150,6 +3292,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q19521-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ilan",
+            "minute": "38",
+            "player": "Q27852"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3309,6 +3461,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q19523-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3372,6 +3528,26 @@
       "homeGoals": 0,
       "key": "fr-2006-Q19523-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pauleta",
+            "minute": "70",
+            "player": "Q218165"
+          },
+          {
+            "display": "Frau",
+            "minute": "86",
+            "player": "Q723943"
+          },
+          {
+            "display": "Gallardo",
+            "minute": "89",
+            "player": "Q266507"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3531,6 +3707,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q210864-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3594,6 +3774,23 @@
       "homeGoals": 1,
       "key": "fr-2006-Q210864-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kalou",
+            "minute": "11",
+            "penalty": true,
+            "player": "Q343965"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lucau",
+            "minute": "38",
+            "player": "Q2963537"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3805,6 +4002,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q212269-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3891,6 +4092,21 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q172476",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Wendel",
+            "minute": "28",
+            "player": "Q522003"
+          },
+          {
+            "display": "Laslandes",
+            "minute": "87",
+            "player": "Q956723"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3945,6 +4161,16 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q182876",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kaboul",
+            "minute": "41",
+            "player": "Q311334"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3954,6 +4180,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q185163",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3963,6 +4193,32 @@
       "homeGoals": 1,
       "key": "fr-2006-Q483020-Q191843",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cousin",
+            "minute": "50",
+            "player": "Q381515"
+          },
+          {
+            "display": "Cousin",
+            "minute": "67",
+            "player": "Q381515"
+          },
+          {
+            "display": "Thomert",
+            "minute": "81",
+            "player": "Q1369762"
+          }
+        ],
+        "home": [
+          {
+            "display": "Armand",
+            "minute": "27",
+            "player": "Q372480"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3972,6 +4228,31 @@
       "homeGoals": 4,
       "key": "fr-2006-Q483020-Q192071",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "16",
+            "player": "Q218165"
+          },
+          {
+            "display": "Rothen",
+            "minute": "45",
+            "player": "Q27649"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "65",
+            "player": "Q218165"
+          },
+          {
+            "display": "Luyindula",
+            "minute": "67",
+            "player": "Q342608"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3981,6 +4262,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q483020-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Diané",
+            "minute": "44",
+            "player": "Q454773"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3990,6 +4281,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q19512",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3999,6 +4294,16 @@
       "homeGoals": 1,
       "key": "fr-2006-Q483020-Q19516",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "60",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4008,6 +4313,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q19518",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4017,6 +4326,21 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q19521",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Perquis",
+            "minute": "32",
+            "player": "Q211547"
+          },
+          {
+            "display": "Ilan",
+            "minute": "44",
+            "player": "Q27852"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4026,6 +4350,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q483020-Q19523",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4035,6 +4363,27 @@
       "homeGoals": 2,
       "key": "fr-2006-Q483020-Q210864",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Grafite",
+            "minute": "30",
+            "player": "Q159059"
+          }
+        ],
+        "home": [
+          {
+            "display": "Luyindula",
+            "minute": "56",
+            "player": "Q342608"
+          },
+          {
+            "display": "Diané",
+            "minute": "80",
+            "player": "Q454773"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4044,6 +4393,28 @@
       "homeGoals": 1,
       "key": "fr-2006-Q483020-Q212269",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Savidan",
+            "minute": "61",
+            "player": "Q941909"
+          },
+          {
+            "display": "Roudet",
+            "minute": "88",
+            "player": "Q768977"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4053,6 +4424,37 @@
       "homeGoals": 2,
       "key": "fr-2006-Q483020-Q48911",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fiorèse",
+            "minute": "31",
+            "player": "Q604757"
+          },
+          {
+            "display": "Fiorèse",
+            "minute": "55",
+            "player": "Q604757"
+          },
+          {
+            "display": "Saïfi",
+            "minute": "73",
+            "player": "Q381492"
+          }
+        ],
+        "home": [
+          {
+            "display": "Frau",
+            "minute": "21",
+            "player": "Q723943"
+          },
+          {
+            "display": "Pancrate",
+            "minute": "45+1",
+            "player": "Q920749"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4062,6 +4464,28 @@
       "homeGoals": 2,
       "key": "fr-2006-Q483020-Q501693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nivet",
+            "minute": "23",
+            "player": "Q60521"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pauleta",
+            "minute": "71",
+            "penalty": true,
+            "player": "Q218165"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "79",
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4071,6 +4495,43 @@
       "homeGoals": 4,
       "key": "fr-2006-Q483020-Q608988",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marin",
+            "minute": "17",
+            "player": "Q1363722"
+          },
+          {
+            "display": "Boutabout",
+            "minute": "90+3",
+            "player": "Q1886882"
+          }
+        ],
+        "home": [
+          {
+            "display": "Frau",
+            "minute": "6",
+            "player": "Q723943"
+          },
+          {
+            "display": "Yepes",
+            "minute": "49",
+            "player": "Q309778"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "56",
+            "player": "Q218165"
+          },
+          {
+            "display": "Pauleta",
+            "minute": "72",
+            "penalty": true,
+            "player": "Q218165"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4194,6 +4655,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q48911-Q19509",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4266,6 +4731,16 @@
       "homeGoals": 0,
       "key": "fr-2006-Q48911-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pauleta",
+            "minute": "54",
+            "player": "Q218165"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4275,6 +4750,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q48911-Q501693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4478,6 +4957,10 @@
       "homeGoals": 0,
       "key": "fr-2006-Q501693-Q19523",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4505,6 +4988,22 @@
       "homeGoals": 1,
       "key": "fr-2006-Q501693-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Diané",
+            "minute": "48",
+            "player": "Q454773"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ba",
+            "minute": "74",
+            "player": "Q2902356"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5280,12 +5779,12 @@
         "topScorerRank": 3
       },
       {
-        "goals": 4,
-        "id": "Q27696"
-      },
-      {
         "goals": 2,
         "id": "Q311155"
+      },
+      {
+        "goals": 4,
+        "id": "Q27696"
       },
       {
         "goals": 3,
@@ -5315,11 +5814,19 @@
       },
       {
         "goals": 1,
+        "id": "Q956723"
+      },
+      {
+        "goals": 1,
         "id": "Q1377348"
       },
       {
         "goals": 1,
         "id": "Q283067"
+      },
+      {
+        "goals": 1,
+        "id": "Q522003"
       }
     ],
     "Q180305": [
@@ -5346,15 +5853,15 @@
       },
       {
         "goals": 1,
+        "id": "Q193717"
+      },
+      {
+        "goals": 1,
         "id": "Q944657"
       },
       {
         "goals": 2,
         "id": "Q704406"
-      },
-      {
-        "goals": 1,
-        "id": "Q193717"
       },
       {
         "goals": 2,
@@ -5392,6 +5899,10 @@
     "Q182876": [
       {
         "goals": 1,
+        "id": "Q311334"
+      },
+      {
+        "goals": 1,
         "id": "Q317079"
       },
       {
@@ -5409,12 +5920,8 @@
         "id": "Q956723"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q518577"
-      },
-      {
-        "goals": 1,
-        "id": "Q461505"
       },
       {
         "goals": 1,
@@ -5422,10 +5929,18 @@
       },
       {
         "goals": 1,
+        "id": "Q461505"
+      },
+      {
+        "goals": 1,
         "id": "Q313142"
       }
     ],
     "Q191843": [
+      {
+        "goals": 2,
+        "id": "Q381515"
+      },
       {
         "goals": 11,
         "id": "Q311554",
@@ -5435,6 +5950,10 @@
         "goals": 11,
         "id": "Q191080",
         "topScorerRank": 6
+      },
+      {
+        "goals": 1,
+        "id": "Q1369762"
       },
       {
         "goals": 1,
@@ -5451,7 +5970,7 @@
         "id": "Q940763"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q317882"
       },
       {
@@ -5469,7 +5988,7 @@
     ],
     "Q19509": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q342312"
       },
       {
@@ -5497,21 +6016,29 @@
       },
       {
         "goals": 1,
+        "id": "Q373668"
+      },
+      {
+        "goals": 1,
         "id": "Q147124"
+      },
+      {
+        "goals": 3,
+        "id": "Q313159"
       },
       {
         "goals": 1,
         "id": "Q251270"
-      },
-      {
-        "goals": 1,
-        "id": "Q313159"
       }
     ],
     "Q19516": [
       {
         "goals": 2,
         "id": "Q266827"
+      },
+      {
+        "goals": 1,
+        "id": "Q213119"
       },
       {
         "goals": 1,
@@ -5538,6 +6065,10 @@
       },
       {
         "goals": 1,
+        "id": "Q940068"
+      },
+      {
+        "goals": 1,
         "id": "Q936402"
       },
       {
@@ -5546,6 +6077,10 @@
       }
     ],
     "Q19521": [
+      {
+        "goals": 2,
+        "id": "Q27852"
+      },
       {
         "goals": 1,
         "id": "Q380140"
@@ -5564,17 +6099,21 @@
       },
       {
         "goals": 1,
+        "id": "Q211547"
+      },
+      {
+        "goals": 1,
         "id": "Q2550776"
       }
     ],
     "Q19523": [
       {
         "goals": 1,
-        "id": "Q937669"
+        "id": "Q941916"
       },
       {
         "goals": 1,
-        "id": "Q941916"
+        "id": "Q937669"
       },
       {
         "goals": 1,
@@ -5605,6 +6144,10 @@
         "topScorerRank": 3
       },
       {
+        "goals": 1,
+        "id": "Q2963537"
+      },
+      {
         "goals": 4,
         "id": "Q331938",
         "japan": true
@@ -5623,6 +6166,10 @@
         "goals": 13,
         "id": "Q941909",
         "topScorerRank": 2
+      },
+      {
+        "goals": 1,
+        "id": "Q768977"
       }
     ],
     "Q483020": [
@@ -5640,8 +6187,32 @@
         "id": "Q314376"
       },
       {
+        "goals": 3,
+        "id": "Q723943"
+      },
+      {
+        "goals": 3,
+        "id": "Q342608"
+      },
+      {
         "goals": 1,
+        "id": "Q309778"
+      },
+      {
+        "goals": 2,
+        "id": "Q372480"
+      },
+      {
+        "goals": 2,
+        "id": "Q343965"
+      },
+      {
+        "goals": 2,
         "id": "Q274268"
+      },
+      {
+        "goals": 1,
+        "id": "Q920749"
       },
       {
         "goals": 1,
@@ -5649,21 +6220,29 @@
       },
       {
         "goals": 2,
+        "id": "Q27649"
+      },
+      {
+        "goals": 6,
         "id": "Q454773"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q266507"
       }
     ],
     "Q48911": [
       {
         "goals": 2,
-        "id": "Q2607857"
+        "id": "Q604757"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q381492"
+      },
+      {
+        "goals": 2,
+        "id": "Q2607857"
       },
       {
         "goals": 1,
@@ -5681,6 +6260,10 @@
     "Q501693": [
       {
         "goals": 1,
+        "id": "Q2902356"
+      },
+      {
+        "goals": 2,
         "id": "Q60521"
       },
       {
@@ -5695,6 +6278,10 @@
     "Q608988": [
       {
         "goals": 1,
+        "id": "Q1363722"
+      },
+      {
+        "goals": 2,
         "id": "Q1886882"
       }
     ],
@@ -5748,13 +6335,13 @@
         "id": "Q299367"
       },
       {
+        "goals": 1,
+        "id": "Q1926"
+      },
+      {
         "goals": 11,
         "id": "Q312772",
         "topScorerRank": 6
-      },
-      {
-        "goals": 1,
-        "id": "Q1926"
       }
     ]
   },

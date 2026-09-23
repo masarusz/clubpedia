@@ -23,10 +23,9 @@ async function treeDigest(root) {
 
 export function register(test, equal, deepEqual) {
   let index; let clubs; let metadata;
-  test('offline core build completes in inspection mode', async () => {
-    const output = execFileSync(process.execPath, [join(ROOT, 'tools/build-data.mjs'), '--allow-proposed'], { cwd: ROOT, encoding: 'utf8' });
-    equal(output.includes('Built 170 league-seasons'), true);
+  test('suite preflight produced a complete fresh build', async () => {
     index = JSON.parse(await readFile(join(DATA, 'index.json'), 'utf8'));
+    equal(index.seasons.length, 170);
     clubs = JSON.parse(await readFile(join(ROOT, 'curated/clubs.json'), 'utf8'));
     metadata = await metadataIndex(CACHE);
   });
@@ -178,19 +177,24 @@ export function register(test, equal, deepEqual) {
     equal(match.scorers.away.length, 0);
   });
 
-  test('OpenLigaDB Bundesliga fallback: Werder Bremen 0-4 Bayern reconciles with 90+4 stoppage time', async () => {
-    // The two clubs' own articles disagree on Kane's minute (74 vs 75), so
-    // Wikipedia's box is left unreconciled for this match and OpenLigaDB
-    // supplies it instead -- the brief's own oracle example.
-    const openLiga = JSON.parse(await readFile(join(DATA, 'o/de-2023.json'), 'utf8'));
+  test('minute-only disagreement uses the scorer club article and keeps Wikipedia scorers', async () => {
     const season = JSON.parse(await readFile(join(DATA, 's/de-2023.json'), 'utf8'));
     const match = findMatch(season, 'SV Werder Bremen', 'FC Bayern Munich');
-    equal(Boolean(match.scorers), false, 'Wikipedia box unreconciled for this fixture (minute conflict)');
-    const ligaMatch = openLiga.matches[match.key];
-    equal(Boolean(ligaMatch), true);
-    equal(ligaMatch.away.length, 4);
-    const tel = ligaMatch.away.find((event) => event.name === 'M. Tel');
-    equal(tel.minute, '90+4');
+    equal(Boolean(match.scorers), true);
+    equal(match.scorers.away.find((event) => event.display === 'Kane').minute, '75', 'Bayern article minute wins for Bayern scorer');
+    equal(match.scorers.away.at(-1).minute, '90+4');
+    equal((await readdir(join(DATA, 'o'))).includes('de-2023.json'), false, 'no ODbL file is emitted when every match has Wikipedia scorers');
+  });
+
+  test('Wikipedia goals are sorted by football minute including stoppage time', async () => {
+    const value = (minute) => { const [base, added = '0'] = String(minute ?? '9999').split('+'); return Number(base) * 100 + Number(added); };
+    for (const summary of index.seasons) {
+      const season = JSON.parse(await readFile(join(DATA, 's', `${summary.id}.json`), 'utf8'));
+      for (const match of season.matches) if (match.scorers) for (const side of ['home', 'away']) {
+        const minutes = match.scorers[side].map((event) => value(event.minute));
+        deepEqual(minutes, [...minutes].sort((a, b) => a - b), `${match.key} ${side}`);
+      }
+    }
   });
 
   test('every scorer resolves to a Wikidata id or is counted (no silent Latin-only fallback)', async () => {
@@ -213,12 +217,7 @@ export function register(test, equal, deepEqual) {
       equal(bytes <= 300 * 1024, true, bucketFile);
     }
     const japan = JSON.parse(await readFile(join(DATA, 'japan.json'), 'utf8'));
-    // Of the 101 curated Japanese players, those whose ja.wikipedia article
-    // uses the {{サッカー選手国内成績表}} template family (or the closely
-    // related literal-table variant with a country header row) parse to at
-    // least one top-flight season; a third, unsupported table layout (see
-    // the build report's "Spec discrepancies") accounts for the rest.
-    equal(japan.players.length >= 80, true, `expected at least 80 of 101, got ${japan.players.length}`);
+    equal(japan.players.length, 101);
     const mitoma = japan.players.find((player) => player.en === 'Kaoru Mitoma');
     equal(mitoma.ja.mode, 'kanji');
     equal(mitoma.ja.ruby, '{三笘|みとま} {薫|かおる}');
@@ -233,5 +232,30 @@ export function register(test, equal, deepEqual) {
     equal(hertha2, undefined, '2. Bundesliga season at Hertha must be excluded');
     const koln8081 = okudera.seasons.find((item) => item.season === '1980–81' && item.league === 'de');
     equal(koln8081.apps, 1); equal(koln8081.goals, 0);
+
+    const kamada = japan.players.find((player) => player.en === 'Daichi Kamada');
+    const frankfurt = kamada.seasons.find((item) => item.season === '2022–23' && item.league === 'de');
+    equal(frankfurt.apps, 32); equal(frankfurt.goals, 9, 'club-first literal table');
+
+    const onaiwu = japan.players.find((player) => player.en === 'Ado Onaiwu');
+    equal(onaiwu.ja.ruby, 'オナイウ {阿道|あど}');
+    const chase = japan.players.find((player) => player.en === 'Anrie Chase');
+    equal(chase.ja.mode, 'katakana'); equal(chase.ja.display, 'チェイス アンリ');
+    const havenaar = japan.players.find((player) => player.en === 'Mike Havenaar');
+    equal(havenaar.ja.mode, 'katakana'); equal(havenaar.ja.display, 'ハーフナー マイク');
+    const fujita = japan.players.find((player) => player.en === 'Joel Chima Fujita');
+    equal(fujita.ja.ruby, '{藤田|ふじた} {譲瑠|じょえる}チマ');
+  });
+
+  test('wrong-person scorer links are nulled and the curated Quaresma date is applied', async () => {
+    const oldSeason = JSON.parse(await readFile(join(DATA, 's/de-2004.json'), 'utf8'));
+    const quiroga = oldSeason.matches.flatMap((match) => match.scorers ? [...match.scorers.home, ...match.scorers.away] : []).find((scorer) => scorer.display === 'Quiroga');
+    equal(Boolean(quiroga), true); equal(quiroga.player, null, '1788 painter link is removed');
+    const futureBirth = JSON.parse(await readFile(join(DATA, 's/en-1997.json'), 'utf8'));
+    const thomas = futureBirth.matches.flatMap((match) => match.scorers ? [...match.scorers.home, ...match.scorers.away] : []).find((scorer) => scorer.display === 'Thomas' && scorer.player == null);
+    equal(Boolean(thomas), true, 'born-1992 same-name link is removed from 1997 scorer');
+    const bucketId = String(Math.abs([...'Q188241'].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 40).padStart(2, '0');
+    const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
+    equal(bucket.Q188241.birthDate, '1983-09-26');
   });
 }

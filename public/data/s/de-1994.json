@@ -53,11 +53,6 @@
             "player": "Q44522"
           },
           {
-            "display": "Effenberg",
-            "minute": "85",
-            "player": "Q44522"
-          },
-          {
             "display": "Kastenmaier",
             "minute": "23",
             "player": "Q315635"
@@ -81,6 +76,11 @@
             "display": "Schneider",
             "minute": "78",
             "player": "Q876666"
+          },
+          {
+            "display": "Effenberg",
+            "minute": "85",
+            "player": "Q44522"
           }
         ]
       },
@@ -622,14 +622,14 @@
             "player": "Q57548"
           },
           {
-            "display": "Labbadia",
-            "minute": "60",
-            "player": "Q57548"
-          },
-          {
             "display": "Polster",
             "minute": "51",
             "player": "Q311520"
+          },
+          {
+            "display": "Labbadia",
+            "minute": "60",
+            "player": "Q57548"
           }
         ]
       },
@@ -966,14 +966,14 @@
             "player": "Q310519"
           },
           {
-            "display": "Kirsten",
-            "minute": "75",
-            "player": "Q310519"
-          },
-          {
             "display": "Völler",
             "minute": "61",
             "player": "Q44464"
+          },
+          {
+            "display": "Kirsten",
+            "minute": "75",
+            "player": "Q310519"
           }
         ],
         "home": [
@@ -1102,6 +1102,21 @@
       "homeGoals": 2,
       "key": "de-1994-Q105861-Q141931",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Aden",
+            "minute": "31",
+            "player": "Q1624459"
+          },
+          {
+            "display": "von Ahlen",
+            "minute": "75",
+            "player": "Q980450"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1212,14 +1227,14 @@
             "player": "Q878703"
           },
           {
-            "display": "Wegmann",
-            "minute": "54",
-            "player": "Q878703"
-          },
-          {
             "display": "Heinemann",
             "minute": "47",
             "player": "Q876336"
+          },
+          {
+            "display": "Wegmann",
+            "minute": "54",
+            "player": "Q878703"
           },
           {
             "display": "Michalke",
@@ -2073,14 +2088,14 @@
             "player": "Q1605843"
           },
           {
-            "display": "Fuchs",
-            "minute": "73",
-            "player": "Q1605843"
-          },
-          {
             "display": "Spies",
             "minute": "62",
             "player": "Q118410"
+          },
+          {
+            "display": "Fuchs",
+            "minute": "73",
+            "player": "Q1605843"
           }
         ]
       },
@@ -4147,14 +4162,14 @@
             "player": "Q460830"
           },
           {
-            "display": "Spörl",
-            "minute": "50",
-            "player": "Q460830"
-          },
-          {
             "display": "Letchkov",
             "minute": "42",
             "player": "Q532156"
+          },
+          {
+            "display": "Spörl",
+            "minute": "50",
+            "player": "Q460830"
           }
         ]
       },
@@ -4652,15 +4667,15 @@
             "player": "Q437241"
           },
           {
-            "display": "Kuntz",
-            "minute": "86",
-            "player": "Q437241"
-          },
-          {
             "display": "Brehme",
             "minute": "80",
             "penalty": true,
             "player": "Q159045"
+          },
+          {
+            "display": "Kuntz",
+            "minute": "86",
+            "player": "Q437241"
           }
         ]
       },
@@ -4880,7 +4895,7 @@
         "id": "Q878703"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q1624459"
       },
       {
@@ -4906,6 +4921,10 @@
       {
         "goals": 1,
         "id": "Q2064088"
+      },
+      {
+        "goals": 1,
+        "id": "Q980450"
       },
       {
         "goals": 3,

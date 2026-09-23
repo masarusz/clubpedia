@@ -570,14 +570,14 @@
             "player": "Q313050"
           },
           {
-            "display": "Kovačević",
-            "minute": "88",
-            "player": "Q313050"
-          },
-          {
             "display": "Kavehci",
             "minute": "82",
             "player": "Q284359"
+          },
+          {
+            "display": "Kovačević",
+            "minute": "88",
+            "player": "Q313050"
           }
         ]
       },
@@ -2302,14 +2302,14 @@
             "player": "Q42731"
           },
           {
-            "display": "Torres",
-            "minute": "75",
-            "player": "Q42731"
-          },
-          {
             "display": "Rodríguez",
             "minute": "46",
             "player": "Q190929"
+          },
+          {
+            "display": "Torres",
+            "minute": "75",
+            "player": "Q42731"
           }
         ],
         "home": [
@@ -2375,6 +2375,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "37",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "56",
+            "player": "Q1255625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3185,6 +3200,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q8701-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "6",
+            "player": "Q1255625"
+          }
+        ],
+        "home": [
+          {
+            "display": "Torres",
+            "minute": "16",
+            "player": "Q42731"
+          },
+          {
+            "display": "Kežman",
+            "minute": "47",
+            "player": "Q204059"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3661,11 +3697,6 @@
             "player": "Q460541"
           },
           {
-            "display": "Canobbio",
-            "minute": "82",
-            "player": "Q460541"
-          },
-          {
             "display": "Larena",
             "minute": "46",
             "player": "Q1703860"
@@ -3674,6 +3705,11 @@
             "display": "Perera",
             "minute": "80",
             "player": "Q1378341"
+          },
+          {
+            "display": "Canobbio",
+            "minute": "82",
+            "player": "Q460541"
           }
         ]
       },
@@ -3916,6 +3952,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "López",
+            "minute": "61",
+            "player": "Q299360"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baiano",
+            "minute": "23",
+            "player": "Q707463"
+          },
+          {
+            "display": "Canobbio",
+            "minute": "52",
+            "player": "Q460541"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5215,11 +5272,11 @@
       },
       {
         "goals": 1,
-        "id": "Q314740"
+        "id": "Q519020"
       },
       {
         "goals": 1,
-        "id": "Q519020"
+        "id": "Q314740"
       },
       {
         "goals": 1,
@@ -5360,7 +5417,7 @@
         "id": "Q659634"
       },
       {
-        "goals": 22,
+        "goals": 25,
         "id": "Q1255625"
       },
       {
@@ -5442,7 +5499,11 @@
     ],
     "Q8701": [
       {
-        "goals": 2,
+        "goals": 1,
+        "id": "Q204059"
+      },
+      {
+        "goals": 3,
         "id": "Q42731"
       },
       {
@@ -5471,6 +5532,10 @@
       },
       {
         "goals": 1,
+        "id": "Q299360"
+      },
+      {
+        "goals": 1,
         "id": "Q358688"
       }
     ],
@@ -5478,6 +5543,10 @@
       {
         "goals": 1,
         "id": "Q460484"
+      },
+      {
+        "goals": 1,
+        "id": "Q216282"
       },
       {
         "goals": 1,
@@ -5490,15 +5559,11 @@
       {
         "goals": 1,
         "id": "Q715268"
-      },
-      {
-        "goals": 1,
-        "id": "Q216282"
       }
     ],
     "Q8749": [
       {
-        "goals": 13,
+        "goals": 14,
         "id": "Q707463"
       },
       {
@@ -5514,7 +5579,7 @@
         "id": "Q1703860"
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q460541"
       },
       {
@@ -5569,15 +5634,15 @@
       },
       {
         "goals": 1,
+        "id": "Q631157"
+      },
+      {
+        "goals": 1,
         "id": "Q2327879"
       },
       {
         "goals": 1,
         "id": "Q311095"
-      },
-      {
-        "goals": 1,
-        "id": "Q631157"
       }
     ],
     "Q8780": [
@@ -5620,6 +5685,11 @@
       {
         "goals": 1,
         "id": "Q350489"
+      },
+      {
+        "goals": 2,
+        "id": "Q311209",
+        "japan": true
       }
     ]
   },

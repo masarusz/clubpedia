@@ -80,6 +80,32 @@
       "homeGoals": 3,
       "key": "de-2001-Q101859-Q104761",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Neuville",
+            "minute": "87",
+            "player": "Q152972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ponte",
+            "minute": "40",
+            "player": "Q864670"
+          },
+          {
+            "display": "Marić",
+            "minute": "56",
+            "player": "Q113351"
+          },
+          {
+            "display": "Marić",
+            "minute": "77",
+            "player": "Q113351"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -240,6 +266,22 @@
       "homeGoals": 1,
       "key": "de-2001-Q101859-Q41420",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Heinrich",
+            "minute": "3",
+            "player": "Q390159"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marić",
+            "minute": "36",
+            "player": "Q113351"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -956,14 +998,14 @@
             "player": "Q310519"
           },
           {
-            "display": "Kirsten",
-            "minute": "81",
-            "player": "Q310519"
-          },
-          {
             "display": "Baştürk",
             "minute": "61",
             "player": "Q76322"
+          },
+          {
+            "display": "Kirsten",
+            "minute": "81",
+            "player": "Q310519"
           }
         ]
       },
@@ -1307,15 +1349,15 @@
             "player": "Q206644"
           },
           {
+            "display": "Ponte",
+            "minute": "6",
+            "player": "Q864670"
+          },
+          {
             "display": "Petrov",
             "minute": "50",
             "penalty": true,
             "player": "Q206644"
-          },
-          {
-            "display": "Ponte",
-            "minute": "6",
-            "player": "Q864670"
           },
           {
             "display": "Karhan",
@@ -1769,15 +1811,15 @@
             "player": "Q310519"
           },
           {
+            "display": "Ballack",
+            "minute": "43",
+            "player": "Q11948"
+          },
+          {
             "display": "Kirsten",
             "minute": "57",
             "penalty": true,
             "player": "Q310519"
-          },
-          {
-            "display": "Ballack",
-            "minute": "43",
-            "player": "Q11948"
           }
         ],
         "home": [
@@ -2949,6 +2991,31 @@
       "homeGoals": 4,
       "key": "de-2001-Q41420-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Amoroso",
+            "minute": "29",
+            "player": "Q309731"
+          },
+          {
+            "display": "Ricken",
+            "minute": "33",
+            "player": "Q506919"
+          },
+          {
+            "display": "Koller",
+            "minute": "41",
+            "player": "Q152340"
+          },
+          {
+            "display": "Rosický",
+            "minute": "84",
+            "player": "Q29162"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3730,15 +3797,15 @@
             "player": "Q309731"
           },
           {
+            "display": "Rosický",
+            "minute": "38",
+            "player": "Q29162"
+          },
+          {
             "display": "Amoroso",
             "minute": "62",
             "penalty": true,
             "player": "Q309731"
-          },
-          {
-            "display": "Rosický",
-            "minute": "38",
-            "player": "Q29162"
           },
           {
             "display": "Koller",
@@ -4502,7 +4569,7 @@
         "id": "Q206644"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q864670"
       },
       {
@@ -4789,18 +4856,18 @@
     "Q41420": [
       {
         "goals": 2,
-        "id": "Q167241"
-      },
-      {
-        "goals": 2,
         "id": "Q567434"
       },
       {
-        "goals": 5,
+        "goals": 2,
+        "id": "Q167241"
+      },
+      {
+        "goals": 6,
         "id": "Q506919"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q390159"
       },
       {
@@ -4829,11 +4896,11 @@
         "id": "Q58762"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q152340"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q29162"
       }
     ],

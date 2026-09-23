@@ -60,7 +60,7 @@
         ],
         "home": [
           {
-            "display": "Mendes",
+            "display": "L. Mendes",
             "minute": "43",
             "player": "Q602311"
           }
@@ -877,11 +877,6 @@
             "player": "Q31760"
           },
           {
-            "display": "Jussiê",
-            "minute": "68",
-            "player": "Q31760"
-          },
-          {
             "display": "Sertic",
             "minute": "50",
             "player": "Q31783"
@@ -890,6 +885,11 @@
             "display": "Maurice-Belay",
             "minute": "54",
             "player": "Q31684"
+          },
+          {
+            "display": "Jussiê",
+            "minute": "68",
+            "player": "Q31760"
           }
         ]
       },
@@ -1155,15 +1155,15 @@
             "player": "Q368441"
           },
           {
+            "display": "Raggi",
+            "minute": "72",
+            "player": "Q494887"
+          },
+          {
             "display": "Rodríguez",
             "minute": "76",
             "penalty": true,
             "player": "Q368441"
-          },
-          {
-            "display": "Raggi",
-            "minute": "72",
-            "player": "Q494887"
           }
         ]
       },
@@ -1503,7 +1503,7 @@
         ],
         "home": [
           {
-            "display": "Silva",
+            "display": "Thiago Silva",
             "minute": "74",
             "ownGoal": true,
             "player": "Q210453"
@@ -1816,6 +1816,17 @@
       "homeGoals": 0,
       "key": "fr-2013-Q185163-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kolodziejczak",
+            "minute": "52",
+            "ownGoal": true,
+            "player": "Q177595"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2078,6 +2089,27 @@
       "homeGoals": 1,
       "key": "fr-2013-Q192071-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cavani",
+            "minute": "24",
+            "player": "Q167790"
+          },
+          {
+            "display": "Lavezzi",
+            "minute": "73",
+            "player": "Q275415"
+          }
+        ],
+        "home": [
+          {
+            "display": "Djilobodji",
+            "minute": "52",
+            "player": "Q3362956"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2280,14 +2312,14 @@
             "player": "Q1153015"
           },
           {
-            "display": "Toivonen",
-            "minute": "82",
-            "player": "Q11956"
-          },
-          {
             "display": "Makoun",
             "minute": "59",
             "player": "Q213119"
+          },
+          {
+            "display": "Toivonen",
+            "minute": "82",
+            "player": "Q11956"
           }
         ]
       },
@@ -2362,6 +2394,33 @@
       "homeGoals": 1,
       "key": "fr-2013-Q19509-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Motta",
+            "minute": "19",
+            "player": "Q191885"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q46896"
+          },
+          {
+            "display": "Cavani",
+            "minute": "90+1",
+            "player": "Q167790"
+          }
+        ],
+        "home": [
+          {
+            "display": "Alessandrini",
+            "minute": "67",
+            "player": "Q1153015"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2655,6 +2714,23 @@
       "homeGoals": 1,
       "key": "fr-2013-Q19512-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cavani",
+            "minute": "24",
+            "player": "Q167790"
+          }
+        ],
+        "home": [
+          {
+            "display": "Thiago Silva",
+            "minute": "56",
+            "ownGoal": true,
+            "player": "Q210453"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2945,6 +3021,22 @@
       "homeGoals": 1,
       "key": "fr-2013-Q19513-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Maxwell",
+            "minute": "60",
+            "player": "Q215040"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cabella",
+            "minute": "10",
+            "player": "Q716134"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2978,11 +3070,6 @@
             "player": "Q969544"
           },
           {
-            "display": "Montaño",
-            "minute": "68",
-            "player": "Q969544"
-          },
-          {
             "display": "Mounier",
             "minute": "45",
             "player": "Q441436"
@@ -2997,6 +3084,11 @@
             "display": "Cabella",
             "minute": "66",
             "player": "Q716134"
+          },
+          {
+            "display": "Montaño",
+            "minute": "68",
+            "player": "Q969544"
           }
         ]
       },
@@ -3434,6 +3526,22 @@
       "homeGoals": 1,
       "key": "fr-2013-Q19518-Q132885",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "L. Mendes",
+            "minute": "84",
+            "player": "Q602311"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ben Yedder",
+            "minute": "66",
+            "player": "Q137128"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3744,6 +3852,43 @@
       "homeGoals": 2,
       "key": "fr-2013-Q19518-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "32",
+            "penalty": true,
+            "player": "Q46896"
+          },
+          {
+            "display": "Lavezzi",
+            "minute": "56",
+            "player": "Q275415"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "68",
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "89",
+            "player": "Q46896"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ben Yedder",
+            "minute": "44",
+            "player": "Q137128"
+          },
+          {
+            "display": "Ben Yedder",
+            "minute": "72",
+            "player": "Q137128"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4067,6 +4212,32 @@
       "homeGoals": 2,
       "key": "fr-2013-Q19521-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cavani",
+            "minute": "68",
+            "player": "Q167790"
+          },
+          {
+            "display": "Matuidi",
+            "minute": "90+4",
+            "player": "Q1921"
+          }
+        ],
+        "home": [
+          {
+            "display": "Corgnet",
+            "minute": "18",
+            "player": "Q631392"
+          },
+          {
+            "display": "Hamouma",
+            "minute": "51",
+            "player": "Q2377727"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4408,6 +4579,26 @@
       "homeGoals": 0,
       "key": "fr-2013-Q208228-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lucas",
+            "minute": "25",
+            "player": "Q312886"
+          },
+          {
+            "display": "Ménez",
+            "minute": "60",
+            "player": "Q1923"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "90+1",
+            "player": "Q46896"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4738,7 +4929,7 @@
           {
             "display": "Camara",
             "minute": "4",
-            "player": "Q2821756"
+            "player": null
           }
         ],
         "home": [
@@ -4832,7 +5023,7 @@
         "away": [
           {
             "display": "Ibrahimović",
-            "minute": "6",
+            "minute": "7",
             "player": "Q46896"
           },
           {
@@ -4933,6 +5124,16 @@
       "homeGoals": 0,
       "key": "fr-2013-Q212269-Q132885",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gignac",
+            "minute": "88",
+            "player": "Q1940"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5168,6 +5369,16 @@
       "homeGoals": 0,
       "key": "fr-2013-Q212269-Q19516",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rodelin",
+            "minute": "46",
+            "player": "Q915552"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5215,14 +5426,14 @@
             "player": "Q631392"
           },
           {
-            "display": "Corgnet",
-            "minute": "53",
-            "player": "Q631392"
-          },
-          {
             "display": "Hamouma",
             "minute": "47",
             "player": "Q2377727"
+          },
+          {
+            "display": "Corgnet",
+            "minute": "53",
+            "player": "Q631392"
           }
         ],
         "home": [
@@ -5268,6 +5479,37 @@
       "homeGoals": 3,
       "key": "fr-2013-Q212269-Q208399",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Romaric",
+            "minute": "71",
+            "player": "Q159319"
+          },
+          {
+            "display": "Ilan",
+            "minute": "82",
+            "player": "Q27852"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dossevi",
+            "minute": "33",
+            "player": "Q116566"
+          },
+          {
+            "display": "Dossevi",
+            "minute": "35",
+            "player": "Q116566"
+          },
+          {
+            "display": "Waris",
+            "minute": "54",
+            "player": "Q317347"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5682,14 +5924,14 @@
             "player": "Q128915"
           },
           {
-            "display": "Pujol",
-            "minute": "90+3",
-            "player": "Q128915"
-          },
-          {
             "display": "Dossevi",
             "minute": "67",
             "player": "Q116566"
+          },
+          {
+            "display": "Pujol",
+            "minute": "90+3",
+            "player": "Q128915"
           }
         ],
         "home": [
@@ -5728,6 +5970,27 @@
       "homeGoals": 1,
       "key": "fr-2013-Q270051-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lavezzi",
+            "minute": "41",
+            "player": "Q275415"
+          },
+          {
+            "display": "Matuidi",
+            "minute": "74",
+            "player": "Q1921"
+          }
+        ],
+        "home": [
+          {
+            "display": "Eduardo",
+            "minute": "6",
+            "player": "Q27772"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6026,6 +6289,21 @@
       "homeGoals": 2,
       "key": "fr-2013-Q333838-Q483020",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "N'Sikulu",
+            "minute": "75",
+            "player": "Q16024902"
+          },
+          {
+            "display": "Sougou",
+            "minute": "87",
+            "player": "Q666866"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6304,6 +6582,22 @@
       "homeGoals": 1,
       "key": "fr-2013-Q459148-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Alex",
+            "minute": "87",
+            "player": "Q216142"
+          }
+        ],
+        "home": [
+          {
+            "display": "Yatabaré",
+            "minute": "84",
+            "player": "Q1377559"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6347,7 +6641,7 @@
           {
             "display": "Maxwell",
             "minute": "50",
-            "player": null
+            "player": "Q215040"
           },
           {
             "display": "Cavani",
@@ -6414,6 +6708,33 @@
       "homeGoals": 3,
       "key": "fr-2013-Q483020-Q185163",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pejčinović",
+            "minute": "70",
+            "player": "Q717328"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ibrahimović",
+            "minute": "39",
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "57",
+            "penalty": true,
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "75",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6423,6 +6744,37 @@
       "homeGoals": 5,
       "key": "fr-2013-Q483020-Q192071",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Thiago Silva",
+            "minute": "10",
+            "player": "Q210453"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "36",
+            "penalty": true,
+            "player": "Q46896"
+          },
+          {
+            "display": "Motta",
+            "minute": "51",
+            "player": "Q191885"
+          },
+          {
+            "display": "Cavani",
+            "minute": "58",
+            "player": "Q167790"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "64",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6432,6 +6784,27 @@
       "homeGoals": 1,
       "key": "fr-2013-Q483020-Q19509",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kadir",
+            "minute": "23",
+            "player": "Q116997"
+          },
+          {
+            "display": "Ntep",
+            "minute": "27",
+            "player": "Q7152148"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lavezzi",
+            "minute": "3",
+            "player": "Q275415"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6441,6 +6814,36 @@
       "homeGoals": 5,
       "key": "fr-2013-Q483020-Q19512",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Thiago Silva",
+            "minute": "14",
+            "player": "Q210453"
+          },
+          {
+            "display": "Lavezzi",
+            "minute": "47",
+            "player": "Q275415"
+          },
+          {
+            "display": "Cavani",
+            "minute": "62",
+            "player": "Q167790"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "87",
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "90+2",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6450,6 +6853,31 @@
       "homeGoals": 4,
       "key": "fr-2013-Q483020-Q19513",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lavezzi",
+            "minute": "2",
+            "player": "Q275415"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "20",
+            "player": "Q46896"
+          },
+          {
+            "display": "Lucas",
+            "minute": "49",
+            "player": "Q312886"
+          },
+          {
+            "display": "Rabiot",
+            "minute": "88",
+            "player": "Q18962"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6459,33 +6887,6 @@
       "homeGoals": 2,
       "key": "fr-2013-Q483020-Q19516",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Mavuba",
-            "minute": "44",
-            "player": "Q314541"
-          },
-          {
-            "display": "Kalou",
-            "minute": "53",
-            "player": "Q180462"
-          }
-        ],
-        "home": [
-          {
-            "display": "Ibrahimović",
-            "minute": "36",
-            "player": "Q46896"
-          },
-          {
-            "display": "Baša",
-            "minute": "72",
-            "ownGoal": true,
-            "player": "Q705220"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -6495,6 +6896,22 @@
       "homeGoals": 2,
       "key": "fr-2013-Q483020-Q19518",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Marquinhos",
+            "minute": "41",
+            "player": "Q39230"
+          },
+          {
+            "display": "Cavani",
+            "minute": "79",
+            "penalty": true,
+            "player": "Q167790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6504,6 +6921,21 @@
       "homeGoals": 2,
       "key": "fr-2013-Q483020-Q19521",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ibrahimović",
+            "minute": "14",
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "41",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6513,6 +6945,28 @@
       "homeGoals": 3,
       "key": "fr-2013-Q483020-Q208228",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cavani",
+            "minute": "43",
+            "player": "Q167790"
+          },
+          {
+            "display": "Mandi",
+            "minute": "48",
+            "ownGoal": true,
+            "player": "Q2876432"
+          },
+          {
+            "display": "Mandi",
+            "minute": "89",
+            "ownGoal": true,
+            "player": "Q2876432"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6537,7 +6991,7 @@
           },
           {
             "display": "Cavani",
-            "minute": "62",
+            "minute": "63",
             "player": "Q167790"
           },
           {
@@ -6587,6 +7041,22 @@
       "homeGoals": 1,
       "key": "fr-2013-Q483020-Q270051",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pedretti",
+            "minute": "9",
+            "player": "Q355820"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cavani",
+            "minute": "86",
+            "player": "Q167790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6596,6 +7066,16 @@
       "homeGoals": 1,
       "key": "fr-2013-Q483020-Q333838",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Matuidi",
+            "minute": "89",
+            "player": "Q1921"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6605,6 +7085,21 @@
       "homeGoals": 2,
       "key": "fr-2013-Q483020-Q459148",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rabiot",
+            "minute": "90+2",
+            "player": "Q18962"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "90+3",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6614,6 +7109,31 @@
       "homeGoals": 4,
       "key": "fr-2013-Q483020-Q48911",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lucas",
+            "minute": "3",
+            "player": "Q312886"
+          },
+          {
+            "display": "Ménez",
+            "minute": "39",
+            "player": "Q1923"
+          },
+          {
+            "display": "Cavani",
+            "minute": "43",
+            "player": "Q167790"
+          },
+          {
+            "display": "Cavani",
+            "minute": "81",
+            "player": "Q167790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6638,15 +7158,15 @@
             "player": "Q46896"
           },
           {
+            "display": "Thiago Silva",
+            "minute": "60",
+            "player": "Q210453"
+          },
+          {
             "display": "Ibrahimović",
             "minute": "83",
             "penalty": true,
             "player": "Q46896"
-          },
-          {
-            "display": "Thiago Silva",
-            "minute": "60",
-            "player": "Q210453"
           }
         ]
       },
@@ -6916,6 +7436,16 @@
       "homeGoals": 0,
       "key": "fr-2013-Q48911-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Motta",
+            "minute": "41",
+            "player": "Q191885"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -7020,6 +7550,37 @@
       "homeGoals": 2,
       "key": "fr-2013-Q704-Q180305",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Germain",
+            "minute": "4",
+            "player": "Q3554195"
+          },
+          {
+            "display": "Rodríguez",
+            "minute": "27",
+            "player": "Q368441"
+          },
+          {
+            "display": "Berbatov",
+            "minute": "52",
+            "player": "Q170235"
+          }
+        ],
+        "home": [
+          {
+            "display": "Briand",
+            "minute": "32",
+            "player": "Q342312"
+          },
+          {
+            "display": "Briand",
+            "minute": "78",
+            "player": "Q342312"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7038,14 +7599,14 @@
             "player": "Q13306"
           },
           {
-            "display": "Lacazette",
-            "minute": "69",
-            "player": "Q13306"
-          },
-          {
             "display": "Grenier",
             "minute": "54",
             "player": "Q195130"
+          },
+          {
+            "display": "Lacazette",
+            "minute": "69",
+            "player": "Q13306"
           },
           {
             "display": "Gourcuff",
@@ -7275,6 +7836,22 @@
       "homeGoals": 1,
       "key": "fr-2013-Q704-Q212269",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bahebeck",
+            "minute": "66",
+            "player": "Q60583"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gomis",
+            "minute": "16",
+            "player": "Q11966"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7460,7 +8037,7 @@
         "id": "Q445477"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q602311"
       }
     ],
@@ -7517,7 +8094,7 @@
     ],
     "Q180305": [
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q170235"
       },
       {
@@ -7537,7 +8114,7 @@
         "id": "Q222151"
       },
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q368441"
       },
       {
@@ -7557,7 +8134,7 @@
         "id": "Q194579"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q3554195"
       },
       {
@@ -7592,6 +8169,10 @@
       },
       {
         "goals": 1,
+        "id": "Q717328"
+      },
+      {
+        "goals": 1,
         "id": "Q1392781"
       },
       {
@@ -7609,7 +8190,7 @@
     ],
     "Q192071": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3362956"
       },
       {
@@ -7663,11 +8244,11 @@
         "id": "Q213119"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q116997"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q1153015"
       },
       {
@@ -7681,6 +8262,10 @@
       {
         "goals": 1,
         "id": "Q14638133"
+      },
+      {
+        "goals": 1,
+        "id": "Q7152148"
       }
     ],
     "Q19512": [
@@ -7698,15 +8283,15 @@
       },
       {
         "goals": 1,
+        "id": "Q1875129"
+      },
+      {
+        "goals": 1,
         "id": "Q1979802"
       },
       {
         "goals": 2,
         "id": "Q202254"
-      },
-      {
-        "goals": 1,
-        "id": "Q1875129"
       },
       {
         "goals": 1,
@@ -7775,10 +8360,6 @@
         "id": "Q46679"
       },
       {
-        "goals": 1,
-        "id": "Q314541"
-      },
-      {
         "goals": 8,
         "id": "Q561020"
       },
@@ -7787,7 +8368,7 @@
         "id": "Q705220"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q915552"
       },
       {
@@ -7836,6 +8417,10 @@
         "id": "Q714036"
       },
       {
+        "goals": 1,
+        "id": "Q2499244"
+      },
+      {
         "goals": 3,
         "id": "Q183210"
       },
@@ -7853,11 +8438,7 @@
         "id": "Q1964674"
       },
       {
-        "goals": 3,
-        "id": "Q631392"
-      },
-      {
-        "goals": 6,
+        "goals": 7,
         "id": "Q2377727"
       },
       {
@@ -7865,8 +8446,8 @@
         "id": "Q60594"
       },
       {
-        "goals": 1,
-        "id": "Q2499244"
+        "goals": 4,
+        "id": "Q631392"
       },
       {
         "goals": 1,
@@ -7933,6 +8514,10 @@
         "id": "Q1936"
       },
       {
+        "goals": 1,
+        "id": "Q27852"
+      },
+      {
         "goals": 3,
         "id": "Q1942"
       },
@@ -7941,7 +8526,7 @@
         "id": "Q27794"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q159319"
       },
       {
@@ -7991,15 +8576,15 @@
         "id": "Q368416"
       },
       {
+        "goals": 4,
+        "id": "Q128915"
+      },
+      {
         "goals": 1,
         "id": "Q60550"
       },
       {
         "goals": 4,
-        "id": "Q128915"
-      },
-      {
-        "goals": 2,
         "id": "Q116566"
       },
       {
@@ -8019,7 +8604,7 @@
         "id": "Q1399563"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q60583"
       },
       {
@@ -8027,7 +8612,7 @@
         "id": "Q128970"
       },
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q317347"
       },
       {
@@ -8038,10 +8623,14 @@
     "Q270051": [
       {
         "goals": 1,
-        "id": "Q472513"
+        "id": "Q355820"
       },
       {
         "goals": 1,
+        "id": "Q472513"
+      },
+      {
+        "goals": 2,
         "id": "Q27772"
       },
       {
@@ -8059,10 +8648,6 @@
       {
         "goals": 4,
         "id": "Q4202708"
-      },
-      {
-        "goals": 1,
-        "id": "Q2821756"
       },
       {
         "goals": 1,
@@ -8087,12 +8672,16 @@
         "id": "Q44745"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q666866"
       },
       {
         "goals": 3,
         "id": "Q44885"
+      },
+      {
+        "goals": 1,
+        "id": "Q16024902"
       }
     ],
     "Q459148": [
@@ -8101,12 +8690,12 @@
         "id": "Q2978523"
       },
       {
-        "goals": 2,
-        "id": "Q1377559"
-      },
-      {
         "goals": 1,
         "id": "Q1367689"
+      },
+      {
+        "goals": 3,
+        "id": "Q1377559"
       },
       {
         "goals": 1,
@@ -8119,7 +8708,7 @@
     ],
     "Q483020": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q216142"
       },
       {
@@ -8128,7 +8717,7 @@
         "topScorerRank": 1
       },
       {
-        "goals": 2,
+        "goals": 5,
         "id": "Q312886"
       },
       {
@@ -8137,11 +8726,19 @@
         "topScorerRank": 2
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q210453"
       },
       {
+        "goals": 3,
+        "id": "Q191885"
+      },
+      {
         "goals": 2,
+        "id": "Q1923"
+      },
+      {
+        "goals": 5,
         "id": "Q1921"
       },
       {
@@ -8149,15 +8746,19 @@
         "id": "Q276434"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q215040"
       },
       {
-        "goals": 3,
+        "goals": 9,
         "id": "Q275415"
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q18962"
+      },
+      {
+        "goals": 2,
         "id": "Q39230"
       }
     ],
@@ -8172,6 +8773,10 @@
       },
       {
         "goals": 1,
+        "id": "Q568977"
+      },
+      {
+        "goals": 1,
         "id": "Q980132"
       },
       {
@@ -8179,17 +8784,13 @@
         "id": "Q438616"
       },
       {
-        "goals": 1,
-        "id": "Q568977"
+        "goals": 16,
+        "id": "Q116743",
+        "topScorerRank": 2
       },
       {
         "goals": 2,
         "id": "Q928931"
-      },
-      {
-        "goals": 16,
-        "id": "Q116743",
-        "topScorerRank": 2
       },
       {
         "goals": 1,
@@ -8202,7 +8803,7 @@
     ],
     "Q704": [
       {
-        "goals": 4,
+        "goals": 6,
         "id": "Q342312"
       },
       {

@@ -107,7 +107,7 @@ export function parseSeason({ league, year, sources, metadata }) {
     const reason = adjustment ? tableNote(table.params, code) : '';
     if (adjustment && !reason) throw new Error(`${seasonId} ${code}: adjustment ${adjustment} has no note`);
     return {
-      position: index + 1, club: meta.wikibaseItem, sourceTitle: meta.title, sourceName: link.label || plainText(rawName),
+      position: index + 1, club: meta.wikibaseItem, sourceTitle: meta.title, sourceTarget: link.target, sourceName: link.label || plainText(rawName),
       w, d, l, gf: integer(param(table.params, `gf_${code}`), `${seasonId} ${code} GF`),
       ga: integer(param(table.params, `ga_${code}`), `${seasonId} ${code} GA`),
       points: override ?? winPoints * w + drawPoints * d + lossPoints * l + adjustment,

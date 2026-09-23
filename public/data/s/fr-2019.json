@@ -185,6 +185,11 @@
         ],
         "home": [
           {
+            "display": "Koné",
+            "minute": "7",
+            "player": "Q2011106"
+          },
+          {
             "display": "Thomasson",
             "minute": "27",
             "player": "Q18938815"
@@ -193,11 +198,6 @@
             "display": "Ajorque",
             "minute": "48",
             "player": "Q27671219"
-          },
-          {
-            "display": "Koné",
-            "minute": "7",
-            "player": "Q2011106"
           },
           {
             "display": "Mothiba",
@@ -384,6 +384,22 @@
       "homeGoals": 2,
       "key": "fr-2019-Q132885-Q126334",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Kamara",
+            "minute": "3",
+            "player": "Q29962926"
+          },
+          {
+            "display": "Strootman",
+            "minute": "90+4",
+            "penalty": true,
+            "player": "Q310548"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -643,6 +659,33 @@
       "homeGoals": 3,
       "key": "fr-2019-Q132885-Q730809",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Briançon",
+            "minute": "90+2",
+            "player": "Q18685008"
+          }
+        ],
+        "home": [
+          {
+            "display": "Alakouch",
+            "minute": "47",
+            "ownGoal": true,
+            "player": "Q27671473"
+          },
+          {
+            "display": "Benedetto",
+            "minute": "65",
+            "player": "Q5799498"
+          },
+          {
+            "display": "Payet",
+            "minute": "81",
+            "player": "Q376247"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -838,6 +881,17 @@
       "homeGoals": 0,
       "key": "fr-2019-Q172476-Q19521",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bouanga",
+            "minute": "90+2",
+            "penalty": true,
+            "player": "Q21620919"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1174,14 +1228,14 @@
             "player": "Q137128"
           },
           {
-            "display": "Ben Yedder",
-            "minute": "90+3",
-            "player": "Q137128"
-          },
-          {
             "display": "Slimani",
             "minute": "57",
             "player": "Q1347269"
+          },
+          {
+            "display": "Ben Yedder",
+            "minute": "90+3",
+            "player": "Q137128"
           }
         ]
       },
@@ -1333,11 +1387,6 @@
             "player": "Q21621995"
           },
           {
-            "display": "Mbappé",
-            "minute": "90+1",
-            "player": "Q21621995"
-          },
-          {
             "display": "Neymar",
             "minute": "45+2",
             "penalty": true,
@@ -1347,6 +1396,11 @@
             "display": "Sarabia",
             "minute": "72",
             "player": "Q510165"
+          },
+          {
+            "display": "Mbappé",
+            "minute": "90+1",
+            "player": "Q21621995"
           }
         ],
         "home": [
@@ -1388,14 +1442,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Depay",
-            "minute": "36",
-            "player": "Q1894"
-          },
-          {
             "display": "Dembélé",
             "minute": "5",
             "player": "Q15358470"
+          },
+          {
+            "display": "Depay",
+            "minute": "36",
+            "player": "Q1894"
           },
           {
             "display": "Tousart",
@@ -2367,14 +2421,14 @@
             "player": "Q28861547"
           },
           {
-            "display": "Raphinha",
-            "minute": "90+6",
-            "player": "Q28861547"
+            "display": "Bourigeaud",
+            "minute": "90+5",
+            "player": "Q17097967"
           },
           {
-            "display": "Bourigeaud",
-            "minute": "90+4",
-            "player": "Q17097967"
+            "display": "Raphinha",
+            "minute": "90+7",
+            "player": "Q28861547"
           }
         ]
       },
@@ -2401,12 +2455,6 @@
             "player": "Q14780804"
           },
           {
-            "display": "Hunou",
-            "minute": "87",
-            "penalty": true,
-            "player": "Q14780804"
-          },
-          {
             "display": "Tait",
             "minute": "68",
             "player": "Q21623024"
@@ -2416,6 +2464,12 @@
             "minute": "73",
             "penalty": true,
             "player": "Q21584345"
+          },
+          {
+            "display": "Hunou",
+            "minute": "87",
+            "penalty": true,
+            "player": "Q14780804"
           }
         ]
       },
@@ -2555,6 +2609,27 @@
       "homeGoals": 2,
       "key": "fr-2019-Q19509-Q483020",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cavani",
+            "minute": "36",
+            "player": "Q167790"
+          }
+        ],
+        "home": [
+          {
+            "display": "Niang",
+            "minute": "44",
+            "player": "Q26522"
+          },
+          {
+            "display": "Del Castillo",
+            "minute": "48",
+            "player": "Q21584345"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3239,6 +3314,27 @@
       "homeGoals": 3,
       "key": "fr-2019-Q19516-Q19521",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Osimhen",
+            "minute": "37",
+            "player": "Q25253293"
+          },
+          {
+            "display": "Bamba",
+            "minute": "69",
+            "penalty": true,
+            "player": "Q18921387"
+          },
+          {
+            "display": "Osimhen",
+            "minute": "74",
+            "player": "Q25253293"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3621,6 +3717,11 @@
       "scorers": {
         "away": [
           {
+            "display": "Court",
+            "minute": "8",
+            "player": "Q3572352"
+          },
+          {
             "display": "Charbonnier",
             "minute": "72",
             "player": "Q2624280"
@@ -3634,11 +3735,6 @@
             "display": "Mbock",
             "minute": "79",
             "player": "Q66584134"
-          },
-          {
-            "display": "Court",
-            "minute": "8",
-            "player": "Q3572352"
           },
           {
             "display": "Cardona",
@@ -4028,31 +4124,6 @@
       "homeGoals": 0,
       "key": "fr-2019-Q19521-Q483020",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Paredes",
-            "minute": "10",
-            "player": "Q630170"
-          },
-          {
-            "display": "Mbappé",
-            "minute": "44",
-            "player": "Q21621995"
-          },
-          {
-            "display": "Mbappé",
-            "minute": "90",
-            "player": "Q21621995"
-          },
-          {
-            "display": "Icardi",
-            "minute": "74",
-            "player": "Q136986"
-          }
-        ],
-        "home": []
-      },
       "status": "played"
     },
     {
@@ -5319,16 +5390,16 @@
             "player": "Q142794"
           },
           {
-            "display": "Neymar",
-            "minute": "42",
-            "penalty": true,
-            "player": "Q142794"
-          },
-          {
             "display": "Ballo-Touré",
             "minute": "24",
             "ownGoal": true,
             "player": "Q35124488"
+          },
+          {
+            "display": "Neymar",
+            "minute": "42",
+            "penalty": true,
+            "player": "Q142794"
           }
         ]
       },
@@ -5439,15 +5510,15 @@
             "player": "Q309532"
           },
           {
-            "display": "Choupo-Moting",
-            "minute": "75",
-            "player": "Q309532"
-          },
-          {
             "display": "Gonçalves",
             "minute": "55",
             "ownGoal": true,
             "player": "Q60050196"
+          },
+          {
+            "display": "Choupo-Moting",
+            "minute": "75",
+            "player": "Q309532"
           },
           {
             "display": "Marquinhos",
@@ -5503,14 +5574,14 @@
             "player": "Q21621995"
           },
           {
-            "display": "Mbappé",
-            "minute": "90+1",
-            "player": "Q21621995"
-          },
-          {
             "display": "Icardi",
             "minute": "76",
             "player": "Q136986"
+          },
+          {
+            "display": "Mbappé",
+            "minute": "90+1",
+            "player": "Q21621995"
           }
         ]
       },
@@ -5648,14 +5719,14 @@
             "player": "Q21621995"
           },
           {
-            "display": "Mbappé",
-            "minute": "65",
-            "player": "Q21621995"
-          },
-          {
             "display": "Neymar",
             "minute": "46",
             "player": "Q142794"
+          },
+          {
+            "display": "Mbappé",
+            "minute": "65",
+            "player": "Q21621995"
           },
           {
             "display": "Icardi",
@@ -5918,14 +5989,14 @@
       "scorers": {
         "away": [
           {
-            "display": "Aholou",
-            "minute": "11",
-            "player": "Q27736740"
-          },
-          {
             "display": "Hamouma",
             "minute": "5",
             "player": "Q2377727"
+          },
+          {
+            "display": "Aholou",
+            "minute": "11",
+            "player": "Q27736740"
           }
         ],
         "home": [
@@ -5951,12 +6022,12 @@
         "home": [
           {
             "display": "Baldé",
-            "minute": "20",
+            "minute": "3",
             "player": "Q16914022"
           },
           {
             "display": "Baldé",
-            "minute": "3",
+            "minute": "20",
             "player": "Q16914022"
           },
           {
@@ -6020,14 +6091,14 @@
         ],
         "home": [
           {
-            "display": "Cádiz",
-            "minute": "47",
-            "player": "Q18223720"
-          },
-          {
             "display": "Chouiar",
             "minute": "45+6",
             "player": "Q26251608"
+          },
+          {
+            "display": "Cádiz",
+            "minute": "47",
+            "player": "Q18223720"
           }
         ]
       },
@@ -6192,6 +6263,26 @@
       "homeGoals": 3,
       "key": "fr-2019-Q704-Q19518",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cornet",
+            "minute": "29",
+            "player": "Q15081929"
+          },
+          {
+            "display": "Dembélé",
+            "minute": "72",
+            "player": "Q15358470"
+          },
+          {
+            "display": "Toko Ekambi",
+            "minute": "77",
+            "player": "Q18002292"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7163,6 +7254,11 @@
         "away": [
           {
             "display": "Adli",
+            "minute": "9",
+            "player": "Q53798193"
+          },
+          {
+            "display": "Adli",
             "minute": "45+1",
             "player": "Q53798193"
           },
@@ -7170,11 +7266,6 @@
             "display": "Kalu",
             "minute": "73",
             "player": "Q23007898"
-          },
-          {
-            "display": "Adli",
-            "minute": "9",
-            "player": "Q53798193"
           }
         ],
         "home": [
@@ -7410,11 +7501,6 @@
             "player": "Q18637429"
           },
           {
-            "display": "Guirassy",
-            "minute": "90+1",
-            "player": "Q18637429"
-          },
-          {
             "display": "Kakuta",
             "minute": "29",
             "player": "Q299703"
@@ -7423,6 +7509,11 @@
             "display": "Diabaté",
             "minute": "40",
             "player": "Q40991902"
+          },
+          {
+            "display": "Guirassy",
+            "minute": "90+1",
+            "player": "Q18637429"
           }
         ]
       },
@@ -7464,12 +7555,12 @@
         "away": [
           {
             "display": "Dembélé",
-            "minute": "34",
+            "minute": "9",
             "player": "Q15358470"
           },
           {
             "display": "Dembélé",
-            "minute": "9",
+            "minute": "34",
             "player": "Q15358470"
           }
         ],
@@ -7560,17 +7651,21 @@
         "id": "Q23771922"
       },
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q376247"
+      },
+      {
+        "goals": 1,
+        "id": "Q17612806"
+      },
+      {
+        "goals": 1,
+        "id": "Q29962926"
       },
       {
         "goals": 11,
         "id": "Q5799498",
         "topScorerRank": 8
-      },
-      {
-        "goals": 1,
-        "id": "Q17612806"
       },
       {
         "goals": 2,
@@ -7585,7 +7680,7 @@
         "id": "Q4949787"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q310548"
       }
     ],
@@ -7755,12 +7850,12 @@
         "id": "Q15900645"
       },
       {
-        "goals": 1,
-        "id": "Q1059176"
-      },
-      {
         "goals": 5,
         "id": "Q22003400"
+      },
+      {
+        "goals": 1,
+        "id": "Q1059176"
       },
       {
         "goals": 1,
@@ -7830,7 +7925,7 @@
         "id": "Q21623024"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q21584345"
       },
       {
@@ -7852,6 +7947,10 @@
         "id": "Q18001481"
       },
       {
+        "goals": 2,
+        "id": "Q3390121"
+      },
+      {
         "goals": 1,
         "id": "Q19973690"
       },
@@ -7866,10 +7965,6 @@
       {
         "goals": 1,
         "id": "Q3374050"
-      },
-      {
-        "goals": 2,
-        "id": "Q3390121"
       }
     ],
     "Q19516": [
@@ -7884,6 +7979,10 @@
       {
         "goals": 1,
         "id": "Q25175970"
+      },
+      {
+        "goals": 1,
+        "id": "Q18921387"
       },
       {
         "goals": 2,
@@ -8081,12 +8180,12 @@
         "id": "Q27671254"
       },
       {
-        "goals": 1,
-        "id": "Q66584134"
-      },
-      {
         "goals": 3,
         "id": "Q3572352"
+      },
+      {
+        "goals": 1,
+        "id": "Q66584134"
       },
       {
         "goals": 2,
@@ -8119,17 +8218,17 @@
         "id": "Q7095509"
       },
       {
+        "goals": 12,
+        "id": "Q22004047",
+        "topScorerRank": 6
+      },
+      {
         "goals": 3,
         "id": "Q30217457"
       },
       {
         "goals": 1,
         "id": "Q28970899"
-      },
-      {
-        "goals": 12,
-        "id": "Q22004047",
-        "topScorerRank": 6
       },
       {
         "goals": 2,
@@ -8170,7 +8269,7 @@
         "id": "Q46679"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q167790"
       },
       {
@@ -8199,10 +8298,6 @@
         "goals": 12,
         "id": "Q136986",
         "topScorerRank": 6
-      },
-      {
-        "goals": 1,
-        "id": "Q630170"
       }
     ],
     "Q503317": [
@@ -8265,11 +8360,11 @@
         "id": "Q15943423"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q15081929"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q18002292"
       },
       {
@@ -8306,6 +8401,10 @@
       {
         "goals": 2,
         "id": "Q19896089"
+      },
+      {
+        "goals": 1,
+        "id": "Q18685008"
       },
       {
         "goals": 1,

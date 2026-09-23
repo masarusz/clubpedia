@@ -2,7 +2,25 @@ import { clubSeasonTitle } from './wikitext.mjs';
 import { leagueFootballBoxes, parseGoalSide, resolveBoxClub } from './scorers.mjs';
 import { normalizeTitle, resolveClub } from './core-data.mjs';
 
-function minuteKey(event) { return `${event.minute ?? '?'}|${event.isPenalty ? 1 : 0}|${event.ownGoal ? 1 : 0}`; }
+export function minuteValue(value) {
+  const match = String(value ?? '').match(/^(\d+)(?:\+(\d+))?$/);
+  return match ? [Number(match[1]), Number(match[2] ?? 0)] : [Number.MAX_SAFE_INTEGER, 0];
+}
+
+export function compareGoalMinutes(a, b) {
+  const left = minuteValue(a.minute); const right = minuteValue(b.minute);
+  return left[0] - right[0] || left[1] - right[1];
+}
+
+function displayKey(value) {
+  return String(value ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/gu, '').replace(/[^a-z0-9]/gu, '');
+}
+
+function compatibleScorer(a, b) {
+  if (a.isPenalty !== b.isPenalty || a.ownGoal !== b.ownGoal) return false;
+  if (a.player && b.player) return a.player === b.player;
+  return Boolean(displayKey(a.display)) && displayKey(a.display) === displayKey(b.display);
+}
 
 /**
  * Merge up to two independent readings (home club's article, away club's
@@ -12,21 +30,25 @@ function minuteKey(event) { return `${event.minute ?? '?'}|${event.isPenalty ? 1
  * (the linked identity wins). A real conflict is either a different set of
  * minutes, or two different resolved player identities for the same minute.
  */
-function mergeReadings(list) {
-  const sorted = list.map((item) => [...item.events].sort((a, b) => minuteKey(a).localeCompare(minuteKey(b))));
-  const first = sorted[0];
-  const structurallyEqual = sorted.every((events) => events.length === first.length && events.every((event, index) => minuteKey(event) === minuteKey(first[index])));
-  if (!structurallyEqual) return { ok: false };
-  const merged = first.map((_, index) => {
-    const candidates = sorted.map((events) => events[index]);
-    const withPlayer = candidates.filter((event) => event.player);
-    if (withPlayer.length) {
-      if (new Set(withPlayer.map((event) => event.player)).size > 1) return null;
-      return withPlayer[0];
+export function mergeReadings(list, scoringClub, opposingClub) {
+  if (!list.length) return { ok: false };
+  const groups = [...list[0].events].sort(compareGoalMinutes).map((event) => [{ source: list[0].source, event }]);
+  for (const reading of list.slice(1)) {
+    if (reading.events.length !== groups.length) return { ok: false };
+    const remaining = [...reading.events].sort(compareGoalMinutes);
+    for (const group of groups) {
+      const index = remaining.findIndex((event) => compatibleScorer(group[0].event, event));
+      if (index < 0) return { ok: false };
+      group.push({ source: reading.source, event: remaining.splice(index, 1)[0] });
     }
-    return candidates[0];
-  });
-  return merged.every(Boolean) ? { ok: true, events: merged } : { ok: false };
+  }
+  const events = groups.map((group) => {
+    const exemplar = group.find(({ event }) => event.player)?.event ?? group[0].event;
+    const ownClub = exemplar.ownGoal ? opposingClub : scoringClub;
+    const preferred = group.find(({ source }) => source === ownClub)?.event ?? group[0].event;
+    return { ...preferred, player: exemplar.player ?? null, display: preferred.display ?? exemplar.display ?? null };
+  }).sort(compareGoalMinutes);
+  return { ok: true, events };
 }
 
 function parseScorePair(value) {
@@ -73,7 +95,7 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
   const unresolvedCounter = { count: 0 };
 
   for (const row of season.table) {
-    const title = clubSeasonTitle(season.year, row.sourceTitle);
+    const title = clubSeasonTitle(season.year, row.sourceTarget ?? row.sourceTitle);
     const lockEntry = lock.enwiki[title];
     if (!lockEntry || lockEntry.missing) continue;
     const article = await readCached(cacheRoot, 'enwiki', title);
@@ -96,25 +118,32 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
     }
   }
 
-  const coverage = { matches: season.matches.length, reconciled: 0, confirmedByBoth: 0, ambiguousBoxes, conflicts: 0 };
+  const coverage = { matches: season.matches.length, wikipedia: 0, confirmedByBoth: 0, ambiguousBoxes, conflicts: 0 };
+  const conflictMatches = new Set();
   for (const [key, entry] of readings) {
     const match = matchByKey.get(key);
     if (!match) continue;
     const sides = {};
+    let bothSidesConfirmed = true;
     for (const side of ['home', 'away']) {
       const list = entry[side];
-      if (!list.length) continue;
+      if (!list.length) { bothSidesConfirmed = false; continue; }
       if (list.length === 1) {
         sides[side] = list[0].events;
+        bothSidesConfirmed = false;
       } else {
-        const merged = mergeReadings(list);
-        if (merged.ok) { sides[side] = merged.events; coverage.confirmedByBoth += 1; }
+        const scoringClub = side === 'home' ? match.home : match.away;
+        const opposingClub = side === 'home' ? match.away : match.home;
+        const merged = mergeReadings(list, scoringClub, opposingClub);
+        if (merged.ok) sides[side] = merged.events;
         else {
+          bothSidesConfirmed = false;
           const override = overrides.find((item) => item.season === season.id && item.match === key && item.side === side);
           if (override) {
             sides[side] = override.scorers.map((scorer) => ({ minute: scorer.minute ?? null, isPenalty: Boolean(scorer.penalty), ownGoal: Boolean(scorer.ownGoal), player: scorer.player ?? null, display: scorer.display ?? null }));
           } else {
             coverage.conflicts += 1;
+            conflictMatches.add(key);
             unresolvedScorers.conflicts.push({ season: season.id, match: key, side, readings: list.map((item) => ({ club: item.source, events: item.events })) });
           }
         }
@@ -127,12 +156,16 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
     // OpenLigaDB fallback for a match Wikipedia did not fully reconcile.
     if (sides.home && sides.away) {
       match.scorers = {
-        home: sides.home.map((event) => eventToScorer(event, unresolvedCounter)),
-        away: sides.away.map((event) => eventToScorer(event, unresolvedCounter)),
+        home: sides.home.map((event) => eventToScorer(event, unresolvedCounter)).sort(compareGoalMinutes),
+        away: sides.away.map((event) => eventToScorer(event, unresolvedCounter)).sort(compareGoalMinutes),
       };
-      coverage.reconciled += 1;
+      coverage.wikipedia += 1;
+      if (bothSidesConfirmed) coverage.confirmedByBoth += 1;
     }
   }
+  coverage.conflictMatches = conflictMatches.size;
+  coverage.noMatchingBox = season.matches.filter((match) => !match.scorers && !readings.has(match.key)).length;
+  coverage.partialOrCountMismatch = season.matches.filter((match) => !match.scorers && readings.has(match.key) && !conflictMatches.has(match.key)).length;
   unresolvedScorers.unlinked += unresolvedCounter.count;
   return coverage;
 }

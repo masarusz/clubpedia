@@ -1197,6 +1197,42 @@
       "homeGoals": 4,
       "key": "de-2002-Q105861-Q101859",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Klimowicz",
+            "minute": "6",
+            "player": "Q47029"
+          },
+          {
+            "display": "Ponte",
+            "minute": "37",
+            "player": "Q864670"
+          }
+        ],
+        "home": [
+          {
+            "display": "Christiansen",
+            "minute": "5",
+            "player": "Q505800"
+          },
+          {
+            "display": "Fahrenhorst",
+            "minute": "56",
+            "player": "Q650123"
+          },
+          {
+            "display": "Freier",
+            "minute": "57",
+            "player": "Q237159"
+          },
+          {
+            "display": "Hashemian",
+            "minute": "82",
+            "player": "Q276207"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1329,24 +1365,24 @@
             "player": "Q505800"
           },
           {
-            "display": "Christiansen",
-            "minute": "35",
-            "player": "Q505800"
-          },
-          {
-            "display": "Christiansen",
-            "minute": "84",
-            "player": "Q505800"
-          },
-          {
             "display": "Freier",
             "minute": "33",
             "player": "Q237159"
           },
           {
+            "display": "Christiansen",
+            "minute": "35",
+            "player": "Q505800"
+          },
+          {
             "display": "Hashemian",
             "minute": "64",
             "player": "Q276207"
+          },
+          {
+            "display": "Christiansen",
+            "minute": "84",
+            "player": "Q505800"
           }
         ]
       },
@@ -1609,14 +1645,14 @@
             "player": "Q160363"
           },
           {
-            "display": "Aílton",
-            "minute": "50",
-            "player": "Q160363"
-          },
-          {
             "display": "Charisteas",
             "minute": "37",
             "player": "Q109417"
+          },
+          {
+            "display": "Aílton",
+            "minute": "50",
+            "player": "Q160363"
           },
           {
             "display": "Krstajić",
@@ -2509,11 +2545,6 @@
             "player": "Q44815"
           },
           {
-            "display": "Élber",
-            "minute": "90",
-            "player": "Q44815"
-          },
-          {
             "display": "Pizarro",
             "minute": "39",
             "player": "Q109397"
@@ -2522,6 +2553,11 @@
             "display": "Pizarro",
             "minute": "66",
             "player": "Q109397"
+          },
+          {
+            "display": "Élber",
+            "minute": "90",
+            "player": "Q44815"
           }
         ]
       },
@@ -3974,11 +4010,11 @@
         "id": "Q206644"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q864670"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q47029"
       },
       {
@@ -4093,11 +4129,11 @@
         "id": "Q686352"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q650123"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q237159"
       },
       {
@@ -4106,7 +4142,7 @@
         "topScorerRank": 1
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q276207"
       },
       {
