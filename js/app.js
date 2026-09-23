@@ -1,10 +1,10 @@
-import { loadClub, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.2.0';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.2.0';
-import { backDecision } from './navigation.js?v=0.2.0';
-import { prepareIndex } from './search.js?v=0.2.0';
-import { STRINGS } from './strings.js?v=0.2.0';
-import { VERSION } from './version.js?v=0.2.0';
-import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanView, notFoundView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.2.0';
+import { loadClub, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.2.1';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.2.1';
+import { backDecision } from './navigation.js?v=0.2.1';
+import { prepareIndex } from './search.js?v=0.2.1';
+import { STRINGS } from './strings.js?v=0.2.1';
+import { VERSION } from './version.js?v=0.2.1';
+import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.2.1';
 
 const root = document.querySelector('#app');
 
@@ -23,7 +23,6 @@ function shell() {
         el('a', { href: '#/j' }, rubyNodes(STRINGS.japanFeature)),
         el('a', { href: '#/r' }, rubyNodes(STRINGS.rankings)),
         el('a', { href: '#/s' }, rubyNodes(STRINGS.search)),
-        el('a', { href: '#/credits' }, rubyNodes(STRINGS.credits)),
       ]),
     ])),
     main,
@@ -116,6 +115,13 @@ async function meikanRoute(league, year, clubId) {
   return meikanView(season, names, players, selected);
 }
 
+async function meikanEntryRoute(league = null) {
+  const index = await loadIndex();
+  if (!league) return meikanChooserView(index);
+  const latest = index.seasons.filter((item) => item.id.startsWith(`${league}-`)).sort((a, b) => b.id.localeCompare(a.id))[0];
+  return latest ? meikanRoute(league, latest.id.slice(3)) : notFoundView();
+}
+
 async function rankingsRoute(kind, metric) {
   const [rankings, names] = await Promise.all([loadRankings(), loadNames()]);
   return rankingsView(rankings, names, kind, metric);
@@ -165,6 +171,7 @@ export async function renderRoute() {
       const matchMatch = /^\/m\/(([a-z]{2})-(\d{4})-Q\d+-Q\d+)$/.exec(route);
       const clubMatch = /^\/c\/(Q\d+)$/.exec(route);
       const playerMatch = /^\/p\/(Q\d+)$/.exec(route);
+      const meikanEntryMatch = /^\/z(?:\/([a-z]{2}))?$/.exec(route);
       const meikanMatch = /^\/z\/([a-z]{2})\/(\d{4})(?:\/(Q\d+))?$/.exec(route);
       const rankingMatch = /^\/r(?:\/(players|clubs)\/([a-zA-Z]+))?$/.exec(route);
       if (leagueMatch) view = await leagueRoute(leagueMatch[1]);
@@ -172,6 +179,7 @@ export async function renderRoute() {
       else if (matchMatch) view = await matchRoute(matchMatch[1], matchMatch[2], matchMatch[3]);
       else if (clubMatch) view = await clubRoute(clubMatch[1]);
       else if (playerMatch) view = await playerRoute(playerMatch[1]);
+      else if (meikanEntryMatch) view = await meikanEntryRoute(meikanEntryMatch[1]);
       else if (meikanMatch) view = await meikanRoute(meikanMatch[1], meikanMatch[2], meikanMatch[3]);
       else if (rankingMatch) view = await rankingsRoute(rankingMatch[1] || 'players', rankingMatch[2] || 'goals');
       else view = notFoundView();
