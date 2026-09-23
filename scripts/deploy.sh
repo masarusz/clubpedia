@@ -48,6 +48,7 @@ PATTERNS=(
   "css/*.css"
   "js/*.js"
   "data/*.json"
+  "data/days/*.json"
   "data/s/*.json"
   "data/c/*.json"
   "data/h/*.json"
@@ -59,6 +60,9 @@ PATTERNS=(
   "assets/flags/LICENSE-flag-icons.txt"
   "assets/players/*.webp"
 )
+EXCLUDE=(
+  # Add paths here only with a documented reason.
+)
 FILES=()
 shopt -s nullglob
 for p in "${PATTERNS[@]}"; do
@@ -69,6 +73,28 @@ for p in "${PATTERNS[@]}"; do
 done
 shopt -u nullglob
 echo "== allowlist: ${#FILES[@]} files"
+
+# Every public file should either ship or have an explicit reason not to.
+contains_path() {
+  local needle="$1"
+  shift
+  local candidate
+  for candidate in "$@"; do
+    [[ "$candidate" == "$needle" ]] && return 0
+  done
+  return 1
+}
+UNMATCHED=()
+while IFS= read -r f; do
+  f="${f#public/}"
+  if contains_path "$f" "${FILES[@]}"; then continue; fi
+  if [[ ${#EXCLUDE[@]} -gt 0 ]] && contains_path "$f" "${EXCLUDE[@]}"; then continue; fi
+  UNMATCHED+=( "$f" )
+done < <(find public -type f ! -name .DS_Store -print)
+if [[ ${#UNMATCHED[@]} -gt 0 ]]; then
+  for f in "${UNMATCHED[@]}"; do echo "   public/$f" >&2; done
+  fail "file(s) under public/ not in the allowlist"
+fi
 
 if [[ $DRY_RUN -eq 1 ]]; then
   echo; echo "== dry run: nothing was written, nothing was pushed"; exit 0

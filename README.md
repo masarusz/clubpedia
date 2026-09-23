@@ -43,6 +43,9 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v0.3.1** — The daily files behind 今日は何の日 are published (they were
+  missing from the v0.3.0 deploy); the deploy now fails if any built file is
+  not covered by its allowlist.
 - **v0.3.0** — 今日は何の日 (matches played on today's date) and players born
   today on the home page; match dates; 1,509 player photos from Wikimedia
   Commons, each credited, on player pages and in the player guide, with a photo
