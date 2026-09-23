@@ -2,8 +2,7 @@ export function fold(value) {
   return String(value)
     .normalize('NFKC')
     .toLowerCase()
-    .replace(/[\u30a1-\u30f6]/g, (char) =>
-      String.fromCodePoint(char.codePointAt(0) - 0x60))
+    .replace(/[\u30a1-\u30f6]/g, (char) => String.fromCodePoint(char.codePointAt(0) - 0x60))
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .normalize('NFC')

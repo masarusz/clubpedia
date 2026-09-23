@@ -1,4 +1,4 @@
-import { VERSION } from './version.js?v=0.1.2';
+import { VERSION } from './version.js?v=0.2.0';
 
 const cache = new Map();
 
@@ -21,13 +21,17 @@ async function load(path, { optional = false } = {}) {
 }
 
 export const loadIndex = () => load('data/index.json');
+export const loadNames = () => load('data/names.json');
 export const loadHistory = (league) => load(`data/h/${league}.json`);
 export const loadSeason = (league, year) => load(`data/s/${league}-${year}.json`);
 export const loadClub = (id) => load(`data/c/${id}.json`);
 export const loadOpenLiga = (league, year) => load(`data/o/${league}-${year}.json`, { optional: true });
+export const loadJapan = () => load('data/japan.json');
+export const loadRankings = () => load('data/rankings.json');
+export const loadSearch = () => load('data/search.json');
 
 export function playerBucket(id) {
-  return String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 40).padStart(2, '0');
+  return String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
 }
 
 export async function loadPlayers(ids) {

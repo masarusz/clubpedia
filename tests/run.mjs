@@ -7,6 +7,7 @@ import { register as mutationTests } from './mutation.test.mjs';
 import { register as dataTests } from './data.test.mjs';
 import { register as uiTests } from './ui.test.mjs';
 import { register as serveTests } from './serve.test.mjs';
+import { register as lazykidTests } from './lazykid.test.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // A failed preflight aborts the suite before any assertion can inspect stale
@@ -27,6 +28,7 @@ fetchTests(test, equal, deepEqual);
 dataTests(test, equal, deepEqual);
 uiTests(test, equal, deepEqual);
 serveTests(test, equal, deepEqual);
+lazykidTests(test, equal);
 mutationTests(test, equal);
 
 let passed = 0;

@@ -34,12 +34,12 @@ function safeRequestPath(target) {
   return relative;
 }
 
-export function createStaticServer(directory) {
+export function createStaticHandler(directory) {
   // Resolve symlinks in the root itself once: on macOS the system temp dir
   // (and this Mac's WebApps checkout, if ever symlinked) makes resolve()
   // alone disagree with realpath() on served files, rejecting every request.
   const root = realpathSync(resolve(directory));
-  return createServer(async (request, response) => {
+  return async (request, response) => {
     if (!['GET', 'HEAD'].includes(request.method ?? '')) return reject(response, 405, 'Method not allowed');
     const relative = safeRequestPath(request.url);
     if (relative == null) return reject(response, 403, 'Forbidden');
@@ -62,7 +62,11 @@ export function createStaticServer(directory) {
       if (error.code === 'ENOENT' || error.code === 'ENOTDIR') return reject(response, 404, 'Not found');
       return reject(response, 500, 'Server error');
     }
-  });
+  };
+}
+
+export function createStaticServer(directory) {
+  return createServer(createStaticHandler(directory));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

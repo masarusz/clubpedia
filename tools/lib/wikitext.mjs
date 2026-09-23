@@ -299,7 +299,7 @@ export function parseWikitables(source) {
   return tables;
 }
 
-function plausiblePersonTarget(target) {
+export function plausiblePersonTarget(target) {
   return !/^(?:\d{4}(?:\u2013|-)|List of |Premier League|La Liga|Bundesliga|Serie A|Ligue 1|Association football|[A-Z][^.]+ F\.C\.|[A-Z][^.]+ FC$)/i.test(target);
 }
 

@@ -156,6 +156,48 @@ export function register(test, equal, deepEqual) {
     }
   });
 
+  test('refresh discovers every all-history top-scorer winner, including a {{sortname}}-only name never inside [[brackets]]', async () => {
+    // Regression for the Phase 4 gap: identity metadata was only ever fetched
+    // for winners with an explicit [[wikilink]] in the topScorerPage text,
+    // so historical winners written as `{{sortname|Isidro|Lángara}}` with no
+    // bracket link (the normal style on Pichichi Trophy for pre-1990s rows)
+    // never got a metadata/Wikidata fetch and stayed unresolved at build time
+    // even though `allHistoryTopScorers` (used by build-data.mjs) could read
+    // their name fine. Fetch-sources.mjs must call the same function to
+    // discover the same winners it will later need to resolve.
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-topscorer-fetch-test-'));
+    const out = join(temporary, 'sources');
+    const lockPath = join(temporary, 'sources.lock.json');
+    const pichichi = await fixture('wikitext/Pichichi_Trophy.wikitext');
+    const metadataTitles = new Set();
+    const requester = new Requester({
+      sleep: async () => {}, minimumWikimediaDelay: 0,
+      fetchImpl: async (url) => {
+        const parsed = new URL(url);
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'revisions') {
+          return fakeResponse({ batchcomplete: true, query: { pages: [revisionPage('Pichichi Trophy', pichichi, 701)] } });
+        }
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'pageprops|langlinks') {
+          const titles = parsed.searchParams.get('titles').split('|');
+          for (const title of titles) metadataTitles.add(title);
+          return fakeResponse({ batchcomplete: true, query: { pages: titles.map((title) => ({ title, missing: true })) } });
+        }
+        throw new Error(`Unexpected top-scorer-discovery fake URL: ${url}`);
+      },
+    });
+    try {
+      await runFetchSources({
+        out, lockPath, refresh: true, requester, quiet: true, leagues: [], startYears: [],
+        listTitles: ['Pichichi Trophy'], topScorerLists: ['Pichichi Trophy'], foreignLists: [],
+        openLigaYears: [], openfootball: false, minimumJapanesePlayers: 0,
+      });
+      equal(metadataTitles.has('Isidro Lángara'), true, 'a sortname-only pre-1990s winner is discovered for metadata/Wikidata fetch');
+      equal(metadataTitles.has('Kylian Mbappé'), true, 'an ordinary bracket-linked recent winner is still discovered');
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
+  });
+
   test('player extraction reads match-box goals and top-scorer tables', async () => {
     const arsenal = extractPlayerLinks(await fixture('wikitext/2023–24_Arsenal_F.C._season.wikitext'));
     const inter = extractPlayerLinks(await fixture('wikitext/2023–24_Inter_Milan_season.wikitext'));

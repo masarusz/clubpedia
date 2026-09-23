@@ -14,7 +14,7 @@ import {
   hasSportsTable,
   seasonArticleTitle,
 } from './lib/wikitext.mjs';
-import { championClubTargets } from './lib/core-data.mjs';
+import { allHistoryTopScorers, championClubTargets, LEAGUE_INFO } from './lib/core-data.mjs';
 import {
   Requester,
   cachePath,
@@ -567,6 +567,29 @@ export async function runFetchSources(options = {}) {
         japanesePlayers.add(player);
         playerTargets.add(player);
       }
+    }
+    // All-history winners lists (Pichichi Trophy, Capocannoniere, List of
+    // Ligue 1 top scorers, List of English football first tier top scorers,
+    // Premier League Golden Boot, List of Bundesliga top scorers), for every
+    // season the list covers, not only 1992+: a winner name is often only a
+    // `{{sortname|First|Last}}` template with no `[[wikilink]]`, which
+    // `extractPlayerLinks` above never sees. `allHistoryTopScorers` already
+    // parses every season row and its `{{sortname}}` fallback correctly (used
+    // at build time by build-data.mjs); reusing it here — the same function,
+    // not a second parser — is what keeps discovery and the build in sync.
+    // The German champions list carries its own top-scorer column for the
+    // pre-Bundesliga era (1903–63), the same fallback build-data.mjs uses
+    // when `List of Bundesliga top scorers` has no matching per-season table.
+    const championTitleByLeague = new Map([...CHAMPION_LEAGUE_BY_TITLE].map(([title, league]) => [league, title]));
+    for (const [league, info] of Object.entries(LEAGUE_INFO)) {
+      if (!topScorerLists.has(info.scorerList)) continue;
+      const scorerPage = listPages.get(info.scorerList);
+      let winners = scorerPage && !scorerPage.missing ? allHistoryTopScorers(scorerPage.content, league).flatMap((entry) => entry.winners) : [];
+      if (!winners.length && league === 'de') {
+        const championPage = listPages.get(championTitleByLeague.get('de'));
+        if (championPage && !championPage.missing) winners = allHistoryTopScorers(championPage.content, league).flatMap((entry) => entry.winners);
+      }
+      for (const winner of winners) playerTargets.add(winner);
     }
     await fetchMetadata({ requester, root, titles: [...clubTargets, ...playerTargets], lock, saveLock });
     await fetchCurrentPages({

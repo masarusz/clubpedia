@@ -2,7 +2,7 @@
 import { seasonArticleTitle, discoverDataTemplates, extractJapanesePlayerLinks, extractTableClubs, extractPlayerLinks, findTemplates } from '../tools/lib/wikitext.mjs';
 import { parseRevisionResponse, safeName, stableJson } from '../tools/lib/source-api.mjs';
 import { sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
-import { discrepancies } from '../tools/lib/core-data.mjs';
+import { allHistoryTopScorers, discrepancies } from '../tools/lib/core-data.mjs';
 import { leagueFootballBoxes, parseGoalSide } from '../tools/lib/scorers.mjs';
 import { compareGoalMinutes, mergeReadings } from '../tools/lib/build-scorers.mjs';
 import { parseDomesticSeasons, topFlightLeague } from '../tools/lib/japan-domestic.mjs';
@@ -112,6 +112,16 @@ const mutations = [
     const footballer = { claims: { P106: [{ mainsnak: { datavalue: { value: { id: 'Q937857' } } } }] } };
     return scorerIdentityIssue({ entity: { claims: {} }, birth: { year: 1990 }, seasonYear: 2020 }) === 'not-footballer'
       && scorerIdentityIssue({ entity: footballer, birth: { year: 1900 }, seasonYear: 2020 }) === 'age-over-45';
+  }],
+  ['season-link header or divider row accepted as an all-history top-scorer winner', () => {
+    const text = '{|\n|-\n!Season\n!Player\n|-\n![[1928–29 Divisione Nazionale|1928–29]]\n| [[Gino Rossetti]]\n|- class="sortbottom"\n! colspan="2" |Foundation of [[Serie A]]\n!\n|-\n![[1929–30 Serie A|1929–30]]\n| [[Giuseppe Meazza]]\n|}\n';
+    const bySeason = Object.fromEntries(allHistoryTopScorers(text, 'it').map((entry) => [entry.season, entry.winners]));
+    return Array.isArray(bySeason['1928–29']) && bySeason['1928–29'].join(',') === 'Gino Rossetti' && bySeason['1929–30'].join(',') === 'Giuseppe Meazza';
+  }],
+  ['women\'s-section table read as men\'s all-history top-scorer winners', () => {
+    const text = '=== Men ===\n{|\n|-\n!Season\n!Player\n|-\n![[1929 La Liga|1929]]\n| [[Paco Bienzobas]]\n|}\n\n=== Women ===\n{|\n|-\n!Season\n!Player\n|-\n![[2004–05 Superliga Femenina|2004–05]]\n| [[Marta Cubí]]\n|}\n';
+    const winners = allHistoryTopScorers(text, 'es').flatMap((entry) => entry.winners);
+    return winners.includes('Paco Bienzobas') && !winners.includes('Marta Cubí');
   }],
 ];
 

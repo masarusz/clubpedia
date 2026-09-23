@@ -75,6 +75,7 @@ export function register(test, equal, deepEqual) {
       equal(appRoot.textContent.includes('欧州5大リーグ'), true, 'Home heading');
       deepEqual(withClass(appRoot, 'league-flag').map((node) => node.getAttribute('alt')).sort(),
         ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort(), 'Home league flag alt text');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.2.0');
       const renderedRoutes = ['#/credits'];
       for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
@@ -86,7 +87,23 @@ export function register(test, equal, deepEqual) {
       const withoutTitles = clubFiles.map((file) => load(`c/${file}`)).find((club) => !club.championSeasons.length && club.positions.length);
       renderedRoutes.push(`#/c/${withTitles.id}`, `#/c/${withoutTitles.id}`, '#/c/Q132885');
 
+      // Phase 4: player (with and without goals), a Japanese player with an
+      // en-fallback season, 日本人選手, 選手名鑑 (one season per league),
+      // ランキング (both tabs), and search (empty and with a query).
+      const playerWithGoals = 'Q44395063'; // 三笘薫
+      const playerWithoutGoals = 'Q106239673';
+      const japan = load('japan.json');
+      const enFallbackPlayer = japan.players.find((item) => item.seasons.some((season) => season.source === 'en'));
+      renderedRoutes.push(`#/p/${playerWithGoals}`, `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
+      renderedRoutes.push('#/j');
+      const meikanSeasons = { en: '2025', es: '2025', de: '2025', it: '2025', fr: '2025' };
+      for (const [lg, year] of Object.entries(meikanSeasons)) renderedRoutes.push(`#/z/${lg}/${year}`);
+      renderedRoutes.push('#/r', '#/r/players/topScorers', '#/r/clubs/titles', '#/r/clubs/seasonPoints', '#/r/clubs/wins');
+      renderedRoutes.push('#/s', '#/s?q=みとま', '#/s?q=xyzxyznomatch');
+
       for (const hash of renderedRoutes) {
+        clearDataCache();
+        requested.length = 0;
         globalThis.location.hash = hash;
         await listeners.get('hashchange')();
         await settle();
@@ -95,6 +112,16 @@ export function register(test, equal, deepEqual) {
         equal(/[{|]/u.test(body), false, `${hash} ruby leak`);
         equal(/undefined|null|NaN/u.test(body), false, `${hash} invalid value`);
         equal(body.length > 20, true, `${hash} rendered text`);
+        const dataRequests = [...new Set(requested.filter((path) => path.startsWith('data/')))];
+        if (hash.startsWith('#/c/')) {
+          equal(dataRequests.length <= 3, true, `${hash} fetches at most three data files`);
+          equal(dataRequests.some((path) => path.startsWith('data/p/')), false, `${hash} embeds displayed player names`);
+        }
+        if (hash === '#/s/en/2025') {
+          const season = load('s/en-2025.json');
+          const buckets = new Set(season.topScorers.map((item) => item.playerId).filter(Boolean).map(playerBucket));
+          equal(dataRequests.length <= 2 + buckets.size, true, 'season fetches only its file, names, and displayed-player buckets');
+        }
         if (hash === `#/m/${noScorerKey}`) equal(body.includes('得点者の記録なし'), true, 'no-scorer message');
         if (hash === `#/m/${openLigaKey}`) equal(body.includes('OpenLigaDB'), true, 'OpenLigaDB credit');
         if (hash === '#/s/en/2025') {
@@ -123,17 +150,86 @@ export function register(test, equal, deepEqual) {
           equal(extraTitle[0].textContent, '1928–29プロリーグができる前');
           equal(descendants(extraTitle[0]).some((node) => node.tagName === 'A'), false, 'pre-professional title is not linked');
         }
+        if (hash === `#/p/${playerWithGoals}`) {
+          equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
+          equal(body.includes('三笘'), true, 'player kanji name rendered');
+          equal(withClass(appRoot, 'player-goal-list').some((list) => list.childNodes.length > 0), true, 'goal-scorer season shows goal links');
+        }
+        if (hash === `#/p/${playerWithoutGoals}`) {
+          equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
+        }
+        if (hash === `#/p/${enFallbackPlayer.id}`) {
+          equal(body.includes('英語版の記録'), true, 'en-fallback season shows its source note');
+        }
+        if (hash === '#/p/Q999999999999') {
+          equal(body.includes('見つかりません'), true, 'unknown player id shows not-found view, not an error');
+        }
+        if (hash === '#/j') {
+          equal(dataRequests.length <= 2, true, `${hash} fetches only japan.json and names`);
+          equal(withClass(appRoot, 'japan-player-row').length > 0, true, '日本人選手 rows rendered');
+        }
+        if (hash.startsWith('#/z/')) {
+          const [, lg, year] = /^#\/z\/([a-z]{2})\/(\d{4})$/.exec(hash);
+          const season = load(`s/${lg}-${year}.json`);
+          const names = load('names.json');
+          const firstClub = Object.keys(season.players ?? {}).sort((a, b) => (names[a]?.name ?? a).localeCompare(names[b]?.name ?? b, 'ja'))[0];
+          const buckets = new Set((season.players?.[firstClub] ?? []).map((item) => item.id).map(playerBucket));
+          equal(dataRequests.length <= 2 + buckets.size, true, `${hash} fetches only its season file, names, and the shown club's player buckets`);
+          const cards = withClass(appRoot, 'meikan-card');
+          equal(cards.length > 0, true, `${hash} renders player cards`);
+          equal(cards.every((card) => !/^Q\d+$/.test(withClass(card, 'meikan-name')[0]?.textContent ?? '')), true, `${hash} card names resolve to Japanese display names, not raw ids`);
+        }
+        if (hash === '#/r' || hash.startsWith('#/r/')) {
+          equal(dataRequests.length <= 2, true, `${hash} fetches only rankings.json and names`);
+          equal(withClass(appRoot, 'ranking-row').length > 0, true, `${hash} renders ranking rows`);
+        }
+        if (hash === '#/s?q=みとま') {
+          equal(withClass(appRoot, 'search-result').some((node) => node.getAttribute('href') === `#/p/${playerWithGoals}`), true, '三笘 search result links to his player page');
+        }
+        if (hash === '#/s?q=xyzxyznomatch') {
+          equal(body.includes('見つかりませんでした'), true, 'no-match search shows the empty-result message');
+        }
       }
 
       const originalFetch = globalThis.fetch;
       globalThis.fetch = async () => { throw new Error('forced failure'); };
-      const { clearDataCache } = await import('../public/js/data.js?v=0.1.2');
       clearDataCache();
       globalThis.location.hash = '#/s/en/2024';
       await listeners.get('hashchange')();
       await settle();
       equal(descendants(appRoot).some((node) => hasClass(node, 'error-view')), true, 'fetch failure renders error view');
       globalThis.fetch = originalFetch;
+    } finally {
+      Object.assign(globalThis, previous);
+    }
+  });
+
+  test('search input element is never re-rendered while typing (IME safety)', async () => {
+    const previous = { document: globalThis.document, Node: globalThis.Node };
+    globalThis.Node = FakeNode;
+    globalThis.document = { createElement: (tag) => new FakeElement(tag), createTextNode: (value) => new FakeText(value) };
+    try {
+      const { searchComponent } = await import(`../public/js/views.js?search-input=${Date.now()}`);
+      const { prepareIndex } = await import(`../public/js/search.js?search-input=${Date.now()}`);
+      const entries = load('search.json');
+      const names = load('names.json');
+      let contextLoads = 0;
+      const loadContext = async () => { contextLoads += 1; return { index: prepareIndex(entries), names }; };
+      const widget = searchComponent({ loadContext, updateUrl: () => {} });
+      const input = withClass(widget, 'search-input')[0];
+      input.listeners.get('focus')[0]();
+      await settle();
+      equal(contextLoads, 1, 'search context loads once, on focus (never eagerly)');
+      input.value = 'み';
+      input.listeners.get('input')[0]();
+      await settle();
+      equal(withClass(widget, 'search-input')[0], input, 'input node identity survives the first keystroke');
+      input.value = 'みと';
+      input.listeners.get('input')[0]();
+      await settle();
+      equal(withClass(widget, 'search-input')[0], input, 'input node identity survives the second keystroke');
+      equal(withClass(widget, 'search-result').length > 0, true, 'typing renders results without re-rendering the input');
+      equal(contextLoads, 1, 'search index is fetched once, not on every keystroke');
     } finally {
       Object.assign(globalThis, previous);
     }
@@ -148,8 +244,8 @@ export function register(test, equal, deepEqual) {
     equal(manifest.includes('Clubpedia（欧州5大リーグ大図鑑）'), true);
     equal(manifest.includes('"short_name": "クラブペディア"'), true);
     const releaseSources = [html, manifest, ...sourceFiles.map((name) => readFileSync(join(ROOT, 'public/js', name), 'utf8'))];
-    equal(releaseSources.some((value) => /v=0\.1\.[01]\b/.test(value)), false, 'stale asset version');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.1.2'"), true, 'footer version');
+    equal(releaseSources.some((value) => /v=0\.1\.\d\b/.test(value)), false, 'stale asset version');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.2.0'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

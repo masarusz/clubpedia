@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { readFile, readdir } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
-import { discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
+import { allHistoryTopScorers, discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DATA = join(ROOT, 'public/data');
@@ -285,8 +285,58 @@ export function register(test, equal, deepEqual) {
     const futureBirth = JSON.parse(await readFile(join(DATA, 's/en-1997.json'), 'utf8'));
     const thomas = futureBirth.matches.flatMap((match) => match.scorers ? [...match.scorers.home, ...match.scorers.away] : []).find((scorer) => scorer.display === 'Thomas' && scorer.player == null);
     equal(Boolean(thomas), true, 'born-1992 same-name link is removed from 1997 scorer');
-    const bucketId = String(Math.abs([...'Q188241'].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 40).padStart(2, '0');
+    const bucketId = String(Math.abs([...'Q188241'].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
     const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
     equal(bucket.Q188241.birthDate, '1983-09-26');
+  });
+
+  test('all-history top scorers: a season-link header or a divider row never becomes a phantom winner (Capocannoniere 1920s, real excerpt)', async () => {
+    const excerpt = await readFile(join(ROOT, 'tests/fixtures/wikitext/Capocannoniere-1920s-excerpt.wikitext'), 'utf8');
+    const winners = allHistoryTopScorers(excerpt, 'it');
+    const bySeason = Object.fromEntries(winners.map((entry) => [entry.season, entry.winners]));
+    deepEqual(bySeason['1920–21'], ['Luigi Cevenini'], '1920–21 winner only, not the "1921–22 (FIGC)"/"(CCI)" season-link headers of the following Unknown rows');
+    equal(bySeason['1921–22'], undefined, 'the two "Unknown" 1921–22 rows contribute no winner at all');
+    deepEqual(bySeason['1928–29'], ['Gino Rossetti'], '1928–29 winner only, not the "Foundation of Serie A" divider row that follows it');
+    equal(winners.some((entry) => entry.winners.some((name) => /Prima (?:Categoria|Divisione)|^Serie A$/.test(name))), false, 'no wikitable/competition link is ever returned as a winner');
+    deepEqual(bySeason['1929–30'], ['Giuseppe Meazza']);
+  });
+
+  test('all-history top scorers: a {{sortname}}-only winner (no [[wikilink]]) resolves from the real Pichichi Trophy page', async () => {
+    const pichichi = await readFile(join(ROOT, 'tests/fixtures/wikitext/Pichichi_Trophy.wikitext'), 'utf8');
+    const winners = allHistoryTopScorers(pichichi, 'es');
+    const bySeason = Object.fromEntries(winners.map((entry) => [entry.season, entry.winners]));
+    deepEqual(bySeason['1933–34'], ['Isidro Lángara'], 'sortname-only winner (no bracket link in the source) is still found');
+    equal(bySeason['1957–58'].includes('Ricardo Alós'), true, 'rowspan continuation row (no season cell) resolves its sortname winner');
+    equal(bySeason['1957–58'].includes('Alfredo Di Stéfano'), true);
+  });
+
+  test('all-history top scorers: the Pichichi Trophy "=== Women ===" section is ignored (real excerpt, Liga F winners never become men\'s La Liga winners)', async () => {
+    const excerpt = await readFile(join(ROOT, 'tests/fixtures/wikitext/Pichichi-Trophy-men-women-excerpt.wikitext'), 'utf8');
+    const winners = allHistoryTopScorers(excerpt, 'es');
+    const allNames = winners.flatMap((entry) => entry.winners);
+    deepEqual(allNames, ['Paco Bienzobas'], 'only the men\'s 1929 winner is read; the two women\'s Superliga Femenina winners are excluded');
+    equal(allNames.includes('Marta Cubí'), false);
+    equal(allNames.includes('Auxiliadora Jiménez'), false);
+    // Against the real, full cached page: Jenni Hermoso (5 women's Primera
+    // División titles, 2015–16 through 2020–21) must not appear anywhere.
+    const fullPichichi = await readFile(join(ROOT, 'tests/fixtures/wikitext/Pichichi_Trophy.wikitext'), 'utf8');
+    const fullNames = allHistoryTopScorers(fullPichichi, 'es').flatMap((entry) => entry.winners);
+    equal(fullNames.some((name) => /Hermoso/.test(name)), false, 'the real page\'s women\'s-section winner never reaches the men\'s all-history list');
+  });
+
+  test('得点王の回数 ranking never credits a women\'s-league winner (Jenni/Jennifer Hermoso has no 得点王 title)', async () => {
+    const rankings = JSON.parse(await readFile(join(DATA, 'rankings.json'), 'utf8'));
+    const hermoso = rankings.players.topScorers.find((row) => /Hermoso/.test(row.name));
+    equal(hermoso, undefined, 'Hermoso (Liga F / Primera División women\'s Pichichi, 5 titles) must not appear in the all-history 得点王 ranking');
+  });
+
+  test('a wrong-person historical winner (e.g. a "World War II" link on a no-competition season row) never becomes a ghost player in search or player buckets', async () => {
+    const search = JSON.parse(await readFile(join(DATA, 'search.json'), 'utf8'));
+    const ghost = search.find((entry) => entry.type === 'player' && (entry.id === 'Q362' || entry.label === 'World War II'));
+    equal(ghost, undefined, 'an all-history winners-list link that fails the wrong-person rule and has no other data must not appear as a searchable player');
+    for (const file of await readdir(join(DATA, 'p'))) {
+      const bucket = JSON.parse(await readFile(join(DATA, 'p', file), 'utf8'));
+      equal('Q362' in bucket, false, `${file}: no ghost "World War II" player entry`);
+    }
   });
 }

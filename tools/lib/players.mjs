@@ -14,7 +14,11 @@ function cleanEnglishTitle(value) {
   return value?.replace(/\s*\([^()]*\)\s*$/, '').trim() ?? null;
 }
 
-async function loadWikidata(cacheRoot, id, cache) {
+/** Exported (not just used internally) so build-data.mjs can look up the raw
+ * entity for an all-history top-scorer winner without duplicating the
+ * cache-file read; pass a shared `cache` Map to avoid re-reading a player
+ * seen in several seasons (e.g. Di Stéfano, 5 Pichichi wins). */
+export async function loadWikidata(cacheRoot, id, cache) {
   if (cache.has(id)) return cache.get(id);
   let entity = null;
   try { entity = JSON.parse(await readFile(join(cacheRoot, 'wikidata', `${id}.json`), 'utf8')); }
@@ -48,7 +52,12 @@ function isFootballer(entity) {
   return (entity?.claims?.P106 ?? []).some((claim) => claim.mainsnak?.datavalue?.value?.id === 'Q937857');
 }
 
+function isDisambiguation(entity) {
+  return (entity?.claims?.P31 ?? []).some((claim) => claim.mainsnak?.datavalue?.value?.id === 'Q4167410');
+}
+
 export function scorerIdentityIssue({ entity, birth, seasonYear }) {
+  if (isDisambiguation(entity)) return 'disambiguation';
   if (!isFootballer(entity)) return 'not-footballer';
   if (birth?.year) {
     const age = seasonYear - birth.year;
@@ -112,7 +121,7 @@ function reverseByWikibase(metadata) {
  * league goal, appears in a top-scorer table, or is one of the 101 Japanese
  * players (jawiki 個人成績). Never keyed by name + birth date.
  */
-export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlayers, japaneseListEntries = [], japaneseExceptions = [], japaneseClubAliases = {}, birthCorrections = [] }) {
+export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlayers, japaneseListEntries = [], japaneseExceptions = [], japaneseClubAliases = {}, birthCorrections = [], extraPlayerTitles = [] }) {
   const cache = new Map();
   const players = new Map();
   const byJaTitle = reverseByJaTitle(metadata);
@@ -141,8 +150,11 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
           if (!scorer.player || scorer.ownGoal) continue;
           const player = ensure(scorer.player, null);
           let bucket = player.seasons.find((item) => item.league === season.league && item.season === season.id && item.club === club);
-          if (!bucket) { bucket = { league: season.league, season: season.id, club, goals: 0, topScorerRank: null }; player.seasons.push(bucket); }
+          if (!bucket) { bucket = { league: season.league, season: season.id, club, goals: 0, recordedGoals: 0, goalMatches: [], topScorerRank: null }; player.seasons.push(bucket); }
           bucket.goals += 1;
+          bucket.recordedGoals = (bucket.recordedGoals ?? 0) + 1;
+          bucket.goalMatches ??= [];
+          bucket.goalMatches.push(match.key);
         }
       }
     }
@@ -150,7 +162,7 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
       if (!entry.playerId) continue;
       const player = ensure(entry.playerId, null);
       let bucket = player.seasons.find((item) => item.league === season.league && item.season === season.id && item.club === entry.club);
-      if (!bucket) { bucket = { league: season.league, season: season.id, club: entry.club, goals: entry.goals, topScorerRank: entry.rank }; player.seasons.push(bucket); }
+      if (!bucket) { bucket = { league: season.league, season: season.id, club: entry.club, goals: entry.goals, recordedGoals: 0, goalMatches: [], topScorerRank: entry.rank }; player.seasons.push(bucket); }
       else { bucket.topScorerRank = bucket.topScorerRank == null ? entry.rank : Math.min(bucket.topScorerRank, entry.rank); bucket.goals = Math.max(bucket.goals, entry.goals); }
     }
   }
@@ -180,7 +192,7 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
       const seasonYear = Number(entry.season.slice(0, 4));
       const seasonId = `${league}-${seasonYear}`;
       let bucket = player.seasons.find((item) => item.league === league && item.season === seasonId && item.club === clubId);
-      if (!bucket) { bucket = { league, season: seasonId, club: clubId, apps: entry.apps, goals: entry.goals, topScorerRank: null }; player.seasons.push(bucket); }
+      if (!bucket) { bucket = { league, season: seasonId, club: clubId, apps: entry.apps, goals: entry.goals, recordedGoals: 0, goalMatches: [], topScorerRank: null }; player.seasons.push(bucket); }
       else { bucket.apps = entry.apps; bucket.goals = Math.max(bucket.goals, entry.goals); }
       player.japan.push({ season: entry.season, league, club: clubId, apps: entry.apps, goals: entry.goals, source: 'ja' });
       qualifying += 1;
@@ -213,7 +225,7 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
           const seasonId = `${listEntry.league}-${year}`;
           let bucket = player.seasons.find((row) => row.league === listEntry.league && row.season === seasonId && row.club === clubId);
           if (!bucket) {
-            bucket = { league: listEntry.league, season: seasonId, club: clubId, apps: item.apps, goals: item.goals, topScorerRank: null };
+            bucket = { league: listEntry.league, season: seasonId, club: clubId, apps: item.apps, goals: item.goals, recordedGoals: 0, goalMatches: [], topScorerRank: null };
             player.seasons.push(bucket);
           } else {
             bucket.apps = item.apps;
@@ -230,6 +242,13 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
   const unexceptedJapanese = japaneseMissingSeasons.filter((item) => !japaneseExceptions.some((exception) => exception.player === item.player || exception.en === item.en));
   if (unexceptedJapanese.length) throw new Error(`Japanese players without a five-league top-flight season:\n${unexceptedJapanese.map((item) => JSON.stringify(item)).join('\n')}`);
   if (japaneseUnmappedClubs.length) throw new Error(`Japanese top-flight seasons with unmapped clubs:\n${japaneseUnmappedClubs.map((item) => JSON.stringify(item)).join('\n')}`);
+
+  // Historical top-scorer winners can predate the detailed match window but
+  // still need stable player pages and links from the all-history ranking.
+  for (const title of extraPlayerTitles) {
+    const meta = metadata.get(normalizeTitle(title));
+    if (meta?.wikibaseItem) ensure(meta.wikibaseItem, meta.title);
+  }
 
   // 3. Names, birth dates, sanity checks.
   for (const [id, player] of players) {

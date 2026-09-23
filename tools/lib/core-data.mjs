@@ -1,6 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import { extractLinks, findTemplates, parseWikitables, plainText, sectionRanges } from './wikitext.mjs';
+import { extractLinks, findTemplates, parseWikitables, plainText, plausiblePersonTarget, sectionRanges } from './wikitext.mjs';
 import { safeName } from './source-api.mjs';
 
 export const LEAGUE_INFO = Object.freeze({
@@ -503,19 +503,46 @@ export function parseChampions(text, league, metadata) {
   return [...unique.values()].sort((a, b) => a.season.localeCompare(b.season));
 }
 
+// Removes a heading (of any level) and everything nested under it \u2014 e.g. the
+// "=== Women ===" subsection of the Pichichi Trophy page's "== Winners ==",
+// which otherwise has the same Season/Player table shape as the men's table
+// right next to it and would be parsed as more winners of the men's league.
+// Women's leagues are out of SPEC scope; this only ever removes something
+// when a page actually has a matching heading (verified against the real
+// cached wikitext of all five winners lists and the German champions list \u2014
+// Pichichi Trophy is the only one with a women's section; none had a
+// Segunda/reserve/cup subsection under their top-flight winners table).
+function withoutSections(text, titlePattern) {
+  const matches = sectionRanges(text).filter((section) => titlePattern.test(section.title));
+  if (!matches.length) return text;
+  let result = text;
+  for (const section of [...matches].sort((a, b) => b.start - a.start)) result = result.slice(0, section.start) + result.slice(section.end);
+  return result;
+}
+
 export function allHistoryTopScorers(text, league) {
   const start = LEAGUE_INFO[league].first;
   const bySeason = new Map();
   const seasonPattern = /^(?:18|19|20)\d{2}(?:[\u2013-](?:\d{4}|\d{2}))?$/;
+  const scopedText = withoutSections(text, /^women'?s?$/i);
+  // A winner cell's link can be a season/competition link picked up by a
+  // permissive row scan (e.g. a "Foundation of [[Serie A]]" divider row, or a
+  // season-header cell like "[[1921–22 Prima Categoria (FIGC)|1921–22 (FIGC)]]"
+  // whose plain text doesn't match `seasonPattern` exactly because of the
+  // trailing suffix). `plausiblePersonTarget` rejects year-prefixed,
+  // "List of …", and competition-name targets the same way discovery does,
+  // so a non-player link never becomes a phantom "winner".
   const targets = (cell) => {
-    const linked = extractLinks(cell).filter((link) => !/(?:season|league|championship)$/i.test(link.target)).map((link) => link.target);
+    const linked = extractLinks(cell)
+      .filter((link) => !/(?:season|league|championship)$/i.test(link.target) && plausiblePersonTarget(link.target))
+      .map((link) => link.target);
     for (const template of findTemplates(cell)) if (/^(?:sortname|sort name)$/i.test(template.name)) {
       const target = template.params['3'] || [template.params['1'], template.params['2']].filter(Boolean).join(' ');
-      if (target) linked.push(target);
+      if (target && plausiblePersonTarget(target)) linked.push(target);
     }
     return [...new Set(linked)];
   };
-  for (const table of parseWikitables(text)) {
+  for (const table of parseWikitables(scopedText)) {
     const headerIndex = table.findIndex((row) => row.some((cell) => /^season$/i.test(plainText(cell))) && row.some((cell) => /player|scorer/i.test(plainText(cell))));
     if (headerIndex < 0) continue;
     const headers = table[headerIndex].map((cell) => plainText(cell));

@@ -3,12 +3,15 @@ import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
+import { gzipSync } from 'node:zlib';
 import { stableJson } from './lib/source-api.mjs';
 import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, clubKitColour, discrepancies, matchOutcome, metadataIndex, normalizeTitle, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
 import { attachScorers } from './lib/build-scorers.mjs';
 import { linkPlayerName, reconciledGoals } from './lib/openligadb.mjs';
-import { buildPlayers, sanitizeScorerIdentities } from './lib/players.mjs';
+import { buildPlayers, loadWikidata, sanitizeScorerIdentities, scorerIdentityIssue } from './lib/players.mjs';
 import { crossCheckJapanesePlayers, foreignListEntries } from './lib/japanese-crosscheck.mjs';
+import { mergeSearchAliases } from './lib/search-data.mjs';
+import { rubyReading } from '../public/js/ruby.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const CACHE = join(ROOT, '.cache/sources');
@@ -22,6 +25,22 @@ async function maybeJson(path, fallback) {
 }
 
 function cleanJaTitle(value) { return value?.replace(/[\s　]*[\uff08(][^\uff09)]*[\uff09)]\s*$/, '').trim() ?? null; }
+
+function playerDisplay(player, fallback = null) {
+  if (player?.ja?.mode === 'kanji') return player.ja.kanji;
+  return player?.ja?.display ?? player?.en ?? fallback ?? player?.id ?? '記録なし';
+}
+
+function ranked(rows, secondary, limit = 50) {
+  const sorted = [...rows].sort((a, b) => b.value - a.value || secondary(a, b));
+  const cutoff = sorted[Math.min(limit, sorted.length) - 1]?.value;
+  let prior = null; let priorRank = 0;
+  return sorted.filter((row, index) => index < limit || row.value === cutoff).map((row, index) => {
+    const rank = row.value === prior ? priorRank : index + 1;
+    prior = row.value; priorRank = rank;
+    return { rank, ...row };
+  });
+}
 
 function crossName(value) {
   return String(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\b(?:afc|cf|fc|cfc|sc)\b/g, '').replace(/[^a-z0-9]/g, '');
@@ -96,6 +115,8 @@ export async function build() {
   const birthCorrections = await maybeJson(join(ROOT, 'curated/birth-date-corrections.json'), []);
   const japaneseExceptions = await maybeJson(join(ROOT, 'curated/japanese-player-exceptions.json'), []);
   const japaneseClubAliases = await maybeJson(join(ROOT, 'curated/japanese-club-aliases.json'), {});
+  const searchAliases = await maybeJson(join(ROOT, 'curated/search-aliases.json'), []);
+  const topScorerWinnerExceptions = await maybeJson(join(ROOT, 'curated/top-scorer-winner-exceptions.json'), []);
   const correctionBySeason = new Map(previousCorrections.map((entry) => [entry.season, entry]));
   const seasons = [];
   const clubs = new Map();
@@ -194,6 +215,16 @@ export async function build() {
         return { minute: event.minute, ...(event.isPenalty ? { penalty: true } : {}), ...(event.ownGoal ? { ownGoal: true } : {}), name: event.name, player: id };
       });
       outputMatches[match.key] = { home: link(reconciled.home, homeCandidates, awayCandidates), away: link(reconciled.away, awayCandidates, homeCandidates) };
+      for (const [side, club] of [['home', match.home], ['away', match.away]]) for (const event of outputMatches[match.key][side]) {
+        if (!event.player || event.ownGoal) continue;
+        const player = playersResult.players.get(event.player);
+        const bucket = player?.seasons.find((item) => item.season === season.id && item.club === club);
+        if (!bucket) continue;
+        bucket.recordedGoals = (bucket.recordedGoals ?? 0) + 1;
+        bucket.goals = Math.max(bucket.goals ?? 0, bucket.recordedGoals);
+        bucket.goalMatches ??= [];
+        bucket.goalMatches.push(match.key);
+      }
       openLigaStats.matches += 1;
       openLigaStats.bySeason.set(season.id, (openLigaStats.bySeason.get(season.id) ?? 0) + 1);
       yearHasOutput = true;
@@ -231,6 +262,59 @@ export async function build() {
     if (!historicalTopScorers[league].length && league === 'de') historicalTopScorers[league] = allHistoryTopScorers(page.content, league);
   }
 
+  const historicalWinnerTitles = [...new Set(Object.values(historicalTopScorers).flatMap((entries) => entries.flatMap((entry) => entry.winners)))];
+  const historicalOnly = await buildPlayers({
+    seasons: [], metadata, cacheRoot: CACHE, japanesePlayers: [], extraPlayerTitles: historicalWinnerTitles,
+    japaneseListEntries: [], japaneseExceptions: [], japaneseClubAliases, birthCorrections,
+  });
+  for (const [id, player] of historicalOnly.players) if (!playersResult.players.has(id)) playersResult.players.set(id, player);
+  for (const exception of topScorerWinnerExceptions) {
+    if (!exception.league || !exception.season || !exception.title || !exception.reason) {
+      throw new Error(`curated/top-scorer-winner-exceptions.json entry needs league, season, title, and reason: ${JSON.stringify(exception)}`);
+    }
+  }
+  const usedExceptions = new Set();
+  const unresolvedHistoricalWinners = [];
+  const wrongPersonHistoricalWinners = [];
+  const wikidataCache = new Map();
+  for (const [league, entries] of Object.entries(historicalTopScorers)) for (const entry of entries) for (const title of entry.winners) {
+    const meta = metadata.get(normalizeTitle(title));
+    const player = meta?.wikibaseItem ? playersResult.players.get(meta.wikibaseItem) : null;
+    if (!player) {
+      const exceptionIndex = topScorerWinnerExceptions.findIndex((item) => item.league === league && item.season === entry.season && item.title === title);
+      if (exceptionIndex >= 0) { usedExceptions.add(exceptionIndex); continue; }
+      unresolvedHistoricalWinners.push({ league, season: entry.season, title });
+      continue;
+    }
+    // SPEC's wrong-person rule, applied to historical winners too: the
+    // resolved Wikidata entity must be an association football player and
+    // not a disambiguation page, and must be a plausible age that season.
+    // A failure is reported and the attribution excluded (same shape as the
+    // in-window scorer-identity gate), not a hard build failure — only a
+    // winner with NO resolvable identity at all is a hard gate, per exception.
+    const entity = await loadWikidata(CACHE, meta.wikibaseItem, wikidataCache);
+    const seasonYear = Number(entry.season.slice(0, 4));
+    const birth = player.birthDate ? { year: Number(player.birthDate.slice(0, 4)) } : null;
+    const issue = scorerIdentityIssue({ entity, birth, seasonYear });
+    if (issue) { wrongPersonHistoricalWinners.push({ league, season: entry.season, title, player: meta.wikibaseItem, issue, birthDate: player.birthDate }); continue; }
+    const seasonId = `${league}-${entry.season.slice(0, 4)}`;
+    let bucket = player.seasons.find((item) => item.season === seasonId);
+    if (!bucket) {
+      bucket = { league, season: seasonId, seasonLabel: entry.season, club: null, goals: null, recordedGoals: 0, goalMatches: [], topScorerRank: 1 };
+      player.seasons.push(bucket);
+    } else bucket.topScorerRank = 1;
+  }
+  const unusedTopScorerWinnerExceptions = topScorerWinnerExceptions.filter((_, index) => !usedExceptions.has(index));
+  // A wrong-person winner (e.g. "World War II" for a season with no
+  // competition, or an age-anomalous same-name link) was only ever added to
+  // playersResult via this historical-winners pass. If it ends up with no
+  // seasons and no Japanese-player data at all, it must not become a ghost
+  // entry in the player buckets, rankings, or search index.
+  for (const item of wrongPersonHistoricalWinners) {
+    const player = playersResult.players.get(item.player);
+    if (player && player.seasons.length === 0 && !player.japan) playersResult.players.delete(item.player);
+  }
+
   for (const season of seasons) {
     const champion = championsByLeague[season.league].find((entry) => Number(entry.season.slice(0, 4)) === season.year);
     season.champion = champion?.champion ?? null;
@@ -264,7 +348,7 @@ export async function build() {
   await writeFile(join(REPORTS, 'disagreements.txt'), `${disagreementLines.join('\n')}\n`);
   const mismatchGroups = groupCountMismatches(countMismatches, countExceptions, previousClubs);
   await writeFile(join(REPORTS, 'champions.txt'), `${Object.entries(championsByLeague).map(([league, entries]) => `${league}: ${entries.at(0)?.season ?? '-'}..${entries.at(-1)?.season ?? '-'} (${entries.length})`).join('\n')}\n\nunresolved champion identities\n${unresolvedChampions.map((item) => JSON.stringify(item)).join('\n')}\n\nrunning-count mismatches by cause\n${Object.entries(mismatchGroups).map(([cause, entries]) => `${cause} (${entries.length})\n${entries.map((item) => JSON.stringify(item)).join('\n')}`).join('\n')}\n`);
-  await writeFile(join(REPORTS, 'top-scorers.txt'), `Missing per-season tables (${missingScorers.length}): ${missingScorers.join(', ')}\n${Object.entries(historicalTopScorers).map(([league, entries]) => `${league}: ${entries.length}`).join('\n')}\n\nUnresolved per-season club cells (${unresolvedScorerClubs.length})\n${unresolvedScorerClubs.map((item) => JSON.stringify(item)).join('\n')}\n`);
+  await writeFile(join(REPORTS, 'top-scorers.txt'), `Missing per-season tables (${missingScorers.length}): ${missingScorers.join(', ')}\n${Object.entries(historicalTopScorers).map(([league, entries]) => `${league}: ${entries.length}`).join('\n')}\nHistorical winner identities unresolved (${unresolvedHistoricalWinners.length})\n${unresolvedHistoricalWinners.map((item) => JSON.stringify(item)).join('\n')}\n\nCurated exceptions applied (${usedExceptions.size}/${topScorerWinnerExceptions.length})\n${topScorerWinnerExceptions.map((item, index) => `${usedExceptions.has(index) ? 'used' : 'UNUSED'}: ${JSON.stringify(item)}`).join('\n')}\n\nHistorical winners failing the wrong-person rule (${wrongPersonHistoricalWinners.length})\n${wrongPersonHistoricalWinners.map((item) => JSON.stringify(item)).join('\n')}\n\nUnresolved per-season club cells (${unresolvedScorerClubs.length})\n${unresolvedScorerClubs.map((item) => JSON.stringify(item)).join('\n')}\n`);
   await writeFile(join(REPORTS, 'scorer-coverage.txt'), `${scorerCoverage.map((row) => {
     const openLiga = openLigaStats.bySeason.get(row.id) ?? 0;
     const total = row.wikipedia + openLiga;
@@ -309,12 +393,12 @@ export async function build() {
 
   // Players, bucketed so one player page loads one file <= 300 KB.
   const playerEntries = [...playersResult.players.entries()].sort(([a], [b]) => a.localeCompare(b));
-  const BUCKET_COUNT = 40;
+  const BUCKET_COUNT = 64;
   const buckets = new Map();
   for (const [id, player] of playerEntries) {
     const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % BUCKET_COUNT).padStart(2, '0');
     if (!buckets.has(bucketId)) buckets.set(bucketId, {});
-    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)) };
+    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, japan: player.japan ?? null, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)) };
   }
   const playerFileSizes = [];
   for (const [bucketId, entries] of buckets) {
@@ -383,12 +467,13 @@ export async function build() {
     for (const match of season.matches) for (const homeSide of [true, false]) {
       const club = homeSide ? match.home : match.away; const opponent = homeSide ? match.away : match.home;
       const gf = homeSide ? match.homeGoals : match.awayGoals; const ga = homeSide ? match.awayGoals : match.homeGoals;
-      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [], outcomes: '' };
+      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [], scores: [], outcomes: '' };
       h2h.p += 1; h2h.gf += gf; h2h.ga += ga;
       const result = match.status === 'double-defeat'
         ? { w: 0, d: 0, l: 1 }
         : matchOutcome(match)[homeSide ? 'home' : 'away'];
       h2h.matches.push(match.key);
+      h2h.scores.push(`${match.homeGoals}–${match.awayGoals}`);
       h2h.outcomes += result.w ? 'w' : result.d ? 'd' : 'l';
       h2h.w += result.w; h2h.d += result.d; h2h.l += result.l;
       clubData.get(club).headToHead[opponent] = h2h;
@@ -402,13 +487,24 @@ export async function build() {
   }
   for (const [key, goals] of scorerTotals) {
     const [clubId, player] = key.split('|');
-    clubData.get(clubId).topScorers.push({ player, goals });
+    const record = playersResult.players.get(player);
+    const name = record?.ja?.mode === 'kanji' ? record.ja.kanji : record?.ja?.display ?? record?.en ?? player;
+    clubData.get(clubId).topScorers.push({ player, name, goals });
   }
   for (const data of clubData.values()) {
     data.championSeasons.sort((a, b) => b.season.localeCompare(a.season));
     data.positions.sort((a, b) => b.season.localeCompare(a.season));
     data.topScorers.sort((a, b) => b.goals - a.goals || a.player.localeCompare(b.player));
   }
+  const names = Object.fromEntries([...clubs].sort(([a], [b]) => a.localeCompare(b)).map(([id, entry]) => [id, {
+    name: entry.jaName,
+    colour: clubColours.get(id),
+    ...((previousClubs[id]?.lineage ?? []).find((item) => item.relation === 'successor')?.club
+      ? { successor: (previousClubs[id]?.lineage ?? []).find((item) => item.relation === 'successor').club }
+      : {}),
+  }]));
+  const namesPath = join(OUTPUT, 'names.json');
+  await writeFile(namesPath, stableJson(names));
   for (const [id, data] of clubData) await writeFile(join(OUTPUT, 'c', `${id}.json`), stableJson(data));
   for (const league of Object.keys(LEAGUE_INFO)) {
     await writeFile(join(OUTPUT, 'h', `${league}.json`), stableJson({ league, fingerprint, champions: championsByLeague[league], topScorers: historicalTopScorers[league] }));
@@ -426,6 +522,47 @@ export async function build() {
   await writeFile(indexPath, stableJson(index));
   const indexBytes = (await stat(indexPath)).size;
 
+  const playerEntriesForSearch = [...playersResult.players.values()];
+  const searchEntries = mergeSearchAliases([
+    ...Object.entries(LEAGUE_INFO).map(([id, info]) => ({ type: 'league', id, label: info.name, keys: [info.name] })),
+    ...Object.entries(names).map(([id, item]) => ({ type: 'club', id, label: item.name, keys: [item.name, clubs.get(id)?.enTitle], titles: clubData.get(id)?.titleCount ?? 0 })),
+    ...playerEntriesForSearch.map((player) => ({
+      type: 'player', id: player.id, label: playerDisplay(player),
+      keys: [playerDisplay(player), player.ja?.ruby ? rubyReading(player.ja.ruby) : null, player.en].filter(Boolean),
+      goals: player.seasons.reduce((sum, item) => sum + (item.recordedGoals ?? 0), 0), japan: Boolean(player.japan),
+    })),
+    { type: 'page', id: 'japan', label: '日本人選手', keys: ['日本人選手', 'にほんじんせんしゅ'] },
+  ], searchAliases);
+  const searchPath = join(OUTPUT, 'search.json');
+  await writeFile(searchPath, stableJson(searchEntries));
+  const searchBytes = (await stat(searchPath)).size;
+  const searchGzipBytes = gzipSync(await readFile(searchPath)).length;
+
+  const nameOrder = (a, b) => String(a.name).localeCompare(String(b.name), 'ja') || String(a.player ?? a.club).localeCompare(String(b.player ?? b.club));
+  const winnerCounts = new Map();
+  for (const entries of Object.values(historicalTopScorers)) for (const entry of entries) for (const title of entry.winners) {
+    const id = metadata.get(normalizeTitle(title))?.wikibaseItem;
+    if (id) winnerCounts.set(id, (winnerCounts.get(id) ?? 0) + 1);
+  }
+  const clubWins = new Map();
+  const seasonPointRows = [];
+  for (const season of seasons) for (const row of season.table) {
+    clubWins.set(row.club, (clubWins.get(row.club) ?? 0) + row.w);
+    seasonPointRows.push({ club: row.club, name: names[row.club].name, season: season.id, value: row.points });
+  }
+  const rankings = {
+    players: {
+      goals: ranked(playerEntriesForSearch.map((player) => ({ player: player.id, name: playerDisplay(player), value: player.seasons.reduce((sum, item) => sum + (item.recordedGoals ?? 0), 0) })).filter((row) => row.value > 0), nameOrder),
+      topScorers: ranked([...winnerCounts].map(([id, value]) => ({ player: id, name: playerDisplay(playersResult.players.get(id), id), value })), nameOrder),
+    },
+    clubs: {
+      titles: ranked([...clubData].map(([id, club]) => ({ club: id, name: club.names.ja, value: club.titleCount })).filter((row) => row.value > 0), nameOrder),
+      seasonPoints: ranked(seasonPointRows, (a, b) => b.season.localeCompare(a.season) || nameOrder(a, b)),
+      wins: ranked([...clubWins].map(([id, value]) => ({ club: id, name: names[id].name, value })), nameOrder),
+    },
+  };
+  await writeFile(join(OUTPUT, 'rankings.json'), stableJson(rankings));
+
   const missingNames = Object.entries(clubObject).filter(([, entry]) => !entry.jaName).map(([id, entry]) => `${id} ${entry.enTitle}`);
   await writeFile(join(REPORTS, 'players.txt'), `Players: ${playersResult.players.size}\nBirth dates missing: ${[...playersResult.players.values()].filter((player) => !player.birthDate).length}\nJapanese players: ${japanPlayers.length}/${japanesePlayers.length}\nJapanese players without a required lead reading: ${playersResult.readingsMissing.length}\n${playersResult.readingsMissing.map((item) => JSON.stringify(item)).join('\n')}\n\nAge sanity anomalies remaining after scorer sanitization: ${playersResult.ageAnomalies.length}\n${playersResult.ageAnomalies.map((item) => JSON.stringify(item)).join('\n')}\n\nPlayer file sizes (bucket: bytes, players)\n${playerFileSizes.map((item) => `${item.bucket}: ${item.bytes} bytes, ${item.count} players`).join('\n')}\n`);
   const oversizedPlayerFiles = playerFileSizes.filter((item) => item.bytes > 300 * 1024);
@@ -433,7 +570,8 @@ export async function build() {
   console.log(`Built ${seasons.length} league-seasons, ${seasons.reduce((sum, season) => sum + season.matches.length, 0)} matches, ${clubs.size} clubs in ${(elapsed / 1000).toFixed(2)}s`);
   console.log(`Reviewed corrections: ${previousCorrections.length}; invalid reviewed scopes: ${invalidReviewed.length}; unreviewed disagreements: ${proposed.length}; unresolved scorer clubs: ${unresolvedScorerClubs.length}`);
   console.log(`Historical identities missing: ${unresolvedChampions.length}; running-count mismatches: ${countMismatches.length} (${mismatchGroups.unexplained.length} unexplained)`);
-  console.log(`Missing Japanese names: ${missingNames.length}; unknown table parameters: ${unknownLines.length}; index.json: ${indexBytes} bytes`);
+  console.log(`Missing Japanese names: ${missingNames.length}; unknown table parameters: ${unknownLines.length}; index.json: ${indexBytes} bytes; names.json: ${(await stat(namesPath)).size} bytes`);
+  console.log(`Search index: ${searchEntries.length} entries, ${searchBytes} bytes (${searchGzipBytes} bytes gzip); unresolved historical scorer winners: ${unresolvedHistoricalWinners.length} (${usedExceptions.size} curated exception(s)); wrong-person historical winners excluded: ${wrongPersonHistoricalWinners.length}`);
   console.log(`Players: ${playersResult.players.size} in ${playerFileSizes.length} bucket file(s); scorer conflicts: ${unresolvedScorers.conflicts.length}; unlinked scorers: ${unresolvedScorers.unlinked}; nulled wrong-person links: ${scorerIdentity.nulled.length}; age anomalies: ${playersResult.ageAnomalies.length}; readings missing: ${playersResult.readingsMissing.length}`);
   console.log(`Japanese players: ${japanPlayers.length}/${japanesePlayers.length}; foreign-list cross-check disagreements: ${japaneseCrossCheck.length}`);
   console.log(`OpenLigaDB: ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked / ${openLigaStats.unlinked} unlinked`);
@@ -443,6 +581,9 @@ export async function build() {
   if (mismatchGroups.unexplained.length && !allowProposed) throw new Error(`${mismatchGroups.unexplained.length} champion running-count mismatches lack a curated explanation`);
   if (indexBytes > 40 * 1024) throw new Error(`index.json is ${indexBytes} bytes; limit is 40960`);
   if (oversizedPlayerFiles.length) throw new Error(`Player file(s) over 300 KB: ${oversizedPlayerFiles.map((item) => `${item.bucket} (${item.bytes} bytes)`).join(', ')}`);
+  if (searchGzipBytes > 600 * 1024) throw new Error(`search.json gzip is ${searchGzipBytes} bytes; target is 614400`);
+  if (unresolvedHistoricalWinners.length) throw new Error(`${unresolvedHistoricalWinners.length} historical top-scorer winners lack pinned identities and no curated exception covers them:\n${unresolvedHistoricalWinners.map((item) => JSON.stringify(item)).join('\n')}`);
+  if (unusedTopScorerWinnerExceptions.length) throw new Error(`curated/top-scorer-winner-exceptions.json has ${unusedTopScorerWinnerExceptions.length} entry(ies) that no longer match an unresolved winner:\n${unusedTopScorerWinnerExceptions.map((item) => JSON.stringify(item)).join('\n')}`);
   if (playersResult.ageAnomalies.length) throw new Error(`${playersResult.ageAnomalies.length} player age anomalies remain after scorer sanitization`);
   return { seasons, championsByLeague, clubs: clubObject, corrections: previousCorrections, invalidReviewed, countMismatches, mismatchGroups, unresolvedChampions, unresolvedScorerClubs, missingNames, unknownLines, indexBytes, elapsed, playersResult, scorerCoverage, unresolvedScorers, scorerIdentity, japaneseCrossCheck, openLigaStats, playerFileSizes };
 }
