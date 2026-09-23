@@ -3424,6 +3424,76 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q1132418": [
+      {
+        "goals": 13,
+        "id": "Q1210598",
+        "topScorerRank": 8
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 14,
+        "id": "Q217482",
+        "topScorerRank": 6
+      }
+    ],
+    "Q191843": [
+      {
+        "goals": 14,
+        "id": "Q3187471",
+        "topScorerRank": 6
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 18,
+        "id": "Q547054",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 22,
+        "id": "Q469243",
+        "topScorerRank": 1
+      }
+    ],
+    "Q19509": [
+      {
+        "goals": 15,
+        "id": "Q672687",
+        "topScorerRank": 4
+      }
+    ],
+    "Q19521": [
+      {
+        "goals": 13,
+        "id": "Q1839",
+        "topScorerRank": 8
+      }
+    ],
+    "Q298267": [
+      {
+        "goals": 13,
+        "id": "Q373339",
+        "topScorerRank": 8
+      }
+    ],
+    "Q328658": [
+      {
+        "goals": 20,
+        "id": "Q520658",
+        "topScorerRank": 2
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 15,
+        "id": "Q934848",
+        "topScorerRank": 4
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,60 +3801,70 @@
       "club": "Q192071",
       "goals": 22,
       "player": "Patrice Loko",
+      "playerId": "Q469243",
       "rank": 1
     },
     {
       "club": "Q328658",
       "goals": 20,
       "player": "Alain Caveglia",
+      "playerId": "Q520658",
       "rank": 2
     },
     {
       "club": "Q192071",
       "goals": 18,
       "player": "Nicolas Ouedec",
+      "playerId": "Q547054",
       "rank": 3
     },
     {
       "club": "Q704",
       "goals": 15,
       "player": "Florian Maurice",
+      "playerId": "Q934848",
       "rank": 4
     },
     {
       "club": "Q19509",
       "goals": 15,
       "player": "Marco Grassi",
+      "playerId": "Q672687",
       "rank": 4
     },
     {
       "club": "Q191843",
       "goals": 14,
       "player": "Joël Tiéhi",
+      "playerId": "Q3187471",
       "rank": 6
     },
     {
       "club": "Q180305",
       "goals": 14,
       "player": "Youri Djorkaeff",
+      "playerId": "Q217482",
       "rank": 6
     },
     {
       "club": "Q298267",
       "goals": 13,
       "player": "Ardian Kozniku",
+      "playerId": "Q373339",
       "rank": 8
     },
     {
       "club": "Q1132418",
       "goals": 13,
       "player": "Didier Tholot",
+      "playerId": "Q1210598",
       "rank": 8
     },
     {
       "club": "Q19521",
       "goals": 13,
       "player": "Laurent Blanc",
+      "playerId": "Q1839",
       "rank": 8
     }
   ],

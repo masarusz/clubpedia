@@ -2762,6 +2762,90 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q172476": [
+      {
+        "goals": 20,
+        "id": "Q218165",
+        "topScorerRank": 2
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 12,
+        "id": "Q342439",
+        "topScorerRank": 8
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 12,
+        "id": "Q387465",
+        "topScorerRank": 8
+      }
+    ],
+    "Q19518": [
+      {
+        "goals": 15,
+        "id": "Q522037",
+        "topScorerRank": 4
+      }
+    ],
+    "Q19521": [
+      {
+        "goals": 13,
+        "id": "Q2832937",
+        "topScorerRank": 7
+      }
+    ],
+    "Q208399": [
+      {
+        "goals": 16,
+        "id": "Q2329557",
+        "topScorerRank": 3
+      }
+    ],
+    "Q221525": [
+      {
+        "goals": 14,
+        "id": "Q2019843",
+        "topScorerRank": 5
+      }
+    ],
+    "Q459148": [
+      {
+        "goals": 12,
+        "id": "Q2926954",
+        "topScorerRank": 8
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 14,
+        "id": "Q454220",
+        "topScorerRank": 5
+      }
+    ],
+    "Q501693": [
+      {
+        "goals": 12,
+        "id": "Q3486596",
+        "topScorerRank": 8
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 12,
+        "id": "Q504087",
+        "topScorerRank": 8
+      },
+      {
+        "goals": 22,
+        "id": "Q313861",
+        "topScorerRank": 1
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3039,72 +3123,84 @@
       "club": "Q704",
       "goals": 22,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 1
     },
     {
       "club": "Q172476",
       "goals": 20,
       "player": "Pauleta",
+      "playerId": "Q218165",
       "rank": 2
     },
     {
       "club": "Q208399",
       "goals": 16,
       "player": "Frédéric Née",
+      "playerId": "Q2329557",
       "rank": 3
     },
     {
       "club": "Q19518",
       "goals": 15,
       "player": "Victor Bonilla",
+      "playerId": "Q522037",
       "rank": 4
     },
     {
       "club": "Q221525",
       "goals": 14,
       "player": "Gérald Baticle",
+      "playerId": "Q2019843",
       "rank": 5
     },
     {
       "club": "Q483020",
       "goals": 14,
       "player": "Laurent Robert",
+      "playerId": "Q454220",
       "rank": 5
     },
     {
       "club": "Q19521",
       "goals": 13,
       "player": "Alex Dias",
+      "playerId": "Q2832937",
       "rank": 7
     },
     {
       "club": "Q459148",
       "goals": 12,
       "player": "Bruno Rodriguez (footballer)",
+      "playerId": "Q2926954",
       "rank": 8
     },
     {
       "club": "Q704",
       "goals": 12,
       "player": "Steve Marlet",
+      "playerId": "Q504087",
       "rank": 8
     },
     {
       "club": "Q180305",
       "goals": 12,
       "player": "Shabani Nonda",
+      "playerId": "Q342439",
       "rank": 8
     },
     {
       "club": "Q192071",
       "goals": 12,
       "player": "Olivier Monterrubio",
+      "playerId": "Q387465",
       "rank": 8
     },
     {
       "club": "Q501693",
       "goals": 12,
       "player": "Slađan Đukić",
+      "playerId": "Q3486596",
       "rank": 8
     }
   ],

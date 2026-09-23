@@ -2,12 +2,13 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { readFile, readdir } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
-import { discrepancies, metadataIndex } from '../tools/lib/core-data.mjs';
+import { discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DATA = join(ROOT, 'public/data');
 const CACHE = join(ROOT, '.cache/sources');
 const GOLDEN = JSON.parse(await readFile(join(ROOT, 'tests/golden/facts.json'), 'utf8'));
+const GOLDEN2B = JSON.parse(await readFile(join(ROOT, 'tests/golden/phase2b.json'), 'utf8'));
 
 async function treeDigest(root) {
   const hash = createHash('sha256');
@@ -134,11 +135,103 @@ export function register(test, equal, deepEqual) {
     const before = await treeDigest(DATA);
     execFileSync(process.execPath, [join(ROOT, 'tools/build-data.mjs'), '--allow-proposed'], { cwd: ROOT, encoding: 'utf8' });
     equal(await treeDigest(DATA), before);
-    for (const directory of ['', 's', 'c', 'h']) for (const name of await readdir(join(DATA, directory))) {
+    for (const directory of ['', 's', 'c', 'h', 'o', 'p']) for (const name of await readdir(join(DATA, directory))) {
       if (!name.endsWith('.json')) continue;
       const text = await readFile(join(DATA, directory, name), 'utf8');
       equal(text.includes('/Users/'), false, name);
       equal(text.includes('\\Users\\'), false, name);
     }
+  });
+
+  // --- Phase 2b: scorers, players, Japanese names -------------------------
+  function metaId(title) { return metadata.get(normalizeTitle(title))?.wikibaseItem; }
+  function findMatch(season, homeTitle, awayTitle) {
+    const home = metaId(homeTitle); const away = metaId(awayTitle);
+    return season.matches.find((match) => match.key === `${season.id}-${home}-${away}`);
+  }
+
+  test('every golden phase2b match-box fact holds (league box, not cup; own goals credited correctly)', async () => {
+    for (const fact of GOLDEN2B.matchScorers) {
+      const season = JSON.parse(await readFile(join(DATA, 's', `${fact.season}.json`), 'utf8'));
+      const match = findMatch(season, fact.home, fact.away);
+      equal(Boolean(match), true, `${fact.season} ${fact.home} v ${fact.away}`);
+      equal(Boolean(match.scorers), true, `${fact.season} ${fact.home} v ${fact.away} has scorers`);
+      for (const [side, expectedGoals] of [['home', fact.home_goals], ['away', fact.away_goals]]) {
+        const actual = match.scorers[side];
+        equal(actual.length, expectedGoals.length, `${fact.season} ${fact.home} v ${fact.away} ${side} count`);
+        for (const expected of expectedGoals) {
+          const expectedId = metaId(expected.player);
+          const found = actual.find((scorer) => scorer.minute === expected.minute && scorer.player === expectedId);
+          equal(Boolean(found), true, `${fact.season} ${fact.home} v ${fact.away} ${side} ${expected.player} ${expected.minute}`);
+          if (expected.ownGoal) equal(found.ownGoal, true, `${fact.season} ${fact.home} v ${fact.away} ${side} ${expected.player} own goal flag`);
+        }
+      }
+    }
+  });
+
+  test('the FA Community Shield box never attaches to the Arsenal-Man City league fixture', async () => {
+    const season = JSON.parse(await readFile(join(DATA, 's/en-2023.json'), 'utf8'));
+    const match = findMatch(season, 'Arsenal F.C.', 'Manchester City F.C.');
+    equal(match.homeGoals, 1); equal(match.awayGoals, 0);
+    equal(match.scorers.home.length, 1);
+    equal(match.scorers.home[0].player, metaId('Gabriel Martinelli'));
+    equal(match.scorers.away.length, 0);
+  });
+
+  test('OpenLigaDB Bundesliga fallback: Werder Bremen 0-4 Bayern reconciles with 90+4 stoppage time', async () => {
+    // The two clubs' own articles disagree on Kane's minute (74 vs 75), so
+    // Wikipedia's box is left unreconciled for this match and OpenLigaDB
+    // supplies it instead -- the brief's own oracle example.
+    const openLiga = JSON.parse(await readFile(join(DATA, 'o/de-2023.json'), 'utf8'));
+    const season = JSON.parse(await readFile(join(DATA, 's/de-2023.json'), 'utf8'));
+    const match = findMatch(season, 'SV Werder Bremen', 'FC Bayern Munich');
+    equal(Boolean(match.scorers), false, 'Wikipedia box unreconciled for this fixture (minute conflict)');
+    const ligaMatch = openLiga.matches[match.key];
+    equal(Boolean(ligaMatch), true);
+    equal(ligaMatch.away.length, 4);
+    const tel = ligaMatch.away.find((event) => event.name === 'M. Tel');
+    equal(tel.minute, '90+4');
+  });
+
+  test('every scorer resolves to a Wikidata id or is counted (no silent Latin-only fallback)', async () => {
+    let total = 0; let unlinked = 0;
+    for (const summary of index.seasons) {
+      const season = JSON.parse(await readFile(join(DATA, 's', `${summary.id}.json`), 'utf8'));
+      for (const match of season.matches) {
+        if (!match.scorers) continue;
+        for (const side of ['home', 'away']) for (const scorer of match.scorers[side]) { total += 1; if (!scorer.player) unlinked += 1; }
+      }
+    }
+    equal(total > 0, true);
+    equal(unlinked > 0, true); // some scorers are genuinely unlinked in the source
+    equal(unlinked < total, true);
+  });
+
+  test('players: birth dates, Japanese names, and 300 KB player-file cap', async () => {
+    for (const bucketFile of await readdir(join(DATA, 'p'))) {
+      const bytes = (await readFile(join(DATA, 'p', bucketFile))).length;
+      equal(bytes <= 300 * 1024, true, bucketFile);
+    }
+    const japan = JSON.parse(await readFile(join(DATA, 'japan.json'), 'utf8'));
+    // Of the 101 curated Japanese players, those whose ja.wikipedia article
+    // uses the {{サッカー選手国内成績表}} template family (or the closely
+    // related literal-table variant with a country header row) parse to at
+    // least one top-flight season; a third, unsupported table layout (see
+    // the build report's "Spec discrepancies") accounts for the rest.
+    equal(japan.players.length >= 80, true, `expected at least 80 of 101, got ${japan.players.length}`);
+    const mitoma = japan.players.find((player) => player.en === 'Kaoru Mitoma');
+    equal(mitoma.ja.mode, 'kanji');
+    equal(mitoma.ja.ruby, '{三笘|みとま} {薫|かおる}');
+    const brighton2223 = mitoma.seasons.find((item) => item.season === '2022–23' && item.league === 'en');
+    equal(brighton2223.apps, 33); equal(brighton2223.goals, 7);
+    const brighton2526 = mitoma.seasons.find((item) => item.season === '2025–26' && item.league === 'en');
+    equal(brighton2526.apps, 25); equal(brighton2526.goals, 3);
+
+    const okudera = japan.players.find((player) => player.en === 'Yasuhiko Okudera');
+    equal(okudera.ja.ruby, '{奥寺|おくでら} {康彦|やすひこ}');
+    const hertha2 = okudera.seasons.find((item) => item.season.includes('1980') && item.club != null && item.league === 'de' && item.apps === 25);
+    equal(hertha2, undefined, '2. Bundesliga season at Hertha must be excluded');
+    const koln8081 = okudera.seasons.find((item) => item.season === '1980–81' && item.league === 'de');
+    equal(koln8081.apps, 1); equal(koln8081.goals, 0);
   });
 }

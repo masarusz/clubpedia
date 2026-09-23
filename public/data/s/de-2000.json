@@ -37,6 +37,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q101859-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -109,6 +113,27 @@
       "homeGoals": 3,
       "key": "de-2000-Q101859-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Munteanu",
+            "minute": "12",
+            "player": "Q433666"
+          },
+          {
+            "display": "Greiner",
+            "minute": "16",
+            "player": "Q1443325"
+          },
+          {
+            "display": "Kühbauer",
+            "minute": "31",
+            "penalty": true,
+            "player": "Q700139"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -190,6 +215,31 @@
       "homeGoals": 4,
       "key": "de-2000-Q102720-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Preetz",
+            "minute": "20",
+            "player": "Q644091"
+          },
+          {
+            "display": "Preetz",
+            "minute": "60",
+            "player": "Q644091"
+          },
+          {
+            "display": "Alves",
+            "minute": "35",
+            "player": "Q957871"
+          },
+          {
+            "display": "Hartmann",
+            "minute": "43",
+            "player": "Q461660"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -262,6 +312,26 @@
       "homeGoals": 3,
       "key": "de-2000-Q102720-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Alex Alves",
+            "minute": "2",
+            "player": "Q957871"
+          },
+          {
+            "display": "Alex Alves",
+            "minute": "28",
+            "player": "Q957871"
+          },
+          {
+            "display": "Preetz",
+            "minute": "32",
+            "player": "Q644091"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -343,6 +413,16 @@
       "homeGoals": 1,
       "key": "de-2000-Q104761-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Neuville",
+            "minute": "21",
+            "player": "Q152972"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -415,6 +495,16 @@
       "homeGoals": 1,
       "key": "de-2000-Q104761-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ballack",
+            "minute": "79",
+            "player": "Q11948"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -469,6 +559,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q104770-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -496,6 +590,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q104770-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Timm",
+            "minute": "82",
+            "player": "Q75512"
+          },
+          {
+            "display": "Kurth",
+            "minute": "86",
+            "player": "Q1802518"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -568,6 +677,37 @@
       "homeGoals": 4,
       "key": "de-2000-Q104770-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kutschera",
+            "minute": "82",
+            "player": "Q826919"
+          }
+        ],
+        "home": [
+          {
+            "display": "Voigt",
+            "minute": "25",
+            "player": "Q318211"
+          },
+          {
+            "display": "Scherz",
+            "minute": "39",
+            "player": "Q879835"
+          },
+          {
+            "display": "Springer",
+            "minute": "58",
+            "player": "Q1081964"
+          },
+          {
+            "display": "Kreuz",
+            "minute": "90",
+            "player": "Q1901644"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -622,6 +762,28 @@
       "homeGoals": 2,
       "key": "de-2000-Q105861-Q101859",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rische",
+            "minute": "82",
+            "player": "Q317383"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marić",
+            "minute": "18",
+            "penalty": true,
+            "player": "Q324209"
+          },
+          {
+            "display": "Fahrenhorst",
+            "minute": "48",
+            "player": "Q650123"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -631,6 +793,32 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q102720",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Preetz",
+            "minute": "32",
+            "player": "Q644091"
+          },
+          {
+            "display": "Michalke",
+            "minute": "67",
+            "player": "Q315421"
+          },
+          {
+            "display": "Michalke",
+            "minute": "90",
+            "player": "Q315421"
+          }
+        ],
+        "home": [
+          {
+            "display": "Peschel",
+            "minute": "62",
+            "player": "Q872125"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -640,6 +828,39 @@
       "homeGoals": 3,
       "key": "de-2000-Q105861-Q104761",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kirsten",
+            "minute": "67",
+            "player": "Q310519"
+          },
+          {
+            "display": "Neuville",
+            "minute": "76",
+            "player": "Q152972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marić",
+            "minute": "40",
+            "player": "Q324209"
+          },
+          {
+            "display": "Marić",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q324209"
+          },
+          {
+            "display": "Marić",
+            "minute": "74",
+            "penalty": true,
+            "player": "Q324209"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -649,6 +870,37 @@
       "homeGoals": 2,
       "key": "de-2000-Q105861-Q104770",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Arveladze",
+            "minute": "38",
+            "player": "Q568042"
+          },
+          {
+            "display": "Kreuz",
+            "minute": "61",
+            "player": "Q1901644"
+          },
+          {
+            "display": "Pivaljević",
+            "minute": "80",
+            "player": "Q324593"
+          }
+        ],
+        "home": [
+          {
+            "display": "Buckley",
+            "minute": "24",
+            "player": "Q63866"
+          },
+          {
+            "display": "Schindzielorz",
+            "minute": "31",
+            "player": "Q686352"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -658,6 +910,33 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q106394",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tanko",
+            "minute": "33",
+            "player": "Q533646"
+          },
+          {
+            "display": "Sellimi",
+            "minute": "47",
+            "player": "Q353717"
+          },
+          {
+            "display": "Sellimi",
+            "minute": "90",
+            "player": "Q353717"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marić",
+            "minute": "54",
+            "penalty": true,
+            "player": "Q324209"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -667,6 +946,16 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q107818",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reis",
+            "minute": "75",
+            "player": "Q2426747"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -676,6 +965,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q131603",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Agostino",
+            "minute": "53",
+            "player": "Q1689345"
+          }
+        ],
+        "home": [
+          {
+            "display": "Drinčić",
+            "minute": "62",
+            "player": "Q169158"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -685,6 +990,27 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q142005",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Arvidsson",
+            "minute": "67",
+            "player": "Q947236"
+          },
+          {
+            "display": "Kovacec",
+            "minute": "76",
+            "player": "Q1787999"
+          }
+        ],
+        "home": [
+          {
+            "display": "Weber",
+            "minute": "56",
+            "player": "Q340501"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -694,6 +1020,26 @@
       "homeGoals": 0,
       "key": "de-2000-Q105861-Q15789",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jancker",
+            "minute": "16",
+            "player": "Q170150"
+          },
+          {
+            "display": "Jancker",
+            "minute": "23",
+            "player": "Q170150"
+          },
+          {
+            "display": "Santa Cruz",
+            "minute": "19",
+            "player": "Q152492"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -703,6 +1049,26 @@
       "homeGoals": 3,
       "key": "de-2000-Q105861-Q158121",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Marić",
+            "minute": "50",
+            "player": "Q324209"
+          },
+          {
+            "display": "Marić",
+            "minute": "88",
+            "player": "Q324209"
+          },
+          {
+            "display": "Peschel",
+            "minute": "69",
+            "player": "Q872125"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -712,6 +1078,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mpenza",
+            "minute": "70",
+            "player": "Q346735"
+          }
+        ],
+        "home": [
+          {
+            "display": "Freier",
+            "minute": "22",
+            "player": "Q237159"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -730,6 +1112,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q41420",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Heinrich",
+            "minute": "87",
+            "player": "Q390159"
+          }
+        ],
+        "home": [
+          {
+            "display": "Drinčić",
+            "minute": "75",
+            "player": "Q169158"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -739,6 +1137,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q105861-Q4512",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -748,6 +1150,31 @@
       "homeGoals": 0,
       "key": "de-2000-Q105861-Q51974",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kovač",
+            "minute": "24",
+            "player": "Q154305"
+          },
+          {
+            "display": "Mahdavikia",
+            "minute": "33",
+            "player": "Q313780"
+          },
+          {
+            "display": "Barbarez",
+            "minute": "55",
+            "player": "Q431455"
+          },
+          {
+            "display": "Barbarez",
+            "minute": "59",
+            "player": "Q431455"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -757,6 +1184,27 @@
       "homeGoals": 1,
       "key": "de-2000-Q105861-Q51976",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pizarro",
+            "minute": "38",
+            "player": "Q109397"
+          },
+          {
+            "display": "Verlaat",
+            "minute": "74",
+            "player": "Q1344933"
+          }
+        ],
+        "home": [
+          {
+            "display": "Reis",
+            "minute": "62",
+            "player": "Q2426747"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -766,6 +1214,16 @@
       "homeGoals": 0,
       "key": "de-2000-Q105861-Q8466",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Klose",
+            "minute": "37",
+            "player": "Q80471"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -802,6 +1260,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q106394-Q104770",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -811,6 +1273,37 @@
       "homeGoals": 5,
       "key": "de-2000-Q106394-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Diarra",
+            "minute": "21",
+            "player": "Q706399"
+          },
+          {
+            "display": "Sellimi",
+            "minute": "48",
+            "player": "Q353717"
+          },
+          {
+            "display": "Iashvili",
+            "minute": "51",
+            "player": "Q195317"
+          },
+          {
+            "display": "Baya",
+            "minute": "66",
+            "player": "Q227025"
+          },
+          {
+            "display": "Sundermann",
+            "minute": "76",
+            "ownGoal": true,
+            "player": "Q792379"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -838,6 +1331,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q106394-Q142005",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -874,6 +1371,47 @@
       "homeGoals": 5,
       "key": "de-2000-Q106394-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kryszałowicz",
+            "minute": "70",
+            "player": "Q2001292"
+          },
+          {
+            "display": "Kryszałowicz",
+            "minute": "72",
+            "player": "Q2001292"
+          }
+        ],
+        "home": [
+          {
+            "display": "Iashvili",
+            "minute": "32",
+            "player": "Q195317"
+          },
+          {
+            "display": "Kobiashvili",
+            "minute": "40",
+            "player": "Q155477"
+          },
+          {
+            "display": "Sellimi",
+            "minute": "53",
+            "player": "Q353717"
+          },
+          {
+            "display": "Sellimi",
+            "minute": "90",
+            "player": "Q353717"
+          },
+          {
+            "display": "Kehl",
+            "minute": "83",
+            "player": "Q141354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -901,6 +1439,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q106394-Q51974",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -928,6 +1470,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q107818-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -964,6 +1510,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q107818-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mičevski",
+            "minute": "29",
+            "player": "Q349656"
+          },
+          {
+            "display": "Miriuță",
+            "minute": "43",
+            "player": "Q258495"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1027,6 +1588,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q107818-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Labak",
+            "minute": "72",
+            "player": "Q610019"
+          },
+          {
+            "display": "Helbig",
+            "minute": "90",
+            "player": "Q878098"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1117,6 +1693,43 @@
       "homeGoals": 2,
       "key": "de-2000-Q131603-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baştürk",
+            "minute": "37",
+            "player": "Q76322"
+          },
+          {
+            "display": "Baştürk",
+            "minute": "49",
+            "player": "Q76322"
+          },
+          {
+            "display": "Reis",
+            "minute": "59",
+            "player": "Q2426747"
+          },
+          {
+            "display": "Schindzielorz",
+            "minute": "88",
+            "player": "Q686352"
+          }
+        ],
+        "home": [
+          {
+            "display": "Schröder",
+            "minute": "56",
+            "ownGoal": true,
+            "player": "Q7371634"
+          },
+          {
+            "display": "Borimirov",
+            "minute": "86",
+            "player": "Q465253"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1180,6 +1793,33 @@
       "homeGoals": 2,
       "key": "de-2000-Q131603-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Yang",
+            "minute": "22",
+            "player": "Q709608"
+          },
+          {
+            "display": "Kryszałowicz",
+            "minute": "59",
+            "player": "Q2001292"
+          }
+        ],
+        "home": [
+          {
+            "display": "Max",
+            "minute": "72",
+            "player": "Q703757"
+          },
+          {
+            "display": "Häßler",
+            "minute": "81",
+            "penalty": true,
+            "player": "Q155911"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1270,6 +1910,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q142005-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Agali",
+            "minute": "71",
+            "player": "Q1937078"
+          },
+          {
+            "display": "Agali",
+            "minute": "80",
+            "player": "Q1937078"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1279,6 +1934,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q142005-Q106394",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1333,6 +1992,21 @@
       "homeGoals": 0,
       "key": "de-2000-Q142005-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kryszałowicz",
+            "minute": "30",
+            "player": "Q2001292"
+          },
+          {
+            "display": "Gebhardt",
+            "minute": "45",
+            "player": "Q1893742"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1423,6 +2097,37 @@
       "homeGoals": 3,
       "key": "de-2000-Q15789-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baştürk",
+            "minute": "41",
+            "player": "Q76322"
+          },
+          {
+            "display": "Baştürk",
+            "minute": "59",
+            "player": "Q76322"
+          }
+        ],
+        "home": [
+          {
+            "display": "Effenberg",
+            "minute": "21",
+            "player": "Q44522"
+          },
+          {
+            "display": "Effenberg",
+            "minute": "89",
+            "player": "Q44522"
+          },
+          {
+            "display": "Élber",
+            "minute": "53",
+            "player": "Q44815"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1486,6 +2191,27 @@
       "homeGoals": 1,
       "key": "de-2000-Q15789-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Schur",
+            "minute": "38",
+            "player": "Q1750753"
+          },
+          {
+            "display": "Fjørtoft",
+            "minute": "63",
+            "player": "Q709585"
+          }
+        ],
+        "home": [
+          {
+            "display": "Paulo Sérgio",
+            "minute": "13",
+            "player": "Q316229"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1576,6 +2302,27 @@
       "homeGoals": 2,
       "key": "de-2000-Q158121-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Christiansen",
+            "minute": "27",
+            "player": "Q505800"
+          }
+        ],
+        "home": [
+          {
+            "display": "Straube",
+            "minute": "37",
+            "player": "Q2020614"
+          },
+          {
+            "display": "Breitenreiter",
+            "minute": "85",
+            "player": "Q517257"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1639,6 +2386,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q158121-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hirsch",
+            "minute": "20",
+            "player": "Q1223422"
+          },
+          {
+            "display": "Breitenreiter",
+            "minute": "86",
+            "player": "Q517257"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1729,6 +2491,27 @@
       "homeGoals": 2,
       "key": "de-2000-Q32494-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marić",
+            "minute": "48",
+            "player": "Q324209"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mulder",
+            "minute": "37",
+            "player": "Q951412"
+          },
+          {
+            "display": "Sand",
+            "minute": "63",
+            "player": "Q313913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1738,6 +2521,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q32494-Q106394",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1792,6 +2579,31 @@
       "homeGoals": 4,
       "key": "de-2000-Q32494-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Böhme",
+            "minute": "37",
+            "player": "Q706744"
+          },
+          {
+            "display": "Böhme",
+            "minute": "53",
+            "player": "Q706744"
+          },
+          {
+            "display": "Látal",
+            "minute": "51",
+            "player": "Q1344549"
+          },
+          {
+            "display": "Happe",
+            "minute": "62",
+            "player": "Q877936"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1846,6 +2658,27 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q101859",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Juskowiak",
+            "minute": "52",
+            "player": "Q515068"
+          },
+          {
+            "display": "Marić",
+            "minute": "74",
+            "player": "Q113351"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gebhardt",
+            "minute": "13",
+            "player": "Q1893742"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1855,6 +2688,31 @@
       "homeGoals": 0,
       "key": "de-2000-Q38245-Q102720",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van Burik",
+            "minute": "18",
+            "player": "Q705931"
+          },
+          {
+            "display": "Konstantinidis",
+            "minute": "21",
+            "player": "Q322157"
+          },
+          {
+            "display": "Preetz",
+            "minute": "82",
+            "player": "Q644091"
+          },
+          {
+            "display": "Preetz",
+            "minute": "89",
+            "player": "Q644091"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1864,6 +2722,32 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q104761",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kirsten",
+            "minute": "21",
+            "player": "Q310519"
+          },
+          {
+            "display": "Lúcio",
+            "minute": "67",
+            "player": "Q156822"
+          },
+          {
+            "display": "Lúcio",
+            "minute": "82",
+            "player": "Q156822"
+          }
+        ],
+        "home": [
+          {
+            "display": "Yang",
+            "minute": "58",
+            "player": "Q709608"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1873,6 +2757,43 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q104770",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kurth",
+            "minute": "12",
+            "player": "Q1802518"
+          },
+          {
+            "display": "Kurth",
+            "minute": "41",
+            "player": "Q1802518"
+          },
+          {
+            "display": "Kracht",
+            "minute": "28",
+            "ownGoal": true,
+            "player": "Q72735"
+          },
+          {
+            "display": "Scherz",
+            "minute": "35",
+            "player": "Q879835"
+          },
+          {
+            "display": "Arveladze",
+            "minute": "89",
+            "player": "Q568042"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kryszałowicz",
+            "minute": "63",
+            "player": "Q2001292"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1891,6 +2812,26 @@
       "homeGoals": 3,
       "key": "de-2000-Q38245-Q106394",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reichenberger",
+            "minute": "10",
+            "player": "Q2426722"
+          },
+          {
+            "display": "Fjørtoft",
+            "minute": "21",
+            "player": "Q709585"
+          },
+          {
+            "display": "Branco",
+            "minute": "84",
+            "player": "Q1382910"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1900,6 +2841,16 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q107818",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Heldt",
+            "minute": "65",
+            "player": "Q63088"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1909,6 +2860,16 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q131603",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reichenberger",
+            "minute": "32",
+            "player": "Q2426722"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1918,6 +2879,33 @@
       "homeGoals": 4,
       "key": "de-2000-Q38245-Q142005",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reichenberger",
+            "minute": "60",
+            "player": "Q2426722"
+          },
+          {
+            "display": "Reichenberger",
+            "minute": "81",
+            "player": "Q2426722"
+          },
+          {
+            "display": "Heldt",
+            "minute": "65",
+            "penalty": true,
+            "player": "Q63088"
+          },
+          {
+            "display": "Heldt",
+            "minute": "79",
+            "penalty": true,
+            "player": "Q63088"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1927,6 +2915,21 @@
       "homeGoals": 0,
       "key": "de-2000-Q38245-Q15789",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Scholl",
+            "minute": "22",
+            "player": "Q154156"
+          },
+          {
+            "display": "Tarnat",
+            "minute": "90",
+            "player": "Q142283"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1936,6 +2939,27 @@
       "homeGoals": 3,
       "key": "de-2000-Q38245-Q158121",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Kracht",
+            "minute": "29",
+            "player": "Q72735"
+          },
+          {
+            "display": "Ćirić",
+            "minute": "49",
+            "player": "Q718997"
+          },
+          {
+            "display": "Heldt",
+            "minute": "78",
+            "penalty": true,
+            "player": "Q63088"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1945,6 +2969,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q38245-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1954,6 +2982,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q41420",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bobic",
+            "minute": "71",
+            "player": "Q61219"
+          }
+        ],
+        "home": [
+          {
+            "display": "Wimmer",
+            "minute": "21",
+            "player": "Q873503"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1963,6 +3007,27 @@
       "homeGoals": 2,
       "key": "de-2000-Q38245-Q4512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dundee",
+            "minute": "62",
+            "player": "Q461666"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kryszałowicz",
+            "minute": "16",
+            "player": "Q2001292"
+          },
+          {
+            "display": "Guié-Mien",
+            "minute": "45",
+            "player": "Q706382"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1972,6 +3037,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q51974",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kovač",
+            "minute": "54",
+            "player": "Q154305"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sobotzik",
+            "minute": "78",
+            "player": "Q546988"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1981,6 +3062,28 @@
       "homeGoals": 1,
       "key": "de-2000-Q38245-Q51976",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aílton",
+            "minute": "21",
+            "player": "Q160363"
+          },
+          {
+            "display": "Pizarro",
+            "minute": "90",
+            "player": "Q109397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baumann",
+            "minute": "90",
+            "ownGoal": true,
+            "player": "Q159803"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1990,6 +3093,32 @@
       "homeGoals": 3,
       "key": "de-2000-Q38245-Q8466",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kłos",
+            "minute": "83",
+            "player": "Q972461"
+          }
+        ],
+        "home": [
+          {
+            "display": "Reichenberger",
+            "minute": "44",
+            "player": "Q2426722"
+          },
+          {
+            "display": "Sobotzik",
+            "minute": "52",
+            "player": "Q546988"
+          },
+          {
+            "display": "Fjørtoft",
+            "minute": "77",
+            "player": "Q709585"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2035,6 +3164,37 @@
       "homeGoals": 5,
       "key": "de-2000-Q41420-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ricken",
+            "minute": "18",
+            "player": "Q506919"
+          },
+          {
+            "display": "Heinrich",
+            "minute": "29",
+            "player": "Q390159"
+          },
+          {
+            "display": "Reina",
+            "minute": "66",
+            "player": "Q96430"
+          },
+          {
+            "display": "Reina",
+            "minute": "68",
+            "player": "Q96430"
+          },
+          {
+            "display": "Stević",
+            "minute": "89",
+            "penalty": true,
+            "player": "Q567434"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2107,6 +3267,47 @@
       "homeGoals": 6,
       "key": "de-2000-Q41420-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Yang",
+            "minute": "48",
+            "player": "Q709608"
+          }
+        ],
+        "home": [
+          {
+            "display": "Wörns",
+            "minute": "30",
+            "player": "Q167241"
+          },
+          {
+            "display": "Ricken",
+            "minute": "64",
+            "player": "Q506919"
+          },
+          {
+            "display": "Ricken",
+            "minute": "67",
+            "player": "Q506919"
+          },
+          {
+            "display": "Bobic",
+            "minute": "71",
+            "player": "Q61219"
+          },
+          {
+            "display": "Bobic",
+            "minute": "90",
+            "player": "Q61219"
+          },
+          {
+            "display": "Addo",
+            "minute": "79",
+            "player": "Q472293"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2188,6 +3389,22 @@
       "homeGoals": 1,
       "key": "de-2000-Q4512-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Peschel",
+            "minute": "11",
+            "player": "Q872125"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dundee",
+            "minute": "90",
+            "player": "Q461666"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2197,6 +3414,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q4512-Q106394",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2260,6 +3481,38 @@
       "homeGoals": 4,
       "key": "de-2000-Q4512-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gebhardt",
+            "minute": "38",
+            "player": "Q1893742"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maljković",
+            "minute": "34",
+            "ownGoal": true,
+            "player": "Q7938471"
+          },
+          {
+            "display": "Soldo",
+            "minute": "60",
+            "player": "Q231470"
+          },
+          {
+            "display": "Ganea",
+            "minute": "76",
+            "player": "Q527672"
+          },
+          {
+            "display": "Dundee",
+            "minute": "84",
+            "player": "Q461666"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2341,6 +3594,27 @@
       "homeGoals": 3,
       "key": "de-2000-Q51974-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Yeboah",
+            "minute": "16",
+            "player": "Q379603"
+          },
+          {
+            "display": "Butt",
+            "minute": "34",
+            "penalty": true,
+            "player": "Q152354"
+          },
+          {
+            "display": "Barbarez",
+            "minute": "38",
+            "player": "Q431455"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2413,6 +3687,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q51974-Q38245",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Barbarez",
+            "minute": "36",
+            "player": "Q431455"
+          },
+          {
+            "display": "Kovač",
+            "minute": "69",
+            "player": "Q154305"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2494,6 +3783,21 @@
       "homeGoals": 2,
       "key": "de-2000-Q51976-Q105861",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Aílton",
+            "minute": "46",
+            "player": "Q160363"
+          },
+          {
+            "display": "Pizarro",
+            "minute": "81",
+            "player": "Q109397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2566,6 +3870,23 @@
       "homeGoals": 1,
       "key": "de-2000-Q51976-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Heldt",
+            "minute": "8",
+            "penalty": true,
+            "player": "Q63088"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ernst",
+            "minute": "42",
+            "player": "Q160890"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2611,6 +3932,10 @@
       "homeGoals": 0,
       "key": "de-2000-Q8466-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2647,6 +3972,16 @@
       "homeGoals": 0,
       "key": "de-2000-Q8466-Q105861",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Buckley",
+            "minute": "62",
+            "player": "Q63866"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2719,6 +4054,42 @@
       "homeGoals": 4,
       "key": "de-2000-Q8466-Q38245",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Guié-Mien",
+            "minute": "21",
+            "player": "Q706382"
+          },
+          {
+            "display": "Kryszałowicz",
+            "minute": "36",
+            "player": "Q2001292"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lokvenc",
+            "minute": "1",
+            "player": "Q315791"
+          },
+          {
+            "display": "Lokvenc",
+            "minute": "52",
+            "player": "Q315791"
+          },
+          {
+            "display": "Basler",
+            "minute": "50",
+            "player": "Q366109"
+          },
+          {
+            "display": "Klose",
+            "minute": "89",
+            "player": "Q80471"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2758,6 +4129,480 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q101859": [
+      {
+        "goals": 1,
+        "id": "Q1443325"
+      },
+      {
+        "goals": 1,
+        "id": "Q317383"
+      },
+      {
+        "goals": 1,
+        "id": "Q433666"
+      },
+      {
+        "goals": 12,
+        "id": "Q515068",
+        "topScorerRank": 9
+      },
+      {
+        "goals": 1,
+        "id": "Q700139"
+      },
+      {
+        "goals": 1,
+        "id": "Q113351"
+      }
+    ],
+    "Q102720": [
+      {
+        "goals": 16,
+        "id": "Q644091",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 2,
+        "id": "Q315421"
+      },
+      {
+        "goals": 1,
+        "id": "Q705931"
+      },
+      {
+        "goals": 1,
+        "id": "Q461660"
+      },
+      {
+        "goals": 3,
+        "id": "Q957871"
+      },
+      {
+        "goals": 1,
+        "id": "Q322157"
+      }
+    ],
+    "Q104761": [
+      {
+        "goals": 12,
+        "id": "Q310519",
+        "topScorerRank": 9
+      },
+      {
+        "goals": 15,
+        "id": "Q152972",
+        "topScorerRank": 5
+      },
+      {
+        "goals": 1,
+        "id": "Q11948"
+      },
+      {
+        "goals": 2,
+        "id": "Q156822"
+      }
+    ],
+    "Q104770": [
+      {
+        "goals": 1,
+        "id": "Q1081964"
+      },
+      {
+        "goals": 3,
+        "id": "Q1802518"
+      },
+      {
+        "goals": 1,
+        "id": "Q75512"
+      },
+      {
+        "goals": 1,
+        "id": "Q318211"
+      },
+      {
+        "goals": 2,
+        "id": "Q879835"
+      },
+      {
+        "goals": 2,
+        "id": "Q1901644"
+      },
+      {
+        "goals": 2,
+        "id": "Q568042"
+      },
+      {
+        "goals": 1,
+        "id": "Q324593"
+      }
+    ],
+    "Q105861": [
+      {
+        "goals": 3,
+        "id": "Q2426747"
+      },
+      {
+        "goals": 3,
+        "id": "Q872125"
+      },
+      {
+        "goals": 4,
+        "id": "Q76322"
+      },
+      {
+        "goals": 2,
+        "id": "Q63866"
+      },
+      {
+        "goals": 2,
+        "id": "Q686352"
+      },
+      {
+        "goals": 2,
+        "id": "Q169158"
+      },
+      {
+        "goals": 1,
+        "id": "Q650123"
+      },
+      {
+        "goals": 8,
+        "id": "Q324209"
+      },
+      {
+        "goals": 1,
+        "id": "Q340501"
+      },
+      {
+        "goals": 1,
+        "id": "Q237159"
+      },
+      {
+        "goals": 1,
+        "id": "Q505800"
+      }
+    ],
+    "Q106394": [
+      {
+        "goals": 2,
+        "id": "Q195317"
+      },
+      {
+        "goals": 1,
+        "id": "Q227025"
+      },
+      {
+        "goals": 1,
+        "id": "Q155477"
+      },
+      {
+        "goals": 5,
+        "id": "Q353717"
+      },
+      {
+        "goals": 1,
+        "id": "Q533646"
+      },
+      {
+        "goals": 1,
+        "id": "Q706399"
+      },
+      {
+        "goals": 1,
+        "id": "Q141354"
+      }
+    ],
+    "Q107818": [
+      {
+        "goals": 1,
+        "id": "Q349656"
+      },
+      {
+        "goals": 1,
+        "id": "Q258495"
+      },
+      {
+        "goals": 1,
+        "id": "Q610019"
+      },
+      {
+        "goals": 1,
+        "id": "Q878098"
+      }
+    ],
+    "Q131603": [
+      {
+        "goals": 1,
+        "id": "Q703757"
+      },
+      {
+        "goals": 1,
+        "id": "Q465253"
+      },
+      {
+        "goals": 1,
+        "id": "Q155911"
+      },
+      {
+        "goals": 12,
+        "id": "Q1689345",
+        "topScorerRank": 9
+      }
+    ],
+    "Q142005": [
+      {
+        "goals": 2,
+        "id": "Q1937078"
+      },
+      {
+        "goals": 1,
+        "id": "Q947236"
+      },
+      {
+        "goals": 1,
+        "id": "Q1787999"
+      }
+    ],
+    "Q15789": [
+      {
+        "goals": 1,
+        "id": "Q154156"
+      },
+      {
+        "goals": 1,
+        "id": "Q316229"
+      },
+      {
+        "goals": 2,
+        "id": "Q44522"
+      },
+      {
+        "goals": 15,
+        "id": "Q44815",
+        "topScorerRank": 5
+      },
+      {
+        "goals": 12,
+        "id": "Q170150",
+        "topScorerRank": 9
+      },
+      {
+        "goals": 1,
+        "id": "Q142283"
+      },
+      {
+        "goals": 1,
+        "id": "Q152492"
+      }
+    ],
+    "Q158121": [
+      {
+        "goals": 2,
+        "id": "Q517257"
+      },
+      {
+        "goals": 1,
+        "id": "Q2020614"
+      },
+      {
+        "goals": 1,
+        "id": "Q1223422"
+      }
+    ],
+    "Q32494": [
+      {
+        "goals": 1,
+        "id": "Q877936"
+      },
+      {
+        "goals": 1,
+        "id": "Q951412"
+      },
+      {
+        "goals": 1,
+        "id": "Q1344549"
+      },
+      {
+        "goals": 2,
+        "id": "Q706744"
+      },
+      {
+        "goals": 22,
+        "id": "Q313913",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 13,
+        "id": "Q346735",
+        "topScorerRank": 8
+      }
+    ],
+    "Q38245": [
+      {
+        "goals": 5,
+        "id": "Q63088"
+      },
+      {
+        "goals": 1,
+        "id": "Q72735"
+      },
+      {
+        "goals": 3,
+        "id": "Q709608"
+      },
+      {
+        "goals": 1,
+        "id": "Q718997"
+      },
+      {
+        "goals": 2,
+        "id": "Q546988"
+      },
+      {
+        "goals": 3,
+        "id": "Q709585"
+      },
+      {
+        "goals": 1,
+        "id": "Q1750753"
+      },
+      {
+        "goals": 5,
+        "id": "Q2426722"
+      },
+      {
+        "goals": 3,
+        "id": "Q1893742"
+      },
+      {
+        "goals": 2,
+        "id": "Q706382"
+      },
+      {
+        "goals": 1,
+        "id": "Q826919"
+      },
+      {
+        "goals": 7,
+        "id": "Q2001292"
+      },
+      {
+        "goals": 1,
+        "id": "Q1382910"
+      },
+      {
+        "goals": 1,
+        "id": "Q873503"
+      }
+    ],
+    "Q41420": [
+      {
+        "goals": 1,
+        "id": "Q167241"
+      },
+      {
+        "goals": 1,
+        "id": "Q567434"
+      },
+      {
+        "goals": 3,
+        "id": "Q506919"
+      },
+      {
+        "goals": 2,
+        "id": "Q390159"
+      },
+      {
+        "goals": 3,
+        "id": "Q61219"
+      },
+      {
+        "goals": 2,
+        "id": "Q96430"
+      },
+      {
+        "goals": 1,
+        "id": "Q472293"
+      }
+    ],
+    "Q4512": [
+      {
+        "goals": 3,
+        "id": "Q461666"
+      },
+      {
+        "goals": 1,
+        "id": "Q231470"
+      },
+      {
+        "goals": 1,
+        "id": "Q527672"
+      }
+    ],
+    "Q51974": [
+      {
+        "goals": 1,
+        "id": "Q379603"
+      },
+      {
+        "goals": 22,
+        "id": "Q431455",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 1,
+        "id": "Q313780"
+      },
+      {
+        "goals": 3,
+        "id": "Q154305"
+      },
+      {
+        "goals": 1,
+        "id": "Q152354"
+      }
+    ],
+    "Q51976": [
+      {
+        "goals": 1,
+        "id": "Q1344933"
+      },
+      {
+        "goals": 14,
+        "id": "Q160363",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 19,
+        "id": "Q109397",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 1,
+        "id": "Q160890"
+      }
+    ],
+    "Q8466": [
+      {
+        "goals": 1,
+        "id": "Q366109"
+      },
+      {
+        "goals": 2,
+        "id": "Q80471"
+      },
+      {
+        "goals": 1,
+        "id": "Q972461"
+      },
+      {
+        "goals": 2,
+        "id": "Q315791"
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,72 +4880,84 @@
       "club": "Q51974",
       "goals": 22,
       "player": "Sergej Barbarez",
+      "playerId": "Q431455",
       "rank": 1
     },
     {
       "club": "Q32494",
       "goals": 22,
       "player": "Ebbe Sand",
+      "playerId": "Q313913",
       "rank": 1
     },
     {
       "club": "Q51976",
       "goals": 19,
       "player": "Claudio Pizarro",
+      "playerId": "Q109397",
       "rank": 3
     },
     {
       "club": "Q102720",
       "goals": 16,
       "player": "Michael Preetz",
+      "playerId": "Q644091",
       "rank": 4
     },
     {
       "club": "Q15789",
       "goals": 15,
       "player": "Giovane Élber",
+      "playerId": "Q44815",
       "rank": 5
     },
     {
       "club": "Q104761",
       "goals": 15,
       "player": "Oliver Neuville",
+      "playerId": "Q152972",
       "rank": 5
     },
     {
       "club": "Q51976",
       "goals": 14,
       "player": "Aílton Gonçalves da Silva",
+      "playerId": "Q160363",
       "rank": 7
     },
     {
       "club": "Q32494",
       "goals": 13,
       "player": "Émile Mpenza",
+      "playerId": "Q346735",
       "rank": 8
     },
     {
       "club": "Q131603",
       "goals": 12,
       "player": "Paul Agostino",
+      "playerId": "Q1689345",
       "rank": 9
     },
     {
       "club": "Q15789",
       "goals": 12,
       "player": "Carsten Jancker",
+      "playerId": "Q170150",
       "rank": 9
     },
     {
       "club": "Q101859",
       "goals": 12,
       "player": "Andrzej Juskowiak",
+      "playerId": "Q515068",
       "rank": 9
     },
     {
       "club": "Q104761",
       "goals": 12,
       "player": "Ulf Kirsten",
+      "playerId": "Q310519",
       "rank": 9
     }
   ],

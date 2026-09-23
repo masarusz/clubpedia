@@ -10,6 +10,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q1128631-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -163,6 +167,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q1128631-Q9616",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -181,6 +189,33 @@
       "homeGoals": 1,
       "key": "en-1998-Q1130849-Q1128631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Smith",
+            "minute": "79",
+            "player": "Q216614"
+          },
+          {
+            "display": "Hasselbaink",
+            "minute": "81",
+            "player": "Q223176"
+          },
+          {
+            "display": "Hasselbaink",
+            "minute": "86",
+            "player": "Q223176"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fowler",
+            "minute": "68",
+            "penalty": true,
+            "player": "Q206548"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -190,6 +225,34 @@
       "homeGoals": 2,
       "key": "en-1998-Q1130849-Q18656",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Yorke",
+            "minute": "23",
+            "player": "Q192175"
+          },
+          {
+            "display": "Irwin",
+            "minute": "56",
+            "penalty": true,
+            "player": "Q317807"
+          }
+        ],
+        "home": [
+          {
+            "display": "Redknapp",
+            "minute": "69",
+            "penalty": true,
+            "player": "Q317810"
+          },
+          {
+            "display": "Ince",
+            "minute": "89",
+            "player": "Q311171"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -199,6 +262,32 @@
       "homeGoals": 3,
       "key": "en-1998-Q1130849-Q18661",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Stamp",
+            "minute": "86",
+            "player": "Q10401761"
+          }
+        ],
+        "home": [
+          {
+            "display": "Owen",
+            "minute": "9",
+            "player": "Q128829"
+          },
+          {
+            "display": "Heggem",
+            "minute": "44",
+            "player": "Q719749"
+          },
+          {
+            "display": "Ince",
+            "minute": "45",
+            "player": "Q311171"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -208,6 +297,16 @@
       "homeGoals": 0,
       "key": "en-1998-Q1130849-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Taylor",
+            "minute": "33",
+            "player": "Q1438500"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -217,6 +316,42 @@
       "homeGoals": 4,
       "key": "en-1998-Q1130849-Q18716",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Solano",
+            "minute": "29",
+            "player": "Q378005"
+          },
+          {
+            "display": "Andersson",
+            "minute": "56",
+            "player": "Q495810"
+          }
+        ],
+        "home": [
+          {
+            "display": "Owen",
+            "minute": "67",
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "80",
+            "player": "Q128829"
+          },
+          {
+            "display": "Riedle",
+            "minute": "71",
+            "player": "Q159951"
+          },
+          {
+            "display": "Riedle",
+            "minute": "84",
+            "player": "Q159951"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -226,6 +361,52 @@
       "homeGoals": 7,
       "key": "en-1998-Q1130849-Q18732",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Østenstad",
+            "minute": "59",
+            "player": "Q987890"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fowler",
+            "minute": "22",
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "32",
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "47",
+            "player": "Q206548"
+          },
+          {
+            "display": "Matteo",
+            "minute": "35",
+            "player": "Q724268"
+          },
+          {
+            "display": "Carragher",
+            "minute": "55",
+            "player": "Q172211"
+          },
+          {
+            "display": "Owen",
+            "minute": "63",
+            "player": "Q128829"
+          },
+          {
+            "display": "Thompson",
+            "minute": "73",
+            "player": "Q1176843"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -235,6 +416,39 @@
       "homeGoals": 3,
       "key": "en-1998-Q1130849-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Carragher",
+            "minute": "13",
+            "ownGoal": true,
+            "player": "Q172211"
+          },
+          {
+            "display": "Iversen",
+            "minute": "35",
+            "player": "Q311659"
+          }
+        ],
+        "home": [
+          {
+            "display": "Redknapp",
+            "minute": "49",
+            "penalty": true,
+            "player": "Q317810"
+          },
+          {
+            "display": "Ince",
+            "minute": "77",
+            "player": "Q311171"
+          },
+          {
+            "display": "McManaman",
+            "minute": "79",
+            "player": "Q294501"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -244,6 +458,33 @@
       "homeGoals": 2,
       "key": "en-1998-Q1130849-Q18747",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lampard",
+            "minute": "24",
+            "penalty": true,
+            "player": "Q41533"
+          },
+          {
+            "display": "Keller",
+            "minute": "74",
+            "player": "Q120254"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fowler",
+            "minute": "22",
+            "player": "Q206548"
+          },
+          {
+            "display": "Owen",
+            "minute": "45",
+            "player": "Q128829"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -253,6 +494,21 @@
       "homeGoals": 2,
       "key": "en-1998-Q1130849-Q19446",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ince",
+            "minute": "30",
+            "player": "Q311171"
+          },
+          {
+            "display": "Owen",
+            "minute": "33",
+            "player": "Q128829"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -262,6 +518,43 @@
       "homeGoals": 3,
       "key": "en-1998-Q1130849-Q19462",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rufus",
+            "minute": "24",
+            "player": "Q7328779"
+          },
+          {
+            "display": "Mendonca",
+            "minute": "61",
+            "player": "Q5134630"
+          },
+          {
+            "display": "S. Jones",
+            "minute": "83",
+            "player": "Q7612966"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fowler",
+            "minute": "33",
+            "penalty": true,
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "82",
+            "player": "Q206548"
+          },
+          {
+            "display": "Berger",
+            "minute": "67",
+            "player": "Q155924"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -271,6 +564,27 @@
       "homeGoals": 1,
       "key": "en-1998-Q1130849-Q19470",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Harper",
+            "minute": "6",
+            "player": "Q6396445"
+          },
+          {
+            "display": "Wanchope",
+            "minute": "27",
+            "player": "Q211126"
+          }
+        ],
+        "home": [
+          {
+            "display": "Redknapp",
+            "minute": "84",
+            "player": "Q317810"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -280,6 +594,16 @@
       "homeGoals": 0,
       "key": "en-1998-Q1130849-Q19481",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Marshall",
+            "minute": "90",
+            "player": "Q1631560"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -289,6 +613,26 @@
       "homeGoals": 3,
       "key": "en-1998-Q1130849-Q19482",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Berger",
+            "minute": "12",
+            "player": "Q155924"
+          },
+          {
+            "display": "Riedle",
+            "minute": "50",
+            "player": "Q159951"
+          },
+          {
+            "display": "Ince",
+            "minute": "65",
+            "player": "Q311171"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -298,6 +642,43 @@
       "homeGoals": 5,
       "key": "en-1998-Q1130849-Q19490",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Freedman",
+            "minute": "18",
+            "player": "Q129655"
+          }
+        ],
+        "home": [
+          {
+            "display": "Owen",
+            "minute": "10",
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "38",
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "71",
+            "penalty": true,
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "77",
+            "player": "Q128829"
+          },
+          {
+            "display": "McManaman",
+            "minute": "23",
+            "player": "Q294501"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -307,6 +688,21 @@
       "homeGoals": 2,
       "key": "en-1998-Q1130849-Q19498",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Berger",
+            "minute": "19",
+            "player": "Q155924"
+          },
+          {
+            "display": "Owen",
+            "minute": "34",
+            "player": "Q128829"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -316,6 +712,21 @@
       "homeGoals": 2,
       "key": "en-1998-Q1130849-Q19580",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Berger",
+            "minute": "26",
+            "player": "Q155924"
+          },
+          {
+            "display": "Redknapp",
+            "minute": "48",
+            "player": "Q317810"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -325,6 +736,38 @@
       "homeGoals": 3,
       "key": "en-1998-Q1130849-Q5794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dacourt",
+            "minute": "1",
+            "player": "Q314879"
+          },
+          {
+            "display": "Jeffers",
+            "minute": "84",
+            "player": "Q952335"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fowler",
+            "minute": "15",
+            "penalty": true,
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "21",
+            "player": "Q206548"
+          },
+          {
+            "display": "Berger",
+            "minute": "82",
+            "player": "Q155924"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -334,6 +777,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q1130849-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Casiraghi",
+            "minute": "10",
+            "player": "Q378583"
+          }
+        ],
+        "home": [
+          {
+            "display": "Redknapp",
+            "minute": "83",
+            "player": "Q317810"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -343,6 +802,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q1130849-Q9617",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -361,6 +824,22 @@
       "homeGoals": 2,
       "key": "en-1998-Q18656-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Irwin",
+            "minute": "19",
+            "penalty": true,
+            "player": "Q317807"
+          },
+          {
+            "display": "Scholes",
+            "minute": "79",
+            "player": "Q45613"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -505,6 +984,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q18656-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zola",
+            "minute": "83",
+            "player": "Q9354"
+          }
+        ],
+        "home": [
+          {
+            "display": "A. Cole",
+            "minute": "45",
+            "player": "Q216928"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -532,6 +1027,32 @@
       "homeGoals": 1,
       "key": "en-1998-Q18661-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Owen",
+            "minute": "17",
+            "player": "Q128829"
+          },
+          {
+            "display": "Redknapp",
+            "minute": "35",
+            "player": "Q317810"
+          },
+          {
+            "display": "Heggem",
+            "minute": "88",
+            "player": "Q719749"
+          }
+        ],
+        "home": [
+          {
+            "display": "Deane",
+            "minute": "32",
+            "player": "Q2703910"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -676,6 +1197,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q18661-Q9616",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -703,6 +1228,42 @@
       "homeGoals": 2,
       "key": "en-1998-Q18711-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ince",
+            "minute": "2",
+            "player": "Q311171"
+          },
+          {
+            "display": "Fowler",
+            "minute": "7",
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "58",
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "66",
+            "player": "Q206548"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dublin",
+            "minute": "47",
+            "player": "Q531093"
+          },
+          {
+            "display": "Dublin",
+            "minute": "63",
+            "player": "Q531093"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -847,6 +1408,26 @@
       "homeGoals": 0,
       "key": "en-1998-Q18711-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Flo",
+            "minute": "59",
+            "player": "Q215944"
+          },
+          {
+            "display": "Flo",
+            "minute": "89",
+            "player": "Q215944"
+          },
+          {
+            "display": "Goldbæk",
+            "minute": "86",
+            "player": "Q681412"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -874,6 +1455,37 @@
       "homeGoals": 1,
       "key": "en-1998-Q18716-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Owen",
+            "minute": "17",
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "18",
+            "player": "Q128829"
+          },
+          {
+            "display": "Owen",
+            "minute": "32",
+            "player": "Q128829"
+          },
+          {
+            "display": "Berger",
+            "minute": "45",
+            "player": "Q155924"
+          }
+        ],
+        "home": [
+          {
+            "display": "Guivarc'h",
+            "minute": "28",
+            "player": "Q125669"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1018,6 +1630,16 @@
       "homeGoals": 0,
       "key": "en-1998-Q18716-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Petrescu",
+            "minute": "39",
+            "player": "Q1159141"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1045,6 +1667,27 @@
       "homeGoals": 1,
       "key": "en-1998-Q18732-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Riedle",
+            "minute": "38",
+            "player": "Q159951"
+          },
+          {
+            "display": "Owen",
+            "minute": "72",
+            "player": "Q128829"
+          }
+        ],
+        "home": [
+          {
+            "display": "Østenstad",
+            "minute": "36",
+            "player": "Q987890"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1189,6 +1832,21 @@
       "homeGoals": 0,
       "key": "en-1998-Q18732-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Flo",
+            "minute": "20",
+            "player": "Q215944"
+          },
+          {
+            "display": "Poyet",
+            "minute": "48",
+            "player": "Q338595"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1216,6 +1874,28 @@
       "homeGoals": 2,
       "key": "en-1998-Q18741-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Berger",
+            "minute": "55",
+            "player": "Q155924"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fox",
+            "minute": "28",
+            "player": "Q2756563"
+          },
+          {
+            "display": "Carragher",
+            "minute": "50",
+            "ownGoal": true,
+            "player": "Q172211"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1360,6 +2040,32 @@
       "homeGoals": 2,
       "key": "en-1998-Q18741-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Poyet",
+            "minute": "4",
+            "player": "Q338595"
+          },
+          {
+            "display": "Goldbæk",
+            "minute": "73",
+            "player": "Q681412"
+          }
+        ],
+        "home": [
+          {
+            "display": "Iversen",
+            "minute": "38",
+            "player": "Q311659"
+          },
+          {
+            "display": "Ginola",
+            "minute": "64",
+            "player": "Q42601"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1387,6 +2093,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q18747-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Riedle",
+            "minute": "88",
+            "player": "Q159951"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hartson",
+            "minute": "4",
+            "player": "Q356392"
+          },
+          {
+            "display": "Berkovic",
+            "minute": "51",
+            "player": "Q723829"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1531,6 +2258,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q18747-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Babayaro",
+            "minute": "76",
+            "player": "Q312354"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ruddock",
+            "minute": "4",
+            "player": "Q1027452"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1558,6 +2301,32 @@
       "homeGoals": 1,
       "key": "en-1998-Q19446-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "McManaman",
+            "minute": "23",
+            "player": "Q294501"
+          },
+          {
+            "display": "Redknapp",
+            "minute": "31",
+            "player": "Q317810"
+          },
+          {
+            "display": "Leonhardsen",
+            "minute": "32",
+            "player": "Q329901"
+          }
+        ],
+        "home": [
+          {
+            "display": "Duff",
+            "minute": "63",
+            "player": "Q192971"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1702,6 +2471,49 @@
       "homeGoals": 3,
       "key": "en-1998-Q19446-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zola",
+            "minute": "15",
+            "player": "Q9354"
+          },
+          {
+            "display": "Leboeuf",
+            "minute": "51",
+            "penalty": true,
+            "player": "Q290769"
+          },
+          {
+            "display": "Flo",
+            "minute": "82",
+            "player": "Q215944"
+          },
+          {
+            "display": "Flo",
+            "minute": "86",
+            "player": "Q215944"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sutton",
+            "minute": "34",
+            "player": "Q363769"
+          },
+          {
+            "display": "Sutton",
+            "minute": "79",
+            "penalty": true,
+            "player": "Q363769"
+          },
+          {
+            "display": "Pérez",
+            "minute": "57",
+            "player": "Q2301462"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1729,6 +2541,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q19462-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Jones",
+            "minute": "70",
+            "player": "Q6384570"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1873,6 +2695,16 @@
       "homeGoals": 0,
       "key": "en-1998-Q19462-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Matteo",
+            "minute": "11",
+            "player": "Q193348"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1900,6 +2732,38 @@
       "homeGoals": 3,
       "key": "en-1998-Q19470-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fowler",
+            "minute": "36",
+            "player": "Q206548"
+          },
+          {
+            "display": "Fowler",
+            "minute": "57",
+            "penalty": true,
+            "player": "Q206548"
+          }
+        ],
+        "home": [
+          {
+            "display": "Burton",
+            "minute": "12",
+            "player": "Q2456848"
+          },
+          {
+            "display": "Wanchope",
+            "minute": "44",
+            "player": "Q211126"
+          },
+          {
+            "display": "Wanchope",
+            "minute": "49",
+            "player": "Q211126"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2044,6 +2908,32 @@
       "homeGoals": 2,
       "key": "en-1998-Q19470-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Flo",
+            "minute": "55",
+            "player": "Q215944"
+          },
+          {
+            "display": "Poyet",
+            "minute": "59",
+            "player": "Q338595"
+          }
+        ],
+        "home": [
+          {
+            "display": "Carbonari",
+            "minute": "26",
+            "player": "Q769959"
+          },
+          {
+            "display": "Sturridge",
+            "minute": "90",
+            "player": "Q1181137"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2071,6 +2961,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q19481-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cottee",
+            "minute": "79",
+            "player": "Q348642"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2215,6 +3115,42 @@
       "homeGoals": 2,
       "key": "en-1998-Q19481-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zola",
+            "minute": "28",
+            "player": "Q9354"
+          },
+          {
+            "display": "Zola",
+            "minute": "90",
+            "player": "Q9354"
+          },
+          {
+            "display": "Poyet",
+            "minute": "39",
+            "player": "Q338595"
+          },
+          {
+            "display": "Flo",
+            "minute": "56",
+            "player": "Q215944"
+          }
+        ],
+        "home": [
+          {
+            "display": "Izzet",
+            "minute": "40",
+            "player": "Q740385"
+          },
+          {
+            "display": "Guppy",
+            "minute": "60",
+            "player": "Q2719418"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2242,6 +3178,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q19482-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Earle",
+            "minute": "48",
+            "player": "Q975790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2386,6 +3332,27 @@
       "homeGoals": 1,
       "key": "en-1998-Q19482-Q9616",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Flo",
+            "minute": "24",
+            "player": "Q215944"
+          },
+          {
+            "display": "Poyet",
+            "minute": "53",
+            "player": "Q338595"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gayle",
+            "minute": "90",
+            "player": "Q10592"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2413,6 +3380,32 @@
       "homeGoals": 2,
       "key": "en-1998-Q19490-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Redknapp",
+            "minute": "15",
+            "player": "Q317810"
+          },
+          {
+            "display": "Owen",
+            "minute": "72",
+            "player": "Q128829"
+          }
+        ],
+        "home": [
+          {
+            "display": "Freedman",
+            "minute": "60",
+            "player": "Q129655"
+          },
+          {
+            "display": "Van Hooijdonk",
+            "minute": "90",
+            "player": "Q312659"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2584,6 +3577,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q19498-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cresswell",
+            "minute": "87",
+            "player": "Q1426678"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2728,6 +3731,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q19498-Q9616",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2755,6 +3762,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q19580-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "McManaman",
+            "minute": "86",
+            "player": "Q294501"
+          }
+        ],
+        "home": [
+          {
+            "display": "Boateng",
+            "minute": "60",
+            "player": "Q464701"
+          },
+          {
+            "display": "Whelan",
+            "minute": "71",
+            "player": "Q3877698"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2926,6 +3954,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q5794-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3070,6 +4102,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q5794-Q9616",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3088,6 +4124,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q9616-Q1128631",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Poyet",
+            "minute": "68",
+            "player": "Q338595"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3106,6 +4152,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q9616-Q18656",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3115,6 +4165,22 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q18661",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pallister",
+            "minute": "46",
+            "ownGoal": true,
+            "player": "Q380231"
+          },
+          {
+            "display": "Zola",
+            "minute": "81",
+            "player": "Q9354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3124,6 +4190,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hendrie",
+            "minute": "32",
+            "player": "Q952994"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "30",
+            "player": "Q9354"
+          },
+          {
+            "display": "Flo",
+            "minute": "90",
+            "player": "Q215944"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3133,6 +4220,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q9616-Q18716",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "A. Andersson",
+            "minute": "43",
+            "player": "Q495810"
+          }
+        ],
+        "home": [
+          {
+            "display": "Babayaro",
+            "minute": "23",
+            "player": "Q312354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3142,6 +4245,16 @@
       "homeGoals": 1,
       "key": "en-1998-Q9616-Q18732",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "11",
+            "player": "Q9354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3151,6 +4264,21 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q18741",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Poyet",
+            "minute": "80",
+            "player": "Q338595"
+          },
+          {
+            "display": "Flo",
+            "minute": "90",
+            "player": "Q215944"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3160,6 +4288,16 @@
       "homeGoals": 0,
       "key": "en-1998-Q9616-Q18747",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kitson",
+            "minute": "75",
+            "player": "Q7151800"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3169,6 +4307,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q9616-Q19446",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ward",
+            "minute": "84",
+            "player": "Q1780489"
+          }
+        ],
+        "home": [
+          {
+            "display": "Morris",
+            "minute": "44",
+            "player": "Q741092"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3178,6 +4332,28 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q19462",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Youds",
+            "minute": "58",
+            "player": "Q5336583"
+          }
+        ],
+        "home": [
+          {
+            "display": "Leboeuf",
+            "minute": "18",
+            "penalty": true,
+            "player": "Q290769"
+          },
+          {
+            "display": "Poyet",
+            "minute": "88",
+            "player": "Q338595"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3187,6 +4363,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q19470",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Carbonari",
+            "minute": "88",
+            "player": "Q769959"
+          }
+        ],
+        "home": [
+          {
+            "display": "Babayaro",
+            "minute": "40",
+            "player": "Q312354"
+          },
+          {
+            "display": "Vialli",
+            "minute": "68",
+            "player": "Q239688"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3196,6 +4393,34 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q19481",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Duberry",
+            "minute": "82",
+            "ownGoal": true,
+            "player": "Q2287704"
+          },
+          {
+            "display": "Guppy",
+            "minute": "88",
+            "player": "Q2719418"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "30",
+            "player": "Q9354"
+          },
+          {
+            "display": "Elliott",
+            "minute": "69",
+            "ownGoal": true,
+            "player": "Q2618115"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3205,6 +4430,26 @@
       "homeGoals": 3,
       "key": "en-1998-Q9616-Q19482",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "32",
+            "player": "Q9354"
+          },
+          {
+            "display": "Poyet",
+            "minute": "55",
+            "player": "Q338595"
+          },
+          {
+            "display": "Petrescu",
+            "minute": "70",
+            "player": "Q1159141"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3214,6 +4459,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q19490",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Darcheville",
+            "minute": "69",
+            "player": "Q188144"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "1",
+            "player": "Q9354"
+          },
+          {
+            "display": "Poyet",
+            "minute": "35",
+            "player": "Q338595"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3223,6 +4489,22 @@
       "homeGoals": 1,
       "key": "en-1998-Q9616-Q19498",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Booth",
+            "minute": "67",
+            "player": "Q4760446"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "27",
+            "player": "Q9354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3232,6 +4514,27 @@
       "homeGoals": 2,
       "key": "en-1998-Q9616-Q19580",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Huckerby",
+            "minute": "9",
+            "player": "Q716642"
+          }
+        ],
+        "home": [
+          {
+            "display": "Leboeuf",
+            "minute": "45",
+            "player": "Q290769"
+          },
+          {
+            "display": "Di Matteo",
+            "minute": "90",
+            "player": "Q193348"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3241,6 +4544,32 @@
       "homeGoals": 3,
       "key": "en-1998-Q9616-Q5794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jeffers",
+            "minute": "69",
+            "player": "Q952335"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zola",
+            "minute": "25",
+            "player": "Q9354"
+          },
+          {
+            "display": "Zola",
+            "minute": "81",
+            "player": "Q9354"
+          },
+          {
+            "display": "Petrescu",
+            "minute": "60",
+            "player": "Q1159141"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3250,6 +4579,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q9616-Q9617",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3268,6 +4601,10 @@
       "homeGoals": 0,
       "key": "en-1998-Q9617-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3421,9 +4758,399 @@
       "homeGoals": 1,
       "key": "en-1998-Q9617-Q9616",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Bergkamp",
+            "minute": "32",
+            "player": "Q185389"
+          }
+        ]
+      },
       "status": "played"
     }
   ],
+  "players": {
+    "Q1128631": [
+      {
+        "goals": 18,
+        "id": "Q223176",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 1,
+        "id": "Q216614"
+      }
+    ],
+    "Q1130849": [
+      {
+        "goals": 5,
+        "id": "Q159951"
+      },
+      {
+        "goals": 4,
+        "id": "Q294501"
+      },
+      {
+        "goals": 8,
+        "id": "Q317810"
+      },
+      {
+        "goals": 14,
+        "id": "Q206548",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 6,
+        "id": "Q311171"
+      },
+      {
+        "goals": 1,
+        "id": "Q329901"
+      },
+      {
+        "goals": 1,
+        "id": "Q172211"
+      },
+      {
+        "goals": 7,
+        "id": "Q155924"
+      },
+      {
+        "goals": 18,
+        "id": "Q128829",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 1,
+        "id": "Q1176843"
+      },
+      {
+        "goals": 2,
+        "id": "Q719749"
+      },
+      {
+        "goals": 1,
+        "id": "Q724268"
+      }
+    ],
+    "Q18656": [
+      {
+        "goals": 18,
+        "id": "Q192175",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 17,
+        "id": "Q216928",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 2,
+        "id": "Q317807"
+      },
+      {
+        "goals": 1,
+        "id": "Q45613"
+      }
+    ],
+    "Q18661": [
+      {
+        "goals": 1,
+        "id": "Q2703910"
+      },
+      {
+        "goals": 1,
+        "id": "Q10401761"
+      },
+      {
+        "goals": 15,
+        "id": "Q80937",
+        "topScorerRank": 6
+      }
+    ],
+    "Q18711": [
+      {
+        "goals": 1,
+        "id": "Q1438500"
+      },
+      {
+        "goals": 14,
+        "id": "Q531093",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 1,
+        "id": "Q952994"
+      },
+      {
+        "goals": 14,
+        "id": "Q6307291",
+        "topScorerRank": 7
+      }
+    ],
+    "Q18716": [
+      {
+        "goals": 14,
+        "id": "Q483583",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 2,
+        "id": "Q495810"
+      },
+      {
+        "goals": 1,
+        "id": "Q378005"
+      },
+      {
+        "goals": 1,
+        "id": "Q125669"
+      }
+    ],
+    "Q18732": [
+      {
+        "goals": 2,
+        "id": "Q987890"
+      }
+    ],
+    "Q18741": [
+      {
+        "goals": 1,
+        "id": "Q2756563"
+      },
+      {
+        "goals": 1,
+        "id": "Q42601"
+      },
+      {
+        "goals": 2,
+        "id": "Q311659"
+      }
+    ],
+    "Q18747": [
+      {
+        "goals": 1,
+        "id": "Q120254"
+      },
+      {
+        "goals": 1,
+        "id": "Q1027452"
+      },
+      {
+        "goals": 1,
+        "id": "Q356392"
+      },
+      {
+        "goals": 1,
+        "id": "Q7151800"
+      },
+      {
+        "goals": 1,
+        "id": "Q723829"
+      },
+      {
+        "goals": 1,
+        "id": "Q41533"
+      }
+    ],
+    "Q19446": [
+      {
+        "goals": 2,
+        "id": "Q363769"
+      },
+      {
+        "goals": 1,
+        "id": "Q1780489"
+      },
+      {
+        "goals": 1,
+        "id": "Q192971"
+      },
+      {
+        "goals": 1,
+        "id": "Q2301462"
+      }
+    ],
+    "Q19462": [
+      {
+        "goals": 1,
+        "id": "Q7612966"
+      },
+      {
+        "goals": 1,
+        "id": "Q7328779"
+      },
+      {
+        "goals": 1,
+        "id": "Q5134630"
+      },
+      {
+        "goals": 1,
+        "id": "Q6384570"
+      },
+      {
+        "goals": 1,
+        "id": "Q5336583"
+      }
+    ],
+    "Q19470": [
+      {
+        "goals": 3,
+        "id": "Q211126"
+      },
+      {
+        "goals": 1,
+        "id": "Q1181137"
+      },
+      {
+        "goals": 1,
+        "id": "Q6396445"
+      },
+      {
+        "goals": 1,
+        "id": "Q2456848"
+      },
+      {
+        "goals": 2,
+        "id": "Q769959"
+      }
+    ],
+    "Q19481": [
+      {
+        "goals": 1,
+        "id": "Q348642"
+      },
+      {
+        "goals": 1,
+        "id": "Q1631560"
+      },
+      {
+        "goals": 1,
+        "id": "Q740385"
+      },
+      {
+        "goals": 2,
+        "id": "Q2719418"
+      }
+    ],
+    "Q19482": [
+      {
+        "goals": 1,
+        "id": "Q975790"
+      },
+      {
+        "goals": 1,
+        "id": "Q10592"
+      }
+    ],
+    "Q19490": [
+      {
+        "goals": 2,
+        "id": "Q129655"
+      },
+      {
+        "goals": 1,
+        "id": "Q312659"
+      },
+      {
+        "goals": 1,
+        "id": "Q188144"
+      }
+    ],
+    "Q19498": [
+      {
+        "goals": 1,
+        "id": "Q4760446"
+      },
+      {
+        "goals": 1,
+        "id": "Q1426678"
+      }
+    ],
+    "Q19580": [
+      {
+        "goals": 1,
+        "id": "Q3877698"
+      },
+      {
+        "goals": 1,
+        "id": "Q716642"
+      },
+      {
+        "goals": 1,
+        "id": "Q464701"
+      }
+    ],
+    "Q5794": [
+      {
+        "goals": 1,
+        "id": "Q314879"
+      },
+      {
+        "goals": 2,
+        "id": "Q952335"
+      }
+    ],
+    "Q9616": [
+      {
+        "goals": 2,
+        "id": "Q681412"
+      },
+      {
+        "goals": 3,
+        "id": "Q1159141"
+      },
+      {
+        "goals": 3,
+        "id": "Q290769"
+      },
+      {
+        "goals": 2,
+        "id": "Q193348"
+      },
+      {
+        "goals": 13,
+        "id": "Q9354"
+      },
+      {
+        "goals": 10,
+        "id": "Q338595"
+      },
+      {
+        "goals": 10,
+        "id": "Q215944"
+      },
+      {
+        "goals": 1,
+        "id": "Q378583"
+      },
+      {
+        "goals": 3,
+        "id": "Q312354"
+      },
+      {
+        "goals": 1,
+        "id": "Q741092"
+      },
+      {
+        "goals": 1,
+        "id": "Q239688"
+      }
+    ],
+    "Q9617": [
+      {
+        "goals": 1,
+        "id": "Q185389"
+      },
+      {
+        "goals": 17,
+        "id": "Q1939",
+        "topScorerRank": 4
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,60 +5458,70 @@
       "club": "Q1128631",
       "goals": 18,
       "player": "Jimmy Floyd Hasselbaink",
+      "playerId": "Q223176",
       "rank": 1
     },
     {
       "club": "Q1130849",
       "goals": 18,
       "player": "Michael Owen",
+      "playerId": "Q128829",
       "rank": 1
     },
     {
       "club": "Q18656",
       "goals": 18,
       "player": "Dwight Yorke",
+      "playerId": "Q192175",
       "rank": 1
     },
     {
       "club": "Q9617",
       "goals": 17,
       "player": "Nicolas Anelka",
+      "playerId": "Q1939",
       "rank": 4
     },
     {
       "club": "Q18656",
       "goals": 17,
       "player": "Andrew Cole",
+      "playerId": "Q216928",
       "rank": 4
     },
     {
       "club": "Q18661",
       "goals": 15,
       "player": "Hámilton Ricard",
+      "playerId": "Q80937",
       "rank": 6
     },
     {
       "club": "Q18711",
       "goals": 14,
       "player": "Dion Dublin",
+      "playerId": "Q531093",
       "rank": 7
     },
     {
       "club": "Q1130849",
       "goals": 14,
       "player": "Robbie Fowler",
+      "playerId": "Q206548",
       "rank": 7
     },
     {
       "club": "Q18711",
       "goals": 14,
       "player": "Julian Joachim",
+      "playerId": "Q6307291",
       "rank": 7
     },
     {
       "club": "Q18716",
       "goals": 14,
       "player": "Alan Shearer",
+      "playerId": "Q483583",
       "rank": 7
     }
   ],

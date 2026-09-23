@@ -2758,6 +2758,81 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q172476": [
+      {
+        "goals": 13,
+        "id": "Q217760",
+        "topScorerRank": 10
+      },
+      {
+        "goals": 14,
+        "id": "Q956723",
+        "topScorerRank": 8
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 22,
+        "id": "Q183967",
+        "topScorerRank": 2
+      },
+      {
+        "goals": 21,
+        "id": "Q439332",
+        "topScorerRank": 3
+      }
+    ],
+    "Q182876": [
+      {
+        "goals": 14,
+        "id": "Q125669",
+        "topScorerRank": 8
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 13,
+        "id": "Q516985",
+        "topScorerRank": 10
+      }
+    ],
+    "Q19509": [
+      {
+        "goals": 16,
+        "id": "Q342439",
+        "topScorerRank": 4
+      }
+    ],
+    "Q19521": [
+      {
+        "goals": 15,
+        "id": "Q2832937",
+        "topScorerRank": 6
+      }
+    ],
+    "Q19523": [
+      {
+        "goals": 15,
+        "id": "Q470729",
+        "topScorerRank": 6
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 16,
+        "id": "Q2089098",
+        "topScorerRank": 4
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 23,
+        "id": "Q313861",
+        "topScorerRank": 1
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,66 +3110,77 @@
       "club": "Q704",
       "goals": 23,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 1
     },
     {
       "club": "Q180305",
       "goals": 22,
       "player": "David Trezeguet",
+      "playerId": "Q183967",
       "rank": 2
     },
     {
       "club": "Q180305",
       "goals": 21,
       "player": "Marco Simone",
+      "playerId": "Q439332",
       "rank": 3
     },
     {
       "club": "Q483020",
       "goals": 16,
       "player": "Christian Corrêa Dionisio",
+      "playerId": "Q2089098",
       "rank": 4
     },
     {
       "club": "Q19509",
       "goals": 16,
       "player": "Shabani Nonda",
+      "playerId": "Q342439",
       "rank": 4
     },
     {
       "club": "Q19523",
       "goals": 15,
       "player": "Tony Cascarino",
+      "playerId": "Q470729",
       "rank": 6
     },
     {
       "club": "Q19521",
       "goals": 15,
       "player": "Alex Dias de Almeida",
+      "playerId": "Q2832937",
       "rank": 6
     },
     {
       "club": "Q182876",
       "goals": 14,
       "player": "Stéphane Guivarc'h",
+      "playerId": "Q125669",
       "rank": 8
     },
     {
       "club": "Q172476",
       "goals": 14,
       "player": "Lilian Laslandes",
+      "playerId": "Q956723",
       "rank": 8
     },
     {
       "club": "Q172476",
       "goals": 13,
       "player": "Sylvain Wiltord",
+      "playerId": "Q217760",
       "rank": 10
     },
     {
       "club": "Q192071",
       "goals": 13,
       "player": "Antoine Sibierski",
+      "playerId": "Q516985",
       "rank": 10
     }
   ],

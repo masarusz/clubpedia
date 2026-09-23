@@ -2758,6 +2758,110 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q101859": [
+      {
+        "goals": 17,
+        "id": "Q2210473",
+        "topScorerRank": 3
+      }
+    ],
+    "Q104761": [
+      {
+        "goals": 17,
+        "id": "Q27310755",
+        "topScorerRank": 3
+      }
+    ],
+    "Q151747": [
+      {
+        "goals": 1,
+        "id": "Q367474",
+        "japan": true
+      }
+    ],
+    "Q15786": [
+      {
+        "goals": 1,
+        "id": "Q4023294",
+        "japan": true
+      }
+    ],
+    "Q15789": [
+      {
+        "goals": 22,
+        "id": "Q151269",
+        "topScorerRank": 1
+      }
+    ],
+    "Q22707": [
+      {
+        "goals": 17,
+        "id": "Q502898",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 16,
+        "id": "Q975390",
+        "topScorerRank": 8
+      }
+    ],
+    "Q33748": [
+      {
+        "goals": 0,
+        "id": "Q11557367",
+        "japan": true
+      }
+    ],
+    "Q38245": [
+      {
+        "goals": 0,
+        "id": "Q164676",
+        "japan": true
+      },
+      {
+        "goals": 17,
+        "id": "Q16979983",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 15,
+        "id": "Q7665927",
+        "topScorerRank": 10
+      }
+    ],
+    "Q41420": [
+      {
+        "goals": 17,
+        "id": "Q152377",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 18,
+        "id": "Q507190",
+        "topScorerRank": 2
+      }
+    ],
+    "Q51976": [
+      {
+        "goals": 3,
+        "id": "Q195620",
+        "japan": true
+      }
+    ],
+    "Q702455": [
+      {
+        "goals": 16,
+        "id": "Q3529022",
+        "topScorerRank": 8
+      },
+      {
+        "goals": 15,
+        "id": "Q759710",
+        "topScorerRank": 10
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,66 +3139,77 @@
       "club": "Q15789",
       "goals": 22,
       "player": "Robert Lewandowski",
+      "playerId": "Q151269",
       "rank": 1
     },
     {
       "club": "Q41420",
       "goals": 18,
       "player": "Paco Alcácer",
+      "playerId": "Q507190",
       "rank": 2
     },
     {
       "club": "Q104761",
       "goals": 17,
       "player": "Kai Havertz",
+      "playerId": "Q27310755",
       "rank": 3
     },
     {
       "club": "Q38245",
       "goals": 17,
       "player": "Luka Jović",
+      "playerId": "Q16979983",
       "rank": 3
     },
     {
       "club": "Q22707",
       "goals": 17,
       "player": "Andrej Kramarić",
+      "playerId": "Q502898",
       "rank": 3
     },
     {
       "club": "Q41420",
       "goals": 17,
       "player": "Marco Reus",
+      "playerId": "Q152377",
       "rank": 3
     },
     {
       "club": "Q101859",
       "goals": 17,
       "player": "Wout Weghorst",
+      "playerId": "Q2210473",
       "rank": 3
     },
     {
       "club": "Q22707",
       "goals": 16,
       "player": "Ishak Belfodil",
+      "playerId": "Q975390",
       "rank": 8
     },
     {
       "club": "Q702455",
       "goals": 16,
       "player": "Timo Werner",
+      "playerId": "Q3529022",
       "rank": 8
     },
     {
       "club": "Q38245",
       "goals": 15,
       "player": "Sébastien Haller",
+      "playerId": "Q7665927",
       "rank": 10
     },
     {
       "club": "Q702455",
       "goals": 15,
       "player": "Yussuf Poulsen",
+      "playerId": "Q759710",
       "rank": 10
     }
   ],

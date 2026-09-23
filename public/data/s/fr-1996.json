@@ -3424,6 +3424,76 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q126334": [
+      {
+        "goals": 19,
+        "id": "Q1177327",
+        "topScorerRank": 3
+      }
+    ],
+    "Q132885": [
+      {
+        "goals": 15,
+        "id": "Q1646840",
+        "topScorerRank": 9
+      }
+    ],
+    "Q172476": [
+      {
+        "goals": 16,
+        "id": "Q13494",
+        "topScorerRank": 7
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 19,
+        "id": "Q313861",
+        "topScorerRank": 3
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 21,
+        "id": "Q982887",
+        "topScorerRank": 2
+      }
+    ],
+    "Q19509": [
+      {
+        "goals": 22,
+        "id": "Q125669",
+        "topScorerRank": 1
+      }
+    ],
+    "Q208399": [
+      {
+        "goals": 18,
+        "id": "Q197633",
+        "topScorerRank": 6
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 15,
+        "id": "Q469243",
+        "topScorerRank": 9
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 16,
+        "id": "Q219771",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 19,
+        "id": "Q520658",
+        "topScorerRank": 3
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,60 +3801,70 @@
       "club": "Q19509",
       "goals": 22,
       "player": "Stéphane Guivarc'h",
+      "playerId": "Q125669",
       "rank": 1
     },
     {
       "club": "Q192071",
       "goals": 21,
       "player": "Japhet N'Doram",
+      "playerId": "Q982887",
       "rank": 2
     },
     {
       "club": "Q180305",
       "goals": 19,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 3
     },
     {
       "club": "Q704",
       "goals": 19,
       "player": "Alain Caveglia",
+      "playerId": "Q520658",
       "rank": 3
     },
     {
       "club": "Q126334",
       "goals": 19,
       "player": "David Zitelli",
+      "playerId": "Q1177327",
       "rank": 3
     },
     {
       "club": "Q208399",
       "goals": 18,
       "player": "Anto Drobnjak",
+      "playerId": "Q197633",
       "rank": 6
     },
     {
       "club": "Q172476",
       "goals": 16,
       "player": "Jean-Pierre Papin",
+      "playerId": "Q13494",
       "rank": 7
     },
     {
       "club": "Q704",
       "goals": 16,
       "player": "Ludovic Giuly",
+      "playerId": "Q219771",
       "rank": 7
     },
     {
       "club": "Q132885",
       "goals": 15,
       "player": "Xavier Gravelaine",
+      "playerId": "Q1646840",
       "rank": 9
     },
     {
       "club": "Q483020",
       "goals": 15,
       "player": "Patrice Loko",
+      "playerId": "Q469243",
       "rank": 9
     }
   ],

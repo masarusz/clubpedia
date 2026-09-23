@@ -3424,6 +3424,86 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q180305": [
+      {
+        "goals": 21,
+        "id": "Q313861",
+        "topScorerRank": 1
+      }
+    ],
+    "Q182876": [
+      {
+        "goals": 13,
+        "id": "Q1879",
+        "topScorerRank": 8
+      },
+      {
+        "goals": 12,
+        "id": "Q956723",
+        "topScorerRank": 10
+      }
+    ],
+    "Q185163": [
+      {
+        "goals": 12,
+        "id": "Q2275781",
+        "topScorerRank": 10
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 15,
+        "id": "Q982887",
+        "topScorerRank": 4
+      }
+    ],
+    "Q19509": [
+      {
+        "goals": 15,
+        "id": "Q217760",
+        "topScorerRank": 4
+      }
+    ],
+    "Q208399": [
+      {
+        "goals": 20,
+        "id": "Q197633",
+        "topScorerRank": 2
+      }
+    ],
+    "Q298267": [
+      {
+        "goals": 12,
+        "id": "Q2966290",
+        "topScorerRank": 10
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 13,
+        "id": "Q217482",
+        "topScorerRank": 8
+      },
+      {
+        "goals": 15,
+        "id": "Q553353",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 14,
+        "id": "Q312895",
+        "topScorerRank": 7
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 18,
+        "id": "Q934848",
+        "topScorerRank": 3
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,72 +3811,84 @@
       "club": "Q180305",
       "goals": 21,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 1
     },
     {
       "club": "Q208399",
       "goals": 20,
       "player": "Anto Drobnjak",
+      "playerId": "Q197633",
       "rank": 2
     },
     {
       "club": "Q704",
       "goals": 18,
       "player": "Florian Maurice",
+      "playerId": "Q934848",
       "rank": 3
     },
     {
       "club": "Q483020",
       "goals": 15,
       "player": "Julio César Dely Valdes",
+      "playerId": "Q553353",
       "rank": 4
     },
     {
       "club": "Q192071",
       "goals": 15,
       "player": "Japhet N'Doram",
+      "playerId": "Q982887",
       "rank": 4
     },
     {
       "club": "Q19509",
       "goals": 15,
       "player": "Sylvain Wiltord",
+      "playerId": "Q217760",
       "rank": 4
     },
     {
       "club": "Q483020",
       "goals": 14,
       "player": "Raí",
+      "playerId": "Q312895",
       "rank": 7
     },
     {
       "club": "Q483020",
       "goals": 13,
       "player": "Youri Djorkaeff",
+      "playerId": "Q217482",
       "rank": 8
     },
     {
       "club": "Q182876",
       "goals": 13,
       "player": "Corentin Martins",
+      "playerId": "Q1879",
       "rank": 8
     },
     {
       "club": "Q185163",
       "goals": 12,
       "player": "James Debbah",
+      "playerId": "Q2275781",
       "rank": 10
     },
     {
       "club": "Q298267",
       "goals": 12,
       "player": "Christophe Horlaville",
+      "playerId": "Q2966290",
       "rank": 10
     },
     {
       "club": "Q182876",
       "goals": 12,
       "player": "Lilian Laslandes",
+      "playerId": "Q956723",
       "rank": 10
     }
   ],

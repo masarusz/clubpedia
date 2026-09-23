@@ -2758,6 +2758,78 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q172476": [
+      {
+        "goals": 22,
+        "id": "Q218165",
+        "topScorerRank": 1
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 14,
+        "id": "Q342439",
+        "topScorerRank": 5
+      }
+    ],
+    "Q182876": [
+      {
+        "goals": 22,
+        "id": "Q1936",
+        "topScorerRank": 1
+      }
+    ],
+    "Q191843": [
+      {
+        "goals": 11,
+        "id": "Q2460894",
+        "topScorerRank": 9
+      }
+    ],
+    "Q19512": [
+      {
+        "goals": 14,
+        "id": "Q723943",
+        "topScorerRank": 5
+      }
+    ],
+    "Q19516": [
+      {
+        "goals": 11,
+        "id": "Q455486",
+        "topScorerRank": 9
+      }
+    ],
+    "Q208399": [
+      {
+        "goals": 14,
+        "id": "Q1367655",
+        "topScorerRank": 5
+      }
+    ],
+    "Q48911": [
+      {
+        "goals": 19,
+        "id": "Q188144",
+        "topScorerRank": 3
+      }
+    ],
+    "Q501693": [
+      {
+        "goals": 15,
+        "id": "Q2642398",
+        "topScorerRank": 4
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 14,
+        "id": "Q313861",
+        "topScorerRank": 5
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,60 +3107,70 @@
       "club": "Q182876",
       "goals": 22,
       "player": "Djibril Cissé",
+      "playerId": "Q1936",
       "rank": 1
     },
     {
       "club": "Q172476",
       "goals": 22,
       "player": "Pauleta",
+      "playerId": "Q218165",
       "rank": 1
     },
     {
       "club": "Q48911",
       "goals": 19,
       "player": "Jean-Claude Darcheville",
+      "playerId": "Q188144",
       "rank": 3
     },
     {
       "club": "Q501693",
       "goals": 15,
       "player": "Nicolas Goussé",
+      "playerId": "Q2642398",
       "rank": 4
     },
     {
       "club": "Q180305",
       "goals": 14,
       "player": "Shabani Nonda",
+      "playerId": "Q342439",
       "rank": 5
     },
     {
       "club": "Q19512",
       "goals": 14,
       "player": "Pierre-Alain Frau",
+      "playerId": "Q723943",
       "rank": 5
     },
     {
       "club": "Q704",
       "goals": 14,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 5
     },
     {
       "club": "Q208399",
       "goals": 14,
       "player": "Tony Vairelles",
+      "playerId": "Q1367655",
       "rank": 5
     },
     {
       "club": "Q191843",
       "goals": 11,
       "player": "Daniel Moreira",
+      "playerId": "Q2460894",
       "rank": 9
     },
     {
       "club": "Q19516",
       "goals": 11,
       "player": "Bruno Cheyrou",
+      "playerId": "Q455486",
       "rank": 9
     }
   ],

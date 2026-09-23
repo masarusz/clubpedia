@@ -55,6 +55,10 @@
       "homeGoals": 0,
       "key": "it-2006-Q1457-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -136,6 +140,21 @@
       "homeGoals": 0,
       "key": "it-2006-Q1457-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "38",
+            "player": "Q46896"
+          },
+          {
+            "display": "Maicon",
+            "minute": "75",
+            "player": "Q177686"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -226,6 +245,10 @@
       "homeGoals": 0,
       "key": "it-2006-Q1543-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -307,6 +330,47 @@
       "homeGoals": 3,
       "key": "it-2006-Q1543-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "17",
+            "player": "Q160206"
+          },
+          {
+            "display": "Stanković",
+            "minute": "22",
+            "player": "Q192640"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "47",
+            "player": "Q46896"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "68",
+            "player": "Q185081"
+          }
+        ],
+        "home": [
+          {
+            "display": "Seedorf",
+            "minute": "50",
+            "player": "Q484909"
+          },
+          {
+            "display": "Gilardino",
+            "minute": "76",
+            "player": "Q182451"
+          },
+          {
+            "display": "Kaká",
+            "minute": "90+1",
+            "player": "Q531814"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -397,6 +461,34 @@
       "homeGoals": 2,
       "key": "it-2006-Q1886-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Reginaldo",
+            "minute": "27",
+            "player": "Q1343384"
+          },
+          {
+            "display": "Pazzini",
+            "minute": "32",
+            "penalty": true,
+            "player": "Q219389"
+          }
+        ],
+        "home": [
+          {
+            "display": "Loria",
+            "minute": "39",
+            "player": "Q1372810"
+          },
+          {
+            "display": "Doni",
+            "minute": "66",
+            "penalty": true,
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -478,6 +570,23 @@
       "homeGoals": 1,
       "key": "it-2006-Q1886-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Figo",
+            "minute": "48",
+            "penalty": true,
+            "player": "Q483145"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ferreira Pinto",
+            "minute": "10",
+            "player": "Q797780"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -568,6 +677,21 @@
       "homeGoals": 0,
       "key": "it-2006-Q1900-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Toni",
+            "minute": "32",
+            "player": "Q186478"
+          },
+          {
+            "display": "Toni",
+            "minute": "75",
+            "player": "Q186478"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -649,6 +773,22 @@
       "homeGoals": 1,
       "key": "it-2006-Q1900-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Grosso",
+            "minute": "38",
+            "player": "Q230529"
+          }
+        ],
+        "home": [
+          {
+            "display": "Colucci",
+            "minute": "17",
+            "player": "Q1819086"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -739,6 +879,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q2018-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Toni",
+            "minute": "87",
+            "player": "Q186478"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -820,6 +970,47 @@
       "homeGoals": 2,
       "key": "it-2006-Q2018-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Samuel",
+            "minute": "45",
+            "player": "Q193702"
+          },
+          {
+            "display": "Solari",
+            "minute": "49",
+            "player": "Q315471"
+          },
+          {
+            "display": "Grosso",
+            "minute": "56",
+            "player": "Q230529"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "67",
+            "player": "Q46896"
+          },
+          {
+            "display": "Cruz",
+            "minute": "78",
+            "player": "Q297397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Spinesi",
+            "minute": "65",
+            "player": "Q520587"
+          },
+          {
+            "display": "Corona",
+            "minute": "74",
+            "player": "Q1876596"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -910,6 +1101,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q2037-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "80",
+            "player": "Q202645"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -991,6 +1192,21 @@
       "homeGoals": 0,
       "key": "it-2006-Q2037-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Adriano",
+            "minute": "1",
+            "player": "Q170452"
+          },
+          {
+            "display": "Crespo",
+            "minute": "51",
+            "player": "Q160206"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1036,6 +1252,42 @@
       "homeGoals": 5,
       "key": "it-2006-Q2052-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Quagliarella",
+            "minute": "40",
+            "player": "Q45900"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "5",
+            "player": "Q202645"
+          },
+          {
+            "display": "Montolivo",
+            "minute": "36",
+            "player": "Q153002"
+          },
+          {
+            "display": "Pazzini",
+            "minute": "49",
+            "player": "Q219389"
+          },
+          {
+            "display": "Reginaldo",
+            "minute": "72",
+            "player": "Q1343384"
+          },
+          {
+            "display": "Reginaldo",
+            "minute": "90+1",
+            "player": "Q1343384"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1045,6 +1297,33 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gilardino",
+            "minute": "4",
+            "player": "Q182451"
+          },
+          {
+            "display": "Gilardino",
+            "minute": "90",
+            "player": "Q182451"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "20",
+            "penalty": true,
+            "player": "Q202645"
+          },
+          {
+            "display": "Mutu",
+            "minute": "76",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1054,6 +1333,32 @@
       "homeGoals": 3,
       "key": "it-2006-Q2052-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Migliaccio",
+            "minute": "25",
+            "player": "Q2305089"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "26",
+            "player": "Q202645"
+          },
+          {
+            "display": "Pazzini",
+            "minute": "89",
+            "player": "Q219389"
+          },
+          {
+            "display": "Pazzini",
+            "minute": "90+4",
+            "player": "Q219389"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1063,6 +1368,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2052-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pazzini",
+            "minute": "7",
+            "player": "Q219389"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1072,6 +1387,26 @@
       "homeGoals": 3,
       "key": "it-2006-Q2052-Q2018",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Jørgensen",
+            "minute": "54",
+            "player": "Q312516"
+          },
+          {
+            "display": "Toni",
+            "minute": "79",
+            "player": "Q186478"
+          },
+          {
+            "display": "Dainelli",
+            "minute": "83",
+            "player": "Q446487"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1081,6 +1416,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2052-Q2037",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reginaldo",
+            "minute": "64",
+            "player": "Q1343384"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1090,6 +1435,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2052-Q2609",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "15",
+            "player": "Q186478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1099,6 +1454,38 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q2674",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Di Michele",
+            "minute": "9",
+            "player": "Q560651"
+          },
+          {
+            "display": "Amauri",
+            "minute": "80",
+            "player": "Q62198"
+          },
+          {
+            "display": "Amauri",
+            "minute": "90",
+            "player": "Q62198"
+          }
+        ],
+        "home": [
+          {
+            "display": "Barzagli",
+            "minute": "32",
+            "ownGoal": true,
+            "player": "Q107051"
+          },
+          {
+            "display": "Mutu",
+            "minute": "87",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1108,6 +1495,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2052-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "17",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1117,6 +1514,10 @@
       "homeGoals": 0,
       "key": "it-2006-Q2052-Q2739",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1126,6 +1527,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2052-Q2756",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "43",
+            "player": "Q202645"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1135,6 +1546,43 @@
       "homeGoals": 5,
       "key": "it-2006-Q2052-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rosina",
+            "minute": "15",
+            "player": "Q459728"
+          }
+        ],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "31",
+            "player": "Q186478"
+          },
+          {
+            "display": "Toni",
+            "minute": "34",
+            "player": "Q186478"
+          },
+          {
+            "display": "Franceschini",
+            "minute": "52",
+            "ownGoal": true,
+            "player": "Q656961"
+          },
+          {
+            "display": "Gamberini",
+            "minute": "74",
+            "player": "Q312400"
+          },
+          {
+            "display": "Gamberini",
+            "minute": "83",
+            "player": "Q312400"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1144,6 +1592,21 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q2798",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reginaldo",
+            "minute": "16",
+            "player": "Q1343384"
+          },
+          {
+            "display": "Pazzini",
+            "minute": "44",
+            "player": "Q219389"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1153,6 +1616,31 @@
       "homeGoals": 4,
       "key": "it-2006-Q2052-Q29390",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "18",
+            "player": "Q186478"
+          },
+          {
+            "display": "Potenza",
+            "minute": "22",
+            "player": "Q659824"
+          },
+          {
+            "display": "Mutu",
+            "minute": "51",
+            "player": "Q202645"
+          },
+          {
+            "display": "Liverani",
+            "minute": "45+2",
+            "player": "Q381262"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1162,6 +1650,37 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cambiasso",
+            "minute": "11",
+            "player": "Q192122"
+          },
+          {
+            "display": "Cambiasso",
+            "minute": "41",
+            "player": "Q192122"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "61",
+            "player": "Q46896"
+          }
+        ],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "68",
+            "player": "Q186478"
+          },
+          {
+            "display": "Toni",
+            "minute": "79",
+            "player": "Q186478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1171,6 +1690,31 @@
       "homeGoals": 4,
       "key": "it-2006-Q2052-Q6630",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Reginaldo",
+            "minute": "5",
+            "player": "Q1343384"
+          },
+          {
+            "display": "Montolivo",
+            "minute": "45+1",
+            "player": "Q153002"
+          },
+          {
+            "display": "Toni",
+            "minute": "56",
+            "player": "Q186478"
+          },
+          {
+            "display": "Krøldrup",
+            "minute": "70",
+            "player": "Q346694"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1180,6 +1724,21 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q6703",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "27",
+            "player": "Q202645"
+          },
+          {
+            "display": "Toni",
+            "minute": "75",
+            "player": "Q186478"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1189,6 +1748,27 @@
       "homeGoals": 2,
       "key": "it-2006-Q2052-Q6767",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lucarelli",
+            "minute": "27",
+            "player": "Q310034"
+          }
+        ],
+        "home": [
+          {
+            "display": "Toni",
+            "minute": "68",
+            "player": "Q186478"
+          },
+          {
+            "display": "Jørgensen",
+            "minute": "82",
+            "player": "Q312516"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1198,6 +1778,26 @@
       "homeGoals": 3,
       "key": "it-2006-Q2052-Q8476",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mutu",
+            "minute": "31",
+            "player": "Q202645"
+          },
+          {
+            "display": "Santana",
+            "minute": "43",
+            "player": "Q533643"
+          },
+          {
+            "display": "Blasi",
+            "minute": "55",
+            "player": "Q445976"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1261,6 +1861,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q2609-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "71",
+            "player": "Q202645"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1333,6 +1943,21 @@
       "homeGoals": 0,
       "key": "it-2006-Q2609-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cambiasso",
+            "minute": "39",
+            "player": "Q192122"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "85",
+            "player": "Q185081"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1432,6 +2057,22 @@
       "homeGoals": 1,
       "key": "it-2006-Q2674-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "33",
+            "player": "Q202645"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cavani",
+            "minute": "72",
+            "player": "Q167790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1504,6 +2145,27 @@
       "homeGoals": 1,
       "key": "it-2006-Q2674-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "7",
+            "player": "Q46896"
+          },
+          {
+            "display": "Vieira",
+            "minute": "61",
+            "player": "Q46347"
+          }
+        ],
+        "home": [
+          {
+            "display": "Amauri",
+            "minute": "45+1",
+            "player": "Q62198"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1603,6 +2265,22 @@
       "homeGoals": 2,
       "key": "it-2006-Q2693-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rossi",
+            "minute": "27",
+            "player": "Q221216"
+          },
+          {
+            "display": "Rossi",
+            "minute": "89",
+            "penalty": true,
+            "player": "Q221216"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1675,6 +2353,27 @@
       "homeGoals": 1,
       "key": "it-2006-Q2693-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "16",
+            "player": "Q46896"
+          },
+          {
+            "display": "Cruz",
+            "minute": "90+2",
+            "player": "Q297397"
+          }
+        ],
+        "home": [
+          {
+            "display": "Budan",
+            "minute": "27",
+            "player": "Q381269"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1774,6 +2473,32 @@
       "homeGoals": 3,
       "key": "it-2006-Q2739-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ujfaluši",
+            "minute": "15",
+            "player": "Q221129"
+          }
+        ],
+        "home": [
+          {
+            "display": "De Rossi",
+            "minute": "38",
+            "player": "Q168497"
+          },
+          {
+            "display": "Taddei",
+            "minute": "49",
+            "player": "Q298320"
+          },
+          {
+            "display": "Taddei",
+            "minute": "66",
+            "player": "Q298320"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1846,6 +2571,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q2739-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "44",
+            "player": "Q160206"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1945,6 +2680,22 @@
       "homeGoals": 1,
       "key": "it-2006-Q2756-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "38",
+            "player": "Q202645"
+          }
+        ],
+        "home": [
+          {
+            "display": "Antonini",
+            "minute": "18",
+            "player": "Q309762"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2017,6 +2768,28 @@
       "homeGoals": 1,
       "key": "it-2006-Q2756-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Materazzi",
+            "minute": "18",
+            "player": "Q185081"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "60",
+            "penalty": true,
+            "player": "Q185081"
+          }
+        ],
+        "home": [
+          {
+            "display": "Negro",
+            "minute": "21",
+            "player": "Q561227"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2116,6 +2889,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q2768-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jørgensen",
+            "minute": "13",
+            "player": "Q312516"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2188,6 +2971,32 @@
       "homeGoals": 1,
       "key": "it-2006-Q2768-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Adriano",
+            "minute": "24",
+            "player": "Q170452"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "60",
+            "player": "Q46896"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "85",
+            "player": "Q185081"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fiore",
+            "minute": "58",
+            "player": "Q318226"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2287,6 +3096,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q2798-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Iaquinta",
+            "minute": "40",
+            "player": "Q191869"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2359,6 +3178,10 @@
       "homeGoals": 0,
       "key": "it-2006-Q2798-Q631",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2458,6 +3281,34 @@
       "homeGoals": 2,
       "key": "it-2006-Q29390-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pazzini",
+            "minute": "25",
+            "penalty": true,
+            "player": "Q219389"
+          },
+          {
+            "display": "Gamberini",
+            "minute": "57",
+            "player": "Q312400"
+          }
+        ],
+        "home": [
+          {
+            "display": "Riganò",
+            "minute": "81",
+            "player": "Q559521"
+          },
+          {
+            "display": "Riganò",
+            "minute": "88",
+            "penalty": true,
+            "player": "Q559521"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2530,6 +3381,16 @@
       "homeGoals": 0,
       "key": "it-2006-Q29390-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "73",
+            "player": "Q160206"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2575,6 +3436,24 @@
       "homeGoals": 1,
       "key": "it-2006-Q631-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Flachi",
+            "minute": "48",
+            "penalty": true,
+            "player": "Q3080962"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bonanni",
+            "minute": "80",
+            "ownGoal": true,
+            "player": "Q460758"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2584,6 +3463,27 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q1543",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ronaldo",
+            "minute": "40",
+            "player": "Q529207"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ibrahimović",
+            "minute": "75",
+            "player": "Q46896"
+          },
+          {
+            "display": "Cruz",
+            "minute": "54",
+            "player": "Q297397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2593,6 +3493,28 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q1886",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Doni",
+            "minute": "16",
+            "player": "Q350489"
+          }
+        ],
+        "home": [
+          {
+            "display": "Adriano",
+            "minute": "65",
+            "player": "Q170452"
+          },
+          {
+            "display": "Loria",
+            "minute": "75",
+            "ownGoal": true,
+            "player": "Q1372810"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2602,6 +3524,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q631-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Burdisso",
+            "minute": "11",
+            "player": "Q205188"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2611,6 +3543,27 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q2018",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mascara",
+            "minute": "16",
+            "player": "Q559550"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stanković",
+            "minute": "29",
+            "player": "Q192640"
+          },
+          {
+            "display": "Stanković",
+            "minute": "75",
+            "player": "Q192640"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2620,6 +3573,48 @@
       "homeGoals": 4,
       "key": "it-2006-Q631-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pellissier",
+            "minute": "77",
+            "penalty": true,
+            "player": "Q465699"
+          },
+          {
+            "display": "Tiribocchi",
+            "minute": "86",
+            "player": "Q2578223"
+          },
+          {
+            "display": "Brighi",
+            "minute": "89",
+            "player": "Q355830"
+          }
+        ],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "11",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "70",
+            "player": "Q160206"
+          },
+          {
+            "display": "Samuel",
+            "minute": "58",
+            "player": "Q193702"
+          },
+          {
+            "display": "Stanković",
+            "minute": "64",
+            "player": "Q192640"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2629,6 +3624,32 @@
       "homeGoals": 3,
       "key": "it-2006-Q631-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Toni",
+            "minute": "5",
+            "player": "Q186478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stanković",
+            "minute": "19",
+            "player": "Q192640"
+          },
+          {
+            "display": "Adriano",
+            "minute": "24",
+            "player": "Q170452"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "70",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2638,6 +3659,47 @@
       "homeGoals": 4,
       "key": "it-2006-Q631-Q2609",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pandev",
+            "minute": "3",
+            "player": "Q238163"
+          },
+          {
+            "display": "Mutarelli",
+            "minute": "4",
+            "player": "Q607066"
+          },
+          {
+            "display": "Ledesma",
+            "minute": "41",
+            "player": "Q316457"
+          }
+        ],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "20",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "35",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "83",
+            "player": "Q160206"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "85",
+            "player": "Q185081"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2647,6 +3709,32 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q2674",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Caracciolo",
+            "minute": "3",
+            "player": "Q493589"
+          },
+          {
+            "display": "Zaccardo",
+            "minute": "45+1",
+            "player": "Q154478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cruz",
+            "minute": "67",
+            "player": "Q297397"
+          },
+          {
+            "display": "Adriano",
+            "minute": "74",
+            "player": "Q170452"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2656,6 +3744,21 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Maxwell",
+            "minute": "56",
+            "player": "Q215040"
+          },
+          {
+            "display": "Crespo",
+            "minute": "70",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2665,6 +3768,33 @@
       "homeGoals": 1,
       "key": "it-2006-Q631-Q2739",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Perrotta",
+            "minute": "44",
+            "player": "Q232789"
+          },
+          {
+            "display": "Totti",
+            "minute": "89",
+            "player": "Q20110"
+          },
+          {
+            "display": "Cassetti",
+            "minute": "90+5",
+            "player": "Q10758"
+          }
+        ],
+        "home": [
+          {
+            "display": "Materazzi",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q185081"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2674,6 +3804,21 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q2756",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Burdisso",
+            "minute": "11",
+            "player": "Q205188"
+          },
+          {
+            "display": "Crespo",
+            "minute": "64",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2683,6 +3828,28 @@
       "homeGoals": 3,
       "key": "it-2006-Q631-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Materazzi",
+            "minute": "12",
+            "penalty": true,
+            "player": "Q185081"
+          },
+          {
+            "display": "Maicon",
+            "minute": "60",
+            "player": "Q177686"
+          },
+          {
+            "display": "Figo",
+            "minute": "67",
+            "penalty": true,
+            "player": "Q483145"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2692,6 +3859,22 @@
       "homeGoals": 1,
       "key": "it-2006-Q631-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Obodo",
+            "minute": "47",
+            "player": "Q464145"
+          }
+        ],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "66",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2701,6 +3884,21 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q29390",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Materazzi",
+            "minute": "49",
+            "player": "Q185081"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "59",
+            "player": "Q46896"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2710,6 +3908,22 @@
       "homeGoals": 2,
       "key": "it-2006-Q631-Q6630",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zanetti",
+            "minute": "41",
+            "player": "Q52876"
+          },
+          {
+            "display": "Cudini",
+            "minute": "53",
+            "ownGoal": true,
+            "player": "Q3858861"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2719,6 +3933,32 @@
       "homeGoals": 3,
       "key": "it-2006-Q631-Q6703",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Saudati",
+            "minute": "57",
+            "player": "Q2247063"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cruz",
+            "minute": "27",
+            "player": "Q297397"
+          },
+          {
+            "display": "Stanković",
+            "minute": "60",
+            "player": "Q192640"
+          },
+          {
+            "display": "Recoba",
+            "minute": "59",
+            "player": "Q204108"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2728,6 +3968,38 @@
       "homeGoals": 4,
       "key": "it-2006-Q631-Q6767",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "C. Lucarelli",
+            "minute": "70",
+            "player": "Q310034"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pfertzel",
+            "minute": "2",
+            "ownGoal": true,
+            "player": "Q269007"
+          },
+          {
+            "display": "Materazzi",
+            "minute": "13",
+            "player": "Q185081"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "71",
+            "player": "Q46896"
+          },
+          {
+            "display": "Cruz",
+            "minute": "78",
+            "player": "Q297397"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2737,6 +4009,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q631-Q8476",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "4",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2800,6 +4082,22 @@
       "homeGoals": 1,
       "key": "it-2006-Q6630-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Toni",
+            "minute": "45+2",
+            "player": "Q186478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bjelanović",
+            "minute": "84",
+            "player": "Q1353985"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2881,6 +4179,28 @@
       "homeGoals": 1,
       "key": "it-2006-Q6630-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "65",
+            "player": "Q46896"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "73",
+            "player": "Q46896"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bonanni",
+            "minute": "90+3",
+            "penalty": true,
+            "player": "Q460758"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2971,6 +4291,27 @@
       "homeGoals": 1,
       "key": "it-2006-Q6703-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "67",
+            "player": "Q202645"
+          },
+          {
+            "display": "Toni",
+            "minute": "77",
+            "player": "Q186478"
+          }
+        ],
+        "home": [
+          {
+            "display": "Matteini",
+            "minute": "29",
+            "player": "Q3703577"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3052,6 +4393,26 @@
       "homeGoals": 0,
       "key": "it-2006-Q6703-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibrahimović",
+            "minute": "78",
+            "player": "Q46896"
+          },
+          {
+            "display": "Crespo",
+            "minute": "60",
+            "player": "Q160206"
+          },
+          {
+            "display": "Samuel",
+            "minute": "87",
+            "player": "Q193702"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3142,6 +4503,16 @@
       "homeGoals": 1,
       "key": "it-2006-Q6767-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Lucarelli",
+            "minute": "58",
+            "player": "Q310034"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3223,6 +4594,27 @@
       "homeGoals": 1,
       "key": "it-2006-Q6767-Q631",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cruz",
+            "minute": "35",
+            "player": "Q297397"
+          },
+          {
+            "display": "Ibrahimović",
+            "minute": "56",
+            "player": "Q46896"
+          }
+        ],
+        "home": [
+          {
+            "display": "C. Lucarelli",
+            "minute": "27",
+            "player": "Q310034"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3313,6 +4705,23 @@
       "homeGoals": 1,
       "key": "it-2006-Q8476-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mutu",
+            "minute": "87",
+            "penalty": true,
+            "player": "Q202645"
+          }
+        ],
+        "home": [
+          {
+            "display": "Foggia",
+            "minute": "57",
+            "player": "Q555408"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3394,6 +4803,10 @@
       "homeGoals": 0,
       "key": "it-2006-Q8476-Q631",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3424,6 +4837,384 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q1457": [
+      {
+        "goals": 1,
+        "id": "Q3080962"
+      },
+      {
+        "goals": 1,
+        "id": "Q45900"
+      }
+    ],
+    "Q1543": [
+      {
+        "goals": 1,
+        "id": "Q529207"
+      },
+      {
+        "goals": 1,
+        "id": "Q484909"
+      },
+      {
+        "goals": 1,
+        "id": "Q531814"
+      },
+      {
+        "goals": 3,
+        "id": "Q182451"
+      }
+    ],
+    "Q1886": [
+      {
+        "goals": 2,
+        "id": "Q350489"
+      },
+      {
+        "goals": 1,
+        "id": "Q1372810"
+      },
+      {
+        "goals": 1,
+        "id": "Q797780"
+      },
+      {
+        "goals": 1,
+        "id": "Q2305089"
+      }
+    ],
+    "Q1900": [
+      {
+        "goals": 1,
+        "id": "Q1819086"
+      }
+    ],
+    "Q2018": [
+      {
+        "goals": 17,
+        "id": "Q520587",
+        "topScorerRank": 5
+      },
+      {
+        "goals": 1,
+        "id": "Q1876596"
+      },
+      {
+        "goals": 1,
+        "id": "Q559550"
+      }
+    ],
+    "Q2037": [
+      {
+        "goals": 1,
+        "id": "Q355830"
+      },
+      {
+        "goals": 1,
+        "id": "Q465699"
+      },
+      {
+        "goals": 1,
+        "id": "Q2578223"
+      }
+    ],
+    "Q2052": [
+      {
+        "goals": 16,
+        "id": "Q186478",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 16,
+        "id": "Q202645",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 7,
+        "id": "Q219389"
+      },
+      {
+        "goals": 3,
+        "id": "Q312516"
+      },
+      {
+        "goals": 1,
+        "id": "Q381262"
+      },
+      {
+        "goals": 1,
+        "id": "Q533643"
+      },
+      {
+        "goals": 2,
+        "id": "Q153002"
+      },
+      {
+        "goals": 1,
+        "id": "Q446487"
+      },
+      {
+        "goals": 1,
+        "id": "Q221129"
+      },
+      {
+        "goals": 6,
+        "id": "Q1343384"
+      },
+      {
+        "goals": 3,
+        "id": "Q312400"
+      },
+      {
+        "goals": 1,
+        "id": "Q659824"
+      },
+      {
+        "goals": 1,
+        "id": "Q346694"
+      },
+      {
+        "goals": 1,
+        "id": "Q445976"
+      }
+    ],
+    "Q2609": [
+      {
+        "goals": 16,
+        "id": "Q75580",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 1,
+        "id": "Q238163"
+      },
+      {
+        "goals": 1,
+        "id": "Q316457"
+      },
+      {
+        "goals": 1,
+        "id": "Q607066"
+      }
+    ],
+    "Q2674": [
+      {
+        "goals": 1,
+        "id": "Q154478"
+      },
+      {
+        "goals": 1,
+        "id": "Q560651"
+      },
+      {
+        "goals": 1,
+        "id": "Q167790"
+      },
+      {
+        "goals": 3,
+        "id": "Q62198"
+      },
+      {
+        "goals": 1,
+        "id": "Q493589"
+      }
+    ],
+    "Q2693": [
+      {
+        "goals": 2,
+        "id": "Q221216"
+      },
+      {
+        "goals": 1,
+        "id": "Q381269"
+      }
+    ],
+    "Q2739": [
+      {
+        "goals": 26,
+        "id": "Q20110",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 1,
+        "id": "Q232789"
+      },
+      {
+        "goals": 1,
+        "id": "Q10758"
+      },
+      {
+        "goals": 1,
+        "id": "Q168497"
+      },
+      {
+        "goals": 2,
+        "id": "Q298320"
+      }
+    ],
+    "Q2756": [
+      {
+        "goals": 1,
+        "id": "Q561227"
+      },
+      {
+        "goals": 1,
+        "id": "Q309762"
+      }
+    ],
+    "Q2768": [
+      {
+        "goals": 1,
+        "id": "Q318226"
+      },
+      {
+        "goals": 1,
+        "id": "Q459728"
+      },
+      {
+        "goals": 0,
+        "id": "Q359749",
+        "japan": true
+      }
+    ],
+    "Q2798": [
+      {
+        "goals": 1,
+        "id": "Q191869"
+      },
+      {
+        "goals": 1,
+        "id": "Q464145"
+      }
+    ],
+    "Q29390": [
+      {
+        "goals": 19,
+        "id": "Q559521",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 1,
+        "id": "Q359741",
+        "japan": true
+      }
+    ],
+    "Q631": [
+      {
+        "goals": 1,
+        "id": "Q46347"
+      },
+      {
+        "goals": 14,
+        "id": "Q160206"
+      },
+      {
+        "goals": 3,
+        "id": "Q192122"
+      },
+      {
+        "goals": 15,
+        "id": "Q46896",
+        "topScorerRank": 10
+      },
+      {
+        "goals": 2,
+        "id": "Q483145"
+      },
+      {
+        "goals": 1,
+        "id": "Q315471"
+      },
+      {
+        "goals": 2,
+        "id": "Q177686"
+      },
+      {
+        "goals": 2,
+        "id": "Q230529"
+      },
+      {
+        "goals": 1,
+        "id": "Q215040"
+      },
+      {
+        "goals": 1,
+        "id": "Q52876"
+      },
+      {
+        "goals": 10,
+        "id": "Q185081"
+      },
+      {
+        "goals": 1,
+        "id": "Q204108"
+      },
+      {
+        "goals": 6,
+        "id": "Q192640"
+      },
+      {
+        "goals": 7,
+        "id": "Q297397"
+      },
+      {
+        "goals": 3,
+        "id": "Q193702"
+      },
+      {
+        "goals": 5,
+        "id": "Q170452"
+      },
+      {
+        "goals": 2,
+        "id": "Q205188"
+      }
+    ],
+    "Q6630": [
+      {
+        "goals": 1,
+        "id": "Q1353985"
+      },
+      {
+        "goals": 1,
+        "id": "Q460758"
+      }
+    ],
+    "Q6703": [
+      {
+        "goals": 1,
+        "id": "Q2247063"
+      },
+      {
+        "goals": 1,
+        "id": "Q3703577"
+      }
+    ],
+    "Q6767": [
+      {
+        "goals": 20,
+        "id": "Q310034",
+        "topScorerRank": 2
+      }
+    ],
+    "Q8476": [
+      {
+        "goals": 18,
+        "id": "Q311813",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 17,
+        "id": "Q62244",
+        "topScorerRank": 5
+      },
+      {
+        "goals": 1,
+        "id": "Q555408"
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,60 +5522,70 @@
       "club": "Q2739",
       "goals": 26,
       "player": "Francesco Totti",
+      "playerId": "Q20110",
       "rank": 1
     },
     {
       "club": "Q6767",
       "goals": 20,
       "player": "Cristiano Lucarelli",
+      "playerId": "Q310034",
       "rank": 2
     },
     {
       "club": "Q29390",
       "goals": 19,
       "player": "Christian Riganò",
+      "playerId": "Q559521",
       "rank": 3
     },
     {
       "club": "Q8476",
       "goals": 18,
       "player": "Rolando Bianchi",
+      "playerId": "Q311813",
       "rank": 4
     },
     {
       "club": "Q8476",
       "goals": 17,
       "player": "Nicola Amoruso",
+      "playerId": "Q62244",
       "rank": 5
     },
     {
       "club": "Q2018",
       "goals": 17,
       "player": "Gionatha Spinesi",
+      "playerId": "Q520587",
       "rank": 5
     },
     {
       "club": "Q2052",
       "goals": 16,
       "player": "Adrian Mutu",
+      "playerId": "Q202645",
       "rank": 7
     },
     {
       "club": "Q2609",
       "goals": 16,
       "player": "Tommaso Rocchi",
+      "playerId": "Q75580",
       "rank": 7
     },
     {
       "club": "Q2052",
       "goals": 16,
       "player": "Luca Toni",
+      "playerId": "Q186478",
       "rank": 7
     },
     {
       "club": "Q631",
       "goals": 15,
       "player": "Zlatan Ibrahimović",
+      "playerId": "Q46896",
       "rank": 10
     }
   ],

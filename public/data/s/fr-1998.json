@@ -2760,6 +2760,86 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q132885": [
+      {
+        "goals": 13,
+        "id": "Q299493",
+        "topScorerRank": 6
+      },
+      {
+        "goals": 14,
+        "id": "Q934848",
+        "topScorerRank": 5
+      }
+    ],
+    "Q172476": [
+      {
+        "goals": 22,
+        "id": "Q217760",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 15,
+        "id": "Q956723",
+        "topScorerRank": 3
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 12,
+        "id": "Q183967",
+        "topScorerRank": 7
+      },
+      {
+        "goals": 11,
+        "id": "Q365175",
+        "topScorerRank": 9
+      }
+    ],
+    "Q19509": [
+      {
+        "goals": 15,
+        "id": "Q342439",
+        "topScorerRank": 3
+      }
+    ],
+    "Q19513": [
+      {
+        "goals": 11,
+        "id": "Q454220",
+        "topScorerRank": 9
+      }
+    ],
+    "Q19523": [
+      {
+        "goals": 12,
+        "id": "Q470729",
+        "topScorerRank": 7
+      }
+    ],
+    "Q208399": [
+      {
+        "goals": 11,
+        "id": "Q2329557",
+        "topScorerRank": 9
+      }
+    ],
+    "Q221525": [
+      {
+        "goals": 11,
+        "id": "Q2926954",
+        "topScorerRank": 9
+      }
+    ],
+    "Q704": [
+      {
+        "goals": 17,
+        "id": "Q520658",
+        "topScorerRank": 2
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3039,72 +3119,84 @@
       "club": "Q172476",
       "goals": 22,
       "player": "Sylvain Wiltord",
+      "playerId": "Q217760",
       "rank": 1
     },
     {
       "club": "Q704",
       "goals": 17,
       "player": "Alain Caveglia",
+      "playerId": "Q520658",
       "rank": 2
     },
     {
       "club": "Q172476",
       "goals": 15,
       "player": "Lilian Laslandes",
+      "playerId": "Q956723",
       "rank": 3
     },
     {
       "club": "Q19509",
       "goals": 15,
       "player": "Shabani Nonda",
+      "playerId": "Q342439",
       "rank": 3
     },
     {
       "club": "Q132885",
       "goals": 14,
       "player": "Florian Maurice",
+      "playerId": "Q934848",
       "rank": 5
     },
     {
       "club": "Q132885",
       "goals": 13,
       "player": "Fabrizio Ravanelli",
+      "playerId": "Q299493",
       "rank": 6
     },
     {
       "club": "Q180305",
       "goals": 12,
       "player": "David Trezeguet",
+      "playerId": "Q183967",
       "rank": 7
     },
     {
       "club": "Q19523",
       "goals": 12,
       "player": "Tony Cascarino",
+      "playerId": "Q470729",
       "rank": 7
     },
     {
       "club": "Q208399",
       "goals": 11,
       "player": "Frédéric Née",
+      "playerId": "Q2329557",
       "rank": 9
     },
     {
       "club": "Q180305",
       "goals": 11,
       "player": "Victor Ikpeba",
+      "playerId": "Q365175",
       "rank": 9
     },
     {
       "club": "Q19513",
       "goals": 11,
       "player": "Laurent Robert",
+      "playerId": "Q454220",
       "rank": 9
     },
     {
       "club": "Q221525",
       "goals": 11,
       "player": "Bruno Rodriguez (footballer)",
+      "playerId": "Q2926954",
       "rank": 9
     }
   ],

@@ -2758,6 +2758,133 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q102720": [
+      {
+        "goals": 12,
+        "id": "Q180462",
+        "topScorerRank": 10
+      }
+    ],
+    "Q104761": [
+      {
+        "goals": 14,
+        "id": "Q129810",
+        "topScorerRank": 3
+      }
+    ],
+    "Q104770": [
+      {
+        "goals": 4,
+        "id": "Q195620",
+        "japan": true
+      }
+    ],
+    "Q105254": [
+      {
+        "goals": 8,
+        "id": "Q15401668",
+        "japan": true
+      }
+    ],
+    "Q106394": [
+      {
+        "goals": 15,
+        "id": "Q159123",
+        "topScorerRank": 2
+      }
+    ],
+    "Q15755": [
+      {
+        "goals": 0,
+        "id": "Q367474",
+        "japan": true
+      },
+      {
+        "goals": 12,
+        "id": "Q40771",
+        "topScorerRank": 10
+      },
+      {
+        "goals": 13,
+        "id": "Q699094",
+        "topScorerRank": 6
+      }
+    ],
+    "Q15789": [
+      {
+        "goals": 29,
+        "id": "Q151269",
+        "topScorerRank": 1
+      }
+    ],
+    "Q22707": [
+      {
+        "goals": 12,
+        "id": "Q523555",
+        "topScorerRank": 10
+      },
+      {
+        "goals": 13,
+        "id": "Q502898",
+        "topScorerRank": 6
+      },
+      {
+        "goals": 14,
+        "id": "Q3401587",
+        "topScorerRank": 3
+      }
+    ],
+    "Q32494": [
+      {
+        "goals": 0,
+        "id": "Q310607",
+        "japan": true
+      }
+    ],
+    "Q33748": [
+      {
+        "goals": 14,
+        "id": "Q326159",
+        "topScorerRank": 3
+      }
+    ],
+    "Q38245": [
+      {
+        "goals": 0,
+        "id": "Q164676",
+        "japan": true
+      }
+    ],
+    "Q41420": [
+      {
+        "goals": 13,
+        "id": "Q44977",
+        "topScorerRank": 6
+      }
+    ],
+    "Q4512": [
+      {
+        "goals": 1,
+        "id": "Q11557367",
+        "japan": true
+      }
+    ],
+    "Q51974": [
+      {
+        "goals": 0,
+        "id": "Q558820",
+        "japan": true
+      }
+    ],
+    "Q702455": [
+      {
+        "goals": 13,
+        "id": "Q3529022",
+        "topScorerRank": 6
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,72 +3162,84 @@
       "club": "Q15789",
       "goals": 29,
       "player": "Robert Lewandowski",
+      "playerId": "Q151269",
       "rank": 1
     },
     {
       "club": "Q106394",
       "goals": 15,
       "player": "Nils Petersen",
+      "playerId": "Q159123",
       "rank": 2
     },
     {
       "club": "Q33748",
       "goals": 14,
       "player": "Niclas Füllkrug",
+      "playerId": "Q326159",
       "rank": 3
     },
     {
       "club": "Q22707",
       "goals": 14,
       "player": "Mark Uth",
+      "playerId": "Q3401587",
       "rank": 3
     },
     {
       "club": "Q104761",
       "goals": 14,
       "player": "Kevin Volland",
+      "playerId": "Q129810",
       "rank": 3
     },
     {
       "club": "Q41420",
       "goals": 13,
       "player": "Pierre-Emerick Aubameyang",
+      "playerId": "Q44977",
       "rank": 6
     },
     {
       "club": "Q15755",
       "goals": 13,
       "player": "Michael Gregoritsch",
+      "playerId": "Q699094",
       "rank": 6
     },
     {
       "club": "Q22707",
       "goals": 13,
       "player": "Andrej Kramarić",
+      "playerId": "Q502898",
       "rank": 6
     },
     {
       "club": "Q702455",
       "goals": 13,
       "player": "Timo Werner",
+      "playerId": "Q3529022",
       "rank": 6
     },
     {
       "club": "Q15755",
       "goals": 12,
       "player": "Alfreð Finnbogason",
+      "playerId": "Q40771",
       "rank": 10
     },
     {
       "club": "Q102720",
       "goals": 12,
       "player": "Salomon Kalou",
+      "playerId": "Q180462",
       "rank": 10
     },
     {
       "club": "Q22707",
       "goals": 12,
       "player": "Sandro Wagner",
+      "playerId": "Q523555",
       "rank": 10
     }
   ],

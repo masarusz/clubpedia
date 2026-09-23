@@ -3424,6 +3424,97 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q1132418": [
+      {
+        "goals": 13,
+        "id": "Q1210598",
+        "topScorerRank": 7
+      }
+    ],
+    "Q132885": [
+      {
+        "goals": 16,
+        "id": "Q313861",
+        "topScorerRank": 5
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 20,
+        "id": "Q217482",
+        "topScorerRank": 1
+      }
+    ],
+    "Q182876": [
+      {
+        "goals": 12,
+        "id": "Q2722662",
+        "topScorerRank": 10
+      }
+    ],
+    "Q191843": [
+      {
+        "goals": 20,
+        "id": "Q1339060",
+        "topScorerRank": 1
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 20,
+        "id": "Q547054",
+        "topScorerRank": 1
+      }
+    ],
+    "Q19512": [
+      {
+        "goals": 15,
+        "id": "Q520658",
+        "topScorerRank": 6
+      },
+      {
+        "goals": 12,
+        "id": "Q2152421",
+        "topScorerRank": 10
+      }
+    ],
+    "Q19521": [
+      {
+        "goals": 12,
+        "id": "Q683030",
+        "topScorerRank": 10
+      }
+    ],
+    "Q221525": [
+      {
+        "goals": 13,
+        "id": "Q1177327",
+        "topScorerRank": 7
+      }
+    ],
+    "Q298267": [
+      {
+        "goals": 18,
+        "id": "Q3082250",
+        "topScorerRank": 4
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 13,
+        "id": "Q42601",
+        "topScorerRank": 7
+      }
+    ],
+    "Q845137": [
+      {
+        "goals": 12,
+        "id": "Q2966323",
+        "topScorerRank": 10
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3731,78 +3822,91 @@
       "club": "Q191843",
       "goals": 20,
       "player": "Roger Boli",
+      "playerId": "Q1339060",
       "rank": 1
     },
     {
       "club": "Q180305",
       "goals": 20,
       "player": "Youri Djorkaeff",
+      "playerId": "Q217482",
       "rank": 1
     },
     {
       "club": "Q192071",
       "goals": 20,
       "player": "Nicolas Ouédec",
+      "playerId": "Q547054",
       "rank": 1
     },
     {
       "club": "Q298267",
       "goals": 18,
       "player": "Franck Priou",
+      "playerId": "Q3082250",
       "rank": 4
     },
     {
       "club": "Q132885",
       "goals": 16,
       "player": "Sonny Anderson",
+      "playerId": "Q313861",
       "rank": 5
     },
     {
       "club": "Q19512",
       "goals": 15,
       "player": "Alain Caveglia",
+      "playerId": "Q520658",
       "rank": 6
     },
     {
       "club": "Q483020",
       "goals": 13,
       "player": "David Ginola",
+      "playerId": "Q42601",
       "rank": 7
     },
     {
       "club": "Q221525",
       "goals": 13,
       "player": "David Zitelli",
+      "playerId": "Q1177327",
       "rank": 7
     },
     {
       "club": "Q1132418",
       "goals": 13,
       "player": "Didier Tholot",
+      "playerId": "Q1210598",
       "rank": 7
     },
     {
       "club": "Q845137",
       "goals": 12,
       "player": "Christophe Lagrange",
+      "playerId": "Q2966323",
       "rank": 10
     },
     {
       "club": "Q182876",
       "goals": 12,
       "player": "Christophe Cocard",
+      "playerId": "Q2722662",
       "rank": 10
     },
     {
       "club": "Q19521",
       "goals": 12,
       "player": "Roland Wohlfarth",
+      "playerId": "Q683030",
       "rank": 10
     },
     {
       "club": "Q19512",
       "goals": 12,
       "player": "Henk Vos",
+      "playerId": "Q2152421",
       "rank": 10
     }
   ],

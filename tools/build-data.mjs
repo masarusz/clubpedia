@@ -4,7 +4,10 @@ import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { stableJson } from './lib/source-api.mjs';
-import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, discrepancies, matchOutcome, metadataIndex, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
+import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, discrepancies, matchOutcome, metadataIndex, normalizeTitle, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
+import { attachScorers } from './lib/build-scorers.mjs';
+import { displayMinute, linkPlayerName, reconciledGoals } from './lib/openligadb.mjs';
+import { buildPlayers } from './lib/players.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const CACHE = join(ROOT, '.cache/sources');
@@ -96,6 +99,9 @@ export async function build() {
   const missingScorers = [];
   const unresolvedScorerClubs = [];
   const revisionParts = [];
+  const scorerOverrides = await maybeJson(join(ROOT, 'curated/scorer-overrides.json'), []);
+  const unresolvedScorers = { conflicts: [], unlinked: 0 };
+  const scorerCoverage = [];
 
   for (const id of Object.keys(lock.seasons).sort()) {
     const [league, yearText] = id.split('-'); const year = Number(yearText);
@@ -105,7 +111,13 @@ export async function build() {
     for (const title of record.templateTitles ?? []) sources.push(await readCached(CACHE, 'enwiki', title));
     const season = parseSeason({ league, year, sources, metadata });
     season.topScorers = seasonTopScorers(article.content, metadata, season, unresolvedScorerClubs);
+    for (const entry of season.topScorers) {
+      const meta = metadata.get(normalizeTitle(entry.player));
+      entry.playerId = meta?.wikibaseItem ?? null;
+    }
     if (!season.topScorers.length) missingScorers.push(id);
+    const coverage = await attachScorers({ season, lock, metadata, readCached, cacheRoot: CACHE, unresolvedScorers, overrides: scorerOverrides });
+    scorerCoverage.push({ id, ...coverage });
     for (const source of sources) revisionParts.push(`${source.title}:${source.revid}`);
     for (const row of season.table) {
       const meta = metadata.get(row.sourceTitle);
@@ -117,6 +129,59 @@ export async function build() {
     }
     for (const name of season.unknownTableParameters) unknownLines.push(`${id}: ${name}`);
     seasons.push(season);
+  }
+
+  // Phase 2b: players (scorers, top-scorer table entries, the 101 Japanese
+  // players across all eras) built from the reconciled scorers above.
+  const japaneseFiles = (await readdir(join(CACHE, 'jawiki'))).filter((name) => name.endsWith('.json')).sort();
+  const playersResult = await buildPlayers({ seasons, metadata, cacheRoot: CACHE, japaneseFiles });
+
+  // OpenLigaDB (ODbL) Bundesliga goals, only for matches Wikipedia's boxes
+  // left without reconciled scorers, kept in their own files (never merged
+  // with CC BY-SA Wikipedia data).
+  const openLigaOutputs = new Map();
+  const openLigaStats = { years: 0, matches: 0, linked: 0, unlinked: 0 };
+  for (const season of seasons.filter((item) => item.league === 'de')) {
+    let source;
+    try { source = JSON.parse(await readFile(join(CACHE, 'openligadb', `bl1-${season.year}.json`), 'utf8')); }
+    catch (error) { if (error.code === 'ENOENT') continue; throw error; }
+    // OpenLigaDB spells a few club names differently from the cached
+    // en.wikipedia titles (München vs the enwiki "Munich"); translate the
+    // known cases before folding rather than guessing by edit distance.
+    const fold = (value) => String(value ?? '').toLowerCase().replace(/münchen/g, 'munich').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+    const resolveLigaClub = (teamName) => {
+      const meta = metadata.get(normalizeTitle(teamName));
+      if (meta?.wikibaseItem && season.table.some((row) => row.club === meta.wikibaseItem)) return meta.wikibaseItem;
+      // OpenLigaDB team names are sometimes the German spelling (e.g. "FC
+      // Bayern München") with no cached en.wikipedia redirect; fold and
+      // match against this season's own club names instead of guessing.
+      const wanted = fold(teamName);
+      const candidates = season.table.filter((row) => fold(row.sourceTitle) === wanted || fold(row.sourceName) === wanted);
+      return candidates.length === 1 ? candidates[0].club : null;
+    };
+    const outputMatches = {};
+    let yearHasOutput = false;
+    for (const match of season.matches) {
+      if (match.scorers) continue;
+      const ligaMatch = source.find((item) => resolveLigaClub(item.team1?.teamName) === match.home && resolveLigaClub(item.team2?.teamName) === match.away);
+      if (!ligaMatch) continue;
+      const reconciled = reconciledGoals(ligaMatch, match.homeGoals, match.awayGoals);
+      if (!reconciled) continue;
+      const candidatesFor = (clubId) => [...playersResult.players.values()]
+        .filter((player) => player.seasons.some((bucket) => bucket.league === 'de' && bucket.season === season.id && bucket.club === clubId))
+        .map((player) => ({ id: player.id, name: player.en }));
+      const homeCandidates = candidatesFor(match.home);
+      const awayCandidates = candidatesFor(match.away);
+      const link = (events, candidates) => events.map((event) => {
+        const id = linkPlayerName(event.name, candidates);
+        openLigaStats[id ? 'linked' : 'unlinked'] += 1;
+        return { minute: event.minute, ...(event.isPenalty ? { penalty: true } : {}), ...(event.ownGoal ? { ownGoal: true } : {}), name: event.name, player: id };
+      });
+      outputMatches[match.key] = { home: link(reconciled.home, homeCandidates), away: link(reconciled.away, awayCandidates) };
+      openLigaStats.matches += 1;
+      yearHasOutput = true;
+    }
+    if (yearHasOutput) { openLigaOutputs.set(season.year, outputMatches); openLigaStats.years += 1; }
   }
 
   const championsByLeague = {};
@@ -183,16 +248,64 @@ export async function build() {
   const mismatchGroups = groupCountMismatches(countMismatches, countExceptions, previousClubs);
   await writeFile(join(REPORTS, 'champions.txt'), `${Object.entries(championsByLeague).map(([league, entries]) => `${league}: ${entries.at(0)?.season ?? '-'}..${entries.at(-1)?.season ?? '-'} (${entries.length})`).join('\n')}\n\nunresolved champion identities\n${unresolvedChampions.map((item) => JSON.stringify(item)).join('\n')}\n\nrunning-count mismatches by cause\n${Object.entries(mismatchGroups).map(([cause, entries]) => `${cause} (${entries.length})\n${entries.map((item) => JSON.stringify(item)).join('\n')}`).join('\n')}\n`);
   await writeFile(join(REPORTS, 'top-scorers.txt'), `Missing per-season tables (${missingScorers.length}): ${missingScorers.join(', ')}\n${Object.entries(historicalTopScorers).map(([league, entries]) => `${league}: ${entries.length}`).join('\n')}\n\nUnresolved per-season club cells (${unresolvedScorerClubs.length})\n${unresolvedScorerClubs.map((item) => JSON.stringify(item)).join('\n')}\n`);
+  await writeFile(join(REPORTS, 'scorer-coverage.txt'), `${scorerCoverage.map((row) => `${row.id}: ${row.reconciled}/${row.matches} reconciled (confirmed by both ${row.confirmedByBoth}), ambiguous boxes skipped ${row.ambiguousBoxes}, conflicts ${row.conflicts}`).join('\n')}\n\nUnlinked scorers (no en.wikipedia link, or link unresolved): ${unresolvedScorers.unlinked}\nOpenLigaDB (Bundesliga fallback): ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked, ${openLigaStats.unlinked} unlinked\n`);
+  await writeFile(join(REPORTS, 'scorer-conflicts.txt'), `${unresolvedScorers.conflicts.map((item) => JSON.stringify(item)).join('\n')}\n`);
 
   await rm(OUTPUT, { recursive: true, force: true });
   await mkdir(join(OUTPUT, 's'), { recursive: true }); await mkdir(join(OUTPUT, 'c'), { recursive: true }); await mkdir(join(OUTPUT, 'h'), { recursive: true });
+  await mkdir(join(OUTPUT, 'o'), { recursive: true }); await mkdir(join(OUTPUT, 'p'), { recursive: true });
   const fingerprint = createHash('sha256').update(revisionParts.sort().join('\n')).digest('hex');
+
+  // 名鑑 v1: per league-season, per club, the Japanese players plus every
+  // player with a reconciled league goal or a top-scorer entry that season
+  // (ids + goals only; names load from the player files).
+  const seasonClubPlayers = new Map();
+  for (const [id, player] of playersResult.players) {
+    for (const bucket of player.seasons) {
+      if (!bucket.club) continue;
+      if (!seasonClubPlayers.has(bucket.season)) seasonClubPlayers.set(bucket.season, new Map());
+      const clubMap = seasonClubPlayers.get(bucket.season);
+      if (!clubMap.has(bucket.club)) clubMap.set(bucket.club, []);
+      clubMap.get(bucket.club).push({ id, goals: bucket.goals, ...(bucket.topScorerRank ? { topScorerRank: bucket.topScorerRank } : {}), ...(player.japan ? { japan: true } : {}) });
+    }
+  }
+
   const compactSeasons = [];
   for (const season of seasons) {
-    const output = { id: season.id, league: season.league, year: season.year, champion: season.champion, table: season.table.map(({ code, sourceName, ...row }) => row), matches: season.matches.map(({ gridValue, ...match }) => match), topScorers: season.topScorers };
+    const clubMap = seasonClubPlayers.get(season.id);
+    const players = clubMap ? Object.fromEntries([...clubMap].sort(([a], [b]) => a.localeCompare(b))) : {};
+    const output = { id: season.id, league: season.league, year: season.year, champion: season.champion, table: season.table.map(({ code, sourceName, ...row }) => row), matches: season.matches.map(({ gridValue, ...match }) => match), topScorers: season.topScorers, players };
     await writeFile(join(OUTPUT, 's', `${season.id}.json`), stableJson(output));
     compactSeasons.push({ id: season.id, label: `${season.year}–${String(season.year + 1).slice(-2)}`, champion: season.champion, topScorers: season.topScorers.filter((entry) => entry.rank === 1).map((entry) => ({ player: entry.player, goals: entry.goals })) });
   }
+
+  // OpenLigaDB (ODbL) goal events, one file per Bundesliga season, never
+  // merged with CC BY-SA Wikipedia data.
+  for (const [year, matches] of openLigaOutputs) {
+    await writeFile(join(OUTPUT, 'o', `de-${year}.json`), stableJson({ league: 'de', year, licence: 'ODbL-1.0', source: 'OpenLigaDB', matches }));
+  }
+
+  // Players, bucketed so one player page loads one file <= 300 KB.
+  const playerEntries = [...playersResult.players.entries()].sort(([a], [b]) => a.localeCompare(b));
+  const BUCKET_COUNT = 40;
+  const buckets = new Map();
+  for (const [id, player] of playerEntries) {
+    const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % BUCKET_COUNT).padStart(2, '0');
+    if (!buckets.has(bucketId)) buckets.set(bucketId, {});
+    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)) };
+  }
+  const playerFileSizes = [];
+  for (const [bucketId, entries] of buckets) {
+    const path = join(OUTPUT, 'p', `${bucketId}.json`);
+    await writeFile(path, stableJson(entries));
+    playerFileSizes.push({ bucket: bucketId, bytes: (await stat(path)).size, count: Object.keys(entries).length });
+  }
+
+  // 日本人選手 (all eras): every Japanese player, by season -> club.
+  const japanPlayers = [...playersResult.players.values()].filter((player) => player.japan).map((player) => ({
+    id: player.id, en: player.en, ja: player.ja, birthDate: player.birthDate, seasons: player.japan.sort((a, b) => a.season.localeCompare(b.season)),
+  })).sort((a, b) => a.id.localeCompare(b.id));
+  await writeFile(join(OUTPUT, 'japan.json'), stableJson({ players: japanPlayers }));
 
   const clubData = new Map([...clubs].map(([id, names]) => [id, { id, names: { en: names.enTitle, ja: names.jaName }, championSeasons: [], positions: [], headToHead: {} }]));
   for (const [league, champions] of Object.entries(championsByLeague)) for (const item of champions) if (item.champion) {
@@ -221,17 +334,22 @@ export async function build() {
   const indexBytes = (await stat(indexPath)).size;
 
   const missingNames = Object.entries(clubObject).filter(([, entry]) => !entry.jaName).map(([id, entry]) => `${id} ${entry.enTitle}`);
+  await writeFile(join(REPORTS, 'players.txt'), `Players: ${playersResult.players.size}\nBirth dates missing: ${[...playersResult.players.values()].filter((player) => !player.birthDate).length}\nJapanese players without a lead reading: ${playersResult.readingsMissing.length}\n${playersResult.readingsMissing.map((item) => JSON.stringify(item)).join('\n')}\n\nAge sanity anomalies (age < 15 or > 45 in a season they scored): ${playersResult.ageAnomalies.length}\n${playersResult.ageAnomalies.map((item) => JSON.stringify(item)).join('\n')}\n\nPlayer file sizes (bucket: bytes, players)\n${playerFileSizes.map((item) => `${item.bucket}: ${item.bytes} bytes, ${item.count} players`).join('\n')}\n`);
+  const oversizedPlayerFiles = playerFileSizes.filter((item) => item.bytes > 300 * 1024);
   const elapsed = performance.now() - started;
   console.log(`Built ${seasons.length} league-seasons, ${seasons.reduce((sum, season) => sum + season.matches.length, 0)} matches, ${clubs.size} clubs in ${(elapsed / 1000).toFixed(2)}s`);
   console.log(`Reviewed corrections: ${previousCorrections.length}; invalid reviewed scopes: ${invalidReviewed.length}; unreviewed disagreements: ${proposed.length}; unresolved scorer clubs: ${unresolvedScorerClubs.length}`);
   console.log(`Historical identities missing: ${unresolvedChampions.length}; running-count mismatches: ${countMismatches.length} (${mismatchGroups.unexplained.length} unexplained)`);
   console.log(`Missing Japanese names: ${missingNames.length}; unknown table parameters: ${unknownLines.length}; index.json: ${indexBytes} bytes`);
+  console.log(`Players: ${playersResult.players.size} in ${playerFileSizes.length} bucket file(s); scorer conflicts: ${unresolvedScorers.conflicts.length}; unlinked scorers: ${unresolvedScorers.unlinked}; age anomalies: ${playersResult.ageAnomalies.length}; readings missing: ${playersResult.readingsMissing.length}`);
+  console.log(`OpenLigaDB: ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked / ${openLigaStats.unlinked} unlinked`);
   if (missingNames.length && !allowMissingNames) throw new Error(`Missing Japanese club names:\n${missingNames.join('\n')}`);
   if (unresolvedChampions.length && !allowProposed) throw new Error(`${unresolvedChampions.length} historical champions lack pinned identity metadata`);
   if (proposed.length && !allowProposed) throw new Error(`${proposed.length} results corrections await review; rerun with --allow-proposed to inspect output`);
   if (mismatchGroups.unexplained.length && !allowProposed) throw new Error(`${mismatchGroups.unexplained.length} champion running-count mismatches lack a curated explanation`);
   if (indexBytes > 40 * 1024) throw new Error(`index.json is ${indexBytes} bytes; limit is 40960`);
-  return { seasons, championsByLeague, clubs: clubObject, corrections: previousCorrections, invalidReviewed, countMismatches, mismatchGroups, unresolvedChampions, unresolvedScorerClubs, missingNames, unknownLines, indexBytes, elapsed };
+  if (oversizedPlayerFiles.length) throw new Error(`Player file(s) over 300 KB: ${oversizedPlayerFiles.map((item) => `${item.bucket} (${item.bytes} bytes)`).join(', ')}`);
+  return { seasons, championsByLeague, clubs: clubObject, corrections: previousCorrections, invalidReviewed, countMismatches, mismatchGroups, unresolvedChampions, unresolvedScorerClubs, missingNames, unknownLines, indexBytes, elapsed, playersResult, scorerCoverage, unresolvedScorers, openLigaStats, playerFileSizes };
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) build().catch((error) => { console.error(error.stack ?? error.message); process.exitCode = 1; });

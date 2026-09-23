@@ -52,6 +52,7 @@ PATTERNS=(
   "data/c/*.json"
   "data/h/*.json"
   "data/o/*.json"
+  "data/p/*.json"
   "assets/*.png"
 )
 FILES=()

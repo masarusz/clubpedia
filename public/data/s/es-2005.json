@@ -82,6 +82,28 @@
       "homeGoals": 2,
       "key": "es-2005-Q10286-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Larsson",
+            "minute": "70",
+            "player": "Q179334"
+          }
+        ],
+        "home": [
+          {
+            "display": "Valdo",
+            "minute": "19",
+            "player": "Q519020"
+          },
+          {
+            "display": "Puñal",
+            "minute": "58",
+            "penalty": true,
+            "player": "Q439792"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -109,6 +131,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q10286-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Petrov",
+            "minute": "25",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "R.Garcia",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "Romeo",
+            "minute": "33",
+            "player": "Q464981"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -127,6 +170,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q10286-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Milošević",
+            "minute": "48",
+            "player": "Q240456"
+          },
+          {
+            "display": "Webó",
+            "minute": "83",
+            "player": "Q314740"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -280,6 +338,22 @@
       "homeGoals": 0,
       "key": "es-2005-Q10308-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "M.Rodriguez",
+            "minute": "28",
+            "player": null
+          },
+          {
+            "display": "Torres",
+            "minute": "59",
+            "penalty": true,
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -298,6 +372,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q10308-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ewerthon",
+            "minute": "76",
+            "player": "Q528590"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -424,6 +508,21 @@
       "homeGoals": 0,
       "key": "es-2005-Q10315-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Larsson",
+            "minute": "8",
+            "player": "Q179334"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "50",
+            "player": "Q1255625"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -451,6 +550,37 @@
       "homeGoals": 3,
       "key": "es-2005-Q10315-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Torres",
+            "minute": "10",
+            "player": null
+          },
+          {
+            "display": "Kežman",
+            "minute": "19",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Kovačević",
+            "minute": "56",
+            "player": "Q313050"
+          },
+          {
+            "display": "Kovačević",
+            "minute": "88",
+            "player": "Q313050"
+          },
+          {
+            "display": "Kavehci",
+            "minute": "82",
+            "player": "Q284359"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -469,6 +599,34 @@
       "homeGoals": 2,
       "key": "es-2005-Q10315-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baiano",
+            "minute": "44",
+            "penalty": true,
+            "player": "Q707463"
+          },
+          {
+            "display": "Baiano",
+            "minute": "56",
+            "player": "Q707463"
+          }
+        ],
+        "home": [
+          {
+            "display": "Prieto",
+            "minute": "7",
+            "penalty": true,
+            "player": "Q358407"
+          },
+          {
+            "display": "Skoubo",
+            "minute": "37",
+            "player": "Q718889"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -595,6 +753,37 @@
       "homeGoals": 3,
       "key": "es-2005-Q10329-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ezquerro",
+            "minute": "41",
+            "player": "Q311972"
+          },
+          {
+            "display": "Sylvinho",
+            "minute": "42",
+            "player": "Q312002"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dani Alves",
+            "minute": "22",
+            "player": "Q172720"
+          },
+          {
+            "display": "Aitor Ocio",
+            "minute": "24",
+            "player": "Q410912"
+          },
+          {
+            "display": "Kepa",
+            "minute": "75",
+            "player": "Q562731"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -622,6 +811,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q10329-Q8701",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -640,6 +833,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q10329-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Saviola",
+            "minute": "10",
+            "player": "Q186071"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -766,6 +969,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q10333-Q7156",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Villa",
+            "minute": "44",
+            "player": "Q83006"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -793,6 +1006,23 @@
       "homeGoals": 1,
       "key": "es-2005-Q10333-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "M.Rodriguez",
+            "minute": "18",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Villa",
+            "minute": "11",
+            "penalty": true,
+            "player": "Q83006"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -811,6 +1041,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q10333-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Aurélio",
+            "minute": "78",
+            "player": "Q216910"
+          },
+          {
+            "display": "Villa",
+            "minute": "82",
+            "player": "Q83006"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -874,6 +1119,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q12236-Q10308",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -937,6 +1186,32 @@
       "homeGoals": 2,
       "key": "es-2005-Q12236-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Larsson",
+            "minute": "17",
+            "player": "Q179334"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "32",
+            "player": "Q1255625"
+          }
+        ],
+        "home": [
+          {
+            "display": "Antoñito",
+            "minute": "19",
+            "player": "Q3334420"
+          },
+          {
+            "display": "Serrano",
+            "minute": "23",
+            "player": "Q293463"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -964,6 +1239,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q12236-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "M. Rodriguez",
+            "minute": "46",
+            "player": "Q190929"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -982,6 +1267,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q12236-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Perera",
+            "minute": "89",
+            "player": "Q1378341"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1045,6 +1340,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q12297-Q10308",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1108,6 +1407,22 @@
       "homeGoals": 0,
       "key": "es-2005-Q12297-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Peña",
+            "minute": "23",
+            "ownGoal": true,
+            "player": "Q554944"
+          },
+          {
+            "display": "Deco",
+            "minute": "62",
+            "player": "Q659634"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1117,6 +1432,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q12297-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1135,6 +1454,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q12297-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Torres",
+            "minute": "58",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Forlan",
+            "minute": "10",
+            "player": "Q261534"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1153,6 +1488,27 @@
       "homeGoals": 1,
       "key": "es-2005-Q12297-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baiano",
+            "minute": "26",
+            "player": "Q707463"
+          },
+          {
+            "display": "Baiano",
+            "minute": "46",
+            "player": "Q707463"
+          }
+        ],
+        "home": [
+          {
+            "display": "Riquelme",
+            "minute": "81",
+            "player": "Q192965"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1279,6 +1635,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q223620-Q7156",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1306,6 +1666,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q223620-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "López",
+            "minute": "23",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1324,6 +1694,17 @@
       "homeGoals": 1,
       "key": "es-2005-Q223620-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Aloisi",
+            "minute": "86",
+            "penalty": true,
+            "player": "Q311216"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1450,6 +1831,33 @@
       "homeGoals": 1,
       "key": "es-2005-Q460448-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giuly",
+            "minute": "32",
+            "player": "Q219771"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "45+1",
+            "penalty": true,
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "48",
+            "player": "Q1255625"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mirosavljević",
+            "minute": "90+1",
+            "player": "Q2531646"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1477,6 +1885,23 @@
       "homeGoals": 1,
       "key": "es-2005-Q460448-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kežman",
+            "minute": "33",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Lobos",
+            "minute": "68",
+            "penalty": true,
+            "player": "Q1111438"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1495,6 +1920,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q460448-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baiano",
+            "minute": "24",
+            "player": "Q707463"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fleurquin",
+            "minute": "14",
+            "player": "Q524150"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1549,6 +1990,26 @@
       "homeGoals": 3,
       "key": "es-2005-Q7156-Q10286",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "46",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "52",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Giuly",
+            "minute": "87",
+            "player": "Q219771"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1567,6 +2028,36 @@
       "homeGoals": 5,
       "key": "es-2005-Q7156-Q10315",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Van Bommel",
+            "minute": "19",
+            "player": "Q151853"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "36",
+            "player": "Q39444"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "59",
+            "player": "Q39444"
+          },
+          {
+            "display": "Puyol",
+            "minute": "70",
+            "player": "Q17158"
+          },
+          {
+            "display": "Larsson",
+            "minute": "85",
+            "player": "Q179334"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1576,6 +2067,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kanouté",
+            "minute": "62",
+            "player": "Q218394"
+          }
+        ],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "65",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "77",
+            "player": "Q39444"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1585,6 +2097,33 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Villa",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q83006"
+          },
+          {
+            "display": "Villa",
+            "minute": "53",
+            "player": "Q83006"
+          }
+        ],
+        "home": [
+          {
+            "display": "Giuly",
+            "minute": "45",
+            "player": "Q219771"
+          },
+          {
+            "display": "Deco",
+            "minute": "80",
+            "player": "Q659634"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1594,6 +2133,39 @@
       "homeGoals": 4,
       "key": "es-2005-Q7156-Q12236",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Casquero",
+            "minute": "70",
+            "penalty": true,
+            "player": "Q718878"
+          }
+        ],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "30",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Messi",
+            "minute": "51",
+            "player": "Q615"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "56",
+            "penalty": true,
+            "player": "Q39444"
+          },
+          {
+            "display": "Sylvinho",
+            "minute": "66",
+            "player": "Q312002"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1603,6 +2175,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q7156-Q12297",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "10",
+            "player": "Q1255625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1612,6 +2194,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q223620",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Larsson",
+            "minute": "46",
+            "player": "Q179334"
+          },
+          {
+            "display": "Messi",
+            "minute": "86",
+            "player": "Q615"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1621,6 +2218,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q7156-Q460448",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ronaldinho",
+            "minute": "9",
+            "player": "Q39444"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1630,6 +2237,23 @@
       "homeGoals": 1,
       "key": "es-2005-Q7156-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ronaldo",
+            "minute": "37",
+            "player": "Q529207"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ronaldinho",
+            "minute": "21",
+            "penalty": true,
+            "player": "Q39444"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1639,6 +2263,28 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Llorente",
+            "minute": "15",
+            "player": "Q187891"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ronaldinho",
+            "minute": "38",
+            "penalty": true,
+            "player": "Q39444"
+          },
+          {
+            "display": "Messi",
+            "minute": "50",
+            "player": "Q615"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1648,6 +2294,32 @@
       "homeGoals": 1,
       "key": "es-2005-Q7156-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Torres",
+            "minute": "32",
+            "player": "Q42731"
+          },
+          {
+            "display": "Torres",
+            "minute": "75",
+            "player": "Q42731"
+          },
+          {
+            "display": "Rodríguez",
+            "minute": "46",
+            "player": "Q190929"
+          }
+        ],
+        "home": [
+          {
+            "display": "Larsson",
+            "minute": "64",
+            "player": "Q179334"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1657,6 +2329,43 @@
       "homeGoals": 5,
       "key": "es-2005-Q7156-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Joaquín",
+            "minute": "61",
+            "player": "Q294204"
+          }
+        ],
+        "home": [
+          {
+            "display": "Larsson",
+            "minute": "16",
+            "player": "Q179334"
+          },
+          {
+            "display": "Melli",
+            "minute": "28",
+            "ownGoal": true,
+            "player": "Q632132"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "33",
+            "player": "Q39444"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "58",
+            "player": "Q39444"
+          },
+          {
+            "display": "Messi",
+            "minute": "84",
+            "player": "Q615"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1675,6 +2384,37 @@
       "homeGoals": 3,
       "key": "es-2005-Q7156-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Juanma",
+            "minute": "14",
+            "player": "Q2327879"
+          },
+          {
+            "display": "Andrade",
+            "minute": "27",
+            "player": "Q311095"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ronaldinho",
+            "minute": "3",
+            "player": "Q39444"
+          },
+          {
+            "display": "Larsson",
+            "minute": "33",
+            "player": "Q179334"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "61",
+            "player": "Q1255625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1684,6 +2424,22 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q8780",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Jarque",
+            "minute": "19",
+            "ownGoal": true,
+            "player": "Q222815"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "50",
+            "player": "Q39444"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1693,6 +2449,33 @@
       "homeGoals": 3,
       "key": "es-2005-Q7156-Q8806",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nano",
+            "minute": "5",
+            "player": "Q1364178"
+          }
+        ],
+        "home": [
+          {
+            "display": "Matellán",
+            "minute": "22",
+            "ownGoal": true,
+            "player": "Q615168"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "52",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "68",
+            "player": "Q1255625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1702,6 +2485,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q8835",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Eto'o",
+            "minute": "27",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "31",
+            "player": "Q1255625"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1711,6 +2509,22 @@
       "homeGoals": 2,
       "key": "es-2005-Q7156-Q8857",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ronaldinho",
+            "minute": "81",
+            "penalty": true,
+            "player": "Q39444"
+          },
+          {
+            "display": "Larsson",
+            "minute": "88",
+            "player": "Q179334"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1801,6 +2615,26 @@
       "homeGoals": 0,
       "key": "es-2005-Q8682-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "14",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "58",
+            "player": "Q39444"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "77",
+            "player": "Q39444"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1819,6 +2653,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q8682-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kežman",
+            "minute": "28",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Cassano",
+            "minute": "5",
+            "player": "Q180993"
+          },
+          {
+            "display": "Baptista",
+            "minute": "40",
+            "player": "Q204895"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1837,6 +2692,38 @@
       "homeGoals": 2,
       "key": "es-2005-Q8682-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Contreras",
+            "minute": "7",
+            "player": "Q323358"
+          },
+          {
+            "display": "Núñez",
+            "minute": "44",
+            "player": "Q603918"
+          },
+          {
+            "display": "Canobbio",
+            "minute": "78",
+            "player": "Q460541"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ronaldo",
+            "minute": "36",
+            "penalty": true,
+            "player": "Q529207"
+          },
+          {
+            "display": "Baptista",
+            "minute": "43",
+            "player": "Q204895"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1972,6 +2859,33 @@
       "homeGoals": 3,
       "key": "es-2005-Q8687-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "35",
+            "player": "Q1255625"
+          }
+        ],
+        "home": [
+          {
+            "display": "Andoni Iraola",
+            "minute": "57",
+            "player": "Q317216"
+          },
+          {
+            "display": "Felipe Guréndez",
+            "minute": "80",
+            "player": "Q2398699"
+          },
+          {
+            "display": "Oleguer",
+            "minute": "82",
+            "ownGoal": true,
+            "player": "Q313682"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1990,6 +2904,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8687-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Orbaiz",
+            "minute": "90",
+            "player": "Q325886"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kežman",
+            "minute": "12",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2008,6 +2938,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8687-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ángel",
+            "minute": "58",
+            "player": "Q251767"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gurpegui",
+            "minute": "23",
+            "player": "Q358684"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2062,6 +3008,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q10286",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Muñoz",
+            "minute": "16",
+            "player": "Q940100"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2071,6 +3027,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q10308",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2080,6 +3040,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8701-Q10315",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Kežman",
+            "minute": "83",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2089,6 +3059,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Puerta",
+            "minute": "78",
+            "player": "Q207586"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2098,6 +3078,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q10333",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2107,6 +3091,28 @@
       "homeGoals": 2,
       "key": "es-2005-Q8701-Q12236",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Abella",
+            "minute": "70",
+            "player": "Q460038"
+          }
+        ],
+        "home": [
+          {
+            "display": "Torres",
+            "minute": "65",
+            "penalty": true,
+            "player": null
+          },
+          {
+            "display": "Ibáñez",
+            "minute": "74",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2116,6 +3122,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8701-Q12297",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Forlan",
+            "minute": "90+4",
+            "player": "Q261534"
+          }
+        ],
+        "home": [
+          {
+            "display": "Zahinos",
+            "minute": "5",
+            "player": "Q1386719"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2134,6 +3156,26 @@
       "homeGoals": 3,
       "key": "es-2005-Q8701-Q460448",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "M. Rodriguez",
+            "minute": "22",
+            "player": null
+          },
+          {
+            "display": "Ibanez",
+            "minute": "62",
+            "player": "Q314138"
+          },
+          {
+            "display": "Galletti",
+            "minute": "85",
+            "player": "Q354366"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2152,6 +3194,27 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ronaldo",
+            "minute": "9",
+            "penalty": true,
+            "player": "Q529207"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "61",
+            "player": "Q529207"
+          },
+          {
+            "display": "Luis Perea",
+            "minute": "90",
+            "player": "Q316631"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2161,6 +3224,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8701-Q8687",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Torres",
+            "minute": "82",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2170,6 +3243,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8701-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Arzu",
+            "minute": "76",
+            "player": "Q715268"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kežman",
+            "minute": "24",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2179,6 +3268,27 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lequi",
+            "minute": "69",
+            "player": "Q939270"
+          },
+          {
+            "display": "Baiano",
+            "minute": "83",
+            "penalty": true,
+            "player": "Q707463"
+          },
+          {
+            "display": "de Ridder",
+            "minute": "89",
+            "player": "Q370946"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2206,6 +3316,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q8806",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mariano Pernia",
+            "minute": "71",
+            "player": "Q316992"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2215,6 +3335,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8701-Q8835",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gutiérrez",
+            "minute": "79",
+            "player": "Q208087"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2224,6 +3354,36 @@
       "homeGoals": 5,
       "key": "es-2005-Q8701-Q8857",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Torres",
+            "minute": "5",
+            "player": null
+          },
+          {
+            "display": "Torres",
+            "minute": "9",
+            "player": null
+          },
+          {
+            "display": "M. Rodriguez",
+            "minute": "39",
+            "player": null
+          },
+          {
+            "display": "Valera",
+            "minute": "66",
+            "player": "Q332228"
+          },
+          {
+            "display": "Valera",
+            "minute": "89",
+            "player": "Q332228"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2242,6 +3402,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8723-Q10308",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2314,6 +3478,37 @@
       "homeGoals": 1,
       "key": "es-2005-Q8723-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Van Bommel",
+            "minute": "19",
+            "player": "Q151853"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "67",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "77",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Ezquerro",
+            "minute": "88",
+            "player": "Q311972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Juanito",
+            "minute": "37",
+            "player": "Q216282"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2341,6 +3536,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8723-Q8701",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Capi",
+            "minute": "29",
+            "player": "Q556790"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2350,6 +3555,21 @@
       "homeGoals": 0,
       "key": "es-2005-Q8723-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Larena",
+            "minute": "17",
+            "player": "Q1703860"
+          },
+          {
+            "display": "Perera",
+            "minute": "88",
+            "player": "Q1378341"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2368,6 +3588,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8723-Q8780",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2404,6 +3628,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q10286",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Baiano",
+            "minute": "4",
+            "player": "Q707463"
+          },
+          {
+            "display": "Canobbio",
+            "minute": "71",
+            "player": "Q460541"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2413,6 +3652,31 @@
       "homeGoals": 4,
       "key": "es-2005-Q8749-Q10308",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Canobbio",
+            "minute": "30",
+            "player": "Q460541"
+          },
+          {
+            "display": "Canobbio",
+            "minute": "82",
+            "player": "Q460541"
+          },
+          {
+            "display": "Larena",
+            "minute": "46",
+            "player": "Q1703860"
+          },
+          {
+            "display": "Perera",
+            "minute": "80",
+            "player": "Q1378341"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2422,6 +3686,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8749-Q10315",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Canobbio",
+            "minute": "25",
+            "player": "Q460541"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2431,6 +3705,28 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Maresca",
+            "minute": "53",
+            "penalty": true,
+            "player": "Q317282"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baiano",
+            "minute": "1",
+            "player": "Q707463"
+          },
+          {
+            "display": "Oubiña",
+            "minute": "15",
+            "player": "Q392718"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2440,6 +3736,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8749-Q10333",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Angulo",
+            "minute": "29",
+            "player": "Q313308"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2449,6 +3755,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8749-Q12236",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Casquero",
+            "minute": "60",
+            "player": "Q718878"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2458,6 +3774,17 @@
       "homeGoals": 1,
       "key": "es-2005-Q8749-Q12297",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Baiano",
+            "minute": "38",
+            "penalty": true,
+            "player": "Q707463"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2467,6 +3794,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q223620",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Astudillo",
+            "minute": "68",
+            "player": "Q716570"
+          }
+        ],
+        "home": [
+          {
+            "display": "Canobbio",
+            "minute": "27",
+            "player": "Q460541"
+          },
+          {
+            "display": "Aspas",
+            "minute": "66",
+            "player": "Q515288"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2476,6 +3824,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q460448",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Contreras",
+            "minute": "37",
+            "player": "Q323358"
+          },
+          {
+            "display": "Silva",
+            "minute": "73",
+            "player": "Q161069"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2485,6 +3848,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8749-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "55",
+            "player": "Q1255625"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2494,6 +3867,27 @@
       "homeGoals": 1,
       "key": "es-2005-Q8749-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Robinho",
+            "minute": "16",
+            "player": "Q58441"
+          },
+          {
+            "display": "Cicinho",
+            "minute": "56",
+            "player": "Q221798"
+          }
+        ],
+        "home": [
+          {
+            "display": "Lequi",
+            "minute": "39",
+            "player": "Q939270"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2503,6 +3897,16 @@
       "homeGoals": 0,
       "key": "es-2005-Q8749-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aduriz",
+            "minute": "7",
+            "player": "Q54105"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2521,6 +3925,27 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Edu",
+            "minute": "90",
+            "player": "Q460484"
+          }
+        ],
+        "home": [
+          {
+            "display": "Canobbio",
+            "minute": "6",
+            "player": "Q460541"
+          },
+          {
+            "display": "Baiano",
+            "minute": "20",
+            "player": "Q707463"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2530,6 +3955,27 @@
       "homeGoals": 0,
       "key": "es-2005-Q8749-Q8760",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tristán",
+            "minute": "27",
+            "penalty": true,
+            "player": "Q12278088"
+          },
+          {
+            "display": "Valerón",
+            "minute": "43",
+            "player": "Q311089"
+          },
+          {
+            "display": "Capdevila",
+            "minute": "45",
+            "player": "Q188793"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2539,6 +3985,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8749-Q8780",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Silva",
+            "minute": "83",
+            "player": "Q161069"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2548,6 +4004,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8749-Q8806",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "López",
+            "minute": "24",
+            "player": "Q372486"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2557,6 +4023,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q8835",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Contreras",
+            "minute": "6",
+            "player": "Q323358"
+          },
+          {
+            "display": "Baiano",
+            "minute": "20",
+            "player": "Q707463"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2566,6 +4047,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q8749-Q8857",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "López",
+            "minute": "10",
+            "player": "Q372486"
+          },
+          {
+            "display": "Baiano",
+            "minute": "46",
+            "player": "Q707463"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2656,6 +4152,43 @@
       "homeGoals": 3,
       "key": "es-2005-Q8760-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "40",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "45",
+            "player": "Q39444"
+          },
+          {
+            "display": "Ronaldinho",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q39444"
+          }
+        ],
+        "home": [
+          {
+            "display": "Valerón",
+            "minute": "10",
+            "player": "Q311089"
+          },
+          {
+            "display": "Munitis",
+            "minute": "71",
+            "player": "Q372326"
+          },
+          {
+            "display": "Castro",
+            "minute": "86",
+            "player": "Q631157"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2683,6 +4216,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8760-Q8701",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Capdevila",
+            "minute": "90+4",
+            "player": "Q188793"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2701,6 +4244,21 @@
       "homeGoals": 0,
       "key": "es-2005-Q8760-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Baiano",
+            "minute": "34",
+            "player": "Q707463"
+          },
+          {
+            "display": "Perera",
+            "minute": "87",
+            "player": "Q1378341"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2809,6 +4367,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8780-Q223620",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2827,6 +4389,27 @@
       "homeGoals": 1,
       "key": "es-2005-Q8780-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Deco",
+            "minute": "43",
+            "player": "Q659634"
+          },
+          {
+            "display": "Eto'o",
+            "minute": "47",
+            "player": "Q1255625"
+          }
+        ],
+        "home": [
+          {
+            "display": "Tamudo",
+            "minute": "60",
+            "player": "Q312946"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2854,6 +4437,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8780-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gabi",
+            "minute": "47",
+            "player": "Q358688"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pandiani",
+            "minute": "82",
+            "player": "Q316778"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2872,6 +4471,21 @@
       "homeGoals": 2,
       "key": "es-2005-Q8780-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Tamudo",
+            "minute": "12",
+            "player": "Q312946"
+          },
+          {
+            "display": "Fredson",
+            "minute": "38",
+            "player": "Q1453345"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2998,6 +4612,32 @@
       "homeGoals": 1,
       "key": "es-2005-Q8806-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Eto'o",
+            "minute": "1",
+            "player": "Q1255625"
+          },
+          {
+            "display": "Giuly",
+            "minute": "61",
+            "player": "Q219771"
+          },
+          {
+            "display": "Motta",
+            "minute": "71",
+            "player": "Q191885"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pernía",
+            "minute": "88",
+            "player": "Q316992"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3025,6 +4665,26 @@
       "homeGoals": 0,
       "key": "es-2005-Q8806-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Luccin",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "M. Rodriguez",
+            "minute": "48",
+            "player": null
+          },
+          {
+            "display": "Torres",
+            "minute": "63",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3043,6 +4703,22 @@
       "homeGoals": 1,
       "key": "es-2005-Q8806-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ángel",
+            "minute": "47",
+            "player": "Q251767"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gavilán",
+            "minute": "41",
+            "player": "Q443603"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3169,6 +4845,26 @@
       "homeGoals": 0,
       "key": "es-2005-Q8835-Q7156",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giuly",
+            "minute": "39",
+            "player": "Q219771"
+          },
+          {
+            "display": "Messi",
+            "minute": "75",
+            "player": "Q615"
+          },
+          {
+            "display": "Messi",
+            "minute": "82",
+            "player": "Q615"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3196,6 +4892,32 @@
       "homeGoals": 2,
       "key": "es-2005-Q8835-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "M. Rodriguez",
+            "minute": "1",
+            "player": null
+          },
+          {
+            "display": "Colsa",
+            "minute": "13",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Iuliano",
+            "minute": "19",
+            "player": "Q353046"
+          },
+          {
+            "display": "Iuliano",
+            "minute": "84",
+            "player": "Q353046"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3214,6 +4936,16 @@
       "homeGoals": 1,
       "key": "es-2005-Q8835-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Doni",
+            "minute": "47",
+            "player": "Q350489"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3232,6 +4964,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8835-Q8780",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3313,6 +5049,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8857-Q12297",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3340,6 +5080,10 @@
       "homeGoals": 0,
       "key": "es-2005-Q8857-Q7156",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3367,6 +5111,22 @@
       "homeGoals": 0,
       "key": "es-2005-Q8857-Q8701",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Torres",
+            "minute": "65",
+            "penalty": true,
+            "player": null
+          },
+          {
+            "display": "Kežman",
+            "minute": "74",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3385,6 +5145,21 @@
       "homeGoals": 0,
       "key": "es-2005-Q8857-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Núñez",
+            "minute": "46",
+            "player": "Q603918"
+          },
+          {
+            "display": "Silva",
+            "minute": "71",
+            "player": "Q161069"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3424,6 +5199,430 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q10286": [
+      {
+        "goals": 1,
+        "id": "Q464981"
+      },
+      {
+        "goals": 1,
+        "id": "Q240456"
+      },
+      {
+        "goals": 1,
+        "id": "Q439792"
+      },
+      {
+        "goals": 1,
+        "id": "Q314740"
+      },
+      {
+        "goals": 1,
+        "id": "Q519020"
+      },
+      {
+        "goals": 1,
+        "id": "Q940100"
+      }
+    ],
+    "Q10308": [
+      {
+        "goals": 1,
+        "id": "Q528590"
+      }
+    ],
+    "Q10315": [
+      {
+        "goals": 2,
+        "id": "Q313050"
+      },
+      {
+        "goals": 1,
+        "id": "Q284359"
+      },
+      {
+        "goals": 1,
+        "id": "Q358407"
+      },
+      {
+        "goals": 1,
+        "id": "Q718889"
+      }
+    ],
+    "Q10329": [
+      {
+        "goals": 1,
+        "id": "Q218394"
+      },
+      {
+        "goals": 1,
+        "id": "Q562731"
+      },
+      {
+        "goals": 1,
+        "id": "Q186071"
+      },
+      {
+        "goals": 1,
+        "id": "Q172720"
+      },
+      {
+        "goals": 1,
+        "id": "Q410912"
+      },
+      {
+        "goals": 1,
+        "id": "Q207586"
+      },
+      {
+        "goals": 1,
+        "id": "Q317282"
+      }
+    ],
+    "Q10333": [
+      {
+        "goals": 1,
+        "id": "Q216910"
+      },
+      {
+        "goals": 1,
+        "id": "Q313308"
+      },
+      {
+        "goals": 5,
+        "id": "Q83006"
+      }
+    ],
+    "Q12236": [
+      {
+        "goals": 2,
+        "id": "Q718878"
+      },
+      {
+        "goals": 1,
+        "id": "Q3334420"
+      },
+      {
+        "goals": 1,
+        "id": "Q293463"
+      },
+      {
+        "goals": 1,
+        "id": "Q460038"
+      }
+    ],
+    "Q12297": [
+      {
+        "goals": 2,
+        "id": "Q261534"
+      },
+      {
+        "goals": 1,
+        "id": "Q192965"
+      }
+    ],
+    "Q223620": [
+      {
+        "goals": 1,
+        "id": "Q716570"
+      },
+      {
+        "goals": 1,
+        "id": "Q311216"
+      }
+    ],
+    "Q460448": [
+      {
+        "goals": 1,
+        "id": "Q2531646"
+      },
+      {
+        "goals": 1,
+        "id": "Q1111438"
+      },
+      {
+        "goals": 1,
+        "id": "Q524150"
+      }
+    ],
+    "Q7156": [
+      {
+        "goals": 2,
+        "id": "Q151853"
+      },
+      {
+        "goals": 2,
+        "id": "Q312002"
+      },
+      {
+        "goals": 3,
+        "id": "Q659634"
+      },
+      {
+        "goals": 22,
+        "id": "Q1255625"
+      },
+      {
+        "goals": 2,
+        "id": "Q311972"
+      },
+      {
+        "goals": 1,
+        "id": "Q17158"
+      },
+      {
+        "goals": 1,
+        "id": "Q191885"
+      },
+      {
+        "goals": 16,
+        "id": "Q39444"
+      },
+      {
+        "goals": 5,
+        "id": "Q219771"
+      },
+      {
+        "goals": 9,
+        "id": "Q179334"
+      },
+      {
+        "goals": 6,
+        "id": "Q615"
+      }
+    ],
+    "Q8682": [
+      {
+        "goals": 2,
+        "id": "Q204895"
+      },
+      {
+        "goals": 1,
+        "id": "Q58441"
+      },
+      {
+        "goals": 4,
+        "id": "Q529207"
+      },
+      {
+        "goals": 1,
+        "id": "Q180993"
+      },
+      {
+        "goals": 1,
+        "id": "Q316631"
+      },
+      {
+        "goals": 1,
+        "id": "Q221798"
+      }
+    ],
+    "Q8687": [
+      {
+        "goals": 1,
+        "id": "Q187891"
+      },
+      {
+        "goals": 1,
+        "id": "Q358684"
+      },
+      {
+        "goals": 1,
+        "id": "Q317216"
+      },
+      {
+        "goals": 1,
+        "id": "Q2398699"
+      },
+      {
+        "goals": 1,
+        "id": "Q54105"
+      }
+    ],
+    "Q8701": [
+      {
+        "goals": 2,
+        "id": "Q42731"
+      },
+      {
+        "goals": 2,
+        "id": "Q190929"
+      },
+      {
+        "goals": 1,
+        "id": "Q314138"
+      },
+      {
+        "goals": 1,
+        "id": "Q325886"
+      },
+      {
+        "goals": 1,
+        "id": "Q1386719"
+      },
+      {
+        "goals": 1,
+        "id": "Q354366"
+      },
+      {
+        "goals": 2,
+        "id": "Q332228"
+      },
+      {
+        "goals": 1,
+        "id": "Q358688"
+      }
+    ],
+    "Q8723": [
+      {
+        "goals": 1,
+        "id": "Q460484"
+      },
+      {
+        "goals": 1,
+        "id": "Q556790"
+      },
+      {
+        "goals": 1,
+        "id": "Q294204"
+      },
+      {
+        "goals": 1,
+        "id": "Q715268"
+      },
+      {
+        "goals": 1,
+        "id": "Q216282"
+      }
+    ],
+    "Q8749": [
+      {
+        "goals": 13,
+        "id": "Q707463"
+      },
+      {
+        "goals": 3,
+        "id": "Q161069"
+      },
+      {
+        "goals": 2,
+        "id": "Q372486"
+      },
+      {
+        "goals": 2,
+        "id": "Q1703860"
+      },
+      {
+        "goals": 7,
+        "id": "Q460541"
+      },
+      {
+        "goals": 2,
+        "id": "Q603918"
+      },
+      {
+        "goals": 4,
+        "id": "Q1378341"
+      },
+      {
+        "goals": 3,
+        "id": "Q323358"
+      },
+      {
+        "goals": 2,
+        "id": "Q251767"
+      },
+      {
+        "goals": 2,
+        "id": "Q939270"
+      },
+      {
+        "goals": 1,
+        "id": "Q370946"
+      },
+      {
+        "goals": 1,
+        "id": "Q392718"
+      },
+      {
+        "goals": 1,
+        "id": "Q515288"
+      }
+    ],
+    "Q8760": [
+      {
+        "goals": 1,
+        "id": "Q12278088"
+      },
+      {
+        "goals": 2,
+        "id": "Q311089"
+      },
+      {
+        "goals": 1,
+        "id": "Q372326"
+      },
+      {
+        "goals": 2,
+        "id": "Q188793"
+      },
+      {
+        "goals": 1,
+        "id": "Q2327879"
+      },
+      {
+        "goals": 1,
+        "id": "Q311095"
+      },
+      {
+        "goals": 1,
+        "id": "Q631157"
+      }
+    ],
+    "Q8780": [
+      {
+        "goals": 1,
+        "id": "Q316778"
+      },
+      {
+        "goals": 2,
+        "id": "Q312946"
+      },
+      {
+        "goals": 1,
+        "id": "Q1453345"
+      }
+    ],
+    "Q8806": [
+      {
+        "goals": 1,
+        "id": "Q1364178"
+      },
+      {
+        "goals": 2,
+        "id": "Q316992"
+      },
+      {
+        "goals": 1,
+        "id": "Q443603"
+      }
+    ],
+    "Q8835": [
+      {
+        "goals": 1,
+        "id": "Q208087"
+      },
+      {
+        "goals": 2,
+        "id": "Q353046"
+      },
+      {
+        "goals": 1,
+        "id": "Q350489"
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,

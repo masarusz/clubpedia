@@ -2758,6 +2758,79 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q132885": [
+      {
+        "goals": 11,
+        "id": "Q1839",
+        "topScorerRank": 9
+      }
+    ],
+    "Q172476": [
+      {
+        "goals": 14,
+        "id": "Q956723",
+        "topScorerRank": 4
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 18,
+        "id": "Q183967",
+        "topScorerRank": 2
+      },
+      {
+        "goals": 16,
+        "id": "Q365175",
+        "topScorerRank": 3
+      }
+    ],
+    "Q182876": [
+      {
+        "goals": 21,
+        "id": "Q125669",
+        "topScorerRank": 1
+      }
+    ],
+    "Q191843": [
+      {
+        "goals": 14,
+        "id": "Q197633",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 11,
+        "id": "Q3087952",
+        "topScorerRank": 9
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 12,
+        "id": "Q2702339",
+        "topScorerRank": 8
+      }
+    ],
+    "Q221525": [
+      {
+        "goals": 11,
+        "id": "Q113156",
+        "topScorerRank": 9
+      },
+      {
+        "goals": 13,
+        "id": "Q2926954",
+        "topScorerRank": 6
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 13,
+        "id": "Q439332",
+        "topScorerRank": 6
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": 0,
@@ -3035,66 +3108,77 @@
       "club": "Q182876",
       "goals": 21,
       "player": "Stéphane Guivarc'h",
+      "playerId": "Q125669",
       "rank": 1
     },
     {
       "club": "Q180305",
       "goals": 18,
       "player": "David Trezeguet",
+      "playerId": "Q183967",
       "rank": 2
     },
     {
       "club": "Q180305",
       "goals": 16,
       "player": "Victor Ikpeba",
+      "playerId": "Q365175",
       "rank": 3
     },
     {
       "club": "Q191843",
       "goals": 14,
       "player": "Anto Drobnjak",
+      "playerId": "Q197633",
       "rank": 4
     },
     {
       "club": "Q172476",
       "goals": 14,
       "player": "Lilian Laslandes",
+      "playerId": "Q956723",
       "rank": 4
     },
     {
       "club": "Q221525",
       "goals": 13,
       "player": "Bruno Rodriguez (footballer)",
+      "playerId": "Q2926954",
       "rank": 6
     },
     {
       "club": "Q483020",
       "goals": 13,
       "player": "Marco Simone",
+      "playerId": "Q439332",
       "rank": 6
     },
     {
       "club": "Q192071",
       "goals": 12,
       "player": "Jocelyn Gourvennec",
+      "playerId": "Q2702339",
       "rank": 8
     },
     {
       "club": "Q132885",
       "goals": 11,
       "player": "Laurent Blanc",
+      "playerId": "Q1839",
       "rank": 9
     },
     {
       "club": "Q221525",
       "goals": 11,
       "player": "Robert Pires",
+      "playerId": "Q113156",
       "rank": 9
     },
     {
       "club": "Q191843",
       "goals": 11,
       "player": "Stéphane Ziani",
+      "playerId": "Q3087952",
       "rank": 9
     }
   ],

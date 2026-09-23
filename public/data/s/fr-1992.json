@@ -3425,6 +3425,72 @@
       "status": "played"
     }
   ],
+  "players": {
+    "Q126334": [
+      {
+        "goals": 12,
+        "id": "Q290769",
+        "topScorerRank": 9
+      }
+    ],
+    "Q132885": [
+      {
+        "goals": 18,
+        "id": "Q44464",
+        "topScorerRank": 4
+      },
+      {
+        "goals": 23,
+        "id": "Q313518",
+        "topScorerRank": 1
+      },
+      {
+        "goals": 12,
+        "id": "Q516192",
+        "topScorerRank": 9
+      }
+    ],
+    "Q180305": [
+      {
+        "goals": 19,
+        "id": "Q57079",
+        "topScorerRank": 3
+      },
+      {
+        "goals": 12,
+        "id": "Q217482",
+        "topScorerRank": 9
+      }
+    ],
+    "Q192071": [
+      {
+        "goals": 13,
+        "id": "Q547054",
+        "topScorerRank": 7
+      }
+    ],
+    "Q193377": [
+      {
+        "goals": 20,
+        "id": "Q1646840",
+        "topScorerRank": 2
+      }
+    ],
+    "Q328658": [
+      {
+        "goals": 14,
+        "id": "Q3187471",
+        "topScorerRank": 5
+      }
+    ],
+    "Q483020": [
+      {
+        "goals": 14,
+        "id": "Q173139",
+        "topScorerRank": 5
+      }
+    ]
+  },
   "table": [
     {
       "adjustment": -1,
@@ -3732,66 +3798,77 @@
       "club": "Q132885",
       "goals": 23,
       "player": "Alen Bokšić",
+      "playerId": "Q313518",
       "rank": 1
     },
     {
       "club": "Q193377",
       "goals": 20,
       "player": "Xavier Gravelaine",
+      "playerId": "Q1646840",
       "rank": 2
     },
     {
       "club": "Q180305",
       "goals": 19,
       "player": "Jürgen Klinsmann",
+      "playerId": "Q57079",
       "rank": 3
     },
     {
       "club": "Q132885",
       "goals": 18,
       "player": "Rudi Völler",
+      "playerId": "Q44464",
       "rank": 4
     },
     {
       "club": "Q328658",
       "goals": 14,
       "player": "Joël Tiéhi",
+      "playerId": "Q3187471",
       "rank": 5
     },
     {
       "club": "Q483020",
       "goals": 14,
       "player": "George Weah",
+      "playerId": "Q173139",
       "rank": 5
     },
     {
       "club": "Q192071",
       "goals": 13,
       "player": "Nicolas Ouédec",
+      "playerId": "Q547054",
       "rank": 7
     },
     {
       "club": "Q19518",
       "goals": 13,
       "player": "Bernard Ferrer",
+      "playerId": null,
       "rank": 7
     },
     {
       "club": "Q132885",
       "goals": 12,
       "player": "Franck Sauzée",
+      "playerId": "Q516192",
       "rank": 9
     },
     {
       "club": "Q180305",
       "goals": 12,
       "player": "Youri Djorkaeff",
+      "playerId": "Q217482",
       "rank": 9
     },
     {
       "club": "Q126334",
       "goals": 12,
       "player": "Franck Leboeuf",
+      "playerId": "Q290769",
       "rank": 9
     }
   ],
