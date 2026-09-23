@@ -1,0 +1,26 @@
+{
+ "_source": "Written by Claude on 2026-09-23 before any search code exists: the kana an 8-year-old would type, and the page that must be the FIRST result. Ids checked against the built data (clubs by Wikidata id, players by Wikidata id). Never edit this file to make a test pass; a miss is a finding (fix ranking, folding or add a curated alias).",
+ "cases": [
+  {"q": "みとま", "first": "player:Q44395063", "note": "三笘薫"},
+  {"q": "くぼ", "first": "player:Q27067753", "note": "久保建英 before 大久保嘉人 and 久保裕也 (the one kids mean)"},
+  {"q": "くぼたけふさ", "first": "player:Q27067753"},
+  {"q": "えんどう", "first": "player:Q10526787", "note": "遠藤航"},
+  {"q": "とみやす", "first": "player:Q21286402", "note": "冨安健洋"},
+  {"q": "なかたひでとし", "first": "player:Q128725", "note": "中田英寿"},
+  {"q": "おくでら", "first": "player:Q558944", "note": "奥寺康彦"},
+  {"q": "めっし", "first": "player:Q615"},
+  {"q": "はーらんど", "first": "player:Q28967995"},
+  {"q": "くりろな", "first": "player:Q11571", "note": "curated alias"},
+  {"q": "えむばぺ", "first": "player:Q21621995"},
+  {"q": "えんばぺ", "first": "player:Q21621995", "note": "alias: kids hear エンバペ"},
+  {"q": "あーせなる", "first": "club:Q9617"},
+  {"q": "ばいえるん", "first": "club:Q15789"},
+  {"q": "れある", "first": "club:Q8682", "note": "レアル・マドリード before other レアル clubs"},
+  {"q": "ばるさ", "first": "club:Q7156", "note": "curated alias"},
+  {"q": "ゆべんとす", "first": "club:Q1422", "note": "kids type べ for ヴェ"},
+  {"q": "まんゆー", "first": "club:Q18656", "note": "curated alias"},
+  {"q": "ぷれみあ", "first": "league:en"},
+  {"q": "せりえ", "first": "league:it"},
+  {"q": "にほんじん", "first": "page:japan", "note": "the 日本人選手 page"}
+ ]
+}
