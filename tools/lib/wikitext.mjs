@@ -129,13 +129,14 @@ function normalizedTemplateName(name) {
 }
 
 export function discoverDataTemplates(text, expectedSeason = '') {
-  const season = expectedSeason.match(/^\d{4}\u2013(?:\d{2}|\d{4})/)?.[0] ?? expectedSeason;
+  const season = expectedSeason.match(/^\d{4}[\u2013-](?:\d{2}|\d{4})/)?.[0] ?? expectedSeason;
+  const comparableSeason = season.replace(/-/g, '\u2013');
   const output = new Set();
   for (const template of findTemplates(text)) {
     const name = normalizedTemplateName(template.name);
     if (!name || name.startsWith('#') || name.includes('{{')) continue;
     if (!/(?:table|results?)/i.test(name)) continue;
-    if (season && !name.includes(season)) continue;
+    if (season && !name.replace(/-/g, '\u2013').includes(comparableSeason)) continue;
     output.add(`Template:${name}`);
   }
   return [...output].sort();
@@ -229,12 +230,21 @@ export function extractPlayerLinks(text, { topScorerPage = false } = {}) {
 }
 
 export function extractJapanesePlayerLinks(text) {
-  const sections = sectionRanges(text).filter((section) => /^Japan(?:ese)?$/i.test(section.title));
+  const sections = sectionRanges(text).filter((section) => {
+    const title = cleanPlainName(section.title).replace(/\s+/g, ' ').trim();
+    return /^Japan(?:ese)?$/i.test(title);
+  });
   const targets = new Set();
   for (const section of sections) {
-    for (const row of section.content.split(/\n\|-/)) {
+    for (const row of section.content.split('\n').filter((line) => /^\s*\*/.test(line))) {
       const link = extractLinks(row)[0];
       if (link && plausiblePersonTarget(link.target)) targets.add(link.target);
+    }
+    if (/^\s*\{\|/m.test(section.content)) {
+      for (const row of section.content.split(/\n\s*\|-/)) {
+        const link = extractLinks(row)[0];
+        if (link && plausiblePersonTarget(link.target)) targets.add(link.target);
+      }
     }
   }
   return [...targets].sort();

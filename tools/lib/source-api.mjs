@@ -29,6 +29,32 @@ export function stableJson(value) {
   return `${JSON.stringify(stableValue(value), null, 2)}\n`;
 }
 
+/**
+ * Keep large lock maps reviewable: every map entry occupies exactly one line,
+ * while both section names and entries retain stable lexical ordering.
+ */
+export function stableLockJson(value) {
+  const sorted = stableValue(value);
+  const entries = Object.entries(sorted);
+  const lines = ['{'];
+  entries.forEach(([key, section], sectionIndex) => {
+    const sectionComma = sectionIndex === entries.length - 1 ? '' : ',';
+    if (!section || typeof section !== 'object' || Array.isArray(section)) {
+      lines.push(`  ${JSON.stringify(key)}: ${JSON.stringify(section)}${sectionComma}`);
+      return;
+    }
+    lines.push(`  ${JSON.stringify(key)}: {`);
+    const sectionEntries = Object.entries(section);
+    sectionEntries.forEach(([entryKey, entry], entryIndex) => {
+      const comma = entryIndex === sectionEntries.length - 1 ? '' : ',';
+      lines.push(`    ${JSON.stringify(entryKey)}: ${JSON.stringify(entry)}${comma}`);
+    });
+    lines.push(`  }${sectionComma}`);
+  });
+  lines.push('}');
+  return `${lines.join('\n')}\n`;
+}
+
 export async function writeAtomic(path, bytes) {
   await mkdir(dirname(path), { recursive: true });
   const temporary = `${path}.tmp-${process.pid}-${Math.random().toString(16).slice(2)}`;

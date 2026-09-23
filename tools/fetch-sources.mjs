@@ -26,6 +26,7 @@ import {
   safeName,
   sha256,
   stableJson,
+  stableLockJson,
   writeAtomic,
 } from './lib/source-api.mjs';
 
@@ -57,6 +58,14 @@ export const FOREIGN_PLAYER_LISTS = Object.freeze([
   'List of foreign Bundesliga players',
   'List of foreign Serie A players',
   'List of foreign Ligue 1 players',
+]);
+
+const JAPAN_LIST_SOURCES = Object.freeze([
+  ['en', 'Premier League', (title) => title === 'List of foreign Premier League players'],
+  ['es', 'La Liga', (title) => title === 'List of foreign La Liga players'],
+  ['de', 'Bundesliga', (title) => title === 'List of foreign Bundesliga players'],
+  ['it', 'Serie A', (title) => title === 'List of foreign Serie A players'],
+  ['fr', 'Ligue 1', (title) => /^List of foreign Ligue 1 players:\s*/.test(title)],
 ]);
 
 function emptyLock() {
@@ -341,7 +350,43 @@ async function fetchOpenFootball({ requester, root, refresh, requestedSha, lock,
   await saveLock();
 }
 
-function summaryText(lock, requestCount) {
+async function collectJapanesePlayers(root, lock) {
+  const output = new Map(JAPAN_LIST_SOURCES.map(([key, label]) => [key, { label, players: new Set() }]));
+  for (const [title, entry] of Object.entries(lock.enwiki)) {
+    if (entry.missing || (entry.kind !== 'list' && entry.kind !== 'foreign-list')) continue;
+    const source = JAPAN_LIST_SOURCES.find(([, , matches]) => matches(title));
+    if (!source) continue;
+    const content = await pageContent(root, 'enwiki', title);
+    for (const player of extractJapanesePlayerLinks(content)) output.get(source[0]).players.add(player);
+  }
+  return output;
+}
+
+export function sourceCompletenessFailures(lock, {
+  leagues = ['en', 'es', 'de', 'it', 'fr'],
+  startYears = Array.from({ length: 34 }, (_, index) => 1992 + index),
+  japanesePlayers = new Set(),
+  minimumJapanesePlayers = 100,
+} = {}) {
+  const failures = [];
+  for (const league of leagues) {
+    for (const startYear of startYears) {
+      const key = `${league}-${startYear}`;
+      const season = lock.seasons[key];
+      const missing = [];
+      if (!season?.articleFound) missing.push('season article');
+      if (!season?.tableFound) missing.push('table');
+      if (!season?.resultsFound) missing.push('results grid');
+      if (missing.length) failures.push(`${key}: missing ${missing.join(', ')}`);
+    }
+  }
+  if (japanesePlayers.size < minimumJapanesePlayers) {
+    failures.push(`Japan sections: ${japanesePlayers.size} unique players (minimum ${minimumJapanesePlayers})`);
+  }
+  return failures;
+}
+
+function summaryText(lock, requestCount, japanLists = new Map(), failures = []) {
   const lines = ['Clubpedia source fetch summary', ''];
   for (const wiki of ['enwiki', 'jawiki']) {
     const entries = Object.values(lock[wiki]);
@@ -359,9 +404,20 @@ function summaryText(lock, requestCount) {
   lines.push(`wikidata: ${Object.keys(lock.wikidata).length} entities`);
   lines.push(`openligadb: ${Object.keys(lock.openligadb).length} files`);
   lines.push(`openfootball: ${lock.openfootball?.sha ?? 'not fetched'}`);
+  if (japanLists.size) {
+    lines.push('', 'Japan sections:');
+    for (const [key, { label, players }] of japanLists) lines.push(`${key} ${label}: ${players.size} players`);
+    const unique = new Set([...japanLists.values()].flatMap(({ players }) => [...players]));
+    const entries = [...japanLists.values()].reduce((sum, { players }) => sum + players.size, 0);
+    lines.push(`total: ${entries} entries, ${unique.size} unique players`);
+  }
   lines.push('', 'League-seasons:');
   for (const [key, season] of Object.entries(lock.seasons).sort()) {
     lines.push(`${key}: article=${season.articleFound ? 'yes' : 'missing'} table=${season.tableFound ? 'yes' : 'missing'} results=${season.resultsFound ? 'yes' : 'missing'}`);
+  }
+  if (failures.length) {
+    lines.push('', 'COMPLETENESS CHECK FAILED:');
+    for (const failure of failures) lines.push(`- ${failure}`);
   }
   lines.push('', `Network requests this run: ${requestCount}`, '');
   return lines.join('\n');
@@ -370,17 +426,21 @@ function summaryText(lock, requestCount) {
 export async function runFetchSources(options = {}) {
   const root = resolve(options.out ?? '.cache/sources');
   const lockPath = resolve(options.lockPath ?? 'tools/sources.lock.json');
-  const refresh = options.refresh === true;
+  const repair = options.repair === true;
+  const refresh = options.refresh === true || repair;
   let oldLock;
   try { oldLock = await readJson(lockPath); }
   catch (error) { if (error.code !== 'ENOENT') throw error; oldLock = emptyLock(); }
   if (!refresh && (!oldLock.version || !Object.keys(oldLock.enwiki ?? {}).length)) {
     throw new Error(`Source lock is empty; run with --refresh first (${lockPath})`);
   }
-  const resumingRefresh = refresh && oldLock.refreshIncomplete === true;
+  if (repair && (!oldLock.version || !Object.keys(oldLock.enwiki ?? {}).length)) {
+    throw new Error(`Source lock is empty; run with --refresh first (${lockPath})`);
+  }
+  const resumingRefresh = refresh && (repair || oldLock.refreshIncomplete === true);
   const lock = refresh && !resumingRefresh ? emptyLock() : { ...emptyLock(), ...oldLock };
   if (refresh) lock.refreshIncomplete = true;
-  const saveLock = async () => writeAtomic(lockPath, stableJson(lock));
+  const saveLock = async () => writeAtomic(lockPath, stableLockJson(lock));
   if (refresh) await saveLock();
   const requester = options.requester ?? new Requester(options.requestOptions);
   const leagues = options.leagues ?? ['en', 'es', 'de', 'it', 'fr'];
@@ -410,6 +470,11 @@ export async function runFetchSources(options = {}) {
     const templatePages = await fetchCurrentPages({
       requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, titles: [...templateTitles], kind: 'template', lock, saveLock,
     });
+    const assertTemplatesAccountedFor = (titles) => {
+      const unaccounted = [...titles].filter((title) => !templatePages.has(title));
+      if (unaccounted.length) throw new Error(`Discovered templates were not fetched or recorded: ${unaccounted.join(', ')}`);
+    };
+    assertTemplatesAccountedFor(templateTitles);
     let discoveredMore = true;
     while (discoveredMore) {
       const more = new Set();
@@ -420,6 +485,7 @@ export async function runFetchSources(options = {}) {
       if (discoveredMore) {
         const fetched = await fetchCurrentPages({ requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, titles: [...more], kind: 'template', lock, saveLock });
         for (const pair of fetched) templatePages.set(...pair);
+        assertTemplatesAccountedFor(more);
       }
     }
     const listPages = await fetchCurrentPages({
@@ -447,6 +513,7 @@ export async function runFetchSources(options = {}) {
           if (!relatedTitles.has(dependency)) { relatedTitles.add(dependency); queue.push(dependency); }
         }
       }
+      assertTemplatesAccountedFor(relatedTitles);
       const relatedTemplates = [...relatedTitles].sort().map((title) => [title, templatePages.get(title)]).filter(([, page]) => page);
       const combined = [article, ...relatedTemplates.map(([, page]) => page)].filter((page) => page && !page.missing).map((page) => page.content).join('\n');
       const clubs = extractTableClubs(combined);
@@ -500,9 +567,20 @@ export async function runFetchSources(options = {}) {
       extractArchive: options.extractArchive ?? extractTarGz,
     });
   }
+  const japanLists = await collectJapanesePlayers(root, lock);
+  const japanesePlayers = new Set([...japanLists.values()].flatMap(({ players }) => [...players]));
+  const minimumJapanesePlayers = options.minimumJapanesePlayers ?? 100;
+  const failures = sourceCompletenessFailures(lock, { leagues, startYears, japanesePlayers, minimumJapanesePlayers });
+  const failedSummary = summaryText(lock, requester.requestCount, japanLists, failures);
+  if (failures.length) {
+    await saveLock();
+    await writeAtomic(join(root, 'SUMMARY.txt'), failedSummary);
+    if (!options.quiet) process.stdout.write(failedSummary);
+    throw new Error(`source completeness check failed:\n${failures.map((failure) => `- ${failure}`).join('\n')}`);
+  }
   delete lock.refreshIncomplete;
   await saveLock();
-  const summary = summaryText(lock, requester.requestCount);
+  const summary = summaryText(lock, requester.requestCount, japanLists);
   await writeAtomic(join(root, 'SUMMARY.txt'), summary);
   if (!options.quiet) process.stdout.write(summary);
   return { lock, summary, requestCount: requester.requestCount };
@@ -513,10 +591,11 @@ function parseArgs(argv) {
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
     if (argument === '--refresh') options.refresh = true;
+    else if (argument === '--repair') options.repair = true;
     else if (argument === '--out' && argv[index + 1]) options.out = argv[++index];
     else if (argument === '--lock' && argv[index + 1]) options.lockPath = argv[++index];
     else if (argument === '--openfootball-sha' && argv[index + 1]) options.openfootballSha = argv[++index];
-    else throw new Error('usage: node tools/fetch-sources.mjs [--refresh] [--out DIR] [--lock FILE] [--openfootball-sha SHA]');
+    else throw new Error('usage: node tools/fetch-sources.mjs [--refresh | --repair] [--out DIR] [--lock FILE] [--openfootball-sha SHA]');
   }
   return options;
 }

@@ -18,9 +18,10 @@ import {
   parseWikidataResponse,
   safeName,
   stableJson,
+  stableLockJson,
   unsafeName,
 } from '../tools/lib/source-api.mjs';
-import { runFetchSources } from '../tools/fetch-sources.mjs';
+import { runFetchSources, sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const FIXTURES = join(ROOT, 'tests', 'fixtures');
@@ -65,6 +66,8 @@ export function register(test, equal, deepEqual) {
     deepEqual(discoverDataTemplates(laLiga, '2025–26 La Liga'), ['Template:2025–26 La Liga table']);
     deepEqual(discoverDataTemplates(bundesliga, '2019–20 Bundesliga'), ['Template:2019–20 Bundesliga table']);
     deepEqual(discoverDataTemplates('{{2020–21 TEST RESULTS}}', '2020–21 Test'), ['Template:2020–21 TEST RESULTS']);
+    deepEqual(discoverDataTemplates('{{2016-17 Bundesliga table}}', '2016–17 Bundesliga'), ['Template:2016-17 Bundesliga table']);
+    deepEqual(discoverDataTemplates('{{2022-23 Serie A table}}', '2022–23 Serie A'), ['Template:2022-23 Serie A table']);
   });
 
   test('club extraction handles team_order, team1, linked, and bare names', async () => {
@@ -91,6 +94,17 @@ export function register(test, equal, deepEqual) {
   test('Japan-section extraction selects the first linked player in each row', () => {
     const text = '==Players==\n===Japan===\n{|\n|-\n| [[Takefusa Kubo]] || [[Real Sociedad]]\n|-\n| [[Kaoru Mitoma]] || [[Brighton & Hove Albion F.C.|Brighton]]\n|}\n===Korea===\n|-\n| [[Someone Else]]';
     deepEqual(extractJapanesePlayerLinks(text), ['Kaoru Mitoma', 'Takefusa Kubo']);
+  });
+
+  test('real Japan-section fixtures retain every cached player bullet', async () => {
+    const expected = [
+      ['foreign-premier-japan.wikitext', 20],
+      ['foreign-la-liga-japan.wikitext', 15],
+      ['foreign-bundesliga-japan.wikitext', 57],
+      ['foreign-serie-a-japan.wikitext', 15],
+      ['foreign-ligue-1-japan.wikitext', 21],
+    ];
+    for (const [name, count] of expected) equal(extractJapanesePlayerLinks(await fixture(`wikitext/${name}`)).length, count, name);
   });
 
   test('revision API parsing handles missing, normalized, and redirected pages', async () => {
@@ -148,6 +162,21 @@ export function register(test, equal, deepEqual) {
     const left = stableJson({ z: 1, nested: { b: 2, a: 1 }, a: [{ y: 2, x: 1 }] });
     const right = stableJson({ a: [{ x: 1, y: 2 }], nested: { a: 1, b: 2 }, z: 1 });
     equal(left, right);
+    const lockLeft = stableLockJson({ version: 1, enwiki: { Z: { revid: 2, kind: 'season' }, A: { missing: true, kind: 'list' } } });
+    const lockRight = stableLockJson({ enwiki: { A: { kind: 'list', missing: true }, Z: { kind: 'season', revid: 2 } }, version: 1 });
+    equal(lockLeft, lockRight);
+    equal(lockLeft.includes('    "A": {"kind":"list","missing":true}'), true);
+    deepEqual(JSON.parse(lockLeft), JSON.parse(lockRight));
+  });
+
+  test('source completeness reports every missing core part and a short Japan set', () => {
+    const lock = { seasons: { 'en-1992': { articleFound: true, tableFound: false, resultsFound: false } } };
+    deepEqual(sourceCompletenessFailures(lock, {
+      leagues: ['en'], startYears: [1992], japanesePlayers: new Set(['One']), minimumJapanesePlayers: 2,
+    }), [
+      'en-1992: missing table, results grid',
+      'Japan sections: 1 unique players (minimum 2)',
+    ]);
   });
 
   test('offline fake fetch runs staged refresh then resumes with zero requests', async () => {
@@ -196,7 +225,7 @@ export function register(test, equal, deepEqual) {
       const refreshed = await runFetchSources({
         out, lockPath, refresh: true, requester, quiet: true, leagues: ['es'], startYears: [2025],
         listTitles: ['Pichichi Trophy'], topScorerLists: ['Pichichi Trophy'], foreignLists: [],
-        openLigaYears: [2023], openfootball: false,
+        openLigaYears: [2023], openfootball: false, minimumJapanesePlayers: 0,
       });
       equal(refreshed.lock.seasons['es-2025'].tableFound, true);
       equal(refreshed.lock.seasons['es-2025'].resultsFound, true);
@@ -204,9 +233,16 @@ export function register(test, equal, deepEqual) {
       equal(refreshed.summary.includes('club-season: 20 pages, 20 missing'), true);
       equal(requests.every(({ url }) => !url.includes('example.com')), true);
       const pinnedRequester = new Requester({ fetchImpl: async (url) => { throw new Error(`Pinned resume touched network: ${url}`); }, sleep: async () => {}, minimumWikimediaDelay: 0 });
-      const resumed = await runFetchSources({ out, lockPath, requester: pinnedRequester, quiet: true, openLigaYears: [2023], openfootball: false });
+      const resumed = await runFetchSources({ out, lockPath, requester: pinnedRequester, quiet: true, openLigaYears: [2023], openfootball: false, minimumJapanesePlayers: 0, leagues: ['es'], startYears: [2025] });
       equal(resumed.requestCount, 0);
       equal(await readFile(join(out, 'SUMMARY.txt'), 'utf8'), resumed.summary);
+
+      const repaired = await runFetchSources({
+        out, lockPath, repair: true, requester: pinnedRequester, quiet: true, leagues: ['es'], startYears: [2025],
+        listTitles: ['Pichichi Trophy'], topScorerLists: ['Pichichi Trophy'], foreignLists: [],
+        openLigaYears: [2023], openfootball: false, minimumJapanesePlayers: 0,
+      });
+      equal(repaired.requestCount, 0);
 
       await rm(join(out, 'enwiki', `${safeName('2025–26 La Liga')}.json`));
       await rm(join(out, 'wikidata', 'Q9616.json'));
@@ -228,18 +264,63 @@ export function register(test, equal, deepEqual) {
           throw new Error(`Pinned recovery used an unpinned endpoint: ${url}`);
         },
       });
-      const recovered = await runFetchSources({ out, lockPath, requester: recoveryRequester, quiet: true, openLigaYears: [2023], openfootball: false });
+      const recovered = await runFetchSources({ out, lockPath, requester: recoveryRequester, quiet: true, openLigaYears: [2023], openfootball: false, minimumJapanesePlayers: 0, leagues: ['es'], startYears: [2025] });
       equal(recovered.requestCount, 2);
     } finally {
       await rm(temporary, { recursive: true, force: true });
     }
   });
 
-  test('fetch CLI fails loudly before network when the lock is empty', () => {
+  test('refresh and pinned fetch both fail when core sources and Japan players are incomplete', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-incomplete-fetch-test-'));
+    const out = join(temporary, 'sources');
+    const lockPath = join(temporary, 'sources.lock.json');
+    const requester = new Requester({
+      sleep: async () => {}, minimumWikimediaDelay: 0,
+      fetchImpl: async (url) => {
+        const parsed = new URL(url);
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'revisions') {
+          const title = parsed.searchParams.get('titles');
+          return fakeResponse({ batchcomplete: true, query: { pages: [{ title, missing: true }] } });
+        }
+        throw new Error(`Unexpected fake URL: ${url}`);
+      },
+    });
+    try {
+      let refreshError = '';
+      try {
+        await runFetchSources({
+          out, lockPath, refresh: true, requester, quiet: true, leagues: ['en'], startYears: [1992],
+          listTitles: [], topScorerLists: [], foreignLists: [], openLigaYears: [], openfootball: false,
+          minimumJapanesePlayers: 1,
+        });
+      } catch (error) { refreshError = error.message; }
+      equal(refreshError.includes('en-1992: missing season article, table, results grid'), true);
+      equal(refreshError.includes('Japan sections: 0 unique players (minimum 1)'), true);
+
+      const noNetwork = new Requester({ sleep: async () => {}, minimumWikimediaDelay: 0, fetchImpl: async (url) => { throw new Error(`Pinned fetch touched network: ${url}`); } });
+      let pinnedError = '';
+      try {
+        await runFetchSources({
+          out, lockPath, requester: noNetwork, quiet: true, leagues: ['en'], startYears: [1992],
+          openLigaYears: [], openfootball: false, minimumJapanesePlayers: 1,
+        });
+      } catch (error) { pinnedError = error.message; }
+      equal(pinnedError.includes('en-1992: missing season article, table, results grid'), true);
+      equal(noNetwork.requestCount, 0);
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
+  });
+
+  test('fetch CLI fails loudly before network when the lock is empty', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-empty-lock-test-'));
+    const lockPath = join(temporary, 'empty.lock.json');
     let output = '';
     try {
-      execFileSync(process.execPath, [join(ROOT, 'tools', 'fetch-sources.mjs')], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+      execFileSync(process.execPath, [join(ROOT, 'tools', 'fetch-sources.mjs'), '--lock', lockPath, '--out', join(temporary, 'sources')], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
     } catch (error) { output = `${error.stdout ?? ''}${error.stderr ?? ''}`; }
-    equal(output.includes('Source lock is empty; run with --refresh first'), true);
+    try { equal(output.includes('Source lock is empty; run with --refresh first'), true); }
+    finally { await rm(temporary, { recursive: true, force: true }); }
   });
 }
