@@ -4,13 +4,13 @@
       "birthYear": 1991,
       "id": "Q2469796",
       "name": "ウィリアン ジョゼ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
       "id": "Q17517177",
       "name": "ジェームズ マディソン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1966,
@@ -52,7 +52,7 @@
       "birthYear": 1999,
       "id": "Q29962926",
       "name": "ブバカル カマラ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
@@ -64,7 +64,7 @@
       "birthYear": 2000,
       "id": "Q98509530",
       "name": "トル アロコダレ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2002,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2025-11-23",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2025-Q1128631-Q18711",
       "league": "en",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2025-11-23",
       "home": "Q182876",
+      "homeName": "AJオセール",
       "key": "fr-2025-Q182876-Q704",
       "league": "fr",
       "score": "0–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q106394",
+      "awayName": "SCフライブルク",
+      "date": "2024-11-23",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2024-Q41420-Q106394",
       "league": "de",
       "score": "4–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2024-11-23",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2024-Q18711-Q19467",
       "league": "en",
       "score": "2–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q19490",
+      "awayName": "ノッティンガム・フォレストFC",
+      "date": "2024-11-23",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q19490",
       "league": "en",
       "score": "3–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2019-11-23",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2019-Q19467-Q1130849",
       "league": "en",
       "score": "1–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2019-11-23",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2019-Q9617-Q18732",
       "league": "en",
       "score": "2–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2014-11-23",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2014-Q1543-Q631",
       "league": "it",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q101859",
+      "awayName": "VfLヴォルフスブルク",
+      "date": "2013-11-23",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q101859",
       "league": "de",
       "score": "1–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2013-11-23",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2013-Q9617-Q18732",
       "league": "en",
       "score": "2–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "2013-11-23",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2013-Q1543-Q2074",
       "league": "it",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2002-11-23",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2002-Q18708-Q1130849",
       "league": "en",
       "score": "3–2",

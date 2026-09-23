@@ -10,7 +10,7 @@
       "birthYear": 1991,
       "id": "Q13306",
       "name": "アレクサンドル ラカゼット",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2000,
@@ -58,7 +58,7 @@
       "birthYear": 1994,
       "id": "Q2025900",
       "name": "ジョン ストーンズ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1983,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2023-05-28",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2022-Q18711-Q19453",
       "league": "en",
       "score": "2–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19500",
+      "awayName": "ウルヴァーハンプトン・ワンダラーズFC",
+      "date": "2023-05-28",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2022-Q9617-Q19500",
       "league": "en",
       "score": "5–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2023-05-28",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2022-Q7156-Q8835",
       "league": "es",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2023-05-28",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2022-Q8701-Q10315",
       "league": "es",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2023-05-28",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2022-Q1422-Q1543",
       "league": "it",
       "score": "0–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2017-05-28",
       "home": "Q1900",
+      "homeName": "カリアリ・カルチョ",
       "key": "it-2016-Q1900-Q1543",
       "league": "it",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2798",
+      "awayName": "ウディネーゼ・カルチョ",
+      "date": "2017-05-28",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2016-Q631-Q2798",
       "league": "it",
       "score": "5–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2005-05-28",
       "home": "Q10308",
+      "homeName": "レアル・サラゴサ",
       "key": "es-2004-Q10308-Q8682",
       "league": "es",
       "score": "1–3",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "2005-05-28",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2004-Q10315-Q7156",
       "league": "es",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2005-05-28",
       "home": "Q172476",
+      "homeName": "FCジロンダン・ボルドー",
       "key": "fr-2004-Q172476-Q132885",
       "league": "fr",
       "score": "3–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "1995-05-28",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-1994-Q2739-Q1422",
       "league": "it",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "1995-05-28",
       "home": "Q8428",
+      "homeName": "カルチョ・パドヴァ",
       "key": "it-1994-Q8428-Q2074",
       "league": "it",
       "score": "1–1",

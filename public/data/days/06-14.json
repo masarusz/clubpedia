@@ -10,7 +10,7 @@
       "birthYear": 1994,
       "id": "Q13527929",
       "name": "フェデリコ ディ フランチェスコ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1987,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q15755",
+      "awayName": "FCアウクスブルク",
+      "date": "2020-06-14",
       "home": "Q105254",
+      "homeName": "1.FSVマインツ05",
       "key": "de-2019-Q105254-Q15755",
       "league": "de",
       "score": "0–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q104761",
+      "awayName": "バイエル・レバークーゼン",
+      "date": "2020-06-14",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2019-Q32494-Q104761",
       "league": "de",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q10286",
+      "awayName": "CAオサスナ",
+      "date": "2020-06-14",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2019-Q10315-Q10286",
       "league": "es",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2020-06-14",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2019-Q8682-Q770740",
       "league": "es",
       "score": "3–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2020-06-14",
       "home": "Q8687",
+      "homeName": "アスレティック・ビルバオ",
       "key": "es-2019-Q8687-Q8701",
       "league": "es",
       "score": "1–1",

@@ -40,13 +40,13 @@
       "birthYear": 2003,
       "id": "Q110164175",
       "name": "フアン ルイス サンチェス ベラスコ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2005,
       "id": "Q116920755",
       "name": "セミフ クルチソイ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1988,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19568",
+      "awayName": "AFCボーンマス",
+      "date": "2025-08-15",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2025-Q1130849-Q19568",
       "league": "en",
       "score": "4–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8603",
+      "awayName": "USサッスオーロ・カルチョ",
+      "date": "2022-08-15",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2022-Q1422-Q8603",
       "league": "it",
       "score": "3–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q170117",
+      "awayName": "FCインゴルシュタット04",
+      "date": "2015-08-15",
       "home": "Q105254",
+      "homeName": "1.FSVマインツ05",
       "key": "de-2015-Q105254-Q170117",
       "league": "de",
       "score": "0–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q102720",
+      "awayName": "ヘルタ・ベルリン",
+      "date": "2015-08-15",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2015-Q15755-Q102720",
       "league": "de",
       "score": "0–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2015-08-15",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2015-Q41420-Q101959",
       "league": "de",
       "score": "4–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q33748",
+      "awayName": "ハノーファー96",
+      "date": "2015-08-15",
       "home": "Q479351",
+      "homeName": "SVダルムシュタット98",
       "key": "de-2015-Q479351-Q33748",
       "league": "de",
       "score": "2–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2015-08-15",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2015-Q51976-Q32494",
       "league": "de",
       "score": "0–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2015-08-15",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2015-Q18732-Q5794",
       "league": "en",
       "score": "0–3",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q19481",
+      "awayName": "レスター・シティFC",
+      "date": "2015-08-15",
       "home": "Q18747",
+      "homeName": "ウェストハム・ユナイテッドFC",
       "key": "en-2015-Q18747-Q19481",
       "league": "en",
       "score": "1–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2009-08-15",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2009-Q15789-Q51976",
       "league": "de",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q19516",
+      "awayName": "LOSCリール",
+      "date": "2004-08-15",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2004-Q132885-Q19516",
       "league": "fr",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "1998-08-15",
       "home": "Q101859",
+      "homeName": "VfLヴォルフスブルク",
       "key": "de-1998-Q101859-Q15789",
       "league": "de",
       "score": "0–1",

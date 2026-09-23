@@ -40,7 +40,7 @@
       "birthYear": 2001,
       "id": "Q105473333",
       "name": "Vanderson",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2020-06-21",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2019-Q18711-Q9616",
       "league": "en",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19607",
+      "awayName": "シェフィールド・ユナイテッドFC",
+      "date": "2020-06-21",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2019-Q18716-Q19607",
       "league": "en",
       "score": "3–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2020-06-21",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2019-Q5794-Q1130849",
       "league": "en",
       "score": "0–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2020-06-21",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2019-Q10315-Q8682",
       "league": "es",
       "score": "1–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q10286",
+      "awayName": "CAオサスナ",
+      "date": "2020-06-21",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2019-Q10333-Q10286",
       "league": "es",
       "score": "2–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q223620",
+      "awayName": "デポルティーボ・アラベス",
+      "date": "2020-06-21",
       "home": "Q8749",
+      "homeName": "セルタ・デ・ビーゴ",
       "key": "es-2019-Q8749-Q223620",
       "league": "es",
       "score": "6–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8603",
+      "awayName": "USサッスオーロ・カルチョ",
+      "date": "2020-06-21",
       "home": "Q1886",
+      "homeName": "アタランタBC",
       "key": "it-2019-Q1886-Q8603",
       "league": "it",
       "score": "4–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2020-06-21",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2019-Q631-Q1457",
       "league": "it",
       "score": "2–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2003-06-21",
       "home": "Q10329",
+      "homeName": "セビージャFC",
       "key": "es-2002-Q10329-Q10333",
       "league": "es",
       "score": "0–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q10319",
+      "awayName": "レアル・バリャドリード",
+      "date": "2003-06-21",
       "home": "Q223620",
+      "homeName": "デポルティーボ・アラベス",
       "key": "es-2002-Q223620-Q10319",
       "league": "es",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q10319",
+      "awayName": "レアル・バリャドリード",
+      "date": "1997-06-21",
       "home": "Q8723",
+      "homeName": "レアル・ベティス",
       "key": "es-1996-Q8723-Q10319",
       "league": "es",
       "score": "2–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "1997-06-21",
       "home": "Q8780",
+      "homeName": "RCDエスパニョール",
       "key": "es-1996-Q8780-Q10333",
       "league": "es",
       "score": "3–2",

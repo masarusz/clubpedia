@@ -34,7 +34,7 @@
       "birthYear": 1997,
       "id": "Q28717698",
       "name": "ユリアン リエルソン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1972,
@@ -52,7 +52,7 @@
       "birthYear": 1999,
       "id": "Q58303150",
       "name": "Himad Abdelli",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1963,
@@ -64,7 +64,7 @@
       "birthYear": 1999,
       "id": "Q28972640",
       "name": "ホルヘ クエンカ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2012-11-17",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2012-Q101959-Q4512",
       "league": "de",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2012-11-17",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2012-Q15786-Q15789",
       "league": "de",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q106394",
+      "awayName": "SCフライブルク",
+      "date": "2012-11-17",
       "home": "Q33748",
+      "homeName": "ハノーファー96",
       "key": "de-2012-Q33748-Q106394",
       "league": "de",
       "score": "1–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q15755",
+      "awayName": "FCアウクスブルク",
+      "date": "2012-11-17",
       "home": "Q38245",
+      "homeName": "アイントラハト・フランクフルト",
       "key": "de-2012-Q38245-Q15755",
       "league": "de",
       "score": "4–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18750",
+      "awayName": "ウィガン・アスレティックFC",
+      "date": "2012-11-17",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2012-Q1130849-Q18750",
       "league": "en",
       "score": "3–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2012-11-17",
       "home": "Q18721",
+      "homeName": "ノリッジ・シティFC",
       "key": "en-2012-Q18721-Q18656",
       "league": "en",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2012-11-17",
       "home": "Q18723",
+      "homeName": "クイーンズ・パーク・レンジャーズFC",
       "key": "en-2012-Q18723-Q18732",
       "league": "en",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "2012-11-17",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2012-Q8682-Q8687",
       "league": "es",
       "score": "5–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2006-11-17",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2006-Q105861-Q38245",
       "league": "de",
       "score": "4–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18708",
+      "awayName": "フラムFC",
+      "date": "2002-11-17",
       "home": "Q19444",
+      "homeName": "バーミンガム・シティFC",
       "key": "en-2002-Q19444-Q18708",
       "league": "en",
       "score": "0–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2002-11-17",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2002-Q1543-Q2693",
       "league": "it",
       "score": "2–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2001-11-17",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2001-Q18741-Q9617",
       "league": "en",
       "score": "1–1",

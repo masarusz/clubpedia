@@ -40,7 +40,7 @@
       "birthYear": 1994,
       "id": "Q701297",
       "name": "マテオ コヴァチッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1994,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19516",
+      "awayName": "LOSCリール",
+      "date": "2023-05-06",
       "home": "Q208228",
+      "homeName": "スタッド・ランス",
       "key": "fr-2022-Q208228-Q19516",
       "league": "fr",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19481",
+      "awayName": "レスター・シティFC",
+      "date": "2019-05-06",
       "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
       "key": "en-2018-Q50602-Q19481",
       "league": "en",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q185163",
+      "awayName": "OGCニース",
+      "date": "2018-05-06",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2017-Q132885-Q185163",
       "league": "fr",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2018-05-06",
       "home": "Q2798",
+      "homeName": "ウディネーゼ・カルチョ",
       "key": "it-2017-Q2798-Q631",
       "league": "it",
       "score": "0–4",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q22707",
+      "awayName": "TSG1899ホッフェンハイム",
+      "date": "2017-05-06",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2016-Q41420-Q22707",
       "league": "de",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2017-05-06",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2016-Q8701-Q770740",
       "league": "es",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q19477",
+      "awayName": "ハル・シティAFC",
+      "date": "2014-05-06",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2013-Q18656-Q19477",
       "league": "en",
       "score": "3–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2012-05-06",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2011-Q631-Q1543",
       "league": "it",
       "score": "4–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2008-05-06",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2007-Q105861-Q32494",
       "league": "de",
       "score": "0–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2007-05-06",
       "home": "Q29390",
+      "homeName": "ACRメッシーナ",
       "key": "it-2006-Q29390-Q631",
       "league": "it",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2006-05-06",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2005-Q132885-Q126334",
       "league": "fr",
       "score": "2–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "2001-05-06",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2000-Q1422-Q2739",
       "league": "it",
       "score": "2–2",

@@ -10,7 +10,7 @@
       "birthYear": 1996,
       "id": "Q19518278",
       "name": "ディオゴ ジョッタ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1994,
@@ -58,7 +58,7 @@
       "birthYear": 1999,
       "id": "Q24961840",
       "name": "タヒス チョン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1959,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2024-12-04",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2024-Q18716-Q1130849",
       "league": "en",
       "score": "3–3",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2024-12-04",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q18656",
       "league": "en",
       "score": "2–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "2024-12-04",
       "home": "Q8835",
+      "homeName": "RCDマジョルカ",
       "key": "es-2024-Q8835-Q7156",
       "league": "es",
       "score": "1–5",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2021-12-04",
       "home": "Q19500",
+      "homeName": "ウルヴァーハンプトン・ワンダラーズFC",
       "key": "en-2021-Q19500-Q1130849",
       "league": "en",
       "score": "0–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2021-12-04",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2021-Q8701-Q8835",
       "league": "es",
       "score": "1–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-12-04",
       "home": "Q730809",
+      "homeName": "ニーム・オリンピック",
       "key": "fr-2020-Q730809-Q132885",
       "league": "fr",
       "score": "0–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2019-12-04",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q5794",
       "league": "en",
       "score": "5–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q19523",
+      "awayName": "ASナンシー",
+      "date": "2016-12-04",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2016-Q132885-Q19523",
       "league": "fr",
       "score": "3–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q6690",
+      "awayName": "FCクロトーネ",
+      "date": "2016-12-04",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q6690",
       "league": "it",
       "score": "2–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2013-12-04",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2013-Q18656-Q5794",
       "league": "en",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q19477",
+      "awayName": "ハル・シティAFC",
+      "date": "2013-12-04",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2013-Q9617-Q19477",
       "league": "en",
       "score": "2–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q29390",
+      "awayName": "ACRメッシーナ",
+      "date": "2004-12-04",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2004-Q631-Q29390",
       "league": "it",
       "score": "5–0",

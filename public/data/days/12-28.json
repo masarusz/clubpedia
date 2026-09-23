@@ -58,7 +58,7 @@
       "birthYear": 1995,
       "id": "Q17308148",
       "name": "ナイタン ナンデス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q1128631",
+      "awayName": "リーズ・ユナイテッドFC",
+      "date": "2025-12-28",
       "home": "Q18739",
+      "homeName": "サンダーランドAFC",
       "key": "en-2025-Q18739-Q1128631",
       "league": "en",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2025-12-28",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2025-Q19467-Q18741",
       "league": "en",
       "score": "0–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18747",
+      "awayName": "ウェストハム・ユナイテッドFC",
+      "date": "2023-12-28",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2023-Q9617-Q18747",
       "league": "en",
       "score": "0–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2022-12-28",
       "home": "Q182876",
+      "homeName": "AJオセール",
       "key": "fr-2022-Q182876-Q180305",
       "league": "fr",
       "score": "2–3",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2022-12-28",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2022-Q483020-Q126334",
       "league": "fr",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2021-12-28",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2021-Q19481-Q1130849",
       "league": "en",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2019-12-28",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2019-Q18716-Q5794",
       "league": "en",
       "score": "1–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2014-12-28",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2014-Q18732-Q9616",
       "league": "en",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2014-12-28",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2014-Q18741-Q18656",
       "league": "en",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18744",
+      "awayName": "ウェスト・ブロムウィッチ・アルビオンFC",
+      "date": "2004-12-28",
       "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
       "key": "en-2004-Q50602-Q18744",
       "league": "en",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q18708",
+      "awayName": "フラムFC",
+      "date": "2003-12-28",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2003-Q18711-Q18708",
       "league": "en",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2002-12-28",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2002-Q18708-Q50602",
       "league": "en",
       "score": "0–1",

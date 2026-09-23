@@ -69,13 +69,22 @@ export function register(test, equal, deepEqual) {
     };
 
     try {
+      const today = new Date();
+      const todayKey = `${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
       await import(`../public/js/app.js?ui=${Date.now()}`);
       await settle();
-      deepEqual([...new Set(requested)], ['data/index.json'], 'Home request set');
+      deepEqual([...new Set(requested)], ['data/index.json', `data/days/${todayKey}.json`], 'Home request set');
       equal(appRoot.textContent.includes('欧州5大リーグ'), true, 'Home heading');
       deepEqual(withClass(appRoot, 'league-flag').map((node) => node.getAttribute('alt')).sort(),
         ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort(), 'Home league flag alt text');
-      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.2.1');
+      const { homeView } = await import(`../public/js/views.js?today=${Date.now()}`);
+      const september23 = homeView(load('index.json'), null, load('days/09-23.json'));
+      const todayRows = withClass(september23, 'today-match-row').map((row) => row.textContent);
+      equal(todayRows.length > 0, true, '09-23 has today-history matches');
+      equal(todayRows.every((row) => !/Q\d+/.test(row)), true, 'today-history uses club names, not Wikidata ids');
+      equal(todayRows.every((row) => !row.includes('0年')), true, 'today-history uses real years');
+      equal(todayRows.every((row) => /^\d{4}年 .+ \d+–\d+ .+$/u.test(row)), true, 'today-history row shape');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.3.0');
       const renderedRoutes = ['#/credits'];
       for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
@@ -94,7 +103,8 @@ export function register(test, equal, deepEqual) {
       const playerWithoutGoals = 'Q106239673';
       const japan = load('japan.json');
       const enFallbackPlayer = japan.players.find((item) => item.seasons.some((season) => season.source === 'en'));
-      renderedRoutes.push(`#/p/${playerWithGoals}`, `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
+      renderedRoutes.push(`#/p/${playerWithGoals}`, '#/p/Q27067753', `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
+      renderedRoutes.push('#/credits/photos');
       renderedRoutes.push('#/j');
       renderedRoutes.push('#/z', '#/z/es', '#/z/de/2015');
       const meikanSeasons = { en: '2025', es: '2025', de: '2025', it: '2025', fr: '2025' };
@@ -154,7 +164,7 @@ export function register(test, equal, deepEqual) {
         }
         if (hash === `#/p/${playerWithGoals}`) {
           const names = load('names.json');
-          equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
+          equal(dataRequests.length <= 3, true, `${hash} fetches only its player bucket, names, and photo credits when needed`);
           equal(body.includes('三笘'), true, 'player kanji name rendered');
           equal(withClass(appRoot, 'player-goal-list').some((list) => list.childNodes.length > 0), true, 'goal-scorer season shows goal links');
           const goalAnchors = descendants(appRoot).filter((node) => node.tagName === 'A' && node.getAttribute('href')?.startsWith('#/m/'));
@@ -165,6 +175,13 @@ export function register(test, equal, deepEqual) {
             return opponent && !/^[a-z]{2}$/u.test(opponent) && opponent !== '試合'
               && Object.values(names).some((item) => item.name === opponent);
           }), true, 'goal links use Japanese club names from names.json');
+        }
+        if (hash === '#/p/Q27067753') {
+          equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
+          equal(dataRequests.includes('data/photo-credits.json'), false, `${hash} does not fetch photo credits`);
+          const images = descendants(appRoot).filter((node) => node.tagName === 'IMG');
+          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=0.3.0')), true, 'Kubo player photo renders');
+          equal(body.includes('写真:'), true, 'Kubo player photo credit renders');
         }
         if (hash === `#/p/${playerWithoutGoals}`) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
@@ -200,6 +217,19 @@ export function register(test, equal, deepEqual) {
         if (hash === '#/r' || hash.startsWith('#/r/')) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only rankings.json and names`);
           equal(withClass(appRoot, 'ranking-row').length > 0, true, `${hash} renders ranking rows`);
+        }
+        if (hash === '#/credits/photos') {
+          const credits = load('photo-credits.json');
+          const rows = withClass(appRoot, 'photo-credit-row');
+          equal(rows.length, Object.keys(credits).length, 'photo credits renders one row per accepted photo');
+          equal(rows.every((row) => /.+ \/ .+/u.test(row.textContent)), true, 'photo credits rows include artist and licence');
+          equal(rows.every((row) => !/^Q\d{3,}/u.test(row.textContent)), true, 'photo credits rows start with player names, not ids');
+          equal(!/\/Q\d{3,}/u.test(body), true, 'photo credits page text contains no raw Wikidata id paths');
+          equal(rows.every((row) => descendants(row).some((node) => node.tagName === 'A' && /commons\.wikimedia\.org/.test(node.getAttribute('href') ?? ''))), true, 'photo credits rows include Commons links');
+          for (const [id, photo] of Object.entries(credits)) if (/\bCC BY(?:-SA)?\b/i.test(photo.licence ?? '')) {
+            const row = rows.find((item) => descendants(item).some((node) => node.getAttribute?.('href') === `#/p/${id}`));
+            equal(row?.textContent.includes('（切り抜き・縮小）'), true, `${id} has crop/resize note`);
+          }
         }
         if (hash === '#/s?q=みとま') {
           equal(withClass(appRoot, 'search-result').some((node) => node.getAttribute('href') === `#/p/${playerWithGoals}`), true, '三笘 search result links to his player page');
@@ -264,8 +294,9 @@ export function register(test, equal, deepEqual) {
     const releaseSources = [html, manifest, ...sourceFiles.map((name) => readFileSync(join(ROOT, 'public/js', name), 'utf8'))];
     equal(releaseSources.some((value) => /v=0\.1\.\d\b/.test(value)), false, 'stale asset version');
     equal(releaseSources.some((value) => /v=0\.2\.0\b/.test(value)), false, 'stale 0.2.0 asset version');
+    equal(releaseSources.some((value) => /v=0\.2\.1\b/.test(value)), false, 'stale 0.2.1 asset version');
     equal(/\.brand-copy small\s*\{[^}]*white-space:\s*nowrap/u.test(css), true, 'header subtitle element has white-space nowrap');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.2.1'"), true, 'footer version');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.3.0'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

@@ -16,7 +16,7 @@
       "birthYear": 1997,
       "id": "Q26262219",
       "name": "ユセフ エン＝ネシリ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -70,13 +70,16 @@
       "birthYear": 2000,
       "id": "Q112226414",
       "name": "シャヴィ バビカ",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2013-06-01",
       "home": "Q10308",
+      "homeName": "レアル・サラゴサ",
       "key": "es-2012-Q10308-Q8701",
       "league": "es",
       "score": "1–3",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2013-06-01",
       "home": "Q10329",
+      "homeName": "セビージャFC",
       "key": "es-2012-Q10329-Q10333",
       "league": "es",
       "score": "4–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8857",
+      "awayName": "マラガCF",
+      "date": "2013-06-01",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2012-Q7156-Q8857",
       "league": "es",
       "score": "4–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q10286",
+      "awayName": "CAオサスナ",
+      "date": "2013-06-01",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2012-Q8682-Q10286",
       "league": "es",
       "score": "4–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2003-06-01",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2002-Q10315-Q10333",
       "league": "es",
       "score": "1–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q8857",
+      "awayName": "マラガCF",
+      "date": "2003-06-01",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2002-Q7156-Q8857",
       "league": "es",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "1997-06-01",
       "home": "Q11963",
+      "homeName": "エルクレスCF",
       "key": "es-1996-Q11963-Q7156",
       "league": "es",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "1997-06-01",
       "home": "Q8749",
+      "homeName": "セルタ・デ・ビーゴ",
       "key": "es-1996-Q8749-Q8687",
       "league": "es",
       "score": "0–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "1997-06-01",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-1996-Q1422-Q2609",
       "league": "it",
       "score": "2–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "1997-06-01",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-1996-Q1543-Q1900",
       "league": "it",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "1997-06-01",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-1996-Q1893-Q631",
       "league": "it",
       "score": "2–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q56542463",
+      "awayName": "LRヴィチェンツァ",
+      "date": "1997-06-01",
       "home": "Q2641",
+      "homeName": "SSCナポリ",
       "key": "it-1996-Q2641-Q56542463",
       "league": "it",
       "score": "1–0",

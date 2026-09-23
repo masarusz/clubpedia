@@ -387,6 +387,11 @@ export function register(test, equal, deepEqual) {
       const day = JSON.parse(bytes);
       equal(day.matches.length <= 12, true, file);
       equal(day.birthdays.length <= 12, true, file);
+      for (const match of day.matches) {
+        equal(/^\d{4}-\d{2}-\d{2}$/.test(match.date), true, `${file} ${match.key} has date`);
+        equal(Boolean(match.homeName && !/^Q\d+$/.test(match.homeName)), true, `${file} ${match.key} has homeName`);
+        equal(Boolean(match.awayName && !/^Q\d+$/.test(match.awayName)), true, `${file} ${match.key} has awayName`);
+      }
       for (const birthday of day.birthdays) {
         equal('age' in birthday, false, `${file} ${birthday.id}`);
         equal(Number.isInteger(birthday.birthYear), true, `${file} ${birthday.id}`);
@@ -396,8 +401,9 @@ export function register(test, equal, deepEqual) {
 
   test('built photos have matching credits and player photo flags', async () => {
     const photos = (await readdir(join(ROOT, 'public/assets/players'))).filter((name) => name.endsWith('.webp')).sort();
+    const manifest = JSON.parse(await readFile(join(ROOT, 'curated/photos.json'), 'utf8'));
     const credits = JSON.parse(await readFile(join(DATA, 'photo-credits.json'), 'utf8'));
-    equal(photos.length, 622);
+    equal(photos.length, Object.keys(manifest).filter((id) => id !== '_about').length);
     deepEqual(Object.keys(credits).sort(), photos.map((name) => name.slice(0, -5)));
     for (const id of Object.keys(credits)) {
       const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');

@@ -28,7 +28,7 @@
       "birthYear": 2001,
       "id": "Q63067287",
       "name": "ネイサン コリンズ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1997,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2022-04-30",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2021-Q18716-Q1130849",
       "league": "en",
       "score": "0–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "2022-04-30",
       "home": "Q1457",
+      "homeName": "UCサンプドリア",
       "key": "it-2021-Q1457-Q2074",
       "league": "it",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2021-04-30",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2020-Q132885-Q126334",
       "league": "fr",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2017-04-30",
       "home": "Q193377",
+      "homeName": "SMカーン",
       "key": "fr-2016-Q193377-Q132885",
       "league": "fr",
       "score": "1–5",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q2641",
+      "awayName": "SSCナポリ",
+      "date": "2017-04-30",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2016-Q631-Q2641",
       "league": "it",
       "score": "0–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2017-04-30",
       "home": "Q6690",
+      "homeName": "FCクロトーネ",
       "key": "it-2016-Q6690-Q1543",
       "league": "it",
       "score": "1–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2011-04-30",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2010-Q41420-Q15786",
       "league": "de",
       "score": "2–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2011-04-30",
       "home": "Q6664",
+      "homeName": "ACチェゼーナ",
       "key": "it-2010-Q6664-Q631",
       "league": "it",
       "score": "1–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2006-04-30",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2005-Q8701-Q8835",
       "league": "es",
       "score": "0–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2005-04-30",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2004-Q2052-Q1543",
       "league": "it",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2000-04-30",
       "home": "Q16344",
+      "homeName": "ペルージャ・カルチョ",
       "key": "it-1999-Q16344-Q631",
       "league": "it",
       "score": "1–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "1995-04-30",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-1994-Q2074-Q1457",
       "league": "it",
       "score": "2–1",

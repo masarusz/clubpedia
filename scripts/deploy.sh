@@ -54,6 +54,7 @@ PATTERNS=(
   "data/o/*.json"
   "data/p/*.json"
   "assets/*.svg"
+  "assets/*.png"
   "assets/flags/*.svg"
   "assets/flags/LICENSE-flag-icons.txt"
   "assets/players/*.webp"

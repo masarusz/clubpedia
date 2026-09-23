@@ -4,13 +4,13 @@
       "birthYear": 1986,
       "id": "Q316772",
       "name": "ラウール ガルシア",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1994,
       "id": "Q194579",
       "name": "ルーカス オカンポス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2000,
@@ -70,13 +70,16 @@
       "birthYear": 1996,
       "id": "Q20078774",
       "name": "フィリップ ラインハート",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q19458",
+      "awayName": "バーンリーFC",
+      "date": "2020-07-11",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q19458",
       "league": "en",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18747",
+      "awayName": "ウェストハム・ユナイテッドFC",
+      "date": "2020-07-11",
       "home": "Q18721",
+      "homeName": "ノリッジ・シティFC",
       "key": "en-2019-Q18721-Q18747",
       "league": "en",
       "score": "0–4",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2020-07-11",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2019-Q19453-Q50602",
       "league": "en",
       "score": "0–5",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2020-07-11",
       "home": "Q19607",
+      "homeName": "シェフィールド・ユナイテッドFC",
       "key": "en-2019-Q19607-Q9616",
       "league": "en",
       "score": "3–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18716",
+      "awayName": "ニューカッスル・ユナイテッドFC",
+      "date": "2020-07-11",
       "home": "Q2714",
+      "homeName": "ワトフォードFC",
       "key": "en-2019-Q2714-Q18716",
       "league": "en",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q8749",
+      "awayName": "セルタ・デ・ビーゴ",
+      "date": "2020-07-11",
       "home": "Q10286",
+      "homeName": "CAオサスナ",
       "key": "es-2019-Q10286-Q8749",
       "league": "es",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "2020-07-11",
       "home": "Q10319",
+      "homeName": "レアル・バリャドリード",
       "key": "es-2019-Q10319-Q7156",
       "league": "es",
       "score": "0–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8723",
+      "awayName": "レアル・ベティス",
+      "date": "2020-07-11",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2019-Q8701-Q8723",
       "league": "es",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1886",
+      "awayName": "アタランタBC",
+      "date": "2020-07-11",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2019-Q1422-Q1886",
       "league": "it",
       "score": "2–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q8603",
+      "awayName": "USサッスオーロ・カルチョ",
+      "date": "2020-07-11",
       "home": "Q2609",
+      "homeName": "SSラツィオ",
       "key": "it-2019-Q2609-Q8603",
       "league": "it",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "2020-07-11",
       "home": "Q6651",
+      "homeName": "ブレシア・カルチョ",
       "key": "it-2019-Q6651-Q2739",
       "league": "it",
       "score": "0–3",

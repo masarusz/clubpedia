@@ -64,7 +64,7 @@
       "birthYear": 1992,
       "id": "Q5461039",
       "name": "Florian Tardieu",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1997,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2025-04-22",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2024-Q7156-Q8835",
       "league": "es",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2023-04-22",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2022-Q41420-Q38245",
       "league": "de",
       "score": "4–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2023-04-22",
       "home": "Q191843",
+      "homeName": "RCランス",
       "key": "fr-2022-Q191843-Q180305",
       "league": "fr",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8806",
+      "awayName": "ヘタフェCF",
+      "date": "2021-04-22",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2020-Q7156-Q8806",
       "league": "es",
       "score": "5–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q11971",
+      "awayName": "SDウエスカ",
+      "date": "2021-04-22",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2020-Q8701-Q11971",
       "league": "es",
       "score": "2–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2018-04-22",
       "home": "Q2037",
+      "homeName": "ACキエーヴォ・ヴェローナ",
       "key": "it-2017-Q2037-Q631",
       "league": "it",
       "score": "1–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2017-04-22",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2016-Q101959-Q41420",
       "league": "de",
       "score": "2–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q105254",
+      "awayName": "1.FSVマインツ05",
+      "date": "2017-04-22",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2016-Q15789-Q105254",
       "league": "de",
       "score": "2–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2017-04-22",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2016-Q2052-Q631",
       "league": "it",
       "score": "5–4",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2013-04-22",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2012-Q18656-Q18711",
       "league": "en",
       "score": "3–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2012-04-22",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2011-Q2052-Q631",
       "league": "it",
       "score": "0–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2006-04-22",
       "home": "Q29390",
+      "homeName": "ACRメッシーナ",
       "key": "it-2005-Q29390-Q1543",
       "league": "it",
       "score": "1–3",

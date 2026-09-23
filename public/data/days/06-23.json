@@ -34,7 +34,7 @@
       "birthYear": 1998,
       "id": "Q22342392",
       "name": "ヨシプ ブレカロ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1981,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18747",
+      "awayName": "ウェストハム・ユナイテッドFC",
+      "date": "2020-06-23",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2019-Q18741-Q18747",
       "league": "en",
       "score": "2–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2020-06-23",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2019-Q19481-Q19453",
       "league": "en",
       "score": "0–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8806",
+      "awayName": "ヘタフェCF",
+      "date": "2020-06-23",
       "home": "Q10319",
+      "homeName": "レアル・バリャドリード",
       "key": "es-2019-Q10319-Q8806",
       "league": "es",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "2020-06-23",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2019-Q7156-Q8687",
       "league": "es",
       "score": "1–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2020-06-23",
       "home": "Q8823",
+      "homeName": "レバンテUD",
       "key": "es-2019-Q8823-Q8701",
       "league": "es",
       "score": "0–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "2020-06-23",
       "home": "Q13385",
+      "homeName": "S.P.A.L.",
       "key": "it-2019-Q13385-Q1900",
       "league": "it",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2020-06-23",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2019-Q2074-Q2693",
       "league": "it",
       "score": "1–4",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q2798",
+      "awayName": "ウディネーゼ・カルチョ",
+      "date": "2020-06-23",
       "home": "Q2768",
+      "homeName": "トリノFC",
       "key": "it-2019-Q2768-Q2798",
       "league": "it",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2641",
+      "awayName": "SSCナポリ",
+      "date": "2020-06-23",
       "home": "Q8639",
+      "homeName": "エラス・ヴェローナFC",
       "key": "it-2019-Q8639-Q2641",
       "league": "it",
       "score": "0–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q216661",
+      "awayName": "CDテネリフェ",
+      "date": "1997-06-23",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-1996-Q8701-Q216661",
       "league": "es",
       "score": "0–3",

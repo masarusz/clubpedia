@@ -4,7 +4,7 @@
       "birthYear": 1997,
       "id": "Q16979983",
       "name": "ルカ ヨヴィッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
@@ -22,13 +22,13 @@
       "birthYear": 2000,
       "id": "Q61968862",
       "name": "ヴィクター ボニフェイス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
       "id": "Q67222776",
       "name": "サムエウ ジアス リーノ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2004,
@@ -58,7 +58,7 @@
       "birthYear": 2005,
       "id": "Q110463620",
       "name": "パウル ヴァナー",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1980,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2023-12-23",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2023-Q1130849-Q9617",
       "league": "en",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2020-12-23",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2020-Q483020-Q126334",
       "league": "fr",
       "score": "4–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-12-23",
       "home": "Q845137",
+      "homeName": "アンジェSCO",
       "key": "fr-2020-Q845137-Q132885",
       "league": "fr",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1886",
+      "awayName": "アタランタBC",
+      "date": "2020-12-23",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2020-Q1893-Q1886",
       "league": "it",
       "score": "2–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2017-12-23",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2017-Q19481-Q18656",
       "league": "en",
       "score": "2–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2017-12-23",
       "home": "Q8603",
+      "homeName": "USサッスオーロ・カルチョ",
       "key": "it-2017-Q8603-Q631",
       "league": "it",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2013-12-23",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2013-Q9617-Q9616",
       "league": "en",
       "score": "0–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2012-12-23",
       "home": "Q18659",
+      "homeName": "スウォンジー・シティAFC",
       "key": "en-2012-Q18659-Q18656",
       "league": "en",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q209509",
+      "awayName": "グルノーブル・フット38",
+      "date": "2009-12-23",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2009-Q483020-Q209509",
       "league": "fr",
       "score": "4–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q210864",
+      "awayName": "ル・マンFC",
+      "date": "2006-12-23",
       "home": "Q172476",
+      "homeName": "FCジロンダン・ボルドー",
       "key": "fr-2006-Q172476-Q210864",
       "league": "fr",
       "score": "1–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2002-12-23",
       "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
       "key": "en-2002-Q50602-Q18741",
       "league": "en",
       "score": "2–3",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2001-12-23",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2001-Q1130849-Q9617",
       "league": "en",
       "score": "1–2",

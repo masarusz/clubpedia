@@ -1,9 +1,9 @@
-import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.2.1';
-import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.2.1';
-import { rubyPlain } from './ruby.js?v=0.2.1';
-import { search as runSearch } from './search.js?v=0.2.1';
-import { STRINGS } from './strings.js?v=0.2.1';
-import { VERSION } from './version.js?v=0.2.1';
+import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.3.0';
+import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.3.0';
+import { rubyPlain } from './ruby.js?v=0.3.0';
+import { search as runSearch } from './search.js?v=0.3.0';
+import { STRINGS } from './strings.js?v=0.3.0';
+import { VERSION } from './version.js?v=0.3.0';
 
 const LEAGUE_NAMES = Object.freeze({
   en: 'プレミアリーグ', es: 'ラ・リーガ', de: 'ブンデスリーガ', it: 'セリエA', fr: 'リーグ・アン',
@@ -83,7 +83,69 @@ function canonicalClub(id, clubs) {
   return id;
 }
 
-export function homeView(index, searchOptions = null) {
+function todayMatches(dayData) {
+  const matches = dayData?.matches ?? dayData?.todayMatches ?? [];
+  return Array.isArray(matches) ? matches : [];
+}
+
+function todayBirthdays(dayData) {
+  const birthdays = dayData?.birthdays ?? dayData?.players ?? [];
+  return Array.isArray(birthdays) ? birthdays : [];
+}
+
+function matchYear(match) {
+  return Number(match.year ?? String(match.date ?? match.season ?? '').slice(0, 4)) || 0;
+}
+
+function matchClubLabel(match, side) {
+  const value = match[side];
+  if (typeof value === 'string' && !/^Q\d+$/.test(value)) return value;
+  return match[`${side}Name`] ?? match[`${side}Club`] ?? match[`${side}Label`] ?? value ?? 'クラブ';
+}
+
+function matchGoals(match, side) {
+  if (match[`${side}Goals`] != null) return match[`${side}Goals`];
+  if (match.score?.[side] != null) return match.score[side];
+  return side === 'home' ? String(match.score ?? '').split(/[–-]/)[0] : String(match.score ?? '').split(/[–-]/)[1];
+}
+
+function todayMatchesView(dayData) {
+  const matches = todayMatches(dayData).slice().sort((a, b) =>
+    String(b.date ?? b.year ?? '').localeCompare(String(a.date ?? a.year ?? '')) || String(b.key ?? '').localeCompare(String(a.key ?? '')));
+  if (!matches.length) return null;
+  return section('今日は何の日', el('ol', { class: 'today-match-list' }, matches.map((match) => {
+    const label = `${matchYear(match)}年 ${matchClubLabel(match, 'home')} ${matchGoals(match, 'home')}–${matchGoals(match, 'away')} ${matchClubLabel(match, 'away')}`;
+    return el('li', { class: 'today-match-row' }, el('a', { href: match.key ? `#/m/${match.key}` : '#/' }, label));
+  })), 'today-history');
+}
+
+function birthYear(player) {
+  return Number(player.birthYear ?? player.year ?? String(player.birthDate ?? player.birth ?? '').slice(0, 4)) || null;
+}
+
+function playerPhotoOrSilhouette(id, label, hasPhoto, className) {
+  return hasPhoto ? el('img', {
+    class: className, src: `assets/players/${id}.webp?v=${VERSION}`,
+    loading: 'lazy', width: 240, height: 320, alt: label,
+  }) : playerSilhouette();
+}
+
+function todayBirthdaysView(dayData) {
+  const birthdays = todayBirthdays(dayData).slice(0, 12);
+  if (!birthdays.length) return null;
+  return section('今日が誕生日の選手', el('ol', { class: 'birthday-player-list' }, birthdays.map((player) => {
+    const id = player.id ?? player.player ?? player.playerId;
+    const label = player.name ?? player.label ?? id;
+    const year = birthYear(player);
+    return el('li', {}, el('a', { class: 'birthday-player-card', href: `#/p/${id}` }, [
+      playerPhotoOrSilhouette(id, label, player.photo === true, 'birthday-player-photo'),
+      el('strong', { class: 'birthday-player-name' }, label),
+      year ? el('span', { class: 'birthday-player-year' }, `${year}年生まれ`) : null,
+    ]));
+  })), 'today-birthdays');
+}
+
+export function homeView(index, searchOptions = null, todayData = null) {
   const cards = index.leagues.map((league) => {
     const champion = league.latest?.champion;
     return el('a', { class: `league-card league-${league.id}`, href: `#/l/${league.id}` }, [
@@ -98,6 +160,8 @@ export function homeView(index, searchOptions = null) {
   return el('section', { class: 'page home-page' }, [
     el('div', { class: 'page-heading' }, [el('h1', {}, '欧州5大リーグ')]),
     searchOptions ? searchComponent(searchOptions) : null,
+    todayMatchesView(todayData),
+    todayBirthdaysView(todayData),
     el('div', { class: 'home-feature-grid' }, [
       el('a', { class: 'feature-card japan-feature-card', href: '#/j' }, [rubyEl('h2', STRINGS.japanFeature), el('p', {}, '日本人選手をさがす')]),
       latestSeason ? el('a', { class: 'feature-card meikan-feature-card', href: '#/z' }, [rubyEl('h2', STRINGS.meikan), el('p', {}, 'リーグを選んで見る')]) : null,
@@ -171,12 +235,27 @@ function resultMark(result) {
   return el('span', { class: `result-mark result-${result}` }, labels[result]);
 }
 
+function shortDateLabel(date) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(date ?? ''));
+  return match ? `${Number(match[2])}/${Number(match[3])}` : null;
+}
+
+function longDateLabel(date) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(date ?? ''));
+  return match ? `${Number(match[1])}年${Number(match[2])}月${Number(match[3])}日` : null;
+}
+
+function scoreLink(match) {
+  return el('a', { class: 'score-link', href: `#/m/${match.key}` }, `${match.homeGoals}–${match.awayGoals}`);
+}
+
 function matchRow(match, clubs, selectedClub) {
   const result = matchResult(match, selectedClub);
   return el('li', { class: `match-row match-${result}` }, [
     clubLink(match.home, clubs),
     el('span', { class: 'score-result' }, [
-      el('a', { class: 'score-link', href: `#/m/${match.key}` }, `${match.homeGoals}–${match.awayGoals}`),
+      shortDateLabel(match.date) ? el('span', { class: 'match-date-short' }, shortDateLabel(match.date)) : null,
+      scoreLink(match),
       resultMark(result),
     ]),
     clubLink(match.away, clubs),
@@ -241,6 +320,7 @@ export function matchView(season, match, clubs, players, openLiga = false) {
     : '得点者';
   return el('article', { class: 'page match-page' }, [
     el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, `${LEAGUE_NAMES[season.league]} ${seasonLabel(season.year)}`), el('h1', {}, '試合')]),
+    match.date ? el('p', { class: 'match-date-full' }, longDateLabel(match.date)) : null,
     el('section', { class: 'match-hero panel' }, [
       clubLink(match.home, clubs, 'match-club'),
       el('strong', { class: 'match-score' }, `${match.homeGoals}–${match.awayGoals}`),
@@ -251,7 +331,7 @@ export function matchView(season, match, clubs, players, openLiga = false) {
       el('div', {}, [el('h3', {}, clubName(clubs[match.home], match.home)), el('ol', { class: 'goal-list' }, scorerRows(homeEvents, players))]),
       el('div', {}, [el('h3', {}, clubName(clubs[match.away], match.away)), el('ol', { class: 'goal-list' }, scorerRows(awayEvents, players))]),
     ]) : el('p', {}, '得点者の記録なし'), 'goals-panel'),
-    openLiga ? el('p', { class: 'source-note' }, '得点者：OpenLigaDB（ODbL 1.0）') : null,
+    openLiga ? el('p', { class: 'source-note' }, 'OpenLigaDB（ODbL 1.0）') : null,
   ]);
 }
 
@@ -267,9 +347,13 @@ export function clubView(club, relatedClubs) {
     section('対戦成績', el('div', { class: 'opponents-table-wrap' }, el('table', { class: 'opponents-table' }, [
       el('thead', {}, el('tr', {}, ['クラブ', '試合', '勝', '分', '負', '得点', '失点'].map((label) => el('th', { scope: 'col' }, label)))),
       el('tbody', {}, opponents.map(([opponent, stats]) => el('tr', {}, [
-        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, stats.matches.map((key, indexValue) => ({ key, score: stats.scores[indexValue], result: { w: 'win', d: 'draw', l: 'loss' }[stats.outcomes[indexValue]] })).reverse().map((match) => el('li', { class: `opponent-match-row match-${match.result}` }, [
+        el('td', {}, el('details', {}, [el('summary', {}, clubLink(opponent, relatedClubs, 'club-link', true)), el('ol', { class: 'opponent-matches' }, stats.matches.map((key, indexValue) => ({ key, score: stats.scores[indexValue], date: stats.dates?.[indexValue], result: { w: 'win', d: 'draw', l: 'loss' }[stats.outcomes[indexValue]] })).reverse().map((match) => el('li', { class: `opponent-match-row match-${match.result}` }, [
           el('span', {}, `${match.key.slice(3, 7)}–${String(Number(match.key.slice(3, 7)) + 1).slice(-2)}シーズン`),
-          el('span', { class: 'score-result' }, [el('a', { class: 'score-link', href: `#/m/${match.key}` }, match.score), resultMark(match.result)]),
+          el('span', { class: 'score-result' }, [
+            shortDateLabel(match.date) ? el('span', { class: 'match-date-short' }, shortDateLabel(match.date)) : null,
+            el('a', { class: 'score-link', href: `#/m/${match.key}` }, match.score),
+            resultMark(match.result),
+          ]),
         ])))])),
         ...['p', 'w', 'd', 'l', 'gf', 'ga'].map((key) => el('td', {}, String(stats[key]))),
       ]))),
@@ -288,6 +372,10 @@ export function creditsView() {
       el('li', {}, [el('a', { href: 'https://github.com/lipis/flag-icons' }, 'flag-icons'), text(' — MIT License')]),
     ])),
     section('変更したところ', el('p', {}, '必要な情報を選び、整理し、クラブと選手にキーを付け、日本語名を加えています。')),
+    section('写真のクレジット', [
+      el('p', {}, '写真は Wikimedia Commons のものを、それぞれのライセンスに従って使っています。CC BY / CC BY-SA の写真は、顔の部分を切り抜き・縮小しています。'),
+      el('a', { href: '#/credits/photos' }, '写真のクレジットを見る'),
+    ]),
     section('コード', el('p', {}, [text('サイトのコードは '), el('a', { href: 'https://github.com/masarusz/clubpedia' }, 'GitHub'), text(' で公開しています。') ])),
     section('エンブレムについて', el('p', {}, 'クラブのエンブレムやリーグのロゴは使っていません。クラブは名前とユニフォームの色で表しています。')),
   ]);
@@ -300,6 +388,39 @@ function seasonIdLabel(seasonId) {
 
 function playerSilhouette() {
   return el('div', { class: 'player-silhouette', role: 'presentation' }, el('span', { class: 'silhouette-mark' }, '👤'));
+}
+
+function licenceNeedsModificationNote(photo) {
+  return /\bCC BY(?:-SA)?\b/i.test(String(photo?.licence ?? photo?.license ?? ''));
+}
+
+function externalLink(href, children) {
+  const node = document.createElement('a');
+  node.setAttribute('href', href);
+  node.append(...(Array.isArray(children) ? children : [children]));
+  return node;
+}
+
+function commonsCreditLink(photo) {
+  return externalLink(photo?.source ?? photo?.url ?? 'https://commons.wikimedia.org/', photo?.artist ?? photo?.author ?? 'Wikimedia Commons');
+}
+
+function photoCredit(photo) {
+  const licence = photo?.licence ?? photo?.license ?? 'ライセンス';
+  return el('p', { class: 'photo-credit' }, [
+    text('写真: '),
+    commonsCreditLink(photo),
+    text(' / '),
+    photo?.licenceUrl || photo?.licenseUrl ? externalLink(photo.licenceUrl ?? photo.licenseUrl, licence) : text(licence),
+    licenceNeedsModificationNote(photo) ? text('（切り抜き・縮小）') : null,
+  ]);
+}
+
+function playerPortrait(id, label, player, photo) {
+  return el('figure', { class: 'player-portrait' }, [
+    playerPhotoOrSilhouette(id, label, player?.photo === true, 'player-photo'),
+    player?.photo === true && (photo ?? player?.photoCredit) ? el('figcaption', {}, photoCredit(photo ?? player.photoCredit)) : null,
+  ]);
 }
 
 const SEARCH_TYPE_LABELS = Object.freeze({ league: 'リーグ', club: 'クラブ', player: '選手', page: '特集' });
@@ -372,7 +493,7 @@ export function searchView(searchOptions) {
   ]);
 }
 
-export function playerView(id, player, names) {
+export function playerView(id, player, names, photo = null) {
   if (!player) return notFoundView();
   const label = playerName(player, id);
   const birth = birthDateLabel(player.birthDate);
@@ -418,7 +539,10 @@ export function playerView(id, player, names) {
   ]));
 
   return el('article', { class: 'page player-page' }, [
-    el('div', { class: 'page-heading' }, [el('h1', {}, label), birth ? el('p', { class: 'player-birth' }, birth) : null]),
+    el('header', { class: 'player-header panel' }, [
+      playerPortrait(id, label, player, photo),
+      el('div', { class: 'player-header-copy' }, [el('h1', {}, label), birth ? el('p', { class: 'player-birth' }, birth) : null]),
+    ]),
     seasonCards.length ? seasonCards : el('p', { class: 'panel' }, '記録なし'),
     historical.length ? el('section', { class: 'panel player-historical-panel' }, [
       el('h2', {}, '歴代得点王'),
@@ -455,11 +579,30 @@ function meikanCard(id, entry, players, names) {
   const player = players[id];
   const label = playerName(player, id);
   return el('a', { class: 'meikan-card', href: `#/p/${id}` }, [
-    playerSilhouette(),
+    playerPhotoOrSilhouette(id, label, player?.photo === true, 'meikan-photo'),
     el('strong', { class: 'meikan-name' }, label),
     entry.japan ? el('span', { class: 'badge japan-badge' }, '日本') : null,
     el('span', { class: 'meikan-goals' }, `${entry.goals}得点`),
     entry.topScorerRank ? el('span', { class: 'meikan-finish' }, topScorerFinish(entry.topScorerRank)) : null,
+  ]);
+}
+
+export function photoCreditsView(photos) {
+  const entries = Object.entries(photos ?? {}).sort(([, a], [, b]) =>
+    String(a?.name ?? '').localeCompare(String(b?.name ?? ''), 'ja') || String(a?.artist ?? '').localeCompare(String(b?.artist ?? ''), 'ja'));
+  return el('article', { class: 'page photo-credits-page' }, [
+    el('div', { class: 'page-heading' }, [el('p', { class: 'eyebrow' }, 'Clubpedia'), el('h1', {}, '写真のクレジット')]),
+    el('p', { class: 'panel' }, '写真は Wikimedia Commons のものを、それぞれのライセンスに従って使っています。CC BY / CC BY-SA の写真は、顔の部分を切り抜き・縮小しています。'),
+    el('ul', { class: 'photo-credit-list' }, entries.map(([id, photo]) => el('li', { class: 'photo-credit-row' }, [
+      el('a', { class: 'photo-credit-player', href: `#/p/${id}` }, photo?.name ?? photo?.ja ?? id),
+      el('span', { class: 'photo-credit-details' }, [
+        text('写真: '),
+        commonsCreditLink(photo),
+        text(' / '),
+        photo?.licenceUrl || photo?.licenseUrl ? externalLink(photo.licenceUrl ?? photo.licenseUrl, photo?.licence ?? photo?.license ?? 'ライセンス') : text(photo?.licence ?? photo?.license ?? 'ライセンス'),
+        licenceNeedsModificationNote(photo) ? text('（切り抜き・縮小）') : null,
+      ]),
+    ]))),
   ]);
 }
 

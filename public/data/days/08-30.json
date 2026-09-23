@@ -52,7 +52,7 @@
       "birthYear": 2001,
       "id": "Q113472639",
       "name": "Ibrahim Salah",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
@@ -70,13 +70,16 @@
       "birthYear": 1994,
       "id": "Q44010298",
       "name": "トンマーゾ アウジェッロ",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2025-08-30",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2025-Q15755-Q15789",
       "league": "de",
       "score": "2–3",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2025-08-30",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2025-Q4512-Q101959",
       "league": "de",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2025-08-30",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2025-Q8682-Q8835",
       "league": "es",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q730809",
+      "awayName": "ニーム・オリンピック",
+      "date": "2020-08-30",
       "home": "Q192071",
+      "homeName": "FCナント",
       "key": "fr-2020-Q192071-Q730809",
       "league": "fr",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-08-30",
       "home": "Q218372",
+      "homeName": "スタッド・ブレスト29",
       "key": "fr-2020-Q218372-Q132885",
       "league": "fr",
       "score": "2–3",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q13385",
+      "awayName": "S.P.A.L.",
+      "date": "2019-08-30",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2019-Q1893-Q13385",
       "league": "it",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q102720",
+      "awayName": "ヘルタ・ベルリン",
+      "date": "2015-08-30",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2015-Q41420-Q102720",
       "league": "de",
       "score": "3–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "2015-08-30",
       "home": "Q770740",
+      "homeName": "SDエイバル",
       "key": "es-2015-Q770740-Q8687",
       "league": "es",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2015-08-30",
       "home": "Q610621",
+      "homeName": "カルピFC",
       "key": "it-2015-Q610621-Q631",
       "league": "it",
       "score": "1–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2008-08-30",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2008-Q32494-Q105861",
       "league": "de",
       "score": "1–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2008-08-30",
       "home": "Q209509",
+      "homeName": "グルノーブル・フット38",
       "key": "fr-2008-Q209509-Q180305",
       "league": "fr",
       "score": "1–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2003-08-30",
       "home": "Q19513",
+      "homeName": "モンペリエHSC",
       "key": "fr-2003-Q19513-Q483020",
       "league": "fr",
       "score": "3–2",

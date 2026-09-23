@@ -40,13 +40,13 @@
       "birthYear": 1999,
       "id": "Q66095792",
       "name": "Lilian Brassier",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2002,
       "id": "Q119960944",
       "name": "Hamza Igamane",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1990,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q141971",
+      "awayName": "1.FCウニオン・ベルリン",
+      "date": "2024-11-02",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2024-Q15789-Q141971",
       "league": "de",
       "score": "3–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2024-11-02",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2024-Q1130849-Q19453",
       "league": "en",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2019-11-02",
       "home": "Q38245",
+      "homeName": "アイントラハト・フランクフルト",
       "key": "de-2019-Q38245-Q15789",
       "league": "de",
       "score": "5–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2019-11-02",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2019-Q18711-Q1130849",
       "league": "en",
       "score": "1–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2019-11-02",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2019-Q1893-Q631",
       "league": "it",
       "score": "1–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2014-11-02",
       "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
       "key": "en-2014-Q50602-Q18656",
       "league": "en",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2674",
+      "awayName": "パレルモFC",
+      "date": "2014-11-02",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2014-Q1543-Q2674",
       "league": "it",
       "score": "0–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2014-11-02",
       "home": "Q2693",
+      "homeName": "パルマ・カルチョ1913",
       "key": "it-2014-Q2693-Q631",
       "league": "it",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2013-11-02",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2013-Q18708-Q18656",
       "league": "en",
       "score": "1–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2013-11-02",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2013-Q9617-Q1130849",
       "league": "en",
       "score": "2–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2052",
+      "awayName": "ACFフィオレンティーナ",
+      "date": "2013-11-02",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2013-Q1543-Q2052",
       "league": "it",
       "score": "0–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2003-11-02",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2003-Q18708-Q1130849",
       "league": "en",
       "score": "1–2",

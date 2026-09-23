@@ -64,7 +64,7 @@
       "birthYear": 1997,
       "id": "Q26034345",
       "name": "アミーヌ アリ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1995,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2020-06-18",
       "home": "Q223620",
+      "homeName": "デポルティーボ・アラベス",
       "key": "es-2019-Q223620-Q10315",
       "league": "es",
       "score": "2–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2020-06-18",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2019-Q8682-Q10333",
       "league": "es",
       "score": "3–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "1995-06-18",
       "home": "Q10308",
+      "homeName": "レアル・サラゴサ",
       "key": "es-1994-Q10308-Q10333",
       "league": "es",
       "score": "2–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8760",
+      "awayName": "デポルティーボ・ラ・コルーニャ",
+      "date": "1995-06-18",
       "home": "Q576285",
+      "homeName": "アルバセテ・バロンピエ",
       "key": "es-1994-Q576285-Q8760",
       "league": "es",
       "score": "2–8",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8749",
+      "awayName": "セルタ・デ・ビーゴ",
+      "date": "1995-06-18",
       "home": "Q657865",
+      "homeName": "CDログロニェス",
       "key": "es-1994-Q657865-Q8749",
       "league": "es",
       "score": "0–3",

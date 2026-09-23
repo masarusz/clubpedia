@@ -4,7 +4,7 @@
       "birthYear": 1999,
       "id": "Q47002491",
       "name": "マテオ レテギ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1987,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2023-04-29",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2022-Q32494-Q51976",
       "league": "de",
       "score": "2–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2023-04-29",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2022-Q4512-Q101959",
       "league": "de",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2022-04-29",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2021-Q126334-Q483020",
       "league": "fr",
       "score": "3–3",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2018-04-29",
       "home": "Q845137",
+      "homeName": "アンジェSCO",
       "key": "fr-2017-Q845137-Q132885",
       "league": "fr",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2017-04-29",
       "home": "Q105254",
+      "homeName": "1.FSVマインツ05",
       "key": "de-2016-Q105254-Q101959",
       "league": "de",
       "score": "1–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q104770",
+      "awayName": "1.FCケルン",
+      "date": "2017-04-29",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2016-Q41420-Q104770",
       "league": "de",
       "score": "0–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "2015-04-29",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2014-Q1543-Q2074",
       "league": "it",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q10329",
+      "awayName": "セビージャFC",
+      "date": "2012-04-29",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2011-Q8682-Q10329",
       "league": "es",
       "score": "3–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q503317",
+      "awayName": "ディジョンFCO",
+      "date": "2012-04-29",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2011-Q19521-Q503317",
       "league": "fr",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q6664",
+      "awayName": "ACチェゼーナ",
+      "date": "2012-04-29",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2011-Q631-Q6664",
       "league": "it",
       "score": "2–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2012-04-29",
       "home": "Q8416",
+      "homeName": "ノヴァーラFC",
       "key": "it-2011-Q8416-Q1422",
       "league": "it",
       "score": "0–4",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2002-04-29",
       "home": "Q19451",
+      "homeName": "ボルトン・ワンダラーズFC",
       "key": "en-2001-Q19451-Q9617",
       "league": "en",
       "score": "0–2",

@@ -16,7 +16,7 @@
       "birthYear": 1992,
       "id": "Q16762728",
       "name": "Simy",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
@@ -40,7 +40,7 @@
       "birthYear": 1997,
       "id": "Q14327453",
       "name": "ユーリ ティーレマンス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1987,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2023-05-07",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2022-Q18716-Q9617",
       "league": "en",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2023-05-07",
       "home": "Q192071",
+      "homeName": "FCナント",
       "key": "fr-2022-Q192071-Q126334",
       "league": "fr",
       "score": "0–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2022-05-07",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2021-Q1130849-Q18741",
       "league": "en",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2017-05-07",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2016-Q1130849-Q18732",
       "league": "en",
       "score": "0–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q185163",
+      "awayName": "OGCニース",
+      "date": "2017-05-07",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2016-Q132885-Q185163",
       "league": "fr",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "2017-05-07",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q2739",
       "league": "it",
       "score": "1–4",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2017-05-07",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2016-Q2074-Q631",
       "league": "it",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2016-05-07",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2015-Q19481-Q5794",
       "league": "en",
       "score": "3–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2016-05-07",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2015-Q1893-Q1543",
       "league": "it",
       "score": "0–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q6703",
+      "awayName": "エンポリFC",
+      "date": "2016-05-07",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2015-Q631-Q6703",
       "league": "it",
       "score": "2–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q193377",
+      "awayName": "SMカーン",
+      "date": "2005-05-07",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2004-Q132885-Q193377",
       "league": "fr",
       "score": "2–3",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2000-05-07",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-1999-Q2739-Q1543",
       "league": "it",
       "score": "1–1",

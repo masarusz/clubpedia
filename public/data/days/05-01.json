@@ -16,7 +16,7 @@
       "birthYear": 1987,
       "id": "Q208050",
       "name": "レオナルド ボヌッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
@@ -28,7 +28,7 @@
       "birthYear": 1991,
       "id": "Q20925501",
       "name": "ルベン アルカラス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1981,
@@ -52,7 +52,7 @@
       "birthYear": 1999,
       "id": "Q60676070",
       "name": "Imrân Louza",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19458",
+      "awayName": "バーンリーFC",
+      "date": "2026-05-01",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2025-Q1128631-Q19458",
       "league": "en",
       "score": "3–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2022-05-01",
       "home": "Q18747",
+      "homeName": "ウェストハム・ユナイテッドFC",
       "key": "en-2021-Q18747-Q9617",
       "league": "en",
       "score": "1–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2022-05-01",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2021-Q7156-Q8835",
       "league": "es",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2022-05-01",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-2021-Q2739-Q1893",
       "league": "it",
       "score": "0–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q19481",
+      "awayName": "レスター・シティFC",
+      "date": "2016-05-01",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2015-Q18656-Q19481",
       "league": "en",
       "score": "1–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2016-05-01",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2015-Q18732-Q50602",
       "league": "en",
       "score": "4–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q845043",
+      "awayName": "フロジノーネ・カルチョ",
+      "date": "2016-05-01",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2015-Q1543-Q845043",
       "league": "it",
       "score": "3–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2016-05-01",
       "home": "Q2609",
+      "homeName": "SSラツィオ",
       "key": "it-2015-Q2609-Q631",
       "league": "it",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2010-05-01",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2009-Q15789-Q105861",
       "league": "de",
       "score": "3–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q101859",
+      "awayName": "VfLヴォルフスブルク",
+      "date": "2010-05-01",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2009-Q41420-Q101859",
       "league": "de",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2010-05-01",
       "home": "Q8780",
+      "homeName": "RCDエスパニョール",
       "key": "es-2009-Q8780-Q10333",
       "league": "es",
       "score": "0–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2004-05-01",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2003-Q51976-Q51974",
       "league": "de",
       "score": "6–0",

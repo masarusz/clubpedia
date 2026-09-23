@@ -58,7 +58,7 @@
       "birthYear": 2000,
       "id": "Q98815671",
       "name": "ピエール カルル",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1982,
@@ -70,13 +70,16 @@
       "birthYear": 1997,
       "id": "Q19888012",
       "name": "キーラン ティアニー",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2020-06-05",
       "home": "Q106394",
+      "homeName": "SCフライブルク",
       "key": "de-2019-Q106394-Q101959",
       "league": "de",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q524378",
+      "awayName": "SGヴァッテンシャイト",
+      "date": "1993-06-05",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-1992-Q105861-Q524378",
       "league": "de",
       "score": "3–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "1993-06-05",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-1992-Q51974-Q38245",
       "league": "de",
       "score": "1–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q141931",
+      "awayName": "SGディナモ・ドレスデン",
+      "date": "1993-06-05",
       "home": "Q8466",
+      "homeName": "1.FCカイザースラウテルン",
       "key": "de-1992-Q8466-Q141931",
       "league": "de",
       "score": "2–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q460448",
+      "awayName": "カディスCF",
+      "date": "1993-06-05",
       "home": "Q8760",
+      "homeName": "デポルティーボ・ラ・コルーニャ",
       "key": "es-1992-Q8760-Q460448",
       "league": "es",
       "score": "3–0",

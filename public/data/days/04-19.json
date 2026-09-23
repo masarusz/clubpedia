@@ -10,7 +10,7 @@
       "birthYear": 1989,
       "id": "Q313575",
       "name": "マルコ アルナウトヴィッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1995,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2026-04-19",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2025-Q15789-Q4512",
       "league": "de",
       "score": "4–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2026-04-19",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2025-Q5794-Q1130849",
       "league": "en",
       "score": "1–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q182876",
+      "awayName": "AJオセール",
+      "date": "2026-04-19",
       "home": "Q180305",
+      "homeName": "ASモナコ",
       "key": "fr-2025-Q180305-Q182876",
       "league": "fr",
       "score": "2–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2025-04-19",
       "home": "Q162251",
+      "homeName": "1.FCハイデンハイム",
       "key": "de-2024-Q162251-Q15789",
       "league": "de",
       "score": "0–4",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2025-04-19",
       "home": "Q180305",
+      "homeName": "ASモナコ",
       "key": "fr-2024-Q180305-Q126334",
       "league": "fr",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2024-04-19",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2023-Q2074-Q2609",
       "league": "it",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2022-04-19",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2021-Q1130849-Q18656",
       "league": "en",
       "score": "4–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2021-04-19",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2020-Q1128631-Q1130849",
       "league": "en",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2015-04-19",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2014-Q631-Q1543",
       "league": "it",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q105254",
+      "awayName": "1.FSVマインツ05",
+      "date": "2014-04-19",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2013-Q41420-Q105254",
       "league": "de",
       "score": "4–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q6767",
+      "awayName": "ASリヴォルノ・カルチョ",
+      "date": "2014-04-19",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2013-Q1543-Q6767",
       "league": "it",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2014-04-19",
       "home": "Q2693",
+      "homeName": "パルマ・カルチョ1913",
       "key": "it-2013-Q2693-Q631",
       "league": "it",
       "score": "0–2",

@@ -52,7 +52,7 @@
       "birthYear": 1994,
       "id": "Q15309604",
       "name": "Nikola Dovedan",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1994,
@@ -70,13 +70,16 @@
       "birthYear": 2004,
       "id": "Q122789533",
       "name": "Damion Downs",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2020-07-06",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2019-Q18741-Q5794",
       "league": "en",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2020-07-06",
       "home": "Q10329",
+      "homeName": "セビージャFC",
       "key": "es-2019-Q10329-Q770740",
       "league": "es",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2020-07-06",
       "home": "Q8823",
+      "homeName": "レバンテUD",
       "key": "es-2019-Q8823-Q10315",
       "league": "es",
       "score": "1–1",

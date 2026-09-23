@@ -34,7 +34,7 @@
       "birthYear": 1996,
       "id": "Q21403452",
       "name": "アダム ウナス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2005,
@@ -52,7 +52,7 @@
       "birthYear": 1993,
       "id": "Q1679812",
       "name": "ジャマール ラスセルズ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1983,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2023-11-11",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2023-Q4512-Q41420",
       "league": "de",
       "score": "2–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18520",
+      "awayName": "ルートン・タウンFC",
+      "date": "2023-11-11",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2023-Q18656-Q18520",
       "league": "en",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q19458",
+      "awayName": "バーンリーFC",
+      "date": "2023-11-11",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2023-Q9617-Q19458",
       "league": "en",
       "score": "3–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2023-11-11",
       "home": "Q208228",
+      "homeName": "スタッド・ランス",
       "key": "fr-2023-Q208228-Q483020",
       "league": "fr",
       "score": "0–3",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2023-11-11",
       "home": "Q328658",
+      "homeName": "ル・アーヴルAC",
       "key": "fr-2023-Q328658-Q180305",
       "league": "fr",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2022-11-11",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2022-Q101959-Q41420",
       "league": "de",
       "score": "4–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8723",
+      "awayName": "レアル・ベティス",
+      "date": "2018-11-11",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2018-Q7156-Q8723",
       "league": "es",
       "score": "3–4",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2018-11-11",
       "home": "Q8806",
+      "homeName": "ヘタフェCF",
       "key": "es-2018-Q8806-Q10333",
       "league": "es",
       "score": "0–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q503317",
+      "awayName": "ディジョンFCO",
+      "date": "2018-11-11",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2018-Q132885-Q503317",
       "league": "fr",
       "score": "2–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2012-11-11",
       "home": "Q1886",
+      "homeName": "アタランタBC",
       "key": "it-2012-Q1886-Q631",
       "league": "it",
       "score": "3–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2006-11-11",
       "home": "Q210864",
+      "homeName": "ル・マンFC",
       "key": "fr-2006-Q210864-Q483020",
       "league": "fr",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2001-11-11",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2001-Q1422-Q2693",
       "league": "it",
       "score": "3–1",

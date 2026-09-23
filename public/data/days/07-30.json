@@ -10,7 +10,7 @@
       "birthYear": 1992,
       "id": "Q129810",
       "name": "ケヴィン フォラント",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1964,
@@ -22,7 +22,7 @@
       "birthYear": 1993,
       "id": "Q1539560",
       "name": "ジャンルカ カプラーリ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1970,
@@ -40,13 +40,13 @@
       "birthYear": 1993,
       "id": "Q519008",
       "name": "アンドレ ゴメス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2002,
       "id": "Q105425298",
       "name": "セク マラ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q172476",
+      "awayName": "FCジロンダン・ボルドー",
+      "date": "2005-07-30",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2005-Q132885-Q172476",
       "league": "fr",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q191843",
+      "awayName": "RCランス",
+      "date": "2005-07-30",
       "home": "Q192071",
+      "homeName": "FCナント",
       "key": "fr-2005-Q192071-Q191843",
       "league": "fr",
       "score": "2–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2005-07-30",
       "home": "Q19516",
+      "homeName": "LOSCリール",
       "key": "fr-2005-Q19516-Q19509",
       "league": "fr",
       "score": "1–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q270051",
+      "awayName": "ACアジャクシオ",
+      "date": "2005-07-30",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2005-Q19521-Q270051",
       "league": "fr",
       "score": "0–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2005-07-30",
       "home": "Q19523",
+      "homeName": "ASナンシー",
       "key": "fr-2005-Q19523-Q180305",
       "league": "fr",
       "score": "0–1",

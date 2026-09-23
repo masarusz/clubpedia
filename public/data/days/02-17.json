@@ -22,7 +22,7 @@
       "birthYear": 1997,
       "id": "Q35760470",
       "name": "ガエターノ カストロヴィッリ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -40,7 +40,7 @@
       "birthYear": 2007,
       "id": "Q131826846",
       "name": "ロビニオ バズ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2003,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2024-02-17",
       "home": "Q479351",
+      "homeName": "SVダルムシュタット98",
       "key": "de-2023-Q479351-Q4512",
       "league": "de",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2024-02-17",
       "home": "Q702455",
+      "homeName": "RBライプツィヒ",
       "key": "de-2023-Q702455-Q101959",
       "league": "de",
       "score": "2–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-02-17",
       "home": "Q19458",
+      "homeName": "バーンリーFC",
       "key": "en-2023-Q19458-Q9617",
       "league": "en",
       "score": "0–5",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2024-02-17",
       "home": "Q19571",
+      "homeName": "ブレントフォードFC",
       "key": "en-2023-Q19571-Q1130849",
       "league": "en",
       "score": "1–4",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q185163",
+      "awayName": "OGCニース",
+      "date": "2021-02-17",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2020-Q132885-Q185163",
       "league": "fr",
       "score": "3–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q19518",
+      "awayName": "トゥールーズFC",
+      "date": "2019-02-17",
       "home": "Q172476",
+      "homeName": "FCジロンダン・ボルドー",
       "key": "fr-2018-Q172476-Q19518",
       "league": "fr",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2018-02-17",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2017-Q2074-Q631",
       "league": "it",
       "score": "2–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q33748",
+      "awayName": "ハノーファー96",
+      "date": "2013-02-17",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2012-Q15786-Q33748",
       "league": "de",
       "score": "2–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2013-02-17",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2012-Q2018-Q1893",
       "league": "it",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2013-02-17",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2012-Q2052-Q631",
       "league": "it",
       "score": "4–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2012-02-17",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2011-Q631-Q1893",
       "league": "it",
       "score": "0–3",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2008-02-17",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-2007-Q51974-Q105861",
       "league": "de",
       "score": "3–0",

@@ -28,7 +28,7 @@
       "birthYear": 1987,
       "id": "Q3573237",
       "name": "ユニス アブデルハミド",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1967,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2025-09-28",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2025-Q7156-Q10315",
       "league": "es",
       "score": "2–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q104761",
+      "awayName": "バイエル・レバークーゼン",
+      "date": "2024-09-28",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2024-Q15789-Q104761",
       "league": "de",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2024-09-28",
       "home": "Q19500",
+      "homeName": "ウルヴァーハンプトン・ワンダラーズFC",
       "key": "en-2024-Q19500-Q1130849",
       "league": "en",
       "score": "1–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19481",
+      "awayName": "レスター・シティFC",
+      "date": "2024-09-28",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q19481",
       "league": "en",
       "score": "4–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2020-09-28",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q9617",
       "league": "en",
       "score": "3–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2019-09-28",
       "home": "Q19607",
+      "homeName": "シェフィールド・ユナイテッドFC",
       "key": "en-2019-Q19607-Q1130849",
       "league": "en",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2019-09-28",
       "home": "Q1457",
+      "homeName": "UCサンプドリア",
       "key": "it-2019-Q1457-Q631",
       "league": "it",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "2014-09-28",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2014-Q631-Q1900",
       "league": "it",
       "score": "1–4",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2014-09-28",
       "home": "Q6664",
+      "homeName": "ACチェゼーナ",
       "key": "it-2014-Q6664-Q1543",
       "league": "it",
       "score": "1–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18744",
+      "awayName": "ウェスト・ブロムウィッチ・アルビオンFC",
+      "date": "2013-09-28",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2013-Q18656-Q18744",
       "league": "en",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2013-09-28",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2013-Q1543-Q1457",
       "league": "it",
       "score": "1–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2002-09-28",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2002-Q1422-Q2693",
       "league": "it",
       "score": "2–2",

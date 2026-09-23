@@ -22,7 +22,7 @@
       "birthYear": 1991,
       "id": "Q2053358",
       "name": "マティアス ベシーノ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1982,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2025-08-24",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2025-Q5794-Q19453",
       "league": "en",
       "score": "2–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2025-08-24",
       "home": "Q19516",
+      "homeName": "LOSCリール",
       "key": "fr-2025-Q19516-Q180305",
       "league": "fr",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2025-08-24",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2025-Q1422-Q2693",
       "league": "it",
       "score": "2–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-08-24",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2024-Q18711-Q9617",
       "league": "en",
       "score": "0–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2024-08-24",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2024-Q19453-Q18656",
       "league": "en",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2024-08-24",
       "home": "Q2693",
+      "homeName": "パルマ・カルチョ1913",
       "key": "it-2024-Q2693-Q1543",
       "league": "it",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2019-08-24",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q9617",
       "league": "en",
       "score": "3–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2014-08-24",
       "home": "Q18739",
+      "homeName": "サンダーランドAFC",
       "key": "en-2014-Q18739-Q18656",
       "league": "en",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2013-08-24",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2013-Q15789-Q15786",
       "league": "de",
       "score": "2–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2013-08-24",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2013-Q18708-Q9617",
       "league": "en",
       "score": "1–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2013-08-24",
       "home": "Q8639",
+      "homeName": "エラス・ヴェローナFC",
       "key": "it-2013-Q8639-Q1543",
       "league": "it",
       "score": "2–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2003-08-24",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-2003-Q51974-Q15789",
       "league": "de",
       "score": "0–2",

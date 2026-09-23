@@ -4,7 +4,7 @@
       "birthYear": 1989,
       "id": "Q152377",
       "name": "マルコ ロイス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1989,
@@ -40,7 +40,7 @@
       "birthYear": 1995,
       "id": "Q19578160",
       "name": "ミルト ウズニ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1969,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2020-05-31",
       "home": "Q160532",
+      "homeName": "SCパーダーボルン07",
       "key": "de-2019-Q160532-Q41420",
       "league": "de",
       "score": "1–6",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q6703",
+      "awayName": "エンポリFC",
+      "date": "2015-05-31",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2014-Q631-Q6703",
       "league": "it",
       "score": "4–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "2015-05-31",
       "home": "Q8603",
+      "homeName": "USサッスオーロ・カルチョ",
       "key": "it-2014-Q8603-Q2074",
       "league": "it",
       "score": "3–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2009-05-31",
       "home": "Q10286",
+      "homeName": "CAオサスナ",
       "key": "es-2008-Q10286-Q8682",
       "league": "es",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "2009-05-31",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2008-Q10333-Q8687",
       "league": "es",
       "score": "2–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2009-05-31",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2008-Q1422-Q2609",
       "league": "it",
       "score": "2–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2009-05-31",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2008-Q2052-Q1543",
       "league": "it",
       "score": "0–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q13391",
+      "awayName": "USレッチェ",
+      "date": "2009-05-31",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2008-Q2074-Q13391",
       "league": "it",
       "score": "4–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1886",
+      "awayName": "アタランタBC",
+      "date": "2009-05-31",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2008-Q631-Q1886",
       "league": "it",
       "score": "4–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q8749",
+      "awayName": "セルタ・デ・ビーゴ",
+      "date": "2003-05-31",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2002-Q8682-Q8749",
       "league": "es",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "1997-05-31",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-1996-Q101959-Q15789",
       "league": "de",
       "score": "2–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q732742",
+      "awayName": "CFエストレマドゥーラ",
+      "date": "1997-05-31",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-1996-Q8682-Q732742",
       "league": "es",
       "score": "5–0",

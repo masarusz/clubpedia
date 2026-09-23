@@ -64,7 +64,7 @@
       "birthYear": 1989,
       "id": "Q19336874",
       "name": "Vincent Le Goff",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1968,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q208228",
+      "awayName": "スタッド・ランス",
+      "date": "2022-10-15",
       "home": "Q48911",
+      "homeName": "FCロリアン",
       "key": "fr-2022-Q48911-Q208228",
       "league": "fr",
       "score": "0–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2017-10-15",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2017-Q126334-Q132885",
       "league": "fr",
       "score": "3–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2017-10-15",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2017-Q631-Q1543",
       "league": "it",
       "score": "3–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2016-10-15",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2016-Q15755-Q32494",
       "league": "de",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2016-10-15",
       "home": "Q38245",
+      "homeName": "アイントラハト・フランクフルト",
       "key": "de-2016-Q38245-Q15789",
       "league": "de",
       "score": "2–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2011-10-15",
       "home": "Q101859",
+      "homeName": "VfLヴォルフスブルク",
       "key": "de-2011-Q101859-Q15786",
       "league": "de",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8466",
+      "awayName": "1.FCカイザースラウテルン",
+      "date": "2011-10-15",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2011-Q32494-Q8466",
       "league": "de",
       "score": "1–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2011-10-15",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2011-Q2018-Q631",
       "league": "it",
       "score": "2–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2010-10-15",
       "home": "Q104770",
+      "homeName": "1.FCケルン",
       "key": "de-2010-Q104770-Q41420",
       "league": "de",
       "score": "1–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q2018",
+      "awayName": "カターニアFC",
+      "date": "2006-10-15",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2006-Q631-Q2018",
       "league": "it",
       "score": "2–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2005-10-15",
       "home": "Q18744",
+      "homeName": "ウェスト・ブロムウィッチ・アルビオンFC",
       "key": "en-2005-Q18744-Q9617",
       "league": "en",
       "score": "2–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q29390",
+      "awayName": "ACRメッシーナ",
+      "date": "2005-10-15",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2005-Q1422-Q29390",
       "league": "it",
       "score": "1–0",

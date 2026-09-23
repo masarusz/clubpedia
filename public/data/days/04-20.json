@@ -28,7 +28,7 @@
       "birthYear": 1999,
       "id": "Q27919903",
       "name": "Ladislav Krejčí",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
@@ -64,7 +64,7 @@
       "birthYear": 1992,
       "id": "Q45321959",
       "name": "セルヒオ ゴンサレス ポイリエル",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1982,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2025-04-20",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2024-Q41420-Q101959",
       "league": "de",
       "score": "3–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2025-04-20",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2024-Q19481-Q1130849",
       "league": "en",
       "score": "0–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2025-04-20",
       "home": "Q9653",
+      "homeName": "イプスウィッチ・タウンFC",
       "key": "en-2024-Q9653-Q9617",
       "league": "en",
       "score": "0–4",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-04-20",
       "home": "Q19500",
+      "homeName": "ウルヴァーハンプトン・ワンダラーズFC",
       "key": "en-2023-Q19500-Q9617",
       "league": "en",
       "score": "0–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2022-04-20",
       "home": "Q9616",
+      "homeName": "チェルシーFC",
       "key": "en-2021-Q9616-Q9617",
       "league": "en",
       "score": "2–4",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2019-04-20",
       "home": "Q459148",
+      "homeName": "EAギャンガン",
       "key": "fr-2018-Q459148-Q132885",
       "league": "fr",
       "score": "1–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2016-04-20",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-2015-Q2074-Q631",
       "league": "it",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q104761",
+      "awayName": "バイエル・レバークーゼン",
+      "date": "2014-04-20",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q104761",
       "league": "de",
       "score": "1–4",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2014-04-20",
       "home": "Q19477",
+      "homeName": "ハル・シティAFC",
       "key": "en-2013-Q19477-Q9617",
       "league": "en",
       "score": "0–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2014-04-20",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2013-Q5794-Q18656",
       "league": "en",
       "score": "2–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2013-04-20",
       "home": "Q33748",
+      "homeName": "ハノーファー96",
       "key": "de-2012-Q33748-Q15789",
       "league": "de",
       "score": "1–6",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2008-04-20",
       "home": "Q2768",
+      "homeName": "トリノFC",
       "key": "it-2007-Q2768-Q631",
       "league": "it",
       "score": "0–1",

@@ -4,7 +4,7 @@
       "birthYear": 1981,
       "id": "Q46896",
       "name": "ズラタン イブラヒモヴィッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1978,
@@ -40,7 +40,7 @@
       "birthYear": 1991,
       "id": "Q129175",
       "name": "ケニー ララ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2021-10-03",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2021-Q15789-Q38245",
       "league": "de",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2021-10-03",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2021-Q1130849-Q50602",
       "league": "en",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2021-10-03",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2021-Q1893-Q2609",
       "league": "it",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q104761",
+      "awayName": "バイエル・レバークーゼン",
+      "date": "2020-10-03",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2020-Q4512-Q104761",
       "league": "de",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q12297",
+      "awayName": "ビジャレアルCF",
+      "date": "2020-10-03",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2020-Q8701-Q12297",
       "league": "es",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2015-10-03",
       "home": "Q102720",
+      "homeName": "ヘルタ・ベルリン",
       "key": "de-2015-Q102720-Q51974",
       "league": "de",
       "score": "3–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2015-10-03",
       "home": "Q9616",
+      "homeName": "チェルシーFC",
       "key": "en-2015-Q9616-Q18732",
       "league": "en",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2010-10-03",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2010-Q41420-Q15789",
       "league": "de",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2010-10-03",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2010-Q7156-Q8835",
       "league": "es",
       "score": "1–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2010-10-03",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2010-Q631-Q1422",
       "league": "it",
       "score": "0–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q8476",
+      "awayName": "レッジーナ1914",
+      "date": "2004-10-03",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2004-Q1543-Q8476",
       "league": "it",
       "score": "3–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q501245",
+      "awayName": "ヴェネツィアFC",
+      "date": "1999-10-03",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-1999-Q1422-Q501245",
       "league": "it",
       "score": "1–0",

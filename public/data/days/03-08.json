@@ -10,7 +10,7 @@
       "birthYear": 1995,
       "id": "Q14945895",
       "name": "ケイタ バルデ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2002,
@@ -52,7 +52,7 @@
       "birthYear": 1996,
       "id": "Q18637804",
       "name": "ムサ ニアカテ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1980,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2025-03-08",
       "home": "Q157828",
+      "homeName": "ホルシュタイン・キール",
       "key": "de-2024-Q157828-Q4512",
       "league": "de",
       "score": "2–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2025-03-08",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2024-Q15789-Q105861",
       "league": "de",
       "score": "2–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2025-03-08",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2024-Q1130849-Q18732",
       "league": "en",
       "score": "3–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2025-03-08",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2024-Q19509-Q483020",
       "league": "fr",
       "score": "1–4",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q141971",
+      "awayName": "1.FCウニオン・ベルリン",
+      "date": "2024-03-08",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2023-Q4512-Q141971",
       "league": "de",
       "score": "2–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2015-03-08",
       "home": "Q2641",
+      "homeName": "SSCナポリ",
       "key": "it-2014-Q2641-Q631",
       "league": "it",
       "score": "2–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2014-03-08",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q51976",
       "league": "de",
       "score": "0–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q22707",
+      "awayName": "TSG1899ホッフェンハイム",
+      "date": "2014-03-08",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2013-Q32494-Q22707",
       "league": "de",
       "score": "4–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2014-03-08",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-2013-Q51974-Q38245",
       "league": "de",
       "score": "1–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2014-03-08",
       "home": "Q18744",
+      "homeName": "ウェスト・ブロムウィッチ・アルビオンFC",
       "key": "en-2013-Q18744-Q18656",
       "league": "en",
       "score": "0–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2014-03-08",
       "home": "Q2798",
+      "homeName": "ウディネーゼ・カルチョ",
       "key": "it-2013-Q2798-Q1543",
       "league": "it",
       "score": "1–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2013-03-08",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2012-Q15755-Q15786",
       "league": "de",
       "score": "1–2",

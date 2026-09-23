@@ -16,7 +16,7 @@
       "birthYear": 1988,
       "id": "Q110053",
       "name": "マッツ フンメルス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1982,
@@ -34,7 +34,7 @@
       "birthYear": 1995,
       "id": "Q17517250",
       "name": "カールトン モリス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
@@ -46,7 +46,7 @@
       "birthYear": 1997,
       "id": "Q26838657",
       "name": "セルヒオ アキエメ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1977,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2023-12-16",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2023-Q15755-Q41420",
       "league": "de",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18716",
+      "awayName": "ニューカッスル・ユナイテッドFC",
+      "date": "2021-12-16",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2021-Q1130849-Q18716",
       "league": "en",
       "score": "3–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2020-12-16",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q18741",
       "league": "en",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2020-12-16",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2020-Q9617-Q18732",
       "league": "en",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-12-16",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2020-Q19509-Q132885",
       "league": "fr",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2018-12-16",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2018-Q18732-Q9617",
       "league": "en",
       "score": "3–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2798",
+      "awayName": "ウディネーゼ・カルチョ",
+      "date": "2017-12-16",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2017-Q631-Q2798",
       "league": "it",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2016-12-16",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2016-Q22707-Q41420",
       "league": "de",
       "score": "2–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "2013-12-16",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2013-Q1543-Q2739",
       "league": "it",
       "score": "2–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2012-12-16",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2012-Q22707-Q41420",
       "league": "de",
       "score": "1–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2012-12-16",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2012-Q51976-Q15786",
       "league": "de",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q104770",
+      "awayName": "1.FCケルン",
+      "date": "2011-12-16",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2011-Q15789-Q104770",
       "league": "de",
       "score": "3–0",

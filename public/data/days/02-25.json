@@ -58,7 +58,7 @@
       "birthYear": 1989,
       "id": "Q433120",
       "name": "ミラン バデリ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1980,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2025-02-25",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2024-Q19467-Q18711",
       "league": "en",
       "score": "4–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2025-02-25",
       "home": "Q9616",
+      "homeName": "チェルシーFC",
       "key": "en-2024-Q9616-Q18732",
       "league": "en",
       "score": "4–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2024-02-25",
       "home": "Q191843",
+      "homeName": "RCランス",
       "key": "fr-2023-Q191843-Q180305",
       "league": "fr",
       "score": "2–3",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q208228",
+      "awayName": "スタッド・ランス",
+      "date": "2024-02-25",
       "home": "Q328658",
+      "homeName": "ル・アーヴルAC",
       "key": "fr-2023-Q328658-Q208228",
       "league": "fr",
       "score": "1–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2023-02-25",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2022-Q32494-Q4512",
       "league": "de",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2023-02-25",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2022-Q19481-Q9617",
       "league": "en",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2023-02-25",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2022-Q10333-Q10315",
       "league": "es",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2018-02-25",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2017-Q483020-Q132885",
       "league": "fr",
       "score": "3–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2017-02-25",
       "home": "Q106394",
+      "homeName": "SCフライブルク",
       "key": "de-2016-Q106394-Q41420",
       "league": "de",
       "score": "0–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2017-02-25",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2016-Q15789-Q51974",
       "league": "de",
       "score": "8–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2007-02-25",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2006-Q2018-Q631",
       "league": "it",
       "score": "2–5",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q19521",
+      "awayName": "ASサンテティエンヌ",
+      "date": "2006-02-25",
       "home": "Q210864",
+      "homeName": "ル・マンFC",
       "key": "fr-2005-Q210864-Q19521",
       "league": "fr",
       "score": "0–1",

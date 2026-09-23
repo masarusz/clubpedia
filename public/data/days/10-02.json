@@ -4,7 +4,7 @@
       "birthYear": 1991,
       "id": "Q602525",
       "name": "ロベルト フィルミーノ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1997,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2021-10-02",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2021-Q19453-Q9617",
       "league": "en",
       "score": "0–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2016-10-02",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2016-Q8682-Q770740",
       "league": "es",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2016-10-02",
       "home": "Q845137",
+      "homeName": "アンジェSCO",
       "key": "fr-2016-Q845137-Q132885",
       "league": "fr",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8603",
+      "awayName": "USサッスオーロ・カルチョ",
+      "date": "2016-10-02",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q8603",
       "league": "it",
       "score": "4–3",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2016-10-02",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-2016-Q2739-Q631",
       "league": "it",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2015-10-02",
       "home": "Q105254",
+      "homeName": "1.FSVマインツ05",
       "key": "de-2015-Q105254-Q15789",
       "league": "de",
       "score": "0–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2011-10-02",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2011-Q18741-Q9617",
       "league": "en",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q10329",
+      "awayName": "セビージャFC",
+      "date": "2011-10-02",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2011-Q8701-Q10329",
       "league": "es",
       "score": "0–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2010-10-02",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2010-Q15786-Q32494",
       "league": "de",
       "score": "2–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2005-10-02",
       "home": "Q185163",
+      "homeName": "OGCニース",
       "key": "fr-2005-Q185163-Q132885",
       "league": "fr",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2004-10-02",
       "home": "Q797530",
+      "homeName": "FCイストル",
       "key": "fr-2004-Q797530-Q132885",
       "league": "fr",
       "score": "0–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "1999-10-02",
       "home": "Q10319",
+      "homeName": "レアル・バリャドリード",
       "key": "es-1999-Q10319-Q7156",
       "league": "es",
       "score": "0–2",

@@ -16,7 +16,7 @@
       "birthYear": 1999,
       "id": "Q27049064",
       "name": "ジョアン フェリックス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-11-10",
       "home": "Q9616",
+      "homeName": "チェルシーFC",
       "key": "en-2024-Q9616-Q9617",
       "league": "en",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "2024-11-10",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2024-Q10315-Q7156",
       "league": "es",
       "score": "1–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2024-11-10",
       "home": "Q8835",
+      "homeName": "RCDマジョルカ",
       "key": "es-2024-Q8835-Q8701",
       "league": "es",
       "score": "0–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2019-11-10",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q50602",
       "league": "en",
       "score": "3–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2019-11-10",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2019-Q132885-Q704",
       "league": "fr",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2013-11-10",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2013-Q18656-Q9617",
       "league": "en",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2013-11-10",
       "home": "Q2037",
+      "homeName": "ACキエーヴォ・ヴェローナ",
       "key": "it-2013-Q2037-Q1543",
       "league": "it",
       "score": "0–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2012-11-10",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2012-Q15789-Q38245",
       "league": "de",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2012-11-10",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2012-Q32494-Q51976",
       "league": "de",
       "score": "2–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2012-11-10",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2012-Q18711-Q18656",
       "league": "en",
       "score": "2–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2010-11-10",
       "home": "Q13391",
+      "homeName": "USレッチェ",
       "key": "it-2010-Q13391-Q631",
       "league": "it",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2052",
+      "awayName": "ACFフィオレンティーナ",
+      "date": "2004-11-10",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2004-Q1422-Q2052",
       "league": "it",
       "score": "1–0",

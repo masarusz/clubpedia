@@ -16,7 +16,7 @@
       "birthYear": 1997,
       "id": "Q21622362",
       "name": "マッテオ ペッシーナ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2003,
@@ -34,7 +34,7 @@
       "birthYear": 1994,
       "id": "Q694852",
       "name": "ミッチェル ヴァイザー",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1965,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2024-04-21",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2023-Q18708-Q1130849",
       "league": "en",
       "score": "1–3",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2024-04-21",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2023-Q19518-Q132885",
       "league": "fr",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2024-04-21",
       "home": "Q218372",
+      "homeName": "スタッド・ブレスト29",
       "key": "fr-2023-Q218372-Q180305",
       "league": "fr",
       "score": "0–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2023-04-21",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2022-Q9617-Q18732",
       "league": "en",
       "score": "3–3",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q19516",
+      "awayName": "LOSCリール",
+      "date": "2018-04-21",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2017-Q132885-Q19516",
       "league": "fr",
       "score": "5–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2017-04-21",
       "home": "Q19523",
+      "homeName": "ASナンシー",
       "key": "fr-2016-Q19523-Q132885",
       "league": "fr",
       "score": "0–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q610621",
+      "awayName": "カルピFC",
+      "date": "2016-04-21",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2015-Q1543-Q610621",
       "league": "it",
       "score": "0–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q153539",
+      "awayName": "SpVggグロイター・フュルト",
+      "date": "2013-04-21",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2012-Q15786-Q153539",
       "league": "de",
       "score": "0–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2013-04-21",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2012-Q631-Q2693",
       "league": "it",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2012-04-21",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2011-Q51976-Q15789",
       "league": "de",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2012-04-21",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2011-Q9617-Q9616",
       "league": "en",
       "score": "0–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9653",
+      "awayName": "イプスウィッチ・タウンFC",
+      "date": "2002-04-21",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2001-Q9617-Q9653",
       "league": "en",
       "score": "2–0",

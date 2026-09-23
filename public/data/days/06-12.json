@@ -10,7 +10,7 @@
       "birthYear": 1992,
       "id": "Q311872",
       "name": "フィリペ コウチーニョ コレイア",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1964,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q702455",
+      "awayName": "RBライプツィヒ",
+      "date": "2020-06-12",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2019-Q22707-Q702455",
       "league": "de",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8823",
+      "awayName": "レバンテUD",
+      "date": "2020-06-12",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2019-Q10333-Q8823",
       "league": "es",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8806",
+      "awayName": "ヘタフェCF",
+      "date": "2020-06-12",
       "home": "Q8812",
+      "homeName": "グラナダCF",
       "key": "es-2019-Q8812-Q8806",
       "league": "es",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q10308",
+      "awayName": "レアル・サラゴサ",
+      "date": "1999-06-12",
       "home": "Q10319",
+      "homeName": "レアル・バリャドリード",
       "key": "es-1998-Q10319-Q10308",
       "league": "es",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "1999-06-12",
       "home": "Q216661",
+      "homeName": "CDテネリフェ",
       "key": "es-1998-Q216661-Q10333",
       "league": "es",
       "score": "3–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "1993-06-12",
       "home": "Q10286",
+      "homeName": "CAオサスナ",
       "key": "es-1992-Q10286-Q7156",
       "league": "es",
       "score": "0–1",

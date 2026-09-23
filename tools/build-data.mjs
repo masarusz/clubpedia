@@ -416,6 +416,19 @@ export async function build() {
     await writeFile(join(OUTPUT, 'o', `de-${year}.json`), stableJson({ league: 'de', year, licence: 'ODbL-1.0', source: 'OpenLigaDB', matches: output.matches, dates: output.dates }));
   }
 
+  const photoCreditFor = (id, player, { includeName = false, includeFile = false } = {}) => {
+    const photo = photoManifest[id];
+    if (!photo) return null;
+    return {
+      ...(includeName ? { name: playerDisplay(player, id) } : {}),
+      ...(includeFile ? { file: photo.file } : {}),
+      artist: photo.artist,
+      licence: photo.licence,
+      licenceUrl: photo.licenceUrl,
+      source: photo.source,
+    };
+  };
+
   // Players, bucketed so one player page loads one file <= 300 KB.
   const playerEntries = [...playersResult.players.entries()].sort(([a], [b]) => a.localeCompare(b));
   const BUCKET_COUNT = 64;
@@ -423,7 +436,8 @@ export async function build() {
   for (const [id, player] of playerEntries) {
     const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % BUCKET_COUNT).padStart(2, '0');
     if (!buckets.has(bucketId)) buckets.set(bucketId, {});
-    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, japan: player.japan ?? null, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)), ...(photoIds.has(id) ? { photo: true } : {}) };
+    const photoCredit = photoIds.has(id) ? photoCreditFor(id, player) : null;
+    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, japan: player.japan ?? null, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)), ...(photoIds.has(id) ? { photo: true } : {}), ...(photoCredit ? { photoCredit } : {}) };
   }
   const playerFileSizes = [];
   for (const [bucketId, entries] of buckets) {
@@ -523,10 +537,9 @@ export async function build() {
   }
 
   const photoCredits = {};
-  for (const id of [...photoIds].sort()) {
-    const photo = photoManifest[id];
-    if (!photo) continue;
-    photoCredits[id] = { file: photo.file, licence: photo.licence, licenceUrl: photo.licenceUrl, artist: photo.artist, source: photo.source };
+  for (const id of [...photoIds].sort((a, b) => playerDisplay(playersResult.players.get(a), a).localeCompare(playerDisplay(playersResult.players.get(b), b), 'ja') || a.localeCompare(b))) {
+    const credit = photoCreditFor(id, playersResult.players.get(id), { includeName: true, includeFile: true });
+    if (credit) photoCredits[id] = credit;
   }
   await writeFile(join(OUTPUT, 'photo-credits.json'), stableJson(photoCredits));
 
@@ -543,6 +556,8 @@ export async function build() {
     dayData.get(match.date.slice(5)).matches.push({
       key: match.key, league: season.league, season: season.id, home: match.home, away: match.away,
       score: `${match.homeGoals}–${match.awayGoals}`, date: match.date,
+      homeName: clubData.get(match.home)?.names.ja ?? match.home,
+      awayName: clubData.get(match.away)?.names.ja ?? match.away,
       japanese: japaneseClubSeasons.has(`${season.id}|${match.home}`) || japaneseClubSeasons.has(`${season.id}|${match.away}`),
       titles: Math.max(clubData.get(match.home)?.titleCount ?? 0, clubData.get(match.away)?.titleCount ?? 0),
     });
@@ -555,7 +570,7 @@ export async function build() {
   for (const [day, data] of dayData) {
     const selectedMatches = data.matches.sort((a, b) => Number(b.japanese) - Number(a.japanese) || b.titles - a.titles || b.date.localeCompare(a.date) || a.key.localeCompare(b.key))
       .slice(0, 12).sort((a, b) => b.date.localeCompare(a.date) || a.key.localeCompare(b.key))
-      .map(({ date, japanese, titles, ...match }) => match);
+      .map(({ japanese, titles, ...match }) => match);
     const birthdays = data.birthdays.sort((a, b) => Number(b.japan) - Number(a.japan) || b.goals - a.goals || a.id.localeCompare(b.id))
       .slice(0, 12).map(({ japan, goals, ...player }) => player);
     await writeFile(join(OUTPUT, 'days', `${day}.json`), stableJson({ matches: selectedMatches, birthdays }));

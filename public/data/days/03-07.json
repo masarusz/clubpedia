@@ -16,7 +16,7 @@
       "birthYear": 1994,
       "id": "Q822789",
       "name": "マーヴィン ドゥクシュ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1989,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2026-03-07",
       "home": "Q101859",
+      "homeName": "VfLヴォルフスブルク",
       "key": "de-2025-Q101859-Q51974",
       "league": "de",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2026-03-07",
       "home": "Q105254",
+      "homeName": "1.FSVマインツ05",
       "key": "de-2025-Q105254-Q4512",
       "league": "de",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2026-03-07",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2025-Q8701-Q10315",
       "league": "es",
       "score": "3–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2025-03-07",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2024-Q19518-Q180305",
       "league": "fr",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18708",
+      "awayName": "フラムFC",
+      "date": "2021-03-07",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q18708",
       "league": "en",
       "score": "0–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2021-03-07",
       "home": "Q2641",
+      "homeName": "SSCナポリ",
       "key": "it-2020-Q2641-Q1893",
       "league": "it",
       "score": "3–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q19568",
+      "awayName": "AFCボーンマス",
+      "date": "2020-03-07",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q19568",
       "league": "en",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q22707",
+      "awayName": "TSG1899ホッフェンハイム",
+      "date": "2015-03-07",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2014-Q32494-Q22707",
       "league": "de",
       "score": "3–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2015-03-07",
       "home": "Q33748",
+      "homeName": "ハノーファー96",
       "key": "de-2014-Q33748-Q15789",
       "league": "de",
       "score": "1–3",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2015-03-07",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-2014-Q51974-Q41420",
       "league": "de",
       "score": "0–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q8639",
+      "awayName": "エラス・ヴェローナFC",
+      "date": "2015-03-07",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2014-Q1543-Q8639",
       "league": "it",
       "score": "2–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2004-03-07",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2003-Q1543-Q1457",
       "league": "it",
       "score": "3–1",

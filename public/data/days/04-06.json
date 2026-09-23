@@ -58,7 +58,7 @@
       "birthYear": 2002,
       "id": "Q70251271",
       "name": "アルミン ギゴヴィッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1981,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2025-04-06",
       "home": "Q6463",
+      "homeName": "FCザンクトパウリ",
       "key": "de-2024-Q6463-Q101959",
       "league": "de",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2025-04-06",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2024-Q18708-Q1130849",
       "league": "en",
       "score": "3–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2025-04-06",
       "home": "Q208228",
+      "homeName": "スタッド・ランス",
       "key": "fr-2024-Q208228-Q126334",
       "league": "fr",
       "score": "0–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2024-04-06",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2023-Q41420-Q4512",
       "league": "de",
       "score": "0–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-04-06",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2023-Q19453-Q9617",
       "league": "en",
       "score": "0–3",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2019-04-06",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2018-Q18716-Q19467",
       "league": "en",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2014-04-06",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2013-Q5794-Q9617",
       "league": "en",
       "score": "3–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2013-04-06",
       "home": "Q38245",
+      "homeName": "アイントラハト・フランクフルト",
       "key": "de-2012-Q38245-Q15789",
       "league": "de",
       "score": "0–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2013-04-06",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2012-Q51976-Q32494",
       "league": "de",
       "score": "0–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2008-04-06",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2007-Q15789-Q105861",
       "league": "de",
       "score": "3–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2641",
+      "awayName": "SSCナポリ",
+      "date": "2008-04-06",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2007-Q2018-Q2641",
       "league": "it",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2002-04-06",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2001-Q9617-Q18741",
       "league": "en",
       "score": "2–1",

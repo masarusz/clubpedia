@@ -22,7 +22,7 @@
       "birthYear": 1997,
       "id": "Q20740627",
       "name": "イスマエル ベナセル",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1977,
@@ -52,7 +52,7 @@
       "birthYear": 2006,
       "id": "Q131320803",
       "name": "Noahkai Banks",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1977,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2024-12-01",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2024-Q1130849-Q50602",
       "league": "en",
       "score": "2–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2024-12-01",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2024-Q132885-Q180305",
       "league": "fr",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2021-12-01",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2021-Q5794-Q1130849",
       "league": "en",
       "score": "1–4",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19518",
+      "awayName": "トゥールーズFC",
+      "date": "2019-12-01",
       "home": "Q192071",
+      "homeName": "FCナント",
       "key": "fr-2019-Q192071-Q19518",
       "league": "fr",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2018-12-01",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2018-Q18732-Q18656",
       "league": "en",
       "score": "2–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2013-12-01",
       "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
       "key": "en-2013-Q18741-Q18656",
       "league": "en",
       "score": "2–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2013-12-01",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2013-Q2018-Q1543",
       "league": "it",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2013-12-01",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2013-Q631-Q1457",
       "league": "it",
       "score": "1–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2012-12-01",
       "home": "Q104761",
+      "homeName": "バイエル・レバークーゼン",
       "key": "de-2012-Q104761-Q15786",
       "league": "de",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2012-12-01",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2012-Q1130849-Q18732",
       "league": "en",
       "score": "1–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2012-12-01",
       "home": "Q18729",
+      "homeName": "レディングFC",
       "key": "en-2012-Q18729-Q18656",
       "league": "en",
       "score": "3–4",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2001-12-01",
       "home": "Q9653",
+      "homeName": "イプスウィッチ・タウンFC",
       "key": "en-2001-Q9653-Q9617",
       "league": "en",
       "score": "0–2",

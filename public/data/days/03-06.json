@@ -4,7 +4,7 @@
       "birthYear": 1996,
       "id": "Q3529022",
       "name": "ティモ ヴェルナー",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1977,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2026-03-06",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2025-Q15789-Q101959",
       "league": "de",
       "score": "4–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2026-03-06",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2025-Q483020-Q180305",
       "league": "fr",
       "score": "1–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2022-03-06",
       "home": "Q2714",
+      "homeName": "ワトフォードFC",
       "key": "en-2021-Q2714-Q9617",
       "league": "en",
       "score": "2–3",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2022-03-06",
       "home": "Q208228",
+      "homeName": "スタッド・ランス",
       "key": "fr-2021-Q208228-Q126334",
       "league": "fr",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q2768",
+      "awayName": "トリノFC",
+      "date": "2022-03-06",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2021-Q1893-Q2768",
       "league": "it",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q866884",
+      "awayName": "アミアンSC",
+      "date": "2020-03-06",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2019-Q132885-Q866884",
       "league": "fr",
       "score": "2–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q7156",
+      "awayName": "FCバルセロナ",
+      "date": "2016-03-06",
       "home": "Q770740",
+      "homeName": "SDエイバル",
       "key": "es-2015-Q770740-Q7156",
       "league": "es",
       "score": "0–4",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q2674",
+      "awayName": "パレルモFC",
+      "date": "2016-03-06",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2015-Q631-Q2674",
       "league": "it",
       "score": "3–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2016-03-06",
       "home": "Q8603",
+      "homeName": "USサッスオーロ・カルチョ",
       "key": "it-2015-Q8603-Q1543",
       "league": "it",
       "score": "2–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q2074",
+      "awayName": "ジェノアCFC",
+      "date": "2011-03-06",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2010-Q631-Q2074",
       "league": "it",
       "score": "5–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2010-03-06",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2009-Q19509-Q180305",
       "league": "fr",
       "score": "1–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2005-03-06",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2004-Q19521-Q132885",
       "league": "fr",
       "score": "2–0",

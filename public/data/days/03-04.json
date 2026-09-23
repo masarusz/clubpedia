@@ -16,7 +16,7 @@
       "birthYear": 1992,
       "id": "Q337617",
       "name": "エリク ラメラ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1969,
@@ -64,7 +64,7 @@
       "birthYear": 1999,
       "id": "Q56331751",
       "name": "ダラ オシェイ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2026-03-04",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2025-Q19453-Q9617",
       "league": "en",
       "score": "0–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2024-03-04",
       "home": "Q19607",
+      "homeName": "シェフィールド・ユナイテッドFC",
       "key": "en-2023-Q19607-Q9617",
       "league": "en",
       "score": "0–6",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2023-03-04",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2022-Q4512-Q15789",
       "league": "de",
       "score": "1–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19568",
+      "awayName": "AFCボーンマス",
+      "date": "2023-03-04",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2022-Q9617-Q19568",
       "league": "en",
       "score": "3–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2021-03-04",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q9616",
       "league": "en",
       "score": "0–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2017-03-04",
       "home": "Q104770",
+      "homeName": "1.FCケルン",
       "key": "de-2016-Q104770-Q15789",
       "league": "de",
       "score": "0–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2017-03-04",
       "home": "Q770740",
+      "homeName": "SDエイバル",
       "key": "es-2016-Q770740-Q8682",
       "league": "es",
       "score": "1–4",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q2037",
+      "awayName": "ACキエーヴォ・ヴェローナ",
+      "date": "2017-03-04",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q2037",
       "league": "it",
       "score": "3–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2015-03-04",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2014-Q18716-Q18656",
       "league": "en",
       "score": "0–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q2018",
+      "awayName": "カターニアFC",
+      "date": "2012-03-04",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2011-Q631-Q2018",
       "league": "it",
       "score": "2–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2006-03-04",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2005-Q15789-Q51974",
       "league": "de",
       "score": "1–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2001-03-04",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-2000-Q2739-Q631",
       "league": "it",
       "score": "3–2",

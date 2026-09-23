@@ -4,7 +4,7 @@
       "birthYear": 1988,
       "id": "Q159123",
       "name": "ニルス ペーターゼン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1979,
@@ -28,7 +28,7 @@
       "birthYear": 1996,
       "id": "Q20019273",
       "name": "ダヴィデ カラブリア",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1964,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2025-12-06",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2025-Q4512-Q15789",
       "league": "de",
       "score": "0–5",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2025-12-06",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2025-Q1128631-Q1130849",
       "league": "en",
       "score": "3–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2024-12-06",
       "home": "Q182876",
+      "homeName": "AJオセール",
       "key": "fr-2024-Q182876-Q483020",
       "league": "fr",
       "score": "0–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2023-12-06",
       "home": "Q19607",
+      "homeName": "シェフィールド・ユナイテッドFC",
       "key": "en-2023-Q19607-Q1130849",
       "league": "en",
       "score": "0–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2021-12-06",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2021-Q5794-Q9617",
       "league": "en",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q19500",
+      "awayName": "ウルヴァーハンプトン・ワンダラーズFC",
+      "date": "2020-12-06",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q19500",
       "league": "en",
       "score": "4–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2020-12-06",
       "home": "Q192071",
+      "homeName": "FCナント",
       "key": "fr-2020-Q192071-Q126334",
       "league": "fr",
       "score": "0–4",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2020-12-06",
       "home": "Q1457",
+      "homeName": "UCサンプドリア",
       "key": "it-2020-Q1457-Q1543",
       "league": "it",
       "score": "1–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2015-12-06",
       "home": "Q610621",
+      "homeName": "カルピFC",
       "key": "it-2015-Q610621-Q1543",
       "league": "it",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2014-12-06",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2014-Q4512-Q32494",
       "league": "de",
       "score": "0–4",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q10499",
+      "awayName": "コルドバCF",
+      "date": "2014-12-06",
       "home": "Q8687",
+      "homeName": "アスレティック・ビルバオ",
       "key": "es-2014-Q8687-Q10499",
       "league": "es",
       "score": "0–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q105254",
+      "awayName": "1.FSVマインツ05",
+      "date": "2013-12-06",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q105254",
       "league": "de",
       "score": "1–1",

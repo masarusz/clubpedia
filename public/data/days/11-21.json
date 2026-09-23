@@ -10,13 +10,13 @@
       "birthYear": 1994,
       "id": "Q912172",
       "name": "Saúl",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1985,
       "id": "Q185093",
       "name": "ヘスス ナバス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -70,13 +70,16 @@
       "birthYear": 2000,
       "id": "Q35829599",
       "name": "マット オライリー",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q208228",
+      "awayName": "スタッド・ランス",
+      "date": "2021-11-21",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2021-Q126334-Q208228",
       "league": "fr",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q501245",
+      "awayName": "ヴェネツィアFC",
+      "date": "2021-11-21",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2021-Q1893-Q501245",
       "league": "it",
       "score": "0–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2020-11-21",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2020-Q15789-Q51976",
       "league": "de",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q4512",
+      "awayName": "VfBシュトゥットガルト",
+      "date": "2020-11-21",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2020-Q22707-Q4512",
       "league": "de",
       "score": "3–3",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2020-11-21",
       "home": "Q12297",
+      "homeName": "ビジャレアルCF",
       "key": "es-2020-Q12297-Q8682",
       "league": "es",
       "score": "1–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q33748",
+      "awayName": "ハノーファー96",
+      "date": "2015-11-21",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2015-Q101959-Q33748",
       "league": "de",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2015-11-21",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2015-Q32494-Q15789",
       "league": "de",
       "score": "1–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2015-11-21",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2015-Q1422-Q1543",
       "league": "it",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2010-11-21",
       "home": "Q2037",
+      "homeName": "ACキエーヴォ・ヴェローナ",
       "key": "it-2010-Q2037-Q631",
       "league": "it",
       "score": "2–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2009-11-21",
       "home": "Q101859",
+      "homeName": "VfLヴォルフスブルク",
       "key": "de-2009-Q101859-Q15786",
       "league": "de",
       "score": "2–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2009-11-21",
       "home": "Q209509",
+      "homeName": "グルノーブル・フット38",
       "key": "fr-2009-Q209509-Q704",
       "league": "fr",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q16344",
+      "awayName": "ペルージャ・カルチョ",
+      "date": "1998-11-21",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-1998-Q1893-Q16344",
       "league": "it",
       "score": "1–1",

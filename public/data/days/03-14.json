@@ -46,7 +46,7 @@
       "birthYear": 2000,
       "id": "Q64746308",
       "name": "ナタン ングム",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1997,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2026-03-14",
       "home": "Q104761",
+      "homeName": "バイエル・レバークーゼン",
       "key": "de-2025-Q104761-Q15789",
       "league": "de",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2026-03-14",
       "home": "Q18739",
+      "homeName": "サンダーランドAFC",
       "key": "en-2025-Q18739-Q19453",
       "league": "en",
       "score": "0–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q218372",
+      "awayName": "スタッド・ブレスト29",
+      "date": "2026-03-14",
       "home": "Q180305",
+      "homeName": "ASモナコ",
       "key": "fr-2025-Q180305-Q218372",
       "league": "fr",
       "score": "2–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q182876",
+      "awayName": "AJオセール",
+      "date": "2025-03-14",
       "home": "Q185163",
+      "homeName": "OGCニース",
       "key": "fr-2024-Q185163-Q182876",
       "league": "fr",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2022-03-14",
       "home": "Q8835",
+      "homeName": "RCDマジョルカ",
       "key": "es-2021-Q8835-Q8682",
       "league": "es",
       "score": "0–3",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q22707",
+      "awayName": "TSG1899ホッフェンハイム",
+      "date": "2021-03-14",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2020-Q4512-Q22707",
       "league": "de",
       "score": "2–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2021-03-14",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2020-Q1893-Q1457",
       "league": "it",
       "score": "3–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q18716",
+      "awayName": "ニューカッスル・ユナイテッドFC",
+      "date": "2016-03-14",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2015-Q19481-Q18716",
       "league": "en",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q104770",
+      "awayName": "1.FCケルン",
+      "date": "2015-03-14",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2014-Q41420-Q104770",
       "league": "de",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q32494",
+      "awayName": "シャルケ04",
+      "date": "2014-03-14",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2013-Q15755-Q32494",
       "league": "de",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2009-03-14",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2008-Q105861-Q15789",
       "league": "de",
       "score": "0–3",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2004-03-14",
       "home": "Q1457",
+      "homeName": "UCサンプドリア",
       "key": "it-2003-Q1457-Q1893",
       "league": "it",
       "score": "3–2",

@@ -34,7 +34,7 @@
       "birthYear": 1992,
       "id": "Q3876530",
       "name": "ニコラス タグリアフィコ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1983,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2025-08-31",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2025-Q1130849-Q9617",
       "league": "en",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2025-08-31",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2025-Q19453-Q50602",
       "league": "en",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2025-08-31",
       "home": "Q180305",
+      "homeName": "ASモナコ",
       "key": "fr-2025-Q180305-Q126334",
       "league": "fr",
       "score": "3–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2024-08-31",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q19453",
       "league": "en",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2022-08-31",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2022-Q9617-Q18711",
       "league": "en",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2022-08-31",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2022-Q19518-Q483020",
       "league": "fr",
       "score": "0–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2019-08-31",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2019-Q18732-Q18656",
       "league": "en",
       "score": "1–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2019-08-31",
       "home": "Q19458",
+      "homeName": "バーンリーFC",
       "key": "en-2019-Q19458-Q1130849",
       "league": "en",
       "score": "0–3",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2014-08-31",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2014-Q1543-Q2609",
       "league": "it",
       "score": "3–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2014-08-31",
       "home": "Q2768",
+      "homeName": "トリノFC",
       "key": "it-2014-Q2768-Q631",
       "league": "it",
       "score": "0–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15755",
+      "awayName": "FCアウクスブルク",
+      "date": "2013-08-31",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q15755",
       "league": "de",
       "score": "0–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2008-08-31",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2008-Q19521-Q704",
       "league": "fr",
       "score": "0–1",

@@ -4,7 +4,7 @@
       "birthYear": 1989,
       "id": "Q161054",
       "name": "イヴァン ペリシッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1987,
@@ -64,7 +64,7 @@
       "birthYear": 1995,
       "id": "Q6373051",
       "name": "カロル リネティ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1985,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2025-02-02",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2024-Q18656-Q19467",
       "league": "en",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2025-02-02",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q50602",
       "league": "en",
       "score": "5–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2021-02-02",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2020-Q18656-Q18732",
       "league": "en",
       "score": "9–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-02-02",
       "home": "Q172476",
+      "homeName": "FCジロンダン・ボルドー",
       "key": "fr-2019-Q172476-Q132885",
       "league": "fr",
       "score": "0–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2016-02-02",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2015-Q19481-Q1130849",
       "league": "en",
       "score": "2–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2016-02-02",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2015-Q9617-Q18732",
       "league": "en",
       "score": "0–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2014-02-02",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2013-Q15789-Q38245",
       "league": "de",
       "score": "5–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2014-02-02",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2013-Q9617-Q19467",
       "league": "en",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2014-02-02",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2013-Q1422-Q631",
       "league": "it",
       "score": "3–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2013-02-02",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2012-Q18708-Q18656",
       "league": "en",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2005-02-02",
       "home": "Q29390",
+      "homeName": "ACRメッシーナ",
       "key": "it-2004-Q29390-Q1543",
       "league": "it",
       "score": "1–4",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2002-02-02",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2001-Q9617-Q18732",
       "league": "en",
       "score": "1–1",

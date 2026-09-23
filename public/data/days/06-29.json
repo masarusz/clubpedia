@@ -40,13 +40,13 @@
       "birthYear": 1995,
       "id": "Q20641483",
       "name": "エルドル ショムロドフ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1994,
       "id": "Q630170",
       "name": "レアンドロ パレデス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1986,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q19458",
+      "awayName": "バーンリーFC",
+      "date": "2020-06-29",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2019-Q19467-Q19458",
       "league": "en",
       "score": "0–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2020-06-29",
       "home": "Q8806",
+      "homeName": "ヘタフェCF",
       "key": "es-2019-Q8806-Q10315",
       "league": "es",
       "score": "2–1",

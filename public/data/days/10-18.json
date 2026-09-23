@@ -10,7 +10,7 @@
       "birthYear": 1983,
       "id": "Q80761",
       "name": "ダンテ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1979,
@@ -22,7 +22,7 @@
       "birthYear": 1993,
       "id": "Q6096043",
       "name": "イヴァン カヴァレイロ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1976,
@@ -46,7 +46,7 @@
       "birthYear": 2002,
       "id": "Q108653498",
       "name": "ジェームズ マカティー",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1995,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2025-10-18",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2025-Q15789-Q41420",
       "league": "de",
       "score": "2–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q328658",
+      "awayName": "ル・アーヴルAC",
+      "date": "2025-10-18",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2025-Q132885-Q328658",
       "league": "fr",
       "score": "6–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2025-10-18",
       "home": "Q845137",
+      "homeName": "アンジェSCO",
       "key": "fr-2025-Q845137-Q180305",
       "league": "fr",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19516",
+      "awayName": "LOSCリール",
+      "date": "2024-10-18",
       "home": "Q180305",
+      "homeName": "ASモナコ",
       "key": "fr-2024-Q180305-Q19516",
       "league": "fr",
       "score": "0–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2021-10-18",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2021-Q9617-Q19467",
       "league": "en",
       "score": "2–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q141971",
+      "awayName": "1.FCウニオン・ベルリン",
+      "date": "2020-10-18",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2020-Q32494-Q141971",
       "league": "de",
       "score": "1–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2020-10-18",
       "home": "Q12297",
+      "homeName": "ビジャレアルCF",
       "key": "es-2020-Q12297-Q10333",
       "league": "es",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2020-10-18",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2020-Q126334-Q704",
       "league": "fr",
       "score": "2–3",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8603",
+      "awayName": "USサッスオーロ・カルチョ",
+      "date": "2020-10-18",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2020-Q1893-Q8603",
       "league": "it",
       "score": "3–4",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2015-10-18",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2015-Q631-Q1422",
       "league": "it",
       "score": "0–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2014-10-18",
       "home": "Q104770",
+      "homeName": "1.FCケルン",
       "key": "de-2014-Q104770-Q41420",
       "league": "de",
       "score": "2–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2009-10-18",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2009-Q41420-Q105861",
       "league": "de",
       "score": "2–0",

@@ -58,7 +58,7 @@
       "birthYear": 1990,
       "id": "Q170038",
       "name": "ヨーハン ベルク グズムンドソン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1972,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2024-10-27",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2024-Q105861-Q15789",
       "league": "de",
       "score": "0–5",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2024-10-27",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2024-Q9617-Q1130849",
       "league": "en",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2024-10-27",
       "home": "Q185163",
+      "homeName": "OGCニース",
       "key": "fr-2024-Q185163-Q180305",
       "league": "fr",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q182876",
+      "awayName": "AJオセール",
+      "date": "2024-10-27",
       "home": "Q704",
+      "homeName": "オリンピック・リヨン",
       "key": "fr-2024-Q704-Q182876",
       "league": "fr",
       "score": "2–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2019-10-27",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2019-Q101959-Q38245",
       "league": "de",
       "score": "4–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18741",
+      "awayName": "トッテナム・ホットスパーFC",
+      "date": "2019-10-27",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q18741",
       "league": "en",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2019-10-27",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2019-Q483020-Q132885",
       "league": "fr",
       "score": "4–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2019-10-27",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2019-Q1893-Q1457",
       "league": "it",
       "score": "2–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2015-10-27",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2015-Q1893-Q631",
       "league": "it",
       "score": "0–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2013-10-27",
       "home": "Q2693",
+      "homeName": "パルマ・カルチョ1913",
       "key": "it-2013-Q2693-Q1543",
       "league": "it",
       "score": "3–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q15786",
+      "awayName": "1.FCニュルンベルク",
+      "date": "2012-10-27",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2012-Q32494-Q15786",
       "league": "de",
       "score": "1–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2001-10-27",
       "home": "Q18739",
+      "homeName": "サンダーランドAFC",
       "key": "en-2001-Q18739-Q9617",
       "league": "en",
       "score": "1–1",

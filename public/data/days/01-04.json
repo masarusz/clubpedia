@@ -22,7 +22,7 @@
       "birthYear": 1990,
       "id": "Q131234",
       "name": "トニ クロース",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
@@ -46,7 +46,7 @@
       "birthYear": 1997,
       "id": "Q20688718",
       "name": "Angeliño",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1986,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2026-01-04",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2025-Q1128631-Q18656",
       "league": "en",
       "score": "1–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2026-01-04",
       "home": "Q18708",
+      "homeName": "フラムFC",
       "key": "en-2025-Q18708-Q1130849",
       "league": "en",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2026-01-04",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2025-Q18716-Q19467",
       "league": "en",
       "score": "2–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2026-01-04",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2025-Q10315-Q8701",
       "league": "es",
       "score": "1–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q11945",
+      "awayName": "ジローナFC",
+      "date": "2026-01-04",
       "home": "Q8835",
+      "homeName": "RCDマジョルカ",
       "key": "es-2025-Q8835-Q11945",
       "league": "es",
       "score": "1–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2025-01-04",
       "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "key": "en-2024-Q19453-Q9617",
       "league": "en",
       "score": "1–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2025-01-04",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2024-Q19467-Q9616",
       "league": "en",
       "score": "1–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q208228",
+      "awayName": "スタッド・ランス",
+      "date": "2025-01-04",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2024-Q19521-Q208228",
       "league": "fr",
       "score": "3–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2021-01-04",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2020-Q18732-Q1130849",
       "league": "en",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2020-01-04",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2019-Q10333-Q770740",
       "league": "es",
       "score": "1–0",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q19451",
+      "awayName": "ボルトン・ワンダラーズFC",
+      "date": "2012-01-04",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2011-Q5794-Q19451",
       "league": "en",
       "score": "1–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q191843",
+      "awayName": "RCランス",
+      "date": "2006-01-04",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2005-Q132885-Q191843",
       "league": "fr",
       "score": "1–1",

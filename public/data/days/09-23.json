@@ -52,7 +52,7 @@
       "birthYear": 2000,
       "id": "Q56434073",
       "name": "モリッツ ブロシンスキ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2004,
@@ -64,19 +64,22 @@
       "birthYear": 1991,
       "id": "Q573312",
       "name": "ケヴィン フォクト",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
       "id": "Q18637500",
       "name": "イバン サンチェス",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2023-09-23",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2023-Q15789-Q105861",
       "league": "de",
       "score": "7–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8687",
+      "awayName": "アスレティック・ビルバオ",
+      "date": "2018-09-23",
       "home": "Q8723",
+      "homeName": "レアル・ベティス",
       "key": "es-2018-Q8723-Q8687",
       "league": "es",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2018-09-23",
       "home": "Q704",
+      "homeName": "オリンピック・リヨン",
       "key": "fr-2018-Q704-Q132885",
       "league": "fr",
       "score": "4–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2017-09-23",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2017-Q18732-Q18656",
       "league": "en",
       "score": "0–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2017-09-23",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2017-Q19481-Q1130849",
       "league": "en",
       "score": "2–3",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q106394",
+      "awayName": "SCフライブルク",
+      "date": "2016-09-23",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2016-Q41420-Q106394",
       "league": "de",
       "score": "3–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2015-09-23",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2015-Q22707-Q41420",
       "league": "de",
       "score": "1–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q38245",
+      "awayName": "アイントラハト・フランクフルト",
+      "date": "2015-09-23",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2015-Q32494-Q38245",
       "league": "de",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8639",
+      "awayName": "エラス・ヴェローナFC",
+      "date": "2015-09-23",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2015-Q631-Q8639",
       "league": "it",
       "score": "1–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2014-09-23",
       "home": "Q6703",
+      "homeName": "エンポリFC",
       "key": "it-2014-Q6703-Q1543",
       "league": "it",
       "score": "2–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2012-09-23",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2012-Q1130849-Q18656",
       "league": "en",
       "score": "1–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2756",
+      "awayName": "ACNシエーナ1904",
+      "date": "2012-09-23",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2012-Q631-Q2756",
       "league": "it",
       "score": "0–2",

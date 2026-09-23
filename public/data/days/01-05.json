@@ -40,7 +40,7 @@
       "birthYear": 1996,
       "id": "Q20981290",
       "name": "ティノ カデウェア",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1990,
@@ -58,13 +58,13 @@
       "birthYear": 2001,
       "id": "Q104521348",
       "name": "David Da Costa",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
       "id": "Q21546191",
       "name": "カルレス アレニャ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2025-01-05",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2024-Q1130849-Q18656",
       "league": "en",
       "score": "2–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q182876",
+      "awayName": "AJオセール",
+      "date": "2025-01-05",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2024-Q126334-Q182876",
       "league": "fr",
       "score": "3–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2025-01-05",
       "home": "Q2768",
+      "homeName": "トリノFC",
       "key": "it-2024-Q2768-Q2693",
       "league": "it",
       "score": "0–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2020-01-05",
       "home": "Q8812",
+      "homeName": "グラナダCF",
       "key": "es-2019-Q8812-Q8835",
       "league": "es",
       "score": "1–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8723",
+      "awayName": "レアル・ベティス",
+      "date": "2019-01-05",
       "home": "Q11971",
+      "homeName": "SDウエスカ",
       "key": "es-2018-Q11971-Q8723",
       "league": "es",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2019-01-05",
       "home": "Q223620",
+      "homeName": "デポルティーボ・アラベス",
       "key": "es-2018-Q223620-Q10333",
       "league": "es",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2018-01-05",
       "home": "Q2052",
+      "homeName": "ACFフィオレンティーナ",
       "key": "it-2017-Q2052-Q631",
       "league": "it",
       "score": "1–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q8812",
+      "awayName": "グラナダCF",
+      "date": "2015-01-05",
       "home": "Q10499",
+      "homeName": "コルドバCF",
       "key": "es-2014-Q10499-Q8812",
       "league": "es",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "2014-01-05",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2013-Q1422-Q2739",
       "league": "it",
       "score": "3–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2013-01-05",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2012-Q1422-Q1457",
       "league": "it",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2005-01-05",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2004-Q8682-Q10315",
       "league": "es",
       "score": "2–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2000-01-05",
       "home": "Q501245",
+      "homeName": "ヴェネツィアFC",
       "key": "it-1999-Q501245-Q2609",
       "league": "it",
       "score": "2–0",

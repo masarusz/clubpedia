@@ -64,7 +64,7 @@
       "birthYear": 2002,
       "id": "Q111009946",
       "name": "イスマエル コネ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1995,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q101859",
+      "awayName": "VfLヴォルフスブルク",
+      "date": "2020-06-16",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2019-Q101959-Q101859",
       "league": "de",
       "score": "3–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q102720",
+      "awayName": "ヘルタ・ベルリン",
+      "date": "2020-06-16",
       "home": "Q106394",
+      "homeName": "SCフライブルク",
       "key": "de-2019-Q106394-Q102720",
       "league": "de",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q160532",
+      "awayName": "SCパーダーボルン07",
+      "date": "2020-06-16",
       "home": "Q141971",
+      "homeName": "1.FCウニオン・ベルリン",
       "key": "de-2019-Q141971-Q160532",
       "league": "de",
       "score": "1–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2020-06-16",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2019-Q51976-Q15789",
       "league": "de",
       "score": "0–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2020-06-16",
       "home": "Q12297",
+      "homeName": "ビジャレアルCF",
       "key": "es-2019-Q12297-Q8835",
       "league": "es",
       "score": "1–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q856119",
+      "awayName": "CDレガネス",
+      "date": "2020-06-16",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2019-Q7156-Q856119",
       "league": "es",
       "score": "2–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8780",
+      "awayName": "RCDエスパニョール",
+      "date": "2020-06-16",
       "home": "Q8806",
+      "homeName": "ヘタフェCF",
       "key": "es-2019-Q8806-Q8780",
       "league": "es",
       "score": "0–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q10300",
+      "awayName": "ラージョ・バジェカーノ",
+      "date": "2001-06-16",
       "home": "Q11979",
+      "homeName": "UDラス・パルマス",
       "key": "es-2000-Q11979-Q10300",
       "league": "es",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8780",
+      "awayName": "RCDエスパニョール",
+      "date": "2001-06-16",
       "home": "Q12297",
+      "homeName": "ビジャレアルCF",
       "key": "es-2000-Q12297-Q8780",
       "league": "es",
       "score": "4–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2001-06-16",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2000-Q7156-Q10333",
       "league": "es",
       "score": "3–2",

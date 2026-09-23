@@ -10,7 +10,7 @@
       "birthYear": 1990,
       "id": "Q1966430",
       "name": "マイケル アントニオ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1985,
@@ -58,7 +58,7 @@
       "birthYear": 1998,
       "id": "Q19862001",
       "name": "サンディ ロヴリッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "2025-03-28",
       "home": "Q104761",
+      "homeName": "バイエル・レバークーゼン",
       "key": "de-2024-Q104761-Q105861",
       "league": "de",
       "score": "3–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2010-03-28",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2009-Q8682-Q8701",
       "league": "es",
       "score": "3–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2010-03-28",
       "home": "Q210864",
+      "homeName": "ル・マンFC",
       "key": "fr-2009-Q210864-Q19509",
       "league": "fr",
       "score": "1–3",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q1886",
+      "awayName": "アタランタBC",
+      "date": "2010-03-28",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2009-Q1422-Q1886",
       "league": "it",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q2018",
+      "awayName": "カターニアFC",
+      "date": "2010-03-28",
       "home": "Q2641",
+      "homeName": "SSCナポリ",
       "key": "it-2009-Q2641-Q2018",
       "league": "it",
       "score": "1–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q10329",
+      "awayName": "セビージャFC",
+      "date": "2004-03-28",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2003-Q8682-Q10329",
       "league": "es",
       "score": "5–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8408",
+      "awayName": "モデナFC2018",
+      "date": "2004-03-28",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2003-Q1422-Q8408",
       "league": "it",
       "score": "3–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q13391",
+      "awayName": "USレッチェ",
+      "date": "2004-03-28",
       "home": "Q1457",
+      "homeName": "UCサンプドリア",
       "key": "it-2003-Q1457-Q13391",
       "league": "it",
       "score": "2–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q6703",
+      "awayName": "エンポリFC",
+      "date": "2004-03-28",
       "home": "Q2693",
+      "homeName": "パルマ・カルチョ1913",
       "key": "it-2003-Q2693-Q6703",
       "league": "it",
       "score": "4–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2004-03-28",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-2003-Q2739-Q1893",
       "league": "it",
       "score": "1–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2004-03-28",
       "home": "Q8476",
+      "homeName": "レッジーナ1914",
       "key": "it-2003-Q8476-Q631",
       "league": "it",
       "score": "0–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "1998-03-28",
       "home": "Q10319",
+      "homeName": "レアル・バリャドリード",
       "key": "es-1997-Q10319-Q8682",
       "league": "es",
       "score": "1–1",

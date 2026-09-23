@@ -52,7 +52,7 @@
       "birthYear": 1993,
       "id": "Q15197300",
       "name": "ベラト ジムシティ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1991,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2025-02-19",
       "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
       "key": "en-2024-Q18711-Q1130849",
       "league": "en",
       "score": "2–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2023-02-19",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2022-Q19518-Q132885",
       "league": "fr",
       "score": "2–3",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q18721",
+      "awayName": "ノリッジ・シティFC",
+      "date": "2022-02-19",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2021-Q1130849-Q18721",
       "league": "en",
       "score": "3–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19571",
+      "awayName": "ブレントフォードFC",
+      "date": "2022-02-19",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2021-Q9617-Q19571",
       "league": "en",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q2052",
+      "awayName": "ACFフィオレンティーナ",
+      "date": "2017-02-19",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q2052",
       "league": "it",
       "score": "2–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2017-02-19",
       "home": "Q1893",
+      "homeName": "ボローニャFC1909",
       "key": "it-2016-Q1893-Q631",
       "league": "it",
       "score": "0–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "2011-02-19",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2010-Q631-Q1900",
       "league": "it",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2006-02-19",
       "home": "Q221525",
+      "homeName": "FCメス",
       "key": "fr-2005-Q221525-Q132885",
       "league": "fr",
       "score": "1–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2005-02-19",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2004-Q7156-Q8835",
       "league": "es",
       "score": "2–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2005-02-19",
       "home": "Q208399",
+      "homeName": "SCバスティア",
       "key": "fr-2004-Q208399-Q132885",
       "league": "fr",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2005-02-19",
       "home": "Q29390",
+      "homeName": "ACRメッシーナ",
       "key": "it-2004-Q29390-Q1422",
       "league": "it",
       "score": "0–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q2739",
+      "awayName": "ASローマ",
+      "date": "1995-02-19",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-1994-Q2074-Q2739",
       "league": "it",
       "score": "1–0",

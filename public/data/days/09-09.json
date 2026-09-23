@@ -52,13 +52,13 @@
       "birthYear": 1997,
       "id": "Q26234691",
       "name": "フレドリック イェンセン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1997,
       "id": "Q18921423",
       "name": "ラースロー ベーネス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1963,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q2714",
+      "awayName": "ワトフォードFC",
+      "date": "2017-09-09",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2017-Q18732-Q2714",
       "league": "en",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2017-09-09",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2017-Q19481-Q9616",
       "league": "en",
       "score": "1–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q770740",
+      "awayName": "SDエイバル",
+      "date": "2017-09-09",
       "home": "Q10329",
+      "homeName": "セビージャFC",
       "key": "es-2017-Q10329-Q770740",
       "league": "es",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q8780",
+      "awayName": "RCDエスパニョール",
+      "date": "2017-09-09",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2017-Q7156-Q8780",
       "league": "es",
       "score": "5–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8823",
+      "awayName": "レバンテUD",
+      "date": "2017-09-09",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2017-Q8682-Q8823",
       "league": "es",
       "score": "1–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q2037",
+      "awayName": "ACキエーヴォ・ヴェローナ",
+      "date": "2017-09-09",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2017-Q1422-Q2037",
       "league": "it",
       "score": "3–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2016-09-09",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2016-Q32494-Q15789",
       "league": "de",
       "score": "0–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q104761",
+      "awayName": "バイエル・レバークーゼン",
+      "date": "2011-09-09",
       "home": "Q15755",
+      "homeName": "FCアウクスブルク",
       "key": "de-2011-Q15755-Q104761",
       "league": "de",
       "score": "1–4",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2001-09-09",
       "home": "Q1886",
+      "homeName": "アタランタBC",
       "key": "it-2001-Q1886-Q1422",
       "league": "it",
       "score": "0–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q10333",
+      "awayName": "バレンシアCF",
+      "date": "2000-09-09",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2000-Q8682-Q10333",
       "league": "es",
       "score": "2–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q142005",
+      "awayName": "ハンザ・ロストック",
+      "date": "1998-09-09",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-1998-Q15789-Q142005",
       "league": "de",
       "score": "6–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "1993-09-09",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-1993-Q51976-Q15789",
       "league": "de",
       "score": "1–0",

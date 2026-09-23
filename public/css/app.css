@@ -116,7 +116,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .result-loss { background: var(--danger); }
 .score-result { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
 .score-link { min-width: 3.7rem; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--primary); border-radius: 8px; font-size: 1.05rem; font-weight: 900; text-decoration: none; white-space: nowrap; }
+.match-date-short { color: var(--muted); font-size: .875rem; font-weight: 900; font-variant-numeric: tabular-nums; }
 
+.match-date-full { margin: -10px 0 18px; color: var(--muted); font-size: 1.05rem; font-weight: 800; }
 .match-hero { min-height: 180px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 22px; text-align: center; }
 .match-club { min-width: 0; min-height: 60px; display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--ink); font-size: 1.25rem; font-weight: 900; overflow-wrap: anywhere; }
 .match-score { padding: 10px 18px; color: #fff; background: var(--primary); border-radius: 12px; font-size: clamp(2rem, 7vw, 4rem); line-height: 1; white-space: nowrap; }
@@ -150,6 +152,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 
 .credit-list { display: grid; gap: 8px; }
 .credit-list li { min-height: 44px; overflow-wrap: anywhere; }
+.photo-credit-list { margin: 0; padding: 0; display: grid; gap: 8px; list-style: none; }
+.photo-credit-row { min-width: 0; min-height: 48px; padding: 8px 10px; display: grid; grid-template-columns: minmax(9rem, .35fr) minmax(0, 1fr); align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow-wrap: anywhere; }
+.photo-credit-player { font-weight: 800; }
 .message-page { min-height: 60vh; display: grid; place-content: center; text-align: center; }
 .button-link, .retry-button { min-height: 48px; padding: 10px 18px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--primary); border: 0; border-radius: 10px; font-weight: 800; text-decoration: none; cursor: pointer; }
 
@@ -158,6 +163,14 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .feature-card { min-width: 0; min-height: 92px; padding: 16px; display: flex; flex-direction: column; gap: 4px; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-left: 6px solid var(--accent); border-radius: 12px; box-shadow: var(--shadow); text-decoration: none; }
 .feature-card h2 { margin: 0; font-size: 1.05rem; overflow-wrap: anywhere; }
 .feature-card p { margin: 0; color: var(--muted); font-size: .875rem; }
+.today-match-list, .birthday-player-list { margin: 0; padding: 0; list-style: none; }
+.today-match-list { display: grid; gap: 8px; }
+.today-match-row a { min-height: 44px; padding: 8px 10px; display: flex; align-items: center; background: var(--surface-strong); border-radius: 10px; font-weight: 800; text-decoration: none; overflow-wrap: anywhere; }
+.birthday-player-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(138px, 1fr)); gap: 10px; }
+.birthday-player-card { min-height: 210px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 12px; text-align: center; text-decoration: none; }
+.birthday-player-photo { width: 72px; height: 96px; object-fit: cover; border-radius: 8px; background: var(--surface-strong); }
+.birthday-player-name { overflow-wrap: anywhere; line-height: 1.35; }
+.birthday-player-year { color: var(--muted); font-size: .875rem; font-weight: 800; }
 
 /* Search box + results */
 .search-box { margin: 0 0 22px; }
@@ -179,6 +192,11 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .japan-season-list li { margin: 3px 0; overflow-wrap: anywhere; }
 
 /* 選手ページ */
+.player-header { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 18px; }
+.player-header h1 { margin: 0; font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; overflow-wrap: anywhere; }
+.player-portrait { margin: 0; width: 150px; }
+.player-photo { width: 150px; height: 200px; display: block; object-fit: cover; border-radius: 12px; background: var(--surface-strong); }
+.photo-credit { margin: 6px 0 0; color: var(--muted); font-size: .875rem; line-height: 1.35; overflow-wrap: anywhere; }
 .player-birth { margin: 2px 0 0; color: var(--muted); }
 .player-season-panel h2 { display: flex; align-items: center; gap: 9px; font-size: 1.15rem; }
 .player-season-club { margin: 6px 0; }
@@ -199,8 +217,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .meikan-season-label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-weight: 800; }
 .meikan-season-select { min-height: 44px; padding: 6px 34px 6px 10px; color: var(--ink); background: var(--surface); border: 2px solid var(--primary-bright); border-radius: 10px; font-size: 16px; }
 .meikan-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
-.meikan-card { min-width: 0; min-height: 130px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); text-decoration: none; text-align: center; }
+.meikan-card { min-width: 0; min-height: 190px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); text-decoration: none; text-align: center; }
 .player-silhouette { width: 52px; height: 52px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; background: var(--surface-strong); border-radius: 999px; font-size: 1.6rem; }
+.meikan-photo { width: 72px; height: 96px; flex: 0 0 auto; object-fit: cover; border-radius: 8px; background: var(--surface-strong); }
 .meikan-name { overflow-wrap: anywhere; font-weight: 800; }
 .meikan-goals { color: var(--muted); font-size: .875rem; }
 .meikan-finish { color: #9b6413; font-weight: 800; font-size: .875rem; }
@@ -288,4 +307,7 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
   .match-club { font-size: 1rem; }
   .match-score { padding-inline: 10px; }
   .scoring-columns { grid-template-columns: 1fr; }
+  .player-header, .photo-credit-row { grid-template-columns: 1fr; }
+  .player-portrait { width: 120px; }
+  .player-photo { width: 120px; height: 160px; }
 }

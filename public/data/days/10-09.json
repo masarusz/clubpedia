@@ -4,7 +4,7 @@
       "birthYear": 1991,
       "id": "Q2070917",
       "name": "アンディ ドゥロール",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1975,
@@ -40,13 +40,13 @@
       "birthYear": 1990,
       "id": "Q1740190",
       "name": "ケヴィン カンプル",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1998,
       "id": "Q20810726",
       "name": "パトソン ダカ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1981,
@@ -64,7 +64,7 @@
       "birthYear": 1995,
       "id": "Q14495103",
       "name": "ケニー テテ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q104770",
+      "awayName": "1.FCケルン",
+      "date": "2022-10-09",
       "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
       "key": "de-2022-Q101959-Q104770",
       "league": "de",
       "score": "5–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q106394",
+      "awayName": "SCフライブルク",
+      "date": "2022-10-09",
       "home": "Q102720",
+      "homeName": "ヘルタ・ベルリン",
       "key": "de-2022-Q102720-Q106394",
       "league": "de",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q141971",
+      "awayName": "1.FCウニオン・ベルリン",
+      "date": "2022-10-09",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2022-Q4512-Q141971",
       "league": "de",
       "score": "0–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2022-10-09",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2022-Q5794-Q18656",
       "league": "en",
       "score": "1–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2022-10-09",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2022-Q9617-Q1130849",
       "league": "en",
       "score": "3–2",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q12297",
+      "awayName": "ビジャレアルCF",
+      "date": "2022-10-09",
       "home": "Q10315",
+      "homeName": "レアル・ソシエダ",
       "key": "es-2022-Q10315-Q12297",
       "league": "es",
       "score": "1–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q8749",
+      "awayName": "セルタ・デ・ビーゴ",
+      "date": "2022-10-09",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2022-Q7156-Q8749",
       "league": "es",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q192071",
+      "awayName": "FCナント",
+      "date": "2022-10-09",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2022-Q19509-Q192071",
       "league": "fr",
       "score": "3–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2022-10-09",
       "home": "Q19513",
+      "homeName": "モンペリエHSC",
       "key": "fr-2022-Q19513-Q180305",
       "league": "fr",
       "score": "0–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2022-10-09",
       "home": "Q845137",
+      "homeName": "アンジェSCO",
       "key": "fr-2022-Q845137-Q126334",
       "league": "fr",
       "score": "2–3",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q105861",
+      "awayName": "VfLボーフム",
+      "date": "1994-10-09",
       "home": "Q51974",
+      "homeName": "ハンブルガーSV",
       "key": "de-1994-Q51974-Q105861",
       "league": "de",
       "score": "3–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "1993-10-09",
       "home": "Q104770",
+      "homeName": "1.FCケルン",
       "key": "de-1993-Q104770-Q15789",
       "league": "de",
       "score": "0–4",

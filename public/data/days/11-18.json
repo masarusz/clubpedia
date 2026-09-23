@@ -16,7 +16,7 @@
       "birthYear": 1996,
       "id": "Q26838056",
       "name": "Rémi Oudin",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1989,
@@ -46,13 +46,13 @@
       "birthYear": 1992,
       "id": "Q2801964",
       "name": "スティーヴン スクリプスキ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 2004,
       "id": "Q96335553",
       "name": "ルカ ロメロ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1995,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2017-11-18",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2017-Q1130849-Q18732",
       "league": "en",
       "score": "3–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2017-11-18",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2017-Q19481-Q50602",
       "league": "en",
       "score": "0–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2017-11-18",
       "home": "Q8701",
+      "homeName": "アトレティコ・マドリード",
       "key": "es-2017-Q8701-Q8682",
       "league": "es",
       "score": "0–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q223620",
+      "awayName": "デポルティーボ・アラベス",
+      "date": "2017-11-18",
       "home": "Q8806",
+      "homeName": "ヘタフェCF",
       "key": "es-2017-Q8806-Q223620",
       "league": "es",
       "score": "4–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q221525",
+      "awayName": "FCメス",
+      "date": "2017-11-18",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2017-Q19518-Q221525",
       "league": "fr",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q101859",
+      "awayName": "VfLヴォルフスブルク",
+      "date": "2012-11-18",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2012-Q22707-Q101859",
       "league": "de",
       "score": "1–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q151747",
+      "awayName": "フォルトゥナ・デュッセルドルフ",
+      "date": "2012-11-18",
       "home": "Q51976",
+      "homeName": "ヴェルダー・ブレーメン",
       "key": "de-2012-Q51976-Q151747",
       "league": "de",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q2037",
+      "awayName": "ACキエーヴォ・ヴェローナ",
+      "date": "2012-11-18",
       "home": "Q2018",
+      "homeName": "カターニアFC",
       "key": "it-2012-Q2018-Q2037",
       "league": "it",
       "score": "2–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "2012-11-18",
       "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
       "key": "it-2012-Q631-Q1900",
       "league": "it",
       "score": "2–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q12236",
+      "awayName": "ラシン・サンタンデール",
+      "date": "2006-11-18",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2006-Q8682-Q12236",
       "league": "es",
       "score": "3–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q210864",
+      "awayName": "ル・マンFC",
+      "date": "2006-11-18",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2006-Q19509-Q210864",
       "league": "fr",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2000-11-18",
       "home": "Q12297",
+      "homeName": "ビジャレアルCF",
       "key": "es-2000-Q12297-Q8682",
       "league": "es",
       "score": "0–1",

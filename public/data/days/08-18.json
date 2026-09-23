@@ -10,7 +10,7 @@
       "birthYear": 1994,
       "id": "Q6911830",
       "name": "モルガン サンソン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1996,
@@ -34,7 +34,7 @@
       "birthYear": 1997,
       "id": "Q18394009",
       "name": "レナト サンチェス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q5794",
+      "awayName": "エヴァートンFC",
+      "date": "2025-08-18",
       "home": "Q1128631",
+      "homeName": "リーズ・ユナイテッドFC",
       "key": "en-2025-Q1128631-Q5794",
       "league": "en",
       "score": "1–0",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8682",
+      "awayName": "レアル・マドリード",
+      "date": "2024-08-18",
       "home": "Q8835",
+      "homeName": "RCDマジョルカ",
       "key": "es-2024-Q8835-Q8682",
       "league": "es",
       "score": "1–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q185163",
+      "awayName": "OGCニース",
+      "date": "2024-08-18",
       "home": "Q182876",
+      "homeName": "AJオセール",
       "key": "fr-2024-Q182876-Q185163",
       "league": "fr",
       "score": "2–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2024-08-18",
       "home": "Q19509",
+      "homeName": "スタッド・レンヌ",
       "key": "fr-2024-Q19509-Q704",
       "league": "fr",
       "score": "3–0",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q126334",
+      "awayName": "RCストラスブール",
+      "date": "2019-08-18",
       "home": "Q208228",
+      "homeName": "スタッド・ランス",
       "key": "fr-2019-Q208228-Q126334",
       "league": "fr",
       "score": "0–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18716",
+      "awayName": "ニューカッスル・ユナイテッドFC",
+      "date": "2018-08-18",
       "home": "Q18662",
+      "homeName": "カーディフ・シティFC",
       "key": "en-2018-Q18662-Q18716",
       "league": "en",
       "score": "0–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2018-08-18",
       "home": "Q5794",
+      "homeName": "エヴァートンFC",
       "key": "en-2018-Q5794-Q18732",
       "league": "en",
       "score": "2–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q223620",
+      "awayName": "デポルティーボ・アラベス",
+      "date": "2018-08-18",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2018-Q7156-Q223620",
       "league": "es",
       "score": "3–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2017-08-18",
       "home": "Q221525",
+      "homeName": "FCメス",
       "key": "fr-2017-Q221525-Q180305",
       "league": "fr",
       "score": "0–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q102720",
+      "awayName": "ヘルタ・ベルリン",
+      "date": "2013-08-18",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2013-Q15786-Q102720",
       "league": "de",
       "score": "2–2",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q19516",
+      "awayName": "LOSCリール",
+      "date": "2007-08-18",
       "home": "Q210864",
+      "homeName": "ル・マンFC",
       "key": "fr-2007-Q210864-Q19516",
       "league": "fr",
       "score": "1–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2001-08-18",
       "home": "Q18661",
+      "homeName": "ミドルズブラFC",
       "key": "en-2001-Q18661-Q9617",
       "league": "en",
       "score": "0–4",

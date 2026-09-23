@@ -4,13 +4,13 @@
       "birthYear": 1985,
       "id": "Q11571",
       "name": "クリスティアーノ ロナウド",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
       "id": "Q142794",
       "name": "ネイマール",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -28,7 +28,7 @@
       "birthYear": 1995,
       "id": "Q14558450",
       "name": "アドナン ヤヌザイ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2023-02-05",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2022-Q4512-Q51976",
       "league": "de",
       "score": "0–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q208228",
+      "awayName": "スタッド・ランス",
+      "date": "2023-02-05",
       "home": "Q182876",
+      "homeName": "AJオセール",
       "key": "fr-2022-Q182876-Q208228",
       "league": "fr",
       "score": "0–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2023-02-05",
       "home": "Q870182",
+      "homeName": "クレルモン・フット",
       "key": "fr-2022-Q870182-Q180305",
       "league": "fr",
       "score": "0–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2020-02-05",
       "home": "Q19521",
+      "homeName": "ASサンテティエンヌ",
       "key": "fr-2019-Q19521-Q132885",
       "league": "fr",
       "score": "0–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q172476",
+      "awayName": "FCジロンダン・ボルドー",
+      "date": "2019-02-05",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2018-Q132885-Q172476",
       "league": "fr",
       "score": "1–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2017-02-05",
       "home": "Q19481",
+      "homeName": "レスター・シティFC",
       "key": "en-2016-Q19481-Q18656",
       "league": "en",
       "score": "0–3",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2017-02-05",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2016-Q1422-Q631",
       "league": "it",
       "score": "1–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1457",
+      "awayName": "UCサンプドリア",
+      "date": "2017-02-05",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2016-Q1543-Q1457",
       "league": "it",
       "score": "0–1",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2011-02-05",
       "home": "Q104770",
+      "homeName": "1.FCケルン",
       "key": "de-2010-Q104770-Q15789",
       "league": "de",
       "score": "3–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q132885",
+      "awayName": "オリンピック・マルセイユ",
+      "date": "2006-02-05",
       "home": "Q501693",
+      "homeName": "トロワAC",
       "key": "fr-2005-Q501693-Q132885",
       "league": "fr",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2005-02-05",
       "home": "Q15786",
+      "homeName": "1.FCニュルンベルク",
       "key": "de-2004-Q15786-Q51974",
       "league": "de",
       "score": "1–3",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2005-02-05",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2004-Q132885-Q19509",
       "league": "fr",
       "score": "3–1",

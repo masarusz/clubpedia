@@ -10,7 +10,7 @@
       "birthYear": 1988,
       "id": "Q573640",
       "name": "アントニー モデスト",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1989,
@@ -70,13 +70,16 @@
       "birthYear": 1995,
       "id": "Q3341549",
       "name": "ニクラス シュタルク",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2024-04-14",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2023-Q1130849-Q19467",
       "league": "en",
       "score": "0–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2024-04-14",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2023-Q9617-Q18711",
       "league": "en",
       "score": "0–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q102720",
+      "awayName": "ヘルタ・ベルリン",
+      "date": "2023-04-14",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2022-Q32494-Q102720",
       "league": "de",
       "score": "5–2",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q704",
+      "awayName": "オリンピック・リヨン",
+      "date": "2023-04-14",
       "home": "Q19518",
+      "homeName": "トゥールーズFC",
       "key": "fr-2022-Q19518-Q704",
       "league": "fr",
       "score": "1–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2018-04-14",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2017-Q18732-Q9616",
       "league": "en",
       "score": "2–3",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2018-04-14",
       "home": "Q1886",
+      "homeName": "アタランタBC",
       "key": "it-2017-Q1886-Q631",
       "league": "it",
       "score": "0–0",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2013-04-14",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2012-Q4512-Q101959",
       "league": "de",
       "score": "2–0",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2013-04-14",
       "home": "Q1900",
+      "homeName": "カリアリ・カルチョ",
       "key": "it-2012-Q1900-Q631",
       "league": "it",
       "score": "2–0",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2012-04-14",
       "home": "Q32494",
+      "homeName": "シャルケ04",
       "key": "de-2011-Q32494-Q41420",
       "league": "de",
       "score": "1–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2010-04-14",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2009-Q483020-Q19509",
       "league": "fr",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q2693",
+      "awayName": "パルマ・カルチョ1913",
+      "date": "2002-04-14",
       "home": "Q2739",
+      "homeName": "ASローマ",
       "key": "it-2001-Q2739-Q2693",
       "league": "it",
       "score": "3–1",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1900",
+      "awayName": "カリアリ・カルチョ",
+      "date": "1995-04-14",
       "home": "Q2074",
+      "homeName": "ジェノアCFC",
       "key": "it-1994-Q2074-Q1900",
       "league": "it",
       "score": "1–1",

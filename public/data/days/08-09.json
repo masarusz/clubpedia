@@ -10,7 +10,7 @@
       "birthYear": 1988,
       "id": "Q73480",
       "name": "ウィリアン",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1989,
@@ -22,7 +22,7 @@
       "birthYear": 1997,
       "id": "Q20890178",
       "name": "レオン ベイリー",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1985,
@@ -70,13 +70,16 @@
       "birthYear": 1999,
       "id": "Q113427641",
       "name": "アレクサンドロ",
-      "photo": false
+      "photo": true
     }
   ],
   "matches": [
     {
       "away": "Q18721",
+      "awayName": "ノリッジ・シティFC",
+      "date": "2019-08-09",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2019-Q1130849-Q18721",
       "league": "en",
       "score": "4–1",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18732",
+      "awayName": "サウサンプトンFC",
+      "date": "2015-08-09",
       "home": "Q18716",
+      "homeName": "ニューカッスル・ユナイテッドFC",
       "key": "en-2015-Q18716-Q18732",
       "league": "en",
       "score": "2–2",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2015-08-09",
       "home": "Q18736",
+      "homeName": "ストーク・シティFC",
       "key": "en-2015-Q18736-Q1130849",
       "league": "en",
       "score": "0–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q18747",
+      "awayName": "ウェストハム・ユナイテッドFC",
+      "date": "2015-08-09",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2015-Q9617-Q18747",
       "league": "en",
       "score": "0–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2013-08-09",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2013-Q15789-Q101959",
       "league": "de",
       "score": "3–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2013-08-09",
       "home": "Q19513",
+      "homeName": "モンペリエHSC",
       "key": "fr-2013-Q19513-Q483020",
       "league": "fr",
       "score": "1–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q101959",
+      "awayName": "ボルシア・メンヒェングラートバッハ",
+      "date": "2009-08-09",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2009-Q105861-Q101959",
       "league": "de",
       "score": "3–3",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q209509",
+      "awayName": "グルノーブル・フット38",
+      "date": "2008-08-09",
       "home": "Q19512",
+      "homeName": "FCソショー＝モンベリアル",
       "key": "fr-2008-Q19512-Q209509",
       "league": "fr",
       "score": "1–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q51974",
+      "awayName": "ハンブルガーSV",
+      "date": "2003-08-09",
       "home": "Q105861",
+      "homeName": "VfLボーフム",
       "key": "de-2003-Q105861-Q51974",
       "league": "de",
       "score": "1–1",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q19513",
+      "awayName": "モンペリエHSC",
+      "date": "2003-08-09",
       "home": "Q172476",
+      "homeName": "FCジロンダン・ボルドー",
       "key": "fr-2003-Q172476-Q19513",
       "league": "fr",
       "score": "0–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q101859",
+      "awayName": "VfLヴォルフスブルク",
+      "date": "1997-08-09",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-1997-Q15789-Q101859",
       "league": "de",
       "score": "5–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "1997-08-09",
       "home": "Q19482",
+      "homeName": "ウィンブルドンFC",
       "key": "en-1997-Q19482-Q1130849",
       "league": "en",
       "score": "1–1",

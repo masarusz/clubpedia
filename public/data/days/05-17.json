@@ -64,7 +64,7 @@
       "birthYear": 1996,
       "id": "Q30349597",
       "name": "ユーセフ アタル",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1987,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2026-05-17",
       "home": "Q126334",
+      "homeName": "RCストラスブール",
       "key": "fr-2025-Q126334-Q180305",
       "league": "fr",
       "score": "5–4",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2025-05-17",
       "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
       "key": "de-2024-Q22707-Q15789",
       "league": "de",
       "score": "0–4",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q157828",
+      "awayName": "ホルシュタイン・キール",
+      "date": "2025-05-17",
       "home": "Q41420",
+      "homeName": "ボルシア・ドルトムント",
       "key": "de-2024-Q41420-Q157828",
       "league": "de",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2025-05-17",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2024-Q132885-Q19509",
       "league": "fr",
       "score": "4–2",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2025-05-17",
       "home": "Q191843",
+      "homeName": "RCランス",
       "key": "fr-2024-Q191843-Q180305",
       "league": "fr",
       "score": "4–0",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q182876",
+      "awayName": "AJオセール",
+      "date": "2025-05-17",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2024-Q483020-Q182876",
       "league": "fr",
       "score": "3–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2022-05-17",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2021-Q18732-Q1130849",
       "league": "en",
       "score": "1–2",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q1893",
+      "awayName": "ボローニャFC1909",
+      "date": "2021-05-17",
       "home": "Q8639",
+      "homeName": "エラス・ヴェローナFC",
       "key": "it-2020-Q8639-Q1893",
       "league": "it",
       "score": "2–2",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q18656",
+      "awayName": "マンチェスター・ユナイテッドFC",
+      "date": "2017-05-17",
       "home": "Q18732",
+      "homeName": "サウサンプトンFC",
       "key": "en-2016-Q18732-Q18656",
       "league": "en",
       "score": "0–0",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2015-05-17",
       "home": "Q18656",
+      "homeName": "マンチェスター・ユナイテッドFC",
       "key": "en-2014-Q18656-Q9617",
       "league": "en",
       "score": "1–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2015-05-17",
       "home": "Q8603",
+      "homeName": "USサッスオーロ・カルチョ",
       "key": "it-2014-Q8603-Q1543",
       "league": "it",
       "score": "3–2",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2003-05-17",
       "home": "Q8476",
+      "homeName": "レッジーナ1914",
       "key": "it-2002-Q8476-Q1422",
       "league": "it",
       "score": "2–1",

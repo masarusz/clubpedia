@@ -10,7 +10,7 @@
       "birthYear": 1990,
       "id": "Q5558146",
       "name": "ジャンルカ ラパドゥーラ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
@@ -46,7 +46,7 @@
       "birthYear": 1993,
       "id": "Q2758078",
       "name": "ダルウィン マチス",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1975,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2026-02-07",
       "home": "Q101859",
+      "homeName": "VfLヴォルフスブルク",
       "key": "de-2025-Q101859-Q41420",
       "league": "de",
       "score": "1–2",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q8835",
+      "awayName": "RCDマジョルカ",
+      "date": "2026-02-07",
       "home": "Q7156",
+      "homeName": "FCバルセロナ",
       "key": "es-2025-Q7156-Q8835",
       "league": "es",
       "score": "3–0",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q51976",
+      "awayName": "ヴェルダー・ブレーメン",
+      "date": "2025-02-07",
       "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
       "key": "de-2024-Q15789-Q51976",
       "league": "de",
       "score": "3–0",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2025-02-07",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2024-Q483020-Q180305",
       "league": "fr",
       "score": "4–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q50602",
+      "awayName": "マンチェスター・シティFC",
+      "date": "2021-02-07",
       "home": "Q1130849",
+      "homeName": "リヴァプールFC",
       "key": "en-2020-Q1130849-Q50602",
       "league": "en",
       "score": "1–4",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q483020",
+      "awayName": "パリ・サンジェルマンFC",
+      "date": "2021-02-07",
       "home": "Q132885",
+      "homeName": "オリンピック・マルセイユ",
       "key": "fr-2020-Q132885-Q483020",
       "league": "fr",
       "score": "0–2",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q2798",
+      "awayName": "ウディネーゼ・カルチョ",
+      "date": "2016-02-07",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2015-Q1543-Q2798",
       "league": "it",
       "score": "1–1",
@@ -132,7 +153,10 @@
     },
     {
       "away": "Q631",
+      "awayName": "インテルナツィオナーレ・ミラノ",
+      "date": "2016-02-07",
       "home": "Q8639",
+      "homeName": "エラス・ヴェローナFC",
       "key": "it-2015-Q8639-Q631",
       "league": "it",
       "score": "3–3",
@@ -140,7 +164,10 @@
     },
     {
       "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2015-02-07",
       "home": "Q4512",
+      "homeName": "VfBシュトゥットガルト",
       "key": "de-2014-Q4512-Q15789",
       "league": "de",
       "score": "0–2",
@@ -148,7 +175,10 @@
     },
     {
       "away": "Q1543",
+      "awayName": "ACミラン",
+      "date": "2015-02-07",
       "home": "Q1422",
+      "homeName": "ユヴェントスFC",
       "key": "it-2014-Q1422-Q1543",
       "league": "it",
       "score": "3–1",
@@ -156,7 +186,10 @@
     },
     {
       "away": "Q8780",
+      "awayName": "RCDエスパニョール",
+      "date": "2010-02-07",
       "home": "Q8682",
+      "homeName": "レアル・マドリード",
       "key": "es-2009-Q8682-Q8780",
       "league": "es",
       "score": "3–0",
@@ -164,7 +197,10 @@
     },
     {
       "away": "Q19513",
+      "awayName": "モンペリエHSC",
+      "date": "2004-02-07",
       "home": "Q483020",
+      "homeName": "パリ・サンジェルマンFC",
       "key": "fr-2003-Q483020-Q19513",
       "league": "fr",
       "score": "6–1",

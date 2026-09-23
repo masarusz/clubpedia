@@ -4,7 +4,7 @@
       "birthYear": 1999,
       "id": "Q51855361",
       "name": "ムサ ディアビ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1984,
@@ -16,7 +16,7 @@
       "birthYear": 1997,
       "id": "Q34058084",
       "name": "サーシャ カライジッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1999,
@@ -40,7 +40,7 @@
       "birthYear": 1996,
       "id": "Q21130257",
       "name": "ミロシュ パントヴィッチ",
-      "photo": false
+      "photo": true
     },
     {
       "birthYear": 1992,
@@ -76,7 +76,10 @@
   "matches": [
     {
       "away": "Q9616",
+      "awayName": "チェルシーFC",
+      "date": "2020-07-07",
       "home": "Q19467",
+      "homeName": "クリスタル・パレスFC",
       "key": "en-2019-Q19467-Q9616",
       "league": "en",
       "score": "2–3",
@@ -84,7 +87,10 @@
     },
     {
       "away": "Q18721",
+      "awayName": "ノリッジ・シティFC",
+      "date": "2020-07-07",
       "home": "Q2714",
+      "homeName": "ワトフォードFC",
       "key": "en-2019-Q2714-Q18721",
       "league": "en",
       "score": "2–1",
@@ -92,7 +98,10 @@
     },
     {
       "away": "Q19481",
+      "awayName": "レスター・シティFC",
+      "date": "2020-07-07",
       "home": "Q9617",
+      "homeName": "アーセナルFC",
       "key": "en-2019-Q9617-Q19481",
       "league": "en",
       "score": "1–1",
@@ -100,7 +109,10 @@
     },
     {
       "away": "Q10319",
+      "awayName": "レアル・バリャドリード",
+      "date": "2020-07-07",
       "home": "Q10333",
+      "homeName": "バレンシアCF",
       "key": "es-2019-Q10333-Q10319",
       "league": "es",
       "score": "2–1",
@@ -108,7 +120,10 @@
     },
     {
       "away": "Q8701",
+      "awayName": "アトレティコ・マドリード",
+      "date": "2020-07-07",
       "home": "Q8749",
+      "homeName": "セルタ・デ・ビーゴ",
       "key": "es-2019-Q8749-Q8701",
       "league": "es",
       "score": "1–1",
@@ -116,7 +131,10 @@
     },
     {
       "away": "Q2609",
+      "awayName": "SSラツィオ",
+      "date": "2020-07-07",
       "home": "Q13391",
+      "homeName": "USレッチェ",
       "key": "it-2019-Q13391-Q2609",
       "league": "it",
       "score": "2–1",
@@ -124,7 +142,10 @@
     },
     {
       "away": "Q1422",
+      "awayName": "ユヴェントスFC",
+      "date": "2020-07-07",
       "home": "Q1543",
+      "homeName": "ACミラン",
       "key": "it-2019-Q1543-Q1422",
       "league": "it",
       "score": "4–2",
