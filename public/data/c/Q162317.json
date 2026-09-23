@@ -2,7 +2,7 @@
   "championSeasons": [
     {
       "league": "de",
-      "season": "1903"
+      "season": "1913"
     },
     {
       "league": "de",
@@ -10,9 +10,10 @@
     },
     {
       "league": "de",
-      "season": "1913"
+      "season": "1903"
     }
   ],
+  "colour": "#ffdd00",
   "headToHead": {
     "Q101959": {
       "d": 1,
@@ -220,6 +221,10 @@
     }
   },
   "id": "Q162317",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "1. FC Lokomotive Leipzig",
     "ja": "1.FCロコモティヴェ・ライプツィヒ"
@@ -228,6 +233,32 @@
     {
       "position": 18,
       "season": "de-1993"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 4,
+      "player": "Q263797"
+    },
+    {
+      "goals": 2,
+      "player": "Q1443192"
+    },
+    {
+      "goals": 2,
+      "player": "Q317383"
+    },
+    {
+      "goals": 2,
+      "player": "Q319425"
+    },
+    {
+      "goals": 1,
+      "player": "Q18746825"
+    },
+    {
+      "goals": 1,
+      "player": "Q322588"
     }
   ]
 }

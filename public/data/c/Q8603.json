@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#00a746",
   "headToHead": {
     "Q1120838": {
       "d": 0,
@@ -829,18 +830,50 @@
     }
   },
   "id": "Q8603",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "US Sassuolo Calcio",
     "ja": "USサッスオーロ・カルチョ"
   },
   "positions": [
     {
-      "position": 17,
-      "season": "it-2013"
+      "position": 11,
+      "season": "it-2025"
+    },
+    {
+      "position": 19,
+      "season": "it-2023"
+    },
+    {
+      "position": 13,
+      "season": "it-2022"
+    },
+    {
+      "position": 11,
+      "season": "it-2021"
+    },
+    {
+      "position": 8,
+      "season": "it-2020"
+    },
+    {
+      "position": 8,
+      "season": "it-2019"
+    },
+    {
+      "position": 11,
+      "season": "it-2018"
+    },
+    {
+      "position": 11,
+      "season": "it-2017"
     },
     {
       "position": 12,
-      "season": "it-2014"
+      "season": "it-2016"
     },
     {
       "position": 6,
@@ -848,39 +881,309 @@
     },
     {
       "position": 12,
-      "season": "it-2016"
+      "season": "it-2014"
     },
     {
-      "position": 11,
-      "season": "it-2017"
+      "position": 17,
+      "season": "it-2013"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 125,
+      "player": "Q348407"
     },
     {
-      "position": 11,
-      "season": "it-2018"
+      "goals": 32,
+      "player": "Q738065"
     },
     {
-      "position": 8,
-      "season": "it-2019"
+      "goals": 28,
+      "player": "Q5612770"
     },
     {
-      "position": 8,
-      "season": "it-2020"
+      "goals": 23,
+      "player": "Q27981508"
     },
     {
-      "position": 11,
-      "season": "it-2021"
+      "goals": 20,
+      "player": "Q6789694"
     },
     {
-      "position": 13,
-      "season": "it-2022"
+      "goals": 18,
+      "player": "Q20925240"
     },
     {
-      "position": 19,
-      "season": "it-2023"
+      "goals": 18,
+      "player": "Q59914562"
     },
     {
-      "position": 11,
-      "season": "it-2025"
+      "goals": 17,
+      "player": "Q3961288"
+    },
+    {
+      "goals": 17,
+      "player": "Q58009580"
+    },
+    {
+      "goals": 16,
+      "player": "Q22237703"
+    },
+    {
+      "goals": 16,
+      "player": "Q43559571"
+    },
+    {
+      "goals": 15,
+      "player": "Q457302"
+    },
+    {
+      "goals": 14,
+      "player": "Q285518"
+    },
+    {
+      "goals": 13,
+      "player": "Q36305"
+    },
+    {
+      "goals": 11,
+      "player": "Q531302"
+    },
+    {
+      "goals": 11,
+      "player": "Q55366763"
+    },
+    {
+      "goals": 9,
+      "player": "Q19773058"
+    },
+    {
+      "goals": 9,
+      "player": "Q456868"
+    },
+    {
+      "goals": 9,
+      "player": "Q510039"
+    },
+    {
+      "goals": 9,
+      "player": "Q61721648"
+    },
+    {
+      "goals": 7,
+      "player": "Q151518"
+    },
+    {
+      "goals": 7,
+      "player": "Q3961249"
+    },
+    {
+      "goals": 7,
+      "player": "Q5558173"
+    },
+    {
+      "goals": 7,
+      "player": "Q916088"
+    },
+    {
+      "goals": 6,
+      "player": "Q23899393"
+    },
+    {
+      "goals": 5,
+      "player": "Q21055388"
+    },
+    {
+      "goals": 5,
+      "player": "Q56633268"
+    },
+    {
+      "goals": 5,
+      "player": "Q7192985"
+    },
+    {
+      "goals": 4,
+      "player": "Q151034"
+    },
+    {
+      "goals": 4,
+      "player": "Q26704596"
+    },
+    {
+      "goals": 4,
+      "player": "Q3619118"
+    },
+    {
+      "goals": 4,
+      "player": "Q5274654"
+    },
+    {
+      "goals": 4,
+      "player": "Q924381"
+    },
+    {
+      "goals": 3,
+      "player": "Q10492080"
+    },
+    {
+      "goals": 3,
+      "player": "Q109924046"
+    },
+    {
+      "goals": 3,
+      "player": "Q111009946"
+    },
+    {
+      "goals": 3,
+      "player": "Q28962317"
+    },
+    {
+      "goals": 3,
+      "player": "Q3750189"
+    },
+    {
+      "goals": 3,
+      "player": "Q867245"
+    },
+    {
+      "goals": 2,
+      "player": "Q106620882"
+    },
+    {
+      "goals": 2,
+      "player": "Q13527929"
+    },
+    {
+      "goals": 2,
+      "player": "Q15080201"
+    },
+    {
+      "goals": 2,
+      "player": "Q1849128"
+    },
+    {
+      "goals": 2,
+      "player": "Q24006153"
+    },
+    {
+      "goals": 2,
+      "player": "Q26255080"
+    },
+    {
+      "goals": 2,
+      "player": "Q29047921"
+    },
+    {
+      "goals": 2,
+      "player": "Q31763182"
+    },
+    {
+      "goals": 2,
+      "player": "Q50133010"
+    },
+    {
+      "goals": 2,
+      "player": "Q53394040"
+    },
+    {
+      "goals": 2,
+      "player": "Q56562247"
+    },
+    {
+      "goals": 2,
+      "player": "Q91964356"
+    },
+    {
+      "goals": 1,
+      "player": "Q10555584"
+    },
+    {
+      "goals": 1,
+      "player": "Q106313239"
+    },
+    {
+      "goals": 1,
+      "player": "Q15696639"
+    },
+    {
+      "goals": 1,
+      "player": "Q16910143"
+    },
+    {
+      "goals": 1,
+      "player": "Q17198160"
+    },
+    {
+      "goals": 1,
+      "player": "Q17318574"
+    },
+    {
+      "goals": 1,
+      "player": "Q17579981"
+    },
+    {
+      "goals": 1,
+      "player": "Q18933936"
+    },
+    {
+      "goals": 1,
+      "player": "Q2066714"
+    },
+    {
+      "goals": 1,
+      "player": "Q24084219"
+    },
+    {
+      "goals": 1,
+      "player": "Q28968078"
+    },
+    {
+      "goals": 1,
+      "player": "Q30113960"
+    },
+    {
+      "goals": 1,
+      "player": "Q30474499"
+    },
+    {
+      "goals": 1,
+      "player": "Q311956"
+    },
+    {
+      "goals": 1,
+      "player": "Q3177357"
+    },
+    {
+      "goals": 1,
+      "player": "Q3191617"
+    },
+    {
+      "goals": 1,
+      "player": "Q42319683"
+    },
+    {
+      "goals": 1,
+      "player": "Q50823879"
+    },
+    {
+      "goals": 1,
+      "player": "Q510596"
+    },
+    {
+      "goals": 1,
+      "player": "Q6756439"
+    },
+    {
+      "goals": 1,
+      "player": "Q84571690"
+    },
+    {
+      "goals": 1,
+      "player": "Q981986"
+    },
+    {
+      "goals": 1,
+      "player": "Q99390386"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffffff",
   "headToHead": {
     "Q139399": {
       "d": 1,
@@ -281,18 +282,64 @@
     }
   },
   "id": "Q8428",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "Calcio Padova",
     "ja": "カルチョ・パドヴァ"
   },
   "positions": [
     {
-      "position": 14,
-      "season": "it-1994"
-    },
-    {
       "position": 18,
       "season": "it-1995"
+    },
+    {
+      "position": 14,
+      "season": "it-1994"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 14,
+      "player": "Q62244"
+    },
+    {
+      "goals": 6,
+      "player": "Q1086666"
+    },
+    {
+      "goals": 5,
+      "player": "Q2439009"
+    },
+    {
+      "goals": 5,
+      "player": "Q444323"
+    },
+    {
+      "goals": 2,
+      "player": "Q1432468"
+    },
+    {
+      "goals": 1,
+      "player": "Q1615244"
+    },
+    {
+      "goals": 1,
+      "player": "Q168371"
+    },
+    {
+      "goals": 1,
+      "player": "Q3297730"
+    },
+    {
+      "goals": 1,
+      "player": "Q3846132"
+    },
+    {
+      "goals": 1,
+      "player": "Q703710"
     }
   ]
 }

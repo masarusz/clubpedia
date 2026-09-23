@@ -22,7 +22,7 @@ import {
   unsafeName,
 } from '../tools/lib/source-api.mjs';
 import { runFetchSources, sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
-import { championClubTargets } from '../tools/lib/core-data.mjs';
+import { championClubTargets, clubKitColour } from '../tools/lib/core-data.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const FIXTURES = join(ROOT, 'tests', 'fixtures');
@@ -86,6 +86,41 @@ export function register(test, equal, deepEqual) {
   test('champion discovery includes linked and carried-forward club targets only from the editions section', async () => {
     const targets = championClubTargets(await fixture('wikitext/champion-club-discovery.wikitext'), 'it');
     deepEqual(targets, ['Ambrosiana-Inter', 'F.C. Pro Vercelli 1892', 'Juventus FC']);
+  });
+
+  test('club articles are discovered offline and their kit colours parse', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-club-fetch-test-'));
+    const out = join(temporary, 'sources');
+    const lockPath = join(temporary, 'sources.lock.json');
+    const article = await fixture('wikitext/club-article.wikitext');
+    const requester = new Requester({
+      sleep: async () => {}, minimumWikimediaDelay: 0,
+      fetchImpl: async (url) => {
+        const parsed = new URL(url);
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'revisions') {
+          return fakeResponse({ batchcomplete: true, query: { pages: [revisionPage('Fixture FC', article, 601)] } });
+        }
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'pageprops|langlinks') {
+          return fakeResponse({ batchcomplete: true, query: { pages: [{ title: 'Fixture FC', pageid: 601, pageprops: { wikibase_item: 'Q601' } }] } });
+        }
+        if (parsed.hostname === 'www.wikidata.org') {
+          return fakeResponse({ entities: { Q601: { id: 'Q601', lastrevid: 987654321, claims: {}, labels: {} } } });
+        }
+        throw new Error(`Unexpected club-article fake URL: ${url}`);
+      },
+    });
+    try {
+      const { lock } = await runFetchSources({
+        out, lockPath, refresh: true, requester, quiet: true, leagues: [], startYears: [], listTitles: [],
+        topScorerLists: [], foreignLists: [], clubArticles: ['Fixture FC'], openLigaYears: [], openfootball: false,
+        minimumJapanesePlayers: 0,
+      });
+      equal(lock.enwiki['Fixture FC'].kind, 'club');
+      equal(clubKitColour(article), '#12abef');
+      equal(clubKitColour('{{Infobox football club|shorts1=abc}}'), '#abc');
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
   });
 
   test('refresh fetches metadata for every discovered champion identity', async () => {

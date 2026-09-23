@@ -5,6 +5,8 @@ import { isDeepStrictEqual } from 'node:util';
 import { register as fetchTests } from './fetch.test.mjs';
 import { register as mutationTests } from './mutation.test.mjs';
 import { register as dataTests } from './data.test.mjs';
+import { register as uiTests } from './ui.test.mjs';
+import { register as serveTests } from './serve.test.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // A failed preflight aborts the suite before any assertion can inspect stale
@@ -23,6 +25,8 @@ const deepEqual = (actual, expected, context = '') => {
 
 fetchTests(test, equal, deepEqual);
 dataTests(test, equal, deepEqual);
+uiTests(test, equal, deepEqual);
+serveTests(test, equal, deepEqual);
 mutationTests(test, equal);
 
 let passed = 0;

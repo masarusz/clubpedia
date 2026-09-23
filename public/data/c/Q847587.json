@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#671912",
   "headToHead": {
     "Q13391": {
       "d": 0,
@@ -431,14 +432,22 @@
     }
   },
   "id": "Q847587",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "US Salernitana 1919",
     "ja": "USサレルニターナ1919"
   },
   "positions": [
     {
+      "position": 20,
+      "season": "it-2023"
+    },
+    {
       "position": 15,
-      "season": "it-1998"
+      "season": "it-2022"
     },
     {
       "position": 17,
@@ -446,11 +455,177 @@
     },
     {
       "position": 15,
-      "season": "it-2022"
+      "season": "it-1998"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 20,
+      "player": "Q57603663"
     },
     {
-      "position": 20,
-      "season": "it-2023"
+      "goals": 13,
+      "player": "Q32556"
+    },
+    {
+      "goals": 12,
+      "player": "Q16382834"
+    },
+    {
+      "goals": 6,
+      "player": "Q136940"
+    },
+    {
+      "goals": 6,
+      "player": "Q19957957"
+    },
+    {
+      "goals": 5,
+      "player": "Q3857716"
+    },
+    {
+      "goals": 5,
+      "player": "Q4202251"
+    },
+    {
+      "goals": 4,
+      "player": "Q108703725"
+    },
+    {
+      "goals": 4,
+      "player": "Q16762728"
+    },
+    {
+      "goals": 4,
+      "player": "Q212614"
+    },
+    {
+      "goals": 4,
+      "player": "Q21523936"
+    },
+    {
+      "goals": 4,
+      "player": "Q28374263"
+    },
+    {
+      "goals": 3,
+      "player": "Q1091577"
+    },
+    {
+      "goals": 3,
+      "player": "Q20949218"
+    },
+    {
+      "goals": 3,
+      "player": "Q67387532"
+    },
+    {
+      "goals": 2,
+      "player": "Q29167519"
+    },
+    {
+      "goals": 2,
+      "player": "Q342350"
+    },
+    {
+      "goals": 2,
+      "player": "Q3741739"
+    },
+    {
+      "goals": 2,
+      "player": "Q43886448"
+    },
+    {
+      "goals": 2,
+      "player": "Q560651"
+    },
+    {
+      "goals": 2,
+      "player": "Q59150057"
+    },
+    {
+      "goals": 1,
+      "player": "Q108588659"
+    },
+    {
+      "goals": 1,
+      "player": "Q113852240"
+    },
+    {
+      "goals": 1,
+      "player": "Q1261649"
+    },
+    {
+      "goals": 1,
+      "player": "Q1407552"
+    },
+    {
+      "goals": 1,
+      "player": "Q1466614"
+    },
+    {
+      "goals": 1,
+      "player": "Q1522184"
+    },
+    {
+      "goals": 1,
+      "player": "Q15884045"
+    },
+    {
+      "goals": 1,
+      "player": "Q16854411"
+    },
+    {
+      "goals": 1,
+      "player": "Q19973690"
+    },
+    {
+      "goals": 1,
+      "player": "Q215533"
+    },
+    {
+      "goals": 1,
+      "player": "Q2258886"
+    },
+    {
+      "goals": 1,
+      "player": "Q2291334"
+    },
+    {
+      "goals": 1,
+      "player": "Q26704562"
+    },
+    {
+      "goals": 1,
+      "player": "Q28718331"
+    },
+    {
+      "goals": 1,
+      "player": "Q51096235"
+    },
+    {
+      "goals": 1,
+      "player": "Q58010154"
+    },
+    {
+      "goals": 1,
+      "player": "Q58303861"
+    },
+    {
+      "goals": 1,
+      "player": "Q656464"
+    },
+    {
+      "goals": 1,
+      "player": "Q69408385"
+    },
+    {
+      "goals": 1,
+      "player": "Q722916"
+    },
+    {
+      "goals": 1,
+      "player": "Q73626011"
     }
   ]
 }

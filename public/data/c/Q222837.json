@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": null,
   "headToHead": {
     "Q132885": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q222837",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "AC Arlésien",
     "ja": "ACアルル＝アヴィニョン"
@@ -239,6 +244,16 @@
     {
       "position": 20,
       "season": "fr-2010"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q2466277"
+    },
+    {
+      "goals": 1,
+      "player": "Q305322"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffec00",
   "headToHead": {
     "Q1120838": {
       "d": 2,
@@ -281,18 +282,76 @@
     }
   },
   "id": "Q8408",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "Modena FC 2018",
     "ja": "モデナFC2018"
   },
   "positions": [
     {
-      "position": 12,
-      "season": "it-2002"
-    },
-    {
       "position": 16,
       "season": "it-2003"
+    },
+    {
+      "position": 12,
+      "season": "it-2002"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 7,
+      "player": "Q314368"
+    },
+    {
+      "goals": 3,
+      "player": "Q465935"
+    },
+    {
+      "goals": 2,
+      "player": "Q290913"
+    },
+    {
+      "goals": 2,
+      "player": "Q3737871"
+    },
+    {
+      "goals": 2,
+      "player": "Q62244"
+    },
+    {
+      "goals": 1,
+      "player": "Q1536942"
+    },
+    {
+      "goals": 1,
+      "player": "Q2360347"
+    },
+    {
+      "goals": 1,
+      "player": "Q2629845"
+    },
+    {
+      "goals": 1,
+      "player": "Q316852"
+    },
+    {
+      "goals": 1,
+      "player": "Q3615694"
+    },
+    {
+      "goals": 1,
+      "player": "Q3852180"
+    },
+    {
+      "goals": 1,
+      "player": "Q712132"
+    },
+    {
+      "goals": 1,
+      "player": "Q768219"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#fbfbfb",
   "headToHead": {
     "Q101859": {
       "d": 0,
@@ -207,6 +208,10 @@
     }
   },
   "id": "Q14551982",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "SSV Ulm 1846",
     "ja": "SSVウルム1846"
@@ -215,6 +220,24 @@
     {
       "position": 16,
       "season": "de-1999"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q1177311"
+    },
+    {
+      "goals": 1,
+      "player": "Q1583330"
+    },
+    {
+      "goals": 1,
+      "player": "Q2128378"
+    },
+    {
+      "goals": 1,
+      "player": "Q706390"
     }
   ]
 }

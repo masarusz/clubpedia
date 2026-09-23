@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#0000ff",
   "headToHead": {
     "Q10286": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q837218",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "UE Lleida",
     "ja": "UEリェイダ"
@@ -239,6 +244,32 @@
     {
       "position": 19,
       "season": "es-1993"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q1556790"
+    },
+    {
+      "goals": 1,
+      "player": "Q2081245"
+    },
+    {
+      "goals": 1,
+      "player": "Q3608028"
+    },
+    {
+      "goals": 1,
+      "player": "Q445059"
+    },
+    {
+      "goals": 1,
+      "player": "Q4886264"
+    },
+    {
+      "goals": 1,
+      "player": "Q7035594"
     }
   ]
 }

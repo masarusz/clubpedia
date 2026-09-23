@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q139399": {
       "d": 0,
@@ -207,6 +208,15 @@
     }
   },
   "id": "Q108749828",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [
+    {
+      "club": "Q20706646",
+      "relation": "predecessor"
+    }
+  ],
   "names": {
     "en": "US Ancona 1905",
     "ja": "USアンコーナ1905"
@@ -215,6 +225,28 @@
     {
       "position": 17,
       "season": "it-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 4,
+      "player": "Q986991"
+    },
+    {
+      "goals": 3,
+      "player": "Q3737759"
+    },
+    {
+      "goals": 2,
+      "player": "Q3953801"
+    },
+    {
+      "goals": 1,
+      "player": "Q1612719"
+    },
+    {
+      "goals": 1,
+      "player": "Q3953577"
     }
   ]
 }

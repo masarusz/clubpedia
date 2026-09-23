@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ef0000",
   "headToHead": {
     "Q1128631": {
       "d": 0,
@@ -255,6 +256,10 @@
     }
   },
   "id": "Q19634",
+  "leagues": [
+    "en"
+  ],
+  "lineage": [],
   "names": {
     "en": "Swindon Town F.C.",
     "ja": "スウィンドン・タウンFC"
@@ -263,6 +268,32 @@
     {
       "position": 22,
       "season": "en-1993"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 3,
+      "player": "Q2867035"
+    },
+    {
+      "goals": 1,
+      "player": "Q4685427"
+    },
+    {
+      "goals": 1,
+      "player": "Q4761082"
+    },
+    {
+      "goals": 1,
+      "player": "Q6249142"
+    },
+    {
+      "goals": 1,
+      "player": "Q6776012"
+    },
+    {
+      "goals": 1,
+      "player": "Q709585"
     }
   ]
 }

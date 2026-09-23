@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffffff",
   "headToHead": {
     "Q10300": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q10499",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "Córdoba CF",
     "ja": "コルドバCF"
@@ -239,6 +244,40 @@
     {
       "position": 20,
       "season": "es-2014"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 7,
+      "player": "Q8314759"
+    },
+    {
+      "goals": 4,
+      "player": "Q18223242"
+    },
+    {
+      "goals": 4,
+      "player": "Q5857549"
+    },
+    {
+      "goals": 1,
+      "player": "Q1440615"
+    },
+    {
+      "goals": 1,
+      "player": "Q3369416"
+    },
+    {
+      "goals": 1,
+      "player": "Q350466"
+    },
+    {
+      "goals": 1,
+      "player": "Q5446728"
+    },
+    {
+      "goals": 1,
+      "player": "Q6700495"
     }
   ]
 }

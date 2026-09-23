@@ -1,0 +1,210 @@
+:root {
+  --ink: #15231f;
+  --muted: #5a6964;
+  --page: #f4f7f2;
+  --surface: #ffffff;
+  --surface-strong: #e6eee9;
+  --primary: #173f35;
+  --primary-bright: #2a735f;
+  --accent: #d3922f;
+  --border: #cbd7d1;
+  --danger: #a63a37;
+  --shadow: 0 8px 24px rgb(21 35 31 / 9%);
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--page);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-width: 0; min-height: 100%; }
+body { background: radial-gradient(circle at 85% 0, #dbe9e1 0, transparent 26rem), var(--page); line-height: 1.65; }
+a { color: #165a49; text-underline-offset: 3px; }
+button, select { font: inherit; font-size: 16px; }
+button, a, summary, select { touch-action: manipulation; }
+
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  color: #fff;
+  background: rgb(23 63 53 / 96%);
+  border-bottom: 3px solid var(--accent);
+  backdrop-filter: blur(12px);
+}
+.header-inner { width: min(1180px, 100%); min-height: 68px; margin: 0 auto; padding: 8px 24px; display: flex; align-items: center; gap: 14px; }
+.header-back-slot { flex: 0 0 78px; }
+.header-back { min-width: 74px; min-height: 44px; padding: 6px 10px; color: #fff; background: transparent; border: 1px solid rgb(255 255 255 / 45%); border-radius: 999px; cursor: pointer; font-weight: 800; }
+.brand { min-width: 0; display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; }
+.brand-mark { flex: 0 0 auto; border-radius: 8px; }
+.brand-copy { min-width: 0; display: flex; flex-direction: column; line-height: 1.15; }
+.brand-copy strong { font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: 1.25rem; letter-spacing: .025em; }
+.brand-copy small { color: #dcebe5; font-size: .76rem; }
+.site-nav { margin-left: auto; display: flex; gap: 6px; }
+.site-nav a { min-height: 44px; padding: 8px 12px; display: inline-flex; align-items: center; color: #fff; border-radius: 8px; font-weight: 700; text-decoration: none; }
+.site-nav a:hover { background: rgb(255 255 255 / 12%); }
+
+main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto; }
+.page { padding: 34px 24px 54px; }
+.page-heading { margin-bottom: 24px; }
+.page-heading h1 { max-width: 100%; margin: 0; font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; overflow-wrap: anywhere; }
+.eyebrow { margin: 0 0 4px; color: var(--primary-bright); font-size: .82rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.panel { min-width: 0; margin: 0 0 18px; padding: 22px; background: rgb(255 255 255 / 94%); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+.panel > h2 { margin: 0 0 16px; font-family: Georgia, "Hiragino Mincho ProN", serif; font-size: 1.42rem; line-height: 1.3; }
+.loading { margin: 48px 24px; font-weight: 800; }
+.site-footer { min-height: 64px; padding: 16px 24px; display: flex; justify-content: center; gap: 22px; color: #dcebe5; background: var(--primary); }
+.site-footer a { color: #fff; }
+
+.league-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.league-card { min-width: 0; min-height: 210px; padding: 18px; display: flex; flex-direction: column; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-top: 7px solid var(--primary-bright); border-radius: 15px; box-shadow: var(--shadow); text-decoration: none; }
+.league-card:nth-child(2n) { border-top-color: var(--accent); }
+.league-card h2 { margin: 14px 0 8px; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
+.league-code { color: var(--muted); font-size: .78rem; font-weight: 900; letter-spacing: .15em; }
+.latest-season { margin: auto 0 4px; color: var(--muted); font-size: .86rem; }
+.latest-champion { min-width: 0; margin: 0; display: flex; align-items: flex-start; gap: 7px; font-weight: 800; overflow-wrap: anywhere; }
+
+.club-chip { width: 1rem; height: 1rem; flex: 0 0 1rem; margin-top: .2em; display: inline-block; border: 2px solid rgb(21 35 31 / 25%); border-radius: 4px; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 45%); }
+.club-link { min-width: 0; min-height: 44px; display: inline-flex; align-items: center; gap: 7px; font-weight: 750; overflow-wrap: anywhere; }
+.club-link .club-chip { margin-top: 0; }
+.season-list, .history-list, .title-ranking, .scorer-list, .position-list, .match-list, .credit-list, .lineage-list { margin: 0; padding: 0; list-style: none; }
+.season-list { display: grid; gap: 8px; }
+.season-row { min-width: 0; padding: 10px 12px; display: grid; grid-template-columns: minmax(9.5rem, .65fr) minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 10px 18px; background: var(--surface-strong); border-radius: 11px; }
+.season-link { min-height: 44px; display: inline-flex; align-items: center; font-weight: 900; }
+.season-champion, .season-scorers { min-width: 0; overflow-wrap: anywhere; }
+.season-champion .club-link { vertical-align: middle; }
+.player-link { min-height: 44px; display: inline-flex; align-items: center; font-weight: 750; overflow-wrap: anywhere; }
+.no-champion { color: var(--danger); }
+.title-ranking { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 18px; }
+.title-row { min-width: 0; padding: 4px 8px; display: grid; grid-template-columns: 3.2rem minmax(0, 1fr) auto; align-items: center; gap: 9px; border-bottom: 1px solid var(--border); }
+.rank { color: var(--muted); font-weight: 800; white-space: nowrap; }
+.history-list { columns: 2; column-gap: 30px; }
+.history-list li { min-width: 0; min-height: 44px; padding: 3px 0; display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); align-items: center; gap: 8px; break-inside: avoid; border-bottom: 1px solid var(--border); }
+.history-season { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.season-winner { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 900; }
+.table-shell { width: 100%; min-width: 0; }
+.standings-table, .opponents-table { width: 100%; table-layout: fixed; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.standings-table th, .standings-table td, .opponents-table th, .opponents-table td { padding: 9px 6px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+.standings-table th:nth-child(1), .standings-table td:nth-child(1) { width: 2.6rem; }
+.standings-table th:nth-child(2), .standings-table td:nth-child(2) { width: 32%; text-align: left; }
+.standings-table td:not(:nth-child(2)), .opponents-table td:not(:first-child) { white-space: nowrap; }
+.standings-table th:not(:nth-child(2)), .opponents-table th:not(:first-child) { white-space: normal; overflow-wrap: break-word; }
+.standings-table td:nth-child(2), .opponents-table td:first-child { overflow-wrap: normal; }
+.standings-table td:nth-child(2) .club-link, .opponents-table td:first-child .club-link { overflow-wrap: normal; word-break: keep-all; }
+.standings-table tr.unreconciled { background: #fff4da; }
+.badge { margin-left: 5px; padding: 2px 6px; display: inline-block; color: #fff; background: var(--muted); border-radius: 999px; font-size: .75rem; font-weight: 900; white-space: nowrap; }
+.champion-badge { background: #9b6413; }
+.relegated-badge { background: var(--danger); }
+.row-note { display: block; color: #744f10; line-height: 1.35; }
+.plain-note, .source-note, .special-note { padding: 10px 14px; background: #fff4da; border-left: 5px solid var(--accent); border-radius: 6px; }
+.footnotes { margin: 16px 0 0; padding-left: 1.35rem; }
+.footnotes li { margin-top: 7px; }
+.scorer-list { display: grid; gap: 5px; }
+.scorer-list li { min-width: 0; min-height: 50px; padding: 4px 8px; display: grid; grid-template-columns: 3.2rem minmax(0, 1fr) minmax(0, 1fr) auto; align-items: center; gap: 8px 12px; border-bottom: 1px solid var(--border); }
+.club-select { min-width: min(100%, 28rem); min-height: 48px; margin: 0 0 16px 10px; padding: 7px 38px 7px 12px; color: var(--ink); background: var(--surface); border: 2px solid var(--primary-bright); border-radius: 10px; }
+.match-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.match-row { min-width: 0; padding: 7px 9px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; background: var(--surface-strong); border-radius: 10px; }
+.match-row .club-link:last-child { justify-content: flex-end; text-align: right; }
+.score-link { min-width: 3.7rem; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--primary); border-radius: 8px; font-size: 1.05rem; font-weight: 900; text-decoration: none; white-space: nowrap; }
+
+.match-hero { min-height: 180px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 22px; text-align: center; }
+.match-club { min-width: 0; min-height: 60px; display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--ink); font-size: 1.25rem; font-weight: 900; overflow-wrap: anywhere; }
+.match-score { padding: 10px 18px; color: #fff; background: var(--primary); border-radius: 12px; font-size: clamp(2rem, 7vw, 4rem); line-height: 1; white-space: nowrap; }
+.scoring-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.scoring-columns h3 { margin: 0 0 8px; overflow-wrap: anywhere; }
+.goal-list { margin: 0; padding: 0; list-style: none; }
+.goal-list li { min-height: 48px; display: grid; grid-template-columns: 4rem minmax(0, 1fr) auto auto; align-items: center; gap: 6px; border-bottom: 1px solid var(--border); }
+.minute { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.club-heading { display: flex; align-items: center; gap: 14px; }
+.club-heading > .club-chip { width: 2.2rem; height: 2.2rem; flex-basis: 2.2rem; margin: 0; border-radius: 8px; }
+.title-total { display: block; margin-bottom: 12px; color: #9b6413; font-size: 2rem; }
+.season-chip-list { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; list-style: none; }
+.season-chip-list li { padding: 5px 10px; background: var(--surface-strong); border-radius: 999px; font-weight: 800; }
+.lineage-list li { min-height: 44px; display: flex; align-items: center; gap: 9px; }
+.position-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 20px; }
+.position-list li { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); }
+.position-list a { min-width: 0; overflow-wrap: anywhere; }
+.opponents-table th:first-child, .opponents-table td:first-child { width: 38%; text-align: left; }
+.opponents-table th:not(:first-child), .opponents-table td:not(:first-child) { white-space: nowrap; }
+.opponents-table details { min-width: 0; }
+.opponents-table summary { min-height: 44px; cursor: pointer; }
+.opponents-table summary .club-link { vertical-align: middle; }
+.opponent-matches { margin: 5px 0 10px; padding-left: 1.25rem; }
+.opponent-matches li { margin: 3px 0; }
+.club-scorers li { grid-template-columns: 3.2rem minmax(0, 1fr) auto; }
+
+.credit-list { display: grid; gap: 8px; }
+.credit-list li { min-height: 44px; overflow-wrap: anywhere; }
+.message-page { min-height: 60vh; display: grid; place-content: center; text-align: center; }
+.button-link, .retry-button { min-height: 48px; padding: 10px 18px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--primary); border: 0; border-radius: 10px; font-weight: 800; text-decoration: none; cursor: pointer; }
+
+@media (max-width: 1050px) {
+  .league-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .match-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .header-inner { padding-inline: 14px; }
+  .page { padding-inline: 14px; }
+  .season-row { grid-template-columns: minmax(9rem, .7fr) minmax(0, 1.3fr); }
+  .season-scorers { grid-column: 1 / -1; }
+  .history-list { columns: 1; }
+  /* 768px+ (iPad portrait and up) keeps the standings and head-to-head
+     tables as real tables — see SPEC Phase 3 criterion 3/5 and the brief's
+     "no horizontal scrolling" rule. Column widths are tightened instead. */
+  .standings-table th, .standings-table td, .opponents-table th, .opponents-table td { padding: 7px 4px; font-size: .92rem; }
+  .standings-table th:nth-child(1), .standings-table td:nth-child(1) { width: 2rem; }
+  .standings-table th:nth-child(2), .standings-table td:nth-child(2) { width: 30%; }
+  .scorer-list li { grid-template-columns: 3rem minmax(0, 1fr) auto; }
+  .scorer-list li .club-link { grid-column: 2; }
+}
+
+/* Only below 600px does the standings / head-to-head table give up being a
+   table: at that width even tightened columns can't hold ten headers next
+   to a wrapping club name without either clipping text or forcing
+   horizontal scroll, so it becomes one label/value pair per row instead. */
+@media (max-width: 599px) {
+  .standings-table, .standings-table tbody, .standings-table tr, .standings-table td,
+  .opponents-table, .opponents-table tbody, .opponents-table tr, .opponents-table td { display: block; }
+  .standings-table thead, .opponents-table thead { display: none; }
+  .standings-table tr, .opponents-table tr { margin-bottom: 10px; padding: 9px 10px; background: var(--surface-strong); border-radius: 11px; }
+  .standings-table tr.unreconciled { background: #fff4da; }
+  .standings-table td, .opponents-table td { width: auto !important; min-height: 38px; padding: 5px 0; display: grid; grid-template-columns: 7.2rem minmax(0, 1fr); align-items: center; gap: 8px; border-bottom-color: rgb(90 105 100 / 22%); text-align: right !important; white-space: normal !important; overflow-wrap: anywhere; font-size: 1rem; }
+  .standings-table td::before, .opponents-table td::before { color: var(--muted); font-weight: 800; text-align: left; }
+  .standings-table td:nth-child(1)::before { content: "順位"; }
+  .standings-table td:nth-child(2)::before { content: "クラブ"; }
+  .standings-table td:nth-child(3)::before { content: "試合"; }
+  .standings-table td:nth-child(4)::before { content: "勝"; }
+  .standings-table td:nth-child(5)::before { content: "分"; }
+  .standings-table td:nth-child(6)::before { content: "負"; }
+  .standings-table td:nth-child(7)::before { content: "得点"; }
+  .standings-table td:nth-child(8)::before { content: "失点"; }
+  .standings-table td:nth-child(9)::before { content: "得失点"; }
+  .standings-table td:nth-child(10)::before { content: "勝点"; }
+  .opponents-table td:nth-child(1)::before { content: "クラブ"; }
+  .opponents-table td:nth-child(2)::before { content: "試合"; }
+  .opponents-table td:nth-child(3)::before { content: "勝"; }
+  .opponents-table td:nth-child(4)::before { content: "分"; }
+  .opponents-table td:nth-child(5)::before { content: "負"; }
+  .opponents-table td:nth-child(6)::before { content: "得点"; }
+  .opponents-table td:nth-child(7)::before { content: "失点"; }
+  .standings-table td:nth-child(2) > *, .opponents-table td:nth-child(1) > * { justify-self: end; text-align: right; }
+}
+
+@media (max-width: 650px) {
+  .header-back-slot { flex-basis: 66px; }
+  .header-back { min-width: 62px; padding-inline: 7px; }
+  .brand-copy small { display: none; }
+  .site-nav a:first-child { display: none; }
+  .panel { padding: 16px; }
+  .league-grid, .title-ranking, .position-list { grid-template-columns: 1fr; }
+  .league-card { min-height: 170px; }
+  .season-row { grid-template-columns: 1fr; }
+  .season-scorers { grid-column: auto; }
+  .match-hero { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; }
+  .match-club { font-size: 1rem; }
+  .match-score { padding-inline: 10px; }
+  .scoring-columns { grid-template-columns: 1fr; }
+}

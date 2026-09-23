@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffffff",
   "headToHead": {
     "Q13391": {
       "d": 1,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q611222",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "Treviso FBC 1993",
     "ja": "ACDトレヴィーゾ2013"
@@ -239,6 +244,32 @@
     {
       "position": 19,
       "season": "it-2005"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q1117426"
+    },
+    {
+      "goals": 1,
+      "player": "Q1607681"
+    },
+    {
+      "goals": 1,
+      "player": "Q331599"
+    },
+    {
+      "goals": 1,
+      "player": "Q44097"
+    },
+    {
+      "goals": 1,
+      "player": "Q521024"
+    },
+    {
+      "goals": 1,
+      "player": "Q725433"
     }
   ]
 }

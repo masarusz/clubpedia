@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffffff",
   "headToHead": {
     "Q10286": {
       "d": 1,
@@ -419,26 +420,56 @@
     }
   },
   "id": "Q657865",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "CD Logroñés",
     "ja": "CDログロニェス"
   },
   "positions": [
     {
-      "position": 15,
-      "season": "es-1992"
-    },
-    {
-      "position": 16,
-      "season": "es-1993"
+      "position": 22,
+      "season": "es-1996"
     },
     {
       "position": 20,
       "season": "es-1994"
     },
     {
-      "position": 22,
-      "season": "es-1996"
+      "position": 16,
+      "season": "es-1993"
+    },
+    {
+      "position": 15,
+      "season": "es-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 17,
+      "player": "Q295746"
+    },
+    {
+      "goals": 2,
+      "player": "Q11684200"
+    },
+    {
+      "goals": 1,
+      "player": "Q3979318"
+    },
+    {
+      "goals": 1,
+      "player": "Q538457"
+    },
+    {
+      "goals": 1,
+      "player": "Q586706"
+    },
+    {
+      "goals": 1,
+      "player": "Q8201602"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q101959": {
       "d": 0,
@@ -335,22 +336,60 @@
     }
   },
   "id": "Q157464",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "KFC Uerdingen 05",
     "ja": "KFCユルディンゲン05"
   },
   "positions": [
     {
-      "position": 17,
-      "season": "de-1992"
+      "position": 18,
+      "season": "de-1995"
     },
     {
       "position": 15,
       "season": "de-1994"
     },
     {
-      "position": 18,
-      "season": "de-1995"
+      "position": 17,
+      "season": "de-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 4,
+      "player": "Q1901472"
+    },
+    {
+      "goals": 1,
+      "player": "Q1227790"
+    },
+    {
+      "goals": 1,
+      "player": "Q1604027"
+    },
+    {
+      "goals": 1,
+      "player": "Q2128222"
+    },
+    {
+      "goals": 1,
+      "player": "Q319911"
+    },
+    {
+      "goals": 1,
+      "player": "Q3293539"
+    },
+    {
+      "goals": 1,
+      "player": "Q463943"
+    },
+    {
+      "goals": 1,
+      "player": "Q714734"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#313055",
   "headToHead": {
     "Q101859": {
       "d": 4,
@@ -971,78 +972,592 @@
     }
   },
   "id": "Q105861",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "VfL Bochum",
     "ja": "VfLボーフム"
   },
   "positions": [
     {
-      "position": 16,
-      "season": "de-1992"
-    },
-    {
-      "position": 16,
-      "season": "de-1994"
-    },
-    {
-      "position": 5,
-      "season": "de-1996"
-    },
-    {
-      "position": 12,
-      "season": "de-1997"
-    },
-    {
-      "position": 17,
-      "season": "de-1998"
-    },
-    {
       "position": 18,
-      "season": "de-2000"
-    },
-    {
-      "position": 9,
-      "season": "de-2002"
-    },
-    {
-      "position": 5,
-      "season": "de-2003"
-    },
-    {
-      "position": 16,
-      "season": "de-2004"
-    },
-    {
-      "position": 8,
-      "season": "de-2006"
-    },
-    {
-      "position": 12,
-      "season": "de-2007"
-    },
-    {
-      "position": 14,
-      "season": "de-2008"
-    },
-    {
-      "position": 17,
-      "season": "de-2009"
-    },
-    {
-      "position": 13,
-      "season": "de-2021"
-    },
-    {
-      "position": 14,
-      "season": "de-2022"
+      "season": "de-2024"
     },
     {
       "position": 16,
       "season": "de-2023"
     },
     {
+      "position": 14,
+      "season": "de-2022"
+    },
+    {
+      "position": 13,
+      "season": "de-2021"
+    },
+    {
+      "position": 17,
+      "season": "de-2009"
+    },
+    {
+      "position": 14,
+      "season": "de-2008"
+    },
+    {
+      "position": 12,
+      "season": "de-2007"
+    },
+    {
+      "position": 8,
+      "season": "de-2006"
+    },
+    {
+      "position": 16,
+      "season": "de-2004"
+    },
+    {
+      "position": 5,
+      "season": "de-2003"
+    },
+    {
+      "position": 9,
+      "season": "de-2002"
+    },
+    {
       "position": 18,
-      "season": "de-2024"
+      "season": "de-2000"
+    },
+    {
+      "position": 17,
+      "season": "de-1998"
+    },
+    {
+      "position": 12,
+      "season": "de-1997"
+    },
+    {
+      "position": 5,
+      "season": "de-1996"
+    },
+    {
+      "position": 16,
+      "season": "de-1994"
+    },
+    {
+      "position": 16,
+      "season": "de-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 29,
+      "player": "Q276207"
+    },
+    {
+      "goals": 28,
+      "player": "Q315327"
+    },
+    {
+      "goals": 28,
+      "player": "Q644323"
+    },
+    {
+      "goals": 24,
+      "player": "Q878703"
+    },
+    {
+      "goals": 22,
+      "player": "Q505800"
+    },
+    {
+      "goals": 20,
+      "player": "Q201885"
+    },
+    {
+      "goals": 19,
+      "player": "Q872125"
+    },
+    {
+      "goals": 18,
+      "player": "Q700558"
+    },
+    {
+      "goals": 15,
+      "player": "Q531386"
+    },
+    {
+      "goals": 14,
+      "player": "Q89371"
+    },
+    {
+      "goals": 13,
+      "player": "Q1624459"
+    },
+    {
+      "goals": 13,
+      "player": "Q650123"
+    },
+    {
+      "goals": 13,
+      "player": "Q977340"
+    },
+    {
+      "goals": 12,
+      "player": "Q11557367"
+    },
+    {
+      "goals": 12,
+      "player": "Q237159"
+    },
+    {
+      "goals": 12,
+      "player": "Q2426747"
+    },
+    {
+      "goals": 12,
+      "player": "Q86523"
+    },
+    {
+      "goals": 11,
+      "player": "Q315421"
+    },
+    {
+      "goals": 10,
+      "player": "Q158243"
+    },
+    {
+      "goals": 10,
+      "player": "Q59627"
+    },
+    {
+      "goals": 10,
+      "player": "Q63866"
+    },
+    {
+      "goals": 9,
+      "player": "Q1390064"
+    },
+    {
+      "goals": 9,
+      "player": "Q38223926"
+    },
+    {
+      "goals": 8,
+      "player": "Q315791"
+    },
+    {
+      "goals": 8,
+      "player": "Q324209"
+    },
+    {
+      "goals": 7,
+      "player": "Q1369162"
+    },
+    {
+      "goals": 7,
+      "player": "Q19842644"
+    },
+    {
+      "goals": 7,
+      "player": "Q47029"
+    },
+    {
+      "goals": 7,
+      "player": "Q56712044"
+    },
+    {
+      "goals": 7,
+      "player": "Q657182"
+    },
+    {
+      "goals": 7,
+      "player": "Q686352"
+    },
+    {
+      "goals": 7,
+      "player": "Q724466"
+    },
+    {
+      "goals": 7,
+      "player": "Q75181"
+    },
+    {
+      "goals": 6,
+      "player": "Q1355809"
+    },
+    {
+      "goals": 6,
+      "player": "Q1370602"
+    },
+    {
+      "goals": 6,
+      "player": "Q33135565"
+    },
+    {
+      "goals": 6,
+      "player": "Q355837"
+    },
+    {
+      "goals": 6,
+      "player": "Q437241"
+    },
+    {
+      "goals": 6,
+      "player": "Q508665"
+    },
+    {
+      "goals": 6,
+      "player": "Q568265"
+    },
+    {
+      "goals": 6,
+      "player": "Q61568"
+    },
+    {
+      "goals": 6,
+      "player": "Q62796"
+    },
+    {
+      "goals": 6,
+      "player": "Q685780"
+    },
+    {
+      "goals": 6,
+      "player": "Q76322"
+    },
+    {
+      "goals": 6,
+      "player": "Q870300"
+    },
+    {
+      "goals": 6,
+      "player": "Q926817"
+    },
+    {
+      "goals": 5,
+      "player": "Q16212911"
+    },
+    {
+      "goals": 5,
+      "player": "Q207158"
+    },
+    {
+      "goals": 5,
+      "player": "Q346635"
+    },
+    {
+      "goals": 5,
+      "player": "Q56434073"
+    },
+    {
+      "goals": 5,
+      "player": "Q573540"
+    },
+    {
+      "goals": 5,
+      "player": "Q653463"
+    },
+    {
+      "goals": 4,
+      "player": "Q1080288"
+    },
+    {
+      "goals": 4,
+      "player": "Q169158"
+    },
+    {
+      "goals": 4,
+      "player": "Q1711285"
+    },
+    {
+      "goals": 4,
+      "player": "Q1984073"
+    },
+    {
+      "goals": 4,
+      "player": "Q202193"
+    },
+    {
+      "goals": 4,
+      "player": "Q21130257"
+    },
+    {
+      "goals": 4,
+      "player": "Q220538"
+    },
+    {
+      "goals": 4,
+      "player": "Q23008168"
+    },
+    {
+      "goals": 4,
+      "player": "Q385742"
+    },
+    {
+      "goals": 4,
+      "player": "Q447646"
+    },
+    {
+      "goals": 4,
+      "player": "Q876336"
+    },
+    {
+      "goals": 4,
+      "player": "Q877486"
+    },
+    {
+      "goals": 3,
+      "player": "Q1225986"
+    },
+    {
+      "goals": 3,
+      "player": "Q1396846"
+    },
+    {
+      "goals": 3,
+      "player": "Q16236424"
+    },
+    {
+      "goals": 3,
+      "player": "Q17578282"
+    },
+    {
+      "goals": 3,
+      "player": "Q1772472"
+    },
+    {
+      "goals": 3,
+      "player": "Q1938276"
+    },
+    {
+      "goals": 3,
+      "player": "Q2371012"
+    },
+    {
+      "goals": 3,
+      "player": "Q313780"
+    },
+    {
+      "goals": 3,
+      "player": "Q38041682"
+    },
+    {
+      "goals": 3,
+      "player": "Q501333"
+    },
+    {
+      "goals": 3,
+      "player": "Q72735"
+    },
+    {
+      "goals": 2,
+      "player": "Q1164511"
+    },
+    {
+      "goals": 2,
+      "player": "Q1360542"
+    },
+    {
+      "goals": 2,
+      "player": "Q1548823"
+    },
+    {
+      "goals": 2,
+      "player": "Q1885"
+    },
+    {
+      "goals": 2,
+      "player": "Q209769"
+    },
+    {
+      "goals": 2,
+      "player": "Q20995048"
+    },
+    {
+      "goals": 2,
+      "player": "Q25350200"
+    },
+    {
+      "goals": 2,
+      "player": "Q25476"
+    },
+    {
+      "goals": 2,
+      "player": "Q269007"
+    },
+    {
+      "goals": 2,
+      "player": "Q276424"
+    },
+    {
+      "goals": 2,
+      "player": "Q28831156"
+    },
+    {
+      "goals": 2,
+      "player": "Q28935480"
+    },
+    {
+      "goals": 2,
+      "player": "Q29999471"
+    },
+    {
+      "goals": 2,
+      "player": "Q311246"
+    },
+    {
+      "goals": 2,
+      "player": "Q318595"
+    },
+    {
+      "goals": 2,
+      "player": "Q577471"
+    },
+    {
+      "goals": 2,
+      "player": "Q66432974"
+    },
+    {
+      "goals": 2,
+      "player": "Q667871"
+    },
+    {
+      "goals": 2,
+      "player": "Q677586"
+    },
+    {
+      "goals": 2,
+      "player": "Q68783"
+    },
+    {
+      "goals": 2,
+      "player": "Q726192"
+    },
+    {
+      "goals": 2,
+      "player": "Q792379"
+    },
+    {
+      "goals": 1,
+      "player": "Q1218885"
+    },
+    {
+      "goals": 1,
+      "player": "Q1349530"
+    },
+    {
+      "goals": 1,
+      "player": "Q18235659"
+    },
+    {
+      "goals": 1,
+      "player": "Q1908490"
+    },
+    {
+      "goals": 1,
+      "player": "Q1927916"
+    },
+    {
+      "goals": 1,
+      "player": "Q2018084"
+    },
+    {
+      "goals": 1,
+      "player": "Q2064088"
+    },
+    {
+      "goals": 1,
+      "player": "Q22675674"
+    },
+    {
+      "goals": 1,
+      "player": "Q27662863"
+    },
+    {
+      "goals": 1,
+      "player": "Q27995759"
+    },
+    {
+      "goals": 1,
+      "player": "Q325707"
+    },
+    {
+      "goals": 1,
+      "player": "Q340501"
+    },
+    {
+      "goals": 1,
+      "player": "Q3560510"
+    },
+    {
+      "goals": 1,
+      "player": "Q35831526"
+    },
+    {
+      "goals": 1,
+      "player": "Q434750"
+    },
+    {
+      "goals": 1,
+      "player": "Q447128"
+    },
+    {
+      "goals": 1,
+      "player": "Q49806"
+    },
+    {
+      "goals": 1,
+      "player": "Q5372527"
+    },
+    {
+      "goals": 1,
+      "player": "Q567434"
+    },
+    {
+      "goals": 1,
+      "player": "Q591508"
+    },
+    {
+      "goals": 1,
+      "player": "Q6097120"
+    },
+    {
+      "goals": 1,
+      "player": "Q647269"
+    },
+    {
+      "goals": 1,
+      "player": "Q667535"
+    },
+    {
+      "goals": 1,
+      "player": "Q696768"
+    },
+    {
+      "goals": 1,
+      "player": "Q719435"
+    },
+    {
+      "goals": 1,
+      "player": "Q85537031"
+    },
+    {
+      "goals": 1,
+      "player": "Q869577"
+    },
+    {
+      "goals": 1,
+      "player": "Q90117"
+    },
+    {
+      "goals": 1,
+      "player": "Q973981"
+    },
+    {
+      "goals": 1,
+      "player": "Q980450"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#000000",
   "headToHead": {
     "Q101959": {
       "d": 0,
@@ -207,6 +208,10 @@
     }
   },
   "id": "Q157463",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "1. FC Saarbrücken",
     "ja": "1.FCザールブリュッケン"
@@ -215,6 +220,16 @@
     {
       "position": 18,
       "season": "de-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q1256463"
+    },
+    {
+      "goals": 1,
+      "player": "Q1541443"
     }
   ]
 }

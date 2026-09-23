@@ -11,6 +11,18 @@ export const LEAGUE_INFO = Object.freeze({
   fr: { name: 'リーグ・アン', championList: 'List of French football champions', championColumn: 2, first: 1932, scorerList: 'List of Ligue 1 top scorers' },
 });
 
+/** First-choice kit colour from a football-club infobox. */
+export function clubKitColour(articleText) {
+  const infobox = findTemplates(articleText).find((template) => /^infobox football club$/i.test(template.name.trim()));
+  if (!infobox) return null;
+  for (const key of ['body1', 'shorts1']) {
+    const raw = Object.entries(infobox.params).find(([name]) => name.trim().toLowerCase() === key)?.[1];
+    const value = plainText(raw ?? '').trim().replace(/^#/, '');
+    if (/^(?:[0-9a-f]{3}|[0-9a-f]{6})$/i.test(value)) return `#${value.toLowerCase()}`;
+  }
+  return null;
+}
+
 export async function readCached(cacheRoot, wiki, title) {
   return JSON.parse(await readFile(join(cacheRoot, wiki, `${safeName(title)}.json`), 'utf8'));
 }

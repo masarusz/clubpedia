@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ef0000",
   "headToHead": {
     "Q101859": {
       "d": 4,
@@ -477,18 +478,26 @@
     }
   },
   "id": "Q107818",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "FC Energie Cottbus",
     "ja": "エネルギー・コットブス"
   },
   "positions": [
     {
+      "position": 16,
+      "season": "de-2008"
+    },
+    {
       "position": 14,
-      "season": "de-2000"
+      "season": "de-2007"
     },
     {
       "position": 13,
-      "season": "de-2001"
+      "season": "de-2006"
     },
     {
       "position": 18,
@@ -496,15 +505,105 @@
     },
     {
       "position": 13,
-      "season": "de-2006"
+      "season": "de-2001"
     },
     {
       "position": 14,
-      "season": "de-2007"
+      "season": "de-2000"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 14,
+      "player": "Q1972904"
     },
     {
-      "position": 16,
-      "season": "de-2008"
+      "goals": 6,
+      "player": "Q717131"
+    },
+    {
+      "goals": 4,
+      "player": "Q731022"
+    },
+    {
+      "goals": 3,
+      "player": "Q656593"
+    },
+    {
+      "goals": 2,
+      "player": "Q1336341"
+    },
+    {
+      "goals": 2,
+      "player": "Q172188"
+    },
+    {
+      "goals": 2,
+      "player": "Q2338559"
+    },
+    {
+      "goals": 2,
+      "player": "Q239971"
+    },
+    {
+      "goals": 2,
+      "player": "Q49795"
+    },
+    {
+      "goals": 2,
+      "player": "Q878098"
+    },
+    {
+      "goals": 1,
+      "player": "Q1160986"
+    },
+    {
+      "goals": 1,
+      "player": "Q179279"
+    },
+    {
+      "goals": 1,
+      "player": "Q258495"
+    },
+    {
+      "goals": 1,
+      "player": "Q272727"
+    },
+    {
+      "goals": 1,
+      "player": "Q349656"
+    },
+    {
+      "goals": 1,
+      "player": "Q382910"
+    },
+    {
+      "goals": 1,
+      "player": "Q482992"
+    },
+    {
+      "goals": 1,
+      "player": "Q515068"
+    },
+    {
+      "goals": 1,
+      "player": "Q610019"
+    },
+    {
+      "goals": 1,
+      "player": "Q695858"
+    },
+    {
+      "goals": 1,
+      "player": "Q711319"
+    },
+    {
+      "goals": 1,
+      "player": "Q88215"
+    },
+    {
+      "goals": 1,
+      "player": "Q953497"
     }
   ]
 }

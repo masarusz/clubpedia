@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q10286": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q257984",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "Gimnàstic de Tarragona",
     "ja": "ジムナスティック・タラゴナ"
@@ -239,6 +244,20 @@
     {
       "position": 20,
       "season": "es-2006"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 2,
+      "player": "Q350823"
+    },
+    {
+      "goals": 1,
+      "player": "Q748311"
+    },
+    {
+      "goals": 1,
+      "player": "Q8183894"
     }
   ]
 }

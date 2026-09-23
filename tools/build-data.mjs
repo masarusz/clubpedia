@@ -4,7 +4,7 @@ import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { stableJson } from './lib/source-api.mjs';
-import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, discrepancies, matchOutcome, metadataIndex, normalizeTitle, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
+import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, clubKitColour, discrepancies, matchOutcome, metadataIndex, normalizeTitle, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
 import { attachScorers } from './lib/build-scorers.mjs';
 import { linkPlayerName, reconciledGoals } from './lib/openligadb.mjs';
 import { buildPlayers, sanitizeScorerIdentities } from './lib/players.mjs';
@@ -144,8 +144,8 @@ export async function build() {
   // Phase 2b: players (scorers, top-scorer table entries, exactly the 101
   // Japanese players pinned from the foreign-player lists).
   const japanesePlayers = Object.entries(lock.enwiki).filter(([, record]) => record.kind === 'japanese-player' && !record.missing).map(([title]) => title).sort();
-  const playersResult = await buildPlayers({ seasons, metadata, cacheRoot: CACHE, japanesePlayers, japaneseExceptions, japaneseClubAliases, birthCorrections });
   const listEntries = await foreignListEntries({ lock, metadata, cacheRoot: CACHE });
+  const playersResult = await buildPlayers({ seasons, metadata, cacheRoot: CACHE, japanesePlayers, japaneseListEntries: listEntries, japaneseExceptions, japaneseClubAliases, birthCorrections });
   const japaneseCrossCheck = crossCheckJapanesePlayers(playersResult.players, listEntries);
   const candidatesBySeasonClub = new Map();
   for (const player of playersResult.players.values()) for (const bucket of player.seasons) {
@@ -296,9 +296,9 @@ export async function build() {
   for (const season of seasons) {
     const clubMap = seasonClubPlayers.get(season.id);
     const players = clubMap ? Object.fromEntries([...clubMap].sort(([a], [b]) => a.localeCompare(b))) : {};
-    const output = { id: season.id, league: season.league, year: season.year, champion: season.champion, table: season.table.map(({ code, sourceName, sourceTarget, ...row }) => row), matches: season.matches.map(({ gridValue, ...match }) => match), topScorers: season.topScorers, players };
+    const output = { id: season.id, league: season.league, year: season.year, pointSystem: season.pointSystem, champion: season.champion, table: season.table.map(({ code, sourceName, sourceTarget, ...row }) => row), matches: season.matches.map(({ gridValue, ...match }) => match), topScorers: season.topScorers, players };
     await writeFile(join(OUTPUT, 's', `${season.id}.json`), stableJson(output));
-    compactSeasons.push({ id: season.id, label: `${season.year}–${String(season.year + 1).slice(-2)}`, champion: season.champion, topScorers: season.topScorers.filter((entry) => entry.rank === 1).map((entry) => ({ player: entry.player, goals: entry.goals })) });
+    compactSeasons.push({ id: season.id, label: `${season.year}–${String(season.year + 1).slice(-2)}`, champion: season.champion, topScorers: season.topScorers.filter((entry) => entry.rank === 1).map((entry) => ({ playerId: entry.playerId, goals: entry.goals, ...(!entry.playerId ? { player: entry.player } : {}) })) });
   }
 
   // OpenLigaDB (ODbL) goal events, one file per Bundesliga season, never
@@ -329,7 +329,30 @@ export async function build() {
   })).sort((a, b) => a.id.localeCompare(b.id));
   await writeFile(join(OUTPUT, 'japan.json'), stableJson({ players: japanPlayers }));
 
-  const clubData = new Map([...clubs].map(([id, names]) => [id, { id, names: { en: names.enTitle, ja: names.jaName }, championSeasons: [], positions: [], headToHead: {} }]));
+  const clubColours = new Map();
+  for (const [id, names] of clubs) {
+    let colour = null;
+    try { colour = clubKitColour((await readCached(CACHE, 'enwiki', names.enTitle)).content); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+    clubColours.set(id, colour);
+  }
+  const lineageFor = (id) => [
+    ...(previousClubs[id]?.lineage ?? []),
+    ...Object.entries(previousClubs).flatMap(([otherId, entry]) => (entry.lineage ?? [])
+      .filter((link) => link.club === id)
+      .map((link) => ({ club: otherId, relation: link.relation === 'successor' ? 'predecessor' : 'successor' }))),
+  ];
+  const clubData = new Map([...clubs].map(([id, names]) => [id, {
+    id,
+    names: { en: names.enTitle, ja: names.jaName },
+    colour: clubColours.get(id),
+    leagues: [...new Set(names.seasons.map((season) => season.slice(0, 2)))].sort(),
+    lineage: lineageFor(id),
+    championSeasons: [],
+    positions: [],
+    headToHead: {},
+    topScorers: [],
+  }]));
   for (const [league, champions] of Object.entries(championsByLeague)) for (const item of champions) if (item.champion) {
     const canonical = successorClub(item.champion, previousClubs);
     if (clubData.has(canonical)) clubData.get(canonical).championSeasons.push({ league, season: item.season, ...(canonical !== item.champion ? { predecessor: item.champion } : {}) });
@@ -346,11 +369,34 @@ export async function build() {
       clubData.get(club).headToHead[opponent] = h2h;
     }
   }
+  const scorerTotals = new Map();
+  for (const [playerId, player] of playersResult.players) for (const bucket of player.seasons) {
+    if (!bucket.club || !clubData.has(bucket.club) || !Number.isFinite(bucket.goals) || bucket.goals <= 0) continue;
+    const key = `${bucket.club}|${playerId}`;
+    scorerTotals.set(key, (scorerTotals.get(key) ?? 0) + bucket.goals);
+  }
+  for (const [key, goals] of scorerTotals) {
+    const [clubId, player] = key.split('|');
+    clubData.get(clubId).topScorers.push({ player, goals });
+  }
+  for (const data of clubData.values()) {
+    data.championSeasons.sort((a, b) => b.season.localeCompare(a.season));
+    data.positions.sort((a, b) => b.season.localeCompare(a.season));
+    data.topScorers.sort((a, b) => b.goals - a.goals || a.player.localeCompare(b.player));
+  }
   for (const [id, data] of clubData) await writeFile(join(OUTPUT, 'c', `${id}.json`), stableJson(data));
   for (const league of Object.keys(LEAGUE_INFO)) {
     await writeFile(join(OUTPUT, 'h', `${league}.json`), stableJson({ league, fingerprint, champions: championsByLeague[league], topScorers: historicalTopScorers[league] }));
   }
-  const index = { fingerprint, leagues: Object.entries(LEAGUE_INFO).map(([id, info]) => ({ id, name: info.name })), seasons: compactSeasons };
+  const index = {
+    fingerprint,
+    leagues: Object.entries(LEAGUE_INFO).map(([id, info]) => {
+      const latest = compactSeasons.filter((season) => season.id.startsWith(`${id}-`)).sort((a, b) => b.id.localeCompare(a.id))[0];
+      const club = latest?.champion ? clubs.get(latest.champion) : null;
+      return { id, name: info.name, latest: latest ? { season: latest.label, champion: latest.champion ? { id: latest.champion, name: club.jaName, colour: clubColours.get(latest.champion) } : null } : null };
+    }),
+    seasons: compactSeasons,
+  };
   const indexPath = join(OUTPUT, 'index.json');
   await writeFile(indexPath, stableJson(index));
   const indexBytes = (await stat(indexPath)).size;

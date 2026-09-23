@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { normalizeTitle } from './core-data.mjs';
 import { articleJapaneseName, needsJapaneseReading, preferKatakanaOrLatin, rubyFromLead } from './japanese-names.mjs';
-import { topFlightLeague, parseDomesticSeasons } from './japan-domestic.mjs';
+import { topFlightLeague, parseDomesticSeasons, parseEnglishCareerSeasons } from './japan-domestic.mjs';
 import { safeName } from './source-api.mjs';
 import { plainText } from './wikitext.mjs';
 
@@ -112,7 +112,7 @@ function reverseByWikibase(metadata) {
  * league goal, appears in a top-scorer table, or is one of the 101 Japanese
  * players (jawiki 個人成績). Never keyed by name + birth date.
  */
-export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlayers, japaneseExceptions = [], japaneseClubAliases = {}, birthCorrections = [] }) {
+export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlayers, japaneseListEntries = [], japaneseExceptions = [], japaneseClubAliases = {}, birthCorrections = [] }) {
   const cache = new Map();
   const players = new Map();
   const byJaTitle = reverseByJaTitle(metadata);
@@ -182,8 +182,46 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
       let bucket = player.seasons.find((item) => item.league === league && item.season === seasonId && item.club === clubId);
       if (!bucket) { bucket = { league, season: seasonId, club: clubId, apps: entry.apps, goals: entry.goals, topScorerRank: null }; player.seasons.push(bucket); }
       else { bucket.apps = entry.apps; bucket.goals = Math.max(bucket.goals, entry.goals); }
-      player.japan.push({ season: entry.season, league, club: clubId, apps: entry.apps, goals: entry.goals });
+      player.japan.push({ season: entry.season, league, club: clubId, apps: entry.apps, goals: entry.goals, source: 'ja' });
       qualifying += 1;
+    }
+
+    // The foreign-player list establishes that the player took part in the
+    // top flight. Fill only list-confirmed, in-window gaps, preferring the
+    // English career table's league columns and otherwise keeping null stats.
+    const expected = japaneseListEntries.filter((entry) => entry.player === id);
+    if (expected.length) {
+      const enFile = `${safeName(enTitle)}.json`;
+      const enContent = JSON.parse(await readFile(join(cacheRoot, 'enwiki', enFile), 'utf8')).content;
+      const english = parseEnglishCareerSeasons(enContent);
+      for (const listEntry of expected) {
+        for (let year = 1992; year <= 2025; year += 1) {
+          const listed = listEntry.years.some((range) => year >= range.start && (range.endExclusive == null || year < range.endExclusive));
+          if (!listed || player.japan.some((item) => item.league === listEntry.league && Number(item.season.slice(0, 4)) === year)) continue;
+          const label = `${year}\u2013${String((year + 1) % 100).padStart(2, '0')}`;
+          const enRow = english.find((item) => item.league === listEntry.league && Number(item.season.slice(0, 4)) === year);
+          // A list row can contain several clubs without pairing each one to
+          // a season range. When enwiki has no row, only a single listed club
+          // is unambiguous enough to publish.
+          if (!enRow && listEntry.clubs.length !== 1) continue;
+          const clubName = enRow?.clubTarget ?? (enRow ? plainText(enRow.clubRaw).trim() : null);
+          const clubMeta = enRow?.clubTarget ? metadata.get(normalizeTitle(enRow.clubTarget)) : null;
+          const clubId = clubMeta?.wikibaseItem ?? japaneseClubAliases[clubName] ?? (listEntry.clubs.length === 1 ? listEntry.clubs[0] : null);
+          if (!clubId) japaneseUnmappedClubs.push({ player: id, en: enTitle, season: label, club: clubName, league: listEntry.league });
+          const item = { season: label, league: listEntry.league, club: clubId, apps: enRow?.apps ?? null, goals: enRow?.goals ?? null, source: enRow ? 'en' : 'list' };
+          player.japan.push(item);
+          const seasonId = `${listEntry.league}-${year}`;
+          let bucket = player.seasons.find((row) => row.league === listEntry.league && row.season === seasonId && row.club === clubId);
+          if (!bucket) {
+            bucket = { league: listEntry.league, season: seasonId, club: clubId, apps: item.apps, goals: item.goals, topScorerRank: null };
+            player.seasons.push(bucket);
+          } else {
+            bucket.apps = item.apps;
+            if (item.goals != null) bucket.goals = Math.max(bucket.goals ?? 0, item.goals);
+          }
+          qualifying += 1;
+        }
+      }
     }
     if (!qualifying) japaneseMissingSeasons.push({ player: id, en: enTitle, jaTitle, reason: 'no parsed top-flight season in the five leagues' });
   }

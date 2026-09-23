@@ -2,7 +2,7 @@
   "championSeasons": [
     {
       "league": "de",
-      "season": "1914"
+      "season": "1929"
     },
     {
       "league": "de",
@@ -10,9 +10,10 @@
     },
     {
       "league": "de",
-      "season": "1929"
+      "season": "1914"
     }
   ],
+  "colour": "#ffefdd",
   "headToHead": {
     "Q101859": {
       "d": 1,
@@ -314,6 +315,10 @@
     }
   },
   "id": "Q153539",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "SpVgg Greuther Fürth",
     "ja": "SpVggグロイター・フュルト"
@@ -321,11 +326,109 @@
   "positions": [
     {
       "position": 18,
-      "season": "de-2012"
+      "season": "de-2021"
     },
     {
       "position": 18,
-      "season": "de-2021"
+      "season": "de-2012"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 9,
+      "player": "Q898547"
+    },
+    {
+      "goals": 5,
+      "player": "Q65964628"
+    },
+    {
+      "goals": 4,
+      "player": "Q1990685"
+    },
+    {
+      "goals": 3,
+      "player": "Q219026"
+    },
+    {
+      "goals": 3,
+      "player": "Q327865"
+    },
+    {
+      "goals": 2,
+      "player": "Q203037"
+    },
+    {
+      "goals": 2,
+      "player": "Q22965497"
+    },
+    {
+      "goals": 2,
+      "player": "Q2388894"
+    },
+    {
+      "goals": 2,
+      "player": "Q506532"
+    },
+    {
+      "goals": 2,
+      "player": "Q94579243"
+    },
+    {
+      "goals": 1,
+      "player": "Q1291178"
+    },
+    {
+      "goals": 1,
+      "player": "Q14466377"
+    },
+    {
+      "goals": 1,
+      "player": "Q2107476"
+    },
+    {
+      "goals": 1,
+      "player": "Q264594"
+    },
+    {
+      "goals": 1,
+      "player": "Q276356"
+    },
+    {
+      "goals": 1,
+      "player": "Q296194"
+    },
+    {
+      "goals": 1,
+      "player": "Q447646"
+    },
+    {
+      "goals": 1,
+      "player": "Q62019307"
+    },
+    {
+      "goals": 1,
+      "player": "Q65964469"
+    },
+    {
+      "goals": 1,
+      "player": "Q67631"
+    },
+    {
+      "goals": 1,
+      "player": "Q705264"
+    },
+    {
+      "goals": 1,
+      "player": "Q72894"
+    },
+    {
+      "goals": 1,
+      "player": "Q819171"
+    },
+    {
+      "goals": 1,
+      "player": "Q95335"
     }
   ]
 }

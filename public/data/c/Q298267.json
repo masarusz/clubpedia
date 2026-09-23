@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q1132418": {
       "d": 1,
@@ -449,30 +450,48 @@
     }
   },
   "id": "Q298267",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "AS Cannes",
     "ja": "ASカンヌ"
   },
   "positions": [
     {
-      "position": 6,
-      "season": "fr-1993"
-    },
-    {
-      "position": 9,
-      "season": "fr-1994"
-    },
-    {
-      "position": 14,
-      "season": "fr-1995"
+      "position": 18,
+      "season": "fr-1997"
     },
     {
       "position": 15,
       "season": "fr-1996"
     },
     {
-      "position": 18,
-      "season": "fr-1997"
+      "position": 14,
+      "season": "fr-1995"
+    },
+    {
+      "position": 9,
+      "season": "fr-1994"
+    },
+    {
+      "position": 6,
+      "season": "fr-1993"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 18,
+      "player": "Q3082250"
+    },
+    {
+      "goals": 13,
+      "player": "Q373339"
+    },
+    {
+      "goals": 12,
+      "player": "Q2966290"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#008000",
   "headToHead": {
     "Q126334": {
       "d": 2,
@@ -441,30 +442,60 @@
     }
   },
   "id": "Q608988",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "CS Sedan Ardennes",
     "ja": "CSスダン・アルデンヌ"
   },
   "positions": [
     {
-      "position": 7,
-      "season": "fr-1999"
-    },
-    {
-      "position": 5,
-      "season": "fr-2000"
-    },
-    {
-      "position": 14,
-      "season": "fr-2001"
+      "position": 19,
+      "season": "fr-2006"
     },
     {
       "position": 19,
       "season": "fr-2002"
     },
     {
-      "position": 19,
-      "season": "fr-2006"
+      "position": 14,
+      "season": "fr-2001"
+    },
+    {
+      "position": 5,
+      "season": "fr-2000"
+    },
+    {
+      "position": 7,
+      "season": "fr-1999"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 14,
+      "player": "Q316799"
+    },
+    {
+      "goals": 2,
+      "player": "Q1886882"
+    },
+    {
+      "goals": 2,
+      "player": "Q3266103"
+    },
+    {
+      "goals": 1,
+      "player": "Q1363722"
+    },
+    {
+      "goals": 1,
+      "player": "Q1367255"
+    },
+    {
+      "goals": 1,
+      "player": "Q977410"
     }
   ]
 }

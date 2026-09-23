@@ -35,6 +35,7 @@ const ENWIKI_API = 'https://en.wikipedia.org/w/api.php';
 const JAWIKI_API = 'https://ja.wikipedia.org/w/api.php';
 const WIKIDATA_API = 'https://www.wikidata.org/w/api.php';
 const OPENFOOTBALL_REPO = 'openfootball/football.json';
+const PROJECT_ROOT = resolve(import.meta.dirname, '..');
 
 export const CHAMPION_LISTS = Object.freeze([
   'List of English football champions',
@@ -451,6 +452,15 @@ export async function runFetchSources(options = {}) {
   const listTitles = options.listTitles ?? [...CHAMPION_LISTS, ...TOP_SCORER_LISTS, ...FOREIGN_PLAYER_LISTS];
   const topScorerLists = new Set(options.topScorerLists ?? TOP_SCORER_LISTS);
   const foreignLists = new Set(options.foreignLists ?? FOREIGN_PLAYER_LISTS);
+  let clubArticles = options.clubArticles;
+  if (clubArticles == null) {
+    const customFixtureRun = ['leagues', 'startYears', 'listTitles'].some((key) => Object.hasOwn(options, key));
+    if (customFixtureRun) clubArticles = [];
+    else {
+      const curated = await readJson(join(PROJECT_ROOT, 'curated/clubs.json'));
+      clubArticles = Object.values(curated).map((club) => club.enTitle).filter(Boolean);
+    }
+  }
 
   if (!refresh) {
     await fetchPinnedPages({ requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, lock });
@@ -507,6 +517,7 @@ export async function runFetchSources(options = {}) {
       const page = listPages.get(title);
       if (page && !page.missing) for (const target of championClubTargets(page.content, league)) clubTargets.add(target);
     }
+    for (const title of clubArticles) clubTargets.add(title);
     const clubSeasonSpecs = [];
     for (const spec of seasonSpecs) {
       const article = seasonPages.get(spec.title);
@@ -558,6 +569,9 @@ export async function runFetchSources(options = {}) {
       }
     }
     await fetchMetadata({ requester, root, titles: [...clubTargets, ...playerTargets], lock, saveLock });
+    await fetchCurrentPages({
+      requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, titles: clubArticles, kind: 'club', lock, saveLock,
+    });
     const entityIds = Object.values(lock.metadata).map((record) => record.wikibaseItem).filter(Boolean);
     await fetchWikidataCurrent({ requester, root, ids: entityIds, lock, saveLock });
     const japaneseEnPages = await fetchCurrentPages({

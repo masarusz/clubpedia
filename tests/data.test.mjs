@@ -245,6 +245,16 @@ export function register(test, equal, deepEqual) {
     equal(havenaar.ja.mode, 'katakana'); equal(havenaar.ja.display, 'ハーフナー マイク');
     const fujita = japan.players.find((player) => player.en === 'Joel Chima Fujita');
     equal(fujita.ja.ruby, '{藤田|ふじた} {譲瑠|じょえる}チマ');
+
+    const ao = japan.players.find((player) => player.id === 'Q27920148');
+    deepEqual(ao.seasons.find((season) => season.season === '2025–26' && season.league === 'en'), {
+      apps: 28, club: 'Q1128631', goals: 2, league: 'en', season: '2025–26', source: 'en',
+    });
+    const hara = japan.players.find((player) => player.id === 'Q39244620');
+    deepEqual(hara.seasons.find((season) => season.season === '2025–26' && season.league === 'de'), {
+      apps: 4, club: 'Q6463', goals: 0, league: 'de', season: '2025–26', source: 'en',
+    });
+    equal(japan.players.flatMap((player) => player.seasons).every((season) => ['ja', 'en', 'list'].includes(season.source)), true);
   });
 
   test('wrong-person scorer links are nulled and the curated Quaresma date is applied', async () => {

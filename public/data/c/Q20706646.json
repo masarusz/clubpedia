@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": null,
   "headToHead": {
     "Q13391": {
       "d": 0,
@@ -207,6 +208,15 @@
     }
   },
   "id": "Q20706646",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [
+    {
+      "club": "Q108749828",
+      "relation": "successor"
+    }
+  ],
   "names": {
     "en": "AC Ancona",
     "ja": "ACアンコーナ"
@@ -215,6 +225,32 @@
     {
       "position": 18,
       "season": "it-2003"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q1140277"
+    },
+    {
+      "goals": 1,
+      "player": "Q1407765"
+    },
+    {
+      "goals": 1,
+      "player": "Q348860"
+    },
+    {
+      "goals": 1,
+      "player": "Q351934"
+    },
+    {
+      "goals": 1,
+      "player": "Q352297"
+    },
+    {
+      "goals": 1,
+      "player": "Q703956"
     }
   ]
 }

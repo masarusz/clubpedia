@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q108749828": {
       "d": 0,
@@ -335,22 +336,56 @@
     }
   },
   "id": "Q139399",
+  "leagues": [
+    "it"
+  ],
+  "lineage": [],
   "names": {
     "en": "Calcio Foggia 1920",
     "ja": "カルチョ・フォッジャ1920"
   },
   "positions": [
     {
-      "position": 12,
-      "season": "it-1992"
+      "position": 16,
+      "season": "it-1994"
     },
     {
       "position": 9,
       "season": "it-1993"
     },
     {
-      "position": 16,
-      "season": "it-1994"
+      "position": 12,
+      "season": "it-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 14,
+      "player": "Q238857"
+    },
+    {
+      "goals": 6,
+      "player": "Q314053"
+    },
+    {
+      "goals": 5,
+      "player": "Q1359619"
+    },
+    {
+      "goals": 3,
+      "player": "Q3894212"
+    },
+    {
+      "goals": 2,
+      "player": "Q1538897"
+    },
+    {
+      "goals": 1,
+      "player": "Q582260"
+    },
+    {
+      "goals": 1,
+      "player": "Q677725"
     }
   ]
 }

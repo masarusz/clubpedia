@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffd700",
   "headToHead": {
     "Q1128631": {
       "d": 1,
@@ -299,18 +300,48 @@
     }
   },
   "id": "Q48879",
+  "leagues": [
+    "en"
+  ],
+  "lineage": [],
   "names": {
     "en": "Bradford City A.F.C.",
     "ja": "ブラッドフォード・シティAFC"
   },
   "positions": [
     {
-      "position": 17,
-      "season": "en-1999"
-    },
-    {
       "position": 20,
       "season": "en-2000"
+    },
+    {
+      "position": 17,
+      "season": "en-1999"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 2,
+      "player": "Q1181147"
+    },
+    {
+      "goals": 2,
+      "player": "Q541603"
+    },
+    {
+      "goals": 1,
+      "player": "Q1093679"
+    },
+    {
+      "goals": 1,
+      "player": "Q1540229"
+    },
+    {
+      "goals": 1,
+      "player": "Q1983384"
+    },
+    {
+      "goals": 1,
+      "player": "Q706113"
     }
   ]
 }

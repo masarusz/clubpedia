@@ -2,13 +2,14 @@
   "championSeasons": [
     {
       "league": "fr",
-      "season": "1934–35"
+      "season": "1937–38"
     },
     {
       "league": "fr",
-      "season": "1937–38"
+      "season": "1934–35"
     }
   ],
+  "colour": "#0b1031",
   "headToHead": {
     "Q1056987": {
       "d": 0,
@@ -1050,78 +1051,312 @@
     }
   },
   "id": "Q19512",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "FC Sochaux-Montbéliard",
     "ja": "FCソショー＝モンベリアル"
   },
   "positions": [
     {
-      "position": 16,
-      "season": "fr-1992"
-    },
-    {
-      "position": 14,
-      "season": "fr-1993"
-    },
-    {
-      "position": 20,
-      "season": "fr-1994"
-    },
-    {
-      "position": 17,
-      "season": "fr-1998"
-    },
-    {
-      "position": 8,
-      "season": "fr-2001"
-    },
-    {
-      "position": 5,
-      "season": "fr-2002"
-    },
-    {
-      "position": 5,
-      "season": "fr-2003"
-    },
-    {
-      "position": 10,
-      "season": "fr-2004"
-    },
-    {
-      "position": 15,
-      "season": "fr-2005"
-    },
-    {
-      "position": 7,
-      "season": "fr-2006"
-    },
-    {
-      "position": 14,
-      "season": "fr-2007"
-    },
-    {
-      "position": 14,
-      "season": "fr-2008"
-    },
-    {
-      "position": 16,
-      "season": "fr-2009"
-    },
-    {
-      "position": 5,
-      "season": "fr-2010"
-    },
-    {
-      "position": 14,
-      "season": "fr-2011"
+      "position": 18,
+      "season": "fr-2013"
     },
     {
       "position": 15,
       "season": "fr-2012"
     },
     {
-      "position": 18,
-      "season": "fr-2013"
+      "position": 14,
+      "season": "fr-2011"
+    },
+    {
+      "position": 5,
+      "season": "fr-2010"
+    },
+    {
+      "position": 16,
+      "season": "fr-2009"
+    },
+    {
+      "position": 14,
+      "season": "fr-2008"
+    },
+    {
+      "position": 14,
+      "season": "fr-2007"
+    },
+    {
+      "position": 7,
+      "season": "fr-2006"
+    },
+    {
+      "position": 15,
+      "season": "fr-2005"
+    },
+    {
+      "position": 10,
+      "season": "fr-2004"
+    },
+    {
+      "position": 5,
+      "season": "fr-2003"
+    },
+    {
+      "position": 5,
+      "season": "fr-2002"
+    },
+    {
+      "position": 8,
+      "season": "fr-2001"
+    },
+    {
+      "position": 17,
+      "season": "fr-1998"
+    },
+    {
+      "position": 20,
+      "season": "fr-1994"
+    },
+    {
+      "position": 14,
+      "season": "fr-1993"
+    },
+    {
+      "position": 16,
+      "season": "fr-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 33,
+      "player": "Q723943"
+    },
+    {
+      "goals": 23,
+      "player": "Q27852"
+    },
+    {
+      "goals": 22,
+      "player": "Q431320"
+    },
+    {
+      "goals": 18,
+      "player": "Q650638"
+    },
+    {
+      "goals": 15,
+      "player": "Q266436"
+    },
+    {
+      "goals": 15,
+      "player": "Q520658"
+    },
+    {
+      "goals": 12,
+      "player": "Q2152421"
+    },
+    {
+      "goals": 7,
+      "player": "Q932982"
+    },
+    {
+      "goals": 6,
+      "player": "Q2700168"
+    },
+    {
+      "goals": 6,
+      "player": "Q314395"
+    },
+    {
+      "goals": 4,
+      "player": "Q312892"
+    },
+    {
+      "goals": 3,
+      "player": "Q1526376"
+    },
+    {
+      "goals": 3,
+      "player": "Q294735"
+    },
+    {
+      "goals": 3,
+      "player": "Q313159"
+    },
+    {
+      "goals": 3,
+      "player": "Q440846"
+    },
+    {
+      "goals": 3,
+      "player": "Q703959"
+    },
+    {
+      "goals": 3,
+      "player": "Q974082"
+    },
+    {
+      "goals": 2,
+      "player": "Q1406881"
+    },
+    {
+      "goals": 2,
+      "player": "Q142620"
+    },
+    {
+      "goals": 2,
+      "player": "Q1875129"
+    },
+    {
+      "goals": 2,
+      "player": "Q1927"
+    },
+    {
+      "goals": 2,
+      "player": "Q202254"
+    },
+    {
+      "goals": 2,
+      "player": "Q211547"
+    },
+    {
+      "goals": 2,
+      "player": "Q367861"
+    },
+    {
+      "goals": 2,
+      "player": "Q373668"
+    },
+    {
+      "goals": 2,
+      "player": "Q457237"
+    },
+    {
+      "goals": 2,
+      "player": "Q944657"
+    },
+    {
+      "goals": 2,
+      "player": "Q969529"
+    },
+    {
+      "goals": 1,
+      "player": "Q1362605"
+    },
+    {
+      "goals": 1,
+      "player": "Q1373974"
+    },
+    {
+      "goals": 1,
+      "player": "Q147124"
+    },
+    {
+      "goals": 1,
+      "player": "Q1923"
+    },
+    {
+      "goals": 1,
+      "player": "Q1979802"
+    },
+    {
+      "goals": 1,
+      "player": "Q2006783"
+    },
+    {
+      "goals": 1,
+      "player": "Q213112"
+    },
+    {
+      "goals": 1,
+      "player": "Q2213222"
+    },
+    {
+      "goals": 1,
+      "player": "Q2383031"
+    },
+    {
+      "goals": 1,
+      "player": "Q2474057"
+    },
+    {
+      "goals": 1,
+      "player": "Q251270"
+    },
+    {
+      "goals": 1,
+      "player": "Q2529122"
+    },
+    {
+      "goals": 1,
+      "player": "Q2530313"
+    },
+    {
+      "goals": 1,
+      "player": "Q2608795"
+    },
+    {
+      "goals": 1,
+      "player": "Q2723051"
+    },
+    {
+      "goals": 1,
+      "player": "Q31682"
+    },
+    {
+      "goals": 1,
+      "player": "Q31684"
+    },
+    {
+      "goals": 1,
+      "player": "Q31766"
+    },
+    {
+      "goals": 1,
+      "player": "Q3185579"
+    },
+    {
+      "goals": 1,
+      "player": "Q339513"
+    },
+    {
+      "goals": 1,
+      "player": "Q353258"
+    },
+    {
+      "goals": 1,
+      "player": "Q60614"
+    },
+    {
+      "goals": 1,
+      "player": "Q678558"
+    },
+    {
+      "goals": 1,
+      "player": "Q708323"
+    },
+    {
+      "goals": 1,
+      "player": "Q725452"
+    },
+    {
+      "goals": 1,
+      "player": "Q768977"
+    },
+    {
+      "goals": 1,
+      "player": "Q817510"
+    },
+    {
+      "goals": 1,
+      "player": "Q920749"
+    },
+    {
+      "goals": 1,
+      "player": "Q936621"
     }
   ]
 }

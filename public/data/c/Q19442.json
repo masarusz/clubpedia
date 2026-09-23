@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q1128631": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q19442",
+  "leagues": [
+    "en"
+  ],
+  "lineage": [],
   "names": {
     "en": "Barnsley F.C.",
     "ja": "バーンズリーFC"
@@ -239,6 +244,24 @@
     {
       "position": 19,
       "season": "en-1997"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 3,
+      "player": "Q6065586"
+    },
+    {
+      "goals": 1,
+      "player": "Q1780489"
+    },
+    {
+      "goals": 1,
+      "player": "Q6238651"
+    },
+    {
+      "goals": 1,
+      "player": "Q709585"
     }
   ]
 }

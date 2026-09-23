@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": null,
   "headToHead": {
     "Q132885": {
       "d": 0,
@@ -299,18 +300,56 @@
     }
   },
   "id": "Q209509",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "Grenoble Foot 38",
     "ja": "グルノーブル・フット38"
   },
   "positions": [
     {
-      "position": 13,
-      "season": "fr-2008"
-    },
-    {
       "position": 20,
       "season": "fr-2009"
+    },
+    {
+      "position": 13,
+      "season": "fr-2008"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 4,
+      "player": "Q331938"
+    },
+    {
+      "goals": 2,
+      "player": "Q1902330"
+    },
+    {
+      "goals": 2,
+      "player": "Q433125"
+    },
+    {
+      "goals": 1,
+      "player": "Q2460894"
+    },
+    {
+      "goals": 1,
+      "player": "Q346712"
+    },
+    {
+      "goals": 1,
+      "player": "Q668031"
+    },
+    {
+      "goals": 1,
+      "player": "Q732431"
+    },
+    {
+      "goals": 1,
+      "player": "Q968062"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ffffff",
   "headToHead": {
     "Q10300": {
       "d": 0,
@@ -303,18 +304,68 @@
     }
   },
   "id": "Q856416",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "CP Mérida",
     "ja": "CPメリダ"
   },
   "positions": [
     {
-      "position": 21,
-      "season": "es-1995"
-    },
-    {
       "position": 19,
       "season": "es-1997"
+    },
+    {
+      "position": 21,
+      "season": "es-1995"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 15,
+      "player": "Q15463955"
+    },
+    {
+      "goals": 2,
+      "player": "Q10371963"
+    },
+    {
+      "goals": 2,
+      "player": "Q1967429"
+    },
+    {
+      "goals": 2,
+      "player": "Q2387073"
+    },
+    {
+      "goals": 1,
+      "player": "Q1824877"
+    },
+    {
+      "goals": 1,
+      "player": "Q2199622"
+    },
+    {
+      "goals": 1,
+      "player": "Q2297527"
+    },
+    {
+      "goals": 1,
+      "player": "Q4776913"
+    },
+    {
+      "goals": 1,
+      "player": "Q4886381"
+    },
+    {
+      "goals": 1,
+      "player": "Q8962483"
+    },
+    {
+      "goals": 1,
+      "player": "Q9028705"
     }
   ]
 }

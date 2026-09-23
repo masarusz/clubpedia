@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q126334": {
       "d": 1,
@@ -357,22 +358,32 @@
     }
   },
   "id": "Q1132418",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "FC Martigues",
     "ja": "FCマルティーグ"
   },
   "positions": [
     {
-      "position": 18,
-      "season": "fr-1993"
+      "position": 20,
+      "season": "fr-1995"
     },
     {
       "position": 11,
       "season": "fr-1994"
     },
     {
-      "position": 20,
-      "season": "fr-1995"
+      "position": 18,
+      "season": "fr-1993"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 26,
+      "player": "Q1210598"
     }
   ]
 }

@@ -32,6 +32,19 @@ export function topFlightLeagueFromDivision(leagueText) {
   return null;
 }
 
+/** English Wikipedia division labels used by the career-statistics fallback.
+ * Keep this deliberately strict so lower divisions are never inferred from a
+ * club that also plays in a top flight. */
+export function topFlightLeagueFromEnglishDivision(leagueText) {
+  const normalized = plainText(leagueText).replace(/\s+/gu, ' ').trim();
+  if (normalized === 'Premier League') return 'en';
+  if (normalized === 'Bundesliga') return 'de';
+  if (normalized === 'La Liga') return 'es';
+  if (normalized === 'Serie A') return 'it';
+  if (normalized === 'Ligue 1') return 'fr';
+  return null;
+}
+
 /**
  * ja.wikipedia {{サッカー選手国内成績表 …}} career tables: a template-driven
  * wikitable (no literal {|...|}) with rowspan/colspan cells carrying
@@ -226,6 +239,34 @@ export function parseDomesticSeasons(articleText) {
   const literal = parseClubFirstTables(content);
   const unique = new Map([...seasons, ...literal].map((item) => [
     `${item.season}|${item.clubTarget ?? plainText(item.clubRaw)}|${item.league}|${item.apps}|${item.goals}`,
+    item,
+  ]));
+  return [...unique.values()];
+}
+
+/** Parse only the league Apps/Goals pair from an en.wikipedia club career
+ * table. The common table shape begins Club, Season, Division, Apps, Goals;
+ * gridRows carries rowspan values forward and later cup columns are ignored. */
+export function parseEnglishCareerSeasons(articleText) {
+  const section = sectionRanges(articleText).find((item) => /^Career statistics$/i.test(plainText(item.title).trim()));
+  if (!section) return [];
+  const output = [];
+  for (const match of section.content.matchAll(/\{\|[^\n]*\n([\s\S]*?)\n\|\}/gu)) {
+    const table = match[0];
+    const header = plainText(table.slice(0, Math.min(table.length, 1600))).replace(/\s+/gu, ' ');
+    if (!/Club/i.test(header) || !/Season/i.test(header) || !/Division/i.test(header)
+      || !/Apps/i.test(header) || !/Goals/i.test(header)) continue;
+    for (const values of gridRows(table, 24)) {
+      const season = seasonLabel(values[1]);
+      const league = topFlightLeagueFromEnglishDivision(values[2] ?? '');
+      const apps = integerCell(values[3]);
+      const goals = integerCell(values[4]);
+      if (!season || !league || apps == null || goals == null) continue;
+      output.push({ season, league, clubRaw: values[0] ?? '', clubTarget: linkTarget(values[0] ?? ''), apps, goals });
+    }
+  }
+  const unique = new Map(output.map((item) => [
+    `${item.season}|${item.clubTarget ?? plainText(item.clubRaw)}|${item.league}`,
     item,
   ]));
   return [...unique.values()];

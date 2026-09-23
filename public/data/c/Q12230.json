@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ef0000",
   "headToHead": {
     "Q10286": {
       "d": 0,
@@ -309,18 +310,40 @@
     }
   },
   "id": "Q12230",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "Real Murcia CF",
     "ja": "レアル・ムルシア"
   },
   "positions": [
     {
-      "position": 20,
-      "season": "es-2003"
-    },
-    {
       "position": 19,
       "season": "es-2007"
+    },
+    {
+      "position": 20,
+      "season": "es-2003"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 2,
+      "player": "Q440855"
+    },
+    {
+      "goals": 2,
+      "player": "Q719654"
+    },
+    {
+      "goals": 1,
+      "player": "Q2637295"
+    },
+    {
+      "goals": 1,
+      "player": "Q743531"
     }
   ]
 }

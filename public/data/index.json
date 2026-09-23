@@ -3,22 +3,62 @@
   "leagues": [
     {
       "id": "en",
+      "latest": {
+        "champion": {
+          "colour": "#f00000",
+          "id": "Q9617",
+          "name": "アーセナルFC"
+        },
+        "season": "2025–26"
+      },
       "name": "プレミアリーグ"
     },
     {
       "id": "es",
+      "latest": {
+        "champion": {
+          "colour": "#05003b",
+          "id": "Q7156",
+          "name": "FCバルセロナ"
+        },
+        "season": "2025–26"
+      },
       "name": "ラ・リーガ"
     },
     {
       "id": "de",
+      "latest": {
+        "champion": {
+          "colour": "#ff0000",
+          "id": "Q15789",
+          "name": "FCバイエルン・ミュンヘン"
+        },
+        "season": "2025–26"
+      },
       "name": "ブンデスリーガ"
     },
     {
       "id": "it",
+      "latest": {
+        "champion": {
+          "colour": "#000000",
+          "id": "Q631",
+          "name": "インテルナツィオナーレ・ミラノ"
+        },
+        "season": "2025–26"
+      },
       "name": "セリエA"
     },
     {
       "id": "fr",
+      "latest": {
+        "champion": {
+          "colour": "#0000cc",
+          "id": "Q483020",
+          "name": "パリ・サンジェルマンFC"
+        },
+        "season": "2025–26"
+      },
       "name": "リーグ・アン"
     }
   ],
@@ -60,7 +100,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Ulf Kirsten"
+          "playerId": "Q310519"
         }
       ]
     },
@@ -71,7 +111,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Michael Preetz"
+          "playerId": "Q644091"
         }
       ]
     },
@@ -82,7 +122,7 @@
       "topScorers": [
         {
           "goals": 19,
-          "player": "Martin Max"
+          "playerId": "Q703757"
         }
       ]
     },
@@ -93,11 +133,11 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Sergej Barbarez"
+          "playerId": "Q431455"
         },
         {
           "goals": 22,
-          "player": "Ebbe Sand"
+          "playerId": "Q313913"
         }
       ]
     },
@@ -108,11 +148,11 @@
       "topScorers": [
         {
           "goals": 18,
-          "player": "Márcio Amoroso"
+          "playerId": "Q309731"
         },
         {
           "goals": 18,
-          "player": "Martin Max"
+          "playerId": "Q703757"
         }
       ]
     },
@@ -123,11 +163,11 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Giovane Élber"
+          "playerId": "Q44815"
         },
         {
           "goals": 21,
-          "player": "Thomas Christiansen"
+          "playerId": "Q505800"
         }
       ]
     },
@@ -138,7 +178,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Aílton Gonçalves da Silva"
+          "playerId": "Q160363"
         }
       ]
     },
@@ -149,7 +189,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Marek Mintál"
+          "playerId": "Q354774"
         }
       ]
     },
@@ -160,7 +200,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Miroslav Klose"
+          "playerId": "Q80471"
         }
       ]
     },
@@ -171,7 +211,7 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Theofanis Gekas"
+          "playerId": "Q201885"
         }
       ]
     },
@@ -182,7 +222,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Luca Toni"
+          "playerId": "Q186478"
         }
       ]
     },
@@ -193,7 +233,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Grafite"
+          "playerId": "Q159059"
         }
       ]
     },
@@ -204,7 +244,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Edin Džeko"
+          "playerId": "Q153786"
         }
       ]
     },
@@ -215,7 +255,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Mario Gómez"
+          "playerId": "Q45766"
         }
       ]
     },
@@ -226,7 +266,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Klaas-Jan Huntelaar"
+          "playerId": "Q26069"
         }
       ]
     },
@@ -237,7 +277,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Stefan Kießling"
+          "playerId": "Q106387"
         }
       ]
     },
@@ -248,7 +288,7 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -259,7 +299,7 @@
       "topScorers": [
         {
           "goals": 19,
-          "player": "Alexander Meier"
+          "playerId": "Q276731"
         }
       ]
     },
@@ -270,7 +310,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -281,7 +321,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Pierre-Emerick Aubameyang"
+          "playerId": "Q44977"
         }
       ]
     },
@@ -292,7 +332,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -303,7 +343,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -314,7 +354,7 @@
       "topScorers": [
         {
           "goals": 34,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -325,7 +365,7 @@
       "topScorers": [
         {
           "goals": 41,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -336,7 +376,7 @@
       "topScorers": [
         {
           "goals": 35,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -347,11 +387,11 @@
       "topScorers": [
         {
           "goals": 16,
-          "player": "Niclas Füllkrug"
+          "playerId": "Q326159"
         },
         {
           "goals": 16,
-          "player": "Christopher Nkunku"
+          "playerId": "Q21693199"
         }
       ]
     },
@@ -362,7 +402,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -373,7 +413,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -384,7 +424,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -395,7 +435,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Teddy Sheringham"
+          "playerId": "Q234576"
         }
       ]
     },
@@ -406,7 +446,7 @@
       "topScorers": [
         {
           "goals": 34,
-          "player": "Andy Cole"
+          "playerId": "Q216928"
         }
       ]
     },
@@ -417,7 +457,7 @@
       "topScorers": [
         {
           "goals": 34,
-          "player": "Alan Shearer"
+          "playerId": "Q483583"
         }
       ]
     },
@@ -428,7 +468,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Alan Shearer"
+          "playerId": "Q483583"
         }
       ]
     },
@@ -439,7 +479,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Alan Shearer"
+          "playerId": "Q483583"
         }
       ]
     },
@@ -450,15 +490,15 @@
       "topScorers": [
         {
           "goals": 18,
-          "player": "Dion Dublin"
+          "playerId": "Q531093"
         },
         {
           "goals": 18,
-          "player": "Michael Owen"
+          "playerId": "Q128829"
         },
         {
           "goals": 18,
-          "player": "Chris Sutton"
+          "playerId": "Q363769"
         }
       ]
     },
@@ -469,15 +509,15 @@
       "topScorers": [
         {
           "goals": 18,
-          "player": "Jimmy Floyd Hasselbaink"
+          "playerId": "Q223176"
         },
         {
           "goals": 18,
-          "player": "Michael Owen"
+          "playerId": "Q128829"
         },
         {
           "goals": 18,
-          "player": "Dwight Yorke"
+          "playerId": "Q192175"
         }
       ]
     },
@@ -488,7 +528,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Kevin Phillips (footballer)"
+          "playerId": "Q256875"
         }
       ]
     },
@@ -499,7 +539,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Jimmy Floyd Hasselbaink"
+          "playerId": "Q223176"
         }
       ]
     },
@@ -516,7 +556,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Ruud van Nistelrooy"
+          "playerId": "Q45626"
         }
       ]
     },
@@ -527,7 +567,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Thierry Henry"
+          "playerId": "Q45901"
         }
       ]
     },
@@ -538,7 +578,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Thierry Henry"
+          "playerId": "Q45901"
         }
       ]
     },
@@ -549,7 +589,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Thierry Henry"
+          "playerId": "Q45901"
         }
       ]
     },
@@ -560,7 +600,7 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Didier Drogba"
+          "playerId": "Q48892"
         }
       ]
     },
@@ -571,7 +611,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         }
       ]
     },
@@ -582,7 +622,7 @@
       "topScorers": [
         {
           "goals": 19,
-          "player": "Nicolas Anelka"
+          "playerId": "Q1939"
         }
       ]
     },
@@ -599,11 +639,11 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Dimitar Berbatov"
+          "playerId": "Q170235"
         },
         {
           "goals": 20,
-          "player": "Carlos Tevez"
+          "playerId": "Q50600"
         }
       ]
     },
@@ -614,7 +654,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Robin van Persie"
+          "playerId": "Q2339"
         }
       ]
     },
@@ -625,7 +665,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Robin van Persie"
+          "playerId": "Q2339"
         }
       ]
     },
@@ -636,7 +676,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Luis Suárez"
+          "playerId": "Q26517"
         }
       ]
     },
@@ -647,7 +687,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Sergio Agüero"
+          "playerId": "Q119562"
         }
       ]
     },
@@ -658,7 +698,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -669,7 +709,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -680,7 +720,7 @@
       "topScorers": [
         {
           "goals": 32,
-          "player": "Mohamed Salah"
+          "playerId": "Q1354960"
         }
       ]
     },
@@ -691,15 +731,15 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Pierre-Emerick Aubameyang"
+          "playerId": "Q44977"
         },
         {
           "goals": 22,
-          "player": "Sadio Mané"
+          "playerId": "Q209942"
         },
         {
           "goals": 22,
-          "player": "Mohamed Salah"
+          "playerId": "Q1354960"
         }
       ]
     },
@@ -710,7 +750,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Jamie Vardy"
+          "playerId": "Q6147586"
         }
       ]
     },
@@ -721,7 +761,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Harry Kane"
+          "playerId": "Q969725"
         }
       ]
     },
@@ -732,11 +772,11 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Mohamed Salah"
+          "playerId": "Q1354960"
         },
         {
           "goals": 23,
-          "player": "Son Heung-min"
+          "playerId": "Q439722"
         }
       ]
     },
@@ -747,7 +787,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Erling Haaland"
+          "playerId": "Q28967995"
         }
       ]
     },
@@ -758,7 +798,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Erling Haaland"
+          "playerId": "Q28967995"
         }
       ]
     },
@@ -769,7 +809,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Mohamed Salah"
+          "playerId": "Q1354960"
         }
       ]
     },
@@ -780,7 +820,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Erling Haaland"
+          "playerId": "Q28967995"
         }
       ]
     },
@@ -791,7 +831,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Bebeto"
+          "playerId": "Q204825"
         }
       ]
     },
@@ -802,7 +842,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Romário"
+          "playerId": "Q178649"
         }
       ]
     },
@@ -813,7 +853,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Iván Zamorano"
+          "playerId": "Q192035"
         }
       ]
     },
@@ -824,7 +864,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Juan Antonio Pizzi"
+          "playerId": "Q508489"
         }
       ]
     },
@@ -835,7 +875,7 @@
       "topScorers": [
         {
           "goals": 34,
-          "player": "Ronaldo (Brazilian footballer)"
+          "playerId": "Q529207"
         }
       ]
     },
@@ -858,7 +898,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Salva Ballesta"
+          "playerId": "Q703661"
         }
       ]
     },
@@ -929,11 +969,11 @@
       "topScorers": [
         {
           "goals": 40,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         },
         {
           "goals": 41,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         }
       ]
     },
@@ -944,7 +984,7 @@
       "topScorers": [
         {
           "goals": 50,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -955,7 +995,7 @@
       "topScorers": [
         {
           "goals": 46,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -966,7 +1006,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         }
       ]
     },
@@ -977,7 +1017,7 @@
       "topScorers": [
         {
           "goals": 48,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         }
       ]
     },
@@ -988,7 +1028,7 @@
       "topScorers": [
         {
           "goals": 40,
-          "player": "Luis Suárez"
+          "playerId": "Q26517"
         }
       ]
     },
@@ -999,7 +1039,7 @@
       "topScorers": [
         {
           "goals": 37,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -1010,7 +1050,7 @@
       "topScorers": [
         {
           "goals": 34,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -1021,7 +1061,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -1032,7 +1072,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -1043,7 +1083,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Lionel Messi"
+          "playerId": "Q615"
         }
       ]
     },
@@ -1054,7 +1094,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Karim Benzema"
+          "playerId": "Q1912"
         }
       ]
     },
@@ -1065,7 +1105,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Robert Lewandowski"
+          "playerId": "Q151269"
         }
       ]
     },
@@ -1076,7 +1116,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Artem Dovbyk"
+          "playerId": "Q20066885"
         }
       ]
     },
@@ -1087,7 +1127,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1098,7 +1138,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1109,7 +1149,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Alen Bokšić"
+          "playerId": "Q313518"
         }
       ]
     },
@@ -1120,15 +1160,15 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Roger Boli"
+          "playerId": "Q1339060"
         },
         {
           "goals": 20,
-          "player": "Youri Djorkaeff"
+          "playerId": "Q217482"
         },
         {
           "goals": 20,
-          "player": "Nicolas Ouédec"
+          "playerId": "Q547054"
         }
       ]
     },
@@ -1139,7 +1179,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Patrice Loko"
+          "playerId": "Q469243"
         }
       ]
     },
@@ -1150,7 +1190,7 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Sonny Anderson"
+          "playerId": "Q313861"
         }
       ]
     },
@@ -1161,7 +1201,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Stéphane Guivarc'h"
+          "playerId": "Q125669"
         }
       ]
     },
@@ -1172,7 +1212,7 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Stéphane Guivarc'h"
+          "playerId": "Q125669"
         }
       ]
     },
@@ -1183,7 +1223,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Sylvain Wiltord"
+          "playerId": "Q217760"
         }
       ]
     },
@@ -1194,7 +1234,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Sonny Anderson"
+          "playerId": "Q313861"
         }
       ]
     },
@@ -1205,7 +1245,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Sonny Anderson"
+          "playerId": "Q313861"
         }
       ]
     },
@@ -1216,11 +1256,11 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Djibril Cissé"
+          "playerId": "Q1936"
         },
         {
           "goals": 22,
-          "player": "Pauleta"
+          "playerId": "Q218165"
         }
       ]
     },
@@ -1231,7 +1271,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Shabani Nonda"
+          "playerId": "Q342439"
         }
       ]
     },
@@ -1242,7 +1282,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Djibril Cissé"
+          "playerId": "Q1936"
         }
       ]
     },
@@ -1253,7 +1293,7 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Alexander Frei"
+          "playerId": "Q193024"
         }
       ]
     },
@@ -1264,7 +1304,7 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Pauleta"
+          "playerId": "Q218165"
         }
       ]
     },
@@ -1275,7 +1315,7 @@
       "topScorers": [
         {
           "goals": 15,
-          "player": "Pauleta"
+          "playerId": "Q218165"
         }
       ]
     },
@@ -1286,7 +1326,7 @@
       "topScorers": [
         {
           "goals": 20,
-          "player": "Karim Benzema"
+          "playerId": "Q1912"
         }
       ]
     },
@@ -1297,7 +1337,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "André-Pierre Gignac"
+          "playerId": "Q1940"
         }
       ]
     },
@@ -1308,7 +1348,7 @@
       "topScorers": [
         {
           "goals": 18,
-          "player": "Mamadou Niang"
+          "playerId": "Q342707"
         }
       ]
     },
@@ -1319,7 +1359,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Moussa Sow"
+          "playerId": "Q314373"
         }
       ]
     },
@@ -1330,11 +1370,11 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Olivier Giroud"
+          "playerId": "Q1911"
         },
         {
           "goals": 21,
-          "player": "Nenê (footballer, born 1981)"
+          "playerId": "Q316836"
         }
       ]
     },
@@ -1345,7 +1385,7 @@
       "topScorers": [
         {
           "goals": 30,
-          "player": "Zlatan Ibrahimović"
+          "playerId": "Q46896"
         }
       ]
     },
@@ -1356,7 +1396,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Zlatan Ibrahimović"
+          "playerId": "Q46896"
         }
       ]
     },
@@ -1367,7 +1407,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Alexandre Lacazette"
+          "playerId": "Q13306"
         }
       ]
     },
@@ -1378,7 +1418,7 @@
       "topScorers": [
         {
           "goals": 38,
-          "player": "Zlatan Ibrahimović"
+          "playerId": "Q46896"
         }
       ]
     },
@@ -1389,7 +1429,7 @@
       "topScorers": [
         {
           "goals": 35,
-          "player": "Edinson Cavani"
+          "playerId": "Q167790"
         }
       ]
     },
@@ -1400,7 +1440,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Edinson Cavani"
+          "playerId": "Q167790"
         }
       ]
     },
@@ -1411,7 +1451,7 @@
       "topScorers": [
         {
           "goals": 33,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1422,11 +1462,11 @@
       "topScorers": [
         {
           "goals": 18,
-          "player": "Wissam Ben Yedder"
+          "playerId": "Q137128"
         },
         {
           "goals": 18,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1437,7 +1477,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1448,7 +1488,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1459,7 +1499,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1470,7 +1510,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Kylian Mbappé"
+          "playerId": "Q21621995"
         }
       ]
     },
@@ -1481,11 +1521,11 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Ousmane Dembélé"
+          "playerId": "Q20851003"
         },
         {
           "goals": 21,
-          "player": "Mason Greenwood"
+          "playerId": "Q61986758"
         }
       ]
     },
@@ -1496,7 +1536,7 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Esteban Lepaul"
+          "playerId": "Q124357777"
         }
       ]
     },
@@ -1507,7 +1547,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Giuseppe Signori"
+          "playerId": "Q334684"
         }
       ]
     },
@@ -1518,7 +1558,7 @@
       "topScorers": [
         {
           "goals": 23,
-          "player": "Giuseppe Signori"
+          "playerId": "Q334684"
         }
       ]
     },
@@ -1529,7 +1569,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Gabriel Batistuta"
+          "playerId": "Q170376"
         }
       ]
     },
@@ -1540,11 +1580,11 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Igor Protti"
+          "playerId": "Q939454"
         },
         {
           "goals": 24,
-          "player": "Giuseppe Signori"
+          "playerId": "Q334684"
         }
       ]
     },
@@ -1555,7 +1595,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Filippo Inzaghi"
+          "playerId": "Q126503"
         }
       ]
     },
@@ -1566,7 +1606,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Oliver Bierhoff"
+          "playerId": "Q152844"
         }
       ]
     },
@@ -1577,7 +1617,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Márcio Amoroso"
+          "playerId": "Q309731"
         }
       ]
     },
@@ -1588,7 +1628,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Andriy Shevchenko"
+          "playerId": "Q41244"
         }
       ]
     },
@@ -1599,7 +1639,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Hernán Crespo"
+          "playerId": "Q160206"
         }
       ]
     },
@@ -1610,11 +1650,11 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "David Trezeguet"
+          "playerId": "Q183967"
         },
         {
           "goals": 24,
-          "player": "Dario Hübner"
+          "playerId": "Q945726"
         }
       ]
     },
@@ -1625,7 +1665,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Christian Vieri"
+          "playerId": "Q188696"
         }
       ]
     },
@@ -1636,7 +1676,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Andriy Shevchenko"
+          "playerId": "Q41244"
         }
       ]
     },
@@ -1647,7 +1687,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Cristiano Lucarelli"
+          "playerId": "Q310034"
         }
       ]
     },
@@ -1658,7 +1698,7 @@
       "topScorers": [
         {
           "goals": 31,
-          "player": "Luca Toni"
+          "playerId": "Q186478"
         }
       ]
     },
@@ -1669,7 +1709,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Francesco Totti"
+          "playerId": "Q20110"
         }
       ]
     },
@@ -1680,7 +1720,7 @@
       "topScorers": [
         {
           "goals": 21,
-          "player": "Alessandro Del Piero"
+          "playerId": "Q624"
         }
       ]
     },
@@ -1691,7 +1731,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Zlatan Ibrahimović"
+          "playerId": "Q46896"
         }
       ]
     },
@@ -1702,7 +1742,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Antonio Di Natale"
+          "playerId": "Q167281"
         }
       ]
     },
@@ -1713,7 +1753,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Antonio Di Natale"
+          "playerId": "Q167281"
         }
       ]
     },
@@ -1724,7 +1764,7 @@
       "topScorers": [
         {
           "goals": 28,
-          "player": "Zlatan Ibrahimović"
+          "playerId": "Q46896"
         }
       ]
     },
@@ -1735,7 +1775,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Edinson Cavani"
+          "playerId": "Q167790"
         }
       ]
     },
@@ -1746,7 +1786,7 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Ciro Immobile"
+          "playerId": "Q458101"
         }
       ]
     },
@@ -1757,11 +1797,11 @@
       "topScorers": [
         {
           "goals": 22,
-          "player": "Mauro Icardi"
+          "playerId": "Q136986"
         },
         {
           "goals": 22,
-          "player": "Luca Toni"
+          "playerId": "Q186478"
         }
       ]
     },
@@ -1772,7 +1812,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Gonzalo Higuaín"
+          "playerId": "Q483846"
         }
       ]
     },
@@ -1783,7 +1823,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Edin Džeko"
+          "playerId": "Q153786"
         }
       ]
     },
@@ -1794,11 +1834,11 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Mauro Icardi"
+          "playerId": "Q136986"
         },
         {
           "goals": 29,
-          "player": "Ciro Immobile"
+          "playerId": "Q458101"
         }
       ]
     },
@@ -1809,7 +1849,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Fabio Quagliarella"
+          "playerId": "Q45900"
         }
       ]
     },
@@ -1820,7 +1860,7 @@
       "topScorers": [
         {
           "goals": 36,
-          "player": "Ciro Immobile"
+          "playerId": "Q458101"
         }
       ]
     },
@@ -1831,7 +1871,7 @@
       "topScorers": [
         {
           "goals": 29,
-          "player": "Cristiano Ronaldo"
+          "playerId": "Q11571"
         }
       ]
     },
@@ -1842,7 +1882,7 @@
       "topScorers": [
         {
           "goals": 27,
-          "player": "Ciro Immobile"
+          "playerId": "Q458101"
         }
       ]
     },
@@ -1853,7 +1893,7 @@
       "topScorers": [
         {
           "goals": 26,
-          "player": "Victor Osimhen"
+          "playerId": "Q25253293"
         }
       ]
     },
@@ -1864,7 +1904,7 @@
       "topScorers": [
         {
           "goals": 24,
-          "player": "Lautaro Martínez"
+          "playerId": "Q21484126"
         }
       ]
     },
@@ -1875,7 +1915,7 @@
       "topScorers": [
         {
           "goals": 25,
-          "player": "Mateo Retegui"
+          "playerId": "Q47002491"
         }
       ]
     },
@@ -1886,7 +1926,7 @@
       "topScorers": [
         {
           "goals": 17,
-          "player": "Lautaro Martínez"
+          "playerId": "Q21484126"
         }
       ]
     }

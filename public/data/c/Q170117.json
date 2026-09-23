@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#dc0000",
   "headToHead": {
     "Q101859": {
       "d": 2,
@@ -261,18 +262,96 @@
     }
   },
   "id": "Q170117",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "FC Ingolstadt 04",
     "ja": "FCインゴルシュタット04"
   },
   "positions": [
     {
-      "position": 11,
-      "season": "de-2015"
-    },
-    {
       "position": 17,
       "season": "de-2016"
+    },
+    {
+      "position": 11,
+      "season": "de-2015"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 12,
+      "player": "Q824906"
+    },
+    {
+      "goals": 8,
+      "player": "Q1165954"
+    },
+    {
+      "goals": 8,
+      "player": "Q698326"
+    },
+    {
+      "goals": 7,
+      "player": "Q1579742"
+    },
+    {
+      "goals": 6,
+      "player": "Q509489"
+    },
+    {
+      "goals": 4,
+      "player": "Q676126"
+    },
+    {
+      "goals": 3,
+      "player": "Q176304"
+    },
+    {
+      "goals": 3,
+      "player": "Q941963"
+    },
+    {
+      "goals": 2,
+      "player": "Q15849007"
+    },
+    {
+      "goals": 2,
+      "player": "Q2161960"
+    },
+    {
+      "goals": 2,
+      "player": "Q443222"
+    },
+    {
+      "goals": 2,
+      "player": "Q529678"
+    },
+    {
+      "goals": 2,
+      "player": "Q81590"
+    },
+    {
+      "goals": 1,
+      "player": "Q17612369"
+    },
+    {
+      "goals": 1,
+      "player": "Q18412638"
+    },
+    {
+      "goals": 1,
+      "player": "Q573461"
+    },
+    {
+      "goals": 1,
+      "player": "Q690043"
+    },
+    {
+      "goals": 1,
+      "player": "Q777404"
     }
   ]
 }

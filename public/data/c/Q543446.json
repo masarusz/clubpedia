@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q10286": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q543446",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "Real Burgos CF",
     "ja": "レアル・ブルゴスCF"
@@ -239,6 +244,20 @@
     {
       "position": 20,
       "season": "es-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 1,
+      "player": "Q459203"
+    },
+    {
+      "goals": 1,
+      "player": "Q5674007"
+    },
+    {
+      "goals": 1,
+      "player": "Q762327"
     }
   ]
 }

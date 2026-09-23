@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#aa0000",
   "headToHead": {
     "Q10300": {
       "d": 0,
@@ -333,18 +334,36 @@
     }
   },
   "id": "Q732742",
+  "leagues": [
+    "es"
+  ],
+  "lineage": [],
   "names": {
     "en": "CF Extremadura",
     "ja": "CFエストレマドゥーラ"
   },
   "positions": [
     {
-      "position": 19,
-      "season": "es-1996"
-    },
-    {
       "position": 17,
       "season": "es-1998"
+    },
+    {
+      "position": 19,
+      "season": "es-1996"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 2,
+      "player": "Q4887520"
+    },
+    {
+      "goals": 1,
+      "player": "Q1268204"
+    },
+    {
+      "goals": 1,
+      "player": "Q601902"
     }
   ]
 }

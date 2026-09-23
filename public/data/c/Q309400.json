@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#000000",
   "headToHead": {
     "Q132885": {
       "d": 0,
@@ -231,6 +232,10 @@
     }
   },
   "id": "Q309400",
+  "leagues": [
+    "fr"
+  ],
+  "lineage": [],
   "names": {
     "en": "US Boulogne",
     "ja": "USブローニュ"
@@ -239,6 +244,24 @@
     {
       "position": 19,
       "season": "fr-2009"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 3,
+      "player": "Q2045919"
+    },
+    {
+      "goals": 1,
+      "player": "Q2467915"
+    },
+    {
+      "goals": 1,
+      "player": "Q2759198"
+    },
+    {
+      "goals": 1,
+      "player": "Q458968"
     }
   ]
 }

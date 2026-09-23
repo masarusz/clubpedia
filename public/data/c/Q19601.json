@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#0044ff",
   "headToHead": {
     "Q1128631": {
       "d": 2,
@@ -327,18 +328,52 @@
     }
   },
   "id": "Q19601",
+  "leagues": [
+    "en"
+  ],
+  "lineage": [],
   "names": {
     "en": "Oldham Athletic A.F.C.",
     "ja": "オールダム・アスレティックAFC"
   },
   "positions": [
     {
-      "position": 19,
-      "season": "en-1992"
-    },
-    {
       "position": 21,
       "season": "en-1993"
+    },
+    {
+      "position": 19,
+      "season": "en-1992"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 3,
+      "player": "Q5982517"
+    },
+    {
+      "goals": 2,
+      "player": "Q46981"
+    },
+    {
+      "goals": 2,
+      "player": "Q5224782"
+    },
+    {
+      "goals": 2,
+      "player": "Q7326866"
+    },
+    {
+      "goals": 1,
+      "player": "Q10398900"
+    },
+    {
+      "goals": 1,
+      "player": "Q635584"
+    },
+    {
+      "goals": 1,
+      "player": "Q7331462"
     }
   ]
 }

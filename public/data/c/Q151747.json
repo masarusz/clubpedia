@@ -5,6 +5,7 @@
       "season": "1933"
     }
   ],
+  "colour": "#b00000",
   "headToHead": {
     "Q101859": {
       "d": 3,
@@ -488,22 +489,18 @@
     }
   },
   "id": "Q151747",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "Fortuna Düsseldorf",
     "ja": "フォルトゥナ・デュッセルドルフ"
   },
   "positions": [
     {
-      "position": 13,
-      "season": "de-1995"
-    },
-    {
-      "position": 16,
-      "season": "de-1996"
-    },
-    {
       "position": 17,
-      "season": "de-2012"
+      "season": "de-2019"
     },
     {
       "position": 10,
@@ -511,7 +508,137 @@
     },
     {
       "position": 17,
-      "season": "de-2019"
+      "season": "de-2012"
+    },
+    {
+      "position": 16,
+      "season": "de-1996"
+    },
+    {
+      "position": 13,
+      "season": "de-1995"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 15,
+      "player": "Q560813"
+    },
+    {
+      "goals": 8,
+      "player": "Q573304"
+    },
+    {
+      "goals": 6,
+      "player": "Q15735586"
+    },
+    {
+      "goals": 6,
+      "player": "Q15901932"
+    },
+    {
+      "goals": 5,
+      "player": "Q571424"
+    },
+    {
+      "goals": 4,
+      "player": "Q1356772"
+    },
+    {
+      "goals": 3,
+      "player": "Q276877"
+    },
+    {
+      "goals": 3,
+      "player": "Q322641"
+    },
+    {
+      "goals": 2,
+      "player": "Q283480"
+    },
+    {
+      "goals": 2,
+      "player": "Q3191617"
+    },
+    {
+      "goals": 2,
+      "player": "Q320820"
+    },
+    {
+      "goals": 2,
+      "player": "Q3437964"
+    },
+    {
+      "goals": 2,
+      "player": "Q348811"
+    },
+    {
+      "goals": 2,
+      "player": "Q434276"
+    },
+    {
+      "goals": 2,
+      "player": "Q493156"
+    },
+    {
+      "goals": 2,
+      "player": "Q550144"
+    },
+    {
+      "goals": 2,
+      "player": "Q702870"
+    },
+    {
+      "goals": 1,
+      "player": "Q15836846"
+    },
+    {
+      "goals": 1,
+      "player": "Q1786821"
+    },
+    {
+      "goals": 1,
+      "player": "Q18387214"
+    },
+    {
+      "goals": 1,
+      "player": "Q2149274"
+    },
+    {
+      "goals": 1,
+      "player": "Q2427244"
+    },
+    {
+      "goals": 1,
+      "player": "Q276356"
+    },
+    {
+      "goals": 1,
+      "player": "Q2801964"
+    },
+    {
+      "goals": 1,
+      "player": "Q311362"
+    },
+    {
+      "goals": 1,
+      "player": "Q367474"
+    },
+    {
+      "goals": 1,
+      "player": "Q443222"
+    },
+    {
+      "goals": 1,
+      "player": "Q499199"
+    },
+    {
+      "goals": 1,
+      "player": "Q523439"
+    },
+    {
+      "goals": 1,
+      "player": "Q683309"
     }
   ]
 }

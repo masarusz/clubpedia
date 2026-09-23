@@ -1,5 +1,6 @@
 {
   "championSeasons": [],
+  "colour": "#ff0000",
   "headToHead": {
     "Q101859": {
       "d": 2,
@@ -271,18 +272,44 @@
     }
   },
   "id": "Q158121",
+  "leagues": [
+    "de"
+  ],
+  "lineage": [],
   "names": {
     "en": "SpVgg Unterhaching",
     "ja": "SpVggウンターハヒンク"
   },
   "positions": [
     {
-      "position": 10,
-      "season": "de-1999"
-    },
-    {
       "position": 16,
       "season": "de-2000"
+    },
+    {
+      "position": 10,
+      "season": "de-1999"
+    }
+  ],
+  "topScorers": [
+    {
+      "goals": 2,
+      "player": "Q517257"
+    },
+    {
+      "goals": 1,
+      "player": "Q1223422"
+    },
+    {
+      "goals": 1,
+      "player": "Q1715515"
+    },
+    {
+      "goals": 1,
+      "player": "Q2020614"
+    },
+    {
+      "goals": 1,
+      "player": "Q441400"
     }
   ]
 }
