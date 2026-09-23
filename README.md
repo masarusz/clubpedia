@@ -43,11 +43,16 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v0.3.2** — Review fixes: OpenLigaDB (ODbL) goals are kept out of the
+  CC BY-SA player, club, search and ranking data and shown separately with
+  their own credit; goal counts say when they cover only recorded matches;
+  match lists are newest first; league pages load far less data; the player
+  guide's season picker works; tied scorers share a rank; 1,902 photos.
 - **v0.3.1** — The daily files behind 今日は何の日 are published (they were
   missing from the v0.3.0 deploy); the deploy now fails if any built file is
   not covered by its allowlist.
 - **v0.3.0** — 今日は何の日 (matches played on today's date) and players born
-  today on the home page; match dates; 1,509 player photos from Wikimedia
+  today on the home page; match dates; 1,509 player photos (1,902 from v0.3.2) from Wikimedia
   Commons, each credited, on player pages and in the player guide, with a photo
   credits page; a new app icon.
 - **v0.2.1** — 選手名鑑 can switch league and season, and tapping a club

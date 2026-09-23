@@ -1,4 +1,4 @@
-import { VERSION } from './version.js?v=0.3.0';
+import { VERSION } from './version.js?v=0.3.2';
 
 const cache = new Map();
 
@@ -26,6 +26,7 @@ export const loadHistory = (league) => load(`data/h/${league}.json`);
 export const loadSeason = (league, year) => load(`data/s/${league}-${year}.json`);
 export const loadClub = (id) => load(`data/c/${id}.json`);
 export const loadOpenLiga = (league, year) => load(`data/o/${league}-${year}.json`, { optional: true });
+export const loadOpenLigaPlayers = () => load('data/o/players.json');
 export const loadDay = (monthDay) => load(`data/days/${monthDay}.json`, { optional: true });
 export const loadPhotoCredits = () => load('data/photo-credits.json');
 export const loadJapan = () => load('data/japan.json');

@@ -84,7 +84,7 @@ export function register(test, equal, deepEqual) {
       equal(todayRows.every((row) => !/Q\d+/.test(row)), true, 'today-history uses club names, not Wikidata ids');
       equal(todayRows.every((row) => !row.includes('0年')), true, 'today-history uses real years');
       equal(todayRows.every((row) => /^\d{4}年 .+ \d+–\d+ .+$/u.test(row)), true, 'today-history row shape');
-      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.3.0');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.3.2');
       const renderedRoutes = ['#/credits'];
       for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
@@ -94,7 +94,7 @@ export function register(test, equal, deepEqual) {
       const clubFiles = readdirSync(join(DATA, 'c'));
       const withTitles = clubFiles.map((file) => load(`c/${file}`)).find((club) => club.championSeasons.length);
       const withoutTitles = clubFiles.map((file) => load(`c/${file}`)).find((club) => !club.championSeasons.length && club.positions.length);
-      renderedRoutes.push(`#/c/${withTitles.id}`, `#/c/${withoutTitles.id}`, '#/c/Q132885');
+      renderedRoutes.push(`#/c/${withTitles.id}`, `#/c/${withoutTitles.id}`, '#/c/Q132885', '#/c/Q9617', '#/c/Q10333');
 
       // Phase 4: player (with and without goals), a Japanese player with an
       // en-fallback season, 日本人選手, 選手名鑑 (one season per league),
@@ -103,7 +103,7 @@ export function register(test, equal, deepEqual) {
       const playerWithoutGoals = 'Q106239673';
       const japan = load('japan.json');
       const enFallbackPlayer = japan.players.find((item) => item.seasons.some((season) => season.source === 'en'));
-      renderedRoutes.push(`#/p/${playerWithGoals}`, '#/p/Q27067753', `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
+      renderedRoutes.push(`#/p/${playerWithGoals}`, '#/p/Q27067753', '#/p/Q43666', '#/p/Q483583', `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
       renderedRoutes.push('#/credits/photos');
       renderedRoutes.push('#/j');
       renderedRoutes.push('#/z', '#/z/es', '#/z/de/2015');
@@ -129,6 +129,7 @@ export function register(test, equal, deepEqual) {
           equal(dataRequests.length <= 3, true, `${hash} fetches at most three data files`);
           equal(dataRequests.some((path) => path.startsWith('data/p/')), false, `${hash} embeds displayed player names`);
         }
+        if (hash.startsWith('#/l/')) equal(dataRequests.length <= 2, true, `${hash} fetches only index and league history data`);
         if (hash === '#/s/en/2025') {
           const season = load('s/en-2025.json');
           const buckets = new Set(season.topScorers.map((item) => item.playerId).filter(Boolean).map(playerBucket));
@@ -162,6 +163,14 @@ export function register(test, equal, deepEqual) {
           equal(extraTitle[0].textContent, '1928–29プロリーグができる前');
           equal(descendants(extraTitle[0]).some((node) => node.tagName === 'A'), false, 'pre-professional title is not linked');
         }
+        if (hash === '#/c/Q9617') equal(body.includes('12/23'), true, 'head-to-head row shows its Wikipedia date');
+        if (hash === '#/c/Q10333') {
+          const scorerRows = withClass(appRoot, 'club-scorers')[0]?.childNodes ?? [];
+          const tied = scorerRows.filter((row) => row.textContent.includes('47得点')).map((row) => row.textContent);
+          equal(tied.length, 3, 'three Valencia scorers share 47 goals');
+          equal(tied.every((row) => row.startsWith('2位')), true, 'club scorer ties use competition ranks');
+          equal(scorerRows.find((row) => row.textContent.includes('38得点'))?.textContent.startsWith('5位'), true, 'rank after three-way tie skips to fifth');
+        }
         if (hash === `#/p/${playerWithGoals}`) {
           const names = load('names.json');
           equal(dataRequests.length <= 3, true, `${hash} fetches only its player bucket, names, and photo credits when needed`);
@@ -180,11 +189,24 @@ export function register(test, equal, deepEqual) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
           equal(dataRequests.includes('data/photo-credits.json'), false, `${hash} does not fetch photo credits`);
           const images = descendants(appRoot).filter((node) => node.tagName === 'IMG');
-          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=0.3.0')), true, 'Kubo player photo renders');
+          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=0.3.2')), true, 'Kubo player photo renders');
           equal(body.includes('写真:'), true, 'Kubo player photo credit renders');
         }
+        if (hash === '#/p/Q43666') {
+          equal(body.includes('OpenLigaDBの記録: 1得点'), true, 'Bundesliga season shows the separate OpenLigaDB total');
+          equal(body.includes('ODbL 1.0'), true, 'OpenLigaDB player total has an ODbL credit');
+          equal(dataRequests.includes('data/o/players.json'), true, 'Bundesliga player loads the compact ODbL player totals');
+        }
+        if (hash === '#/p/Q483583') {
+          equal(body.includes('記録のある試合で 0得点'), true, 'recorded goal count is explicitly partial');
+          equal(body.includes('シーズン 31得点'), true, 'authoritative season total is shown separately');
+          equal(dataRequests.includes('data/o/players.json'), false, 'non-Bundesliga player does not load ODbL totals');
+        }
         if (hash === `#/p/${playerWithoutGoals}`) {
-          equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
+          const record = load(`p/${playerBucket(playerWithoutGoals)}.json`)[playerWithoutGoals];
+          const hasBundesligaSeason = record.seasons.some((season) => season.league === 'de');
+          equal(dataRequests.length <= (hasBundesligaSeason ? 3 : 2), true, `${hash} fetches its player bucket, names, and ODbL totals only for Bundesliga`);
+          equal(dataRequests.includes('data/o/players.json'), hasBundesligaSeason, `${hash} ODbL player-total fetch follows Bundesliga participation`);
         }
         if (hash === `#/p/${enFallbackPlayer.id}`) {
           equal(body.includes('英語版の記録'), true, 'en-fallback season shows its source note');
@@ -202,6 +224,12 @@ export function register(test, equal, deepEqual) {
           equal(switcherFlags.join(','), ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort().join(','), `${hash} meikan switcher shows all five leagues`);
           const picker = withClass(appRoot, 'meikan-season-select')[0];
           equal(picker?.childNodes.length, 34, `${hash} season picker holds 34 seasons`);
+          if (hash === '#/z') {
+            picker.value = '2024';
+            for (const listener of picker.listeners.get('change') ?? []) listener();
+            const premier = descendants(switcher).find((node) => node.tagName === 'A' && node.textContent.includes('プレミアリーグ'));
+            equal(premier?.getAttribute('href'), '#/z/en/2024', 'chooser season updates league targets');
+          }
         }
         if (hash.startsWith('#/z/') && /^#\/z\/[a-z]{2}\/\d{4}$/.test(hash)) {
           const [, lg, year] = /^#\/z\/([a-z]{2})\/(\d{4})$/.exec(hash);
@@ -296,7 +324,7 @@ export function register(test, equal, deepEqual) {
     equal(releaseSources.some((value) => /v=0\.2\.0\b/.test(value)), false, 'stale 0.2.0 asset version');
     equal(releaseSources.some((value) => /v=0\.2\.1\b/.test(value)), false, 'stale 0.2.1 asset version');
     equal(/\.brand-copy small\s*\{[^}]*white-space:\s*nowrap/u.test(css), true, 'header subtitle element has white-space nowrap');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.3.0'"), true, 'footer version');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.3.2'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

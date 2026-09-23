@@ -77,10 +77,29 @@ export function register(test, equal, deepEqual) {
     const lillois = JSON.parse(await readFile(join(DATA, 'c/Q2338486.json'), 'utf8'));
     equal(lillois.titleCount, 2, 'Olympique Lillois includes its pre-coverage amateur title');
     const valenciennes = JSON.parse(await readFile(join(DATA, 'c/Q212269.json'), 'utf8'));
-    const valenciennesIndex = valenciennes.headToHead.Q132885.matches.indexOf('fr-1992-Q212269-Q132885');
+    const valenciennesIndex = valenciennes.headToHead.Q132885.matches.findIndex((match) => match.key === 'fr-1992-Q212269-Q132885');
     equal(valenciennes.headToHead.Q132885.outcomes[valenciennesIndex], 'l', 'double defeat is a loss for Valenciennes');
-    const marseilleIndex = marseille.headToHead.Q212269.matches.indexOf('fr-1992-Q212269-Q132885');
+    const marseilleIndex = marseille.headToHead.Q212269.matches.findIndex((match) => match.key === 'fr-1992-Q212269-Q132885');
     equal(marseille.headToHead.Q212269.outcomes[marseilleIndex], 'l', 'double defeat is a loss for Marseille');
+  });
+  test('OpenLigaDB goals stay out of CC BY-SA aggregates and have a separate player total', async () => {
+    const playerBucket = (id) => String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+    const mueller = JSON.parse(await readFile(join(DATA, 'p', `${playerBucket('Q43666')}.json`), 'utf8')).Q43666;
+    const season = mueller.seasons.find((item) => item.season === 'de-2009');
+    equal(season.goalMatches.includes('de-2009-Q106394-Q15789'), false, 'ODbL-only goal match is absent from player bucket');
+    const openLigaPlayers = JSON.parse(await readFile(join(DATA, 'o/players.json'), 'utf8'));
+    equal(openLigaPlayers.players.Q43666['de-2009'], 1, 'ODbL-only goal is counted in the separate player file');
+    equal(openLigaPlayers.licence, 'ODbL-1.0');
+    const search = JSON.parse(await readFile(join(DATA, 'search.json'), 'utf8'));
+    const rankings = JSON.parse(await readFile(join(DATA, 'rankings.json'), 'utf8'));
+    equal(search.find((item) => item.id === 'Q43666').goals, mueller.seasons.reduce((sum, item) => sum + item.recordedGoals, 0));
+    const ranking = rankings.players.goals.find((item) => item.player === 'Q43666');
+    equal(ranking == null || ranking.value === mueller.seasons.reduce((sum, item) => sum + item.recordedGoals, 0), true);
+  });
+  test('club head-to-head details carry Wikipedia dates', async () => {
+    const arsenal = JSON.parse(await readFile(join(DATA, 'c/Q9617.json'), 'utf8'));
+    const match = arsenal.headToHead.Q1130849.matches.find((item) => item.key === 'en-2023-Q1130849-Q9617');
+    deepEqual(match, { key: 'en-2023-Q1130849-Q9617', score: '1–1', date: '2023-12-23' });
   });
   test('every club title total equals its complete list of title chips', async () => {
     const mismatches = [];

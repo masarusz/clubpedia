@@ -1,4 +1,4 @@
-import { rubyPlain } from './ruby.js?v=0.3.0';
+import { rubyPlain } from './ruby.js?v=0.3.2';
 
 const ALLOWED_ATTRIBUTES = new Set([
   'alt', 'aria-current', 'aria-label', 'aria-live', 'aria-pressed', 'class', 'colspan', 'for', 'height', 'href', 'id',

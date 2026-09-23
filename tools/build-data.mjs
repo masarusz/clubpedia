@@ -187,6 +187,7 @@ export async function build() {
   // left without reconciled scorers, kept in their own files (never merged
   // with CC BY-SA Wikipedia data).
   const openLigaOutputs = new Map();
+  const openLigaPlayers = new Map();
   const openLigaStats = { years: 0, matches: 0, linked: 0, unlinked: 0, bySeason: new Map() };
   for (const season of seasons.filter((item) => item.league === 'de')) {
     let source;
@@ -236,13 +237,9 @@ export async function build() {
       outputMatches[match.key] = { ...outputMatches[match.key], home: link(reconciled.home, homeCandidates, awayCandidates), away: link(reconciled.away, awayCandidates, homeCandidates) };
       for (const [side, club] of [['home', match.home], ['away', match.away]]) for (const event of outputMatches[match.key][side]) {
         if (!event.player || event.ownGoal) continue;
-        const player = playersResult.players.get(event.player);
-        const bucket = player?.seasons.find((item) => item.season === season.id && item.club === club);
-        if (!bucket) continue;
-        bucket.recordedGoals = (bucket.recordedGoals ?? 0) + 1;
-        bucket.goals = Math.max(bucket.goals ?? 0, bucket.recordedGoals);
-        bucket.goalMatches ??= [];
-        bucket.goalMatches.push(match.key);
+        const seasonsForPlayer = openLigaPlayers.get(event.player) ?? {};
+        seasonsForPlayer[season.id] = (seasonsForPlayer[season.id] ?? 0) + 1;
+        openLigaPlayers.set(event.player, seasonsForPlayer);
       }
       openLigaStats.matches += 1;
       openLigaStats.bySeason.set(season.id, (openLigaStats.bySeason.get(season.id) ?? 0) + 1);
@@ -415,6 +412,11 @@ export async function build() {
   for (const [year, output] of openLigaOutputs) {
     await writeFile(join(OUTPUT, 'o', `de-${year}.json`), stableJson({ league: 'de', year, licence: 'ODbL-1.0', source: 'OpenLigaDB', matches: output.matches, dates: output.dates }));
   }
+  await writeFile(join(OUTPUT, 'o', 'players.json'), stableJson({
+    licence: 'ODbL-1.0',
+    source: 'OpenLigaDB',
+    players: Object.fromEntries([...openLigaPlayers].sort(([a], [b]) => a.localeCompare(b))),
+  }));
 
   const photoCreditFor = (id, player, { includeName = false, includeFile = false } = {}) => {
     const photo = photoManifest[id];
@@ -506,13 +508,12 @@ export async function build() {
     for (const match of season.matches) for (const homeSide of [true, false]) {
       const club = homeSide ? match.home : match.away; const opponent = homeSide ? match.away : match.home;
       const gf = homeSide ? match.homeGoals : match.awayGoals; const ga = homeSide ? match.awayGoals : match.homeGoals;
-      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [], scores: [], outcomes: '' };
+      const h2h = clubData.get(club).headToHead[opponent] ?? { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, matches: [], outcomes: '' };
       h2h.p += 1; h2h.gf += gf; h2h.ga += ga;
       const result = match.status === 'double-defeat'
         ? { w: 0, d: 0, l: 1 }
         : matchOutcome(match)[homeSide ? 'home' : 'away'];
-      h2h.matches.push(match.key);
-      h2h.scores.push(`${match.homeGoals}–${match.awayGoals}`);
+      h2h.matches.push({ key: match.key, score: `${match.homeGoals}–${match.awayGoals}`, date: match.date ?? null });
       h2h.outcomes += result.w ? 'w' : result.d ? 'd' : 'l';
       h2h.w += result.w; h2h.d += result.d; h2h.l += result.l;
       clubData.get(club).headToHead[opponent] = h2h;
@@ -593,7 +594,10 @@ export async function build() {
   await writeFile(namesPath, stableJson(names));
   for (const [id, data] of clubData) await writeFile(join(OUTPUT, 'c', `${id}.json`), stableJson(data));
   for (const league of Object.keys(LEAGUE_INFO)) {
-    await writeFile(join(OUTPUT, 'h', `${league}.json`), stableJson({ league, fingerprint, champions: championsByLeague[league], topScorers: historicalTopScorers[league] }));
+    const topScorerNames = Object.fromEntries(compactSeasons.filter((season) => season.id.startsWith(`${league}-`))
+      .flatMap((season) => season.topScorers).filter((entry) => entry.playerId)
+      .map((entry) => [entry.playerId, playerDisplay(playersResult.players.get(entry.playerId), entry.playerId)]));
+    await writeFile(join(OUTPUT, 'h', `${league}.json`), stableJson({ league, fingerprint, champions: championsByLeague[league], topScorers: historicalTopScorers[league], topScorerNames, clubs: names }));
   }
   const index = {
     fingerprint,
