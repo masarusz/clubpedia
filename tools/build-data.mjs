@@ -7,6 +7,7 @@ import { gzipSync } from 'node:zlib';
 import { stableJson } from './lib/source-api.mjs';
 import { LEAGUE_INFO, allHistoryTopScorers, applyReviewedCorrection, clubKitColour, discrepancies, matchOutcome, metadataIndex, normalizeTitle, parseChampions, parseSeason, proposeCorrection, readCached, seasonTopScorers } from './lib/core-data.mjs';
 import { attachScorers } from './lib/build-scorers.mjs';
+import { dateInSeason, parseMatchDate } from './lib/scorers.mjs';
 import { linkPlayerName, reconciledGoals } from './lib/openligadb.mjs';
 import { buildPlayers, loadWikidata, sanitizeScorerIdentities, scorerIdentityIssue } from './lib/players.mjs';
 import { crossCheckJapanesePlayers, foreignListEntries } from './lib/japanese-crosscheck.mjs';
@@ -22,6 +23,10 @@ const allowMissingNames = process.argv.includes('--allow-missing-names') || allo
 
 async function maybeJson(path, fallback) {
   try { return JSON.parse(await readFile(path, 'utf8')); } catch (error) { if (error.code === 'ENOENT') return fallback; throw error; }
+}
+
+async function maybeFileNames(path) {
+  try { return await readdir(path); } catch (error) { if (error.code === 'ENOENT') return []; throw error; }
 }
 
 function cleanJaTitle(value) { return value?.replace(/[\s　]*[\uff08(][^\uff09)]*[\uff09)]\s*$/, '').trim() ?? null; }
@@ -117,6 +122,9 @@ export async function build() {
   const japaneseClubAliases = await maybeJson(join(ROOT, 'curated/japanese-club-aliases.json'), {});
   const searchAliases = await maybeJson(join(ROOT, 'curated/search-aliases.json'), []);
   const topScorerWinnerExceptions = await maybeJson(join(ROOT, 'curated/top-scorer-winner-exceptions.json'), []);
+  const photoManifest = await maybeJson(join(ROOT, 'curated/photos.json'), {});
+  const photoIds = new Set((await maybeFileNames(join(ROOT, 'public/assets/players')))
+    .filter((name) => /^Q\d+\.webp$/.test(name)).map((name) => name.slice(0, -5)));
   const correctionBySeason = new Map(previousCorrections.map((entry) => [entry.season, entry]));
   const seasons = [];
   const clubs = new Map();
@@ -199,11 +207,22 @@ export async function build() {
       return candidates.length === 1 ? candidates[0].club : null;
     };
     const outputMatches = {};
+    const outputDates = {};
     let yearHasOutput = false;
     for (const match of season.matches) {
-      if (match.scorers) continue;
       const ligaMatch = source.find((item) => resolveLigaClub(item.team1?.teamName) === match.home && resolveLigaClub(item.team2?.teamName) === match.away);
       if (!ligaMatch) continue;
+      if (!match.date && ligaMatch.matchDateTime) {
+        const date = parseMatchDate(ligaMatch.matchDateTime);
+        const coverage = scorerCoverage.find((item) => item.id === season.id);
+        if (date && dateInSeason(date, season.year)) {
+          match.openLigaDate = date;
+          outputDates[match.key] = date;
+          yearHasOutput = true;
+          coverage.dateOpenLiga = (coverage.dateOpenLiga ?? 0) + 1;
+        } else coverage.droppedDates += 1;
+      }
+      if (match.scorers) continue;
       const reconciled = reconciledGoals(ligaMatch, match.homeGoals, match.awayGoals);
       if (!reconciled) continue;
       const candidatesFor = (clubId) => candidatesBySeasonClub.get(`${season.id}|${clubId}`) ?? [];
@@ -214,7 +233,7 @@ export async function build() {
         openLigaStats[id ? 'linked' : 'unlinked'] += 1;
         return { minute: event.minute, ...(event.isPenalty ? { penalty: true } : {}), ...(event.ownGoal ? { ownGoal: true } : {}), name: event.name, player: id };
       });
-      outputMatches[match.key] = { home: link(reconciled.home, homeCandidates, awayCandidates), away: link(reconciled.away, awayCandidates, homeCandidates) };
+      outputMatches[match.key] = { ...outputMatches[match.key], home: link(reconciled.home, homeCandidates, awayCandidates), away: link(reconciled.away, awayCandidates, homeCandidates) };
       for (const [side, club] of [['home', match.home], ['away', match.away]]) for (const event of outputMatches[match.key][side]) {
         if (!event.player || event.ownGoal) continue;
         const player = playersResult.players.get(event.player);
@@ -229,7 +248,7 @@ export async function build() {
       openLigaStats.bySeason.set(season.id, (openLigaStats.bySeason.get(season.id) ?? 0) + 1);
       yearHasOutput = true;
     }
-    if (yearHasOutput) { openLigaOutputs.set(season.year, outputMatches); openLigaStats.years += 1; }
+    if (yearHasOutput) { openLigaOutputs.set(season.year, { matches: outputMatches, dates: outputDates }); openLigaStats.years += 1; }
   }
 
   const championsByLeague = {};
@@ -356,10 +375,16 @@ export async function build() {
   }).join('\n')}\n\nUnlinked Wikipedia scorers: ${unresolvedScorers.unlinked}\nNulled wrong-person scorer links: ${scorerIdentity.nulled.length}\n${scorerIdentity.nulled.map((item) => JSON.stringify(item)).join('\n')}\nOpenLigaDB: ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked, ${openLigaStats.unlinked} unlinked\n`);
   await writeFile(join(REPORTS, 'scorer-conflicts.txt'), `${unresolvedScorers.conflicts.map((item) => JSON.stringify(item)).join('\n')}\n`);
   await writeFile(join(REPORTS, 'japanese-crosscheck.txt'), `Pinned Japanese players: ${japanesePlayers.length}\nForeign-list entries: ${listEntries.length}\nDisagreements: ${japaneseCrossCheck.length}\n${japaneseCrossCheck.map((item) => JSON.stringify(item)).join('\n')}\n`);
+  await writeFile(join(REPORTS, 'date-coverage.txt'), `${scorerCoverage.map((row) => {
+    const openLiga = row.dateOpenLiga ?? 0;
+    const total = row.dateWikipedia + openLiga;
+    return `${row.id}: ${total}/${row.matches} (${(100 * total / row.matches).toFixed(1)}%); Wikipedia ${row.dateWikipedia}, OpenLigaDB ${openLiga}, home/away disagreements ${row.dateDisagreements}, dropped ${row.droppedDates}`;
+  }).join('\n')}\n\nHome/away disagreements: ${scorerCoverage.reduce((sum, row) => sum + row.dateDisagreements, 0)}\nDropped out-of-season or unparseable dates: ${scorerCoverage.reduce((sum, row) => sum + row.droppedDates, 0)}\n`);
 
   await rm(OUTPUT, { recursive: true, force: true });
   await mkdir(join(OUTPUT, 's'), { recursive: true }); await mkdir(join(OUTPUT, 'c'), { recursive: true }); await mkdir(join(OUTPUT, 'h'), { recursive: true });
   await mkdir(join(OUTPUT, 'o'), { recursive: true }); await mkdir(join(OUTPUT, 'p'), { recursive: true });
+  await mkdir(join(OUTPUT, 'days'), { recursive: true });
   const fingerprint = createHash('sha256').update(revisionParts.sort().join('\n')).digest('hex');
 
   // 名鑑 v1: per league-season, per club, the Japanese players plus every
@@ -380,15 +405,15 @@ export async function build() {
   for (const season of seasons) {
     const clubMap = seasonClubPlayers.get(season.id);
     const players = clubMap ? Object.fromEntries([...clubMap].sort(([a], [b]) => a.localeCompare(b))) : {};
-    const output = { id: season.id, league: season.league, year: season.year, pointSystem: season.pointSystem, champion: season.champion, table: season.table.map(({ code, sourceName, sourceTarget, ...row }) => row), matches: season.matches.map(({ gridValue, ...match }) => match), topScorers: season.topScorers, players };
+    const output = { id: season.id, league: season.league, year: season.year, pointSystem: season.pointSystem, champion: season.champion, table: season.table.map(({ code, sourceName, sourceTarget, ...row }) => row), matches: season.matches.map(({ gridValue, openLigaDate, ...match }) => match), topScorers: season.topScorers, players };
     await writeFile(join(OUTPUT, 's', `${season.id}.json`), stableJson(output));
     compactSeasons.push({ id: season.id, label: `${season.year}–${String(season.year + 1).slice(-2)}`, champion: season.champion, topScorers: season.topScorers.filter((entry) => entry.rank === 1).map((entry) => ({ playerId: entry.playerId, goals: entry.goals, ...(!entry.playerId ? { player: entry.player } : {}) })) });
   }
 
   // OpenLigaDB (ODbL) goal events, one file per Bundesliga season, never
   // merged with CC BY-SA Wikipedia data.
-  for (const [year, matches] of openLigaOutputs) {
-    await writeFile(join(OUTPUT, 'o', `de-${year}.json`), stableJson({ league: 'de', year, licence: 'ODbL-1.0', source: 'OpenLigaDB', matches }));
+  for (const [year, output] of openLigaOutputs) {
+    await writeFile(join(OUTPUT, 'o', `de-${year}.json`), stableJson({ league: 'de', year, licence: 'ODbL-1.0', source: 'OpenLigaDB', matches: output.matches, dates: output.dates }));
   }
 
   // Players, bucketed so one player page loads one file <= 300 KB.
@@ -398,7 +423,7 @@ export async function build() {
   for (const [id, player] of playerEntries) {
     const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % BUCKET_COUNT).padStart(2, '0');
     if (!buckets.has(bucketId)) buckets.set(bucketId, {});
-    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, japan: player.japan ?? null, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)) };
+    buckets.get(bucketId)[id] = { id, en: player.en, ja: player.ja, birthDate: player.birthDate, japan: player.japan ?? null, seasons: player.seasons.sort((a, b) => a.season.localeCompare(b.season)), ...(photoIds.has(id) ? { photo: true } : {}) };
   }
   const playerFileSizes = [];
   for (const [bucketId, entries] of buckets) {
@@ -409,7 +434,7 @@ export async function build() {
 
   // 日本人選手 (all eras): every Japanese player, by season -> club.
   const japanPlayers = [...playersResult.players.values()].filter((player) => player.japan).map((player) => ({
-    id: player.id, en: player.en, ja: player.ja, birthDate: player.birthDate, seasons: player.japan.sort((a, b) => a.season.localeCompare(b.season)),
+    id: player.id, en: player.en, ja: player.ja, birthDate: player.birthDate, seasons: player.japan.sort((a, b) => a.season.localeCompare(b.season)), ...(photoIds.has(player.id) ? { photo: true } : {}),
   })).sort((a, b) => a.id.localeCompare(b.id));
   await writeFile(join(OUTPUT, 'japan.json'), stableJson({ players: japanPlayers }));
 
@@ -496,6 +521,52 @@ export async function build() {
     data.positions.sort((a, b) => b.season.localeCompare(a.season));
     data.topScorers.sort((a, b) => b.goals - a.goals || a.player.localeCompare(b.player));
   }
+
+  const photoCredits = {};
+  for (const id of [...photoIds].sort()) {
+    const photo = photoManifest[id];
+    if (!photo) continue;
+    photoCredits[id] = { file: photo.file, licence: photo.licence, licenceUrl: photo.licenceUrl, artist: photo.artist, source: photo.source };
+  }
+  await writeFile(join(OUTPUT, 'photo-credits.json'), stableJson(photoCredits));
+
+  const dayData = new Map();
+  for (let month = 1; month <= 12; month += 1) {
+    const days = new Date(Date.UTC(2000, month, 0)).getUTCDate();
+    for (let day = 1; day <= days; day += 1) dayData.set(`${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`, { matches: [], birthdays: [] });
+  }
+  const japaneseClubSeasons = new Set();
+  for (const player of playersResult.players.values()) if (player.japan) for (const bucket of player.seasons) {
+    if (bucket.club) japaneseClubSeasons.add(`${bucket.season}|${bucket.club}`);
+  }
+  for (const season of seasons) for (const match of season.matches) if (match.date) {
+    dayData.get(match.date.slice(5)).matches.push({
+      key: match.key, league: season.league, season: season.id, home: match.home, away: match.away,
+      score: `${match.homeGoals}–${match.awayGoals}`, date: match.date,
+      japanese: japaneseClubSeasons.has(`${season.id}|${match.home}`) || japaneseClubSeasons.has(`${season.id}|${match.away}`),
+      titles: Math.max(clubData.get(match.home)?.titleCount ?? 0, clubData.get(match.away)?.titleCount ?? 0),
+    });
+  }
+  for (const [id, player] of playersResult.players) if (/^\d{4}-\d{2}-\d{2}$/.test(player.birthDate ?? '')) {
+    const goals = player.seasons.reduce((sum, item) => sum + (Number.isFinite(item.goals) ? item.goals : 0), 0);
+    dayData.get(player.birthDate.slice(5)).birthdays.push({ id, name: playerDisplay(player), birthYear: Number(player.birthDate.slice(0, 4)), photo: photoIds.has(id), japan: Boolean(player.japan), goals });
+  }
+  const dayCounts = { matches: [], birthdays: [] };
+  for (const [day, data] of dayData) {
+    const selectedMatches = data.matches.sort((a, b) => Number(b.japanese) - Number(a.japanese) || b.titles - a.titles || b.date.localeCompare(a.date) || a.key.localeCompare(b.key))
+      .slice(0, 12).sort((a, b) => b.date.localeCompare(a.date) || a.key.localeCompare(b.key))
+      .map(({ date, japanese, titles, ...match }) => match);
+    const birthdays = data.birthdays.sort((a, b) => Number(b.japan) - Number(a.japan) || b.goals - a.goals || a.id.localeCompare(b.id))
+      .slice(0, 12).map(({ japan, goals, ...player }) => player);
+    await writeFile(join(OUTPUT, 'days', `${day}.json`), stableJson({ matches: selectedMatches, birthdays }));
+    dayCounts.matches.push(selectedMatches.length); dayCounts.birthdays.push(birthdays.length);
+  }
+  const countSummary = (values) => {
+    const sorted = [...values].sort((a, b) => a - b);
+    return { min: sorted[0], median: (sorted[182] + sorted[183]) / 2, max: sorted.at(-1) };
+  };
+  const daySummary = { matches: countSummary(dayCounts.matches), birthdays: countSummary(dayCounts.birthdays) };
+  await writeFile(join(REPORTS, 'days.txt'), `Matches per day: min ${daySummary.matches.min}, median ${daySummary.matches.median}, max ${daySummary.matches.max}\nBirthdays per day: min ${daySummary.birthdays.min}, median ${daySummary.birthdays.median}, max ${daySummary.birthdays.max}\n`);
   const names = Object.fromEntries([...clubs].sort(([a], [b]) => a.localeCompare(b)).map(([id, entry]) => [id, {
     name: entry.jaName,
     colour: clubColours.get(id),
@@ -575,6 +646,8 @@ export async function build() {
   console.log(`Players: ${playersResult.players.size} in ${playerFileSizes.length} bucket file(s); scorer conflicts: ${unresolvedScorers.conflicts.length}; unlinked scorers: ${unresolvedScorers.unlinked}; nulled wrong-person links: ${scorerIdentity.nulled.length}; age anomalies: ${playersResult.ageAnomalies.length}; readings missing: ${playersResult.readingsMissing.length}`);
   console.log(`Japanese players: ${japanPlayers.length}/${japanesePlayers.length}; foreign-list cross-check disagreements: ${japaneseCrossCheck.length}`);
   console.log(`OpenLigaDB: ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked / ${openLigaStats.unlinked} unlinked`);
+  console.log(`Match dates: ${seasons.reduce((sum, season) => sum + season.matches.filter((match) => match.date || match.openLigaDate).length, 0)}/${seasons.reduce((sum, season) => sum + season.matches.length, 0)}; home/away disagreements: ${scorerCoverage.reduce((sum, row) => sum + row.dateDisagreements, 0)}; dropped: ${scorerCoverage.reduce((sum, row) => sum + row.droppedDates, 0)}`);
+  console.log(`Days: matches min/median/max ${daySummary.matches.min}/${daySummary.matches.median}/${daySummary.matches.max}; birthdays ${daySummary.birthdays.min}/${daySummary.birthdays.median}/${daySummary.birthdays.max}; photos ${photoIds.size}`);
   if (missingNames.length && !allowMissingNames) throw new Error(`Missing Japanese club names:\n${missingNames.join('\n')}`);
   if (unresolvedChampions.length && !allowProposed) throw new Error(`${unresolvedChampions.length} historical champions lack pinned identity metadata`);
   if (proposed.length && !allowProposed) throw new Error(`${proposed.length} results corrections await review; rerun with --allow-proposed to inspect output`);

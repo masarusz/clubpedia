@@ -1,5 +1,5 @@
 import { clubSeasonTitle } from './wikitext.mjs';
-import { leagueFootballBoxes, parseGoalSide, resolveBoxClub } from './scorers.mjs';
+import { dateInSeason, leagueFootballBoxes, parseGoalSide, parseMatchDate, resolveBoxClub } from './scorers.mjs';
 import { normalizeTitle, resolveClub } from './core-data.mjs';
 
 export function minuteValue(value) {
@@ -91,7 +91,9 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
   // side -> array of { source, events } readings, gathered from up to two
   // club articles (the home club's and the away club's own season page).
   const readings = new Map();
+  const dateReadings = new Map();
   let ambiguousBoxes = 0;
+  let droppedDates = 0;
   const unresolvedCounter = { count: 0 };
 
   for (const row of season.table) {
@@ -106,6 +108,15 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
       if (!home || !away || home === away) { ambiguousBoxes += 1; continue; }
       const match = matchByKey.get(`${season.id}-${home}-${away}`);
       if (!match) { ambiguousBoxes += 1; continue; }
+      const rawDate = box.params.date?.trim();
+      if (rawDate) {
+        const date = parseMatchDate(rawDate, season.year);
+        if (date && dateInSeason(date, season.year)) {
+          const list = dateReadings.get(match.key) ?? [];
+          list.push({ source: row.club, date });
+          dateReadings.set(match.key, list);
+        } else droppedDates += 1;
+      }
       const target = targetScore(match);
       if (!target) { ambiguousBoxes += 1; continue; }
       const [targetHome, targetAway] = target;
@@ -118,7 +129,16 @@ export async function attachScorers({ season, lock, metadata, readCached, cacheR
     }
   }
 
-  const coverage = { matches: season.matches.length, wikipedia: 0, confirmedByBoth: 0, ambiguousBoxes, conflicts: 0 };
+  const coverage = { matches: season.matches.length, wikipedia: 0, confirmedByBoth: 0, ambiguousBoxes, conflicts: 0, dateWikipedia: 0, dateDisagreements: 0, droppedDates };
+  for (const [key, list] of dateReadings) {
+    const match = matchByKey.get(key);
+    if (!match) continue;
+    const homeDate = list.find((item) => item.source === match.home)?.date;
+    const awayDate = list.find((item) => item.source === match.away)?.date;
+    if (homeDate && awayDate && homeDate !== awayDate) coverage.dateDisagreements += 1;
+    match.date = homeDate ?? awayDate ?? list[0].date;
+    coverage.dateWikipedia += 1;
+  }
   const conflictMatches = new Set();
   for (const [key, entry] of readings) {
     const match = matchByKey.get(key);

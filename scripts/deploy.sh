@@ -56,6 +56,7 @@ PATTERNS=(
   "assets/*.svg"
   "assets/flags/*.svg"
   "assets/flags/LICENSE-flag-icons.txt"
+  "assets/players/*.webp"
 )
 FILES=()
 shopt -s nullglob

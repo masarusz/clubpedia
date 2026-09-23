@@ -12,6 +12,52 @@ const CUP_SECTION_NAME = /cup|shield|supercup|supercopa|coppa|coupe|champions le
 
 const BOX_TEMPLATE = /^football\s*box(?:\s+collapsible)?$/i;
 
+const MONTHS = new Map([
+  ['january', 1], ['jan', 1], ['february', 2], ['feb', 2], ['march', 3], ['mar', 3],
+  ['april', 4], ['apr', 4], ['may', 5], ['june', 6], ['jun', 6], ['july', 7],
+  ['jul', 7], ['august', 8], ['aug', 8], ['september', 9], ['sep', 9], ['sept', 9],
+  ['october', 10], ['oct', 10], ['november', 11], ['nov', 11], ['december', 12], ['dec', 12],
+]);
+
+function isoDate(year, month, day) {
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
+  return `${String(year).padStart(4, '0')}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
+/** Parse the date values used by cached league football boxes. */
+export function parseMatchDate(rawValue, seasonYear = null) {
+  const raw = String(rawValue ?? '').trim();
+  if (!raw) return null;
+  const template = raw.match(/^\{\{\s*(start\s+date|dts|nowrap)\s*\|([\s\S]*?)\}\}$/i);
+  if (template) {
+    if (/^nowrap$/i.test(template[1])) return parseMatchDate(template[2], seasonYear);
+    const numbers = template[2].split('|').map((value) => value.trim())
+      .filter((value) => /^\d{1,4}$/.test(value)).map(Number);
+    if (numbers.length >= 3) return isoDate(numbers[0], numbers[1], numbers[2]);
+  }
+  const iso = raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})(?:[T\s].*)?$/);
+  if (iso) return isoDate(Number(iso[1]), Number(iso[2]), Number(iso[3]));
+  const text = plainText(raw).replace(/\s+/g, ' ').trim();
+  const dmy = text.match(/^(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?/);
+  if (dmy) {
+    const month = MONTHS.get(dmy[2].toLowerCase().replace(/\.$/, ''));
+    const year = dmy[3] ? Number(dmy[3]) : (seasonYear == null || !month ? null : seasonYear + (month < 7 ? 1 : 0));
+    if (month && year != null) return isoDate(year, month, Number(dmy[1]));
+  }
+  const mdy = text.match(/^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if (!mdy) return null;
+  const month = MONTHS.get(mdy[1].toLowerCase().replace(/\.$/, ''));
+  return month ? isoDate(Number(mdy[3]), month, Number(mdy[2])) : null;
+}
+
+/** A European season runs 1 July through 30 June; 2019-20 extends to 31 August. */
+export function dateInSeason(date, seasonYear) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date))) return false;
+  const end = seasonYear === 2019 ? '2020-08-31' : `${seasonYear + 1}-06-30`;
+  return date >= `${seasonYear}-07-01` && date <= end;
+}
+
 /** Sections (any level) whose title textually names this league's top flight. */
 function leagueSections(articleText, league) {
   const pattern = LEAGUE_SECTION_NAME[league];

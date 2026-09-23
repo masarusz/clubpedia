@@ -1,8 +1,10 @@
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readFile, readdir } from 'node:fs/promises';
+import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { allHistoryTopScorers, discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
+import { dateInSeason, parseMatchDate } from '../tools/lib/scorers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DATA = join(ROOT, 'public/data');
@@ -337,6 +339,91 @@ export function register(test, equal, deepEqual) {
     for (const file of await readdir(join(DATA, 'p'))) {
       const bucket = JSON.parse(await readFile(join(DATA, 'p', file), 'utf8'));
       equal('Q362' in bucket, false, `${file}: no ghost "World War II" player entry`);
+    }
+  });
+
+  // --- Phase 5: dates, daily chunks, photos ------------------------------
+  test('match dates parse every cached football-box format and reject impossible dates', () => {
+    equal(parseMatchDate('{{Start date|2023|8|12|df=y}}'), '2023-08-12');
+    equal(parseMatchDate('12 Aug 2023'), '2023-08-12');
+    equal(parseMatchDate('9 August 2019'), '2019-08-09');
+    equal(parseMatchDate('{{dts|format=dmy|2017|7|11}}'), '2017-07-11');
+    equal(parseMatchDate('{{Nowrap|19 August 2000}}'), '2000-08-19');
+    equal(parseMatchDate('Apr 6, 2002'), '2002-04-06');
+    equal(parseMatchDate('{{Nowrap|19 August}}', 2000), '2000-08-19');
+    equal(parseMatchDate('12 February', 2000), '2001-02-12');
+    equal(parseMatchDate('{{Start date|2023|2|29|df=y}}'), null);
+  });
+
+  test('match dates obey the July-June season guard and the 2019-20 extension', () => {
+    equal(dateInSeason('2023-07-01', 2023), true);
+    equal(dateInSeason('2024-06-30', 2023), true);
+    equal(dateInSeason('2024-07-01', 2023), false);
+    equal(dateInSeason('2020-08-31', 2019), true);
+    equal(dateInSeason('2020-09-01', 2019), false);
+  });
+
+  test('OpenLigaDB matchDateTime supplies a valid Bundesliga date', async () => {
+    const fixture = JSON.parse(await readFile(join(ROOT, 'tests/fixtures/openligadb/bl1-2023-matchday1.json'), 'utf8'));
+    const date = parseMatchDate(fixture[0].matchDateTime);
+    equal(date, '2023-08-20');
+    equal(dateInSeason(date, 2023), true);
+  });
+
+  test('OpenLigaDB fallback dates stay in ODbL output instead of CC BY-SA season files', async () => {
+    const season = JSON.parse(await readFile(join(DATA, 's/de-2017.json'), 'utf8'));
+    const openLiga = JSON.parse(await readFile(join(DATA, 'o/de-2017.json'), 'utf8'));
+    equal(season.matches.some((match) => 'date' in match), false);
+    equal(Object.keys(openLiga.dates).length, 306);
+  });
+
+  test('all 366 daily files are small and birthdays expose a birth year, never an age', async () => {
+    const files = (await readdir(join(DATA, 'days'))).filter((name) => name.endsWith('.json')).sort();
+    equal(files.length, 366);
+    equal(files.includes('02-29.json'), true);
+    for (const file of files) {
+      const bytes = await readFile(join(DATA, 'days', file));
+      equal(bytes.length <= 15 * 1024, true, `${file} is ${bytes.length} bytes`);
+      const day = JSON.parse(bytes);
+      equal(day.matches.length <= 12, true, file);
+      equal(day.birthdays.length <= 12, true, file);
+      for (const birthday of day.birthdays) {
+        equal('age' in birthday, false, `${file} ${birthday.id}`);
+        equal(Number.isInteger(birthday.birthYear), true, `${file} ${birthday.id}`);
+      }
+    }
+  });
+
+  test('built photos have matching credits and player photo flags', async () => {
+    const photos = (await readdir(join(ROOT, 'public/assets/players'))).filter((name) => name.endsWith('.webp')).sort();
+    const credits = JSON.parse(await readFile(join(DATA, 'photo-credits.json'), 'utf8'));
+    equal(photos.length, 622);
+    deepEqual(Object.keys(credits).sort(), photos.map((name) => name.slice(0, -5)));
+    for (const id of Object.keys(credits)) {
+      const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+      const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
+      equal(bucket[id]?.photo, true, id);
+    }
+  });
+
+  test('photo crop is deterministic and removes stale WebPs', async () => {
+    const manifest = JSON.parse(await readFile(join(ROOT, 'curated/photos.json'), 'utf8'));
+    const player = Object.keys(manifest).filter((id) => id !== '_about').sort()[0];
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-photo-test-'));
+    try {
+      const manifestPath = join(temporary, 'photos.json');
+      const outputPath = join(temporary, 'out');
+      await writeFile(manifestPath, JSON.stringify({ [player]: manifest[player] }));
+      const args = [join(ROOT, 'scripts/build_photos.py'), '--manifest', manifestPath, '--orig', join(CACHE, 'photos/orig'), '--out', outputPath];
+      execFileSync('python3', args, { cwd: ROOT });
+      const first = createHash('sha256').update(await readFile(join(outputPath, `${player}.webp`))).digest('hex');
+      await writeFile(join(outputPath, 'Q0.webp'), 'stale');
+      execFileSync('python3', args, { cwd: ROOT });
+      const second = createHash('sha256').update(await readFile(join(outputPath, `${player}.webp`))).digest('hex');
+      equal(second, first);
+      equal((await readdir(outputPath)).includes('Q0.webp'), false);
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
     }
   });
 }
