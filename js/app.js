@@ -1,10 +1,10 @@
-import { loadClub, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.2.1';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.2.1';
-import { backDecision } from './navigation.js?v=0.2.1';
-import { prepareIndex } from './search.js?v=0.2.1';
-import { STRINGS } from './strings.js?v=0.2.1';
-import { VERSION } from './version.js?v=0.2.1';
-import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.2.1';
+import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=0.3.0';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=0.3.0';
+import { backDecision } from './navigation.js?v=0.3.0';
+import { prepareIndex } from './search.js?v=0.3.0';
+import { STRINGS } from './strings.js?v=0.3.0';
+import { VERSION } from './version.js?v=0.3.0';
+import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=0.3.0';
 
 const root = document.querySelector('#app');
 
@@ -77,15 +77,20 @@ async function matchRoute(key, league, year) {
   const match = season.matches.find((item) => item.key === key);
   if (!match) return notFoundView();
   let scorers = match.scorers ?? null;
+  let date = match.date ?? null;
   let openLiga = false;
-  if (!scorers && league === 'de') {
+  if ((!scorers || !date) && league === 'de') {
     const extra = await loadOpenLiga(league, year);
     if (extra?.matches?.[key]) {
       scorers = extra.matches[key];
       openLiga = true;
     }
+    if (!date && extra?.dates?.[key]) {
+      date = extra.dates[key];
+      openLiga = true;
+    }
   }
-  const renderedMatch = scorers === match.scorers ? match : { ...match, scorers };
+  const renderedMatch = scorers === match.scorers && date === match.date ? match : { ...match, scorers, date };
   const playerIds = scorers ? [...scorers.home, ...scorers.away].map((item) => item.player) : [];
   return matchView(season, renderedMatch, await loadNames(), await loadPlayers(playerIds), openLiga);
 }
@@ -99,6 +104,12 @@ async function playerRoute(id) {
   const players = await loadPlayers([id]);
   const names = await loadNames();
   return playerView(id, players[id], names);
+}
+
+function todayKey(date = new Date()) {
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${month}-${day}`;
 }
 
 async function japanRoute() {
@@ -161,8 +172,12 @@ export async function renderRoute() {
   replace(main, rubyEl('p', STRINGS.loading, { class: 'loading' }));
   try {
     let view;
-    if (route === '/') view = homeView(await loadIndex(), searchOptions('/', ''));
+    if (route === '/') {
+      const [index, day] = await Promise.all([loadIndex(), loadDay(todayKey())]);
+      view = homeView(index, searchOptions('/', ''), day);
+    }
     else if (route === '/credits') view = creditsView();
+    else if (route === '/credits/photos') view = photoCreditsView(await loadPhotoCredits());
     else if (route === '/j') view = await japanRoute();
     else if (route === '/s') view = searchView(searchOptions('/s', query, true));
     else {

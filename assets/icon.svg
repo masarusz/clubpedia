@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Clubpedia">
-  <rect width="512" height="512" rx="112" fill="#173f35"/>
-  <path d="M126 116h260v280H126z" fill="#f4f7f2"/>
-  <path d="M164 158h184v32H164zm0 66h184v32H164zm0 66h120v32H164z" fill="#d3922f"/>
-  <circle cx="334" cy="306" r="52" fill="#2a735f"/>
+  <rect width="512" height="512" fill="#173f35"/>
+  <path d="M256 130 L102 112 L102 382 L256 418 Z" fill="#ebf4f0" stroke="#fff" stroke-width="23" stroke-linejoin="round"/>
+  <path d="M256 130 L410 112 L410 382 L256 418 Z" fill="#ebf4f0" stroke="#fff" stroke-width="23" stroke-linejoin="round"/>
+  <path d="M256 132 L256 406" stroke="#173f35" stroke-width="12" stroke-linecap="round"/>
+  <path d="M238 140 L238 390 M274 140 L274 390" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="256" cy="261" r="55" fill="none" stroke="#173f35" stroke-width="9"/>
+  <path d="M120 207 L174 207 L174 315 L120 315 M120 233 L147 233 L147 289 L120 289" fill="none" stroke="#173f35" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M392 207 L338 207 L338 315 L392 315 M392 233 L365 233 L365 289 L392 289" fill="none" stroke="#173f35" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
