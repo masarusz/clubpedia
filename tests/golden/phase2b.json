@@ -1,0 +1,65 @@
+{
+ "_source": "Written by Claude on 2026-09-23 from the raw pinned sources in .cache/sources (en.wikipedia club-season match boxes, OpenLigaDB JSON, ja.wikipedia 個人成績 tables), read by hand, outside the build. A disagreement with the build is a finding to report, never a reason to edit this file.",
+ "matchScorers": [
+  {
+   "season": "en-2023", "home": "Arsenal F.C.", "away": "Nottingham Forest F.C.", "score": "2–1",
+   "home_goals": [{"player": "Eddie Nketiah", "minute": "26"}, {"player": "Bukayo Saka", "minute": "32"}],
+   "away_goals": [{"player": "Taiwo Awoniyi", "minute": "82"}],
+   "source": "2023–24 Arsenal F.C. season, box 12 Aug 2023"
+  },
+  {
+   "season": "en-2023", "home": "Arsenal F.C.", "away": "Manchester City F.C.", "score": "1–0",
+   "home_goals": [{"player": "Gabriel Martinelli", "minute": "86"}],
+   "away_goals": [],
+   "source": "2023–24 Arsenal F.C. season, box 8 Oct 2023",
+   "trap": "The same article has an Arsenal 1–1 Manchester City box on 6 Aug 2023 (FA Community Shield: Trossard 90+11, Palmer 77). It must never be attached to the league fixture."
+  },
+  {
+   "season": "en-2019", "home": "Liverpool F.C.", "away": "Norwich City F.C.", "score": "4–1",
+   "home_goals": [{"player": "Grant Hanley", "minute": "7", "ownGoal": true}, {"player": "Mohamed Salah", "minute": "19"}, {"player": "Virgil van Dijk", "minute": "28"}, {"player": "Divock Origi", "minute": "42"}],
+   "away_goals": [{"player": "Teemu Pukki", "minute": "64"}],
+   "source": "2019–20 Liverpool F.C. season, box 9 Aug 2019",
+   "trap": "Hanley (a Norwich player) scored an own goal; it counts for Liverpool and is listed in goals1."
+  },
+  {
+   "season": "en-2019", "home": "Norwich City F.C.", "away": "Liverpool F.C.", "score": "0–1",
+   "home_goals": [],
+   "away_goals": [{"player": "Sadio Mané", "minute": "78"}],
+   "source": "2019–20 Liverpool F.C. season, box 15 Feb 2020"
+  }
+ ],
+ "openLigaDB": [
+  {
+   "season": "de-2023", "home": "SV Werder Bremen", "away": "FC Bayern München", "score": "0–4", "date": "2023-08-18",
+   "goals": [{"name": "L. Sane", "minute": "4"}, {"name": "H. Kane", "minute": "74"}, {"name": "L. Sane", "minute": "90"}, {"name": "M. Tel", "matchMinute": 94, "minute": "90+4"}],
+   "trap": "OpenLigaDB gives stoppage time as matchMinute 94; displayed as 90+4 (a 2nd-half minute > 90 is 90+n; a 1st-half one > 45 is 45+n only if the source marks it — report how you decide)."
+  }
+ ],
+ "japanesePlayers": [
+  {
+   "name": "三笘薫", "enTitle": "Kaoru Mitoma",
+   "leagueSeasons": [
+    {"season": "2022-23", "league": "en", "club": "Brighton & Hove Albion F.C.", "apps": 33, "goals": 7},
+    {"season": "2023-24", "league": "en", "club": "Brighton & Hove Albion F.C.", "apps": 19, "goals": 3},
+    {"season": "2024-25", "league": "en", "club": "Brighton & Hove Albion F.C.", "apps": 36, "goals": 10},
+    {"season": "2025-26", "league": "en", "club": "Brighton & Hove Albion F.C.", "apps": 25, "goals": 3}
+   ],
+   "note": "League columns only (the table also has cup and total columns). Premier League total 113 / 23. Belgian and J.League seasons are outside the five leagues."
+  },
+  {
+   "name": "奥寺康彦", "enTitle": "Yasuhiko Okudera",
+   "leagueSeasons": [
+    {"season": "1977-78", "league": "de", "club": "1. FC Köln", "apps": 20, "goals": 4},
+    {"season": "1978-79", "league": "de", "club": "1. FC Köln", "apps": 24, "goals": 5},
+    {"season": "1979-80", "league": "de", "club": "1. FC Köln", "apps": 30, "goals": 6},
+    {"season": "1980-81", "league": "de", "club": "1. FC Köln", "apps": 1, "goals": 0},
+    {"season": "1981-82", "league": "de", "club": "SV Werder Bremen", "apps": 30, "goals": 2},
+    {"season": "1982-83", "league": "de", "club": "SV Werder Bremen", "apps": 34, "goals": 4},
+    {"season": "1983-84", "league": "de", "club": "SV Werder Bremen", "apps": 29, "goals": 1},
+    {"season": "1984-85", "league": "de", "club": "SV Werder Bremen", "apps": 33, "goals": 3},
+    {"season": "1985-86", "league": "de", "club": "SV Werder Bremen", "apps": 33, "goals": 1}
+   ],
+   "trap": "1980-81 Hertha BSC is ブンデス2部 (2. Bundesliga): NOT a top-flight season and must be excluded. The table uses rowspans and empty cells."
+  }
+ ]
+}
