@@ -10,7 +10,7 @@ iPad. A sibling of [Wcupedia](https://github.com/masarusz/wcupedia).
 
 A static site: no accounts, no tracking, no server.
 
-> Status: v0.2.0: leagues, seasons, matches, clubs, players, Japanese
+> Status: v0.2.1: leagues, seasons, matches, clubs, players, Japanese
 > players, a player guide, search and rankings.
 
 ## Data
@@ -42,6 +42,9 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v0.2.1** — 選手名鑑 can switch league and season, and tapping a club
+  shows its players; goals on player pages name the opponent and venue; the
+  header fits on one row on an iPad in portrait.
 - **v0.2.0** — Player pages (seasons, clubs, goals linked to their matches,
   top-scorer finishes); 日本人選手: every Japanese player in the five leagues,
   all eras; 選手名鑑 by season and club; kana search (lazily loaded); rankings

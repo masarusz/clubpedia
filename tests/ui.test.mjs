@@ -75,7 +75,7 @@ export function register(test, equal, deepEqual) {
       equal(appRoot.textContent.includes('欧州5大リーグ'), true, 'Home heading');
       deepEqual(withClass(appRoot, 'league-flag').map((node) => node.getAttribute('alt')).sort(),
         ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort(), 'Home league flag alt text');
-      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.2.0');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=0.2.1');
       const renderedRoutes = ['#/credits'];
       for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
@@ -96,6 +96,7 @@ export function register(test, equal, deepEqual) {
       const enFallbackPlayer = japan.players.find((item) => item.seasons.some((season) => season.source === 'en'));
       renderedRoutes.push(`#/p/${playerWithGoals}`, `#/p/${playerWithoutGoals}`, `#/p/${enFallbackPlayer.id}`, '#/p/Q999999999999');
       renderedRoutes.push('#/j');
+      renderedRoutes.push('#/z', '#/z/es', '#/z/de/2015');
       const meikanSeasons = { en: '2025', es: '2025', de: '2025', it: '2025', fr: '2025' };
       for (const [lg, year] of Object.entries(meikanSeasons)) renderedRoutes.push(`#/z/${lg}/${year}`);
       renderedRoutes.push('#/r', '#/r/players/topScorers', '#/r/clubs/titles', '#/r/clubs/seasonPoints', '#/r/clubs/wins');
@@ -112,6 +113,7 @@ export function register(test, equal, deepEqual) {
         equal(/[{|]/u.test(body), false, `${hash} ruby leak`);
         equal(/undefined|null|NaN/u.test(body), false, `${hash} invalid value`);
         equal(body.length > 20, true, `${hash} rendered text`);
+        equal(descendants(appRoot).filter((node) => node.tagName === 'A').every((anchor) => !descendants(anchor).slice(1).some((node) => node.tagName === 'A')), true, `${hash} has no nested links`);
         const dataRequests = [...new Set(requested.filter((path) => path.startsWith('data/')))];
         if (hash.startsWith('#/c/')) {
           equal(dataRequests.length <= 3, true, `${hash} fetches at most three data files`);
@@ -151,9 +153,18 @@ export function register(test, equal, deepEqual) {
           equal(descendants(extraTitle[0]).some((node) => node.tagName === 'A'), false, 'pre-professional title is not linked');
         }
         if (hash === `#/p/${playerWithGoals}`) {
+          const names = load('names.json');
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
           equal(body.includes('三笘'), true, 'player kanji name rendered');
           equal(withClass(appRoot, 'player-goal-list').some((list) => list.childNodes.length > 0), true, 'goal-scorer season shows goal links');
+          const goalAnchors = descendants(appRoot).filter((node) => node.tagName === 'A' && node.getAttribute('href')?.startsWith('#/m/'));
+          equal(goalAnchors.length > 0, true, 'goal links rendered');
+          equal(goalAnchors.every((anchor) => /^vs .+（(?:ホーム|アウェー)）(?: \d+得点)?$/u.test(anchor.textContent)), true, 'goal links show opponent and venue');
+          equal(goalAnchors.every((anchor) => {
+            const opponent = /^vs (.+)（(?:ホーム|アウェー)）/u.exec(anchor.textContent)?.[1] ?? '';
+            return opponent && !/^[a-z]{2}$/u.test(opponent) && opponent !== '試合'
+              && Object.values(names).some((item) => item.name === opponent);
+          }), true, 'goal links use Japanese club names from names.json');
         }
         if (hash === `#/p/${playerWithoutGoals}`) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
@@ -168,7 +179,14 @@ export function register(test, equal, deepEqual) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only japan.json and names`);
           equal(withClass(appRoot, 'japan-player-row').length > 0, true, '日本人選手 rows rendered');
         }
-        if (hash.startsWith('#/z/')) {
+        if (['#/z', '#/z/es', '#/z/de/2015'].includes(hash) || hash.startsWith('#/z/')) {
+          const switcher = withClass(appRoot, 'meikan-league-switcher')[0] ?? appRoot;
+          const switcherFlags = withClass(switcher, 'league-flag').map((node) => node.getAttribute('alt')).sort();
+          equal(switcherFlags.join(','), ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort().join(','), `${hash} meikan switcher shows all five leagues`);
+          const picker = withClass(appRoot, 'meikan-season-select')[0];
+          equal(picker?.childNodes.length, 34, `${hash} season picker holds 34 seasons`);
+        }
+        if (hash.startsWith('#/z/') && /^#\/z\/[a-z]{2}\/\d{4}$/.test(hash)) {
           const [, lg, year] = /^#\/z\/([a-z]{2})\/(\d{4})$/.exec(hash);
           const season = load(`s/${lg}-${year}.json`);
           const names = load('names.json');
@@ -245,7 +263,9 @@ export function register(test, equal, deepEqual) {
     equal(manifest.includes('"short_name": "クラブペディア"'), true);
     const releaseSources = [html, manifest, ...sourceFiles.map((name) => readFileSync(join(ROOT, 'public/js', name), 'utf8'))];
     equal(releaseSources.some((value) => /v=0\.1\.\d\b/.test(value)), false, 'stale asset version');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.2.0'"), true, 'footer version');
+    equal(releaseSources.some((value) => /v=0\.2\.0\b/.test(value)), false, 'stale 0.2.0 asset version');
+    equal(/\.brand-copy small\s*\{[^}]*white-space:\s*nowrap/u.test(css), true, 'header subtitle element has white-space nowrap');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '0.2.1'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

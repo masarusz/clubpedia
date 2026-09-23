@@ -1,9 +1,9 @@
-import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.2.0';
-import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.2.0';
-import { rubyPlain } from './ruby.js?v=0.2.0';
-import { search as runSearch } from './search.js?v=0.2.0';
-import { STRINGS } from './strings.js?v=0.2.0';
-import { VERSION } from './version.js?v=0.2.0';
+import { el, rubyEl, rubyNodes, text } from './dom.js?v=0.2.1';
+import { birthDateLabel, minuteLabel, playerName, seasonLabel, seasonYear, signed, topScorerFinish } from './format.js?v=0.2.1';
+import { rubyPlain } from './ruby.js?v=0.2.1';
+import { search as runSearch } from './search.js?v=0.2.1';
+import { STRINGS } from './strings.js?v=0.2.1';
+import { VERSION } from './version.js?v=0.2.1';
 
 const LEAGUE_NAMES = Object.freeze({
   en: 'プレミアリーグ', es: 'ラ・リーガ', de: 'ブンデスリーガ', it: 'セリエA', fr: 'リーグ・アン',
@@ -56,6 +56,12 @@ function clubLink(id, clubs, className = 'club-link', breakable = false) {
   return el('a', { class: className, href: `#/c/${id}` }, [chip(club?.colour), ...(breakable ? clubNameNodes(name) : [text(name)])]);
 }
 
+function clubChipLabel(id, clubs) {
+  const club = clubs[id];
+  const name = clubName(club, id);
+  return [chip(club?.colour), ...clubNameNodes(name)];
+}
+
 function playerLink(id, players, fallback) {
   if (!id) return el('span', { class: 'player-name' }, fallback ?? '記録なし');
   return el('a', { class: 'player-link', href: `#/p/${id}` }, playerName(players[id], fallback));
@@ -94,7 +100,7 @@ export function homeView(index, searchOptions = null) {
     searchOptions ? searchComponent(searchOptions) : null,
     el('div', { class: 'home-feature-grid' }, [
       el('a', { class: 'feature-card japan-feature-card', href: '#/j' }, [rubyEl('h2', STRINGS.japanFeature), el('p', {}, '日本人選手をさがす')]),
-      latestSeason ? el('a', { class: 'feature-card meikan-feature-card', href: `#/z/${latestSeason.id.slice(0, 2)}/${latestSeason.id.slice(3)}` }, [rubyEl('h2', STRINGS.meikan), el('p', {}, '今シーズンの選手たち')]) : null,
+      latestSeason ? el('a', { class: 'feature-card meikan-feature-card', href: '#/z' }, [rubyEl('h2', STRINGS.meikan), el('p', {}, 'リーグを選んで見る')]) : null,
       el('a', { class: 'feature-card ranking-feature-card', href: '#/r' }, [rubyEl('h2', STRINGS.rankings), el('p', {}, 'ゴールと優勝回数')]),
     ]),
     el('div', { class: 'league-grid' }, cards),
@@ -386,19 +392,23 @@ export function playerView(id, player, names) {
   }
   const seasonRows = [...rows.values()].sort((a, b) => b.year - a.year || a.league.localeCompare(b.league));
 
-  const goalLinks = (goalMatches) => {
+  const goalLinks = (goalMatches, clubId) => {
     const counts = new Map();
     for (const key of goalMatches ?? []) counts.set(key, (counts.get(key) ?? 0) + 1);
-    return el('ul', { class: 'player-goal-list' }, [...counts].map(([key, count]) => el('li', {}, [
-      el('a', { href: `#/m/${key}` }, '試合を見る'), count > 1 ? el('span', { class: 'badge' }, `×${count}`) : null,
-    ])));
+    return el('ul', { class: 'player-goal-list' }, [...counts].map(([key, count]) => {
+      const [, , home, away] = /^([a-z]{2})-\d{4}-(Q\d+)-(Q\d+)$/.exec(key) ?? [];
+      const opponent = clubId === home ? away : clubId === away ? home : null;
+      const venue = clubId === home ? 'ホーム' : clubId === away ? 'アウェー' : null;
+      const label = opponent && venue ? `vs ${clubName(names[opponent], opponent)}（${venue}）` : '試合';
+      return el('li', {}, el('a', { href: `#/m/${key}` }, count > 1 ? `${label} ${count}得点` : label));
+    }));
   };
 
   const seasonCards = seasonRows.map((row) => el('section', { class: 'panel player-season-panel' }, [
     el('h2', {}, [leagueFlag(row.league), text(` ${LEAGUE_NAMES[row.league]} `), text(seasonLabel(row.year))]),
     row.club ? el('p', { class: 'player-season-club' }, clubLink(row.club, names)) : null,
     row.goalMatches !== undefined && row.recordedGoals != null
-      ? el('p', {}, [text(`リーグ得点 ${row.recordedGoals}得点`), row.recordedGoals > 0 ? goalLinks(row.goalMatches) : null])
+      ? el('p', {}, [text(`リーグ得点 ${row.recordedGoals}得点`), row.recordedGoals > 0 ? goalLinks(row.goalMatches, row.club) : null])
       : null,
     row.topScorerRank ? el('p', { class: 'player-finish' }, el('strong', {}, topScorerFinish(row.topScorerRank))) : null,
     row.japanApps !== undefined ? el('p', { class: 'player-japan-stats' }, [
@@ -453,14 +463,57 @@ function meikanCard(id, entry, players, names) {
   ]);
 }
 
+const MEIKAN_YEARS = Object.freeze(Array.from({ length: 34 }, (_, indexValue) => String(2025 - indexValue)));
+
+function latestSeasonFor(index, league) {
+  return index.seasons
+    .filter((item) => item.id.startsWith(`${league}-`))
+    .sort((a, b) => b.id.localeCompare(a.id))[0];
+}
+
+function seasonExists(index, league, year) {
+  return index.seasons.some((item) => item.id === `${league}-${year}`);
+}
+
+function meikanSeasonTarget(index, league, preferredYear) {
+  const latest = latestSeasonFor(index, league);
+  const year = preferredYear && seasonExists(index, league, preferredYear) ? preferredYear : latest?.id.slice(3);
+  return year ? `#/z/${league}/${year}` : '#/z';
+}
+
+export function meikanChooserView(index) {
+  const seasonSelect = el('select', { class: 'meikan-season-select', 'aria-label': 'シーズンを選ぶ' }, MEIKAN_YEARS.map((year) =>
+    el('option', { value: year, selected: year === '2025' }, seasonLabel(year))));
+  return el('article', { class: 'page meikan-page' }, [
+    el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.meikan), el('p', { class: 'eyebrow' }, 'リーグを選ぶ')]),
+    el('div', { class: 'meikan-controls' }, [
+      el('nav', { class: 'meikan-league-switcher', 'aria-label': 'リーグを選ぶ' }, Object.keys(LEAGUE_NAMES).map((league) =>
+        el('a', { href: meikanSeasonTarget(index, league, seasonSelect.value) }, [leagueFlag(league), text(LEAGUE_NAMES[league])]))),
+      el('label', { class: 'meikan-season-label' }, [text('シーズン'), seasonSelect]),
+    ]),
+    el('div', { class: 'league-grid' }, index.leagues.map((league) => el('a', { class: `league-card league-${league.id}`, href: meikanSeasonTarget(index, league.id) }, [
+      el('div', { class: 'league-card-title' }, [leagueFlag(league.id), el('h2', {}, league.name)]),
+      el('p', { class: 'latest-season' }, `${latestSeasonFor(index, league.id)?.label ?? ''}シーズン`),
+    ]))),
+  ]);
+}
+
 export function meikanView(season, names, players, clubId) {
   const clubIds = Object.keys(season.players ?? {}).sort((a, b) => (names[a]?.name ?? a).localeCompare(names[b]?.name ?? b, 'ja'));
   const selected = clubId && clubIds.includes(clubId) ? clubId : clubIds[0];
   const entries = selected ? season.players[selected] ?? [] : [];
+  const seasonSelect = el('select', { class: 'meikan-season-select', 'aria-label': 'シーズンを選ぶ' }, MEIKAN_YEARS.map((year) =>
+    el('option', { value: year, selected: year === String(season.year) }, seasonLabel(year))));
+  seasonSelect.addEventListener('change', () => { location.hash = `#/z/${season.league}/${seasonSelect.value}`; });
   return el('article', { class: 'page meikan-page' }, [
     el('div', { class: 'page-heading' }, [rubyEl('h1', STRINGS.meikan), el('p', { class: 'eyebrow' }, [text(`${LEAGUE_NAMES[season.league]} `), text(seasonLabel(season.year))])]),
+    el('div', { class: 'meikan-controls' }, [
+      el('nav', { class: 'meikan-league-switcher', 'aria-label': 'リーグを選ぶ' }, Object.keys(LEAGUE_NAMES).map((league) =>
+        el('a', { href: `#/z/${league}/${season.year}`, 'aria-current': league === season.league ? 'page' : null }, [leagueFlag(league), text(LEAGUE_NAMES[league])]))),
+      el('label', { class: 'meikan-season-label' }, [text('シーズン'), seasonSelect]),
+    ]),
     clubIds.length ? el('nav', { class: 'meikan-club-chips', 'aria-label': 'クラブを選ぶ' }, clubIds.map((id) =>
-      el('a', { href: `#/z/${season.league}/${season.year}/${id}`, 'aria-current': id === selected ? 'page' : null }, clubLink(id, names)))) : null,
+      el('a', { href: `#/z/${season.league}/${season.year}/${id}`, 'aria-current': id === selected ? 'page' : null }, clubChipLabel(id, names)))) : null,
     selected ? el('div', { class: 'meikan-grid' }, entries.map((entry) => meikanCard(entry.id, entry, players, names))) : el('p', { class: 'panel' }, '記録なし'),
   ]);
 }
