@@ -83,7 +83,7 @@ export function register(test, equal, deepEqual) {
     equal(marseille.headToHead.Q212269.outcomes[marseilleIndex], 'l', 'double defeat is a loss for Marseille');
   });
   test('OpenLigaDB goals stay out of CC BY-SA aggregates and have a separate player total', async () => {
-    const playerBucket = (id) => String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+    const playerBucket = (id) => String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 128).padStart(2, '0');
     const mueller = JSON.parse(await readFile(join(DATA, 'p', `${playerBucket('Q43666')}.json`), 'utf8')).Q43666;
     const season = mueller.seasons.find((item) => item.season === 'de-2009');
     equal(season.goalMatches.includes('de-2009-Q106394-Q15789'), false, 'ODbL-only goal match is absent from player bucket');
@@ -306,7 +306,7 @@ export function register(test, equal, deepEqual) {
     const futureBirth = JSON.parse(await readFile(join(DATA, 's/en-1997.json'), 'utf8'));
     const thomas = futureBirth.matches.flatMap((match) => match.scorers ? [...match.scorers.home, ...match.scorers.away] : []).find((scorer) => scorer.display === 'Thomas' && scorer.player == null);
     equal(Boolean(thomas), true, 'born-1992 same-name link is removed from 1997 scorer');
-    const bucketId = String(Math.abs([...'Q188241'].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+    const bucketId = String(Math.abs([...'Q188241'].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 128).padStart(2, '0');
     const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
     equal(bucket.Q188241.birthDate, '1983-09-26');
   });
@@ -425,7 +425,7 @@ export function register(test, equal, deepEqual) {
     equal(photos.length, Object.keys(manifest).filter((id) => id !== '_about').length);
     deepEqual(Object.keys(credits).sort(), photos.map((name) => name.slice(0, -5)));
     for (const id of Object.keys(credits)) {
-      const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+      const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 128).padStart(2, '0');
       const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
       equal(bucket[id]?.photo, true, id);
     }

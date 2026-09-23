@@ -1,4 +1,4 @@
-import { VERSION } from './version.js?v=0.3.2';
+import { VERSION } from './version.js?v=0.3.3';
 
 const cache = new Map();
 
@@ -34,7 +34,7 @@ export const loadRankings = () => load('data/rankings.json');
 export const loadSearch = () => load('data/search.json');
 
 export function playerBucket(id) {
-  return String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 64).padStart(2, '0');
+  return String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 128).padStart(2, '0');
 }
 
 export async function loadPlayers(ids) {

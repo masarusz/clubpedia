@@ -43,6 +43,8 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v0.3.3** — 3,118 player photos; player data split into smaller files so
+  each player page stays light.
 - **v0.3.2** — Review fixes: OpenLigaDB (ODbL) goals are kept out of the
   CC BY-SA player, club, search and ranking data and shown separately with
   their own credit; goal counts say when they cover only recorded matches;

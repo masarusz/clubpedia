@@ -433,7 +433,7 @@ export async function build() {
 
   // Players, bucketed so one player page loads one file <= 300 KB.
   const playerEntries = [...playersResult.players.entries()].sort(([a], [b]) => a.localeCompare(b));
-  const BUCKET_COUNT = 64;
+  const BUCKET_COUNT = 128;
   const buckets = new Map();
   for (const [id, player] of playerEntries) {
     const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % BUCKET_COUNT).padStart(2, '0');
