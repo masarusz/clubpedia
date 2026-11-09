@@ -25,12 +25,6 @@
       "photo": false
     },
     {
-      "birthYear": 1972,
-      "id": "Q5524127",
-      "name": "Garry Flitcroft",
-      "photo": false
-    },
-    {
       "birthYear": 1984,
       "id": "Q596555",
       "name": "ステファノ グベルティ",
@@ -55,12 +49,6 @@
       "photo": true
     },
     {
-      "birthYear": 1994,
-      "id": "Q15839651",
-      "name": "Patrick Mainka",
-      "photo": false
-    },
-    {
       "birthYear": 1998,
       "id": "Q22342820",
       "name": "マルコ トゥミネッロ",
@@ -71,9 +59,32 @@
       "id": "Q208619",
       "name": "ジョジー アルティドール",
       "photo": true
+    },
+    {
+      "birthYear": 1981,
+      "id": "Q219024",
+      "name": "フレデリック メンディ",
+      "photo": false
+    },
+    {
+      "birthYear": 1981,
+      "id": "Q357490",
+      "name": "カスパルス ゴルクシュス",
+      "photo": true
     }
   ],
   "matches": [
+    {
+      "away": "Q19580",
+      "awayName": "コヴェントリー・シティFC",
+      "date": "2026-11-06",
+      "home": "Q5794",
+      "homeName": "エヴァートンFC",
+      "key": "en-2026-Q5794-Q19580",
+      "league": "en",
+      "score": "3–1",
+      "season": "en-2026"
+    },
     {
       "away": "Q9617",
       "awayName": "アーセナルFC",
@@ -94,17 +105,6 @@
       "key": "fr-2022-Q19518-Q180305",
       "league": "fr",
       "score": "0–2",
-      "season": "fr-2022"
-    },
-    {
-      "away": "Q192071",
-      "awayName": "FCナント",
-      "date": "2022-11-06",
-      "home": "Q208228",
-      "homeName": "スタッド・ランス",
-      "key": "fr-2022-Q208228-Q192071",
-      "league": "fr",
-      "score": "1–0",
       "season": "fr-2022"
     },
     {

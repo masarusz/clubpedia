@@ -99,6 +99,9 @@ main { width: min(1180px, 100%); min-height: calc(100vh - 132px); margin: 0 auto
 .badge { margin-left: 5px; padding: 2px 6px; display: inline-block; color: #fff; background: var(--muted); border-radius: 999px; font-size: .875rem; font-weight: 900; white-space: nowrap; }
 .champion-badge { background: #9b6413; }
 .relegated-badge { background: var(--danger); }
+.in-progress-badge { background: var(--primary-bright); }
+.heading-badge { margin-left: 12px; vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; }
+.season-progress-count { margin: -4px 0 14px; color: var(--muted); font-weight: 800; }
 .row-note { display: block; color: #744f10; font-size: .875rem; line-height: 1.35; }
 .plain-note, .source-note, .special-note { padding: 10px 14px; background: #fff4da; border-left: 5px solid var(--accent); border-radius: 6px; }
 .footnotes { margin: 16px 0 0; padding-left: 1.35rem; }

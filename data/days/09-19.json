@@ -19,12 +19,6 @@
       "photo": true
     },
     {
-      "birthYear": 1983,
-      "id": "Q31760",
-      "name": "Jussiê",
-      "photo": true
-    },
-    {
       "birthYear": 1998,
       "id": "Q26221634",
       "name": "ヤコブ ブルーン ラーセン",
@@ -69,21 +63,71 @@
     {
       "birthYear": 1975,
       "id": "Q239971",
-      "name": "Laurențiu Reghecampf",
+      "name": "ラウレンツィウ レゲカンプ",
       "photo": true
+    },
+    {
+      "birthYear": 1998,
+      "id": "Q28868192",
+      "name": "ケヴィン ダンソ",
+      "photo": false
     }
   ],
   "matches": [
     {
-      "away": "Q6463",
-      "awayName": "FCザンクトパウリ",
-      "date": "2025-09-19",
-      "home": "Q4512",
-      "homeName": "VfBシュトゥットガルト",
-      "key": "de-2025-Q4512-Q6463",
+      "away": "Q105254",
+      "awayName": "1.FSVマインツ05",
+      "date": "2026-09-19",
+      "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
+      "key": "de-2026-Q101959-Q105254",
       "league": "de",
-      "score": "2–0",
-      "season": "de-2025"
+      "score": "3–4",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2026-09-19",
+      "home": "Q18741",
+      "homeName": "トッテナム・ホットスパーFC",
+      "key": "en-2026-Q18741-Q18711",
+      "league": "en",
+      "score": "2–3",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2026-09-19",
+      "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "key": "en-2026-Q19453-Q9617",
+      "league": "en",
+      "score": "3–0",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q9653",
+      "awayName": "イプスウィッチ・タウンFC",
+      "date": "2026-09-19",
+      "home": "Q5794",
+      "homeName": "エヴァートンFC",
+      "key": "en-2026-Q5794-Q9653",
+      "league": "en",
+      "score": "1–0",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q19509",
+      "awayName": "スタッド・レンヌ",
+      "date": "2026-09-19",
+      "home": "Q704",
+      "homeName": "オリンピック・リヨン",
+      "key": "fr-2026-Q704-Q19509",
+      "league": "fr",
+      "score": "4–0",
+      "season": "fr-2026"
     },
     {
       "away": "Q141971",
@@ -97,39 +141,6 @@
       "season": "de-2021"
     },
     {
-      "away": "Q104761",
-      "awayName": "バイエル・レバークーゼン",
-      "date": "2021-09-19",
-      "home": "Q4512",
-      "homeName": "VfBシュトゥットガルト",
-      "key": "de-2021-Q4512-Q104761",
-      "league": "de",
-      "score": "1–3",
-      "season": "de-2021"
-    },
-    {
-      "away": "Q106394",
-      "awayName": "SCフライブルク",
-      "date": "2020-09-19",
-      "home": "Q4512",
-      "homeName": "VfBシュトゥットガルト",
-      "key": "de-2020-Q4512-Q106394",
-      "league": "de",
-      "score": "2–3",
-      "season": "de-2020"
-    },
-    {
-      "away": "Q102720",
-      "awayName": "ヘルタ・ベルリン",
-      "date": "2020-09-19",
-      "home": "Q51976",
-      "homeName": "ヴェルダー・ブレーメン",
-      "key": "de-2020-Q51976-Q102720",
-      "league": "de",
-      "score": "1–4",
-      "season": "de-2020"
-    },
-    {
       "away": "Q631",
       "awayName": "インテルナツィオナーレ・ミラノ",
       "date": "2017-09-19",
@@ -139,17 +150,6 @@
       "league": "it",
       "score": "1–1",
       "season": "it-2017"
-    },
-    {
-      "away": "Q101959",
-      "awayName": "ボルシア・メンヒェングラートバッハ",
-      "date": "2015-09-19",
-      "home": "Q104770",
-      "homeName": "1.FCケルン",
-      "key": "de-2015-Q104770-Q101959",
-      "league": "de",
-      "score": "1–0",
-      "season": "de-2015"
     },
     {
       "away": "Q38245",

@@ -5,7 +5,8 @@
     "id": "Q1029486",
     "ja": {
       "display": "ウッフェ ベック",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -28,7 +29,8 @@
     "id": "Q106091717",
     "ja": {
       "display": "ダリオ エスーゴ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -58,7 +60,8 @@
     "id": "Q111366053",
     "ja": {
       "display": "アレハンドロ ガルナチョ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -132,7 +135,8 @@
     "id": "Q113852240",
     "ja": {
       "display": "Niccolò Pierozzi",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -155,7 +159,8 @@
     "id": "Q120639603",
     "ja": {
       "display": "ジョン ソリス",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -172,13 +177,40 @@
       }
     ]
   },
+  "Q130545741": {
+    "birthDate": "2006-05-07",
+    "en": "Eddy Kouadio",
+    "id": "Q130545741",
+    "ja": {
+      "display": "エディ コウアディオ",
+      "mode": "katakana",
+      "source": "ja-title-katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "asOf": "2026-11-08",
+        "club": "Q289482",
+        "goalMatches": [
+          "it-2026-Q289482-Q1900"
+        ],
+        "goals": 1,
+        "inProgress": true,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2026",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q131518757": {
     "birthDate": "2007-01-03",
     "en": "Josh King",
     "id": "Q131518757",
     "ja": {
       "display": "ジョシュ キング",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -192,6 +224,20 @@
         "recordedGoals": 1,
         "season": "en-2025",
         "topScorerRank": null
+      },
+      {
+        "asOf": "2026-11-08",
+        "club": "Q18708",
+        "goalMatches": [
+          "en-2026-Q18708-Q19467",
+          "en-2026-Q18708-Q9616"
+        ],
+        "goals": 2,
+        "inProgress": true,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-2026",
+        "topScorerRank": null
       }
     ]
   },
@@ -201,7 +247,8 @@
     "id": "Q137767362",
     "ja": {
       "display": "Yael Trepy",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -224,7 +271,8 @@
     "id": "Q1443262",
     "ja": {
       "display": "マルコ ビアジャンティ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -255,7 +303,8 @@
     "id": "Q15132963",
     "ja": {
       "display": "ルベン ヴェソ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -301,7 +350,8 @@
     "id": "Q1553570",
     "ja": {
       "display": "Guido Hoffmann",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -324,7 +374,8 @@
     "id": "Q18387214",
     "ja": {
       "display": "カシム アダムス",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -354,7 +405,8 @@
     "id": "Q184612",
     "ja": {
       "display": "ロビー キーン",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -614,7 +666,8 @@
     "id": "Q18580880",
     "ja": {
       "display": "マクシミリアン エッゲシュタイン",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -714,6 +767,20 @@
         "recordedGoals": 1,
         "season": "de-2025",
         "topScorerRank": null
+      },
+      {
+        "asOf": "2026-11-09",
+        "club": "Q106394",
+        "goalMatches": [
+          "de-2026-Q106394-Q101959",
+          "de-2026-Q160532-Q106394"
+        ],
+        "goals": 2,
+        "inProgress": true,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-2026",
+        "topScorerRank": null
       }
     ]
   },
@@ -808,8 +875,9 @@
     "en": "Martin Groth",
     "id": "Q1903898",
     "ja": {
-      "display": "Martin Groth",
-      "mode": "latin"
+      "display": "マルティン グロート",
+      "mode": "katakana",
+      "source": "wikidata-label"
     },
     "japan": null,
     "seasons": [
@@ -832,7 +900,8 @@
     "id": "Q1935",
     "ja": {
       "display": "エリック アビダル",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -862,7 +931,8 @@
     "id": "Q19367",
     "ja": {
       "display": "フアン ベルナト",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -919,7 +989,8 @@
     "id": "Q20090069",
     "ja": {
       "display": "ルベン アギラール",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -994,7 +1065,8 @@
     "id": "Q2089380",
     "ja": {
       "display": "ジョゼ マルセロ フェレイラ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1069,7 +1141,8 @@
     "id": "Q21264946",
     "ja": {
       "display": "マティアス イェンセン",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -1129,7 +1202,8 @@
     "id": "Q2221281",
     "ja": {
       "display": "Sandro Sirigu",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -1153,7 +1227,8 @@
     "id": "Q2333250",
     "ja": {
       "display": "ゴラン ジョロヴィッチ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1187,7 +1262,8 @@
     "id": "Q24084301",
     "ja": {
       "display": "ドニエル マレン",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -1318,6 +1394,26 @@
         "recordedGoals": 14,
         "season": "it-2025",
         "topScorerRank": 2
+      },
+      {
+        "asOf": "2026-11-08",
+        "club": "Q2739",
+        "goalMatches": [
+          "it-2026-Q13391-Q2739",
+          "it-2026-Q13391-Q2739",
+          "it-2026-Q2739-Q1900",
+          "it-2026-Q2739-Q2052",
+          "it-2026-Q2739-Q2052",
+          "it-2026-Q2739-Q2052",
+          "it-2026-Q2768-Q2739",
+          "it-2026-Q2798-Q2739"
+        ],
+        "goals": 8,
+        "inProgress": true,
+        "league": "it",
+        "recordedGoals": 8,
+        "season": "it-2026",
+        "topScorerRank": 2
       }
     ]
   },
@@ -1327,7 +1423,8 @@
     "id": "Q2444570",
     "ja": {
       "display": "ドミトリー ポポフ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1386,7 +1483,8 @@
     "id": "Q25991723",
     "ja": {
       "display": "Christian Gebauer",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -1408,8 +1506,9 @@
     "en": "Lee Clark",
     "id": "Q2608437",
     "ja": {
-      "display": "Lee Clark",
-      "mode": "latin"
+      "display": "リー クラーク",
+      "mode": "katakana",
+      "source": "wikidata-label"
     },
     "japan": null,
     "photo": true,
@@ -1498,7 +1597,8 @@
     "id": "Q266507",
     "ja": {
       "display": "マルセロ ガジャルド",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -1528,8 +1628,9 @@
     "en": "Kaba Diawara",
     "id": "Q2707459",
     "ja": {
-      "display": "Kaba Diawara",
-      "mode": "latin"
+      "display": "カバ ディアワラ",
+      "mode": "katakana",
+      "source": "wikidata-label"
     },
     "japan": null,
     "seasons": [
@@ -1563,7 +1664,8 @@
     "id": "Q2709758",
     "ja": {
       "display": "ホセ マヌエル カタラ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1586,7 +1688,8 @@
     "id": "Q2723134",
     "ja": {
       "display": "アルバン エボンド",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1609,7 +1712,8 @@
     "id": "Q2756563",
     "ja": {
       "display": "リュエル フォックス",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1667,7 +1771,8 @@
     "id": "Q2778101",
     "ja": {
       "display": "ミロラド ラトコヴィッチ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1733,7 +1838,8 @@
     "id": "Q2821067",
     "ja": {
       "display": "Abdelilah Fahmi",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -1756,7 +1862,8 @@
     "id": "Q2855068",
     "ja": {
       "display": "Demetrius Ferreira",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -1780,7 +1887,8 @@
     "id": "Q28962317",
     "ja": {
       "display": "ネディム バイラミ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1842,7 +1950,8 @@
     "id": "Q29441774",
     "ja": {
       "display": "ラフナール アヘ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -1880,6 +1989,19 @@
         "recordedGoals": 7,
         "season": "de-2025",
         "topScorerRank": null
+      },
+      {
+        "asOf": "2026-11-09",
+        "club": "Q104770",
+        "goalMatches": [
+          "de-2026-Q51974-Q104770"
+        ],
+        "goals": 1,
+        "inProgress": true,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-2026",
+        "topScorerRank": null
       }
     ]
   },
@@ -1889,7 +2011,8 @@
     "id": "Q3325054",
     "ja": {
       "display": "アルフレド サンタエレナ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -1923,7 +2046,8 @@
     "id": "Q350756",
     "ja": {
       "display": "Luizão",
-      "mode": "katakana"
+      "mode": "latin",
+      "source": "latin-one-word"
     },
     "japan": null,
     "seasons": [
@@ -1949,7 +2073,8 @@
     "id": "Q360315",
     "ja": {
       "display": "スレイマン ディアワラ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2027,7 +2152,8 @@
     "id": "Q366816",
     "ja": {
       "display": "Eusebio",
-      "mode": "katakana"
+      "mode": "latin",
+      "source": "latin-one-word"
     },
     "japan": null,
     "photo": true,
@@ -2090,7 +2216,8 @@
     "id": "Q3745298",
     "ja": {
       "display": "Filippo Porcari",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "photo": true,
@@ -2121,7 +2248,8 @@
     "id": "Q380830",
     "ja": {
       "display": "マッティア デストロ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2358,7 +2486,8 @@
     "id": "Q3876451",
     "ja": {
       "display": "ニコラス ヴィオーラ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2432,7 +2561,8 @@
     "id": "Q39684",
     "ja": {
       "display": "ベルナール メンディ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2462,7 +2592,8 @@
     "id": "Q4406552",
     "ja": {
       "display": "アリレザ ジャハンバフシュ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2493,7 +2624,8 @@
     "id": "Q44073",
     "ja": {
       "display": "ビセンテ リザラズ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2535,7 +2667,8 @@
     "id": "Q443937",
     "ja": {
       "display": "ファビオ セレスティーニ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2565,7 +2698,8 @@
     "id": "Q463979",
     "ja": {
       "display": "ルベン ソサ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -2650,7 +2784,8 @@
     "id": "Q4668550",
     "ja": {
       "display": "Demba Camara",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -2673,7 +2808,8 @@
     "id": "Q47126518",
     "ja": {
       "display": "Ross Stewart",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "photo": true,
@@ -2703,7 +2839,8 @@
     "id": "Q4717654",
     "ja": {
       "display": "アレックス プリチャード",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2745,7 +2882,8 @@
     "id": "Q482602",
     "ja": {
       "display": "Beto",
-      "mode": "katakana"
+      "mode": "latin",
+      "source": "latin-one-word"
     },
     "japan": null,
     "photo": true,
@@ -2775,7 +2913,8 @@
     "id": "Q4887241",
     "ja": {
       "display": "Tomás Olías",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -2798,7 +2937,8 @@
     "id": "Q535908",
     "ja": {
       "display": "アレクサンダル トライコフスキ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "seasons": [
@@ -2834,7 +2974,8 @@
     "id": "Q540737",
     "ja": {
       "display": "Dimitrios Papadopoulos",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "photo": true,
@@ -2864,7 +3005,8 @@
     "id": "Q56761319",
     "ja": {
       "display": "グレイディ ディアンガナ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -2905,7 +3047,8 @@
     "id": "Q570811",
     "ja": {
       "display": "リカルド カルヴァーリョ",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -3006,7 +3149,8 @@
     "id": "Q58494974",
     "ja": {
       "display": "Mounaïm El Idrissy",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -3034,7 +3178,8 @@
     "id": "Q6206493",
     "ja": {
       "display": "Quini",
-      "mode": "katakana"
+      "mode": "latin",
+      "source": "latin-one-word"
     },
     "japan": null,
     "seasons": [
@@ -3057,7 +3202,8 @@
     "id": "Q63180",
     "ja": {
       "display": "カミル グリク",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -3179,7 +3325,8 @@
     "id": "Q694924",
     "ja": {
       "display": "フロリアン クライン",
-      "mode": "katakana"
+      "mode": "katakana",
+      "source": "ja-title-katakana"
     },
     "japan": null,
     "photo": true,
@@ -3210,7 +3357,8 @@
     "id": "Q76050",
     "ja": {
       "display": "Hendrik Herzog",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [
@@ -3246,7 +3394,8 @@
     "id": "Q764719",
     "ja": {
       "display": "Fernando Aristeguieta",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "photo": true,
@@ -3276,7 +3425,8 @@
     "id": "Q950619",
     "ja": {
       "display": "Chadli Amri",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "photo": true,
@@ -3317,7 +3467,8 @@
     "id": "Q97350648",
     "ja": {
       "display": "Mehdi Chahiri",
-      "mode": "latin"
+      "mode": "latin",
+      "source": "latin"
     },
     "japan": null,
     "seasons": [

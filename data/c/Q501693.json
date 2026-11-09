@@ -2,11 +2,27 @@
   "championSeasons": [],
   "colour": "#0000ff",
   "headToHead": {
+    "Q1051013": {
+      "d": 1,
+      "ga": 0,
+      "gf": 0,
+      "l": 0,
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "key": "fr-2026-Q501693-Q1051013",
+          "score": "0–0"
+        }
+      ],
+      "outcomes": "d",
+      "p": 1,
+      "w": 0
+    },
     "Q126334": {
       "d": 5,
-      "ga": 19,
-      "gf": 18,
-      "l": 5,
+      "ga": 25,
+      "gf": 20,
+      "l": 6,
       "matches": [
         {
           "date": null,
@@ -77,17 +93,22 @@
           "date": "2023-05-21",
           "key": "fr-2022-Q501693-Q126334",
           "score": "1–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q501693-Q126334",
+          "score": "2–6"
         }
       ],
-      "outcomes": "lwdllwldlwddwd",
-      "p": 14,
+      "outcomes": "lwdllwldlwddwdl",
+      "p": 15,
       "w": 4
     },
     "Q132885": {
       "d": 6,
-      "ga": 35,
+      "ga": 37,
       "gf": 16,
-      "l": 13,
+      "l": 14,
       "matches": [
         {
           "date": null,
@@ -198,10 +219,15 @@
           "date": "2023-01-11",
           "key": "fr-2022-Q501693-Q132885",
           "score": "0–2"
+        },
+        {
+          "date": "2026-10-11",
+          "key": "fr-2026-Q501693-Q132885",
+          "score": "0–2"
         }
       ],
-      "outcomes": "llldwwddllldlwldllldll",
-      "p": 22,
+      "outcomes": "llldwwddllldlwldllldlll",
+      "p": 23,
       "w": 3
     },
     "Q172476": {
@@ -600,9 +626,9 @@
     },
     "Q191843": {
       "d": 6,
-      "ga": 16,
-      "gf": 10,
-      "l": 7,
+      "ga": 19,
+      "gf": 11,
+      "l": 8,
       "matches": [
         {
           "date": null,
@@ -683,10 +709,15 @@
           "date": "2023-01-28",
           "key": "fr-2022-Q501693-Q191843",
           "score": "1–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q501693-Q191843",
+          "score": "1–3"
         }
       ],
-      "outcomes": "wldwddldldlwllld",
-      "p": 16,
+      "outcomes": "wldwddldldlwllldl",
+      "p": 17,
       "w": 3
     },
     "Q192071": {
@@ -1106,9 +1137,9 @@
     },
     "Q19516": {
       "d": 7,
-      "ga": 24,
+      "ga": 26,
       "gf": 25,
-      "l": 5,
+      "l": 6,
       "matches": [
         {
           "date": null,
@@ -1209,14 +1240,19 @@
           "date": "2023-06-03",
           "key": "fr-2022-Q501693-Q19516",
           "score": "1–1"
+        },
+        {
+          "date": "2026-09-13",
+          "key": "fr-2026-Q19516-Q501693",
+          "score": "2–0"
         }
       ],
-      "outcomes": "wwlldwwwldddwddwlwld",
-      "p": 20,
+      "outcomes": "wwlldwwwldddwddwlwldl",
+      "p": 21,
       "w": 8
     },
     "Q19518": {
-      "d": 4,
+      "d": 5,
       "ga": 25,
       "gf": 11,
       "l": 9,
@@ -1290,10 +1326,15 @@
           "date": "2022-08-14",
           "key": "fr-2022-Q501693-Q19518",
           "score": "0–3"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q19518-Q501693",
+          "score": "0–0"
         }
       ],
-      "outcomes": "ldlwdldlllldll",
-      "p": 14,
+      "outcomes": "ldlwdldlllldlld",
+      "p": 15,
       "w": 1
     },
     "Q19521": {
@@ -1563,7 +1604,7 @@
     "Q210864": {
       "d": 1,
       "ga": 8,
-      "gf": 3,
+      "gf": 5,
       "l": 3,
       "matches": [
         {
@@ -1585,11 +1626,16 @@
           "date": "2006-08-12",
           "key": "fr-2006-Q501693-Q210864",
           "score": "2–2"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q501693-Q210864",
+          "score": "2–0"
         }
       ],
-      "outcomes": "llld",
-      "p": 4,
-      "w": 0
+      "outcomes": "llldw",
+      "p": 5,
+      "w": 1
     },
     "Q212269": {
       "d": 0,
@@ -1900,9 +1946,9 @@
     },
     "Q483020": {
       "d": 5,
-      "ga": 54,
+      "ga": 55,
       "gf": 24,
-      "l": 15,
+      "l": 16,
       "matches": [
         {
           "date": null,
@@ -2013,16 +2059,21 @@
           "date": "2023-05-07",
           "key": "fr-2022-Q501693-Q483020",
           "score": "1–3"
+        },
+        {
+          "date": "2026-11-07",
+          "key": "fr-2026-Q483020-Q501693",
+          "score": "1–0"
         }
       ],
-      "outcomes": "lddwlwllldldlllllldlll",
-      "p": 22,
+      "outcomes": "lddwlwllldldlllllldllll",
+      "p": 23,
       "w": 2
     },
     "Q48911": {
       "d": 4,
-      "ga": 18,
-      "gf": 17,
+      "ga": 19,
+      "gf": 19,
       "l": 5,
       "matches": [
         {
@@ -2084,11 +2135,16 @@
           "date": "2022-10-23",
           "key": "fr-2022-Q501693-Q48911",
           "score": "2–2"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q48911-Q501693",
+          "score": "1–2"
         }
       ],
-      "outcomes": "lwdwldlldwld",
-      "p": 12,
-      "w": 3
+      "outcomes": "lwdwldlldwldw",
+      "p": 13,
+      "w": 4
     },
     "Q503317": {
       "d": 1,
@@ -2316,9 +2372,9 @@
     },
     "Q845137": {
       "d": 1,
-      "ga": 11,
+      "ga": 13,
       "gf": 10,
-      "l": 5,
+      "l": 6,
       "matches": [
         {
           "date": "2016-04-02",
@@ -2359,10 +2415,15 @@
           "date": "2023-05-27",
           "key": "fr-2022-Q845137-Q501693",
           "score": "2–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q845137-Q501693",
+          "score": "2–0"
         }
       ],
-      "outcomes": "llwldlwl",
-      "p": 8,
+      "outcomes": "llwldlwll",
+      "p": 9,
       "w": 2
     },
     "Q866884": {
@@ -2419,6 +2480,7 @@
     }
   },
   "id": "Q501693",
+  "inProgress": true,
   "leagues": [
     "fr"
   ],
@@ -2428,6 +2490,12 @@
     "ja": "トロワAC"
   },
   "positions": [
+    {
+      "asOf": "2026-11-09",
+      "inProgress": true,
+      "position": 17,
+      "season": "fr-2026"
+    },
     {
       "position": 19,
       "season": "fr-2022"
@@ -2477,7 +2545,7 @@
   "topScorers": [
     {
       "goals": 15,
-      "name": "Nicolas Goussé",
+      "name": "ニコラス グース",
       "player": "Q2642398"
     },
     {
@@ -2517,7 +2585,7 @@
     },
     {
       "goals": 7,
-      "name": "Florian Tardieu",
+      "name": "フロリアン タルデュー",
       "player": "Q5461039"
     },
     {
@@ -2527,7 +2595,7 @@
     },
     {
       "goals": 6,
-      "name": "Renaud Ripart",
+      "name": "ルノー リパール",
       "player": "Q7312714"
     },
     {
@@ -2617,7 +2685,7 @@
     },
     {
       "goals": 2,
-      "name": "Tristan Dingomé",
+      "name": "トリスタン ダンゴメ",
       "player": "Q3539621"
     },
     {
@@ -2677,7 +2745,7 @@
     },
     {
       "goals": 1,
-      "name": "Yann Lachuer",
+      "name": "ヤン ラシュエ",
       "player": "Q3545535"
     },
     {

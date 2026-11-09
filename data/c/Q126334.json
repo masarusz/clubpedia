@@ -9,9 +9,9 @@
   "headToHead": {
     "Q1051013": {
       "d": 1,
-      "ga": 2,
-      "gf": 3,
-      "l": 0,
+      "ga": 4,
+      "gf": 4,
+      "l": 1,
       "matches": [
         {
           "date": "2025-09-21",
@@ -22,10 +22,15 @@
           "date": "2026-03-15",
           "key": "fr-2025-Q126334-Q1051013",
           "score": "0–0"
+        },
+        {
+          "date": "2026-09-19",
+          "key": "fr-2026-Q1051013-Q126334",
+          "score": "2–1"
         }
       ],
-      "outcomes": "wd",
-      "p": 2,
+      "outcomes": "wdl",
+      "p": 3,
       "w": 1
     },
     "Q1056987": {
@@ -92,9 +97,9 @@
     },
     "Q132885": {
       "d": 17,
-      "ga": 65,
+      "ga": 69,
       "gf": 42,
-      "l": 17,
+      "l": 18,
       "matches": [
         {
           "date": null,
@@ -300,10 +305,15 @@
           "date": "2026-02-14",
           "key": "fr-2025-Q132885-Q126334",
           "score": "2–2"
+        },
+        {
+          "date": "2026-08-21",
+          "key": "fr-2026-Q132885-Q126334",
+          "score": "4–0"
         }
       ],
-      "outcomes": "dldlwwwdllwldddlwlwllddldldllldllddddwdld",
-      "p": 41,
+      "outcomes": "dldlwwwdllwldddlwlwllddldldllldllddddwdldl",
+      "p": 42,
       "w": 7
     },
     "Q172476": {
@@ -503,9 +513,9 @@
       "w": 12
     },
     "Q180305": {
-      "d": 9,
-      "ga": 82,
-      "gf": 53,
+      "d": 10,
+      "ga": 83,
+      "gf": 54,
       "l": 26,
       "matches": [
         {
@@ -737,16 +747,21 @@
           "date": "2025-08-31",
           "key": "fr-2025-Q180305-Q126334",
           "score": "3–2"
+        },
+        {
+          "date": "2026-09-12",
+          "key": "fr-2026-Q126334-Q180305",
+          "score": "1–1"
         }
       ],
-      "outcomes": "wldlwlwllldldlwlllwldldlldllllwwdwwlwdllllldwl",
-      "p": 46,
+      "outcomes": "wldlwlwllldldlwlllwldldlldllllwwdwwlwdllllldwld",
+      "p": 47,
       "w": 11
     },
     "Q182876": {
       "d": 9,
-      "ga": 35,
-      "gf": 38,
+      "ga": 36,
+      "gf": 43,
       "l": 11,
       "matches": [
         {
@@ -918,17 +933,22 @@
           "date": "2026-03-07",
           "key": "fr-2025-Q182876-Q126334",
           "score": "0–0"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q126334-Q182876",
+          "score": "5–1"
         }
       ],
-      "outcomes": "dldldlwlwwdwwllwwwldllwddlwdwlwwwd",
-      "p": 34,
-      "w": 14
+      "outcomes": "dldldlwlwwdwwllwwwldllwddlwdwlwwwdw",
+      "p": 35,
+      "w": 15
     },
     "Q185163": {
       "d": 13,
-      "ga": 39,
-      "gf": 42,
-      "l": 9,
+      "ga": 41,
+      "gf": 43,
+      "l": 10,
       "matches": [
         {
           "date": null,
@@ -1094,16 +1114,21 @@
           "date": "2026-01-03",
           "key": "fr-2025-Q185163-Q126334",
           "score": "1–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q126334",
+          "score": "2–1"
         }
       ],
-      "outcomes": "wwddwddlddwddllldwwlwlwdwwdlldlwd",
-      "p": 33,
+      "outcomes": "wwddwddlddwddllldwwlwlwdwwdlldlwdl",
+      "p": 34,
       "w": 11
     },
     "Q191843": {
       "d": 12,
-      "ga": 46,
-      "gf": 43,
+      "ga": 47,
+      "gf": 45,
       "l": 15,
       "matches": [
         {
@@ -1305,11 +1330,16 @@
           "date": "2025-11-22",
           "key": "fr-2025-Q191843-Q126334",
           "score": "1–0"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q126334-Q191843",
+          "score": "2–1"
         }
       ],
-      "outcomes": "wlwddlldwwwldlwlwdwdlldldlwdlwwwdllldwdl",
-      "p": 40,
-      "w": 13
+      "outcomes": "wlwddlldwwwldlwlwdwdlldldlwdlwwwdllldwdlw",
+      "p": 41,
+      "w": 14
     },
     "Q192071": {
       "d": 7,
@@ -1630,9 +1660,9 @@
     },
     "Q19509": {
       "d": 9,
-      "ga": 66,
+      "ga": 69,
       "gf": 47,
-      "l": 20,
+      "l": 21,
       "matches": [
         {
           "date": null,
@@ -1838,10 +1868,15 @@
           "date": "2025-11-02",
           "key": "fr-2025-Q19509-Q126334",
           "score": "4–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q19509-Q126334",
+          "score": "3–0"
         }
       ],
-      "outcomes": "ddwdwlwlddwldllwldwlllwlwllwldlwlllwdwlll",
-      "p": 41,
+      "outcomes": "ddwdwlwlddwldllwldwlllwlwllwldlwlllwdwllll",
+      "p": 42,
       "w": 12
     },
     "Q19512": {
@@ -2349,9 +2384,9 @@
     },
     "Q19518": {
       "d": 11,
-      "ga": 31,
-      "gf": 42,
-      "l": 6,
+      "ga": 34,
+      "gf": 43,
+      "l": 7,
       "matches": [
         {
           "date": null,
@@ -2512,10 +2547,15 @@
           "date": "2025-12-06",
           "key": "fr-2025-Q19518-Q126334",
           "score": "1–0"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q19518-Q126334",
+          "score": "3–1"
         }
       ],
-      "outcomes": "ddwdwdwwwdddlllwwwwddwwwldwdwwll",
-      "p": 32,
+      "outcomes": "ddwdwdwwwdddlllwwwwddwwwldwdwwlll",
+      "p": 33,
       "w": 15
     },
     "Q19521": {
@@ -3622,9 +3662,9 @@
     },
     "Q483020": {
       "d": 11,
-      "ga": 88,
-      "gf": 44,
-      "l": 29,
+      "ga": 91,
+      "gf": 45,
+      "l": 30,
       "matches": [
         {
           "date": null,
@@ -3850,10 +3890,15 @@
           "date": "2025-10-17",
           "key": "fr-2025-Q483020-Q126334",
           "score": "3–3"
+        },
+        {
+          "date": "2026-10-17",
+          "key": "fr-2026-Q126334-Q483020",
+          "score": "1–3"
         }
       ],
-      "outcomes": "lddlwlwllllllddllllldlwldlllwlddllldldlllwlld",
-      "p": 45,
+      "outcomes": "lddlwlwllllllddllllldlwldlllwlddllldldlllwlldl",
+      "p": 46,
       "w": 5
     },
     "Q48911": {
@@ -3939,8 +3984,8 @@
     },
     "Q501693": {
       "d": 5,
-      "ga": 18,
-      "gf": 19,
+      "ga": 20,
+      "gf": 25,
       "l": 4,
       "matches": [
         {
@@ -4012,11 +4057,16 @@
           "date": "2023-05-21",
           "key": "fr-2022-Q501693-Q126334",
           "score": "1–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q501693-Q126334",
+          "score": "2–6"
         }
       ],
-      "outcomes": "wldwwlwdwlddld",
-      "p": 14,
-      "w": 5
+      "outcomes": "wldwwlwdwlddldw",
+      "p": 15,
+      "w": 6
     },
     "Q503317": {
       "d": 2,
@@ -4635,6 +4685,7 @@
     }
   },
   "id": "Q126334",
+  "inProgress": true,
   "leagues": [
     "fr"
   ],
@@ -4644,6 +4695,12 @@
     "ja": "RCストラスブール"
   },
   "positions": [
+    {
+      "asOf": "2026-11-09",
+      "inProgress": true,
+      "position": 13,
+      "season": "fr-2026"
+    },
     {
       "position": 8,
       "season": "fr-2025"
@@ -4873,6 +4930,11 @@
       "goals": 4,
       "name": "Sam Amo-Ameyaw",
       "player": "Q118869958"
+    },
+    {
+      "goals": 4,
+      "name": "Gessime Yassine",
+      "player": "Q126436400"
     },
     {
       "goals": 4,
@@ -5123,6 +5185,11 @@
       "goals": 1,
       "name": "モルガン サンソン",
       "player": "Q6911830"
+    },
+    {
+      "goals": 1,
+      "name": "ジョヴァンニ レイナ",
+      "player": "Q75019636"
     },
     {
       "goals": 1,
