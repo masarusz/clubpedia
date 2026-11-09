@@ -90,6 +90,17 @@
         "recordedGoals": 1,
         "season": "es-2022",
         "topScorerRank": null
+      },
+      {
+        "club": "Q8806",
+        "goalMatches": [
+          "es-2025-Q8806-Q8823"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2025",
+        "topScorerRank": null
       }
     ]
   },
@@ -439,6 +450,29 @@
       }
     ]
   },
+  "Q1159005": {
+    "birthDate": "1971-09-29",
+    "en": "Lilian Nalis",
+    "id": "Q1159005",
+    "ja": {
+      "display": "Lilian Nalis",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q19481",
+        "goalMatches": [
+          "en-2003-Q19481-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2003",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q1178871": {
     "birthDate": "1893-04-03",
     "en": "Frank Roberts",
@@ -637,28 +671,8 @@
       "mode": "kanji",
       "ruby": "{中村|なかむら} {草太|そうた}"
     },
-    "japan": [
-      {
-        "apps": 0,
-        "club": "Q328658",
-        "goals": 0,
-        "league": "fr",
-        "season": "2026–27",
-        "source": "ja"
-      }
-    ],
-    "seasons": [
-      {
-        "apps": 0,
-        "club": "Q328658",
-        "goalMatches": [],
-        "goals": 0,
-        "league": "fr",
-        "recordedGoals": 0,
-        "season": "fr-2026",
-        "topScorerRank": null
-      }
-    ]
+    "japan": [],
+    "seasons": []
   },
   "Q1313720": {
     "birthDate": "1981-05-29",
@@ -927,6 +941,19 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q2052",
+        "goalMatches": [
+          "it-1994-Q2052-Q289707",
+          "it-1994-Q2052-Q8428",
+          "it-1994-Q6641-Q2052"
+        ],
+        "goals": 3,
+        "league": "it",
+        "recordedGoals": 3,
+        "season": "it-1994",
+        "topScorerRank": null
+      },
+      {
         "club": "Q459794",
         "goalMatches": [
           "it-1995-Q459794-Q631"
@@ -935,6 +962,30 @@
         "league": "it",
         "recordedGoals": 1,
         "season": "it-1995",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1541244": {
+    "birthDate": "1966-09-06",
+    "en": "Daniele Carnasciali",
+    "id": "Q1541244",
+    "ja": {
+      "display": "ダニエレ カルラッシャーリ",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q2052",
+        "goalMatches": [
+          "it-1994-Q2052-Q759482",
+          "it-1994-Q6641-Q2052"
+        ],
+        "goals": 2,
+        "league": "it",
+        "recordedGoals": 2,
+        "season": "it-1994",
         "topScorerRank": null
       }
     ]
@@ -1657,17 +1708,6 @@
         "recordedGoals": 2,
         "season": "es-1992",
         "topScorerRank": null
-      },
-      {
-        "club": "Q10333",
-        "goalMatches": [
-          "es-1993-Q8682-Q10333"
-        ],
-        "goals": 1,
-        "league": "es",
-        "recordedGoals": 1,
-        "season": "es-1993",
-        "topScorerRank": null
       }
     ]
   },
@@ -1971,6 +2011,29 @@
       }
     ]
   },
+  "Q3659712": {
+    "birthDate": "1960-07-08",
+    "en": "Carlo Perrone",
+    "id": "Q3659712",
+    "ja": {
+      "display": "Carlo Perrone",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q1886",
+        "goalMatches": [
+          "it-1992-Q2052-Q1886"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1992",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q3749901": {
     "birthDate": "1967-06-04",
     "en": "Francesco Dell'Anno",
@@ -1984,11 +2047,12 @@
       {
         "club": "Q2798",
         "goalMatches": [
+          "it-1992-Q2052-Q2798",
           "it-1992-Q2798-Q2641"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-1992",
         "topScorerRank": null
       },
@@ -2945,6 +3009,29 @@
       }
     ]
   },
+  "Q6100172": {
+    "birthDate": "1980-07-21",
+    "en": "Iván Romero",
+    "id": "Q6100172",
+    "ja": {
+      "display": "Iván Romero",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8823",
+        "goalMatches": [
+          "es-2025-Q8806-Q8823"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2025",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q62604184": {
     "birthDate": "1999-06-20",
     "en": "Nassim Boujellab",
@@ -3367,11 +3454,12 @@
         "club": "Q15786",
         "goalMatches": [
           "de-1993-Q15786-Q104761",
-          "de-1993-Q15786-Q15789"
+          "de-1993-Q15786-Q15789",
+          "de-1993-Q15786-Q162317"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1993",
         "topScorerRank": null
       }

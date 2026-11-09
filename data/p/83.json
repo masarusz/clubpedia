@@ -128,12 +128,17 @@
           "it-2013-Q2037-Q1893",
           "it-2013-Q2037-Q2641",
           "it-2013-Q2037-Q2641",
+          "it-2013-Q2037-Q2693",
+          "it-2013-Q2037-Q6767",
           "it-2013-Q2052-Q2037",
-          "it-2013-Q631-Q2037"
+          "it-2013-Q631-Q2037",
+          "it-2013-Q6767-Q2037",
+          "it-2013-Q6767-Q2037",
+          "it-2013-Q6767-Q2037"
         ],
-        "goals": 6,
+        "goals": 11,
         "league": "it",
-        "recordedGoals": 6,
+        "recordedGoals": 11,
         "season": "it-2013",
         "topScorerRank": null
       },
@@ -1182,12 +1187,13 @@
         "club": "Q1886",
         "goalMatches": [
           "it-1995-Q1886-Q2641",
+          "it-1995-Q1886-Q2693",
           "it-1995-Q2739-Q1886",
           "it-1995-Q459794-Q1886"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "it-1995",
         "topScorerRank": null
       },
@@ -1920,12 +1926,13 @@
       {
         "club": "Q10333",
         "goalMatches": [
+          "es-2025-Q10333-Q271574",
           "es-2025-Q10333-Q8806",
           "es-2025-Q8780-Q10333"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2025",
         "topScorerRank": null
       }
@@ -2677,12 +2684,13 @@
         "club": "Q18716",
         "goalMatches": [
           "en-2006-Q18716-Q18711",
+          "en-2006-Q18716-Q18741",
           "en-2006-Q19451-Q18716",
           "en-2006-Q9617-Q18716"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "en-2006",
         "topScorerRank": null
       }
@@ -2794,6 +2802,17 @@
     },
     "japan": null,
     "seasons": [
+      {
+        "club": "Q51974",
+        "goalMatches": [
+          "de-1999-Q51974-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      },
       {
         "club": "Q5794",
         "goalMatches": [
@@ -3096,6 +3115,29 @@
         "league": "fr",
         "recordedGoals": 1,
         "season": "fr-2011",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q314756": {
+    "birthDate": "1973-04-15",
+    "en": "Teddy Lučić",
+    "id": "Q314756",
+    "ja": {
+      "display": "テディ ルチッチ",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2002-Q9616-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2002",
         "topScorerRank": null
       }
     ]
@@ -3758,11 +3800,24 @@
       {
         "club": "Q18711",
         "goalMatches": [
+          "en-1999-Q18711-Q2714",
+          "en-1999-Q18711-Q2714"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18711",
+        "goalMatches": [
+          "en-2000-Q18711-Q1128631",
           "en-2000-Q5794-Q18711"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "en-2000",
         "topScorerRank": null
       },
@@ -3943,12 +3998,18 @@
         "club": "Q8682",
         "goalMatches": [
           "es-1994-Q10308-Q8682",
+          "es-1994-Q10333-Q8682",
+          "es-1994-Q8682-Q216661",
           "es-1994-Q8682-Q7156",
-          "es-1994-Q8682-Q8760"
+          "es-1994-Q8682-Q8687",
+          "es-1994-Q8682-Q8760",
+          "es-1994-Q8682-Q929753",
+          "es-1994-Q8780-Q8682",
+          "es-1994-Q8780-Q8682"
         ],
-        "goals": 3,
+        "goals": 9,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 9,
         "season": "es-1994",
         "topScorerRank": null
       },
@@ -4277,6 +4338,18 @@
         "recordedGoals": 3,
         "season": "de-1992",
         "topScorerRank": null
+      },
+      {
+        "club": "Q32494",
+        "goalMatches": [
+          "de-1993-Q32494-Q162317",
+          "de-1993-Q32494-Q162317"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1993",
+        "topScorerRank": null
       }
     ]
   },
@@ -4391,6 +4464,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Francesco_Acerbi_2021.jpg"
     },
     "seasons": [
+      {
+        "club": "Q2037",
+        "goalMatches": [
+          "it-2011-Q2037-Q2756"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2011",
+        "topScorerRank": null
+      },
       {
         "club": "Q8603",
         "goalMatches": [
@@ -4512,6 +4596,29 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-2009",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q541345": {
+    "birthDate": "1958-11-22",
+    "en": "Matthias Liebers",
+    "id": "Q541345",
+    "ja": {
+      "display": "Matthias Liebers",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q162317",
+        "goalMatches": [
+          "de-1993-Q162317-Q51974"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
         "topScorerRank": null
       }
     ]
@@ -4791,22 +4898,25 @@
       },
       {
         "club": "Q271574",
-        "goalMatches": [],
+        "goalMatches": [
+          "es-1994-Q271574-Q8682"
+        ],
         "goals": 14,
         "league": "es",
-        "recordedGoals": 0,
+        "recordedGoals": 1,
         "season": "es-1994",
         "topScorerRank": 8
       },
       {
         "club": "Q271574",
         "goalMatches": [
+          "es-1995-Q271574-Q8682",
           "es-1995-Q8760-Q271574",
           "es-1995-Q8760-Q271574"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-1995",
         "topScorerRank": null
       }

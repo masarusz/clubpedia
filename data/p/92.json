@@ -75,12 +75,13 @@
         "club": "Q4512",
         "goalMatches": [
           "de-2025-Q4512-Q162251",
+          "de-2025-Q4512-Q51974",
           "de-2025-Q4512-Q6463",
           "de-2025-Q51976-Q4512"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "de-2025",
         "topScorerRank": null
       },
@@ -364,14 +365,17 @@
       {
         "club": "Q51974",
         "goalMatches": [
+          "de-1993-Q162317-Q51974",
+          "de-1993-Q162317-Q51974",
           "de-1993-Q38245-Q51974",
           "de-1993-Q41420-Q51974",
           "de-1993-Q51974-Q104761",
+          "de-1993-Q51974-Q162317",
           "de-1993-Q51974-Q38245"
         ],
-        "goals": 4,
+        "goals": 7,
         "league": "de",
-        "recordedGoals": 4,
+        "recordedGoals": 7,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -2227,12 +2231,15 @@
       {
         "club": "Q104761",
         "goalMatches": [
+          "de-1999-Q104761-Q14551982",
+          "de-1999-Q104761-Q14551982",
           "de-1999-Q104761-Q15789",
-          "de-1999-Q104761-Q38245"
+          "de-1999-Q104761-Q38245",
+          "de-1999-Q14551982-Q104761"
         ],
         "goals": 17,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 5,
         "season": "de-1999",
         "topScorerRank": 2
       },
@@ -2681,11 +2688,12 @@
         "club": "Q2768",
         "goalMatches": [
           "it-1993-Q2768-Q1457",
-          "it-1993-Q2768-Q631"
+          "it-1993-Q2768-Q631",
+          "it-1993-Q459794-Q2768"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1993",
         "topScorerRank": null
       },
@@ -2693,11 +2701,12 @@
         "club": "Q2798",
         "goalMatches": [
           "it-1995-Q1543-Q2798",
+          "it-1995-Q2798-Q2052",
           "it-1995-Q2798-Q2641"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1995",
         "topScorerRank": null
       },
@@ -2948,6 +2957,17 @@
         "recordedGoals": 1,
         "season": "es-2023",
         "topScorerRank": null
+      },
+      {
+        "club": "Q223620",
+        "goalMatches": [
+          "es-2025-Q8806-Q223620"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2025",
+        "topScorerRank": null
       }
     ]
   },
@@ -3113,6 +3133,29 @@
       }
     ]
   },
+  "Q4707656": {
+    "birthDate": "1977-01-03",
+    "en": "Alan Rogers",
+    "id": "Q4707656",
+    "ja": {
+      "display": "Alan Rogers",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q19490",
+        "goalMatches": [
+          "en-1998-Q1128631-Q19490"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q483417": {
     "birthDate": "1978-11-07",
     "en": "Rio Ferdinand",
@@ -3130,6 +3173,18 @@
       "source": "https://commons.wikimedia.org/wiki/File:Web_Summit_2015_-_Dublin,_Ireland_-_22183056474_(cropped).jpg"
     },
     "seasons": [
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2000-Q1130849-Q1128631",
+          "en-2000-Q18747-Q1128631"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
       {
         "club": "Q18656",
         "goalMatches": [
@@ -3548,11 +3603,12 @@
       {
         "club": "Q10300",
         "goalMatches": [
-          "es-2025-Q10300-Q10512"
+          "es-2025-Q10300-Q10512",
+          "es-2025-Q8806-Q10300"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2025",
         "topScorerRank": null
       }

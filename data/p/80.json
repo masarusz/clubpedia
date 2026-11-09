@@ -387,6 +387,29 @@
       }
     ]
   },
+  "Q12403049": {
+    "birthDate": "1993-03-30",
+    "en": "Álvaro Lemos",
+    "id": "Q12403049",
+    "ja": {
+      "display": "アルバロ レモス",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8749",
+        "goalMatches": [
+          "es-2016-Q856119-Q8749"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2016",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q126279": {
     "birthDate": "1986-11-25",
     "en": "Craig Gardner",
@@ -3167,11 +3190,13 @@
         "club": "Q1886",
         "goalMatches": [
           "it-1997-Q1886-Q1893",
-          "it-1997-Q1886-Q2641"
+          "it-1997-Q1886-Q2641",
+          "it-1997-Q2693-Q1886",
+          "it-1997-Q2693-Q1886"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "it-1997",
         "topScorerRank": null
       },
@@ -3213,11 +3238,12 @@
         "goalMatches": [
           "it-2001-Q1422-Q2768",
           "it-2001-Q2768-Q1543",
-          "it-2001-Q2768-Q2609"
+          "it-2001-Q2768-Q2609",
+          "it-2001-Q459794-Q2768"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "it-2001",
         "topScorerRank": null
       },
@@ -3824,12 +3850,13 @@
       {
         "club": "Q154293",
         "goalMatches": [
+          "de-1993-Q154293-Q162317",
           "de-1993-Q38245-Q154293",
           "de-1993-Q38245-Q154293"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -5102,11 +5129,12 @@
       {
         "club": "Q8835",
         "goalMatches": [
-          "es-2002-Q7156-Q8835"
+          "es-2002-Q7156-Q8835",
+          "es-2002-Q8682-Q8835"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2002",
         "topScorerRank": null
       }
@@ -5993,17 +6021,6 @@
       {
         "club": "Q8749",
         "goalMatches": [
-          "es-2014-Q10512-Q8749"
-        ],
-        "goals": 1,
-        "league": "es",
-        "recordedGoals": 1,
-        "season": "es-2014",
-        "topScorerRank": null
-      },
-      {
-        "club": "Q8749",
-        "goalMatches": [
           "es-2016-Q8749-Q223620"
         ],
         "goals": 1,
@@ -6261,6 +6278,30 @@
         "league": "en",
         "recordedGoals": 2,
         "season": "en-2025",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q747669": {
+    "birthDate": "1964-01-20",
+    "en": "Luboš Kubík",
+    "id": "Q747669",
+    "ja": {
+      "display": "Luboš Kubík",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q15786",
+        "goalMatches": [
+          "de-1993-Q15786-Q162317",
+          "de-1993-Q162317-Q15786"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1993",
         "topScorerRank": null
       }
     ]
@@ -6707,6 +6748,29 @@
       }
     ]
   },
+  "Q823855": {
+    "birthDate": "1974-11-30",
+    "en": "Bernd Maier",
+    "id": "Q823855",
+    "ja": {
+      "display": "Bernd Maier",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q14551982",
+        "goalMatches": [
+          "de-1999-Q51974-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q84233731": {
     "birthDate": "1998-10-01",
     "en": "Yvann Maçon",
@@ -6955,6 +7019,8 @@
         "club": "Q10315",
         "goalMatches": [
           "es-2015-Q10315-Q10329",
+          "es-2015-Q10315-Q8749",
+          "es-2015-Q10315-Q8749",
           "es-2015-Q10315-Q8780",
           "es-2015-Q10315-Q8857",
           "es-2015-Q8806-Q10315",
@@ -6964,9 +7030,9 @@
           "es-2015-Q8823-Q10315",
           "es-2015-Q8857-Q10315"
         ],
-        "goals": 9,
+        "goals": 11,
         "league": "es",
-        "recordedGoals": 9,
+        "recordedGoals": 11,
         "season": "es-2015",
         "topScorerRank": null
       }

@@ -712,7 +712,7 @@
     {
       "away": "Q4512",
       "awayGoals": 3,
-      "date": "2026-01-24",
+      "date": "2026-01-25",
       "home": "Q101959",
       "homeGoals": 0,
       "key": "de-2025-Q101959-Q4512",
@@ -6809,6 +6809,31 @@
       "homeGoals": 4,
       "key": "de-2025-Q4512-Q51974",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Stiller",
+            "minute": "21",
+            "player": "Q68676722"
+          },
+          {
+            "display": "Führich",
+            "minute": "32",
+            "player": "Q45369082"
+          },
+          {
+            "display": "Mittelstädt",
+            "minute": "56",
+            "player": "Q22998602"
+          },
+          {
+            "display": "El Khannouss",
+            "minute": "86",
+            "player": "Q105955374"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6974,7 +6999,7 @@
         "away": [],
         "home": [
           {
-            "display": "Lokonga",
+            "display": "Sambi Lokonga",
             "minute": "6",
             "player": "Q46694474"
           },
@@ -7000,7 +7025,7 @@
     {
       "away": "Q106394",
       "awayGoals": 2,
-      "date": "2026-05-09",
+      "date": "2026-05-10",
       "home": "Q51974",
       "homeGoals": 3,
       "key": "de-2025-Q51974-Q106394",
@@ -9712,7 +9737,7 @@
     ],
     "Q4512": [
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q22998602"
       },
       {
@@ -9720,7 +9745,7 @@
         "id": "Q47067481"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q68676722"
       },
       {
@@ -9732,7 +9757,7 @@
         "id": "Q65964628"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q45369082"
       },
       {
@@ -9753,7 +9778,7 @@
         "id": "Q127932393"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q105955374"
       }
     ],

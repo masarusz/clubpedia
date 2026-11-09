@@ -1,4 +1,27 @@
 {
+  "Q10377412": {
+    "birthDate": "1972-04-14",
+    "en": "Paul Devlin",
+    "id": "Q10377412",
+    "ja": {
+      "display": "Paul Devlin",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q19444",
+        "goalMatches": [
+          "en-2002-Q19444-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q10502548": {
     "birthDate": "1991-08-25",
     "en": "Luke Ayling",
@@ -471,12 +494,13 @@
           "en-2003-Q18741-Q19451",
           "en-2003-Q19446-Q19451",
           "en-2003-Q19446-Q19451",
+          "en-2003-Q19451-Q1128631",
           "en-2003-Q19451-Q50602",
           "en-2003-Q50602-Q19451"
         ],
-        "goals": 6,
+        "goals": 7,
         "league": "en",
-        "recordedGoals": 6,
+        "recordedGoals": 7,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -1187,11 +1211,21 @@
         "club": "Q1128631",
         "goalMatches": [
           "en-2001-Q1128631-Q18747",
-          "en-2001-Q1128631-Q9617"
+          "en-2001-Q1128631-Q19446",
+          "en-2001-Q1128631-Q19446",
+          "en-2001-Q1128631-Q5794",
+          "en-2001-Q1128631-Q5794",
+          "en-2001-Q1128631-Q9617",
+          "en-2001-Q1128631-Q9653",
+          "en-2001-Q18661-Q1128631",
+          "en-2001-Q19451-Q1128631",
+          "en-2001-Q19451-Q1128631",
+          "en-2001-Q19451-Q1128631",
+          "en-2001-Q19481-Q1128631"
         ],
-        "goals": 2,
+        "goals": 12,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 12,
         "season": "en-2001",
         "topScorerRank": null
       },
@@ -1207,6 +1241,18 @@
         "recordedGoals": 3,
         "season": "en-2001",
         "topScorerRank": 7
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2002-Q18739-Q1128631",
+          "en-2002-Q19451-Q1128631"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-2002",
+        "topScorerRank": null
       },
       {
         "club": "Q50602",
@@ -1676,7 +1722,7 @@
     ]
   },
   "Q2843080": {
-    "birthDate": "1989-11-04",
+    "birthDate": "1990-11-04",
     "en": "Enner Valencia",
     "id": "Q2843080",
     "ja": {
@@ -2529,11 +2575,13 @@
       {
         "club": "Q2693",
         "goalMatches": [
-          "it-1994-Q2693-Q1900"
+          "it-1994-Q2693-Q139399",
+          "it-1994-Q2693-Q759482",
+          "it-1994-Q289707-Q2693"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "it-1994",
         "topScorerRank": null
       },
@@ -3024,12 +3072,13 @@
         "club": "Q5794",
         "goalMatches": [
           "en-2002-Q50602-Q5794",
+          "en-2002-Q5794-Q1128631",
           "en-2002-Q5794-Q1130849",
           "en-2002-Q5794-Q18716"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "en-2002",
         "topScorerRank": null
       },
@@ -3102,14 +3151,17 @@
       {
         "club": "Q19444",
         "goalMatches": [
+          "en-2003-Q1128631-Q19444",
           "en-2003-Q1130849-Q19444",
+          "en-2003-Q19444-Q1128631",
+          "en-2003-Q19444-Q1128631",
           "en-2003-Q19444-Q18708",
           "en-2003-Q19444-Q18708",
           "en-2003-Q19444-Q50602"
         ],
         "goals": 17,
         "league": "en",
-        "recordedGoals": 4,
+        "recordedGoals": 7,
         "season": "en-2003",
         "topScorerRank": 5
       },
@@ -4035,16 +4087,19 @@
         "goalMatches": [
           "es-2013-Q10407-Q8749",
           "es-2013-Q8687-Q8749",
+          "es-2013-Q8723-Q8749",
           "es-2013-Q8749-Q10333",
           "es-2013-Q8749-Q10333",
           "es-2013-Q8749-Q10407",
           "es-2013-Q8749-Q8682",
           "es-2013-Q8749-Q8682",
+          "es-2013-Q8749-Q8723",
+          "es-2013-Q8749-Q8780",
           "es-2013-Q8857-Q8749"
         ],
-        "goals": 8,
+        "goals": 11,
         "league": "es",
-        "recordedGoals": 8,
+        "recordedGoals": 11,
         "season": "es-2013",
         "topScorerRank": null
       },
@@ -4052,11 +4107,12 @@
         "club": "Q8749",
         "goalMatches": [
           "es-2014-Q8760-Q8749",
-          "es-2014-Q8806-Q8749"
+          "es-2014-Q8806-Q8749",
+          "es-2014-Q8823-Q8749"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2014",
         "topScorerRank": null
       },
@@ -4708,6 +4764,29 @@
       }
     ]
   },
+  "Q582792": {
+    "birthDate": "1981-07-19",
+    "en": "Grégory Vignal",
+    "id": "Q582792",
+    "ja": {
+      "display": "Grégory Vignal",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8780",
+        "goalMatches": [
+          "es-2003-Q8749-Q8780"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q62085112": {
     "birthDate": "1996-10-22",
     "en": "Tatsuhiro Sakamoto",
@@ -4971,6 +5050,29 @@
         "league": "de",
         "recordedGoals": 5,
         "season": "de-2004",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q735967": {
+    "birthDate": "1978-04-25",
+    "en": "Jesús María Lacruz",
+    "id": "Q735967",
+    "ja": {
+      "display": "ヘスス マリア ラクルス",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8687",
+        "goalMatches": [
+          "es-2003-Q8749-Q8687"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
         "topScorerRank": null
       }
     ]

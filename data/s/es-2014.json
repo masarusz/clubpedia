@@ -332,10 +332,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2014-11-23",
       "home": "Q10300",
       "homeGoals": 1,
       "key": "es-2014-Q10300-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Bueno",
+            "minute": "20",
+            "player": "Q27691"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2451,11 +2462,11 @@
         "away": [
           {
             "display": "Nolito",
-            "minute": "16",
+            "minute": "17",
             "player": "Q456617"
           },
           {
-            "display": "Santi Mina",
+            "display": "Mina",
             "minute": "39",
             "player": "Q7420322"
           }
@@ -3516,16 +3527,6 @@
       "homeGoals": 0,
       "key": "es-2014-Q10512-Q8749",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Radoja",
-            "minute": "90",
-            "player": "Q6990957"
-          }
-        ],
-        "home": []
-      },
       "status": "played"
     },
     {
@@ -5172,10 +5173,22 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2015-04-19",
       "home": "Q770740",
       "homeGoals": 0,
       "key": "es-2014-Q770740-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Nolito",
+            "minute": "40",
+            "penalty": true,
+            "player": "Q456617"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -7128,10 +7141,52 @@
     {
       "away": "Q10300",
       "awayGoals": 1,
+      "date": "2015-04-11",
       "home": "Q8749",
       "homeGoals": 6,
       "key": "es-2014-Q8749-Q10300",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Manucho",
+            "minute": "1",
+            "player": "Q309890"
+          }
+        ],
+        "home": [
+          {
+            "display": "Larrivey",
+            "minute": "6",
+            "player": "Q643297"
+          },
+          {
+            "display": "Mina",
+            "minute": "21",
+            "player": "Q7420322"
+          },
+          {
+            "display": "Larrivey",
+            "minute": "37",
+            "player": "Q643297"
+          },
+          {
+            "display": "Mina",
+            "minute": "40",
+            "player": "Q7420322"
+          },
+          {
+            "display": "Mina",
+            "minute": "51",
+            "player": "Q7420322"
+          },
+          {
+            "display": "Mina",
+            "minute": "56",
+            "player": "Q7420322"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7267,10 +7322,28 @@
     {
       "away": "Q10512",
       "awayGoals": 1,
+      "date": "2015-03-02",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-2014-Q8749-Q10512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lombán",
+            "minute": "88",
+            "penalty": true,
+            "player": "Q2095355"
+          }
+        ],
+        "home": [
+          {
+            "display": "Krohn-Dehli",
+            "minute": "61",
+            "player": "Q221570"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7383,12 +7456,12 @@
         "home": [
           {
             "display": "Nolito",
-            "minute": "10",
+            "minute": "9",
             "player": "Q456617"
           },
           {
             "display": "Mina",
-            "minute": "27",
+            "minute": "28",
             "player": "Q7420322"
           }
         ]
@@ -7492,37 +7565,6 @@
       "homeGoals": 3,
       "key": "es-2014-Q8749-Q8780",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "García",
-            "minute": "23",
-            "player": "Q313201"
-          },
-          {
-            "display": "Stuani",
-            "minute": "48",
-            "player": "Q2608851"
-          }
-        ],
-        "home": [
-          {
-            "display": "Mallo",
-            "minute": "38",
-            "player": "Q1825157"
-          },
-          {
-            "display": "Cabral",
-            "minute": "58",
-            "player": "Q2711913"
-          },
-          {
-            "display": "Nolito",
-            "minute": "77",
-            "player": "Q456617"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -7578,10 +7620,31 @@
     {
       "away": "Q8823",
       "awayGoals": 0,
+      "date": "2014-10-24",
       "home": "Q8749",
       "homeGoals": 3,
       "key": "es-2014-Q8749-Q8823",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Larrivey",
+            "minute": "27",
+            "player": "Q643297"
+          },
+          {
+            "display": "Larrivey",
+            "minute": "83",
+            "player": "Q643297"
+          },
+          {
+            "display": "Á. López",
+            "minute": "90",
+            "player": "Q2754070"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -9868,10 +9931,21 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2015-03-21",
       "home": "Q8823",
       "homeGoals": 0,
       "key": "es-2014-Q8823-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Charles",
+            "minute": "86",
+            "player": "Q5076849"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -10538,7 +10612,7 @@
         "id": "Q299703"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q309890"
       },
       {
@@ -10857,7 +10931,7 @@
         "id": "Q15728781"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q2095355"
       },
       {
@@ -11248,35 +11322,31 @@
       },
       {
         "goals": 1,
-        "id": "Q2711913"
-      },
-      {
-        "goals": 1,
         "id": "Q545665"
       },
       {
-        "goals": 6,
+        "goals": 1,
+        "id": "Q2754070"
+      },
+      {
+        "goals": 1,
+        "id": "Q221570"
+      },
+      {
+        "goals": 10,
         "id": "Q643297"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q5076849"
       },
       {
-        "goals": 3,
+        "goals": 7,
         "id": "Q7420322"
       },
       {
         "goals": 2,
         "id": "Q3898700"
-      },
-      {
-        "goals": 1,
-        "id": "Q6990957"
-      },
-      {
-        "goals": 1,
-        "id": "Q1825157"
       },
       {
         "goals": 1,
@@ -11351,7 +11421,7 @@
         "id": "Q351473"
       },
       {
-        "goals": 11,
+        "goals": 10,
         "id": "Q2608851"
       },
       {
@@ -11945,7 +12015,7 @@
     {
       "club": "Q7156",
       "goals": 16,
-      "player": "Luis Suárez",
+      "player": "Luis Suárez (Uruguayan footballer)",
       "playerId": "Q26517",
       "rank": 8
     },

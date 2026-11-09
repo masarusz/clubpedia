@@ -231,12 +231,13 @@
           "it-1996-Q2739-Q8639",
           "it-1996-Q8639-Q1543",
           "it-1996-Q8639-Q2609",
+          "it-1996-Q8639-Q2693",
           "it-1996-Q8639-Q2739",
           "it-1996-Q8639-Q2798"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "it-1996",
         "topScorerRank": null
       },
@@ -342,12 +343,13 @@
       {
         "club": "Q7156",
         "goalMatches": [
+          "es-2003-Q7156-Q8749",
           "es-2003-Q7156-Q8857",
           "es-2003-Q8687-Q7156"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2003",
         "topScorerRank": null
       }
@@ -432,6 +434,18 @@
         "league": "de",
         "recordedGoals": 1,
         "season": "de-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q106394",
+        "goalMatches": [
+          "de-1999-Q106394-Q14551982",
+          "de-1999-Q106394-Q14551982"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1999",
         "topScorerRank": null
       }
     ]
@@ -838,22 +852,24 @@
         "club": "Q1900",
         "goalMatches": [
           "it-1992-Q1900-Q1543",
+          "it-1992-Q1900-Q2052",
           "it-1992-Q1900-Q2641"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1992",
         "topScorerRank": null
       },
       {
         "club": "Q2768",
         "goalMatches": [
-          "it-1993-Q2768-Q2609"
+          "it-1993-Q2768-Q2609",
+          "it-1993-Q2768-Q2693"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-1993",
         "topScorerRank": null
       }
@@ -2181,6 +2197,29 @@
       }
     ]
   },
+  "Q369363": {
+    "birthDate": "1973-10-06",
+    "en": "Orazio Russo",
+    "id": "Q369363",
+    "ja": {
+      "display": "Orazio Russo",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q13391",
+        "goalMatches": [
+          "it-1993-Q13391-Q459794"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1993",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q378790": {
     "birthDate": "1986-08-04",
     "en": "Ricardo Faty",
@@ -2513,12 +2552,14 @@
       {
         "club": "Q15789",
         "goalMatches": [
+          "de-2011-Q105254-Q15789",
+          "de-2011-Q105254-Q15789",
           "de-2011-Q15789-Q104761",
           "de-2011-Q15789-Q51974"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "de-2011",
         "topScorerRank": null
       },
@@ -3045,12 +3086,14 @@
         "goalMatches": [
           "it-1995-Q2052-Q1457",
           "it-1995-Q2052-Q1543",
+          "it-1995-Q2052-Q2641",
           "it-1995-Q2052-Q459794",
+          "it-1995-Q2052-Q8428",
           "it-1995-Q2739-Q2052"
         ],
-        "goals": 4,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 6,
         "season": "it-1995",
         "topScorerRank": null
       },
@@ -3058,16 +3101,18 @@
         "club": "Q2052",
         "goalMatches": [
           "it-1996-Q1457-Q2052",
+          "it-1996-Q16344-Q2052",
           "it-1996-Q2052-Q1422",
           "it-1996-Q2052-Q1543",
           "it-1996-Q2052-Q1893",
-          "it-1996-Q2052-Q2641",
+          "it-1996-Q2052-Q1900",
           "it-1996-Q2052-Q2739",
-          "it-1996-Q2052-Q459794"
+          "it-1996-Q2052-Q289707",
+          "it-1996-Q2052-Q8639"
         ],
-        "goals": 7,
+        "goals": 9,
         "league": "it",
-        "recordedGoals": 7,
+        "recordedGoals": 9,
         "season": "it-1996",
         "topScorerRank": null
       },
@@ -3075,11 +3120,12 @@
         "club": "Q2052",
         "goalMatches": [
           "it-1997-Q2052-Q1422",
-          "it-1997-Q2052-Q1543"
+          "it-1997-Q2052-Q1886",
+          "it-1997-Q2052-Q2641"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1997",
         "topScorerRank": null
       },
@@ -3562,6 +3608,17 @@
     },
     "seasons": [
       {
+        "club": "Q2756",
+        "goalMatches": [
+          "it-2011-Q2756-Q2674"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2011",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1900",
         "goalMatches": [
           "it-2014-Q1422-Q1900",
@@ -3956,11 +4013,12 @@
       {
         "club": "Q8466",
         "goalMatches": [
-          "de-2011-Q32494-Q8466"
+          "de-2011-Q32494-Q8466",
+          "de-2011-Q8466-Q105254"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "de-2011",
         "topScorerRank": null
       }
@@ -4196,11 +4254,12 @@
         "club": "Q759482",
         "goalMatches": [
           "it-1993-Q1457-Q759482",
-          "it-1993-Q2739-Q759482"
+          "it-1993-Q2739-Q759482",
+          "it-1993-Q759482-Q459794"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1993",
         "topScorerRank": null
       }
@@ -4229,11 +4288,12 @@
           "it-1992-Q108749828-Q1457",
           "it-1992-Q108749828-Q2641",
           "it-1992-Q108749828-Q631",
-          "it-1992-Q108749828-Q631"
+          "it-1992-Q108749828-Q631",
+          "it-1992-Q2052-Q108749828"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-1992",
         "topScorerRank": null
       }

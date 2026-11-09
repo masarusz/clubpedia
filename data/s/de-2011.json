@@ -91,10 +91,39 @@
     {
       "away": "Q105254",
       "awayGoals": 2,
+      "date": "2011-12-03",
       "home": "Q101859",
       "homeGoals": 2,
       "key": "de-2011-Q101859-Q105254",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ivanschitz",
+            "minute": "70",
+            "penalty": true,
+            "player": "Q296837"
+          },
+          {
+            "display": "Choupo-Moting",
+            "minute": "81",
+            "player": "Q309532"
+          }
+        ],
+        "home": [
+          {
+            "display": "Mandžukić",
+            "minute": "10",
+            "player": "Q187171"
+          },
+          {
+            "display": "Kirchhoff",
+            "minute": "41",
+            "ownGoal": true,
+            "player": "Q573326"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1013,10 +1042,15 @@
     {
       "away": "Q105254",
       "awayGoals": 0,
+      "date": "2011-10-22",
       "home": "Q102720",
       "homeGoals": 0,
       "key": "de-2011-Q102720-Q105254",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2301,10 +2335,15 @@
     {
       "away": "Q101859",
       "awayGoals": 0,
+      "date": "2012-04-20",
       "home": "Q105254",
       "homeGoals": 0,
       "key": "de-2011-Q105254-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2340,10 +2379,37 @@
     {
       "away": "Q102720",
       "awayGoals": 3,
+      "date": "2012-03-24",
       "home": "Q105254",
       "homeGoals": 1,
       "key": "de-2011-Q105254-Q102720",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ben-Hatira",
+            "minute": "41",
+            "player": "Q62082"
+          },
+          {
+            "display": "Ramos",
+            "minute": "52",
+            "player": "Q370348"
+          },
+          {
+            "display": "Ramos",
+            "minute": "69",
+            "player": "Q370348"
+          }
+        ],
+        "home": [
+          {
+            "display": "Choupo-Moting",
+            "minute": "58",
+            "player": "Q309532"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2354,6 +2420,22 @@
       "homeGoals": 2,
       "key": "de-2011-Q105254-Q104761",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Allagui",
+            "minute": "32",
+            "player": "Q61377"
+          },
+          {
+            "display": "Toprak",
+            "minute": "86",
+            "ownGoal": true,
+            "player": "Q279436"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2400,32 +2482,6 @@
       "homeGoals": 3,
       "key": "de-2011-Q105254-Q106394",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Krmaš",
-            "minute": "68",
-            "player": "Q128791"
-          }
-        ],
-        "home": [
-          {
-            "display": "Choupo-Moting",
-            "minute": "3",
-            "player": "Q309532"
-          },
-          {
-            "display": "Polanski",
-            "minute": "6",
-            "player": "Q5117"
-          },
-          {
-            "display": "Choupo-Moting",
-            "minute": "17",
-            "player": "Q309532"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -2468,7 +2524,7 @@
         "home": [
           {
             "display": "N. Müller",
-            "minute": "1",
+            "minute": "2",
             "player": "Q551651"
           },
           {
@@ -2483,10 +2539,42 @@
     {
       "away": "Q15789",
       "awayGoals": 2,
+      "date": "2011-11-27",
       "home": "Q105254",
       "homeGoals": 3,
       "key": "de-2011-Q105254-Q15789",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Van Buyten",
+            "minute": "56",
+            "player": "Q44309"
+          },
+          {
+            "display": "Van Buyten",
+            "minute": "79",
+            "player": "Q44309"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ivanschitz",
+            "minute": "11",
+            "player": "Q296837"
+          },
+          {
+            "display": "Caligiuri",
+            "minute": "65",
+            "player": "Q548484"
+          },
+          {
+            "display": "Bungert",
+            "minute": "74",
+            "player": "Q530297"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2621,7 +2709,7 @@
         ],
         "home": [
           {
-            "display": "Müller",
+            "display": "N. Müller",
             "minute": "33",
             "player": "Q551651"
           }
@@ -2632,10 +2720,38 @@
     {
       "away": "Q4512",
       "awayGoals": 1,
+      "date": "2011-11-04",
       "home": "Q105254",
       "homeGoals": 3,
       "key": "de-2011-Q105254-Q4512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cacau",
+            "minute": "50",
+            "player": "Q57148"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ujah",
+            "minute": "53",
+            "player": "Q574080"
+          },
+          {
+            "display": "Ivanschitz",
+            "minute": "60",
+            "penalty": true,
+            "player": "Q296837"
+          },
+          {
+            "display": "Ujah",
+            "minute": "64",
+            "player": "Q574080"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2691,10 +2807,36 @@
     {
       "away": "Q8466",
       "awayGoals": 0,
+      "date": "2012-02-25",
       "home": "Q105254",
       "homeGoals": 4,
       "key": "de-2011-Q105254-Q8466",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zidan",
+            "minute": "2",
+            "player": "Q76866"
+          },
+          {
+            "display": "Szalai",
+            "minute": "17",
+            "player": "Q249572"
+          },
+          {
+            "display": "N. Müller",
+            "minute": "30",
+            "player": "Q551651"
+          },
+          {
+            "display": "Choupo-Moting",
+            "minute": "74",
+            "player": "Q309532"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4221,10 +4363,15 @@
     {
       "away": "Q105254",
       "awayGoals": 0,
+      "date": "2012-04-14",
       "home": "Q15789",
       "homeGoals": 0,
       "key": "de-2011-Q15789-Q105254",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6676,10 +6823,44 @@
     {
       "away": "Q105254",
       "awayGoals": 1,
+      "date": "2012-04-07",
       "home": "Q4512",
       "homeGoals": 4,
       "key": "de-2011-Q4512-Q105254",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ivanschitz",
+            "minute": "3",
+            "penalty": true,
+            "player": "Q296837"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hajnal",
+            "minute": "8",
+            "player": "Q351463"
+          },
+          {
+            "display": "Ibišević",
+            "minute": "49",
+            "player": "Q155604"
+          },
+          {
+            "display": "Kuzmanović",
+            "minute": "65",
+            "penalty": true,
+            "player": "Q115859"
+          },
+          {
+            "display": "Ibišević",
+            "minute": "85",
+            "player": "Q155604"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8106,10 +8287,38 @@
     {
       "away": "Q105254",
       "awayGoals": 1,
+      "date": "2011-09-17",
       "home": "Q8466",
       "homeGoals": 3,
       "key": "de-2011-Q8466-Q105254",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Choupo-Moting",
+            "minute": "15",
+            "player": "Q309532"
+          }
+        ],
+        "home": [
+          {
+            "display": "Svensson",
+            "minute": "24",
+            "ownGoal": true,
+            "player": "Q887456"
+          },
+          {
+            "display": "Shechter",
+            "minute": "54",
+            "player": "Q715963"
+          },
+          {
+            "display": "Tiffert",
+            "minute": "73",
+            "player": "Q77419"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8401,7 +8610,7 @@
         "japan": true
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q187171"
       },
       {
@@ -8471,7 +8680,7 @@
         "id": "Q157839"
       },
       {
-        "goals": 4,
+        "goals": 6,
         "id": "Q370348"
       },
       {
@@ -8483,7 +8692,7 @@
         "id": "Q447922"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q62082"
       },
       {
@@ -8600,15 +8809,15 @@
     ],
     "Q105254": [
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q76866"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q548484"
       },
       {
-        "goals": 2,
+        "goals": 6,
         "id": "Q296837"
       },
       {
@@ -8616,19 +8825,19 @@
         "id": "Q212621"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q249572"
       },
       {
-        "goals": 3,
+        "goals": 2,
         "id": "Q5117"
       },
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q309532"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q61377"
       },
       {
@@ -8636,12 +8845,16 @@
         "id": "Q691578"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q551651"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q530297"
+      },
+      {
+        "goals": 2,
+        "id": "Q574080"
       }
     ],
     "Q106394": [
@@ -8680,10 +8893,6 @@
       {
         "goals": 5,
         "id": "Q128788"
-      },
-      {
-        "goals": 1,
-        "id": "Q128791"
       },
       {
         "goals": 2,
@@ -8846,7 +9055,7 @@
         "id": "Q44298"
       },
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q44309"
       },
       {
@@ -9109,11 +9318,11 @@
     ],
     "Q4512": [
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q57148"
       },
       {
-        "goals": 5,
+        "goals": 7,
         "id": "Q155604"
       },
       {
@@ -9126,6 +9335,10 @@
       },
       {
         "goals": 1,
+        "id": "Q351463"
+      },
+      {
+        "goals": 1,
         "id": "Q205778"
       },
       {
@@ -9133,7 +9346,7 @@
         "id": "Q61371"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q115859"
       },
       {
@@ -9267,7 +9480,7 @@
     ],
     "Q8466": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q77419"
       },
       {
@@ -9307,7 +9520,7 @@
         "id": "Q602920"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q715963"
       }
     ]

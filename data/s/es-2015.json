@@ -860,6 +860,37 @@
       "homeGoals": 2,
       "key": "es-2015-Q10315-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aspas",
+            "minute": "17",
+            "player": "Q26380"
+          },
+          {
+            "display": "Aspas",
+            "minute": "56",
+            "player": "Q26380"
+          },
+          {
+            "display": "Hernández",
+            "minute": "89",
+            "player": "Q3898700"
+          }
+        ],
+        "home": [
+          {
+            "display": "Agirretxe",
+            "minute": "11",
+            "player": "Q941863"
+          },
+          {
+            "display": "Agirretxe",
+            "minute": "37",
+            "player": "Q941863"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4718,10 +4749,27 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2015-09-26",
       "home": "Q770740",
       "homeGoals": 1,
       "key": "es-2015-Q770740-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aspas",
+            "minute": "76",
+            "player": "Q26380"
+          }
+        ],
+        "home": [
+          {
+            "display": "Borja",
+            "minute": "3",
+            "player": "Q36489547"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7271,7 +7319,7 @@
     {
       "away": "Q10333",
       "awayGoals": 5,
-      "date": "2015-11-08",
+      "date": "2015-11-07",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-2015-Q8749-Q10333",
@@ -7331,7 +7379,7 @@
           },
           {
             "display": "Hernández",
-            "minute": "60",
+            "minute": "61",
             "ownGoal": true,
             "player": "Q3898700"
           },
@@ -7365,7 +7413,7 @@
     {
       "away": "Q12278",
       "awayGoals": 1,
-      "date": "2015-11-29",
+      "date": "2015-11-28",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-2015-Q8749-Q12278",
@@ -7386,7 +7434,7 @@
           },
           {
             "display": "Nolito",
-            "minute": "85",
+            "minute": "84",
             "player": "Q456617"
           }
         ]
@@ -7451,6 +7499,7 @@
     {
       "away": "Q770740",
       "awayGoals": 2,
+      "date": "2016-02-21",
       "home": "Q8749",
       "homeGoals": 3,
       "key": "es-2015-Q8749-Q770740",
@@ -10868,7 +10917,7 @@
         "id": "Q358407"
       },
       {
-        "goals": 9,
+        "goals": 11,
         "id": "Q941863"
       },
       {
@@ -11251,7 +11300,7 @@
         "id": "Q15110613"
       },
       {
-        "goals": 15,
+        "goals": 16,
         "id": "Q36489547"
       },
       {
@@ -11507,7 +11556,7 @@
         "id": "Q367851"
       },
       {
-        "goals": 11,
+        "goals": 14,
         "id": "Q26380"
       },
       {
@@ -11515,12 +11564,8 @@
         "id": "Q545665"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3898700"
-      },
-      {
-        "goals": 1,
-        "id": "Q1825157"
       },
       {
         "goals": 2,
@@ -11533,6 +11578,10 @@
       {
         "goals": 5,
         "id": "Q372276"
+      },
+      {
+        "goals": 1,
+        "id": "Q1825157"
       },
       {
         "goals": 1,
@@ -12147,7 +12196,7 @@
     {
       "club": "Q7156",
       "goals": 40,
-      "player": "Luis Suárez",
+      "player": "Luis Suárez (Uruguayan footballer)",
       "playerId": "Q26517",
       "rank": 1
     },

@@ -23,6 +23,30 @@
       }
     ]
   },
+  "Q115152735": {
+    "birthDate": "2004-03-05",
+    "en": "Mario Martín",
+    "id": "Q115152735",
+    "ja": {
+      "display": "Mario Martín",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8806",
+        "goalMatches": [
+          "es-2025-Q8806-Q11945",
+          "es-2025-Q8806-Q271574"
+        ],
+        "goals": 2,
+        "league": "es",
+        "recordedGoals": 2,
+        "season": "es-2025",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q116551506": {
     "birthDate": "2005-07-09",
     "en": "Moussa Soumano",
@@ -1269,8 +1293,6 @@
         "club": "Q1422",
         "goalMatches": [
           "it-1994-Q1422-Q1900",
-          "it-1994-Q1422-Q2052",
-          "it-1994-Q1422-Q2052",
           "it-1994-Q1422-Q2693",
           "it-1994-Q1422-Q2739",
           "it-1994-Q1422-Q289707",
@@ -1280,7 +1302,6 @@
           "it-1994-Q1422-Q759482",
           "it-1994-Q1457-Q1422",
           "it-1994-Q1543-Q1422",
-          "it-1994-Q2052-Q1422",
           "it-1994-Q2074-Q1422",
           "it-1994-Q2768-Q1422",
           "it-1994-Q2768-Q1422",
@@ -1288,7 +1309,7 @@
         ],
         "goals": 17,
         "league": "it",
-        "recordedGoals": 17,
+        "recordedGoals": 14,
         "season": "it-1994",
         "topScorerRank": 5
       },
@@ -1384,6 +1405,17 @@
         "topScorerRank": null
       },
       {
+        "club": "Q10308",
+        "goalMatches": [
+          "es-2003-Q8749-Q10308"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
+        "topScorerRank": null
+      },
+      {
         "club": "Q8823",
         "goalMatches": [
           "es-2006-Q8823-Q7156",
@@ -1453,6 +1485,17 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-1997",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q9617",
+        "goalMatches": [
+          "en-1998-Q9617-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
         "topScorerRank": null
       },
       {
@@ -2353,11 +2396,12 @@
         "club": "Q105853",
         "goalMatches": [
           "de-1993-Q104761-Q105853",
+          "de-1993-Q105853-Q162317",
           "de-1993-Q38245-Q105853"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -2447,6 +2491,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Andoni_Iraola_in_a_press_conference_for_AFC_Bournemouth,_2026_(cropped).webp"
     },
     "seasons": [
+      {
+        "club": "Q8687",
+        "goalMatches": [
+          "es-2003-Q8749-Q8687"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
+        "topScorerRank": null
+      },
       {
         "club": "Q8687",
         "goalMatches": [
@@ -3805,13 +3860,14 @@
       {
         "club": "Q929753",
         "goalMatches": [
+          "es-1994-Q8682-Q929753",
           "es-1994-Q8749-Q929753",
           "es-1994-Q929753-Q8749",
           "es-1994-Q929753-Q8749"
         ],
         "goals": 14,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "es-1994",
         "topScorerRank": 8
       },
@@ -4059,11 +4115,12 @@
       {
         "club": "Q8857",
         "goalMatches": [
-          "es-2002-Q7156-Q8857"
+          "es-2002-Q7156-Q8857",
+          "es-2002-Q8857-Q8682"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2002",
         "topScorerRank": null
       },
@@ -4241,14 +4298,26 @@
         "club": "Q8723",
         "goalMatches": [
           "es-2002-Q223620-Q8723",
+          "es-2002-Q8682-Q8723",
           "es-2002-Q8723-Q10315",
           "es-2002-Q8723-Q10315",
           "es-2002-Q8723-Q223620"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "es",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8723",
+        "goalMatches": [
+          "es-2003-Q8749-Q8723"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
         "topScorerRank": null
       },
       {
@@ -5021,6 +5090,29 @@
         "league": "fr",
         "recordedGoals": 1,
         "season": "fr-2016",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q745996": {
+    "birthDate": "1971-08-02",
+    "en": "Michael Hughes",
+    "id": "Q745996",
+    "ja": {
+      "display": "Michael Hughes",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q19482",
+        "goalMatches": [
+          "en-1998-Q19482-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
         "topScorerRank": null
       }
     ]

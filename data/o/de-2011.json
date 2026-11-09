@@ -1,33 +1,23 @@
 {
   "dates": {
     "de-2011-Q101859-Q102720": "2011-10-29",
-    "de-2011-Q101859-Q105254": "2011-12-03",
     "de-2011-Q101859-Q15789": "2011-08-13",
     "de-2011-Q101859-Q4512": "2011-12-17",
     "de-2011-Q101859-Q8466": "2011-09-24",
     "de-2011-Q102720-Q101859": "2012-03-31",
-    "de-2011-Q102720-Q105254": "2011-10-22",
     "de-2011-Q102720-Q15789": "2012-03-17",
     "de-2011-Q102720-Q4512": "2011-08-26",
     "de-2011-Q102720-Q8466": "2012-04-21",
-    "de-2011-Q105254-Q101859": "2012-04-20",
-    "de-2011-Q105254-Q102720": "2012-03-24",
-    "de-2011-Q105254-Q15789": "2011-11-27",
-    "de-2011-Q105254-Q4512": "2011-11-04",
-    "de-2011-Q105254-Q8466": "2012-02-25",
     "de-2011-Q15789-Q101859": "2012-01-28",
     "de-2011-Q15789-Q102720": "2011-10-15",
-    "de-2011-Q15789-Q105254": "2012-04-14",
     "de-2011-Q15789-Q4512": "2012-04-28",
     "de-2011-Q15789-Q8466": "2012-02-11",
     "de-2011-Q4512-Q101859": "2012-05-05",
     "de-2011-Q4512-Q102720": "2012-02-11",
-    "de-2011-Q4512-Q105254": "2012-04-07",
     "de-2011-Q4512-Q15789": "2011-12-11",
     "de-2011-Q4512-Q8466": "2012-03-09",
     "de-2011-Q8466-Q101859": "2012-03-03",
     "de-2011-Q8466-Q102720": "2011-12-03",
-    "de-2011-Q8466-Q105254": "2011-09-17",
     "de-2011-Q8466-Q15789": "2011-08-27",
     "de-2011-Q8466-Q4512": "2011-09-30"
   },
@@ -61,32 +51,6 @@
         {
           "minute": "84",
           "name": "Schäfer",
-          "player": null
-        }
-      ]
-    },
-    "de-2011-Q101859-Q105254": {
-      "away": [
-        {
-          "minute": "70",
-          "name": "Ivanschitz",
-          "player": null
-        },
-        {
-          "minute": "81",
-          "name": "Choupo-Moting",
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "10",
-          "name": "Mandzukic",
-          "player": null
-        },
-        {
-          "minute": "41",
-          "name": "Madlung",
           "player": null
         }
       ]
@@ -152,10 +116,6 @@
           "player": null
         }
       ]
-    },
-    "de-2011-Q102720-Q105254": {
-      "away": [],
-      "home": []
     },
     "de-2011-Q102720-Q15789": {
       "away": [
@@ -257,129 +217,27 @@
         }
       ]
     },
-    "de-2011-Q105254-Q101859": {
-      "away": [],
-      "home": []
-    },
-    "de-2011-Q105254-Q102720": {
+    "de-2011-Q105254-Q106394": {
       "away": [
         {
-          "minute": "41",
-          "name": "Ben-Hatira",
-          "player": null
-        },
-        {
-          "minute": "52",
-          "name": "Ramos",
-          "player": null
-        },
-        {
-          "minute": "69",
-          "name": "Ramos",
+          "minute": "68",
+          "name": "Krmas",
           "player": null
         }
       ],
       "home": [
         {
-          "minute": "58",
+          "minute": "3",
           "name": "Choupo-Moting",
           "player": null
-        }
-      ]
-    },
-    "de-2011-Q105254-Q104761": {
-      "away": [],
-      "home": [
-        {
-          "minute": "32",
-          "name": "Allagui",
-          "player": null
         },
         {
-          "minute": "86",
-          "name": "Toprak",
-          "ownGoal": true,
-          "player": null
-        }
-      ]
-    },
-    "de-2011-Q105254-Q15789": {
-      "away": [
-        {
-          "minute": "56",
-          "name": "van Buyten",
-          "player": null
-        },
-        {
-          "minute": "79",
-          "name": "van Buyten",
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "10",
-          "name": "Ivanschitz",
-          "player": null
-        },
-        {
-          "minute": "65",
-          "name": "Caligiuri",
-          "player": null
-        },
-        {
-          "minute": "74",
-          "name": "Bungert",
-          "player": null
-        }
-      ]
-    },
-    "de-2011-Q105254-Q4512": {
-      "away": [
-        {
-          "minute": "50",
-          "name": "Cacau",
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "53",
-          "name": "Ujah",
-          "player": null
-        },
-        {
-          "minute": "60",
-          "name": "Ivanschitz",
-          "player": null
-        },
-        {
-          "minute": "64",
-          "name": "Ujah",
-          "player": null
-        }
-      ]
-    },
-    "de-2011-Q105254-Q8466": {
-      "away": [],
-      "home": [
-        {
-          "minute": "2",
-          "name": "Zidan",
+          "minute": "6",
+          "name": "Polanski",
           "player": null
         },
         {
           "minute": "17",
-          "name": "Szalai",
-          "player": null
-        },
-        {
-          "minute": "30",
-          "name": "Müller",
-          "player": null
-        },
-        {
-          "minute": "74",
           "name": "Choupo-Moting",
           "player": null
         }
@@ -452,10 +310,6 @@
           "player": null
         }
       ]
-    },
-    "de-2011-Q15789-Q105254": {
-      "away": [],
-      "home": []
     },
     "de-2011-Q15789-Q22707": {
       "away": [
@@ -649,39 +503,6 @@
         }
       ]
     },
-    "de-2011-Q4512-Q105254": {
-      "away": [
-        {
-          "minute": "3",
-          "name": "Ivanschitz",
-          "penalty": true,
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "7",
-          "name": "Hajnal",
-          "player": null
-        },
-        {
-          "minute": "47",
-          "name": "Ibisevic",
-          "player": null
-        },
-        {
-          "minute": "65",
-          "name": "Kuzmanovic",
-          "penalty": true,
-          "player": null
-        },
-        {
-          "minute": "85",
-          "name": "Ibisevic",
-          "player": null
-        }
-      ]
-    },
     "de-2011-Q4512-Q15789": {
       "away": [
         {
@@ -741,32 +562,6 @@
           "minute": "6",
           "name": "Hubnik",
           "ownGoal": true,
-          "player": null
-        }
-      ]
-    },
-    "de-2011-Q8466-Q105254": {
-      "away": [
-        {
-          "minute": "15",
-          "name": "Choupo-Moting",
-          "player": null
-        }
-      ],
-      "home": [
-        {
-          "minute": "24",
-          "name": "Sakuta-Pasu",
-          "player": null
-        },
-        {
-          "minute": "54",
-          "name": "Shechter",
-          "player": null
-        },
-        {
-          "minute": "73",
-          "name": "Tiffert",
           "player": null
         }
       ]

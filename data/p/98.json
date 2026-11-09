@@ -236,6 +236,29 @@
       }
     ]
   },
+  "Q1333599": {
+    "birthDate": "1981-02-03",
+    "en": "Manolo Gaspar",
+    "id": "Q1333599",
+    "ja": {
+      "display": "Manolo Gaspar",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8857",
+        "goalMatches": [
+          "es-2002-Q8682-Q8857"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q1359977": {
     "birthDate": "1974-06-25",
     "en": "Morten Bisgaard",
@@ -706,11 +729,12 @@
         "club": "Q289707",
         "goalMatches": [
           "it-1993-Q289707-Q2641",
+          "it-1993-Q289707-Q2693",
           "it-1993-Q631-Q289707"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1993",
         "topScorerRank": null
       },
@@ -786,19 +810,25 @@
       {
         "club": "Q6767",
         "goalMatches": [
+          "it-2013-Q1900-Q6767",
+          "it-2013-Q2018-Q6767",
           "it-2013-Q2798-Q6767",
           "it-2013-Q2798-Q6767",
           "it-2013-Q6767-Q1543",
           "it-2013-Q6767-Q1886",
           "it-2013-Q6767-Q1893",
+          "it-2013-Q6767-Q2018",
+          "it-2013-Q6767-Q2018",
+          "it-2013-Q6767-Q2037",
           "it-2013-Q6767-Q2768",
           "it-2013-Q6767-Q631",
+          "it-2013-Q6767-Q8603",
           "it-2013-Q6767-Q8639",
           "it-2013-Q8603-Q6767"
         ],
         "goals": 15,
         "league": "it",
-        "recordedGoals": 9,
+        "recordedGoals": 15,
         "season": "it-2013",
         "topScorerRank": 10
       }
@@ -1981,6 +2011,17 @@
         "topScorerRank": null
       },
       {
+        "club": "Q10329",
+        "goalMatches": [
+          "es-1994-Q10329-Q8682"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
+        "topScorerRank": null
+      },
+      {
         "club": "Q12278",
         "goalMatches": [
           "es-1996-Q12278-Q8749",
@@ -2027,7 +2068,6 @@
         "club": "Q459794",
         "goalMatches": [
           "it-1996-Q1422-Q459794",
-          "it-1996-Q2052-Q459794",
           "it-1996-Q2641-Q459794",
           "it-1996-Q459794-Q1543",
           "it-1996-Q459794-Q16344",
@@ -2040,7 +2080,7 @@
         ],
         "goals": 14,
         "league": "it",
-        "recordedGoals": 11,
+        "recordedGoals": 10,
         "season": "it-1996",
         "topScorerRank": 8
       },
@@ -3510,13 +3550,14 @@
         "goalMatches": [
           "de-2011-Q101959-Q4512",
           "de-2011-Q104770-Q4512",
+          "de-2011-Q105254-Q4512",
           "de-2011-Q4512-Q15786",
           "de-2011-Q4512-Q32494",
           "de-2011-Q4512-Q51976"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "de",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "de-2011",
         "topScorerRank": null
       },

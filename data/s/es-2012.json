@@ -4247,13 +4247,41 @@
     {
       "away": "Q8835",
       "awayGoals": 0,
-      "correctedFrom": "5–1",
       "date": "2013-04-06",
-      "evidence": "en.wikipedia 2012–13 FC Barcelona season (6 Apr 2013: 5–0) and es.wikipedia grid (partido_BAR_MLL=5-0)",
       "home": "Q7156",
       "homeGoals": 5,
       "key": "es-2012-Q7156-Q8835",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fàbregas",
+            "minute": "20",
+            "player": "Q17499"
+          },
+          {
+            "display": "Sánchez",
+            "minute": "22",
+            "player": "Q180553"
+          },
+          {
+            "display": "Fàbregas",
+            "minute": "37",
+            "player": "Q17499"
+          },
+          {
+            "display": "Sánchez",
+            "minute": "38",
+            "player": "Q180553"
+          },
+          {
+            "display": "Fàbregas",
+            "minute": "46",
+            "player": "Q17499"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4940,7 +4968,6 @@
       "away": "Q8835",
       "awayGoals": 2,
       "date": "2013-03-16",
-      "evidence": "en grid, es.wikipedia grid and openfootball all give 5–2; both tables (en, es) give Real Madrid 42 against and Mallorca 43 for, which implies 5–0. The official table stands; the match shows 5–2.",
       "home": "Q8682",
       "homeGoals": 5,
       "key": "es-2012-Q8682-Q8835",
@@ -4986,8 +5013,7 @@
           }
         ]
       },
-      "status": "played",
-      "unreconciled": true
+      "status": "played"
     },
     {
       "away": "Q8857",
@@ -9193,13 +9219,36 @@
     {
       "away": "Q8835",
       "awayGoals": 0,
-      "correctedFrom": "4–2",
       "date": "2012-12-09",
-      "evidence": "en.wikipedia 2012–13 RCD Mallorca season (9 Dec 2012: 4–0) and es.wikipedia grid (partido_LEV_MLL=4-0)",
       "home": "Q8823",
       "homeGoals": 4,
       "key": "es-2012-Q8823-Q8835",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Martins",
+            "minute": "43",
+            "player": "Q207548"
+          },
+          {
+            "display": "Navarro",
+            "minute": "49",
+            "player": "Q343976"
+          },
+          {
+            "display": "García",
+            "minute": "54",
+            "player": "Q1438885"
+          },
+          {
+            "display": "Iborra",
+            "minute": "58",
+            "player": "Q2531122"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -9309,9 +9358,7 @@
     {
       "away": "Q10319",
       "awayGoals": 2,
-      "correctedFrom": "6–2",
       "date": "2013-06-01",
-      "evidence": "en.wikipedia 2012–13 Real Valladolid season (1 Jun 2013: 4–2) and es.wikipedia grid (partido_MLL_VLD=4-2). es.wikipedia notes the match was declared lost for Mallorca in Sept 2013 (ineligible player Giovani dos Santos), but both tables still count the 4–2 win; keep the note, the table stands.",
       "home": "Q8835",
       "homeGoals": 4,
       "key": "es-2012-Q8835-Q10319",
@@ -9389,9 +9436,39 @@
       "awayGoals": 5,
       "date": "2012-10-28",
       "home": "Q8835",
-      "homeGoals": 2,
+      "homeGoals": 0,
       "key": "es-2012-Q8835-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Higuaín",
+            "minute": "8",
+            "player": "Q483846"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "22",
+            "player": "Q11571"
+          },
+          {
+            "display": "Higuaín",
+            "minute": "70",
+            "player": "Q483846"
+          },
+          {
+            "display": "Ronaldo",
+            "minute": "73",
+            "player": "Q11571"
+          },
+          {
+            "display": "Callejón",
+            "minute": "90+1",
+            "player": "Q54084"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -10530,7 +10607,7 @@
         "id": "Q17493"
       },
       {
-        "goals": 8,
+        "goals": 11,
         "id": "Q17499"
       },
       {
@@ -10538,7 +10615,7 @@
         "id": "Q189012"
       },
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q180553"
       },
       {
@@ -10647,7 +10724,7 @@
         "id": "Q1912"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q54084"
       },
       {
@@ -11044,16 +11121,20 @@
         "id": "Q157839"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q207548"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2531122"
       },
       {
         "goals": 4,
         "id": "Q2409704"
+      },
+      {
+        "goals": 1,
+        "id": "Q343976"
       },
       {
         "goals": 1,
@@ -11072,7 +11153,7 @@
         "id": "Q7358599"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q1438885"
       },
       {
@@ -11223,7 +11304,6 @@
       "result": "Qualification for the Champions League group stage",
       "sourceTitle": "Real Madrid CF",
       "status": null,
-      "unreconciled": true,
       "w": 26
     },
     {
@@ -11464,7 +11544,6 @@
       "result": "Relegation to Segunda División",
       "sourceTitle": "RCD Mallorca",
       "status": "R",
-      "unreconciled": true,
       "w": 9
     },
     {

@@ -273,12 +273,13 @@
           "en-2006-Q18711-Q18656",
           "en-2006-Q18711-Q18656",
           "en-2006-Q18729-Q18656",
+          "en-2006-Q18741-Q18656",
           "en-2006-Q19451-Q18656",
           "en-2006-Q50602-Q18656"
         ],
         "goals": 17,
         "league": "en",
-        "recordedGoals": 13,
+        "recordedGoals": 14,
         "season": "en-2006",
         "topScorerRank": 3
       },
@@ -545,11 +546,13 @@
           "es-2012-Q8687-Q8682",
           "es-2012-Q8749-Q8682",
           "es-2012-Q8749-Q8682",
-          "es-2012-Q8823-Q8682"
+          "es-2012-Q8823-Q8682",
+          "es-2012-Q8835-Q8682",
+          "es-2012-Q8835-Q8682"
         ],
         "goals": 34,
         "league": "es",
-        "recordedGoals": 32,
+        "recordedGoals": 34,
         "season": "es-2012",
         "topScorerRank": 2
       },
@@ -1519,11 +1522,14 @@
       {
         "club": "Q14551982",
         "goalMatches": [
-          "de-1999-Q14551982-Q38245"
+          "de-1999-Q14551982-Q105844",
+          "de-1999-Q14551982-Q131603",
+          "de-1999-Q14551982-Q38245",
+          "de-1999-Q51974-Q14551982"
         ],
-        "goals": 1,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 4,
         "season": "de-1999",
         "topScorerRank": null
       }
@@ -2214,6 +2220,17 @@
       {
         "club": "Q18656",
         "goalMatches": [
+          "en-1998-Q18656-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18656",
+        "goalMatches": [
           "en-2001-Q18747-Q18656"
         ],
         "goals": 1,
@@ -2242,6 +2259,17 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-2005",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18716",
+        "goalMatches": [
+          "en-2006-Q18741-Q18716"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2006",
         "topScorerRank": null
       },
       {
@@ -2304,12 +2332,16 @@
       {
         "club": "Q105254",
         "goalMatches": [
+          "de-2011-Q101859-Q105254",
+          "de-2011-Q105254-Q15789",
           "de-2011-Q105254-Q32494",
-          "de-2011-Q15786-Q105254"
+          "de-2011-Q105254-Q4512",
+          "de-2011-Q15786-Q105254",
+          "de-2011-Q4512-Q105254"
         ],
-        "goals": 2,
+        "goals": 6,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 6,
         "season": "de-2011",
         "topScorerRank": null
       },
@@ -3043,23 +3075,36 @@
       {
         "club": "Q2052",
         "goalMatches": [
+          "it-1995-Q2052-Q759482",
           "it-1995-Q631-Q2052"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-1995",
         "topScorerRank": null
       },
       {
         "club": "Q2052",
         "goalMatches": [
-          "it-1996-Q2052-Q2798"
+          "it-1996-Q2052-Q2798",
+          "it-1996-Q56542463-Q2052"
+        ],
+        "goals": 2,
+        "league": "it",
+        "recordedGoals": 2,
+        "season": "it-1996",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2052",
+        "goalMatches": [
+          "it-1997-Q2052-Q1886"
         ],
         "goals": 1,
         "league": "it",
         "recordedGoals": 1,
-        "season": "it-1996",
+        "season": "it-1997",
         "topScorerRank": null
       },
       {
@@ -3515,6 +3560,17 @@
         "league": "es",
         "recordedGoals": 1,
         "season": "es-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q216661",
+        "goalMatches": [
+          "es-1994-Q8682-Q216661"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
         "topScorerRank": null
       }
     ]
@@ -4068,11 +4124,13 @@
       {
         "club": "Q14551982",
         "goalMatches": [
-          "de-1999-Q14551982-Q38245"
+          "de-1999-Q14551982-Q104761",
+          "de-1999-Q14551982-Q38245",
+          "de-1999-Q14551982-Q4512"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "de-1999",
         "topScorerRank": null
       },

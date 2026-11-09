@@ -589,8 +589,8 @@
     "en": "Luca Reggiani",
     "id": "Q134546606",
     "ja": {
-      "display": "Luca Reggiani",
-      "mode": "latin"
+      "display": "ルーカ レッジャーニ",
+      "mode": "katakana"
     },
     "japan": null,
     "seasons": [
@@ -985,6 +985,17 @@
         "league": "es",
         "recordedGoals": 1,
         "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8723",
+        "goalMatches": [
+          "es-2003-Q8749-Q8723"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
         "topScorerRank": null
       },
       {
@@ -2219,15 +2230,16 @@
       {
         "club": "Q18656",
         "goalMatches": [
+          "en-2001-Q1128631-Q18656",
           "en-2001-Q18656-Q18716",
           "en-2001-Q18656-Q18716",
           "en-2001-Q18747-Q18656",
           "en-2001-Q9616-Q18656",
           "en-2001-Q9617-Q18656"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "en",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "en-2001",
         "topScorerRank": null
       },
@@ -2253,14 +2265,15 @@
       {
         "club": "Q18656",
         "goalMatches": [
+          "en-2003-Q18656-Q1128631",
           "en-2003-Q18656-Q50602",
           "en-2003-Q18656-Q50602",
           "en-2003-Q18716-Q18656",
           "en-2003-Q50602-Q18656"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "en",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -2282,11 +2295,12 @@
         "goalMatches": [
           "en-2006-Q18656-Q1130849",
           "en-2006-Q18656-Q19446",
-          "en-2006-Q18711-Q18656"
+          "en-2006-Q18711-Q18656",
+          "en-2006-Q18741-Q18656"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "en-2006",
         "topScorerRank": null
       },

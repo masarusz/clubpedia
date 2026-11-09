@@ -1552,11 +1552,12 @@
         "club": "Q845137",
         "goalMatches": [
           "fr-2016-Q19509-Q845137",
+          "fr-2016-Q845137-Q19521",
           "fr-2016-Q845137-Q221525"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "fr",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "fr-2016",
         "topScorerRank": null
       },
@@ -1780,6 +1781,29 @@
         "league": "it",
         "recordedGoals": 2,
         "season": "it-2023",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q215824": {
+    "birthDate": "1979-10-15",
+    "en": "Paul Robinson",
+    "id": "Q215824",
+    "ja": {
+      "display": "ポール ロビンソン",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18741",
+        "goalMatches": [
+          "en-2006-Q18741-Q2714"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2006",
         "topScorerRank": null
       }
     ]
@@ -2654,6 +2678,28 @@
     },
     "seasons": [
       {
+        "club": "Q19580",
+        "goalMatches": [
+          "en-1998-Q19580-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q19580",
+        "goalMatches": [
+          "en-1999-Q19580-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
         "club": "Q10286",
         "goalMatches": [
           "es-2001-Q10286-Q8760",
@@ -2678,6 +2724,18 @@
         "league": "es",
         "recordedGoals": 3,
         "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q10286",
+        "goalMatches": [
+          "es-2003-Q10286-Q8749",
+          "es-2003-Q10286-Q8749"
+        ],
+        "goals": 2,
+        "league": "es",
+        "recordedGoals": 2,
+        "season": "es-2003",
         "topScorerRank": null
       },
       {
@@ -3023,7 +3081,9 @@
           "it-2013-Q2052-Q8603",
           "it-2013-Q2052-Q8603",
           "it-2013-Q2052-Q8603",
+          "it-2013-Q2693-Q8603",
           "it-2013-Q2739-Q8603",
+          "it-2013-Q6767-Q8603",
           "it-2013-Q8603-Q1543",
           "it-2013-Q8603-Q1543",
           "it-2013-Q8603-Q1543",
@@ -3033,7 +3093,7 @@
         ],
         "goals": 16,
         "league": "it",
-        "recordedGoals": 10,
+        "recordedGoals": 12,
         "season": "it-2013",
         "topScorerRank": 7
       },

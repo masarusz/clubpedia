@@ -790,13 +790,12 @@
       {
         "club": "Q12297",
         "goalMatches": [
-          "es-2025-Q10333-Q12297",
           "es-2025-Q12297-Q10300",
           "es-2025-Q12297-Q10333"
         ],
-        "goals": 3,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 2,
         "season": "es-2025",
         "topScorerRank": null
       }
@@ -1143,14 +1142,15 @@
       {
         "club": "Q2756",
         "goalMatches": [
+          "it-2003-Q16344-Q2756",
           "it-2003-Q2609-Q2756",
           "it-2003-Q2756-Q13391",
           "it-2003-Q2756-Q2609",
           "it-2003-Q2756-Q2609"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-2003",
         "topScorerRank": null
       },
@@ -1551,11 +1551,13 @@
           "de-1993-Q104770-Q38245",
           "de-1993-Q104770-Q41420",
           "de-1993-Q104770-Q41420",
+          "de-1993-Q162317-Q104770",
+          "de-1993-Q162317-Q104770",
           "de-1993-Q38245-Q104770"
         ],
-        "goals": 5,
+        "goals": 7,
         "league": "de",
-        "recordedGoals": 5,
+        "recordedGoals": 7,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -1904,23 +1906,25 @@
       {
         "club": "Q8835",
         "goalMatches": [
+          "es-2002-Q8682-Q8835",
           "es-2002-Q8835-Q223620",
           "es-2002-Q8835-Q223620"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2002",
         "topScorerRank": null
       },
       {
         "club": "Q8760",
         "goalMatches": [
-          "es-2003-Q8682-Q8760"
+          "es-2003-Q8682-Q8760",
+          "es-2003-Q8760-Q8749"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2003",
         "topScorerRank": null
       },
@@ -2008,6 +2012,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Manuel_Sanch%C3%ADs_Hontiyuelo.jpg"
     },
     "seasons": [
+      {
+        "club": "Q8682",
+        "goalMatches": [
+          "es-1994-Q576285-Q8682"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
+        "topScorerRank": null
+      },
       {
         "club": "Q8682",
         "goalMatches": [
@@ -2991,15 +3006,14 @@
       {
         "club": "Q1457",
         "goalMatches": [
-          "it-2003-Q1457-Q16344",
           "it-2003-Q1457-Q1893",
           "it-2003-Q1457-Q2037",
           "it-2003-Q2037-Q1457",
           "it-2003-Q8476-Q1457"
         ],
-        "goals": 5,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 4,
         "season": "it-2003",
         "topScorerRank": null
       },
@@ -3172,6 +3186,17 @@
     },
     "japan": null,
     "seasons": [
+      {
+        "club": "Q16344",
+        "goalMatches": [
+          "it-2002-Q631-Q16344"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2002",
+        "topScorerRank": null
+      },
       {
         "club": "Q2052",
         "goalMatches": [
@@ -3373,11 +3398,12 @@
       {
         "club": "Q2037",
         "goalMatches": [
+          "it-2003-Q2037-Q16344",
           "it-2003-Q2037-Q6651"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2003",
         "topScorerRank": null
       },
@@ -3885,6 +3911,8 @@
           "it-1994-Q1422-Q2768",
           "it-1994-Q1422-Q2768",
           "it-1994-Q1543-Q2768",
+          "it-1994-Q2052-Q2768",
+          "it-1994-Q2052-Q2768",
           "it-1994-Q2739-Q2768",
           "it-1994-Q2768-Q1422",
           "it-1994-Q2768-Q1422",
@@ -3894,7 +3922,7 @@
         ],
         "goals": 19,
         "league": "it",
-        "recordedGoals": 9,
+        "recordedGoals": 11,
         "season": "it-1994",
         "topScorerRank": 3
       },

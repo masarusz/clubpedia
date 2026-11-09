@@ -22,6 +22,29 @@
       }
     ]
   },
+  "Q1102763": {
+    "birthDate": "1980-05-25",
+    "en": "Joey Guðjónsson",
+    "id": "Q1102763",
+    "ja": {
+      "display": "Joey Guðjónsson",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18711",
+        "goalMatches": [
+          "en-2002-Q1128631-Q18711"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q110616805": {
     "birthDate": "2004-08-06",
     "en": "Diego Moreira",
@@ -761,6 +784,17 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q19580",
+        "goalMatches": [
+          "en-1998-Q19580-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
         "club": "Q18732",
         "goalMatches": [
           "en-2001-Q18732-Q18716"
@@ -1019,17 +1053,6 @@
     },
     "japan": null,
     "seasons": [
-      {
-        "club": "Q2052",
-        "goalMatches": [
-          "it-1996-Q2052-Q2641"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-1996",
-        "topScorerRank": null
-      },
       {
         "club": "Q631",
         "goalMatches": [
@@ -2264,6 +2287,17 @@
         "recordedGoals": 1,
         "season": "fr-2014",
         "topScorerRank": null
+      },
+      {
+        "club": "Q19521",
+        "goalMatches": [
+          "fr-2016-Q845137-Q19521"
+        ],
+        "goals": 1,
+        "league": "fr",
+        "recordedGoals": 1,
+        "season": "fr-2016",
+        "topScorerRank": null
       }
     ]
   },
@@ -2640,13 +2674,16 @@
       {
         "club": "Q459794",
         "goalMatches": [
+          "it-1993-Q459794-Q139399",
           "it-1993-Q459794-Q1457",
+          "it-1993-Q459794-Q1886",
+          "it-1993-Q459794-Q1900",
           "it-1993-Q459794-Q2609",
           "it-1993-Q459794-Q2739"
         ],
-        "goals": 3,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 6,
         "season": "it-1993",
         "topScorerRank": null
       },

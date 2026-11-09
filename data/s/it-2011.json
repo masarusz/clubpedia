@@ -2966,10 +2966,15 @@
     {
       "away": "Q2756",
       "awayGoals": 0,
+      "date": "2011-10-16",
       "home": "Q1900",
       "homeGoals": 0,
       "key": "it-2011-Q1900-Q2756",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3812,10 +3817,27 @@
     {
       "away": "Q2756",
       "awayGoals": 1,
+      "date": "2012-03-25",
       "home": "Q2037",
       "homeGoals": 1,
       "key": "it-2011-Q2037-Q2756",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Destro",
+            "minute": "51",
+            "player": "Q380830"
+          }
+        ],
+        "home": [
+          {
+            "display": "Acerbi",
+            "minute": "9",
+            "player": "Q531302"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4779,10 +4801,43 @@
     {
       "away": "Q2756",
       "awayGoals": 4,
+      "date": "2012-04-22",
       "home": "Q2074",
       "homeGoals": 1,
       "key": "it-2011-Q2074-Q2756",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Brienza",
+            "minute": "17",
+            "player": "Q1442554"
+          },
+          {
+            "display": "Destro",
+            "minute": "19",
+            "player": "Q380830"
+          },
+          {
+            "display": "Brienza",
+            "minute": "37",
+            "player": "Q1442554"
+          },
+          {
+            "display": "Giorgi",
+            "minute": "49",
+            "player": "Q3839710"
+          }
+        ],
+        "home": [
+          {
+            "display": "Del Grosso",
+            "minute": "79",
+            "ownGoal": true,
+            "player": "Q1140359"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6375,10 +6430,27 @@
     {
       "away": "Q2756",
       "awayGoals": 0,
+      "date": "2011-10-02",
       "home": "Q2674",
       "homeGoals": 2,
       "key": "it-2011-Q2674-Q2756",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Migliaccio",
+            "minute": "19",
+            "player": "Q2305089"
+          },
+          {
+            "display": "Hernández",
+            "minute": "90+4",
+            "penalty": true,
+            "player": "Q318456"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7704,7 +7776,7 @@
     {
       "away": "Q1886",
       "awayGoals": 2,
-      "date": "2011-11-20",
+      "date": "2011-11-15",
       "home": "Q2756",
       "homeGoals": 2,
       "key": "it-2011-Q2756-Q1886",
@@ -7769,10 +7841,31 @@
     {
       "away": "Q1900",
       "awayGoals": 0,
+      "date": "2012-03-04",
       "home": "Q2756",
       "homeGoals": 3,
       "key": "it-2011-Q2756-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Bogdani",
+            "minute": "40",
+            "player": "Q441695"
+          },
+          {
+            "display": "Calaiò",
+            "minute": "80",
+            "player": "Q736053"
+          },
+          {
+            "display": "Del Grosso",
+            "minute": "82",
+            "player": "Q1140359"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7799,10 +7892,42 @@
     {
       "away": "Q2037",
       "awayGoals": 1,
+      "date": "2011-10-30",
       "home": "Q2756",
       "homeGoals": 4,
       "key": "it-2011-Q2756-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Moscardelli",
+            "minute": "75",
+            "player": "Q2354329"
+          }
+        ],
+        "home": [
+          {
+            "display": "Destro",
+            "minute": "25",
+            "player": "Q380830"
+          },
+          {
+            "display": "Destro",
+            "minute": "57",
+            "player": "Q380830"
+          },
+          {
+            "display": "D'Agostino",
+            "minute": "61",
+            "player": "Q393319"
+          },
+          {
+            "display": "Calaiò",
+            "minute": "90+4",
+            "player": "Q736053"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7822,10 +7947,26 @@
     {
       "away": "Q2074",
       "awayGoals": 2,
+      "date": "2011-12-12",
       "home": "Q2756",
       "homeGoals": 0,
       "key": "it-2011-Q2756-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rossi",
+            "minute": "56",
+            "player": "Q1198439"
+          },
+          {
+            "display": "Palacio",
+            "minute": "90+2",
+            "player": "Q310635"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -7894,10 +8035,43 @@
     {
       "away": "Q2674",
       "awayGoals": 1,
+      "date": "2012-02-26",
       "home": "Q2756",
       "homeGoals": 4,
       "key": "it-2011-Q2756-Q2674",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Budan",
+            "minute": "12",
+            "player": "Q381269"
+          }
+        ],
+        "home": [
+          {
+            "display": "Terzi",
+            "minute": "23",
+            "penalty": true,
+            "player": "Q1098196"
+          },
+          {
+            "display": "Bogdani",
+            "minute": "33",
+            "player": "Q441695"
+          },
+          {
+            "display": "Rossettini",
+            "minute": "46",
+            "player": "Q714158"
+          },
+          {
+            "display": "Brienza",
+            "minute": "58",
+            "player": "Q1442554"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8014,10 +8188,26 @@
     {
       "away": "Q8416",
       "awayGoals": 2,
+      "date": "2012-03-18",
       "home": "Q2756",
       "homeGoals": 0,
       "key": "it-2011-Q2756-Q8416",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rigoni",
+            "minute": "72",
+            "player": "Q1660165"
+          },
+          {
+            "display": "Porcari",
+            "minute": "81",
+            "player": "Q3745298"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8396,7 +8586,7 @@
         "away": [
           {
             "display": "Bolzoni",
-            "minute": "77",
+            "minute": "76",
             "player": "Q933172"
           }
         ],
@@ -9501,12 +9691,12 @@
         "away": [
           {
             "display": "Brienza",
-            "minute": "75",
+            "minute": "30",
             "player": "Q1442554"
           },
           {
             "display": "Bogdani",
-            "minute": "81",
+            "minute": "36",
             "player": "Q441695"
           }
         ],
@@ -9942,10 +10132,27 @@
     {
       "away": "Q2756",
       "awayGoals": 1,
+      "date": "2011-10-26",
       "home": "Q8416",
       "homeGoals": 1,
       "key": "it-2011-Q8416-Q2756",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Calaiò",
+            "minute": "17",
+            "player": "Q736053"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gemiti",
+            "minute": "80",
+            "player": "Q426366"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -10140,11 +10347,11 @@
       },
       {
         "goals": 2,
-        "id": "Q80306"
+        "id": "Q44097"
       },
       {
         "goals": 2,
-        "id": "Q44097"
+        "id": "Q80306"
       },
       {
         "goals": 4,
@@ -10489,7 +10696,7 @@
         "id": "Q1121887"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q2354329"
       },
       {
@@ -10507,6 +10714,10 @@
       {
         "goals": 1,
         "id": "Q1708985"
+      },
+      {
+        "goals": 1,
+        "id": "Q531302"
       }
     ],
     "Q2052": [
@@ -10578,7 +10789,7 @@
         "id": "Q182451"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q1198439"
       },
       {
@@ -10654,16 +10865,16 @@
         "id": "Q381207"
       },
       {
+        "goals": 5,
+        "id": "Q75580"
+      },
+      {
         "goals": 4,
         "id": "Q316852"
       },
       {
         "goals": 2,
         "id": "Q465935"
-      },
-      {
-        "goals": 5,
-        "id": "Q75580"
       },
       {
         "goals": 3,
@@ -10713,6 +10924,10 @@
         "id": "Q311956"
       },
       {
+        "goals": 2,
+        "id": "Q508010"
+      },
+      {
         "goals": 3,
         "id": "Q213102"
       },
@@ -10737,17 +10952,13 @@
         "id": "Q312146"
       },
       {
-        "goals": 2,
-        "id": "Q508010"
-      },
-      {
         "goals": 3,
         "id": "Q253348"
       }
     ],
     "Q2674": [
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q318456"
       },
       {
@@ -10755,7 +10966,7 @@
         "id": "Q1191497"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q381269"
       },
       {
@@ -10766,6 +10977,10 @@
         "goals": 16,
         "id": "Q136959",
         "topScorerRank": 6
+      },
+      {
+        "goals": 1,
+        "id": "Q2305089"
       },
       {
         "goals": 1,
@@ -10919,23 +11134,23 @@
     ],
     "Q2756": [
       {
-        "goals": 8,
+        "goals": 11,
         "id": "Q736053"
       },
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q441695"
       },
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q1442554"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q393319"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1140359"
       },
       {
@@ -10949,6 +11164,10 @@
       },
       {
         "goals": 1,
+        "id": "Q3839710"
+      },
+      {
+        "goals": 1,
         "id": "Q3894143"
       },
       {
@@ -10958,6 +11177,14 @@
       {
         "goals": 1,
         "id": "Q1363159"
+      },
+      {
+        "goals": 1,
+        "id": "Q1098196"
+      },
+      {
+        "goals": 1,
+        "id": "Q714158"
       },
       {
         "goals": 1,
@@ -11172,11 +11399,11 @@
         "id": "Q980031"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q1660165"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3745298"
       },
       {
@@ -11186,6 +11413,10 @@
       {
         "goals": 1,
         "id": "Q722916"
+      },
+      {
+        "goals": 1,
+        "id": "Q426366"
       }
     ]
   },
@@ -11401,7 +11632,7 @@
       "points": 44,
       "position": 14,
       "result": null,
-      "sourceTitle": "Siena FC SSD",
+      "sourceTitle": "Siena FC",
       "status": null,
       "w": 11
     },

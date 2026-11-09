@@ -194,6 +194,17 @@
     },
     "seasons": [
       {
+        "club": "Q8682",
+        "goalMatches": [
+          "es-1995-Q10333-Q8682"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1995",
+        "topScorerRank": null
+      },
+      {
         "club": "Q8687",
         "goalMatches": [
           "es-1997-Q8687-Q8749"
@@ -940,6 +951,17 @@
         "topScorerRank": null
       },
       {
+        "club": "Q2674",
+        "goalMatches": [
+          "it-2011-Q2674-Q2756"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2011",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2052",
         "goalMatches": [
           "it-2012-Q2018-Q2052"
@@ -1132,6 +1154,17 @@
         "recordedGoals": 1,
         "season": "en-2001",
         "topScorerRank": null
+      },
+      {
+        "club": "Q19444",
+        "goalMatches": [
+          "en-2002-Q19444-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2002",
+        "topScorerRank": null
       }
     ]
   },
@@ -1293,11 +1326,12 @@
       {
         "club": "Q10300",
         "goalMatches": [
-          "es-2002-Q10300-Q7156"
+          "es-2002-Q10300-Q7156",
+          "es-2002-Q10300-Q8682"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2002",
         "topScorerRank": null
       }
@@ -1440,6 +1474,51 @@
       "source": "https://commons.wikimedia.org/wiki/File:Jonathan_Woodgate_12042025_(4).jpg"
     },
     "seasons": [
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1998-Q1128631-Q19498",
+          "en-1998-Q19462-Q1128631"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1999-Q5794-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2000-Q1128631-Q18711"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2002-Q1128631-Q9616"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2002",
+        "topScorerRank": null
+      },
       {
         "club": "Q18741",
         "goalMatches": [
@@ -3090,9 +3169,31 @@
         "topScorerRank": null
       },
       {
+        "club": "Q1120838",
+        "goalMatches": [
+          "it-2002-Q1120838-Q459794"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2002",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2693",
         "goalMatches": [
           "it-2002-Q2693-Q2609"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q459794",
+        "goalMatches": [
+          "it-2002-Q459794-Q6703"
         ],
         "goals": 1,
         "league": "it",
@@ -3182,12 +3283,13 @@
         "goalMatches": [
           "es-2018-Q11971-Q10319",
           "es-2018-Q11971-Q770740",
+          "es-2018-Q11971-Q8749",
           "es-2018-Q8806-Q11971",
           "es-2018-Q8823-Q11971"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "es",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "es-2018",
         "topScorerRank": null
       },

@@ -914,8 +914,6 @@
         "goalMatches": [
           "en-2003-Q18661-Q9616",
           "en-2003-Q18708-Q9616",
-          "en-2003-Q18711-Q9616",
-          "en-2003-Q18711-Q9616",
           "en-2003-Q19500-Q9616",
           "en-2003-Q19500-Q9616",
           "en-2003-Q19604-Q9616",
@@ -923,9 +921,9 @@
           "en-2003-Q9616-Q19451",
           "en-2003-Q9617-Q9616"
         ],
-        "goals": 10,
+        "goals": 8,
         "league": "en",
-        "recordedGoals": 10,
+        "recordedGoals": 8,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -952,15 +950,22 @@
       {
         "club": "Q2693",
         "goalMatches": [
+          "it-1996-Q16344-Q2693",
           "it-1996-Q1886-Q2693",
           "it-1996-Q2693-Q1457",
           "it-1996-Q2693-Q1457",
+          "it-1996-Q2693-Q1900",
+          "it-1996-Q2693-Q1900",
+          "it-1996-Q2693-Q56542463",
+          "it-1996-Q2693-Q56542463",
+          "it-1996-Q2693-Q56542463",
           "it-1996-Q2739-Q2693",
-          "it-1996-Q631-Q2693"
+          "it-1996-Q631-Q2693",
+          "it-1996-Q8639-Q2693"
         ],
-        "goals": 5,
+        "goals": 12,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 12,
         "season": "it-1996",
         "topScorerRank": null
       },
@@ -968,11 +973,20 @@
         "club": "Q2693",
         "goalMatches": [
           "it-1997-Q1422-Q2693",
-          "it-1997-Q2693-Q459794"
+          "it-1997-Q2641-Q2693",
+          "it-1997-Q2641-Q2693",
+          "it-1997-Q2693-Q2052",
+          "it-1997-Q2693-Q2641",
+          "it-1997-Q2693-Q2641",
+          "it-1997-Q2693-Q2798",
+          "it-1997-Q2693-Q631",
+          "it-1997-Q2798-Q2693",
+          "it-1997-Q459794-Q2693",
+          "it-1997-Q459794-Q2693"
         ],
-        "goals": 2,
+        "goals": 11,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 11,
         "season": "it-1997",
         "topScorerRank": null
       },
@@ -1087,14 +1101,16 @@
       {
         "club": "Q631",
         "goalMatches": [
+          "it-2002-Q631-Q16344",
+          "it-2002-Q631-Q16344",
           "it-2002-Q631-Q2609",
           "it-2002-Q631-Q8408",
           "it-2002-Q6651-Q631",
           "it-2002-Q6703-Q631"
         ],
-        "goals": 4,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 6,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -2961,6 +2977,29 @@
       }
     ]
   },
+  "Q3299493": {
+    "birthDate": "1980-09-01",
+    "en": "Matt Jones",
+    "id": "Q3299493",
+    "ja": {
+      "display": "Matt Jones",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18656",
+        "goalMatches": [
+          "en-2000-Q18656-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q342608": {
     "birthDate": "1979-05-25",
     "en": "Peguy Luyindula",
@@ -3243,29 +3282,6 @@
         "league": "es",
         "recordedGoals": 3,
         "season": "es-2016",
-        "topScorerRank": null
-      }
-    ]
-  },
-  "Q3726535": {
-    "birthDate": "1966-02-23",
-    "en": "Enzo Gambaro",
-    "id": "Q3726535",
-    "ja": {
-      "display": "Enzo Gambaro",
-      "mode": "latin"
-    },
-    "japan": null,
-    "seasons": [
-      {
-        "club": "Q2641",
-        "goalMatches": [
-          "it-1993-Q2693-Q2641"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-1993",
         "topScorerRank": null
       }
     ]

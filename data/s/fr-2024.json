@@ -6203,13 +6203,26 @@
     {
       "away": "Q191843",
       "awayGoals": 2,
-      "correctedFrom": "0–3",
       "date": "2024-11-29",
-      "evidence": "en.wikipedia 2024–25 Stade de Reims season and RC Lens season, 29 Nov 2024: 0–2",
       "home": "Q208228",
       "homeGoals": 0,
       "key": "fr-2024-Q208228-Q191843",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Thomasson",
+            "minute": "23",
+            "player": "Q18938815"
+          },
+          {
+            "display": "Nzola",
+            "minute": "61",
+            "player": "Q30474499"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -9454,7 +9467,7 @@
     ],
     "Q191843": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q18938815"
       },
       {
@@ -9490,7 +9503,7 @@
         "id": "Q106776925"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q30474499"
       },
       {

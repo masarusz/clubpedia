@@ -106,8 +106,8 @@
     "en": "Roberto Fernández",
     "id": "Q108120357",
     "ja": {
-      "display": "Roberto Fernández",
-      "mode": "latin"
+      "display": "ロベルト フェルナンデス",
+      "mode": "katakana"
     },
     "japan": null,
     "seasons": [
@@ -728,6 +728,29 @@
       }
     ]
   },
+  "Q174391": {
+    "birthDate": "1978-02-15",
+    "en": "Alejandro Lembo",
+    "id": "Q174391",
+    "ja": {
+      "display": "アレハンドロ レンボ",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8723",
+        "goalMatches": [
+          "es-2003-Q8723-Q8749"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q18218131": {
     "birthDate": "1996-03-05",
     "en": "Luca Valzania",
@@ -1308,12 +1331,28 @@
       {
         "club": "Q1128631",
         "goalMatches": [
+          "en-1998-Q1128631-Q18656",
+          "en-1998-Q1128631-Q18747",
+          "en-1998-Q1128631-Q19446",
+          "en-1998-Q1128631-Q19462",
+          "en-1998-Q1128631-Q19470",
+          "en-1998-Q1128631-Q19490",
+          "en-1998-Q1128631-Q19498",
+          "en-1998-Q1128631-Q9617",
           "en-1998-Q1130849-Q1128631",
-          "en-1998-Q1130849-Q1128631"
+          "en-1998-Q1130849-Q1128631",
+          "en-1998-Q18656-Q1128631",
+          "en-1998-Q18711-Q1128631",
+          "en-1998-Q18711-Q1128631",
+          "en-1998-Q18716-Q1128631",
+          "en-1998-Q18741-Q1128631",
+          "en-1998-Q18747-Q1128631",
+          "en-1998-Q19498-Q1128631",
+          "en-1998-Q9617-Q1128631"
         ],
         "goals": 18,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 18,
         "season": "en-1998",
         "topScorerRank": 1
       },
@@ -2089,12 +2128,13 @@
       {
         "club": "Q19604",
         "goalMatches": [
+          "en-2003-Q1128631-Q19604",
           "en-2003-Q18741-Q19604",
           "en-2003-Q19604-Q18716"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -3425,17 +3465,33 @@
       {
         "club": "Q8682",
         "goalMatches": [
+          "es-2002-Q10300-Q8682",
+          "es-2002-Q10315-Q8682",
+          "es-2002-Q10333-Q8682",
+          "es-2002-Q10333-Q8682",
           "es-2002-Q223620-Q8682",
           "es-2002-Q223620-Q8682",
           "es-2002-Q223620-Q8682",
+          "es-2002-Q8682-Q10319",
+          "es-2002-Q8682-Q10333",
+          "es-2002-Q8682-Q223620",
+          "es-2002-Q8682-Q223620",
           "es-2002-Q8682-Q7156",
+          "es-2002-Q8682-Q8687",
+          "es-2002-Q8682-Q8687",
+          "es-2002-Q8682-Q8723",
+          "es-2002-Q8682-Q8760",
+          "es-2002-Q8682-Q8835",
+          "es-2002-Q8687-Q8682",
           "es-2002-Q8701-Q8682",
           "es-2002-Q8701-Q8682",
-          "es-2002-Q8749-Q8682"
+          "es-2002-Q8749-Q8682",
+          "es-2002-Q8835-Q8682",
+          "es-2002-Q8835-Q8682"
         ],
-        "goals": 7,
+        "goals": 23,
         "league": "es",
-        "recordedGoals": 7,
+        "recordedGoals": 23,
         "season": "es-2002",
         "topScorerRank": null
       },
@@ -3532,19 +3588,22 @@
         "goalMatches": [
           "it-1997-Q1457-Q631",
           "it-1997-Q1893-Q631",
+          "it-1997-Q2052-Q631",
           "it-1997-Q2739-Q631",
           "it-1997-Q2739-Q631",
           "it-1997-Q56542463-Q631",
           "it-1997-Q631-Q1457",
           "it-1997-Q631-Q1543",
+          "it-1997-Q631-Q2052",
           "it-1997-Q631-Q2609",
           "it-1997-Q631-Q2641",
+          "it-1997-Q631-Q2693",
           "it-1997-Q631-Q2798",
           "it-1997-Q631-Q56542463"
         ],
         "goals": 25,
         "league": "it",
-        "recordedGoals": 11,
+        "recordedGoals": 14,
         "season": "it-1997",
         "topScorerRank": 2
       },
@@ -3586,11 +3645,12 @@
       {
         "club": "Q631",
         "goalMatches": [
-          "it-2001-Q2037-Q631"
+          "it-2001-Q2037-Q631",
+          "it-2001-Q631-Q459794"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2001",
         "topScorerRank": null
       },
@@ -3862,6 +3922,17 @@
         "league": "de",
         "recordedGoals": 1,
         "season": "de-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q41420",
+        "goalMatches": [
+          "de-1999-Q14551982-Q41420"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
         "topScorerRank": null
       },
       {
@@ -4803,6 +4874,17 @@
         "league": "de",
         "recordedGoals": 1,
         "season": "de-1992",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q101959",
+        "goalMatches": [
+          "de-1993-Q101959-Q162317"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
         "topScorerRank": null
       },
       {

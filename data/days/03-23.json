@@ -37,6 +37,12 @@
       "photo": false
     },
     {
+      "birthYear": 1963,
+      "id": "Q558689",
+      "name": "ミチェル",
+      "photo": true
+    },
+    {
       "birthYear": 1983,
       "id": "Q2663282",
       "name": "ジェローム トーマス",
@@ -64,12 +70,6 @@
       "birthYear": 1969,
       "id": "Q951412",
       "name": "ユーリ ムルダー",
-      "photo": true
-    },
-    {
-      "birthYear": 1983,
-      "id": "Q974791",
-      "name": "Kader Mangane",
       "photo": true
     }
   ],
@@ -163,6 +163,17 @@
       "season": "es-2007"
     },
     {
+      "away": "Q8760",
+      "awayName": "デポルティーボ・ラ・コルーニャ",
+      "date": "2003-03-23",
+      "home": "Q8682",
+      "homeName": "レアル・マドリード",
+      "key": "es-2002-Q8682-Q8760",
+      "league": "es",
+      "score": "2–0",
+      "season": "es-2002"
+    },
+    {
       "away": "Q2609",
       "awayName": "SSラツィオ",
       "date": "2003-03-23",
@@ -183,17 +194,6 @@
       "league": "it",
       "score": "1–0",
       "season": "it-2001"
-    },
-    {
-      "away": "Q15789",
-      "awayName": "FCバイエルン・ミュンヘン",
-      "date": "1997-03-23",
-      "home": "Q105853",
-      "homeName": "カールスルーエSC",
-      "key": "de-1996-Q105853-Q15789",
-      "league": "de",
-      "score": "0–2",
-      "season": "de-1996"
     },
     {
       "away": "Q1422",

@@ -804,10 +804,27 @@
     {
       "away": "Q2693",
       "awayGoals": 1,
+      "date": "2013-12-22",
       "home": "Q1457",
       "homeGoals": 1,
       "key": "it-2013-Q1457-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lucarelli",
+            "minute": "66",
+            "player": "Q611603"
+          }
+        ],
+        "home": [
+          {
+            "display": "Éder",
+            "minute": "44",
+            "player": "Q167698"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -914,10 +931,48 @@
     {
       "away": "Q6767",
       "awayGoals": 2,
+      "date": "2014-03-09",
       "home": "Q1457",
       "homeGoals": 4,
       "key": "it-2013-Q1457-Q6767",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mbaye",
+            "minute": "19",
+            "player": "Q2148142"
+          },
+          {
+            "display": "Mbaye",
+            "minute": "27",
+            "player": "Q2148142"
+          }
+        ],
+        "home": [
+          {
+            "display": "Krstičić",
+            "minute": "49",
+            "player": "Q1440840"
+          },
+          {
+            "display": "Ceccherini",
+            "minute": "53",
+            "ownGoal": true,
+            "player": "Q5605391"
+          },
+          {
+            "display": "Okaka",
+            "minute": "68",
+            "player": "Q342228"
+          },
+          {
+            "display": "Gabbiadini",
+            "minute": "75",
+            "player": "Q129816"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2790,10 +2845,22 @@
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "2014-04-27",
       "home": "Q1900",
       "homeGoals": 1,
       "key": "it-2013-Q1900-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pinilla",
+            "minute": "35",
+            "penalty": true,
+            "player": "Q1989585"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2923,10 +2990,33 @@
     {
       "away": "Q6767",
       "awayGoals": 2,
+      "date": "2014-02-16",
       "home": "Q1900",
       "homeGoals": 1,
       "key": "it-2013-Q1900-Q6767",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Emerson",
+            "minute": "43",
+            "player": "Q1185391"
+          },
+          {
+            "display": "Paulinho",
+            "minute": "53",
+            "penalty": true,
+            "player": "Q2007888"
+          }
+        ],
+        "home": [
+          {
+            "display": "Nenê",
+            "minute": "64",
+            "player": "Q252695"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3223,10 +3313,15 @@
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "2013-09-22",
       "home": "Q2018",
       "homeGoals": 0,
       "key": "it-2013-Q2018-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3355,10 +3450,48 @@
     {
       "away": "Q6767",
       "awayGoals": 3,
+      "date": "2014-02-02",
       "home": "Q2018",
       "homeGoals": 3,
       "key": "it-2013-Q2018-Q6767",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Emeghara",
+            "minute": "50",
+            "player": "Q677926"
+          },
+          {
+            "display": "Paulinho",
+            "minute": "72",
+            "penalty": true,
+            "player": "Q2007888"
+          },
+          {
+            "display": "Emeghara",
+            "minute": "77",
+            "player": "Q677926"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bergessio",
+            "minute": "61",
+            "player": "Q969146"
+          },
+          {
+            "display": "Barrientos",
+            "minute": "75",
+            "player": "Q514568"
+          },
+          {
+            "display": "Almirón",
+            "minute": "88",
+            "player": "Q387003"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3622,10 +3755,32 @@
     {
       "away": "Q2693",
       "awayGoals": 2,
+      "date": "2014-01-19",
       "home": "Q2037",
       "homeGoals": 1,
       "key": "it-2013-Q2037-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cassano",
+            "minute": "27",
+            "player": "Q180993"
+          },
+          {
+            "display": "Lucarelli",
+            "minute": "90+3",
+            "player": "Q611603"
+          }
+        ],
+        "home": [
+          {
+            "display": "Paloschi",
+            "minute": "15",
+            "player": "Q114413"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3728,10 +3883,31 @@
     {
       "away": "Q6767",
       "awayGoals": 0,
+      "date": "2013-12-01",
       "home": "Q2037",
       "homeGoals": 3,
       "key": "it-2013-Q2037-Q6767",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rigoni",
+            "minute": "36",
+            "player": "Q1121887"
+          },
+          {
+            "display": "Théréau",
+            "minute": "56",
+            "player": "Q1764177"
+          },
+          {
+            "display": "Paloschi",
+            "minute": "79",
+            "player": "Q114413"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4632,10 +4808,21 @@
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "2013-10-30",
       "home": "Q2074",
       "homeGoals": 1,
       "key": "it-2013-Q2074-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Gilardino",
+            "minute": "57",
+            "player": "Q182451"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4754,10 +4941,15 @@
     {
       "away": "Q6767",
       "awayGoals": 0,
+      "date": "2013-09-21",
       "home": "Q2074",
       "homeGoals": 0,
       "key": "it-2013-Q2074-Q6767",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5936,10 +6128,26 @@
     {
       "away": "Q1457",
       "awayGoals": 0,
+      "date": "2014-05-04",
       "home": "Q2693",
       "homeGoals": 2,
       "key": "it-2013-Q2693-Q1457",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Cassano",
+            "minute": "8",
+            "player": "Q180993"
+          },
+          {
+            "display": "Schelotto",
+            "minute": "90",
+            "player": "Q510596"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6063,19 +6271,29 @@
     {
       "away": "Q1900",
       "awayGoals": 0,
+      "date": "2013-12-15",
       "home": "Q2693",
       "homeGoals": 0,
       "key": "it-2013-Q2693-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q2018",
       "awayGoals": 0,
+      "date": "2014-02-09",
       "home": "Q2693",
       "homeGoals": 0,
       "key": "it-2013-Q2693-Q2018",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6127,10 +6345,27 @@
     {
       "away": "Q2074",
       "awayGoals": 1,
+      "date": "2014-03-23",
       "home": "Q2693",
       "homeGoals": 1,
       "key": "it-2013-Q2693-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Cofie",
+            "minute": "21",
+            "player": "Q3016737"
+          }
+        ],
+        "home": [
+          {
+            "display": "Schelotto",
+            "minute": "31",
+            "player": "Q510596"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6219,6 +6454,7 @@
     {
       "away": "Q2768",
       "awayGoals": 1,
+      "date": "2014-01-06",
       "home": "Q2693",
       "homeGoals": 3,
       "key": "it-2013-Q2693-Q2768",
@@ -6273,19 +6509,63 @@
     {
       "away": "Q6767",
       "awayGoals": 0,
+      "date": "2014-05-18",
       "home": "Q2693",
       "homeGoals": 2,
       "key": "it-2013-Q2693-Q6767",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Amauri",
+            "minute": "62",
+            "player": "Q62198"
+          },
+          {
+            "display": "Amauri",
+            "minute": "80",
+            "player": "Q62198"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8603",
       "awayGoals": 1,
+      "date": "2013-10-06",
       "home": "Q2693",
       "homeGoals": 3,
       "key": "it-2013-Q2693-Q8603",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Berardi",
+            "minute": "45+6",
+            "penalty": true,
+            "player": "Q348407"
+          }
+        ],
+        "home": [
+          {
+            "display": "Palladino",
+            "minute": "32",
+            "player": "Q282551"
+          },
+          {
+            "display": "Rosi",
+            "minute": "70",
+            "player": "Q541872"
+          },
+          {
+            "display": "Cassano",
+            "minute": "76",
+            "player": "Q180993"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7766,7 +8046,7 @@
         "away": [
           {
             "display": "Cassano",
-            "minute": "84",
+            "minute": "82",
             "player": "Q180993"
           }
         ],
@@ -8491,10 +8771,34 @@
     {
       "away": "Q1457",
       "awayGoals": 2,
+      "date": "2013-10-20",
       "home": "Q6767",
       "homeGoals": 1,
       "key": "it-2013-Q6767-Q1457",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Éder",
+            "minute": "19",
+            "penalty": true,
+            "player": "Q167698"
+          },
+          {
+            "display": "Pozzi",
+            "minute": "90+6",
+            "penalty": true,
+            "player": "Q933994"
+          }
+        ],
+        "home": [
+          {
+            "display": "Siligardi",
+            "minute": "90+2",
+            "player": "Q2436287"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8578,7 +8882,7 @@
           },
           {
             "display": "Paulinho",
-            "minute": "53",
+            "minute": "52",
             "player": "Q2007888"
           }
         ]
@@ -8588,28 +8892,99 @@
     {
       "away": "Q1900",
       "awayGoals": 1,
+      "date": "2013-09-25",
       "home": "Q6767",
       "homeGoals": 1,
       "key": "it-2013-Q6767-Q1900",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ibarbo",
+            "minute": "53",
+            "player": "Q2117509"
+          }
+        ],
+        "home": [
+          {
+            "display": "Luci",
+            "minute": "23",
+            "player": "Q494297"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q2018",
       "awayGoals": 0,
+      "date": "2013-09-15",
       "home": "Q6767",
       "homeGoals": 2,
       "key": "it-2013-Q6767-Q2018",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Paulinho",
+            "minute": "66",
+            "player": "Q2007888"
+          },
+          {
+            "display": "Paulinho",
+            "minute": "72",
+            "player": "Q2007888"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q2037",
       "awayGoals": 4,
+      "date": "2014-04-13",
       "home": "Q6767",
       "homeGoals": 2,
       "key": "it-2013-Q6767-Q2037",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Paloschi",
+            "minute": "9",
+            "player": "Q114413"
+          },
+          {
+            "display": "Théréau",
+            "minute": "23",
+            "player": "Q1764177"
+          },
+          {
+            "display": "Paloschi",
+            "minute": "45+2",
+            "player": "Q114413"
+          },
+          {
+            "display": "Paloschi",
+            "minute": "56",
+            "player": "Q114413"
+          }
+        ],
+        "home": [
+          {
+            "display": "Siligardi",
+            "minute": "6",
+            "player": "Q2436287"
+          },
+          {
+            "display": "Paulinho",
+            "minute": "34",
+            "penalty": true,
+            "player": "Q2007888"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8635,10 +9010,21 @@
     {
       "away": "Q2074",
       "awayGoals": 1,
+      "date": "2014-02-09",
       "home": "Q6767",
       "homeGoals": 0,
       "key": "it-2013-Q6767-Q2074",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Antonelli",
+            "minute": "10",
+            "player": "Q438235"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8698,10 +9084,32 @@
     {
       "away": "Q2693",
       "awayGoals": 3,
+      "date": "2014-01-11",
       "home": "Q6767",
       "homeGoals": 0,
       "key": "it-2013-Q6767-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Palladino",
+            "minute": "2",
+            "player": "Q282551"
+          },
+          {
+            "display": "Amauri",
+            "minute": "86",
+            "player": "Q62198"
+          },
+          {
+            "display": "Amauri",
+            "minute": "90+3",
+            "penalty": true,
+            "player": "Q62198"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8763,7 +9171,7 @@
             "player": "Q2007888"
           },
           {
-            "display": "L. Greco",
+            "display": "Greco",
             "minute": "33",
             "player": "Q935117"
           },
@@ -8846,10 +9254,38 @@
     {
       "away": "Q8603",
       "awayGoals": 1,
+      "date": "2014-01-26",
       "home": "Q6767",
       "homeGoals": 3,
       "key": "it-2013-Q6767-Q8603",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Berardi",
+            "minute": "28",
+            "penalty": true,
+            "player": "Q348407"
+          }
+        ],
+        "home": [
+          {
+            "display": "Greco",
+            "minute": "4",
+            "player": "Q935117"
+          },
+          {
+            "display": "Paulinho",
+            "minute": "11",
+            "player": "Q2007888"
+          },
+          {
+            "display": "Benassi",
+            "minute": "26",
+            "player": "Q129333"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -9167,10 +9603,21 @@
     {
       "away": "Q2693",
       "awayGoals": 1,
+      "date": "2014-03-02",
       "home": "Q8603",
       "homeGoals": 0,
       "key": "it-2013-Q8603-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Parolo",
+            "minute": "1",
+            "player": "Q949938"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -9318,7 +9765,7 @@
         "away": [
           {
             "display": "Greco",
-            "minute": "43",
+            "minute": "44",
             "player": "Q935117"
           },
           {
@@ -9329,12 +9776,12 @@
           },
           {
             "display": "Paulinho",
-            "minute": "74",
+            "minute": "75",
             "player": "Q2007888"
           },
           {
             "display": "Emeghara",
-            "minute": "85",
+            "minute": "86",
             "penalty": true,
             "player": "Q677926"
           }
@@ -10077,16 +10524,20 @@
         "id": "Q694014"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q342228"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q129816"
       },
       {
         "goals": 4,
         "id": "Q507614"
+      },
+      {
+        "goals": 1,
+        "id": "Q1440840"
       },
       {
         "goals": 1,
@@ -10097,7 +10548,11 @@
         "id": "Q2290574"
       },
       {
-        "goals": 5,
+        "goals": 1,
+        "id": "Q933994"
+      },
+      {
+        "goals": 7,
         "id": "Q167698"
       },
       {
@@ -10306,7 +10761,7 @@
         "id": "Q933973"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q252695"
       },
       {
@@ -10314,11 +10769,11 @@
         "id": "Q517192"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1989585"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2117509"
       },
       {
@@ -10348,7 +10803,11 @@
         "id": "Q440097"
       },
       {
-        "goals": 5,
+        "goals": 1,
+        "id": "Q387003"
+      },
+      {
+        "goals": 6,
         "id": "Q969146"
       },
       {
@@ -10360,7 +10819,7 @@
         "id": "Q1003315"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q514568"
       },
       {
@@ -10390,7 +10849,7 @@
         "id": "Q217215"
       },
       {
-        "goals": 6,
+        "goals": 11,
         "id": "Q114413"
       },
       {
@@ -10406,7 +10865,7 @@
         "id": "Q446487"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q1121887"
       },
       {
@@ -10414,7 +10873,7 @@
         "id": "Q2519179"
       },
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q1764177"
       },
       {
@@ -10516,7 +10975,7 @@
         "id": "Q718251"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q438235"
       },
       {
@@ -10526,6 +10985,10 @@
       {
         "goals": 1,
         "id": "Q1408340"
+      },
+      {
+        "goals": 1,
+        "id": "Q3016737"
       },
       {
         "goals": 1,
@@ -10660,7 +11123,7 @@
     ],
     "Q2693": [
       {
-        "goals": 9,
+        "goals": 12,
         "id": "Q180993"
       },
       {
@@ -10668,7 +11131,7 @@
         "id": "Q457302"
       },
       {
-        "goals": 3,
+        "goals": 7,
         "id": "Q62198"
       },
       {
@@ -10676,15 +11139,15 @@
         "id": "Q528696"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q611603"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q541872"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q282551"
       },
       {
@@ -10700,11 +11163,11 @@
         "id": "Q316479"
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q949938"
       },
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q510596"
       },
       {
@@ -10758,12 +11221,12 @@
         "id": "Q168497"
       },
       {
-        "goals": 2,
-        "id": "Q298320"
-      },
-      {
         "goals": 1,
         "id": "Q44097"
+      },
+      {
+        "goals": 2,
+        "id": "Q298320"
       },
       {
         "goals": 2,
@@ -10954,7 +11417,7 @@
     ],
     "Q6767": [
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q677926"
       },
       {
@@ -10971,20 +11434,28 @@
         "id": "Q316479"
       },
       {
-        "goals": 3,
+        "goals": 2,
+        "id": "Q2148142"
+      },
+      {
+        "goals": 2,
+        "id": "Q1185391"
+      },
+      {
+        "goals": 5,
         "id": "Q2436287"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q129333"
       },
       {
-        "goals": 3,
-        "id": "Q935117"
+        "goals": 1,
+        "id": "Q494297"
       },
       {
-        "goals": 1,
-        "id": "Q1185391"
+        "goals": 4,
+        "id": "Q935117"
       }
     ],
     "Q8603": [

@@ -339,11 +339,12 @@
       {
         "club": "Q2756",
         "goalMatches": [
-          "it-2011-Q13391-Q2756"
+          "it-2011-Q13391-Q2756",
+          "it-2011-Q2756-Q1900"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2011",
         "topScorerRank": null
       },
@@ -446,11 +447,12 @@
         "goalMatches": [
           "it-2011-Q1422-Q2074",
           "it-2011-Q2074-Q1893",
-          "it-2011-Q2074-Q6664"
+          "it-2011-Q2074-Q6664",
+          "it-2011-Q2756-Q2074"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "it-2011",
         "topScorerRank": null
       }
@@ -1015,6 +1017,29 @@
         "league": "it",
         "recordedGoals": 1,
         "season": "it-2012",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q2053535": {
+    "birthDate": "1976-07-07",
+    "en": "Dominic Foley",
+    "id": "Q2053535",
+    "ja": {
+      "display": "Dominic Foley",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q2714",
+        "goalMatches": [
+          "en-1999-Q1128631-Q2714"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
         "topScorerRank": null
       }
     ]
@@ -1630,6 +1655,29 @@
       }
     ]
   },
+  "Q2284007": {
+    "birthDate": "1977-06-23",
+    "en": "Hayden Foxe",
+    "id": "Q2284007",
+    "ja": {
+      "display": "ハイデン フォックス",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q19604",
+        "goalMatches": [
+          "en-2003-Q19604-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2003",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q23413053": {
     "birthDate": "1997-05-10",
     "en": "Marcos Senesi",
@@ -2240,6 +2288,17 @@
       {
         "club": "Q8682",
         "goalMatches": [
+          "es-2002-Q8682-Q12249"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8682",
+        "goalMatches": [
           "es-2003-Q8780-Q8682"
         ],
         "goals": 1,
@@ -2427,6 +2486,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Gianluca_Pessotto.jpg"
     },
     "seasons": [
+      {
+        "club": "Q2768",
+        "goalMatches": [
+          "it-1994-Q2768-Q2052"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1994",
+        "topScorerRank": null
+      },
       {
         "club": "Q1422",
         "goalMatches": [
@@ -2847,17 +2917,6 @@
       {
         "club": "Q459794",
         "goalMatches": [
-          "it-1997-Q2693-Q459794"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-1997",
-        "topScorerRank": null
-      },
-      {
-        "club": "Q459794",
-        "goalMatches": [
           "it-1998-Q1900-Q459794",
           "it-1998-Q2609-Q459794"
         ],
@@ -3130,14 +3189,13 @@
         "goalMatches": [
           "en-2006-Q18656-Q18747",
           "en-2006-Q18747-Q18661",
-          "en-2006-Q18747-Q18741",
           "en-2006-Q18747-Q19451",
           "en-2006-Q18747-Q19451",
           "en-2006-Q18747-Q9616"
         ],
-        "goals": 6,
+        "goals": 5,
         "league": "en",
-        "recordedGoals": 6,
+        "recordedGoals": 5,
         "season": "en-2006",
         "topScorerRank": null
       },
@@ -3614,17 +3672,6 @@
       "source": "https://commons.wikimedia.org/wiki/File:Andrrea_Sottil_Udinese_2023_2024.jpg"
     },
     "seasons": [
-      {
-        "club": "Q2052",
-        "goalMatches": [
-          "it-1994-Q2052-Q2641"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-1994",
-        "topScorerRank": null
-      },
       {
         "club": "Q1886",
         "goalMatches": [
@@ -4836,49 +4883,66 @@
           "it-1992-Q2641-Q1457",
           "it-1992-Q2641-Q1543",
           "it-1992-Q2641-Q1900",
+          "it-1992-Q2641-Q2052",
+          "it-1992-Q2641-Q2052",
           "it-1992-Q6651-Q2641"
         ],
-        "goals": 6,
+        "goals": 8,
         "league": "it",
-        "recordedGoals": 6,
+        "recordedGoals": 8,
         "season": "it-1992",
         "topScorerRank": null
       },
       {
         "club": "Q2693",
         "goalMatches": [
+          "it-1993-Q139399-Q2693",
           "it-1993-Q1543-Q2693",
+          "it-1993-Q1886-Q2693",
+          "it-1993-Q2074-Q2693",
+          "it-1993-Q2074-Q2693",
           "it-1993-Q2609-Q2693",
+          "it-1993-Q2693-Q13391",
+          "it-1993-Q2693-Q139399",
+          "it-1993-Q2693-Q139399",
           "it-1993-Q2693-Q1422",
           "it-1993-Q2693-Q1457",
-          "it-1993-Q2693-Q631",
-          "it-1993-Q2693-Q631"
+          "it-1993-Q2693-Q1900",
+          "it-1993-Q2693-Q2074",
+          "it-1993-Q2693-Q759482",
+          "it-1993-Q2768-Q2693"
         ],
         "goals": 18,
         "league": "it",
-        "recordedGoals": 6,
+        "recordedGoals": 15,
         "season": "it-1993",
         "topScorerRank": 2
       },
       {
         "club": "Q2693",
         "goalMatches": [
-          "it-1994-Q1457-Q2693",
           "it-1994-Q2693-Q1457",
           "it-1994-Q2693-Q1457",
           "it-1994-Q2693-Q1543",
           "it-1994-Q2693-Q1543",
+          "it-1994-Q2693-Q2052",
           "it-1994-Q2693-Q2641",
           "it-1994-Q2693-Q2739",
+          "it-1994-Q2693-Q2768",
           "it-1994-Q2693-Q631",
           "it-1994-Q2693-Q6651",
           "it-1994-Q2693-Q6651",
+          "it-1994-Q2693-Q759482",
+          "it-1994-Q2693-Q8428",
+          "it-1994-Q2768-Q2693",
+          "it-1994-Q6641-Q2693",
           "it-1994-Q6651-Q2693",
-          "it-1994-Q6651-Q2693"
+          "it-1994-Q6651-Q2693",
+          "it-1994-Q759482-Q2693"
         ],
         "goals": 19,
         "league": "it",
-        "recordedGoals": 12,
+        "recordedGoals": 18,
         "season": "it-1994",
         "topScorerRank": 3
       },
@@ -4886,23 +4950,28 @@
         "club": "Q2693",
         "goalMatches": [
           "it-1995-Q2609-Q2693",
-          "it-1995-Q2641-Q2693",
-          "it-1995-Q2693-Q2609"
+          "it-1995-Q2693-Q2609",
+          "it-1995-Q2693-Q2768",
+          "it-1995-Q2693-Q631",
+          "it-1995-Q2693-Q759482",
+          "it-1995-Q759482-Q2693",
+          "it-1995-Q8428-Q2693"
         ],
-        "goals": 3,
+        "goals": 7,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 7,
         "season": "it-1995",
         "topScorerRank": null
       },
       {
         "club": "Q2693",
         "goalMatches": [
-          "it-1996-Q2693-Q2641"
+          "it-1996-Q2693-Q2641",
+          "it-1996-Q2693-Q289707"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-1996",
         "topScorerRank": null
       },

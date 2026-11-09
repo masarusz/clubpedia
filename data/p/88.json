@@ -591,12 +591,11 @@
       {
         "club": "Q18747",
         "goalMatches": [
-          "en-2006-Q18747-Q18741",
           "en-2006-Q18747-Q19451"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "en-2006",
         "topScorerRank": null
       },
@@ -1676,12 +1675,13 @@
       {
         "club": "Q18741",
         "goalMatches": [
+          "en-2006-Q18741-Q18750",
           "en-2006-Q18741-Q19451",
           "en-2006-Q18741-Q9616"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2006",
         "topScorerRank": null
       },
@@ -2954,17 +2954,6 @@
         "recordedGoals": 3,
         "season": "it-2010",
         "topScorerRank": null
-      },
-      {
-        "club": "Q2739",
-        "goalMatches": [
-          "it-2012-Q2756-Q2739"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-2012",
-        "topScorerRank": null
       }
     ]
   },
@@ -4009,11 +3998,12 @@
       {
         "club": "Q18741",
         "goalMatches": [
+          "en-2006-Q18716-Q18741",
           "en-2006-Q18741-Q19604"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "en-2006",
         "topScorerRank": null
       },
@@ -5138,6 +5128,17 @@
       {
         "club": "Q101959",
         "goalMatches": [
+          "de-1993-Q162317-Q101959"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q101959",
+        "goalMatches": [
           "de-1994-Q101959-Q105861"
         ],
         "goals": 1,
@@ -5438,11 +5439,12 @@
       {
         "club": "Q19604",
         "goalMatches": [
+          "en-2003-Q19604-Q1128631",
           "en-2003-Q19604-Q50602"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "en-2003",
         "topScorerRank": null
       }
@@ -5685,17 +5687,6 @@
         "league": "it",
         "recordedGoals": 1,
         "season": "it-2001",
-        "topScorerRank": null
-      },
-      {
-        "club": "Q2609",
-        "goalMatches": [
-          "it-2002-Q16344-Q2609"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-2002",
         "topScorerRank": null
       },
       {
@@ -6246,28 +6237,8 @@
       "mode": "kanji",
       "ruby": "{田中|たなか} {聡|さとし}"
     },
-    "japan": [
-      {
-        "apps": 0,
-        "club": "Q32494",
-        "goals": 0,
-        "league": "de",
-        "season": "2026–27",
-        "source": "ja"
-      }
-    ],
-    "seasons": [
-      {
-        "apps": 0,
-        "club": "Q32494",
-        "goalMatches": [],
-        "goals": 0,
-        "league": "de",
-        "recordedGoals": 0,
-        "season": "de-2026",
-        "topScorerRank": null
-      }
-    ]
+    "japan": [],
+    "seasons": []
   },
   "Q909070": {
     "birthDate": "1983-06-28",

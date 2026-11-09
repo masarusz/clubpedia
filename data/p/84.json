@@ -2353,6 +2353,29 @@
       }
     ]
   },
+  "Q368833": {
+    "birthDate": "1978-02-15",
+    "en": "Riccardo Allegretti",
+    "id": "Q368833",
+    "ja": {
+      "display": "Riccardo Allegretti",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q8408",
+        "goalMatches": [
+          "it-2003-Q8408-Q16344"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2003",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q370395": {
     "birthDate": "1984-06-12",
     "en": "Bruno Soriano",
@@ -2452,17 +2475,6 @@
     },
     "japan": null,
     "seasons": [
-      {
-        "club": "Q8682",
-        "goalMatches": [
-          "es-1993-Q8682-Q10333"
-        ],
-        "goals": 1,
-        "league": "es",
-        "recordedGoals": 1,
-        "season": "es-1993",
-        "topScorerRank": null
-      },
       {
         "club": "Q271574",
         "goalMatches": [
@@ -2655,12 +2667,24 @@
       {
         "club": "Q5794",
         "goalMatches": [
+          "en-1999-Q5794-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q5794",
+        "goalMatches": [
+          "en-2001-Q1128631-Q5794",
           "en-2001-Q18741-Q5794",
           "en-2001-Q5794-Q18716"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2001",
         "topScorerRank": null
       },
@@ -2956,11 +2980,12 @@
       {
         "club": "Q2798",
         "goalMatches": [
-          "it-2001-Q2798-Q2739"
+          "it-2001-Q2798-Q2739",
+          "it-2001-Q459794-Q2798"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2001",
         "topScorerRank": null
       },
@@ -2969,11 +2994,12 @@
         "goalMatches": [
           "it-2002-Q1893-Q8476",
           "it-2002-Q6651-Q8476",
-          "it-2002-Q8476-Q1422"
+          "it-2002-Q8476-Q1422",
+          "it-2002-Q8476-Q16344"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -3616,12 +3642,13 @@
         "goalMatches": [
           "de-1993-Q104761-Q51974",
           "de-1993-Q141931-Q51974",
+          "de-1993-Q162317-Q51974",
           "de-1993-Q51974-Q141931",
           "de-1993-Q51974-Q38245"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "de",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "de-1993",
         "topScorerRank": null
       }

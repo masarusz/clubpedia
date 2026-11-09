@@ -468,11 +468,12 @@
       {
         "club": "Q191843",
         "goalMatches": [
-          "fr-2025-Q191843-Q19509"
+          "fr-2025-Q191843-Q19509",
+          "fr-2025-Q218372-Q191843"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "fr",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "fr-2025",
         "topScorerRank": null
       }
@@ -630,12 +631,11 @@
           "de-1999-Q106394-Q15789",
           "de-1999-Q15789-Q104761",
           "de-1999-Q15789-Q131603",
-          "de-1999-Q15789-Q14551982",
           "de-1999-Q158121-Q15789"
         ],
-        "goals": 5,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 5,
+        "recordedGoals": 4,
         "season": "de-1999",
         "topScorerRank": null
       },
@@ -1196,6 +1196,17 @@
     },
     "seasons": [
       {
+        "club": "Q104770",
+        "goalMatches": [
+          "de-1993-Q104770-Q162317"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
+        "topScorerRank": null
+      },
+      {
         "club": "Q15789",
         "goalMatches": [
           "de-1996-Q131603-Q15789"
@@ -1258,12 +1269,11 @@
           "de-1999-Q101859-Q15789",
           "de-1999-Q106394-Q15789",
           "de-1999-Q14551982-Q15789",
-          "de-1999-Q15789-Q14551982",
           "de-1999-Q51976-Q15789"
         ],
-        "goals": 5,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 5,
+        "recordedGoals": 4,
         "season": "de-1999",
         "topScorerRank": null
       },
@@ -3249,6 +3259,17 @@
         "recordedGoals": 3,
         "season": "de-2010",
         "topScorerRank": null
+      },
+      {
+        "club": "Q4512",
+        "goalMatches": [
+          "de-2011-Q4512-Q105254"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-2011",
+        "topScorerRank": null
       }
     ]
   },
@@ -3265,33 +3286,81 @@
       {
         "club": "Q1128631",
         "goalMatches": [
-          "en-1999-Q1130849-Q1128631"
+          "en-1998-Q1128631-Q18661",
+          "en-1998-Q1128631-Q18747",
+          "en-1998-Q1128631-Q18747",
+          "en-1998-Q1128631-Q19462",
+          "en-1998-Q1128631-Q19470",
+          "en-1998-Q1128631-Q19580",
+          "en-1998-Q18716-Q1128631",
+          "en-1998-Q18747-Q1128631",
+          "en-1998-Q19482-Q1128631"
         ],
-        "goals": 1,
+        "goals": 9,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 9,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1999-Q1128631-Q18716",
+          "en-1999-Q1128631-Q18739",
+          "en-1999-Q1128631-Q19481",
+          "en-1999-Q1130849-Q1128631",
+          "en-1999-Q19580-Q1128631"
+        ],
+        "goals": 5,
+        "league": "en",
+        "recordedGoals": 5,
         "season": "en-1999",
         "topScorerRank": null
       },
       {
         "club": "Q1128631",
         "goalMatches": [
-          "en-2001-Q1128631-Q18716"
+          "en-2000-Q1128631-Q18739",
+          "en-2000-Q1128631-Q48879",
+          "en-2000-Q1128631-Q50602",
+          "en-2000-Q1128631-Q9653",
+          "en-2000-Q1130849-Q1128631",
+          "en-2000-Q18661-Q1128631",
+          "en-2000-Q18711-Q1128631",
+          "en-2000-Q18741-Q1128631",
+          "en-2000-Q50602-Q1128631"
         ],
-        "goals": 1,
+        "goals": 9,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 9,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2001-Q1128631-Q18656",
+          "en-2001-Q1128631-Q18716",
+          "en-2001-Q1128631-Q18732",
+          "en-2001-Q18732-Q1128631",
+          "en-2001-Q19470-Q1128631"
+        ],
+        "goals": 5,
+        "league": "en",
+        "recordedGoals": 5,
         "season": "en-2001",
         "topScorerRank": null
       },
       {
         "club": "Q1128631",
         "goalMatches": [
-          "en-2002-Q18744-Q1128631"
+          "en-2002-Q18661-Q1128631",
+          "en-2002-Q18744-Q1128631",
+          "en-2002-Q19444-Q1128631"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "en-2002",
         "topScorerRank": null
       },
@@ -3699,11 +3768,12 @@
       {
         "club": "Q12236",
         "goalMatches": [
-          "es-2002-Q12236-Q223620"
+          "es-2002-Q12236-Q223620",
+          "es-2002-Q8682-Q12236"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2002",
         "topScorerRank": null
       }
@@ -4146,6 +4216,19 @@
         "topScorerRank": null
       },
       {
+        "club": "Q8749",
+        "goalMatches": [
+          "es-2003-Q8701-Q8749",
+          "es-2003-Q8749-Q7156",
+          "es-2003-Q8749-Q8780"
+        ],
+        "goals": 3,
+        "league": "es",
+        "recordedGoals": 3,
+        "season": "es-2003",
+        "topScorerRank": null
+      },
+      {
         "club": "Q8723",
         "goalMatches": [
           "es-2004-Q8682-Q8723"
@@ -4456,12 +4539,11 @@
         "club": "Q105254",
         "goalMatches": [
           "de-2011-Q104761-Q105254",
-          "de-2011-Q105254-Q104770",
-          "de-2011-Q105254-Q106394"
+          "de-2011-Q105254-Q104770"
         ],
-        "goals": 3,
+        "goals": 2,
         "league": "de",
-        "recordedGoals": 3,
+        "recordedGoals": 2,
         "season": "de-2011",
         "topScorerRank": null
       },
@@ -4760,12 +4842,11 @@
         "club": "Q10315",
         "goalMatches": [
           "es-2025-Q10286-Q10315",
-          "es-2025-Q10315-Q12297",
-          "es-2025-Q10315-Q8780"
+          "es-2025-Q10315-Q12297"
         ],
-        "goals": 3,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 2,
         "season": "es-2025",
         "topScorerRank": null
       }

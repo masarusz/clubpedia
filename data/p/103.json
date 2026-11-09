@@ -251,11 +251,13 @@
       {
         "club": "Q8835",
         "goalMatches": [
-          "es-2002-Q10315-Q8835"
+          "es-2002-Q10315-Q8835",
+          "es-2002-Q8682-Q8835",
+          "es-2002-Q8835-Q8682"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "es-2002",
         "topScorerRank": null
       },
@@ -694,11 +696,12 @@
         "club": "Q139399",
         "goalMatches": [
           "it-1992-Q139399-Q1457",
+          "it-1992-Q139399-Q2052",
           "it-1992-Q1422-Q139399"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1992",
         "topScorerRank": null
       },
@@ -717,11 +720,12 @@
       {
         "club": "Q139399",
         "goalMatches": [
+          "it-1994-Q139399-Q2052",
           "it-1994-Q2739-Q139399"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-1994",
         "topScorerRank": null
       },
@@ -1501,12 +1505,13 @@
       {
         "club": "Q19451",
         "goalMatches": [
+          "en-2002-Q1128631-Q19451",
           "en-2002-Q18741-Q19451",
           "en-2002-Q19451-Q9617"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2002",
         "topScorerRank": null
       },
@@ -1514,12 +1519,14 @@
         "club": "Q19451",
         "goalMatches": [
           "en-2003-Q19446-Q19451",
+          "en-2003-Q19451-Q1128631",
+          "en-2003-Q19451-Q1128631",
           "en-2003-Q19451-Q1130849",
           "en-2003-Q19451-Q19446"
         ],
-        "goals": 3,
+        "goals": 5,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 5,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -1586,12 +1593,13 @@
         "goalMatches": [
           "it-1997-Q1893-Q631",
           "it-1997-Q631-Q1422",
+          "it-1997-Q631-Q2052",
           "it-1997-Q631-Q2739",
           "it-1997-Q631-Q2798"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-1997",
         "topScorerRank": null
       },
@@ -1702,12 +1710,46 @@
       {
         "club": "Q8687",
         "goalMatches": [
+          "es-1994-Q8687-Q8682"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8687",
+        "goalMatches": [
           "es-1995-Q8687-Q8749"
         ],
         "goals": 1,
         "league": "es",
         "recordedGoals": 1,
         "season": "es-1995",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q2440897": {
+    "birthDate": "1979-09-26",
+    "en": "Jon Harley",
+    "id": "Q2440897",
+    "ja": {
+      "display": "Jon Harley",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q9616",
+        "goalMatches": [
+          "en-1999-Q1128631-Q9616"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
         "topScorerRank": null
       }
     ]
@@ -2304,12 +2346,14 @@
       {
         "club": "Q271574",
         "goalMatches": [
+          "es-1994-Q271574-Q8682",
+          "es-1994-Q271574-Q8682",
           "es-1994-Q271574-Q8749",
           "es-1994-Q271574-Q8760"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "es-1994",
         "topScorerRank": null
       },

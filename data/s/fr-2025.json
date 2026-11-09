@@ -5072,13 +5072,47 @@
     {
       "away": "Q191843",
       "awayGoals": 3,
-      "correctedFrom": "3–0",
       "date": "2026-04-24",
-      "evidence": "en.wikipedia 2025–26 RC Lens season, 24 Apr 2026: 3–3",
       "home": "Q218372",
       "homeGoals": 3,
       "key": "fr-2025-Q218372-Q191843",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Thauvin",
+            "minute": "60",
+            "player": "Q27476"
+          },
+          {
+            "display": "Sima",
+            "minute": "64",
+            "player": "Q100999415"
+          },
+          {
+            "display": "Saint-Maximin",
+            "minute": "90+4",
+            "player": "Q15044053"
+          }
+        ],
+        "home": [
+          {
+            "display": "Guindo",
+            "minute": "7",
+            "player": "Q105457176"
+          },
+          {
+            "display": "Tousart",
+            "minute": "24",
+            "player": "Q20641574"
+          },
+          {
+            "display": "Ebimbe",
+            "minute": "42",
+            "player": "Q65951999"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7834,7 +7868,7 @@
     ],
     "Q191843": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q15044053"
       },
       {
@@ -7869,7 +7903,7 @@
         "id": "Q23800240"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q100999415"
       },
       {
@@ -8124,7 +8158,11 @@
     ],
     "Q218372": [
       {
-        "goals": 3,
+        "goals": 1,
+        "id": "Q20641574"
+      },
+      {
+        "goals": 4,
         "id": "Q65951999"
       },
       {
@@ -8150,6 +8188,10 @@
       {
         "goals": 2,
         "id": "Q115925662"
+      },
+      {
+        "goals": 1,
+        "id": "Q105457176"
       },
       {
         "goals": 1,

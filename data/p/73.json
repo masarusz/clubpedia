@@ -299,6 +299,17 @@
         "recordedGoals": 1,
         "season": "de-1997",
         "topScorerRank": null
+      },
+      {
+        "club": "Q51976",
+        "goalMatches": [
+          "de-1999-Q51976-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
       }
     ]
   },
@@ -316,11 +327,12 @@
         "club": "Q10300",
         "goalMatches": [
           "es-2002-Q10300-Q223620",
-          "es-2002-Q10300-Q223620"
+          "es-2002-Q10300-Q223620",
+          "es-2002-Q10300-Q8682"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2002",
         "topScorerRank": null
       }
@@ -1524,36 +1536,6 @@
       }
     ]
   },
-  "Q2451217": {
-    "birthDate": "1987-10-29",
-    "en": "Zé Eduardo",
-    "id": "Q2451217",
-    "ja": {
-      "display": "ジョゼ エドゥアルド ビスショフェ デ アウメイダ",
-      "mode": "katakana"
-    },
-    "japan": null,
-    "photo": true,
-    "photoCredit": {
-      "artist": "jikatu",
-      "licence": "CC BY-SA 2.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Z%C3%A9_Eduardo.jpg"
-    },
-    "seasons": [
-      {
-        "club": "Q2756",
-        "goalMatches": [
-          "it-2012-Q2756-Q2798"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-2012",
-        "topScorerRank": null
-      }
-    ]
-  },
   "Q2467915": {
     "birthDate": "1988-03-22",
     "en": "Bira Dembélé",
@@ -2360,11 +2342,12 @@
         "club": "Q8723",
         "goalMatches": [
           "es-2002-Q10315-Q8723",
-          "es-2002-Q10315-Q8723"
+          "es-2002-Q10315-Q8723",
+          "es-2002-Q8723-Q8682"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "es-2002",
         "topScorerRank": null
       },
@@ -2861,6 +2844,17 @@
       {
         "club": "Q19462",
         "goalMatches": [
+          "en-2000-Q1128631-Q19462"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q19462",
+        "goalMatches": [
           "en-2001-Q9617-Q19462"
         ],
         "goals": 1,
@@ -3139,6 +3133,18 @@
       {
         "club": "Q2052",
         "goalMatches": [
+          "it-1995-Q2052-Q1900",
+          "it-1995-Q2052-Q2693"
+        ],
+        "goals": 2,
+        "league": "it",
+        "recordedGoals": 2,
+        "season": "it-1995",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2052",
+        "goalMatches": [
           "it-1996-Q459794-Q2052"
         ],
         "goals": 1,
@@ -3173,7 +3179,7 @@
     ]
   },
   "Q79058092": {
-    "birthDate": "2001-07-09",
+    "birthDate": "2001-06-09",
     "en": "Lucas Da Cunha",
     "id": "Q79058092",
     "ja": {
@@ -3575,11 +3581,13 @@
       {
         "club": "Q5794",
         "goalMatches": [
-          "en-1999-Q1130849-Q5794"
+          "en-1999-Q1130849-Q5794",
+          "en-1999-Q5794-Q1128631",
+          "en-1999-Q5794-Q1128631"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "en-1999",
         "topScorerRank": null
       },
@@ -3587,14 +3595,15 @@
         "club": "Q5794",
         "goalMatches": [
           "en-2000-Q18716-Q5794",
+          "en-2000-Q5794-Q1128631",
           "en-2000-Q5794-Q9616",
           "en-2000-Q5794-Q9617",
           "en-2000-Q9616-Q5794",
           "en-2000-Q9617-Q5794"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "en",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "en-2000",
         "topScorerRank": null
       },

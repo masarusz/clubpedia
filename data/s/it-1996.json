@@ -1594,10 +1594,28 @@
     {
       "away": "Q2052",
       "awayGoals": 1,
+      "date": "1997-05-04",
       "home": "Q16344",
       "homeGoals": 1,
       "key": "it-1996-Q16344-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Robbiati",
+            "minute": "90",
+            "player": "Q569662"
+          }
+        ],
+        "home": [
+          {
+            "display": "Pizzi",
+            "minute": "89",
+            "penalty": true,
+            "player": "Q3740398"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1661,10 +1679,32 @@
     {
       "away": "Q2693",
       "awayGoals": 2,
+      "date": "1997-03-09",
       "home": "Q16344",
       "homeGoals": 1,
       "key": "it-1996-Q16344-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Crespo",
+            "minute": "12",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crippa",
+            "minute": "17",
+            "player": "Q646043"
+          }
+        ],
+        "home": [
+          {
+            "display": "Goretti",
+            "minute": "11",
+            "player": "Q3938863"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2474,7 +2514,7 @@
             "display": "De Marchi",
             "minute": "80",
             "ownGoal": true,
-            "player": null
+            "player": "Q1143251"
           }
         ],
         "home": []
@@ -2927,10 +2967,42 @@
     {
       "away": "Q2052",
       "awayGoals": 1,
+      "date": "1997-05-15",
       "home": "Q1900",
       "homeGoals": 4,
       "key": "it-1996-Q1900-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Oliveira",
+            "minute": "34",
+            "player": "Q723383"
+          }
+        ],
+        "home": [
+          {
+            "display": "Muzzi",
+            "minute": "14",
+            "player": "Q1396445"
+          },
+          {
+            "display": "Darío Silva",
+            "minute": "35",
+            "player": "Q359804"
+          },
+          {
+            "display": "Lønstrup",
+            "minute": "37",
+            "player": "Q3675675"
+          },
+          {
+            "display": "Lønstrup",
+            "minute": "45",
+            "player": "Q3675675"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2976,10 +3048,21 @@
     {
       "away": "Q2693",
       "awayGoals": 1,
+      "date": "1996-10-13",
       "home": "Q1900",
       "homeGoals": 0,
       "key": "it-1996-Q1900-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Chiesa",
+            "minute": "5",
+            "player": "Q345026"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3189,10 +3272,43 @@
     {
       "away": "Q16344",
       "awayGoals": 1,
+      "date": "1996-12-08",
       "home": "Q2052",
       "homeGoals": 4,
       "key": "it-1996-Q2052-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gautieri",
+            "minute": "56",
+            "player": "Q3660370"
+          }
+        ],
+        "home": [
+          {
+            "display": "Batistuta",
+            "minute": "48",
+            "player": "Q170376"
+          },
+          {
+            "display": "Rui Costa",
+            "minute": "62",
+            "player": "Q190608"
+          },
+          {
+            "display": "Oliveira",
+            "minute": "86",
+            "player": "Q723383"
+          },
+          {
+            "display": "Rocco",
+            "minute": "90",
+            "ownGoal": true,
+            "player": "Q1415437"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3255,10 +3371,26 @@
     {
       "away": "Q1900",
       "awayGoals": 0,
+      "date": "1996-12-22",
       "home": "Q2052",
       "homeGoals": 2,
       "key": "it-1996-Q2052-Q1900",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Batistuta",
+            "minute": "65",
+            "player": "Q170376"
+          },
+          {
+            "display": "Robbiati",
+            "minute": "82",
+            "player": "Q569662"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3278,39 +3410,32 @@
     {
       "away": "Q2641",
       "awayGoals": 0,
+      "date": "1997-01-05",
       "home": "Q2052",
       "homeGoals": 3,
       "key": "it-1996-Q2052-Q2641",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Colonnese",
-            "minute": "50",
-            "player": "Q1872532"
-          },
-          {
-            "display": "L. Oliveira",
-            "minute": "54",
-            "player": "Q723383"
-          },
-          {
-            "display": "Robbiati",
-            "minute": "90",
-            "player": "Q569662"
-          }
-        ]
-      },
       "status": "played"
     },
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "1997-03-23",
       "home": "Q2052",
       "homeGoals": 1,
       "key": "it-1996-Q2052-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Thuram",
+            "minute": "34",
+            "ownGoal": true,
+            "player": "Q180326"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3390,44 +3515,89 @@
     {
       "away": "Q289707",
       "awayGoals": 0,
+      "date": "1997-05-25",
       "home": "Q2052",
       "homeGoals": 3,
       "key": "it-1996-Q2052-Q289707",
       "note": null,
-      "status": "played"
-    },
-    {
-      "away": "Q459794",
-      "awayGoals": 1,
-      "home": "Q2052",
-      "homeGoals": 1,
-      "key": "it-1996-Q2052-Q459794",
-      "note": null,
       "scorers": {
-        "away": [
-          {
-            "display": "Luiso",
-            "minute": "64",
-            "player": "Q3367796"
-          }
-        ],
+        "away": [],
         "home": [
           {
+            "display": "Batistuta",
+            "minute": "7",
+            "player": "Q170376"
+          },
+          {
             "display": "Robbiati",
-            "minute": "26",
+            "minute": "18",
             "player": "Q569662"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "62",
+            "player": "Q170376"
           }
         ]
       },
       "status": "played"
     },
     {
+      "away": "Q459794",
+      "awayGoals": 1,
+      "date": "1996-11-24",
+      "home": "Q2052",
+      "homeGoals": 1,
+      "key": "it-1996-Q2052-Q459794",
+      "note": null,
+      "status": "played"
+    },
+    {
       "away": "Q56542463",
       "awayGoals": 4,
+      "date": "1996-09-08",
       "home": "Q2052",
       "homeGoals": 2,
       "key": "it-1996-Q2052-Q56542463",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Otero",
+            "minute": "8",
+            "player": "Q2460347"
+          },
+          {
+            "display": "Otero",
+            "minute": "29",
+            "player": "Q2460347"
+          },
+          {
+            "display": "Otero",
+            "minute": "67",
+            "player": "Q2460347"
+          },
+          {
+            "display": "Otero",
+            "minute": "90",
+            "penalty": true,
+            "player": "Q2460347"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sartor",
+            "minute": "36",
+            "ownGoal": true,
+            "player": "Q1876270"
+          },
+          {
+            "display": "Oliveira",
+            "minute": "80",
+            "player": "Q723383"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3447,10 +3617,27 @@
     {
       "away": "Q8639",
       "awayGoals": 0,
+      "date": "1996-09-22",
       "home": "Q2052",
       "homeGoals": 2,
       "key": "it-1996-Q2052-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Robbiati",
+            "minute": "6",
+            "player": "Q569662"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "49",
+            "penalty": true,
+            "player": "Q170376"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4100,6 +4287,32 @@
       "homeGoals": 2,
       "key": "it-1996-Q2641-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Oliveira",
+            "minute": "8",
+            "player": "Q723383"
+          },
+          {
+            "display": "Oliveira",
+            "minute": "40",
+            "player": "Q723383"
+          }
+        ],
+        "home": [
+          {
+            "display": "Aglietti",
+            "minute": "67",
+            "player": "Q868751"
+          },
+          {
+            "display": "Esposito",
+            "minute": "83",
+            "player": "Q3851021"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4134,7 +4347,7 @@
         "away": [
           {
             "display": "Chiesa",
-            "minute": "32",
+            "minute": "31",
             "player": "Q345026"
           }
         ],
@@ -4396,10 +4609,32 @@
     {
       "away": "Q16344",
       "awayGoals": 2,
+      "date": "1996-10-20",
       "home": "Q2693",
       "homeGoals": 1,
       "key": "it-1996-Q2693-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Giunti",
+            "minute": "22",
+            "player": "Q1378799"
+          },
+          {
+            "display": "Gautieri",
+            "minute": "25",
+            "player": "Q3660370"
+          }
+        ],
+        "home": [
+          {
+            "display": "Chiesa",
+            "minute": "90",
+            "player": "Q345026"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4439,19 +4674,56 @@
     {
       "away": "Q1900",
       "awayGoals": 2,
+      "date": "1997-03-02",
       "home": "Q2693",
       "homeGoals": 3,
       "key": "it-1996-Q2693-Q1900",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Tovalieri",
+            "minute": "73",
+            "player": "Q3948311"
+          },
+          {
+            "display": "Tovalieri",
+            "minute": "89",
+            "player": "Q3948311"
+          }
+        ],
+        "home": [
+          {
+            "display": "Thuram",
+            "minute": "16",
+            "player": "Q180326"
+          },
+          {
+            "display": "Crespo",
+            "minute": "45",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "50",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q2052",
       "awayGoals": 0,
+      "date": "1996-11-03",
       "home": "Q2693",
       "homeGoals": 0,
       "key": "it-1996-Q2693-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4531,36 +4803,55 @@
       "homeGoals": 0,
       "key": "it-1996-Q2693-Q2798",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Pierini",
-            "minute": "67",
-            "player": "Q2291334"
-          },
-          {
-            "display": "Del Piero",
-            "minute": "87",
-            "penalty": true,
-            "player": "Q624"
-          }
-        ],
-        "home": []
-      },
       "status": "played"
     },
     {
       "away": "Q289707",
       "awayGoals": 2,
+      "date": "1996-09-21",
       "home": "Q2693",
       "homeGoals": 3,
       "key": "it-1996-Q2693-Q289707",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sabău",
+            "minute": "25",
+            "player": "Q1334250"
+          },
+          {
+            "display": "Tovalieri",
+            "minute": "58",
+            "player": "Q3948311"
+          }
+        ],
+        "home": [
+          {
+            "display": "Grün",
+            "minute": "10",
+            "ownGoal": true,
+            "player": "Q602873"
+          },
+          {
+            "display": "Chiesa",
+            "minute": "37",
+            "penalty": true,
+            "player": "Q345026"
+          },
+          {
+            "display": "Zola",
+            "minute": "60",
+            "player": "Q9354"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q459794",
       "awayGoals": 0,
+      "date": "1997-02-02",
       "home": "Q2693",
       "homeGoals": 1,
       "key": "it-1996-Q2693-Q459794",
@@ -4580,10 +4871,31 @@
     {
       "away": "Q56542463",
       "awayGoals": 0,
+      "date": "1997-05-11",
       "home": "Q2693",
       "homeGoals": 3,
       "key": "it-1996-Q2693-Q56542463",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "16",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "56",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "60",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4609,10 +4921,21 @@
     {
       "away": "Q8639",
       "awayGoals": 0,
+      "date": "1997-01-19",
       "home": "Q2693",
       "homeGoals": 1,
       "key": "it-1996-Q2693-Q8639",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Stanić",
+            "minute": "68",
+            "player": "Q350452"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5806,10 +6129,15 @@
     {
       "away": "Q2052",
       "awayGoals": 0,
+      "date": "1997-01-12",
       "home": "Q289707",
       "homeGoals": 0,
       "key": "it-1996-Q289707-Q2052",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5866,10 +6194,15 @@
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "1997-02-16",
       "home": "Q289707",
       "homeGoals": 0,
       "key": "it-1996-Q289707-Q2693",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6192,6 +6525,7 @@
     {
       "away": "Q2052",
       "awayGoals": 1,
+      "date": "1997-04-13",
       "home": "Q459794",
       "homeGoals": 1,
       "key": "it-1996-Q459794-Q2052",
@@ -6274,6 +6608,7 @@
     {
       "away": "Q2693",
       "awayGoals": 0,
+      "date": "1996-09-15",
       "home": "Q459794",
       "homeGoals": 0,
       "key": "it-1996-Q459794-Q2693",
@@ -6567,10 +6902,42 @@
     {
       "away": "Q2052",
       "awayGoals": 2,
+      "date": "1997-01-26",
       "home": "Q56542463",
       "homeGoals": 3,
       "key": "it-1996-Q56542463-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Padalino",
+            "minute": "22",
+            "player": "Q3897112"
+          },
+          {
+            "display": "Batistuta",
+            "minute": "65",
+            "player": "Q170376"
+          }
+        ],
+        "home": [
+          {
+            "display": "Otero",
+            "minute": "1",
+            "player": "Q2460347"
+          },
+          {
+            "display": "Murgita",
+            "minute": "37",
+            "player": "Q3436948"
+          },
+          {
+            "display": "Ambrosetti",
+            "minute": "57",
+            "player": "Q980632"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6637,10 +7004,27 @@
     {
       "away": "Q2693",
       "awayGoals": 1,
+      "date": "1996-12-15",
       "home": "Q56542463",
       "homeGoals": 1,
       "key": "it-1996-Q56542463-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Benarrivo",
+            "minute": "72",
+            "player": "Q530759"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maini",
+            "minute": "50",
+            "player": "Q348860"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6983,12 +7367,12 @@
       "scorers": {
         "away": [
           {
-            "display": "Luís Oliveira",
+            "display": "Oliveira",
             "minute": "44",
             "player": "Q723383"
           },
           {
-            "display": "Luís Oliveira",
+            "display": "Oliveira",
             "minute": "64",
             "player": "Q723383"
           }
@@ -7400,10 +7784,33 @@
     {
       "away": "Q2052",
       "awayGoals": 1,
+      "date": "1997-02-16",
       "home": "Q8639",
       "homeGoals": 2,
       "key": "it-1996-Q8639-Q2052",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Batistuta",
+            "minute": "7",
+            "player": "Q170376"
+          }
+        ],
+        "home": [
+          {
+            "display": "Falcone",
+            "minute": "1",
+            "ownGoal": true,
+            "player": "Q742369"
+          },
+          {
+            "display": "Manetti",
+            "minute": "90",
+            "player": "Q3610105"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7461,10 +7868,32 @@
     {
       "away": "Q2693",
       "awayGoals": 2,
+      "date": "1997-06-01",
       "home": "Q8639",
       "homeGoals": 1,
       "key": "it-1996-Q8639-Q2693",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Chiesa",
+            "minute": "17",
+            "player": "Q345026"
+          },
+          {
+            "display": "Crespo",
+            "minute": "63",
+            "player": "Q160206"
+          }
+        ],
+        "home": [
+          {
+            "display": "Orlandini",
+            "minute": "6",
+            "player": "Q1102718"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7739,7 +8168,7 @@
     ],
     "Q16344": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3740398"
       },
       {
@@ -7751,7 +8180,7 @@
         "id": "Q3946132"
       },
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q3660370"
       },
       {
@@ -7768,7 +8197,7 @@
         "id": "Q3762080"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q1378799"
       },
       {
@@ -7782,6 +8211,10 @@
       {
         "goals": 3,
         "id": "Q352297"
+      },
+      {
+        "goals": 1,
+        "id": "Q3938863"
       }
     ],
     "Q1886": [
@@ -7851,7 +8284,7 @@
     ],
     "Q1900": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q359804"
       },
       {
@@ -7859,12 +8292,16 @@
         "id": "Q553175"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1396445"
       },
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q3948311"
+      },
+      {
+        "goals": 2,
+        "id": "Q1044589"
       },
       {
         "goals": 1,
@@ -7880,41 +8317,37 @@
       },
       {
         "goals": 2,
-        "id": "Q1044589"
+        "id": "Q3675675"
       }
     ],
     "Q2052": [
-      {
-        "goals": 1,
-        "id": "Q738873"
-      },
       {
         "goals": 2,
         "id": "Q713354"
       },
       {
-        "goals": 6,
-        "id": "Q170376"
+        "goals": 1,
+        "id": "Q738873"
       },
       {
-        "goals": 4,
+        "goals": 8,
         "id": "Q723383"
       },
       {
-        "goals": 1,
+        "goals": 13,
+        "id": "Q170376"
+      },
+      {
+        "goals": 2,
         "id": "Q3897112"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q190608"
       },
       {
-        "goals": 7,
+        "goals": 9,
         "id": "Q569662"
-      },
-      {
-        "goals": 1,
-        "id": "Q1872532"
       }
     ],
     "Q2609": [
@@ -7970,7 +8403,7 @@
         "id": "Q1087530"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3851021"
       },
       {
@@ -7986,7 +8419,7 @@
         "id": "Q1489495"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q868751"
       },
       {
@@ -8004,11 +8437,11 @@
     ],
     "Q2693": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q9354"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q350452"
       },
       {
@@ -8016,7 +8449,7 @@
         "id": "Q328770"
       },
       {
-        "goals": 5,
+        "goals": 12,
         "id": "Q160206"
       },
       {
@@ -8026,11 +8459,23 @@
       },
       {
         "goals": 1,
+        "id": "Q646043"
+      },
+      {
+        "goals": 1,
         "id": "Q369133"
       },
       {
         "goals": 1,
+        "id": "Q530759"
+      },
+      {
+        "goals": 1,
         "id": "Q3904283"
+      },
+      {
+        "goals": 1,
+        "id": "Q180326"
       },
       {
         "goals": 1,
@@ -8060,10 +8505,6 @@
         "id": "Q1539223"
       },
       {
-        "goals": 2,
-        "id": "Q535027"
-      },
-      {
         "goals": 1,
         "id": "Q460603"
       },
@@ -8078,6 +8519,10 @@
       {
         "goals": 3,
         "id": "Q585252"
+      },
+      {
+        "goals": 2,
+        "id": "Q535027"
       },
       {
         "goals": 1,
@@ -8110,10 +8555,6 @@
         "id": "Q2656692"
       },
       {
-        "goals": 1,
-        "id": "Q624"
-      },
-      {
         "goals": 4,
         "id": "Q1403478"
       },
@@ -8126,7 +8567,7 @@
         "id": "Q152844"
       },
       {
-        "goals": 2,
+        "goals": 1,
         "id": "Q2291334"
       }
     ],
@@ -8138,6 +8579,10 @@
       {
         "goals": 4,
         "id": "Q365208"
+      },
+      {
+        "goals": 1,
+        "id": "Q1334250"
       },
       {
         "goals": 16,
@@ -8198,7 +8643,7 @@
     ],
     "Q56542463": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q980632"
       },
       {
@@ -8206,19 +8651,19 @@
         "id": "Q2832792"
       },
       {
-        "goals": 6,
+        "goals": 11,
         "id": "Q2460347"
+      },
+      {
+        "goals": 4,
+        "id": "Q3436948"
       },
       {
         "goals": 1,
         "id": "Q3737874"
       },
       {
-        "goals": 3,
-        "id": "Q3436948"
-      },
-      {
-        "goals": 4,
+        "goals": 5,
         "id": "Q348860"
       },
       {
@@ -8279,8 +8724,12 @@
         "id": "Q511092"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1102718"
+      },
+      {
+        "goals": 2,
+        "id": "Q3619511"
       },
       {
         "goals": 1,
@@ -8292,11 +8741,11 @@
       },
       {
         "goals": 2,
-        "id": "Q3619511"
+        "id": "Q3876400"
       },
       {
-        "goals": 2,
-        "id": "Q3876400"
+        "goals": 1,
+        "id": "Q3610105"
       }
     ]
   },
