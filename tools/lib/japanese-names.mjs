@@ -27,13 +27,13 @@ export function articleJapaneseName(title, birthYear) {
   return { name: normalizeJapaneseName(raw), reason: null };
 }
 
-const KATAKANA_ONLY = /^[ァ-ヺー＝\s]+$/u;
+const KATAKANA_ONLY = /^[ァ-ヺ・ー＝\s]+$/u;
 const HAS_KANJI = /[\u3400-\u9fff\uf900-\ufaff]/u;
 
 /** Korean/Chinese kanji names are unreadable for the kids: prefer the ja
  * article's own katakana rendering if given (the infobox カタカナ表記 field),
  * else fall back to the Latin name. */
-export function preferKatakanaOrLatin(jaTitle, katakanaField, latin) {
+export function preferKatakanaOrLatin(jaTitle, katakanaField, latin, wikidataLabel = null) {
   const normalizedTitle = jaTitle ? normalizeJapaneseName(jaTitle) : '';
   if (normalizedTitle && KATAKANA_ONLY.test(normalizedTitle)) {
     if (oneWordLatinName(latin, normalizedTitle.split(' '))) return { display: latin, source: 'latin-one-word' };
@@ -41,6 +41,11 @@ export function preferKatakanaOrLatin(jaTitle, katakanaField, latin) {
   }
   if (katakanaField && KATAKANA_ONLY.test(normalizeJapaneseName(katakanaField))) {
     return { display: normalizeJapaneseName(katakanaField), source: 'infobox-katakana' };
+  }
+  const normalizedLabel = wikidataLabel ? normalizeJapaneseName(wikidataLabel) : '';
+  if (normalizedLabel && KATAKANA_ONLY.test(normalizedLabel)) {
+    if (oneWordLatinName(latin, normalizedLabel.split(' '))) return { display: latin, source: 'latin-one-word' };
+    return { display: normalizedLabel, source: 'wikidata-label' };
   }
   return { display: latin, source: 'latin' };
 }

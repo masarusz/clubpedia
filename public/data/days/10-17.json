@@ -25,12 +25,6 @@
       "photo": true
     },
     {
-      "birthYear": 1963,
-      "id": "Q3082250",
-      "name": "Franck Priou",
-      "photo": false
-    },
-    {
       "birthYear": 1983,
       "id": "Q361441",
       "name": "イヴァン サエンコ",
@@ -55,25 +49,64 @@
       "photo": false
     },
     {
-      "birthYear": 1968,
-      "id": "Q981318",
-      "name": "Rodolfo Cardoso",
-      "photo": false
-    },
-    {
       "birthYear": 1989,
       "id": "Q5042026",
       "name": "カルロス エドゥアルド デ オリベイラ アウベス",
       "photo": false
     },
     {
-      "birthYear": 1978,
-      "id": "Q6396785",
-      "name": "Kevin Lisbie",
+      "birthYear": 1984,
+      "id": "Q1154008",
+      "name": "ジョヴァンニ マルケーゼ",
+      "photo": false
+    },
+    {
+      "birthYear": 1989,
+      "id": "Q3018889",
+      "name": "ダビド ティモール",
+      "photo": true
+    },
+    {
+      "birthYear": 1997,
+      "id": "Q19588392",
+      "name": "ヴァーツラフ チェルニー",
       "photo": true
     }
   ],
   "matches": [
+    {
+      "away": "Q702455",
+      "awayName": "RBライプツィヒ",
+      "date": "2026-10-17",
+      "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
+      "key": "de-2026-Q15789-Q702455",
+      "league": "de",
+      "score": "6–1",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q1130849",
+      "awayName": "リヴァプールFC",
+      "date": "2026-10-17",
+      "home": "Q19571",
+      "homeName": "ブレントフォードFC",
+      "key": "en-2026-Q19571-Q1130849",
+      "league": "en",
+      "score": "1–2",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q9653",
+      "awayName": "イプスウィッチ・タウンFC",
+      "date": "2026-10-17",
+      "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
+      "key": "en-2026-Q50602-Q9653",
+      "league": "en",
+      "score": "3–2",
+      "season": "en-2026"
+    },
     {
       "away": "Q19521",
       "awayName": "ASサンテティエンヌ",
@@ -84,17 +117,6 @@
       "league": "fr",
       "score": "5–1",
       "season": "fr-2021"
-    },
-    {
-      "away": "Q1893",
-      "awayName": "ボローニャFC1909",
-      "date": "2021-10-17",
-      "home": "Q2798",
-      "homeName": "ウディネーゼ・カルチョ",
-      "key": "it-2021-Q2798-Q1893",
-      "league": "it",
-      "score": "1–1",
-      "season": "it-2021"
     },
     {
       "away": "Q15789",
@@ -141,17 +163,6 @@
       "season": "fr-2020"
     },
     {
-      "away": "Q102720",
-      "awayName": "ヘルタ・ベルリン",
-      "date": "2015-10-17",
-      "home": "Q32494",
-      "homeName": "シャルケ04",
-      "key": "de-2015-Q32494-Q102720",
-      "league": "de",
-      "score": "2–1",
-      "season": "de-2015"
-    },
-    {
       "away": "Q1543",
       "awayName": "ACミラン",
       "date": "2015-10-17",
@@ -172,17 +183,6 @@
       "league": "it",
       "score": "0–1",
       "season": "it-2010"
-    },
-    {
-      "away": "Q19521",
-      "awayName": "ASサンテティエンヌ",
-      "date": "2004-10-17",
-      "home": "Q132885",
-      "homeName": "オリンピック・マルセイユ",
-      "key": "fr-2004-Q132885-Q19521",
-      "league": "fr",
-      "score": "1–1",
-      "season": "fr-2004"
     },
     {
       "away": "Q1422",

@@ -19,15 +19,15 @@
       "photo": false
     },
     {
-      "birthYear": 2002,
-      "id": "Q66743376",
-      "name": "アンス ファティ",
-      "photo": true
-    },
-    {
       "birthYear": 2000,
       "id": "Q78541955",
       "name": "ゲオルゲス ミカウターゼ",
+      "photo": true
+    },
+    {
+      "birthYear": 2002,
+      "id": "Q66743376",
+      "name": "アンス ファティ",
       "photo": true
     },
     {
@@ -75,26 +75,48 @@
   ],
   "matches": [
     {
-      "away": "Q105861",
-      "awayName": "VfLボーフム",
-      "date": "2021-10-31",
-      "home": "Q101959",
-      "homeName": "ボルシア・メンヒェングラートバッハ",
-      "key": "de-2021-Q101959-Q105861",
+      "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2026-10-31",
+      "home": "Q15789",
+      "homeName": "FCバイエルン・ミュンヘン",
+      "key": "de-2026-Q15789-Q41420",
       "league": "de",
-      "score": "2–1",
-      "season": "de-2021"
+      "score": "2–2",
+      "season": "de-2026"
     },
     {
-      "away": "Q4512",
-      "awayName": "VfBシュトゥットガルト",
-      "date": "2021-10-31",
-      "home": "Q15755",
-      "homeName": "FCアウクスブルク",
-      "key": "de-2021-Q15755-Q4512",
+      "away": "Q702455",
+      "awayName": "RBライプツィヒ",
+      "date": "2026-10-31",
+      "home": "Q32494",
+      "homeName": "シャルケ04",
+      "key": "de-2026-Q32494-Q702455",
       "league": "de",
-      "score": "4–1",
-      "season": "de-2021"
+      "score": "0–2",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q18708",
+      "awayName": "フラムFC",
+      "date": "2026-10-31",
+      "home": "Q18711",
+      "homeName": "アストン・ヴィラFC",
+      "key": "en-2026-Q18711-Q18708",
+      "league": "en",
+      "score": "1–1",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q19453",
+      "awayName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "date": "2026-10-31",
+      "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
+      "key": "en-2026-Q50602-Q19453",
+      "league": "en",
+      "score": "0–1",
+      "season": "en-2026"
     },
     {
       "away": "Q41420",
@@ -141,17 +163,6 @@
       "season": "it-2020"
     },
     {
-      "away": "Q170117",
-      "awayName": "FCインゴルシュタット04",
-      "date": "2015-10-31",
-      "home": "Q32494",
-      "homeName": "シャルケ04",
-      "key": "de-2015-Q32494-Q170117",
-      "league": "de",
-      "score": "1–1",
-      "season": "de-2015"
-    },
-    {
       "away": "Q41420",
       "awayName": "ボルシア・ドルトムント",
       "date": "2015-10-31",
@@ -172,17 +183,6 @@
       "league": "it",
       "score": "1–0",
       "season": "it-2015"
-    },
-    {
-      "away": "Q15755",
-      "awayName": "FCアウクスブルク",
-      "date": "2014-10-31",
-      "home": "Q32494",
-      "homeName": "シャルケ04",
-      "key": "de-2014-Q32494-Q15755",
-      "league": "de",
-      "score": "1–0",
-      "season": "de-2014"
     },
     {
       "away": "Q1457",

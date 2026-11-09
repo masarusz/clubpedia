@@ -2,6 +2,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { extractLinks, findTemplates, parseWikitables, plainText, plausiblePersonTarget, sectionRanges } from './wikitext.mjs';
 import { safeName } from './source-api.mjs';
+import { parseRenderedStandings } from './rendered-standings.mjs';
 
 export const LEAGUE_INFO = Object.freeze({
   en: { name: 'プレミアリーグ', championList: 'List of English football champions', championColumn: 2, first: 1888, scorerList: 'List of English football first tier top scorers' },
@@ -12,7 +13,10 @@ export const LEAGUE_INFO = Object.freeze({
 });
 
 /** Final season start year included in the main five-league data window. */
-export const LAST_SEASON_START_YEAR = 2025;
+export const LAST_SEASON_START_YEAR = 2026;
+
+/** Start year of the season currently being played, or null between seasons. */
+export const IN_PROGRESS_START_YEAR = 2026;
 
 /** First-choice kit colour from a football-club infobox. */
 export function clubKitColour(articleText) {
@@ -56,6 +60,13 @@ function sportsTemplate(text, type) {
   return findTemplates(text).find((template) => pattern.test(template.name));
 }
 
+function sportsTableResultsTemplate(text) {
+  return findTemplates(text).find((template) => (
+    /^#invoke\s*:\s*sports\s+table$/i.test(template.name)
+    && Object.keys(template.params).some((key) => /^match_[^_]+_[^_]+$/i.test(key.trim()))
+  ));
+}
+
 function integer(value, context, { optional = false } = {}) {
   if ((value == null || String(value).trim() === '') && optional) return null;
   const cleaned = plainText(value).replace(/,/g, '').match(/-?\d+/)?.[0];
@@ -66,8 +77,10 @@ function integer(value, context, { optional = false } = {}) {
 function clubCodes(params) {
   const key = Object.keys(params).find((name) => name.toLowerCase() === 'team_order');
   if (key) return params[key].split(',').map((code) => code.trim()).filter(Boolean);
-  return Object.entries(params).filter(([name]) => /^team\d+$/i.test(name))
+  const numbered = Object.entries(params).filter(([name]) => /^team\d+$/i.test(name))
     .sort(([a], [b]) => Number(a.slice(4)) - Number(b.slice(4))).map(([, code]) => code.trim()).filter(Boolean);
+  if (numbered.length) return numbered;
+  return Object.keys(params).map((name) => name.trim().match(/^name_(.+)$/i)?.[1]).filter(Boolean);
 }
 
 function param(params, wanted) {
@@ -95,29 +108,51 @@ const KNOWN_TABLE_EXACT = new Set([
 ]);
 const KNOWN_TABLE_PREFIX = /^(?:team\d+|name_.+|win_.+|draw_.+|loss_.+|gf_.+|ga_.+|adjust_points_.+|pts_.+|pos_.+|status_.+|result_?.+|note_.+|col_.+|text_.+|hth_.+|head_to_head_.+|showteam_.+|show_limit_.+|source_.+)$/i;
 
-export function parseSeason({ league, year, sources, metadata }) {
+export function parseSeason({ league, year, sources, metadata, renderedStandings = null }) {
   const table = sources.map((source) => sportsTemplate(source.content, 'table')).find(Boolean);
-  const results = sources.map((source) => sportsTemplate(source.content, 'results')).find(Boolean);
+  // Preserve the established results parser whenever both source forms exist.
+  const results = sources.map((source) => sportsTemplate(source.content, 'results')).find(Boolean)
+    ?? sources.map((source) => sportsTableResultsTemplate(source.content)).find(Boolean);
   const seasonId = `${league}-${year}`;
   if (!table) throw new Error(`${seasonId}: sports table not found`);
   if (!results) throw new Error(`${seasonId}: sports results not found`);
   const codes = clubCodes(table.params);
   if (!codes.length) throw new Error(`${seasonId}: table has no team order`);
   const seenIds = new Set();
-  const rows = codes.map((code, index) => {
+  const pointSystem = {
+    win: integer(param(table.params, 'win_points') ?? param(table.params, 'winpoints'), `${seasonId} win_points`, { optional: true }) ?? 3,
+    draw: integer(param(table.params, 'draw_points') ?? param(table.params, 'drawpoints'), `${seasonId} draw_points`, { optional: true }) ?? 1,
+    loss: integer(param(table.params, 'loss_points') ?? param(table.params, 'losspoints'), `${seasonId} loss_points`, { optional: true }) ?? 0,
+  };
+  const sourceClubs = codes.map((code) => {
     const rawName = param(table.params, `name_${code}`);
     const link = extractLinks(rawName ?? '')[0];
     if (!link) throw new Error(`${seasonId}: table code ${code} has no linked name`);
     const meta = resolveClub(metadata, link.target, `${seasonId} table ${code}`);
+    return { code, rawName, link, meta };
+  });
+  const rows = renderedStandings ? parseRenderedStandings(renderedStandings, {
+    context: seasonId, expectedClubs: codes.length, pointSystem,
+  }).map((rendered) => {
+    const meta = resolveClub(metadata, rendered.teamTitle, `${seasonId} rendered table`);
+    const source = sourceClubs.find((item) => item.meta.wikibaseItem === meta.wikibaseItem);
+    if (!source) throw new Error(`${seasonId}: rendered club ${rendered.teamTitle} is absent from wikitext table`);
+    if (seenIds.has(meta.wikibaseItem)) throw new Error(`${seasonId}: duplicate club id ${meta.wikibaseItem}`);
+    seenIds.add(meta.wikibaseItem);
+    return {
+      position: rendered.position, club: meta.wikibaseItem, sourceTitle: meta.title, sourceTarget: rendered.teamTitle,
+      sourceName: rendered.teamName, w: rendered.w, d: rendered.d, l: rendered.l, gf: rendered.gf, ga: rendered.ga,
+      points: rendered.points, adjustment: rendered.adjustment, adjustmentReason: rendered.adjustmentReason,
+      status: param(table.params, `status_${source.code}`) ?? null,
+      result: resultLabel(table.params, rendered.position, source.code), code: source.code,
+    };
+  }) : sourceClubs.map(({ code, rawName, link, meta }, index) => {
     if (seenIds.has(meta.wikibaseItem)) throw new Error(`${seasonId}: duplicate club id ${meta.wikibaseItem}`);
     seenIds.add(meta.wikibaseItem);
     const adjustment = integer(param(table.params, `adjust_points_${code}`), `${seasonId} ${code} adjustment`, { optional: true }) ?? 0;
     const w = integer(param(table.params, `win_${code}`), `${seasonId} ${code} wins`);
     const d = integer(param(table.params, `draw_${code}`), `${seasonId} ${code} draws`);
     const l = integer(param(table.params, `loss_${code}`), `${seasonId} ${code} losses`);
-    const winPoints = integer(param(table.params, 'win_points') ?? param(table.params, 'winpoints'), `${seasonId} win_points`, { optional: true }) ?? 3;
-    const drawPoints = integer(param(table.params, 'draw_points') ?? param(table.params, 'drawpoints'), `${seasonId} draw_points`, { optional: true }) ?? 1;
-    const lossPoints = integer(param(table.params, 'loss_points') ?? param(table.params, 'losspoints'), `${seasonId} loss_points`, { optional: true }) ?? 0;
     const override = integer(param(table.params, `pts_${code}`), `${seasonId} ${code} points`, { optional: true });
     const reason = adjustment ? tableNote(table.params, code) : '';
     if (adjustment && !reason) throw new Error(`${seasonId} ${code}: adjustment ${adjustment} has no note`);
@@ -125,7 +160,7 @@ export function parseSeason({ league, year, sources, metadata }) {
       position: index + 1, club: meta.wikibaseItem, sourceTitle: meta.title, sourceTarget: link.target, sourceName: link.label || plainText(rawName),
       w, d, l, gf: integer(param(table.params, `gf_${code}`), `${seasonId} ${code} GF`),
       ga: integer(param(table.params, `ga_${code}`), `${seasonId} ${code} GA`),
-      points: override ?? winPoints * w + drawPoints * d + lossPoints * l + adjustment,
+      points: override ?? pointSystem.win * w + pointSystem.draw * d + pointSystem.loss * l + adjustment,
       adjustment, adjustmentReason: reason || null, status: param(table.params, `status_${code}`) ?? null,
       result: resultLabel(table.params, index + 1, code), code,
     };
@@ -167,6 +202,7 @@ export function parseSeason({ league, year, sources, metadata }) {
     const home = gridToId.get(homeCode);
     const away = gridToId.get(awayCode);
     if (!score) {
+      if (display === 'a' && year === IN_PROGRESS_START_YEAR) continue;
       if (home && away && seasonId === 'fr-1992' && home === resolveClub(metadata, 'Valenciennes FC', seasonId).wikibaseItem && away === resolveClub(metadata, 'Olympique de Marseille', seasonId).wikibaseItem) {
         matches.push({ key: `${seasonId}-${home}-${away}`, home, away, homeGoals: 0, awayGoals: 0, status: 'double-defeat', note: note || null, gridValue: null });
       } else if (String(rawValue).trim() && !/^(?:null|[\d]{1,2}\s+\w+)$/i.test(plainText(rawValue))) {
@@ -181,11 +217,7 @@ export function parseSeason({ league, year, sources, metadata }) {
   const unknown = Object.keys(table.params).filter((key) => !KNOWN_TABLE_EXACT.has(key.toLowerCase()) && !KNOWN_TABLE_PREFIX.test(key)).sort();
   return {
     id: seasonId, league, year, table: rows, matches, unknownTableParameters: unknown,
-    pointSystem: {
-      win: integer(param(table.params, 'win_points') ?? param(table.params, 'winpoints'), `${seasonId} win_points`, { optional: true }) ?? 3,
-      draw: integer(param(table.params, 'draw_points') ?? param(table.params, 'drawpoints'), `${seasonId} draw_points`, { optional: true }) ?? 1,
-      loss: integer(param(table.params, 'loss_points') ?? param(table.params, 'losspoints'), `${seasonId} loss_points`, { optional: true }) ?? 0,
-    },
+    pointSystem,
   };
 }
 
@@ -221,6 +253,25 @@ export function discrepancies(season) {
     const delta = Object.fromEntries(STAT_KEYS.map((key) => [key, row[key] - actual[key]]));
     return STAT_KEYS.some((key) => delta[key]) ? [{ club: row.club, sourceTitle: row.sourceTitle, table: Object.fromEntries(STAT_KEYS.map((key) => [key, row[key]])), results: actual, delta }] : [];
   });
+}
+
+/**
+ * In-progress tables can be behind the results grid. A lag is safe only when
+ * every table played count is no greater than the grid count. Once all counts
+ * are level, the normal exact W/D/L/GF/GA invariant applies again.
+ */
+export function inProgressReconciliation(season) {
+  const computed = matchStats(season);
+  const counts = season.table.map((row) => ({
+    club: row.club,
+    table: row.w + row.d + row.l,
+    results: computed.get(row.club).w + computed.get(row.club).d + computed.get(row.club).l,
+  }));
+  const ahead = counts.filter((item) => item.table > item.results);
+  if (ahead.length) return { valid: false, lagging: false, ahead, differences: discrepancies(season) };
+  const lagging = counts.some((item) => item.table < item.results);
+  const differences = lagging ? [] : discrepancies(season);
+  return { valid: differences.length === 0, lagging, ahead: [], differences };
 }
 
 function outcome(homeGoals, awayGoals, special = false) {

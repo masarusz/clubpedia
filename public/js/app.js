@@ -1,10 +1,10 @@
-import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadOpenLigaPlayers, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=1.0.1';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=1.0.1';
-import { backDecision } from './navigation.js?v=1.0.1';
-import { prepareIndex } from './search.js?v=1.0.1';
-import { STRINGS } from './strings.js?v=1.0.1';
-import { VERSION } from './version.js?v=1.0.1';
-import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=1.0.1';
+import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadOpenLigaPlayers, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=1.1.0';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=1.1.0';
+import { backDecision } from './navigation.js?v=1.1.0';
+import { prepareIndex } from './search.js?v=1.1.0';
+import { STRINGS } from './strings.js?v=1.1.0';
+import { VERSION } from './version.js?v=1.1.0';
+import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=1.1.0';
 
 const root = document.querySelector('#app');
 
@@ -120,12 +120,12 @@ async function japanRoute() {
 }
 
 async function meikanRoute(league, year, clubId) {
-  const [season, names] = await Promise.all([loadSeason(league, year), loadNames()]);
+  const [season, names, index] = await Promise.all([loadSeason(league, year), loadNames(), loadIndex()]);
   const clubIds = Object.keys(season.players ?? {}).sort((a, b) => (names[a]?.name ?? a).localeCompare(names[b]?.name ?? b, 'ja'));
   const selected = clubId && clubIds.includes(clubId) ? clubId : clubIds[0];
   const entries = selected ? season.players[selected] ?? [] : [];
   const players = await loadPlayers(entries.map((entry) => entry.id));
-  return meikanView(season, names, players, selected);
+  return meikanView(season, names, players, selected, index);
 }
 
 async function meikanEntryRoute(league = null) {

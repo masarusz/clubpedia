@@ -8,6 +8,8 @@ import { register as dataTests } from './data.test.mjs';
 import { register as uiTests } from './ui.test.mjs';
 import { register as serveTests } from './serve.test.mjs';
 import { register as lazykidTests } from './lazykid.test.mjs';
+import { register as guardTests } from './guard.test.mjs';
+import { register as phase2eTests } from './phase2e.test.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // A failed preflight aborts the suite before any assertion can inspect stale
@@ -26,9 +28,11 @@ const deepEqual = (actual, expected, context = '') => {
 
 fetchTests(test, equal, deepEqual);
 dataTests(test, equal, deepEqual);
+phase2eTests(test, equal, deepEqual);
 uiTests(test, equal, deepEqual);
 serveTests(test, equal, deepEqual);
 lazykidTests(test, equal);
+guardTests(test, equal, deepEqual);
 mutationTests(test, equal);
 
 let passed = 0;

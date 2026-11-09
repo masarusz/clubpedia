@@ -37,6 +37,12 @@
       "photo": true
     },
     {
+      "birthYear": 2003,
+      "id": "Q111584129",
+      "name": "エルネスト ヌアマ",
+      "photo": true
+    },
+    {
       "birthYear": 1997,
       "id": "Q47510195",
       "name": "エルヴィス レジュベツァイ",
@@ -61,12 +67,6 @@
       "photo": true
     },
     {
-      "birthYear": 2003,
-      "id": "Q111584129",
-      "name": "エルネスト ヌアマ",
-      "photo": true
-    },
-    {
       "birthYear": 1990,
       "id": "Q969529",
       "name": "セバスティアン コルシア",
@@ -74,6 +74,39 @@
     }
   ],
   "matches": [
+    {
+      "away": "Q9617",
+      "awayName": "アーセナルFC",
+      "date": "2026-11-01",
+      "home": "Q1130849",
+      "homeName": "リヴァプールFC",
+      "key": "en-2026-Q1130849-Q9617",
+      "league": "en",
+      "score": "0–1",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q10315",
+      "awayName": "レアル・ソシエダ",
+      "date": "2026-11-01",
+      "home": "Q8687",
+      "homeName": "アスレティック・ビルバオ",
+      "key": "es-2026-Q8687-Q10315",
+      "league": "es",
+      "score": "2–1",
+      "season": "es-2026"
+    },
+    {
+      "away": "Q180305",
+      "awayName": "ASモナコ",
+      "date": "2026-11-01",
+      "home": "Q1051013",
+      "homeName": "パリFC",
+      "key": "fr-2026-Q1051013-Q180305",
+      "league": "fr",
+      "score": "3–1",
+      "season": "fr-2026"
+    },
     {
       "away": "Q104761",
       "awayName": "バイエル・レバークーゼン",
@@ -97,28 +130,6 @@
       "season": "en-2025"
     },
     {
-      "away": "Q8687",
-      "awayName": "アスレティック・ビルバオ",
-      "date": "2025-11-01",
-      "home": "Q10315",
-      "homeName": "レアル・ソシエダ",
-      "key": "es-2025-Q10315-Q8687",
-      "league": "es",
-      "score": "3–2",
-      "season": "es-2025"
-    },
-    {
-      "away": "Q1051013",
-      "awayName": "パリFC",
-      "date": "2025-11-01",
-      "home": "Q180305",
-      "homeName": "ASモナコ",
-      "key": "fr-2025-Q180305-Q1051013",
-      "league": "fr",
-      "score": "0–1",
-      "season": "fr-2025"
-    },
-    {
       "away": "Q132885",
       "awayName": "オリンピック・マルセイユ",
       "date": "2025-11-01",
@@ -128,17 +139,6 @@
       "league": "fr",
       "score": "0–1",
       "season": "fr-2025"
-    },
-    {
-      "away": "Q845137",
-      "awayName": "アンジェSCO",
-      "date": "2024-11-01",
-      "home": "Q180305",
-      "homeName": "ASモナコ",
-      "key": "fr-2024-Q180305-Q845137",
-      "league": "fr",
-      "score": "0–1",
-      "season": "fr-2024"
     },
     {
       "away": "Q2074",

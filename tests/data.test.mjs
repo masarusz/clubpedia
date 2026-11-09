@@ -24,15 +24,19 @@ async function treeDigest(root) {
 }
 
 export function register(test, equal, deepEqual) {
-  let index; let clubs; let metadata;
+  let index; let completedSeasons; let inProgressSeasons; let clubs; let metadata;
   test('suite preflight produced a complete fresh build', async () => {
     index = JSON.parse(await readFile(join(DATA, 'index.json'), 'utf8'));
-    equal(index.seasons.length, 170);
+    completedSeasons = index.seasons.filter((season) => season.inProgress !== true);
+    inProgressSeasons = index.seasons.filter((season) => season.inProgress === true);
+    equal(completedSeasons.length, 170, 'completed seasons');
+    equal(inProgressSeasons.length, 5, 'in-progress seasons');
+    deepEqual(inProgressSeasons.map((season) => season.id).sort(), ['de-2026', 'en-2026', 'es-2026', 'fr-2026', 'it-2026']);
     clubs = JSON.parse(await readFile(join(ROOT, 'curated/clubs.json'), 'utf8'));
     metadata = await metadataIndex(CACHE);
   });
   test('all 170 golden season facts match official tables and source-score counts', async () => {
-    equal(index.seasons.length, GOLDEN.seasonCount);
+    equal(completedSeasons.length, GOLDEN.seasonCount);
     for (const [id, fact] of Object.entries(GOLDEN.seasons)) {
       const season = JSON.parse(await readFile(join(DATA, 's', `${id}.json`), 'utf8'));
       equal(season.table.length, fact.clubs, `${id} clubs`);
@@ -160,13 +164,22 @@ export function register(test, equal, deepEqual) {
   });
   test('top-scorer clubs resolve wherever a single season club is stated', async () => {
     let total = 0; let missing = 0;
-    for (const summary of index.seasons) {
+    for (const summary of completedSeasons) {
       const season = JSON.parse(await readFile(join(DATA, 's', `${summary.id}.json`), 'utf8'));
       total += season.topScorers.length;
       missing += season.topScorers.filter((entry) => entry.club == null).length;
     }
     equal(total, 1700);
     equal(missing, 0);
+
+    let currentTotal = 0; let currentMissing = 0;
+    for (const summary of inProgressSeasons) {
+      const season = JSON.parse(await readFile(join(DATA, 's', `${summary.id}.json`), 'utf8'));
+      currentTotal += season.topScorers.length;
+      currentMissing += season.topScorers.filter((entry) => entry.club == null).length;
+    }
+    equal(currentTotal, 65, 'pinned in-progress top-scorer entries');
+    equal(currentMissing, 0, 'in-progress top-scorer clubs');
   });
   test('home index stays below 40 KB and history is split by league', async () => {
     equal((await readFile(join(DATA, 'index.json'))).length <= 40 * 1024, true);

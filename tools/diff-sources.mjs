@@ -2,6 +2,7 @@
 import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { stableJson } from './lib/source-api.mjs';
+import { LAST_SEASON_START_YEAR } from './lib/core-data.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DATA = join(ROOT, 'public/data/s');
@@ -37,7 +38,8 @@ for (let year = 2010; year <= 2023; year += 1) for (const league of Object.keys(
   const actual = aggregate(matches); const expected = tableMultiset(season);
   if (!same(actual, expected)) lines.push(`openfootball ${league}-${year}: DIFFERENT clubs=${actual.length}/${expected.length}, played=${matches.length}`);
 }
-for (let year = 2008; year <= 2025; year += 1) {
+for (let year = 2008; year <= LAST_SEASON_START_YEAR; year += 1) {
+  if (!(await exists(join(CACHE, 'openligadb', `bl1-${year}.json`))) || !(await exists(join(DATA, `de-${year}.json`)))) continue;
   const source = JSON.parse(await readFile(join(CACHE, 'openligadb', `bl1-${year}.json`), 'utf8'));
   const season = JSON.parse(await readFile(join(DATA, `de-${year}.json`), 'utf8'));
   const matches = source.filter((match) => match.matchIsFinished).flatMap((match) => {

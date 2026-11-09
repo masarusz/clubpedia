@@ -130,6 +130,7 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
   const ageAnomalies = [];
   const japaneseMissingSeasons = [];
   const japaneseUnmappedClubs = [];
+  const staleJapaneseExceptions = [];
 
   function ensure(id, enTitle) {
     let player = players.get(id);
@@ -241,6 +242,9 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
 
   for (const exception of japaneseExceptions) if (!exception.player || !exception.reason) throw new Error('Every Japanese-player exception needs player and reason');
   const unexceptedJapanese = japaneseMissingSeasons.filter((item) => !japaneseExceptions.some((exception) => exception.player === item.player || exception.en === item.en));
+  for (const exception of japaneseExceptions) {
+    if (!japaneseMissingSeasons.some((item) => exception.player === item.player || exception.en === item.en)) staleJapaneseExceptions.push(exception);
+  }
   if (unexceptedJapanese.length) throw new Error(`Japanese players without a five-league top-flight season:\n${unexceptedJapanese.map((item) => JSON.stringify(item)).join('\n')}`);
   if (japaneseUnmappedClubs.length) throw new Error(`Japanese top-flight seasons with unmapped clubs:\n${japaneseUnmappedClubs.map((item) => JSON.stringify(item)).join('\n')}`);
 
@@ -280,11 +284,12 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
       else player.ja = { mode: 'latin', display: latinName };
     } else {
       const cleaned = cleanJaTitle(jaTitleRaw);
-      const preferred = preferKatakanaOrLatin(cleaned, null, latinName);
-      player.ja = { mode: preferred.source === 'latin' ? 'latin' : 'katakana', display: preferred.display };
+      const wikidataLabel = entity?.labels?.ja?.value ?? null;
+      const preferred = preferKatakanaOrLatin(cleaned, null, latinName, wikidataLabel);
+      player.ja = { mode: preferred.source.startsWith('latin') ? 'latin' : 'katakana', display: preferred.display, source: preferred.source };
     }
     player.en = latinName;
   }
 
-  return { players, ageAnomalies, readingsMissing, japaneseMissingSeasons, japaneseUnmappedClubs };
+  return { players, ageAnomalies, readingsMissing, japaneseMissingSeasons, japaneseUnmappedClubs, staleJapaneseExceptions };
 }

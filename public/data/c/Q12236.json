@@ -4,9 +4,9 @@
   "headToHead": {
     "Q10286": {
       "d": 8,
-      "ga": 24,
+      "ga": 26,
       "gf": 33,
-      "l": 5,
+      "l": 6,
       "matches": [
         {
           "date": null,
@@ -127,17 +127,22 @@
           "date": null,
           "key": "es-2011-Q12236-Q10286",
           "score": "2–4"
+        },
+        {
+          "date": "2026-10-18",
+          "key": "es-2026-Q10286-Q12236",
+          "score": "2–0"
         }
       ],
-      "outcomes": "dwddllwdlddwwwwwwdwdlwwl",
-      "p": 24,
+      "outcomes": "dwddllwdlddwwwwwwdwdlwwll",
+      "p": 25,
       "w": 11
     },
     "Q10300": {
       "d": 5,
-      "ga": 21,
-      "gf": 17,
-      "l": 5,
+      "ga": 24,
+      "gf": 19,
+      "l": 6,
       "matches": [
         {
           "date": "1994-01-22",
@@ -208,10 +213,15 @@
           "date": "2011-10-01",
           "key": "es-2011-Q12236-Q10300",
           "score": "1–1"
+        },
+        {
+          "date": "2026-09-05",
+          "key": "es-2026-Q10300-Q12236",
+          "score": "3–2"
         }
       ],
-      "outcomes": "dwwldlwdldlwld",
-      "p": 14,
+      "outcomes": "dwwldlwdldlwldl",
+      "p": 15,
       "w": 4
     },
     "Q10308": {
@@ -849,9 +859,9 @@
       "w": 7
     },
     "Q10333": {
-      "d": 8,
-      "ga": 53,
-      "gf": 41,
+      "d": 9,
+      "ga": 55,
+      "gf": 43,
       "l": 15,
       "matches": [
         {
@@ -1033,10 +1043,15 @@
           "date": "2012-01-29",
           "key": "es-2011-Q12236-Q10333",
           "score": "2–2"
+        },
+        {
+          "date": "2026-10-11",
+          "key": "es-2026-Q12236-Q10333",
+          "score": "2–2"
         }
       ],
-      "outcomes": "lldwlldwlwllwdldlwwllwdwwwwwwldlldld",
-      "p": 36,
+      "outcomes": "lldwlldwlwllwdldlwwllwdwwwwwwldlldldd",
+      "p": 37,
       "w": 13
     },
     "Q10407": {
@@ -1089,6 +1104,22 @@
       "outcomes": "wwdldldw",
       "p": 8,
       "w": 3
+    },
+    "Q10512": {
+      "d": 0,
+      "ga": 2,
+      "gf": 3,
+      "l": 0,
+      "matches": [
+        {
+          "date": "2026-08-28",
+          "key": "es-2026-Q12236-Q10512",
+          "score": "3–2"
+        }
+      ],
+      "outcomes": "w",
+      "p": 1,
+      "w": 1
     },
     "Q11963": {
       "d": 1,
@@ -1377,9 +1408,9 @@
       "w": 10
     },
     "Q12297": {
-      "d": 6,
-      "ga": 41,
-      "gf": 25,
+      "d": 7,
+      "ga": 43,
+      "gf": 27,
       "l": 13,
       "matches": [
         {
@@ -1501,10 +1532,15 @@
           "date": "2012-04-15",
           "key": "es-2011-Q12297-Q12236",
           "score": "1–1"
+        },
+        {
+          "date": "2026-08-16",
+          "key": "es-2026-Q12236-Q12297",
+          "score": "2–2"
         }
       ],
-      "outcomes": "llwldwlldlwlwllddllldlwd",
-      "p": 24,
+      "outcomes": "llwldwlldlwlwllddllldlwdd",
+      "p": 25,
       "w": 5
     },
     "Q12308": {
@@ -1611,8 +1647,8 @@
     },
     "Q223620": {
       "d": 2,
-      "ga": 12,
-      "gf": 13,
+      "ga": 13,
+      "gf": 15,
       "l": 3,
       "matches": [
         {
@@ -1664,11 +1700,16 @@
           "date": null,
           "key": "es-2005-Q223620-Q12236",
           "score": "2–2"
+        },
+        {
+          "date": "2026-09-12",
+          "key": "es-2026-Q12236-Q223620",
+          "score": "2–1"
         }
       ],
-      "outcomes": "wwdlwlwwld",
-      "p": 10,
-      "w": 5
+      "outcomes": "wwdlwlwwldw",
+      "p": 11,
+      "w": 6
     },
     "Q257984": {
       "d": 1,
@@ -1948,9 +1989,9 @@
     },
     "Q7156": {
       "d": 9,
-      "ga": 71,
-      "gf": 32,
-      "l": 24,
+      "ga": 78,
+      "gf": 34,
+      "l": 25,
       "matches": [
         {
           "date": "1994-03-19",
@@ -2131,10 +2172,15 @@
           "date": "2011-10-15",
           "key": "es-2011-Q7156-Q12236",
           "score": "3–0"
+        },
+        {
+          "date": "2026-09-16",
+          "key": "es-2026-Q7156-Q12236",
+          "score": "7–2"
         }
       ],
-      "outcomes": "dlwldddllldlllwldlwllldllldlldllllll",
-      "p": 36,
+      "outcomes": "dlwldddllldlllwldlwllldllldlldlllllll",
+      "p": 37,
       "w": 3
     },
     "Q732742": {
@@ -2222,9 +2268,9 @@
     },
     "Q8682": {
       "d": 7,
-      "ga": 75,
+      "ga": 78,
       "gf": 41,
-      "l": 22,
+      "l": 23,
       "matches": [
         {
           "date": "1994-02-22",
@@ -2405,10 +2451,15 @@
           "date": "2012-02-18",
           "key": "es-2011-Q8682-Q12236",
           "score": "4–0"
+        },
+        {
+          "date": "2026-11-01",
+          "key": "es-2026-Q12236-Q8682",
+          "score": "0–3"
         }
       ],
-      "outcomes": "llwlwwdlldlddwdlwldllllwwllllllllldl",
-      "p": 36,
+      "outcomes": "llwlwwdlldlddwdlwldllllwwllllllllldll",
+      "p": 37,
       "w": 7
     },
     "Q8687": {
@@ -2936,9 +2987,9 @@
     },
     "Q8749": {
       "d": 9,
-      "ga": 25,
+      "ga": 30,
       "gf": 36,
-      "l": 4,
+      "l": 5,
       "matches": [
         {
           "date": "1994-02-13",
@@ -3059,10 +3110,15 @@
           "date": "2007-02-25",
           "key": "es-2006-Q8749-Q12236",
           "score": "2–2"
+        },
+        {
+          "date": "2026-09-19",
+          "key": "es-2026-Q8749-Q12236",
+          "score": "5–0"
         }
       ],
-      "outcomes": "wdwlwdwdwwdlwlwdwddwlwdd",
-      "p": 24,
+      "outcomes": "wdwlwdwdwwdlwlwdwddwlwddl",
+      "p": 25,
       "w": 11
     },
     "Q8760": {
@@ -3248,8 +3304,8 @@
     },
     "Q8780": {
       "d": 12,
-      "ga": 39,
-      "gf": 38,
+      "ga": 40,
+      "gf": 40,
       "l": 13,
       "matches": [
         {
@@ -3421,17 +3477,22 @@
           "date": "2012-03-19",
           "key": "es-2011-Q8780-Q12236",
           "score": "3–1"
+        },
+        {
+          "date": "2026-10-24",
+          "key": "es-2026-Q12236-Q8780",
+          "score": "2–1"
         }
       ],
-      "outcomes": "dldlddddlddlllwllwllwwdddwwlwwdwll",
-      "p": 34,
-      "w": 9
+      "outcomes": "dldlddddlddlllwllwllwwdddwwlwwdwllw",
+      "p": 35,
+      "w": 10
     },
     "Q8806": {
       "d": 3,
-      "ga": 19,
+      "ga": 20,
       "gf": 15,
-      "l": 7,
+      "l": 8,
       "matches": [
         {
           "date": null,
@@ -3512,10 +3573,15 @@
           "date": "2012-05-01",
           "key": "es-2011-Q8806-Q12236",
           "score": "1–1"
+        },
+        {
+          "date": "2026-08-23",
+          "key": "es-2026-Q8806-Q12236",
+          "score": "1–0"
         }
       ],
-      "outcomes": "wllwwlwldwldlwld",
-      "p": 16,
+      "outcomes": "wllwwlwldwldlwldl",
+      "p": 17,
       "w": 6
     },
     "Q8812": {
@@ -3753,8 +3819,8 @@
     },
     "Q8857": {
       "d": 4,
-      "ga": 35,
-      "gf": 22,
+      "ga": 36,
+      "gf": 24,
       "l": 11,
       "matches": [
         {
@@ -3856,11 +3922,16 @@
           "date": "2012-04-09",
           "key": "es-2011-Q8857-Q12236",
           "score": "3–0"
+        },
+        {
+          "date": "2026-11-07",
+          "key": "es-2026-Q8857-Q12236",
+          "score": "1–2"
         }
       ],
-      "outcomes": "ldllwdwlwldwdllwllll",
-      "p": 20,
-      "w": 5
+      "outcomes": "ldllwdwlwldwdllwllllw",
+      "p": 21,
+      "w": 6
     },
     "Q929753": {
       "d": 4,
@@ -3915,6 +3986,7 @@
     }
   },
   "id": "Q12236",
+  "inProgress": true,
   "leagues": [
     "es"
   ],
@@ -3924,6 +3996,12 @@
     "ja": "ラシン・サンタンデール"
   },
   "positions": [
+    {
+      "asOf": "2026-11-08",
+      "inProgress": true,
+      "position": 10,
+      "season": "es-2026"
+    },
     {
       "position": 20,
       "season": "es-2011"
@@ -4006,6 +4084,11 @@
     },
     {
       "goals": 9,
+      "name": "ヤシル ザビリ",
+      "player": "Q130301496"
+    },
+    {
+      "goals": 9,
       "name": "モハメド チテ",
       "player": "Q277801"
     },
@@ -4053,6 +4136,11 @@
       "goals": 4,
       "name": "Ángel Vivar Dorado",
       "player": "Q1379036"
+    },
+    {
+      "goals": 4,
+      "name": "セルヒオ カナレス",
+      "player": "Q19422"
     },
     {
       "goals": 4,
@@ -4116,11 +4204,6 @@
     },
     {
       "goals": 2,
-      "name": "セルヒオ カナレス",
-      "player": "Q19422"
-    },
-    {
-      "goals": 2,
       "name": "ガブリエル シュレール",
       "player": "Q2535937"
     },
@@ -4141,7 +4224,7 @@
     },
     {
       "goals": 2,
-      "name": "Javier Mazzoni",
+      "name": "ハビエル マッツォーニ",
       "player": "Q3163159"
     },
     {
@@ -4186,8 +4269,18 @@
     },
     {
       "goals": 1,
+      "name": "ジャニュエル ベロシアン",
+      "player": "Q111308976"
+    },
+    {
+      "goals": 1,
       "name": "Chili",
       "player": "Q118918040"
+    },
+    {
+      "goals": 1,
+      "name": "Maguette Gueye",
+      "player": "Q123312727"
     },
     {
       "goals": 1,
@@ -4196,12 +4289,22 @@
     },
     {
       "goals": 1,
+      "name": "Pablo García",
+      "player": "Q131905115"
+    },
+    {
+      "goals": 1,
       "name": "アルバロ ゴンサレス",
       "player": "Q1380874"
     },
     {
       "goals": 1,
-      "name": "Juanma",
+      "name": "Iker Luque",
+      "player": "Q139666472"
+    },
+    {
+      "goals": 1,
+      "name": "フアンマ",
       "player": "Q2327879"
     },
     {
@@ -4283,6 +4386,16 @@
       "goals": 1,
       "name": "ビクトル サンチェス デル アモ",
       "player": "Q545968"
+    },
+    {
+      "goals": 1,
+      "name": "アンドレス マルティン ガルシア",
+      "player": "Q56599951"
+    },
+    {
+      "goals": 1,
+      "name": "イバン マルティン",
+      "player": "Q60667184"
     },
     {
       "goals": 1,

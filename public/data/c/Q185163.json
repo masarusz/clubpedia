@@ -21,9 +21,9 @@
   "headToHead": {
     "Q1051013": {
       "d": 1,
-      "ga": 2,
+      "ga": 5,
       "gf": 1,
-      "l": 1,
+      "l": 2,
       "matches": [
         {
           "date": "2026-03-01",
@@ -34,10 +34,15 @@
           "date": "2025-09-28",
           "key": "fr-2025-Q185163-Q1051013",
           "score": "1–1"
+        },
+        {
+          "date": "2026-08-30",
+          "key": "fr-2026-Q1051013-Q185163",
+          "score": "3–0"
         }
       ],
-      "outcomes": "ld",
-      "p": 2,
+      "outcomes": "ldl",
+      "p": 3,
       "w": 0
     },
     "Q1132418": {
@@ -73,8 +78,8 @@
     },
     "Q126334": {
       "d": 13,
-      "ga": 42,
-      "gf": 39,
+      "ga": 43,
+      "gf": 41,
       "l": 11,
       "matches": [
         {
@@ -241,11 +246,16 @@
           "date": "2026-01-03",
           "key": "fr-2025-Q185163-Q126334",
           "score": "1–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q126334",
+          "score": "2–1"
         }
       ],
-      "outcomes": "llddlddwddlddwwwdllwlwldlldwwdwld",
-      "p": 33,
-      "w": 9
+      "outcomes": "llddlddwddlddwwwdllwlwldlldwwdwldw",
+      "p": 34,
+      "w": 10
     },
     "Q132885": {
       "d": 9,
@@ -1007,9 +1017,9 @@
     },
     "Q182876": {
       "d": 6,
-      "ga": 42,
+      "ga": 43,
       "gf": 30,
-      "l": 16,
+      "l": 17,
       "matches": [
         {
           "date": null,
@@ -1170,10 +1180,15 @@
           "date": null,
           "key": "fr-2025-Q185163-Q182876",
           "score": "3–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q182876-Q185163",
+          "score": "1–0"
         }
       ],
-      "outcomes": "llllllwwwdlwlwddllwwlllwlwddldlw",
-      "p": 32,
+      "outcomes": "llllllwwwdlwlwddllwwlllwlwddldlwl",
+      "p": 33,
       "w": 10
     },
     "Q191843": {
@@ -1726,8 +1741,8 @@
     },
     "Q19509": {
       "d": 15,
-      "ga": 63,
-      "gf": 66,
+      "ga": 65,
+      "gf": 71,
       "l": 18,
       "matches": [
         {
@@ -1999,11 +2014,16 @@
           "date": "2025-10-26",
           "key": "fr-2025-Q19509-Q185163",
           "score": "1–2"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q19509",
+          "score": "5–2"
         }
       ],
-      "outcomes": "wldlwlddwdwlwldlddllddllwlwwwdllwwwddwwddwlwdwwlwlwllw",
-      "p": 54,
-      "w": 21
+      "outcomes": "wldlwlddwdwlwldlddllddllwlwwwdllwwwddwwddwlwdwwlwlwllww",
+      "p": 55,
+      "w": 22
     },
     "Q19512": {
       "d": 10,
@@ -2364,8 +2384,8 @@
     },
     "Q19516": {
       "d": 21,
-      "ga": 55,
-      "gf": 64,
+      "ga": 56,
+      "gf": 66,
       "l": 13,
       "matches": [
         {
@@ -2632,11 +2652,16 @@
           "date": "2026-04-18",
           "key": "fr-2025-Q19516-Q185163",
           "score": "0–0"
+        },
+        {
+          "date": "2026-09-20",
+          "key": "fr-2026-Q185163-Q19516",
+          "score": "2–1"
         }
       ],
-      "outcomes": "wlwldlwwwwdlwlwlddldddldlddwwwwddddwwdwlddllwwwdddlwd",
-      "p": 53,
-      "w": 19
+      "outcomes": "wlwldlwwwwdlwlwlddldddldlddwwwwddddwwdwlddllwwwdddlwdw",
+      "p": 54,
+      "w": 20
     },
     "Q19518": {
       "d": 15,
@@ -3460,9 +3485,9 @@
       "w": 1
     },
     "Q210864": {
-      "d": 4,
-      "ga": 13,
-      "gf": 11,
+      "d": 5,
+      "ga": 14,
+      "gf": 12,
       "l": 4,
       "matches": [
         {
@@ -3524,10 +3549,15 @@
           "date": null,
           "key": "fr-2009-Q210864-Q185163",
           "score": "0–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q210864",
+          "score": "1–1"
         }
       ],
-      "outcomes": "ldwldldldwww",
-      "p": 12,
+      "outcomes": "ldwldldldwwwd",
+      "p": 13,
       "w": 4
     },
     "Q212269": {
@@ -3623,8 +3653,8 @@
     },
     "Q218372": {
       "d": 8,
-      "ga": 18,
-      "gf": 28,
+      "ga": 19,
+      "gf": 30,
       "l": 4,
       "matches": [
         {
@@ -3726,11 +3756,16 @@
           "date": null,
           "key": "fr-2025-Q218372-Q185163",
           "score": "4–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q218372-Q185163",
+          "score": "1–2"
         }
       ],
-      "outcomes": "dddlwwddwlwwwlddwwdl",
-      "p": 20,
-      "w": 8
+      "outcomes": "dddlwwddwlwwwlddwwdlw",
+      "p": 21,
+      "w": 9
     },
     "Q221525": {
       "d": 8,
@@ -4592,7 +4627,7 @@
       "w": 14
     },
     "Q48911": {
-      "d": 11,
+      "d": 12,
       "ga": 32,
       "gf": 42,
       "l": 7,
@@ -4756,10 +4791,15 @@
           "date": null,
           "key": "fr-2025-Q48911-Q185163",
           "score": "3–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q48911",
+          "score": "0–0"
         }
       ],
-      "outcomes": "wdldwwwlwwwlddllwdwdwwddwldwwddl",
-      "p": 32,
+      "outcomes": "wdldwwwlwwwlddllwdwdwwddwldwwddld",
+      "p": 33,
       "w": 14
     },
     "Q501693": {
@@ -4994,9 +5034,9 @@
     },
     "Q704": {
       "d": 13,
-      "ga": 95,
-      "gf": 59,
-      "l": 28,
+      "ga": 97,
+      "gf": 60,
+      "l": 29,
       "matches": [
         {
           "date": null,
@@ -5267,10 +5307,15 @@
           "date": "2026-02-15",
           "key": "fr-2025-Q704-Q185163",
           "score": "2–0"
+        },
+        {
+          "date": "2026-10-18",
+          "key": "fr-2026-Q704-Q185163",
+          "score": "2–1"
         }
       ],
-      "outcomes": "ldwlllldlllddlldddllwldllwdllllwwdwdllwwwllwwlwddlllwl",
-      "p": 54,
+      "outcomes": "ldwlllldlllddlldddllwldllwdllllwwdwdllwwwllwwlwddlllwll",
+      "p": 55,
       "w": 13
     },
     "Q730809": {
@@ -5338,7 +5383,7 @@
     "Q845137": {
       "d": 6,
       "ga": 18,
-      "gf": 29,
+      "gf": 31,
       "l": 4,
       "matches": [
         {
@@ -5440,11 +5485,16 @@
           "date": null,
           "key": "fr-2025-Q845137-Q185163",
           "score": "0–2"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q845137-Q185163",
+          "score": "0–2"
         }
       ],
-      "outcomes": "wdlwdddlwdwwwwldwwlw",
-      "p": 20,
-      "w": 10
+      "outcomes": "wdlwdddlwdwwwwldwwlww",
+      "p": 21,
+      "w": 11
     },
     "Q866884": {
       "d": 0,
@@ -5525,6 +5575,7 @@
     }
   },
   "id": "Q185163",
+  "inProgress": true,
   "leagues": [
     "fr"
   ],
@@ -5534,6 +5585,12 @@
     "ja": "OGCニース"
   },
   "positions": [
+    {
+      "asOf": "2026-11-09",
+      "inProgress": true,
+      "position": 6,
+      "season": "fr-2026"
+    },
     {
       "position": 16,
       "season": "fr-2025"
@@ -5737,7 +5794,7 @@
     },
     {
       "goals": 12,
-      "name": "Kaba Diawara",
+      "name": "カバ ディアワラ",
       "player": "Q2707459"
     },
     {
@@ -5769,6 +5826,11 @@
       "goals": 9,
       "name": "ケフラン テュラム",
       "player": "Q58465451"
+    },
+    {
+      "goals": 8,
+      "name": "エリー ワヒ",
+      "player": "Q104215027"
     },
     {
       "goals": 8,
@@ -5997,11 +6059,6 @@
     },
     {
       "goals": 2,
-      "name": "エリー ワヒ",
-      "player": "Q104215027"
-    },
-    {
-      "goals": 2,
       "name": "Tom Louchet",
       "player": "Q123863201"
     },
@@ -6067,7 +6124,7 @@
     },
     {
       "goals": 2,
-      "name": "Billal Brahimi",
+      "name": "ビラル ブラヒミ",
       "player": "Q56289677"
     },
     {
@@ -6102,6 +6159,11 @@
     },
     {
       "goals": 1,
+      "name": "モハメド アムーラ",
+      "player": "Q107285723"
+    },
+    {
+      "goals": 1,
       "name": "Bilal Brahimi",
       "player": "Q107649655"
     },
@@ -6112,12 +6174,12 @@
     },
     {
       "goals": 1,
-      "name": "Grégoire Puel",
+      "name": "グレゴワール ピュエル",
       "player": "Q13515523"
     },
     {
       "goals": 1,
-      "name": "Vincent Hognon",
+      "name": "ヴァンサン オニョン",
       "player": "Q1383750"
     },
     {
@@ -6187,7 +6249,7 @@
     },
     {
       "goals": 1,
-      "name": "Kévin Anin",
+      "name": "ケヴィン アナン",
       "player": "Q2637184"
     },
     {

@@ -84,9 +84,9 @@ export function register(test, equal, deepEqual) {
       equal(todayRows.every((row) => !/Q\d+/.test(row)), true, 'today-history uses club names, not Wikidata ids');
       equal(todayRows.every((row) => !row.includes('0年')), true, 'today-history uses real years');
       equal(todayRows.every((row) => /^\d{4}年 .+ \d+–\d+ .+$/u.test(row)), true, 'today-history row shape');
-      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=1.0.1');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=1.1.0');
       const renderedRoutes = ['#/credits'];
-      for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`);
+      for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`, `#/s/${league}/2026`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
       const openLigaKey = findOpenLigaCase();
       const noScorerKey = findNoScorerCase();
@@ -130,6 +130,23 @@ export function register(test, equal, deepEqual) {
           equal(dataRequests.some((path) => path.startsWith('data/p/')), false, `${hash} embeds displayed player names`);
         }
         if (hash.startsWith('#/l/')) equal(dataRequests.length <= 2, true, `${hash} fetches only index and league history data`);
+        if (/^#\/l\/(?:en|es|de|it|fr)$/u.test(hash)) {
+          const currentRow = withClass(appRoot, 'season-row').find((row) => row.textContent.includes('2026–27シーズン'));
+          equal(currentRow?.textContent.includes('途中経過'), true, `${hash} marks 2026-27 in progress`);
+          equal(/[{|]/u.test(currentRow?.textContent ?? ''), false, `${hash} current-season ruby leak`);
+        }
+        if (/^#\/s\/(?:en|es|de|it|fr)\/2026$/u.test(hash)) {
+          const [, league] = /^#\/s\/([a-z]{2})\/2026$/u.exec(hash);
+          const season = load(`s/${league}-2026.json`);
+          const [year, month, day] = season.asOf.split('-').map(Number);
+          const expectedDate = `${year}年${month}月${day}日`;
+          equal(body.includes('途中経過'), true, `${hash} heading badge`);
+          equal(body.includes(`順位表（途中経過・${expectedDate}時点）`), true, `${hash} dated standings caption`);
+          equal(body.includes(`${season.table.length * (season.table.length - 1)}試合中 ${season.matches.length}試合`), true, `${hash} played match count`);
+          equal(body.includes('得点ランキング（途中経過）'), true, `${hash} scorer caption`);
+          equal(body.includes('優勝'), false, `${hash} has no champion text`);
+          equal(/[{|]/u.test(body), false, `${hash} current-season ruby leak`);
+        }
         if (hash === '#/s/en/2025') {
           const season = load('s/en-2025.json');
           const buckets = new Set(season.topScorers.map((item) => item.playerId).filter(Boolean).map(playerBucket));
@@ -164,6 +181,11 @@ export function register(test, equal, deepEqual) {
           equal(descendants(extraTitle[0]).some((node) => node.tagName === 'A'), false, 'pre-professional title is not linked');
         }
         if (hash === '#/c/Q9617') equal(body.includes('12/23'), true, 'head-to-head row shows its Wikipedia date');
+        if (hash === '#/c/Q9617') {
+          const currentPosition = withClass(appRoot, 'position-list')[0]?.childNodes.find((row) => row.textContent.includes('2026–27シーズン'));
+          equal(currentPosition?.textContent.includes('途中経過'), true, 'club current season says in progress');
+          equal(currentPosition?.textContent.includes('位'), false, 'club current season omits final placing');
+        }
         if (hash === '#/c/Q10333') {
           const scorerRows = withClass(appRoot, 'club-scorers')[0]?.childNodes ?? [];
           const tied = scorerRows.filter((row) => row.textContent.includes('47得点')).map((row) => row.textContent);
@@ -185,12 +207,16 @@ export function register(test, equal, deepEqual) {
             return opponent && !/^[a-z]{2}$/u.test(opponent) && opponent !== '試合'
               && Object.values(names).some((item) => item.name === opponent);
           }), true, 'goal links use Japanese club names from names.json');
+          const current = japan.players.find((player) => player.id === playerWithGoals).seasons.find((season) => season.season === '2026–27');
+          const [year, month, day] = current.asOf.split('-').map(Number);
+          equal(body.includes(`2026-27シーズンの所属（途中経過・${year}年${month}月${day}日時点）`), true, 'current Japanese player shows dated in-progress affiliation');
+          equal(body.includes(load('names.json')[current.club].name), true, 'current Japanese player shows club name');
         }
         if (hash === '#/p/Q27067753') {
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
           equal(dataRequests.includes('data/photo-credits.json'), false, `${hash} does not fetch photo credits`);
           const images = descendants(appRoot).filter((node) => node.tagName === 'IMG');
-          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=1.0.1')), true, 'Kubo player photo renders');
+          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=1.1.0')), true, 'Kubo player photo renders');
           equal(body.includes('写真:'), true, 'Kubo player photo credit renders');
         }
         if (hash === '#/p/Q43666') {
@@ -224,7 +250,8 @@ export function register(test, equal, deepEqual) {
           const switcherFlags = withClass(switcher, 'league-flag').map((node) => node.getAttribute('alt')).sort();
           equal(switcherFlags.join(','), ['イングランド', 'イタリア', 'スペイン', 'ドイツ', 'フランス'].sort().join(','), `${hash} meikan switcher shows all five leagues`);
           const picker = withClass(appRoot, 'meikan-season-select')[0];
-          equal(picker?.childNodes.length, 34, `${hash} season picker holds 34 seasons`);
+          equal(picker?.childNodes.length, 35, `${hash} season picker holds 35 seasons`);
+          equal(picker?.childNodes[0]?.textContent, '2026–27シーズン', `${hash} newest picker season`);
           if (hash === '#/z') {
             picker.value = '2024';
             for (const listener of picker.listeners.get('change') ?? []) listener();
@@ -238,7 +265,7 @@ export function register(test, equal, deepEqual) {
           const names = load('names.json');
           const firstClub = Object.keys(season.players ?? {}).sort((a, b) => (names[a]?.name ?? a).localeCompare(names[b]?.name ?? b, 'ja'))[0];
           const buckets = new Set((season.players?.[firstClub] ?? []).map((item) => item.id).map(playerBucket));
-          equal(dataRequests.length <= 2 + buckets.size, true, `${hash} fetches only its season file, names, and the shown club's player buckets`);
+          equal(dataRequests.length <= 3 + buckets.size, true, `${hash} fetches only index, its season file, names, and the shown club's player buckets`);
           const cards = withClass(appRoot, 'meikan-card');
           equal(cards.length > 0, true, `${hash} renders player cards`);
           equal(cards.every((card) => !/^Q\d+$/.test(withClass(card, 'meikan-name')[0]?.textContent ?? '')), true, `${hash} card names resolve to Japanese display names, not raw ids`);
@@ -325,7 +352,7 @@ export function register(test, equal, deepEqual) {
     equal(releaseSources.some((value) => /v=0\.2\.0\b/.test(value)), false, 'stale 0.2.0 asset version');
     equal(releaseSources.some((value) => /v=0\.2\.1\b/.test(value)), false, 'stale 0.2.1 asset version');
     equal(/\.brand-copy small\s*\{[^}]*white-space:\s*nowrap/u.test(css), true, 'header subtitle element has white-space nowrap');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '1.0.1'"), true, 'footer version');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '1.1.0'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

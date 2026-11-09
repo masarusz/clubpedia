@@ -186,9 +186,9 @@
       "w": 3
     },
     "Q180305": {
-      "d": 3,
-      "ga": 20,
-      "gf": 7,
+      "d": 4,
+      "ga": 21,
+      "gf": 8,
       "l": 8,
       "matches": [
         {
@@ -250,16 +250,21 @@
           "date": "2009-12-23",
           "key": "fr-2009-Q210864-Q180305",
           "score": "1–1"
+        },
+        {
+          "date": "2026-11-08",
+          "key": "fr-2026-Q210864-Q180305",
+          "score": "1–1"
         }
       ],
-      "outcomes": "llldlllwlldd",
-      "p": 12,
+      "outcomes": "llldlllwllddd",
+      "p": 13,
       "w": 1
     },
     "Q182876": {
-      "d": 2,
-      "ga": 18,
-      "gf": 11,
+      "d": 3,
+      "ga": 19,
+      "gf": 12,
       "l": 7,
       "matches": [
         {
@@ -321,16 +326,21 @@
           "date": "2009-11-07",
           "key": "fr-2009-Q210864-Q182876",
           "score": "0–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q182876-Q210864",
+          "score": "1–1"
         }
       ],
-      "outcomes": "lwdlwdlwllll",
-      "p": 12,
+      "outcomes": "lwdlwdlwlllld",
+      "p": 13,
       "w": 3
     },
     "Q185163": {
-      "d": 4,
-      "ga": 11,
-      "gf": 13,
+      "d": 5,
+      "ga": 12,
+      "gf": 14,
       "l": 4,
       "matches": [
         {
@@ -392,16 +402,21 @@
           "date": null,
           "key": "fr-2009-Q210864-Q185163",
           "score": "0–1"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q185163-Q210864",
+          "score": "1–1"
         }
       ],
-      "outcomes": "wdlwdwdwdlll",
-      "p": 12,
+      "outcomes": "wdlwdwdwdllld",
+      "p": 13,
       "w": 4
     },
     "Q191843": {
-      "d": 3,
-      "ga": 10,
-      "gf": 14,
+      "d": 4,
+      "ga": 12,
+      "gf": 16,
       "l": 3,
       "matches": [
         {
@@ -453,10 +468,15 @@
           "date": null,
           "key": "fr-2009-Q210864-Q191843",
           "score": "3–0"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q210864-Q191843",
+          "score": "2–2"
         }
       ],
-      "outcomes": "dwldldwwlw",
-      "p": 10,
+      "outcomes": "dwldldwwlwd",
+      "p": 11,
       "w": 4
     },
     "Q192071": {
@@ -543,9 +563,9 @@
     },
     "Q19509": {
       "d": 6,
-      "ga": 19,
-      "gf": 14,
-      "l": 5,
+      "ga": 22,
+      "gf": 16,
+      "l": 6,
       "matches": [
         {
           "date": null,
@@ -606,10 +626,15 @@
           "date": "2010-03-28",
           "key": "fr-2009-Q210864-Q19509",
           "score": "1–3"
+        },
+        {
+          "date": "2026-08-30",
+          "key": "fr-2026-Q19509-Q210864",
+          "score": "3–2"
         }
       ],
-      "outcomes": "ldlwddldddll",
-      "p": 12,
+      "outcomes": "ldlwddldddlll",
+      "p": 13,
       "w": 1
     },
     "Q19512": {
@@ -787,9 +812,9 @@
     },
     "Q19518": {
       "d": 4,
-      "ga": 14,
+      "ga": 17,
       "gf": 13,
-      "l": 4,
+      "l": 5,
       "matches": [
         {
           "date": null,
@@ -850,10 +875,15 @@
           "date": null,
           "key": "fr-2009-Q210864-Q19518",
           "score": "1–3"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q210864-Q19518",
+          "score": "0–3"
         }
       ],
-      "outcomes": "dwwdwwddllll",
-      "p": 12,
+      "outcomes": "dwwdwwddlllll",
+      "p": 13,
       "w": 4
     },
     "Q19521": {
@@ -1081,6 +1111,22 @@
       "p": 8,
       "w": 7
     },
+    "Q218372": {
+      "d": 1,
+      "ga": 2,
+      "gf": 2,
+      "l": 0,
+      "matches": [
+        {
+          "date": null,
+          "key": "fr-2026-Q210864-Q218372",
+          "score": "2–2"
+        }
+      ],
+      "outcomes": "d",
+      "p": 1,
+      "w": 0
+    },
     "Q221525": {
       "d": 1,
       "ga": 9,
@@ -1218,9 +1264,9 @@
     },
     "Q483020": {
       "d": 3,
-      "ga": 18,
-      "gf": 7,
-      "l": 7,
+      "ga": 21,
+      "gf": 8,
+      "l": 8,
       "matches": [
         {
           "date": "2004-03-13",
@@ -1281,16 +1327,21 @@
           "date": "2009-08-15",
           "key": "fr-2009-Q483020-Q210864",
           "score": "3–1"
+        },
+        {
+          "date": "2026-10-10",
+          "key": "fr-2026-Q483020-Q210864",
+          "score": "3–1"
         }
       ],
-      "outcomes": "lldwdlldllwl",
-      "p": 12,
+      "outcomes": "lldwdlldllwll",
+      "p": 13,
       "w": 2
     },
     "Q48911": {
       "d": 4,
-      "ga": 9,
-      "gf": 3,
+      "ga": 10,
+      "gf": 5,
       "l": 4,
       "matches": [
         {
@@ -1332,17 +1383,22 @@
           "date": null,
           "key": "fr-2009-Q48911-Q210864",
           "score": "1–0"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q210864-Q48911",
+          "score": "2–1"
         }
       ],
-      "outcomes": "dlddldll",
-      "p": 8,
-      "w": 0
+      "outcomes": "dlddldllw",
+      "p": 9,
+      "w": 1
     },
     "Q501693": {
       "d": 1,
-      "ga": 3,
+      "ga": 5,
       "gf": 8,
-      "l": 0,
+      "l": 1,
       "matches": [
         {
           "date": null,
@@ -1363,10 +1419,15 @@
           "date": "2006-08-12",
           "key": "fr-2006-Q501693-Q210864",
           "score": "2–2"
+        },
+        {
+          "date": null,
+          "key": "fr-2026-Q501693-Q210864",
+          "score": "2–0"
         }
       ],
-      "outcomes": "wwwd",
-      "p": 4,
+      "outcomes": "wwwdl",
+      "p": 5,
       "w": 3
     },
     "Q608988": {
@@ -1463,6 +1524,7 @@
     }
   },
   "id": "Q210864",
+  "inProgress": true,
   "leagues": [
     "fr"
   ],
@@ -1472,6 +1534,12 @@
     "ja": "ル・マンFC"
   },
   "positions": [
+    {
+      "asOf": "2026-11-09",
+      "inProgress": true,
+      "position": 15,
+      "season": "fr-2026"
+    },
     {
       "position": 18,
       "season": "fr-2009"
@@ -1525,6 +1593,11 @@
       "player": "Q128895"
     },
     {
+      "goals": 4,
+      "name": "Louis Mafouta",
+      "player": "Q50505421"
+    },
+    {
       "goals": 3,
       "name": "James Fanchone",
       "player": "Q1993087"
@@ -1546,13 +1619,18 @@
     },
     {
       "goals": 2,
-      "name": "Thorstein Helstad",
+      "name": "トルステイン ヘルスタッド",
       "player": "Q183233"
     },
     {
       "goals": 1,
       "name": "ダヴィデ キウミエント",
       "player": "Q115748"
+    },
+    {
+      "goals": 1,
+      "name": "Erwan Colas",
+      "player": "Q139778443"
     },
     {
       "goals": 1,

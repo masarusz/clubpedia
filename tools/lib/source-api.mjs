@@ -233,3 +233,14 @@ export async function fetchApiWithContinue(requester, endpoint, parameters, labe
 export function cachePath(root, wiki, title) {
   return join(root, wiki, `${safeName(title)}.json`);
 }
+
+export function renderedCachePath(root, title) {
+  return join(root, 'enwiki-rendered', `${safeName(title)}.json`);
+}
+
+export function parseRenderedResponse(response, expectedRevid, expectedTitle) {
+  const parsed = response?.parse;
+  if (!parsed || typeof parsed.text !== 'string') throw new Error(`${expectedTitle}: parse API returned no rendered text`);
+  if (parsed.revid !== expectedRevid) throw new Error(`${expectedTitle}: parse API returned revision ${parsed.revid}; expected ${expectedRevid}`);
+  return { title: parsed.title ?? expectedTitle, revid: parsed.revid, html: parsed.text };
+}

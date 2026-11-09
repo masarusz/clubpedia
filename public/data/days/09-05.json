@@ -1,15 +1,15 @@
 {
   "birthdays": [
     {
-      "birthYear": 1979,
-      "id": "Q192986",
-      "name": "ヨン カリュー",
-      "photo": true
-    },
-    {
       "birthYear": 2001,
       "id": "Q59306386",
       "name": "ブカヨ サカ",
+      "photo": true
+    },
+    {
+      "birthYear": 1979,
+      "id": "Q192986",
+      "name": "ヨン カリュー",
       "photo": true
     },
     {
@@ -45,7 +45,7 @@
     {
       "birthYear": 1980,
       "id": "Q3610712",
-      "name": "Alex Pinardi",
+      "name": "アレックス ピナルディ",
       "photo": false
     },
     {
@@ -61,62 +61,128 @@
       "photo": true
     },
     {
-      "birthYear": 1989,
-      "id": "Q1068786",
-      "name": "Cote",
-      "photo": true
-    },
-    {
       "birthYear": 1966,
       "id": "Q545700",
       "name": "ミリンコ パンティッチ",
       "photo": false
+    },
+    {
+      "birthYear": 1972,
+      "id": "Q717587",
+      "name": "サラヘディン バシル",
+      "photo": true
     }
   ],
   "matches": [
     {
-      "away": "Q172476",
-      "awayName": "FCジロンダン・ボルドー",
-      "date": "2012-09-05",
-      "home": "Q212269",
-      "homeName": "ヴァランシエンヌFC",
-      "key": "fr-2012-Q212269-Q172476",
-      "league": "fr",
-      "score": "0–0",
-      "season": "fr-2012"
-    },
-    {
-      "away": "Q50602",
-      "awayName": "マンチェスター・シティFC",
-      "date": "2000-09-05",
-      "home": "Q1128631",
-      "homeName": "リーズ・ユナイテッドFC",
-      "key": "en-2000-Q1128631-Q50602",
-      "league": "en",
-      "score": "1–2",
-      "season": "en-2000"
-    },
-    {
-      "away": "Q10319",
-      "awayName": "レアル・バリャドリード",
-      "date": "1997-09-05",
-      "home": "Q8701",
-      "homeName": "アトレティコ・マドリード",
-      "key": "es-1997-Q8701-Q10319",
-      "league": "es",
-      "score": "5–0",
-      "season": "es-1997"
-    },
-    {
-      "away": "Q51974",
-      "awayName": "ハンブルガーSV",
-      "date": "1993-09-05",
-      "home": "Q141931",
-      "homeName": "SGディナモ・ドレスデン",
-      "key": "de-1993-Q141931-Q51974",
+      "away": "Q692691",
+      "awayName": "SVエルフェアスベルク",
+      "date": "2026-09-05",
+      "home": "Q101959",
+      "homeName": "ボルシア・メンヒェングラートバッハ",
+      "key": "de-2026-Q101959-Q692691",
       "league": "de",
+      "score": "3–4",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q106394",
+      "awayName": "SCフライブルク",
+      "date": "2026-09-05",
+      "home": "Q160532",
+      "homeName": "SCパーダーボルン07",
+      "key": "de-2026-Q160532-Q106394",
+      "league": "de",
+      "score": "0–1",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q41420",
+      "awayName": "ボルシア・ドルトムント",
+      "date": "2026-09-05",
+      "home": "Q22707",
+      "homeName": "TSG1899ホッフェンハイム",
+      "key": "de-2026-Q22707-Q41420",
+      "league": "de",
+      "score": "2–3",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q15789",
+      "awayName": "FCバイエルン・ミュンヘン",
+      "date": "2026-09-05",
+      "home": "Q32494",
+      "homeName": "シャルケ04",
+      "key": "de-2026-Q32494-Q15789",
+      "league": "de",
+      "score": "0–0",
+      "season": "de-2026"
+    },
+    {
+      "away": "Q19467",
+      "awayName": "クリスタル・パレスFC",
+      "date": "2026-09-05",
+      "home": "Q18708",
+      "homeName": "フラムFC",
+      "key": "en-2026-Q18708-Q19467",
+      "league": "en",
+      "score": "2–3",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q1128631",
+      "awayName": "リーズ・ユナイテッドFC",
+      "date": "2026-09-05",
+      "home": "Q19453",
+      "homeName": "ブライトン・アンド・ホーヴ・アルビオンFC",
+      "key": "en-2026-Q19453-Q1128631",
+      "league": "en",
       "score": "1–1",
-      "season": "de-1993"
+      "season": "en-2026"
+    },
+    {
+      "away": "Q18711",
+      "awayName": "アストン・ヴィラFC",
+      "date": "2026-09-05",
+      "home": "Q19477",
+      "homeName": "ハル・シティAFC",
+      "key": "en-2026-Q19477-Q18711",
+      "league": "en",
+      "score": "0–0",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q19580",
+      "awayName": "コヴェントリー・シティFC",
+      "date": "2026-09-05",
+      "home": "Q50602",
+      "homeName": "マンチェスター・シティFC",
+      "key": "en-2026-Q50602-Q19580",
+      "league": "en",
+      "score": "1–0",
+      "season": "en-2026"
+    },
+    {
+      "away": "Q218372",
+      "awayName": "スタッド・ブレスト29",
+      "date": "2026-09-05",
+      "home": "Q328658",
+      "homeName": "ル・アーヴルAC",
+      "key": "fr-2026-Q328658-Q218372",
+      "league": "fr",
+      "score": "1–2",
+      "season": "fr-2026"
+    },
+    {
+      "away": "Q2641",
+      "awayName": "SSCナポリ",
+      "date": "2026-09-05",
+      "home": "Q631",
+      "homeName": "インテルナツィオナーレ・ミラノ",
+      "key": "it-2026-Q631-Q2641",
+      "league": "it",
+      "score": "3–2",
+      "season": "it-2026"
     },
     {
       "away": "Q10315",
@@ -130,28 +196,6 @@
       "season": "es-1993"
     },
     {
-      "away": "Q631",
-      "awayName": "インテルナツィオナーレ・ミラノ",
-      "date": "1993-09-05",
-      "home": "Q139399",
-      "homeName": "カルチョ・フォッジャ1920",
-      "key": "it-1993-Q139399-Q631",
-      "league": "it",
-      "score": "1–1",
-      "season": "it-1993"
-    },
-    {
-      "away": "Q2074",
-      "awayName": "ジェノアCFC",
-      "date": "1993-09-05",
-      "home": "Q1543",
-      "homeName": "ACミラン",
-      "key": "it-1993-Q1543-Q2074",
-      "league": "it",
-      "score": "1–0",
-      "season": "it-1993"
-    },
-    {
       "away": "Q1422",
       "awayName": "ユヴェントスFC",
       "date": "1993-09-05",
@@ -161,50 +205,6 @@
       "league": "it",
       "score": "2–1",
       "season": "it-1993"
-    },
-    {
-      "away": "Q105861",
-      "awayName": "VfLボーフム",
-      "date": "1992-09-05",
-      "home": "Q15786",
-      "homeName": "1.FCニュルンベルク",
-      "key": "de-1992-Q15786-Q105861",
-      "league": "de",
-      "score": "2–1",
-      "season": "de-1992"
-    },
-    {
-      "away": "Q9616",
-      "awayName": "チェルシーFC",
-      "date": "1992-09-05",
-      "home": "Q1130849",
-      "homeName": "リヴァプールFC",
-      "key": "en-1992-Q1130849-Q9616",
-      "league": "en",
-      "score": "2–1",
-      "season": "en-1992"
-    },
-    {
-      "away": "Q19467",
-      "awayName": "クリスタル・パレスFC",
-      "date": "1992-09-05",
-      "home": "Q18711",
-      "homeName": "アストン・ヴィラFC",
-      "key": "en-1992-Q18711-Q19467",
-      "league": "en",
-      "score": "3–0",
-      "season": "en-1992"
-    },
-    {
-      "away": "Q9617",
-      "awayName": "アーセナルFC",
-      "date": "1992-09-05",
-      "home": "Q19482",
-      "homeName": "ウィンブルドンFC",
-      "key": "en-1992-Q19482-Q9617",
-      "league": "en",
-      "score": "3–2",
-      "season": "en-1992"
     }
   ]
 }
