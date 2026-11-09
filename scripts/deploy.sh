@@ -74,6 +74,17 @@ done
 shopt -u nullglob
 echo "== allowlist: ${#FILES[@]} files"
 
+# Player portraits, generated flags, and generated credits are one published
+# set. Refuse a stale/orphan WebP even if it matches the broad allowlist.
+node -e '
+  const fs = require("fs");
+  const root = process.argv[1];
+  const photos = fs.readdirSync(`${root}/public/assets/players`).filter((name) => name.endsWith(".webp")).map((name) => name.slice(0, -5)).sort();
+  const credits = Object.keys(JSON.parse(fs.readFileSync(`${root}/public/data/photo-credits.json`, "utf8"))).sort();
+  const flagged = fs.readdirSync(`${root}/public/data/p`).filter((name) => name.endsWith(".json")).flatMap((name) => Object.values(JSON.parse(fs.readFileSync(`${root}/public/data/p/${name}`, "utf8"))).filter((player) => player.photo).map((player) => player.id)).sort();
+  if (JSON.stringify(photos) !== JSON.stringify(credits) || JSON.stringify(photos) !== JSON.stringify(flagged)) process.exit(1);
+' "$REPO_ROOT" || fail "player WebPs, photo flags, and photo credits differ"
+
 # iCloud can leave conflict duplicates like `search 4.json` or `days 5/`.
 # Some can match the allowlist, so reject them before the generic completeness
 # check and before a dry run can report success.

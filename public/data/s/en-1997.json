@@ -40,6 +40,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1997-12-28",
       "home": "Q1128631",
       "homeGoals": 1,
       "key": "en-1997-Q1128631-Q18711",
@@ -865,6 +866,7 @@
     {
       "away": "Q18711",
       "awayGoals": 0,
+      "date": "1997-12-15",
       "home": "Q18656",
       "homeGoals": 1,
       "key": "en-1997-Q18656-Q18711",
@@ -1046,10 +1048,21 @@
     {
       "away": "Q1128631",
       "awayGoals": 0,
+      "date": "1997-08-30",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-1997-Q18711-Q1128631",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Yorke",
+            "minute": "67",
+            "player": "Q192175"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1087,6 +1100,7 @@
     {
       "away": "Q18656",
       "awayGoals": 2,
+      "date": "1998-02-18",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-1997-Q18711-Q18656",
@@ -1116,6 +1130,7 @@
     {
       "away": "Q18732",
       "awayGoals": 1,
+      "date": "1997-12-20",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-1997-Q18711-Q18732",
@@ -1125,6 +1140,7 @@
     {
       "away": "Q18741",
       "awayGoals": 1,
+      "date": "1997-12-26",
       "home": "Q18711",
       "homeGoals": 4,
       "key": "en-1997-Q18711-Q18741",
@@ -1134,15 +1150,32 @@
     {
       "away": "Q18747",
       "awayGoals": 0,
+      "date": "1998-04-04",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-1997-Q18711-Q18747",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Joachim",
+            "minute": "76",
+            "player": "Q6307291"
+          },
+          {
+            "display": "Joachim",
+            "minute": "82",
+            "player": "Q6307291"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q19442",
       "awayGoals": 1,
+      "date": "1998-03-11",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-1997-Q18711-Q19442",
@@ -1152,6 +1185,7 @@
     {
       "away": "Q19446",
       "awayGoals": 4,
+      "date": "1997-08-13",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-1997-Q18711-Q19446",
@@ -1161,6 +1195,7 @@
     {
       "away": "Q19451",
       "awayGoals": 3,
+      "date": "1998-04-25",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-1997-Q18711-Q19451",
@@ -1170,6 +1205,7 @@
     {
       "away": "Q19467",
       "awayGoals": 1,
+      "date": "1998-03-14",
       "home": "Q18711",
       "homeGoals": 3,
       "key": "en-1997-Q18711-Q19467",
@@ -1179,6 +1215,7 @@
     {
       "away": "Q19470",
       "awayGoals": 1,
+      "date": "1997-09-20",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-1997-Q18711-Q19470",
@@ -1188,6 +1225,7 @@
     {
       "away": "Q19481",
       "awayGoals": 1,
+      "date": "1998-01-10",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-1997-Q18711-Q19481",
@@ -1197,6 +1235,7 @@
     {
       "away": "Q19482",
       "awayGoals": 2,
+      "date": "1997-10-18",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-1997-Q18711-Q19482",
@@ -1206,6 +1245,7 @@
     {
       "away": "Q19498",
       "awayGoals": 2,
+      "date": "1997-09-27",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-1997-Q18711-Q19498",
@@ -1215,15 +1255,37 @@
     {
       "away": "Q19580",
       "awayGoals": 0,
+      "date": "1997-12-06",
       "home": "Q18711",
       "homeGoals": 3,
       "key": "en-1997-Q18711-Q19580",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Collymore",
+            "minute": "21",
+            "player": "Q444975"
+          },
+          {
+            "display": "Collymore",
+            "minute": "71",
+            "player": "Q444975"
+          },
+          {
+            "display": "Collymore",
+            "minute": "85",
+            "player": "Q444975"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q5794",
       "awayGoals": 1,
+      "date": "1997-11-22",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-1997-Q18711-Q5794",
@@ -1233,6 +1295,7 @@
     {
       "away": "Q9616",
       "awayGoals": 2,
+      "date": "1997-11-01",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-1997-Q18711-Q9616",
@@ -1790,6 +1853,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "1998-04-18",
       "home": "Q18732",
       "homeGoals": 1,
       "key": "en-1997-Q18732-Q18711",
@@ -2049,6 +2113,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "1997-08-27",
       "home": "Q18741",
       "homeGoals": 3,
       "key": "en-1997-Q18741-Q18711",
@@ -2275,6 +2340,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1997-11-29",
       "home": "Q18747",
       "homeGoals": 2,
       "key": "en-1997-Q18747-Q18711",
@@ -2495,10 +2561,34 @@
     {
       "away": "Q18711",
       "awayGoals": 3,
+      "date": "1997-09-13",
       "home": "Q19442",
       "homeGoals": 0,
       "key": "en-1997-Q19442-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ehiogu",
+            "minute": "25",
+            "ownGoal": true,
+            "player": "Q1341518"
+          },
+          {
+            "display": "Ehiogu",
+            "minute": "50",
+            "ownGoal": true,
+            "player": "Q1341518"
+          },
+          {
+            "display": "Ehiogu",
+            "minute": "72",
+            "ownGoal": true,
+            "player": "Q1341518"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2726,6 +2816,7 @@
     {
       "away": "Q18711",
       "awayGoals": 0,
+      "date": "1998-01-17",
       "home": "Q19446",
       "homeGoals": 5,
       "key": "en-1997-Q19446-Q18711",
@@ -2957,10 +3048,21 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1997-10-04",
       "home": "Q19451",
       "homeGoals": 0,
       "key": "en-1997-Q19451-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Milošević",
+            "minute": "12",
+            "player": "Q240456"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3171,6 +3273,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1997-11-08",
       "home": "Q19467",
       "homeGoals": 1,
       "key": "en-1997-Q19467-Q18711",
@@ -3380,10 +3483,21 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1998-02-07",
       "home": "Q19470",
       "homeGoals": 0,
       "key": "en-1997-Q19470-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Yorke",
+            "minute": "90",
+            "player": "Q192175"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3589,6 +3703,7 @@
     {
       "away": "Q18711",
       "awayGoals": 0,
+      "date": "1997-08-09",
       "home": "Q19481",
       "homeGoals": 1,
       "key": "en-1997-Q19481-Q18711",
@@ -3820,6 +3935,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1998-02-21",
       "home": "Q19482",
       "homeGoals": 2,
       "key": "en-1997-Q19482-Q18711",
@@ -4044,6 +4160,7 @@
     {
       "away": "Q18711",
       "awayGoals": 3,
+      "date": "1998-05-02",
       "home": "Q19498",
       "homeGoals": 1,
       "key": "en-1997-Q19498-Q18711",
@@ -4271,6 +4388,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "1998-04-11",
       "home": "Q19580",
       "homeGoals": 1,
       "key": "en-1997-Q19580-Q18711",
@@ -4514,6 +4632,7 @@
     {
       "away": "Q18711",
       "awayGoals": 4,
+      "date": "1998-03-28",
       "home": "Q5794",
       "homeGoals": 1,
       "key": "en-1997-Q5794-Q18711",
@@ -4749,10 +4868,21 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "1998-03-08",
       "home": "Q9616",
       "homeGoals": 0,
       "key": "en-1997-Q9616-Q18711",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Joachim",
+            "minute": "51",
+            "player": "Q6307291"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5583,12 +5713,20 @@
     ],
     "Q18711": [
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q192175"
       },
       {
-        "goals": 2,
+        "goals": 5,
         "id": "Q444975"
+      },
+      {
+        "goals": 3,
+        "id": "Q6307291"
+      },
+      {
+        "goals": 1,
+        "id": "Q240456"
       }
     ],
     "Q18716": [

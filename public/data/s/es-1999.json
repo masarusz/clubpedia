@@ -239,10 +239,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2000-02-06",
       "home": "Q10300",
       "homeGoals": 1,
       "key": "es-1999-Q10300-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ferrón",
+            "minute": "26",
+            "player": "Q2466112"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1557,10 +1568,21 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2000-01-22",
       "home": "Q10329",
       "homeGoals": 0,
       "key": "es-1999-Q10329-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "McCarthy",
+            "minute": "83",
+            "player": "Q214233"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -2372,10 +2394,38 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "1999-12-05",
       "home": "Q12158",
       "homeGoals": 3,
       "key": "es-1999-Q12158-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Mostovoi",
+            "minute": "64",
+            "player": "Q342680"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cáceres",
+            "minute": "36",
+            "ownGoal": true,
+            "player": "Q932371"
+          },
+          {
+            "display": "Navarro",
+            "minute": "52",
+            "player": "Q1428765"
+          },
+          {
+            "display": "Viñals",
+            "minute": "53",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3640,7 +3690,7 @@
           },
           {
             "display": "Turdó",
-            "minute": "34",
+            "minute": "35",
             "player": "Q2316094"
           }
         ],
@@ -5464,7 +5514,7 @@
     {
       "away": "Q10333",
       "awayGoals": 0,
-      "date": "2000-05-13",
+      "date": "2000-05-14",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-1999-Q8749-Q10333",
@@ -5478,10 +5528,15 @@
     {
       "away": "Q12158",
       "awayGoals": 0,
+      "date": "2000-04-16",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-1999-Q8749-Q12158",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5496,15 +5551,33 @@
     {
       "away": "Q223620",
       "awayGoals": 1,
+      "date": "2000-03-19",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-1999-Q8749-Q223620",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Javi Moreno",
+            "minute": "65",
+            "player": "Q554928"
+          }
+        ],
+        "home": [
+          {
+            "display": "McCarthy",
+            "minute": "57",
+            "player": "Q214233"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q271574",
       "awayGoals": 3,
+      "date": "2000-01-16",
       "home": "Q8749",
       "homeGoals": 5,
       "key": "es-1999-Q8749-Q271574",
@@ -5559,10 +5632,27 @@
     {
       "away": "Q8687",
       "awayGoals": 1,
+      "date": "1999-12-12",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-1999-Q8749-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ezquerro",
+            "minute": "79",
+            "player": "Q311972"
+          }
+        ],
+        "home": [
+          {
+            "display": "Turdó",
+            "minute": "42",
+            "player": "Q2316094"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5607,6 +5697,7 @@
     {
       "away": "Q8780",
       "awayGoals": 1,
+      "date": "2000-03-05",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-1999-Q8749-Q8780",
@@ -5625,6 +5716,7 @@
     {
       "away": "Q8857",
       "awayGoals": 4,
+      "date": "1999-12-22",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-1999-Q8749-Q8857",
@@ -5910,10 +6002,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "1999-12-18",
       "home": "Q8760",
       "homeGoals": 1,
       "key": "es-1999-Q8760-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Turu Flores",
+            "minute": "65",
+            "player": "Q2551098"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6477,10 +6580,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2000-02-20",
       "home": "Q8835",
       "homeGoals": 1,
       "key": "es-1999-Q8835-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Tristán",
+            "minute": "90",
+            "player": "Q12278088"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6749,10 +6863,21 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2000-05-07",
       "home": "Q8857",
       "homeGoals": 0,
       "key": "es-1999-Q8857-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "G. López",
+            "minute": "16",
+            "player": "Q372486"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6794,7 +6919,7 @@
         "id": "Q2323759"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q2466112"
       },
       {
@@ -6803,6 +6928,11 @@
       }
     ],
     "Q10308": [
+      {
+        "goals": 21,
+        "id": "Q240456",
+        "topScorerRank": 5
+      },
       {
         "goals": 2,
         "id": "Q3321870"
@@ -6822,11 +6952,6 @@
       {
         "goals": 5,
         "id": "Q353234"
-      },
-      {
-        "goals": 21,
-        "id": "Q240456",
-        "topScorerRank": 5
       },
       {
         "goals": 1,
@@ -6900,12 +7025,12 @@
         "topScorerRank": 9
       },
       {
-        "goals": 4,
-        "id": "Q2447155"
-      },
-      {
         "goals": 3,
         "id": "Q293353"
+      },
+      {
+        "goals": 4,
+        "id": "Q2447155"
       },
       {
         "goals": 2,
@@ -6950,7 +7075,7 @@
         "id": "Q7159828"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1428765"
       },
       {
@@ -7017,6 +7142,10 @@
       {
         "goals": 1,
         "id": "Q2836125"
+      },
+      {
+        "goals": 1,
+        "id": "Q554928"
       }
     ],
     "Q271574": [
@@ -7161,7 +7290,7 @@
         "id": "Q310354"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q311972"
       }
     ],
@@ -7248,7 +7377,7 @@
     ],
     "Q8749": [
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q214233"
       },
       {
@@ -7261,6 +7390,14 @@
       },
       {
         "goals": 1,
+        "id": "Q372486"
+      },
+      {
+        "goals": 1,
+        "id": "Q342680"
+      },
+      {
+        "goals": 1,
         "id": "Q538387"
       },
       {
@@ -7268,7 +7405,7 @@
         "id": "Q9088263"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2316094"
       },
       {
@@ -7299,7 +7436,7 @@
         "id": "Q47489"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q2551098"
       }
     ],

@@ -3618,10 +3618,47 @@
     {
       "away": "Q8749",
       "awayGoals": 3,
+      "date": "2019-04-03",
       "home": "Q11971",
       "homeGoals": 3,
       "key": "es-2018-Q11971-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Méndez",
+            "minute": "14",
+            "player": "Q40953842"
+          },
+          {
+            "display": "Aspas",
+            "minute": "57",
+            "player": "Q26380"
+          },
+          {
+            "display": "Boudebouz",
+            "minute": "81",
+            "player": "Q314395"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gallego",
+            "minute": "63",
+            "player": "Q56250203"
+          },
+          {
+            "display": "Ávila",
+            "minute": "71",
+            "player": "Q19949691"
+          },
+          {
+            "display": "Pulido",
+            "minute": "73",
+            "player": "Q2706415"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8771,10 +8808,26 @@
     {
       "away": "Q11971",
       "awayGoals": 0,
+      "date": "2018-12-01",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-2018-Q8749-Q11971",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Aspas",
+            "minute": "38",
+            "player": "Q26380"
+          },
+          {
+            "display": "Aspas",
+            "minute": "77",
+            "player": "Q26380"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8893,7 +8946,7 @@
           },
           {
             "display": "Aspas",
-            "minute": "82",
+            "minute": "86",
             "player": "Q26380"
           }
         ]
@@ -11199,15 +11252,15 @@
         "id": "Q18207374"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q2706415"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q19949691"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q56250203"
       },
       {
@@ -11763,8 +11816,12 @@
         "id": "Q20994107"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q40953842"
+      },
+      {
+        "goals": 1,
+        "id": "Q314395"
       },
       {
         "goals": 3,
@@ -12283,7 +12340,7 @@
     {
       "club": "Q7156",
       "goals": 21,
-      "player": "Luis Suárez",
+      "player": "Luis Suárez (Uruguayan footballer)",
       "playerId": "Q26517",
       "rank": 2
     },

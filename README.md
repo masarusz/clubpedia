@@ -10,7 +10,7 @@ iPad. A sibling of [Wcupedia](https://github.com/masarusz/wcupedia).
 
 A static site: no accounts, no tracking, no server.
 
-> Status: v0.3.0: leagues, seasons, matches, clubs, players, Japanese
+> Status: v1.0.1: leagues, seasons, matches, clubs, players, Japanese
 > players, a player guide with photos, search, rankings and today's history.
 
 ## Data
@@ -43,6 +43,10 @@ explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
 
+- **v1.0.1** — Data refreshed from the November 2026 sources: more goal scorers
+  and match dates (2025-26 La Liga especially), two new Japanese players in the
+  list, corrected Lazio 2017-18 and 2018-19 points, and several old results that
+  Wikipedia has since fixed.
 - **v1.0.0** — Complete: every season, table, match, club and player of the
   five leagues from 1992-93 to 2025-26, every Japanese player, search,
   rankings, 今日は何の日, and 5,458 player photos, each checked by eye and credited.

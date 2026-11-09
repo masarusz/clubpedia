@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import {
@@ -22,7 +22,8 @@ import {
   unsafeName,
 } from '../tools/lib/source-api.mjs';
 import { runFetchSources, sourceCompletenessFailures } from '../tools/fetch-sources.mjs';
-import { championClubTargets, clubKitColour } from '../tools/lib/core-data.mjs';
+import { championClubTargets, clubKitColour, LAST_SEASON_START_YEAR } from '../tools/lib/core-data.mjs';
+import { buildPlayers } from '../tools/lib/players.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const FIXTURES = join(ROOT, 'tests', 'fixtures');
@@ -81,6 +82,36 @@ export function register(test, equal, deepEqual) {
     const bare = extractTableClubs('{{#invoke:Sports table|main|team1=ABC|name_ABC=Bare Town}}');
     deepEqual(bare, [{ code: 'ABC', target: 'Bare Town', label: 'Bare Town', linked: false }]);
     equal(clubSeasonTitle(1999, old[0].target), '1999–2000 Manchester United F.C. season');
+  });
+
+  test('Japanese domestic rows keep pre-window seasons and ignore seasons after the supported window', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-player-window-test-'));
+    const article = await fixture('wikitext/japanese-player-window.wikitext');
+    const playerTitle = 'Fixture Player';
+    const jaTitle = 'テスト選手';
+    const playerId = 'Q600';
+    try {
+      await mkdir(join(temporary, 'jawiki'), { recursive: true });
+      await mkdir(join(temporary, 'wikidata'), { recursive: true });
+      await writeFile(join(temporary, 'jawiki', `${safeName(jaTitle)}.json`), JSON.stringify({ content: article }));
+      await writeFile(join(temporary, 'wikidata', `${playerId}.json`), JSON.stringify({
+        id: playerId,
+        claims: { P27: [{ mainsnak: { datavalue: { value: { id: 'Q17' } } } }] },
+      }));
+      const metadata = new Map([
+        [playerTitle, { title: playerTitle, wikibaseItem: playerId, jaTitle }],
+        ['Fixture FC', { title: 'Fixture FC', wikibaseItem: 'Q601', jaTitle: 'フィクスチャーFC' }],
+      ]);
+      const result = await buildPlayers({
+        seasons: [], metadata, cacheRoot: temporary, japanesePlayers: [playerTitle],
+      });
+      const player = result.players.get(playerId);
+      equal(LAST_SEASON_START_YEAR, 2025);
+      deepEqual(player.japan.map((item) => item.season), ['1985–86']);
+      deepEqual(player.seasons.map((item) => item.season), ['de-1985']);
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
   });
 
   test('champion discovery includes linked and carried-forward club targets only from the editions section', async () => {
@@ -293,6 +324,81 @@ export function register(test, equal, deepEqual) {
       'en-1992: missing table, results grid',
       'Japan sections: 1 unique players (minimum 2)',
     ]);
+  });
+
+  test('missing renamed club-season title falls back to the previous lock title', async () => {
+    const temporary = await mkdtemp(join(tmpdir(), 'clubpedia-club-season-fallback-test-'));
+    const out = join(temporary, 'sources');
+    const lockPath = join(temporary, 'sources.lock.json');
+    const saved = await fixtureJson('api/club-season-rename-fallback.json');
+    const previousLock = {
+      version: 1,
+      enwiki: {
+        [saved.fallbackTitle]: { kind: 'club-season', league: 'fr', startYear: 2023, revid: 700 },
+      },
+      jawiki: {},
+      metadata: {
+        [saved.formerClubTitle]: {
+          requestedTitle: saved.formerClubTitle, title: saved.currentClubTitle,
+          redirectedFrom: saved.formerClubTitle, wikibaseItem: saved.wikibaseItem,
+        },
+      },
+      wikidata: {}, openligadb: {}, openfootball: null,
+      seasons: {
+        'fr-2023': { clubSeasonTitles: [saved.fallbackTitle] },
+      },
+    };
+    await writeFile(lockPath, stableLockJson(previousLock));
+    const revisionLookups = [];
+    let revision = 800;
+    const requester = new Requester({
+      sleep: async () => {}, minimumWikimediaDelay: 0,
+      fetchImpl: async (url) => {
+        const parsed = new URL(url);
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'revisions') {
+          const titles = (parsed.searchParams.get('titles') ?? '').split('|').filter(Boolean);
+          revisionLookups.push(...titles);
+          const pages = titles.map((title) => {
+            if (title === saved.seasonTitle) return revisionPage(title, saved.seasonContent, revision++);
+            if (title === saved.derivedTitle) return { title, missing: true };
+            if (title === saved.fallbackTitle) return revisionPage(title, saved.fallbackContent, revision++);
+            return { title, missing: true };
+          });
+          return fakeResponse({ batchcomplete: true, query: { pages } });
+        }
+        if (parsed.hostname === 'en.wikipedia.org' && parsed.searchParams.get('prop') === 'pageprops|langlinks') {
+          const titles = parsed.searchParams.get('titles').split('|');
+          return fakeResponse({ batchcomplete: true, query: { pages: titles.map((title) => ({
+            pageid: 601, title, pageprops: { wikibase_item: saved.wikibaseItem },
+          })) } });
+        }
+        if (parsed.hostname === 'www.wikidata.org') {
+          return fakeResponse({ entities: {
+            [saved.wikibaseItem]: { id: saved.wikibaseItem, lastrevid: 900, claims: {}, labels: {} },
+          } });
+        }
+        throw new Error(`Unexpected club-season fallback fake URL: ${url}`);
+      },
+    });
+    try {
+      const { lock } = await runFetchSources({
+        out, lockPath, refresh: true, requester, quiet: true,
+        leagues: ['fr'], startYears: [2023], listTitles: [], topScorerLists: [], foreignLists: [],
+        clubArticles: [], openLigaYears: [], openfootball: false, minimumJapanesePlayers: 0,
+      });
+      const entry = lock.enwiki[saved.derivedTitle];
+      equal(entry.missing, undefined);
+      equal(entry.title, saved.fallbackTitle);
+      equal(entry.redirectedFrom, saved.derivedTitle);
+      equal(entry.fallbackTitle, saved.fallbackTitle);
+      equal(revisionLookups.filter((title) => title === saved.fallbackTitle).length, 1);
+      const aliased = JSON.parse(await readFile(join(out, 'enwiki', `${safeName(saved.derivedTitle)}.json`), 'utf8'));
+      equal(aliased.title, saved.fallbackTitle);
+      equal(aliased.redirectedFrom, saved.derivedTitle);
+      equal(aliased.content, saved.fallbackContent);
+    } finally {
+      await rm(temporary, { recursive: true, force: true });
+    }
   });
 
   test('offline fake fetch runs staged refresh then resumes with zero requests', async () => {

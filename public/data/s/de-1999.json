@@ -61,10 +61,32 @@
     {
       "away": "Q14551982",
       "awayGoals": 2,
+      "date": "1999-12-15",
       "home": "Q101859",
       "homeGoals": 1,
       "key": "de-1999-Q101859-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "van de Haar",
+            "minute": "38",
+            "player": "Q1583330"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "48",
+            "player": "Q1583330"
+          }
+        ],
+        "home": [
+          {
+            "display": "Biliškov",
+            "minute": "62",
+            "player": "Q708642"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -247,10 +269,31 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "1999-12-04",
       "home": "Q102720",
       "homeGoals": 3,
       "key": "de-1999-Q102720-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Wosz",
+            "minute": "2",
+            "player": "Q644323"
+          },
+          {
+            "display": "Sverrisson",
+            "minute": "66",
+            "player": "Q626730"
+          },
+          {
+            "display": "Preetz",
+            "minute": "74",
+            "player": "Q644091"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -439,6 +482,37 @@
       "homeGoals": 4,
       "key": "de-1999-Q104761-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Stadler",
+            "minute": "90",
+            "player": "Q1690488"
+          }
+        ],
+        "home": [
+          {
+            "display": "Živković",
+            "minute": "12",
+            "player": "Q893814"
+          },
+          {
+            "display": "Kirsten",
+            "minute": "14",
+            "player": "Q310519"
+          },
+          {
+            "display": "Kirsten",
+            "minute": "18",
+            "player": "Q310519"
+          },
+          {
+            "display": "Ponte",
+            "minute": "67",
+            "player": "Q864670"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -646,10 +720,42 @@
     {
       "away": "Q14551982",
       "awayGoals": 1,
+      "date": "2000-02-28",
       "home": "Q105844",
       "homeGoals": 4,
       "key": "de-1999-Q105844-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Pleuler",
+            "minute": "6",
+            "player": "Q1901727"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bode",
+            "minute": "14",
+            "player": "Q121038"
+          },
+          {
+            "display": "Weissenberger",
+            "minute": "18",
+            "player": "Q701073"
+          },
+          {
+            "display": "Bode",
+            "minute": "33",
+            "player": "Q121038"
+          },
+          {
+            "display": "Weissenberger",
+            "minute": "86",
+            "player": "Q701073"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -822,10 +928,26 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "2000-02-05",
       "home": "Q106394",
       "homeGoals": 2,
       "key": "de-1999-Q106394-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Ben Slimane",
+            "minute": "23",
+            "player": "Q1384758"
+          },
+          {
+            "display": "Ben Slimane",
+            "minute": "80",
+            "player": "Q1384758"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1030,10 +1152,43 @@
     {
       "away": "Q14551982",
       "awayGoals": 1,
+      "date": "1999-08-21",
       "home": "Q131603",
       "homeGoals": 4,
       "key": "de-1999-Q131603-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Unsöld",
+            "minute": "17",
+            "player": "Q2020631"
+          }
+        ],
+        "home": [
+          {
+            "display": "Max",
+            "minute": "19",
+            "player": "Q703757"
+          },
+          {
+            "display": "Häßler",
+            "minute": "23",
+            "penalty": true,
+            "player": "Q155911"
+          },
+          {
+            "display": "Max",
+            "minute": "25",
+            "player": "Q703757"
+          },
+          {
+            "display": "Paßlack",
+            "minute": "31",
+            "player": "Q463943"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1211,10 +1366,32 @@
     {
       "away": "Q14551982",
       "awayGoals": 1,
+      "date": "1999-09-10",
       "home": "Q142005",
       "homeGoals": 2,
       "key": "de-1999-Q142005-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Góra",
+            "minute": "80",
+            "player": "Q325825"
+          }
+        ],
+        "home": [
+          {
+            "display": "Oswald",
+            "minute": "4",
+            "player": "Q108982"
+          },
+          {
+            "display": "Agali",
+            "minute": "90",
+            "player": "Q1937078"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1339,19 +1516,46 @@
     {
       "away": "Q101859",
       "awayGoals": 0,
+      "date": "2000-05-13",
       "home": "Q14551982",
       "homeGoals": 2,
       "key": "de-1999-Q14551982-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zdrilic",
+            "minute": "9",
+            "player": "Q1177311"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "87",
+            "player": "Q1583330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q102720",
       "awayGoals": 1,
+      "date": "2000-04-22",
       "home": "Q14551982",
       "homeGoals": 0,
       "key": "de-1999-Q14551982-Q102720",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rehmer",
+            "minute": "51",
+            "player": "Q549542"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1362,24 +1566,115 @@
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q104761",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Emerson",
+            "minute": "10",
+            "player": "Q215952"
+          },
+          {
+            "display": "Rink",
+            "minute": "14",
+            "player": "Q695858"
+          },
+          {
+            "display": "Kirsten",
+            "minute": "19",
+            "player": "Q310519"
+          },
+          {
+            "display": "Emerson",
+            "minute": "39",
+            "player": "Q215952"
+          },
+          {
+            "display": "Neuville",
+            "minute": "68",
+            "player": "Q152972"
+          },
+          {
+            "display": "Zé Roberto",
+            "minute": "74",
+            "player": "Q57167"
+          },
+          {
+            "display": "Ballack",
+            "minute": "75",
+            "player": "Q11948"
+          },
+          {
+            "display": "Zé Roberto",
+            "minute": "81",
+            "player": "Q57167"
+          },
+          {
+            "display": "Schneider",
+            "minute": "85",
+            "player": "Q152458"
+          }
+        ],
+        "home": [
+          {
+            "display": "Leandro",
+            "minute": "90",
+            "player": "Q706390"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q105844",
       "awayGoals": 0,
+      "date": "1999-09-18",
       "home": "Q14551982",
       "homeGoals": 2,
       "key": "de-1999-Q14551982-Q105844",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zdrillic",
+            "minute": "15",
+            "player": "Q1177311"
+          },
+          {
+            "display": "Scharinger",
+            "minute": "28",
+            "player": "Q2128378"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q106394",
       "awayGoals": 1,
+      "date": "1999-08-15",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q106394",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Grauer",
+            "minute": "2",
+            "ownGoal": true,
+            "player": "Q2504222"
+          }
+        ],
+        "home": [
+          {
+            "display": "Góra",
+            "minute": "48",
+            "penalty": true,
+            "player": "Q325825"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1389,24 +1684,82 @@
       "homeGoals": 3,
       "key": "de-1999-Q14551982-Q131603",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Otto",
+            "minute": "4",
+            "player": "Q1269108"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "14",
+            "player": "Q1583330"
+          },
+          {
+            "display": "Scharinger",
+            "minute": "72",
+            "player": "Q2128378"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q142005",
       "awayGoals": 1,
+      "date": "2000-02-20",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q142005",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Wibrån",
+            "minute": "37",
+            "player": "Q354103"
+          }
+        ],
+        "home": [
+          {
+            "display": "van de Haar",
+            "minute": "83",
+            "player": "Q1583330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q154293",
       "awayGoals": 3,
+      "date": "2000-03-31",
       "home": "Q14551982",
       "homeGoals": 0,
       "key": "de-1999-Q14551982-Q154293",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Beierle",
+            "minute": "33",
+            "player": "Q1683833"
+          },
+          {
+            "display": "Hirsch",
+            "minute": "38",
+            "player": "Q1223422"
+          },
+          {
+            "display": "Spies",
+            "minute": "76",
+            "player": "Q2504803"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1432,19 +1785,48 @@
     {
       "away": "Q158121",
       "awayGoals": 0,
+      "date": "1999-10-23",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q158121",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Otto",
+            "minute": "36",
+            "player": "Q1269108"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q32494",
       "awayGoals": 1,
+      "date": "1999-11-26",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sand",
+            "minute": "76",
+            "player": "Q313913"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sand",
+            "minute": "45",
+            "ownGoal": true,
+            "player": "Q313913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1459,13 +1841,13 @@
         "away": [],
         "home": [
           {
-            "display": "Fonseca",
+            "display": "Leandro",
             "minute": "9",
             "player": "Q706390"
           },
           {
             "display": "Scharinger",
-            "minute": "48",
+            "minute": "47",
             "player": "Q2128378"
           },
           {
@@ -1480,46 +1862,146 @@
     {
       "away": "Q41420",
       "awayGoals": 1,
+      "date": "1999-08-29",
       "home": "Q14551982",
       "homeGoals": 0,
       "key": "de-1999-Q14551982-Q41420",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bobic",
+            "minute": "12",
+            "player": "Q61219"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q4512",
       "awayGoals": 1,
+      "date": "2000-04-11",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q4512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bordon",
+            "minute": "3",
+            "player": "Q366108"
+          }
+        ],
+        "home": [
+          {
+            "display": "Leandro",
+            "minute": "71",
+            "player": "Q706390"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q51974",
       "awayGoals": 2,
+      "date": "1999-10-02",
       "home": "Q14551982",
       "homeGoals": 1,
       "key": "de-1999-Q14551982-Q51974",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hoogma",
+            "minute": "86",
+            "player": "Q719648"
+          },
+          {
+            "display": "Yeboah",
+            "minute": "90",
+            "player": "Q379603"
+          }
+        ],
+        "home": [
+          {
+            "display": "Trkulja",
+            "minute": "74",
+            "player": "Q1254629"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q51976",
       "awayGoals": 1,
+      "date": "2000-03-05",
       "home": "Q14551982",
       "homeGoals": 2,
       "key": "de-1999-Q14551982-Q51976",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aílton",
+            "minute": "68",
+            "player": "Q160363"
+          }
+        ],
+        "home": [
+          {
+            "display": "van de Haar",
+            "minute": "15",
+            "player": "Q1583330"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "51",
+            "player": "Q1583330"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8466",
       "awayGoals": 1,
+      "date": "1999-12-12",
       "home": "Q14551982",
       "homeGoals": 3,
       "key": "de-1999-Q14551982-Q8466",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bódog",
+            "minute": "55",
+            "ownGoal": true,
+            "player": "Q337689"
+          }
+        ],
+        "home": [
+          {
+            "display": "Góra",
+            "minute": "3",
+            "player": "Q325825"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "19",
+            "player": "Q1583330"
+          },
+          {
+            "display": "Bódog",
+            "minute": "22",
+            "player": "Q337689"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1593,10 +2075,15 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "1999-10-30",
       "home": "Q154293",
       "homeGoals": 0,
       "key": "de-1999-Q154293-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1865,31 +2352,6 @@
       "homeGoals": 4,
       "key": "de-1999-Q15789-Q14551982",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Scholl",
-            "minute": "21",
-            "player": "Q154156"
-          },
-          {
-            "display": "Paulo Sérgio",
-            "minute": "24",
-            "player": "Q316229"
-          },
-          {
-            "display": "Jancker",
-            "minute": "62",
-            "player": "Q170150"
-          },
-          {
-            "display": "Wojciechowski",
-            "minute": "85",
-            "player": "Q671761"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -2190,10 +2652,22 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "2000-03-24",
       "home": "Q158121",
       "homeGoals": 1,
       "key": "de-1999-Q158121-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Stadler",
+            "minute": "84",
+            "ownGoal": true,
+            "player": "Q1690488"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2371,10 +2845,15 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "2000-04-14",
       "home": "Q32494",
       "homeGoals": 0,
       "key": "de-1999-Q32494-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3027,10 +3506,27 @@
     {
       "away": "Q14551982",
       "awayGoals": 1,
+      "date": "2000-02-12",
       "home": "Q41420",
       "homeGoals": 1,
       "key": "de-1999-Q41420-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Bódog",
+            "minute": "60",
+            "player": "Q337689"
+          }
+        ],
+        "home": [
+          {
+            "display": "Herrlich",
+            "minute": "21",
+            "player": "Q677546"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3203,10 +3699,26 @@
     {
       "away": "Q14551982",
       "awayGoals": 0,
+      "date": "1999-11-20",
       "home": "Q4512",
       "homeGoals": 2,
       "key": "de-1999-Q4512-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Dundee",
+            "minute": "16",
+            "player": "Q461666"
+          },
+          {
+            "display": "Gerber",
+            "minute": "82",
+            "player": "Q69689"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3389,10 +3901,32 @@
     {
       "away": "Q14551982",
       "awayGoals": 2,
+      "date": "2000-03-11",
       "home": "Q51974",
       "homeGoals": 1,
       "key": "de-1999-Q51974-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Scharinger",
+            "minute": "35",
+            "player": "Q2128378"
+          },
+          {
+            "display": "Maier",
+            "minute": "65",
+            "player": "Q823855"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gravesen",
+            "minute": "90",
+            "player": "Q311324"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3559,10 +4093,38 @@
     {
       "away": "Q14551982",
       "awayGoals": 2,
+      "date": "1999-09-25",
       "home": "Q51976",
       "homeGoals": 2,
       "key": "de-1999-Q51976-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zdrillic",
+            "minute": "60",
+            "player": "Q1177311"
+          },
+          {
+            "display": "van de Haar",
+            "minute": "75",
+            "penalty": true,
+            "player": "Q1583330"
+          }
+        ],
+        "home": [
+          {
+            "display": "Baumann",
+            "minute": "16",
+            "player": "Q159803"
+          },
+          {
+            "display": "Maksymov",
+            "minute": "82",
+            "player": "Q1369609"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3756,10 +4318,58 @@
     {
       "away": "Q14551982",
       "awayGoals": 2,
+      "date": "2000-04-29",
       "home": "Q8466",
       "homeGoals": 6,
       "key": "de-1999-Q8466-Q14551982",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zdrilic",
+            "minute": "36",
+            "player": "Q1177311"
+          },
+          {
+            "display": "Zdrilic",
+            "minute": "70",
+            "player": "Q1177311"
+          }
+        ],
+        "home": [
+          {
+            "display": "Tare",
+            "minute": "40",
+            "player": "Q472159"
+          },
+          {
+            "display": "Grauer",
+            "minute": "54",
+            "ownGoal": true,
+            "player": "Q2504222"
+          },
+          {
+            "display": "Tare",
+            "minute": "58",
+            "player": "Q472159"
+          },
+          {
+            "display": "Pettersson",
+            "minute": "62",
+            "player": "Q177434"
+          },
+          {
+            "display": "Pettersson",
+            "minute": "82",
+            "player": "Q177434"
+          },
+          {
+            "display": "Tare",
+            "minute": "86",
+            "player": "Q472159"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3884,11 +4494,19 @@
         "topScorerRank": 10
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q708642"
       }
     ],
     "Q102720": [
+      {
+        "goals": 1,
+        "id": "Q644323"
+      },
+      {
+        "goals": 1,
+        "id": "Q626730"
+      },
       {
         "goals": 12,
         "id": "Q644091",
@@ -3897,6 +4515,10 @@
       {
         "goals": 1,
         "id": "Q957871"
+      },
+      {
+        "goals": 1,
+        "id": "Q549542"
       }
     ],
     "Q104761": [
@@ -3906,7 +4528,7 @@
         "topScorerRank": 2
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q695858"
       },
       {
@@ -3915,12 +4537,32 @@
         "topScorerRank": 10
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q152972"
       },
       {
         "goals": 1,
+        "id": "Q893814"
+      },
+      {
+        "goals": 1,
+        "id": "Q152458"
+      },
+      {
+        "goals": 2,
         "id": "Q11948"
+      },
+      {
+        "goals": 1,
+        "id": "Q864670"
+      },
+      {
+        "goals": 2,
+        "id": "Q215952"
+      },
+      {
+        "goals": 2,
+        "id": "Q57167"
       }
     ],
     "Q105844": [
@@ -3930,15 +4572,23 @@
         "topScorerRank": 10
       },
       {
-        "goals": 1,
-        "id": "Q466108"
+        "goals": 2,
+        "id": "Q121038"
+      },
+      {
+        "goals": 3,
+        "id": "Q701073"
       },
       {
         "goals": 1,
-        "id": "Q701073"
+        "id": "Q466108"
       }
     ],
     "Q106394": [
+      {
+        "goals": 2,
+        "id": "Q1384758"
+      },
       {
         "goals": 1,
         "id": "Q155477"
@@ -3961,11 +4611,19 @@
       },
       {
         "goals": 1,
+        "id": "Q463943"
+      },
+      {
+        "goals": 1,
         "id": "Q167962"
       },
       {
         "goals": 1,
         "id": "Q698901"
+      },
+      {
+        "goals": 1,
+        "id": "Q155911"
       },
       {
         "goals": 1,
@@ -3987,28 +4645,76 @@
       },
       {
         "goals": 1,
+        "id": "Q1937078"
+      },
+      {
+        "goals": 1,
+        "id": "Q354103"
+      },
+      {
+        "goals": 1,
+        "id": "Q108982"
+      },
+      {
+        "goals": 1,
         "id": "Q477012"
       }
     ],
     "Q14551982": [
       {
-        "goals": 1,
-        "id": "Q706390"
+        "goals": 10,
+        "id": "Q1583330"
       },
       {
         "goals": 1,
-        "id": "Q2128378"
+        "id": "Q1690488"
       },
       {
         "goals": 1,
+        "id": "Q1901727"
+      },
+      {
+        "goals": 1,
+        "id": "Q2020631"
+      },
+      {
+        "goals": 3,
+        "id": "Q325825"
+      },
+      {
+        "goals": 6,
         "id": "Q1177311"
       },
       {
+        "goals": 3,
+        "id": "Q706390"
+      },
+      {
+        "goals": 4,
+        "id": "Q2128378"
+      },
+      {
+        "goals": 2,
+        "id": "Q1269108"
+      },
+      {
         "goals": 1,
-        "id": "Q1583330"
+        "id": "Q1254629"
+      },
+      {
+        "goals": 2,
+        "id": "Q337689"
+      },
+      {
+        "goals": 1,
+        "id": "Q823855"
       }
     ],
     "Q154293": [
+      {
+        "goals": 1,
+        "id": "Q2504803"
+      },
       {
         "goals": 2,
         "id": "Q316909"
@@ -4016,6 +4722,14 @@
       {
         "goals": 2,
         "id": "Q1753882"
+      },
+      {
+        "goals": 1,
+        "id": "Q1683833"
+      },
+      {
+        "goals": 1,
+        "id": "Q1223422"
       },
       {
         "goals": 2,
@@ -4028,7 +4742,7 @@
         "id": "Q453242"
       },
       {
-        "goals": 5,
+        "goals": 4,
         "id": "Q154156"
       },
       {
@@ -4039,6 +4753,14 @@
         "goals": 13,
         "id": "Q316229",
         "topScorerRank": 5
+      },
+      {
+        "goals": 4,
+        "id": "Q170150"
+      },
+      {
+        "goals": 1,
+        "id": "Q142283"
       },
       {
         "goals": 1,
@@ -4062,24 +4784,12 @@
         "topScorerRank": 3
       },
       {
-        "goals": 5,
-        "id": "Q170150"
-      },
-      {
         "goals": 1,
         "id": "Q951342"
       },
       {
         "goals": 1,
-        "id": "Q142283"
-      },
-      {
-        "goals": 1,
         "id": "Q44073"
-      },
-      {
-        "goals": 1,
-        "id": "Q671761"
       },
       {
         "goals": 2,
@@ -4102,13 +4812,13 @@
         "id": "Q346427"
       },
       {
-        "goals": 1,
-        "id": "Q107829"
-      },
-      {
         "goals": 14,
         "id": "Q313913",
         "topScorerRank": 3
+      },
+      {
+        "goals": 1,
+        "id": "Q107829"
       }
     ],
     "Q38245": [
@@ -4171,12 +4881,16 @@
     ],
     "Q41420": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q677546"
       },
       {
         "goals": 1,
         "id": "Q506919"
+      },
+      {
+        "goals": 1,
+        "id": "Q61219"
       },
       {
         "goals": 1,
@@ -4190,12 +4904,24 @@
       },
       {
         "goals": 1,
+        "id": "Q366108"
+      },
+      {
+        "goals": 1,
+        "id": "Q461666"
+      },
+      {
+        "goals": 1,
+        "id": "Q69689"
+      },
+      {
+        "goals": 1,
         "id": "Q655664"
       }
     ],
     "Q51974": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q379603"
       },
       {
@@ -4205,6 +4931,14 @@
       {
         "goals": 1,
         "id": "Q154305"
+      },
+      {
+        "goals": 1,
+        "id": "Q719648"
+      },
+      {
+        "goals": 1,
+        "id": "Q311324"
       }
     ],
     "Q51976": [
@@ -4214,12 +4948,24 @@
         "topScorerRank": 5
       },
       {
+        "goals": 1,
+        "id": "Q1369609"
+      },
+      {
         "goals": 12,
         "id": "Q160363",
         "topScorerRank": 7
+      },
+      {
+        "goals": 1,
+        "id": "Q159803"
       }
     ],
     "Q8466": [
+      {
+        "goals": 2,
+        "id": "Q177434"
+      },
       {
         "goals": 1,
         "id": "Q680641"
@@ -4227,6 +4973,10 @@
       {
         "goals": 1,
         "id": "Q451139"
+      },
+      {
+        "goals": 3,
+        "id": "Q472159"
       },
       {
         "goals": 11,

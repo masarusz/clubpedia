@@ -123,7 +123,8 @@ export async function build() {
   const searchAliases = await maybeJson(join(ROOT, 'curated/search-aliases.json'), []);
   const topScorerWinnerExceptions = await maybeJson(join(ROOT, 'curated/top-scorer-winner-exceptions.json'), []);
   const photoManifest = await maybeJson(join(ROOT, 'curated/photos.json'), {});
-  const photoIds = new Set((await maybeFileNames(join(ROOT, 'public/assets/players')))
+  const photoExclusions = await maybeJson(join(ROOT, 'curated/photo-exclusions.json'), {});
+  const candidatePhotoIds = new Set((await maybeFileNames(join(ROOT, 'public/assets/players')))
     .filter((name) => /^Q\d+\.webp$/.test(name)).map((name) => name.slice(0, -5)));
   const correctionBySeason = new Map(previousCorrections.map((entry) => [entry.season, entry]));
   const seasons = [];
@@ -329,6 +330,16 @@ export async function build() {
   for (const item of wrongPersonHistoricalWinners) {
     const player = playersResult.players.get(item.player);
     if (player && player.seasons.length === 0 && !player.japan) playersResult.players.delete(item.player);
+  }
+
+  // Historical top-scorer processing adds players after the initial player
+  // build, so photo publication must use the final player set.
+  const outputPlayerIds = new Set(playersResult.players.keys());
+  const curatedPhotoIds = Object.keys(photoManifest).filter((id) => id !== '_about' && !photoExclusions[id]);
+  const skippedPhotos = curatedPhotoIds.filter((id) => !outputPlayerIds.has(id));
+  const photoIds = new Set([...candidatePhotoIds].filter((id) => outputPlayerIds.has(id) && photoManifest[id]));
+  for (const id of candidatePhotoIds) {
+    if (!photoIds.has(id)) await rm(join(ROOT, 'public/assets/players', `${id}.webp`), { force: true });
   }
 
   for (const season of seasons) {
@@ -666,7 +677,7 @@ export async function build() {
   console.log(`Japanese players: ${japanPlayers.length}/${japanesePlayers.length}; foreign-list cross-check disagreements: ${japaneseCrossCheck.length}`);
   console.log(`OpenLigaDB: ${openLigaStats.years} season(s), ${openLigaStats.matches} matches, ${openLigaStats.linked} players linked / ${openLigaStats.unlinked} unlinked`);
   console.log(`Match dates: ${seasons.reduce((sum, season) => sum + season.matches.filter((match) => match.date || match.openLigaDate).length, 0)}/${seasons.reduce((sum, season) => sum + season.matches.length, 0)}; home/away disagreements: ${scorerCoverage.reduce((sum, row) => sum + row.dateDisagreements, 0)}; dropped: ${scorerCoverage.reduce((sum, row) => sum + row.droppedDates, 0)}`);
-  console.log(`Days: matches min/median/max ${daySummary.matches.min}/${daySummary.matches.median}/${daySummary.matches.max}; birthdays ${daySummary.birthdays.min}/${daySummary.birthdays.median}/${daySummary.birthdays.max}; photos ${photoIds.size}`);
+  console.log(`Days: matches min/median/max ${daySummary.matches.min}/${daySummary.matches.median}/${daySummary.matches.max}; birthdays ${daySummary.birthdays.min}/${daySummary.birthdays.median}/${daySummary.birthdays.max}; photos ${photoIds.size}; skipped photos ${skippedPhotos.length}`);
   if (missingNames.length && !allowMissingNames) throw new Error(`Missing Japanese club names:\n${missingNames.join('\n')}`);
   if (unresolvedChampions.length && !allowProposed) throw new Error(`${unresolvedChampions.length} historical champions lack pinned identity metadata`);
   if (proposed.length && !allowProposed) throw new Error(`${proposed.length} results corrections await review; rerun with --allow-proposed to inspect output`);

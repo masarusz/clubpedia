@@ -14,7 +14,7 @@ import {
   hasSportsTable,
   seasonArticleTitle,
 } from './lib/wikitext.mjs';
-import { allHistoryTopScorers, championClubTargets, LEAGUE_INFO } from './lib/core-data.mjs';
+import { allHistoryTopScorers, championClubTargets, LEAGUE_INFO, normalizeTitle } from './lib/core-data.mjs';
 import {
   Requester,
   cachePath,
@@ -177,6 +177,99 @@ async function fetchPinnedPages({ requester, root, wiki, endpoint, lock }) {
 
 async function pageContent(root, wiki, title) {
   return (await readJson(cachePath(root, wiki, title))).content;
+}
+
+function metadataIdentity(metadata, title) {
+  const wanted = normalizeTitle(title);
+  const direct = Object.entries(metadata ?? {}).find(([key]) => normalizeTitle(key) === wanted)?.[1];
+  if (direct?.wikibaseItem) return direct.wikibaseItem;
+  return Object.values(metadata ?? {}).find((record) =>
+    [record.requestedTitle, record.title, record.redirectedFrom].some((value) => normalizeTitle(value) === wanted))?.wikibaseItem ?? null;
+}
+
+function clubNameFromSeasonTitle(startYear, title) {
+  const marker = '__CLUB__';
+  const [prefix, suffix] = clubSeasonTitle(startYear, marker).split(marker);
+  return title.startsWith(prefix) && title.endsWith(suffix)
+    ? title.slice(prefix.length, title.length - suffix.length)
+    : null;
+}
+
+function fallbackClubSeasonTitles(spec, previousLock, currentLock) {
+  const identity = metadataIdentity(currentLock.metadata, spec.clubTarget)
+    ?? metadataIdentity(previousLock.metadata, spec.clubTarget);
+  if (!identity) return [];
+  const output = [];
+  const add = (title) => {
+    if (title && title !== spec.title && !output.includes(title)) output.push(title);
+  };
+
+  // First choice: the exact title used for this club in the preceding lock.
+  const seasonKey = `${spec.league}-${spec.startYear}`;
+  for (const title of previousLock.seasons?.[seasonKey]?.clubSeasonTitles ?? []) {
+    const clubName = clubNameFromSeasonTitle(spec.startYear, title);
+    if (clubName && metadataIdentity(previousLock.metadata, clubName) === identity) add(title);
+  }
+
+  // Then try former article names already represented by pinned metadata or
+  // redirect provenance. No metadata lookup is invented solely for fallback.
+  const aliases = [];
+  for (const metadata of [previousLock.metadata, currentLock.metadata]) {
+    for (const record of Object.values(metadata ?? {})) {
+      if (record.wikibaseItem !== identity) continue;
+      for (const value of [record.requestedTitle, record.redirectedFrom, record.title]) {
+        if (value && !aliases.includes(value)) aliases.push(value);
+      }
+    }
+  }
+  for (const alias of aliases.sort((left, right) => left.localeCompare(right))) add(clubSeasonTitle(spec.startYear, alias));
+  return output;
+}
+
+async function fetchClubSeasonFallbacks({ requester, root, lock, previousLock, saveLock, specs, pages }) {
+  const unresolved = new Map();
+  for (const spec of specs) {
+    if (pages.get(spec.title)?.missing) unresolved.set(spec.title, {
+      spec,
+      candidates: fallbackClubSeasonTitles(spec, previousLock, lock),
+      index: 0,
+    });
+  }
+  while (unresolved.size) {
+    const attempts = [...unresolved.values()].map((item) => item.candidates[item.index]).filter(Boolean);
+    if (!attempts.length) break;
+    const fetched = await fetchCurrentPages({
+      requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, titles: attempts,
+      kind: 'club-season', lock, saveLock,
+      extraForTitle: (title) => {
+        const item = [...unresolved.values()].find((candidate) => candidate.candidates[candidate.index] === title);
+        return { league: item.spec.league, startYear: item.spec.startYear };
+      },
+    });
+    for (const [derivedTitle, item] of [...unresolved]) {
+      const fallbackTitle = item.candidates[item.index];
+      if (!fallbackTitle) { unresolved.delete(derivedTitle); continue; }
+      const page = fetched.get(fallbackTitle);
+      if (page && !page.missing) {
+        // Build-time code deliberately continues to read by the current
+        // table-derived spec title. Cache an alias there and retain both the
+        // actual page title and the fallback request in lock provenance.
+        const aliased = { ...page, requestedTitle: derivedTitle, redirectedFrom: derivedTitle };
+        await cacheRevision(root, 'enwiki', aliased);
+        lock.enwiki[derivedTitle] = lockRevision(aliased, 'club-season', {
+          league: item.spec.league,
+          startYear: item.spec.startYear,
+          fallbackTitle,
+        });
+        pages.set(derivedTitle, aliased);
+        unresolved.delete(derivedTitle);
+      } else {
+        item.index += 1;
+        if (item.index >= item.candidates.length) unresolved.delete(derivedTitle);
+      }
+    }
+    await saveLock();
+  }
 }
 
 async function fetchMetadata({ requester, root, titles, lock, saveLock }) {
@@ -537,7 +630,12 @@ export async function runFetchSources(options = {}) {
       const clubs = extractTableClubs(combined);
       for (const club of clubs) {
         clubTargets.add(club.target);
-        clubSeasonSpecs.push({ title: clubSeasonTitle(spec.startYear, club.target), league: spec.league, startYear: spec.startYear });
+        clubSeasonSpecs.push({
+          title: clubSeasonTitle(spec.startYear, club.target),
+          clubTarget: club.target,
+          league: spec.league,
+          startYear: spec.startYear,
+        });
       }
       lock.seasons[`${spec.league}-${spec.startYear}`] = {
         articleTitle: spec.title,
@@ -549,12 +647,17 @@ export async function runFetchSources(options = {}) {
       };
     }
     await saveLock();
+    // Club identity is needed to match a renamed article to the same club in
+    // the previous lock. These metadata records were already fetched later
+    // in this refresh; doing the club subset here does not add a new source.
+    await fetchMetadata({ requester, root, titles: [...clubTargets], lock, saveLock });
     const clubSpecByTitle = new Map(clubSeasonSpecs.map((spec) => [spec.title, spec]));
     const clubSeasonPages = await fetchCurrentPages({
       requester, root, wiki: 'enwiki', endpoint: ENWIKI_API, titles: clubSeasonSpecs.map(({ title }) => title),
       kind: 'club-season', lock, saveLock,
       extraForTitle: (title) => ({ league: clubSpecByTitle.get(title).league, startYear: clubSpecByTitle.get(title).startYear }),
     });
+    await fetchClubSeasonFallbacks({ requester, root, lock, previousLock: oldLock, saveLock, specs: clubSeasonSpecs, pages: clubSeasonPages });
 
     const playerTargets = new Set();
     for (const page of seasonPages.values()) if (!page.missing) for (const title of extractPlayerLinks(page.content)) playerTargets.add(title);

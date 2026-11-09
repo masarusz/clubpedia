@@ -78,6 +78,22 @@
       "homeGoals": 1,
       "key": "it-2002-Q1120838-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Miccoli",
+            "minute": "90+1",
+            "player": "Q136959"
+          }
+        ],
+        "home": [
+          {
+            "display": "Amoruso",
+            "minute": "30",
+            "player": "Q62244"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -281,10 +297,27 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2002-10-20",
       "home": "Q1120838",
       "homeGoals": 1,
       "key": "it-2002-Q1120838-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Caccia",
+            "minute": "30",
+            "player": "Q1489495"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cardone",
+            "minute": "45",
+            "player": "Q498837"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -440,7 +473,7 @@
           },
           {
             "display": "Grosso",
-            "minute": "90+2",
+            "minute": "90+1",
             "player": "Q230529"
           }
         ],
@@ -1244,28 +1277,6 @@
       "homeGoals": 2,
       "key": "it-2002-Q1543-Q459794",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Gurenko",
-            "minute": "53",
-            "player": "Q705929"
-          }
-        ],
-        "home": [
-          {
-            "display": "Pirlo",
-            "minute": "54",
-            "penalty": true,
-            "player": "Q43926"
-          },
-          {
-            "display": "Rivaldo",
-            "minute": "69",
-            "player": "Q483577"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -1386,6 +1397,26 @@
       "homeGoals": 3,
       "key": "it-2002-Q16344-Q1120838",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Fusani",
+            "minute": "14",
+            "player": "Q3851032"
+          },
+          {
+            "display": "Miccoli",
+            "minute": "47",
+            "player": "Q136959"
+          },
+          {
+            "display": "Milanese",
+            "minute": "90+4",
+            "player": "Q3852879"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1481,6 +1512,16 @@
       "homeGoals": 1,
       "key": "it-2002-Q16344-Q2037",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Loreto",
+            "minute": "39",
+            "player": "Q327759"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1491,32 +1532,6 @@
       "homeGoals": 2,
       "key": "it-2002-Q16344-Q2609",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Corradi",
-            "minute": "16",
-            "player": "Q471641"
-          },
-          {
-            "display": "Negro",
-            "minute": "85",
-            "player": "Q561227"
-          }
-        ],
-        "home": [
-          {
-            "display": "Zé Maria",
-            "minute": "13",
-            "player": "Q2089380"
-          },
-          {
-            "display": "Grosso",
-            "minute": "43",
-            "player": "Q230529"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -1577,6 +1592,28 @@
       "homeGoals": 2,
       "key": "it-2002-Q16344-Q2768",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ferrante",
+            "minute": "81",
+            "player": "Q1851160"
+          }
+        ],
+        "home": [
+          {
+            "display": "Caracciolo",
+            "minute": "38",
+            "player": "Q493589"
+          },
+          {
+            "display": "Zé Maria",
+            "minute": "87",
+            "penalty": true,
+            "player": "Q2089380"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1586,15 +1623,35 @@
       "homeGoals": 0,
       "key": "it-2002-Q16344-Q2798",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jankulovski",
+            "minute": "60",
+            "player": "Q200868"
+          },
+          {
+            "display": "Jørgensen",
+            "minute": "87",
+            "player": "Q312516"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q459794",
       "awayGoals": 0,
+      "date": "2002-12-08",
       "home": "Q16344",
       "homeGoals": 0,
       "key": "it-2002-Q16344-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1661,6 +1718,32 @@
       "homeGoals": 1,
       "key": "it-2002-Q16344-Q6703",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Saudati",
+            "minute": "20",
+            "player": "Q2247063"
+          },
+          {
+            "display": "Di Natale",
+            "minute": "42",
+            "player": "Q167281"
+          },
+          {
+            "display": "Rocchi",
+            "minute": "65",
+            "player": "Q75580"
+          }
+        ],
+        "home": [
+          {
+            "display": "Rezaei",
+            "minute": "8",
+            "player": "Q457623"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1670,6 +1753,22 @@
       "homeGoals": 2,
       "key": "it-2002-Q16344-Q8408",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Zé Maria",
+            "minute": "6",
+            "penalty": true,
+            "player": "Q2089380"
+          },
+          {
+            "display": "Rezaei",
+            "minute": "29",
+            "player": "Q457623"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1679,6 +1778,21 @@
       "homeGoals": 2,
       "key": "it-2002-Q16344-Q8476",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Miccoli",
+            "minute": "51",
+            "player": "Q136959"
+          },
+          {
+            "display": "Tedesco",
+            "minute": "80",
+            "player": "Q736304"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1793,12 +1907,12 @@
         "away": [
           {
             "display": "Miccoli",
-            "minute": "22",
+            "minute": "21",
             "player": "Q136959"
           },
           {
             "display": "Fusani",
-            "minute": "80",
+            "minute": "79",
             "player": "Q3851032"
           }
         ],
@@ -2716,6 +2830,27 @@
       "homeGoals": 3,
       "key": "it-2002-Q2037-Q16344",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Legrottaglie",
+            "minute": "25",
+            "player": "Q311578"
+          },
+          {
+            "display": "Della Morte",
+            "minute": "28",
+            "player": "Q3804839"
+          },
+          {
+            "display": "Corini",
+            "minute": "52",
+            "penalty": true,
+            "player": "Q511092"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2870,6 +3005,7 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2003-05-03",
       "home": "Q2037",
       "homeGoals": 3,
       "key": "it-2002-Q2037-Q459794",
@@ -4557,6 +4693,27 @@
       "homeGoals": 2,
       "key": "it-2002-Q2768-Q16344",
       "note": "The match was played at Stadio Giglio.",
+      "scorers": {
+        "away": [
+          {
+            "display": "Grosso",
+            "minute": "41",
+            "player": "Q230529"
+          }
+        ],
+        "home": [
+          {
+            "display": "Ferrante",
+            "minute": "65",
+            "player": "Q1851160"
+          },
+          {
+            "display": "Ferrante",
+            "minute": "79",
+            "player": "Q1851160"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4714,6 +4871,7 @@
     {
       "away": "Q459794",
       "awayGoals": 3,
+      "date": "2003-04-13",
       "home": "Q2768",
       "homeGoals": 1,
       "key": "it-2002-Q2768-Q459794",
@@ -4838,6 +4996,10 @@
       "homeGoals": 0,
       "key": "it-2002-Q2798-Q16344",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4985,10 +5147,32 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2003-02-08",
       "home": "Q2798",
       "homeGoals": 2,
       "key": "it-2002-Q2798-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hübner",
+            "minute": "77",
+            "player": "Q945726"
+          }
+        ],
+        "home": [
+          {
+            "display": "Jankulovski",
+            "minute": "18",
+            "player": "Q200868"
+          },
+          {
+            "display": "Muzzi",
+            "minute": "84",
+            "player": "Q1396445"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5044,10 +5228,21 @@
     {
       "away": "Q1120838",
       "awayGoals": 1,
+      "date": "2003-03-02",
       "home": "Q459794",
       "homeGoals": 0,
       "key": "it-2002-Q459794-Q1120838",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Amoruso",
+            "minute": "7",
+            "player": "Q62244"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5121,10 +5316,47 @@
     {
       "away": "Q16344",
       "awayGoals": 1,
+      "date": "2003-04-27",
       "home": "Q459794",
       "homeGoals": 5,
       "key": "it-2002-Q459794-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zé Maria",
+            "minute": "50",
+            "player": "Q2089380"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Francesco",
+            "minute": "5",
+            "player": "Q396154"
+          },
+          {
+            "display": "Hugo Campagnaro",
+            "minute": "36",
+            "player": "Q508010"
+          },
+          {
+            "display": "Hübner",
+            "minute": "41",
+            "player": "Q945726"
+          },
+          {
+            "display": "Hugo Campagnaro",
+            "minute": "63",
+            "player": "Q508010"
+          },
+          {
+            "display": "Ferrarese",
+            "minute": "80",
+            "player": "Q3680037"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5160,38 +5392,12 @@
       "homeGoals": 3,
       "key": "it-2002-Q459794-Q1893",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Bellucci",
-            "minute": "84",
-            "player": "Q607364"
-          }
-        ],
-        "home": [
-          {
-            "display": "Hübner",
-            "minute": "19",
-            "penalty": true,
-            "player": "Q945726"
-          },
-          {
-            "display": "Maresca",
-            "minute": "40",
-            "player": "Q317282"
-          },
-          {
-            "display": "De Cesare",
-            "minute": "62",
-            "player": "Q3678164"
-          }
-        ]
-      },
       "status": "played"
     },
     {
       "away": "Q2037",
       "awayGoals": 3,
+      "date": "2002-12-14",
       "home": "Q459794",
       "homeGoals": 0,
       "key": "it-2002-Q459794-Q2037",
@@ -5294,24 +5500,52 @@
     {
       "away": "Q2768",
       "awayGoals": 0,
+      "date": "2002-11-24",
       "home": "Q459794",
       "homeGoals": 1,
       "key": "it-2002-Q459794-Q2768",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Di Francesco",
+            "minute": "23",
+            "player": "Q396154"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q2798",
       "awayGoals": 0,
+      "date": "2002-09-22",
       "home": "Q459794",
       "homeGoals": 2,
       "key": "it-2002-Q459794-Q2798",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Hübner",
+            "minute": "26",
+            "player": "Q945726"
+          },
+          {
+            "display": "Maresca",
+            "minute": "88",
+            "player": "Q317282"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q631",
       "awayGoals": 4,
+      "date": "2002-10-06",
       "home": "Q459794",
       "homeGoals": 1,
       "key": "it-2002-Q459794-Q631",
@@ -5362,15 +5596,38 @@
     {
       "away": "Q6703",
       "awayGoals": 2,
+      "date": "2002-10-27",
       "home": "Q459794",
       "homeGoals": 1,
       "key": "it-2002-Q459794-Q6703",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rocchi",
+            "minute": "30",
+            "player": "Q75580"
+          },
+          {
+            "display": "Vannucchi",
+            "minute": "81",
+            "player": "Q2258886"
+          }
+        ],
+        "home": [
+          {
+            "display": "Cardone",
+            "minute": "6",
+            "player": "Q498837"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8408",
       "awayGoals": 3,
+      "date": "2003-04-06",
       "home": "Q459794",
       "homeGoals": 3,
       "key": "it-2002-Q459794-Q8408",
@@ -5380,6 +5637,7 @@
     {
       "away": "Q8476",
       "awayGoals": 2,
+      "date": "2003-05-10",
       "home": "Q459794",
       "homeGoals": 2,
       "key": "it-2002-Q459794-Q8476",
@@ -5449,6 +5707,32 @@
       "homeGoals": 2,
       "key": "it-2002-Q631-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Obodo",
+            "minute": "46",
+            "player": "Q464145"
+          },
+          {
+            "display": "Di Loreto",
+            "minute": "89",
+            "player": "Q327759"
+          }
+        ],
+        "home": [
+          {
+            "display": "Crespo",
+            "minute": "10",
+            "player": "Q160206"
+          },
+          {
+            "display": "Crespo",
+            "minute": "56",
+            "player": "Q160206"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5647,6 +5931,7 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2003-02-23",
       "home": "Q631",
       "homeGoals": 3,
       "key": "it-2002-Q631-Q459794",
@@ -5837,7 +6122,7 @@
         "away": [
           {
             "display": "Miccoli",
-            "minute": "64",
+            "minute": "63",
             "player": "Q136959"
           }
         ],
@@ -6261,6 +6546,22 @@
       "homeGoals": 1,
       "key": "it-2002-Q6703-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vryzas",
+            "minute": "5",
+            "player": "Q163437"
+          }
+        ],
+        "home": [
+          {
+            "display": "Carparelli",
+            "minute": "7",
+            "player": "Q761549"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6413,10 +6714,37 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2003-03-09",
       "home": "Q6703",
       "homeGoals": 3,
       "key": "it-2002-Q6703-Q459794",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hübner",
+            "minute": "90",
+            "player": "Q945726"
+          }
+        ],
+        "home": [
+          {
+            "display": "Grella",
+            "minute": "56",
+            "player": "Q310965"
+          },
+          {
+            "display": "Tavano",
+            "minute": "68",
+            "player": "Q471802"
+          },
+          {
+            "display": "Borriello",
+            "minute": "81",
+            "player": "Q44097"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6568,6 +6896,22 @@
       "homeGoals": 1,
       "key": "it-2002-Q8408-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Vryzas",
+            "minute": "34",
+            "player": "Q163437"
+          }
+        ],
+        "home": [
+          {
+            "display": "Colucci",
+            "minute": "14",
+            "player": "Q290913"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6737,10 +7081,21 @@
     {
       "away": "Q459794",
       "awayGoals": 0,
+      "date": "2002-11-17",
       "home": "Q8408",
       "homeGoals": 1,
       "key": "it-2002-Q8408-Q459794",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Milanetto",
+            "minute": "33",
+            "player": "Q2360347"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -6845,6 +7200,32 @@
       "homeGoals": 3,
       "key": "it-2002-Q8476-Q16344",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Rezaei",
+            "minute": "2",
+            "player": "Q457623"
+          }
+        ],
+        "home": [
+          {
+            "display": "Di Michele",
+            "minute": "1",
+            "player": "Q560651"
+          },
+          {
+            "display": "Cozza",
+            "minute": "27",
+            "player": "Q330245"
+          },
+          {
+            "display": "Bonazzoli",
+            "minute": "47",
+            "player": "Q1337293"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7009,6 +7390,7 @@
     {
       "away": "Q459794",
       "awayGoals": 1,
+      "date": "2002-12-22",
       "home": "Q8476",
       "homeGoals": 3,
       "key": "it-2002-Q8476-Q459794",
@@ -7091,7 +7473,7 @@
         "id": "Q230529"
       },
       {
-        "goals": 3,
+        "goals": 5,
         "id": "Q62244"
       },
       {
@@ -7105,6 +7487,10 @@
       {
         "goals": 2,
         "id": "Q1489495"
+      },
+      {
+        "goals": 1,
+        "id": "Q498837"
       },
       {
         "goals": 1,
@@ -7163,6 +7549,10 @@
       },
       {
         "goals": 1,
+        "id": "Q180326"
+      },
+      {
+        "goals": 1,
         "id": "Q1091577"
       },
       {
@@ -7180,10 +7570,6 @@
       {
         "goals": 4,
         "id": "Q189716"
-      },
-      {
-        "goals": 1,
-        "id": "Q180326"
       }
     ],
     "Q1543": [
@@ -7196,7 +7582,7 @@
         "id": "Q41244"
       },
       {
-        "goals": 5,
+        "goals": 4,
         "id": "Q483577"
       },
       {
@@ -7217,7 +7603,7 @@
         "id": "Q188564"
       },
       {
-        "goals": 9,
+        "goals": 8,
         "id": "Q43926"
       },
       {
@@ -7244,27 +7630,43 @@
       },
       {
         "goals": 3,
-        "id": "Q2089380"
-      },
-      {
-        "goals": 2,
         "id": "Q736304"
       },
       {
-        "goals": 3,
+        "goals": 1,
+        "id": "Q3852879"
+      },
+      {
+        "goals": 5,
+        "id": "Q2089380"
+      },
+      {
+        "goals": 5,
         "id": "Q163437"
       },
       {
-        "goals": 6,
+        "goals": 2,
+        "id": "Q327759"
+      },
+      {
+        "goals": 9,
         "id": "Q136959"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q3851032"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q493589"
+      },
+      {
+        "goals": 3,
+        "id": "Q457623"
+      },
+      {
+        "goals": 1,
+        "id": "Q464145"
       }
     ],
     "Q1886": [
@@ -7323,7 +7725,7 @@
         "id": "Q334684"
       },
       {
-        "goals": 2,
+        "goals": 1,
         "id": "Q607364"
       },
       {
@@ -7357,7 +7759,7 @@
     ],
     "Q2037": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q511092"
       },
       {
@@ -7367,6 +7769,10 @@
       {
         "goals": 1,
         "id": "Q2629845"
+      },
+      {
+        "goals": 1,
+        "id": "Q311578"
       },
       {
         "goals": 1,
@@ -7381,7 +7787,7 @@
         "id": "Q3836930"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q3804839"
       },
       {
@@ -7395,7 +7801,7 @@
     ],
     "Q2609": [
       {
-        "goals": 10,
+        "goals": 9,
         "id": "Q471641"
       },
       {
@@ -7417,11 +7823,11 @@
       },
       {
         "goals": 1,
-        "id": "Q561227"
+        "id": "Q294351"
       },
       {
-        "goals": 1,
-        "id": "Q294351"
+        "goals": 6,
+        "id": "Q318226"
       },
       {
         "goals": 4,
@@ -7430,10 +7836,6 @@
       {
         "goals": 6,
         "id": "Q192640"
-      },
-      {
-        "goals": 6,
-        "id": "Q318226"
       },
       {
         "goals": 1,
@@ -7503,6 +7905,10 @@
     ],
     "Q2739": [
       {
+        "goals": 2,
+        "id": "Q215952"
+      },
+      {
         "goals": 9,
         "id": "Q297768"
       },
@@ -7517,10 +7923,6 @@
       {
         "goals": 9,
         "id": "Q180993"
-      },
-      {
-        "goals": 2,
-        "id": "Q215952"
       },
       {
         "goals": 4,
@@ -7558,7 +7960,7 @@
     ],
     "Q2768": [
       {
-        "goals": 1,
+        "goals": 4,
         "id": "Q1851160"
       },
       {
@@ -7588,7 +7990,7 @@
     ],
     "Q2798": [
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q1396445"
       },
       {
@@ -7596,7 +7998,7 @@
         "id": "Q369133"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q312516"
       },
       {
@@ -7604,7 +8006,7 @@
         "id": "Q191869"
       },
       {
-        "goals": 2,
+        "goals": 4,
         "id": "Q200868"
       },
       {
@@ -7622,8 +8024,12 @@
         "id": "Q317282"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1489495"
+      },
+      {
+        "goals": 2,
+        "id": "Q396154"
       },
       {
         "goals": 14,
@@ -7632,19 +8038,27 @@
       },
       {
         "goals": 1,
-        "id": "Q330798"
+        "id": "Q498837"
       },
       {
         "goals": 1,
-        "id": "Q705929"
+        "id": "Q330798"
       },
       {
-        "goals": 3,
+        "goals": 2,
         "id": "Q3678164"
       },
       {
         "goals": 1,
         "id": "Q171311"
+      },
+      {
+        "goals": 2,
+        "id": "Q508010"
+      },
+      {
+        "goals": 1,
+        "id": "Q3680037"
       },
       {
         "goals": 1,
@@ -7657,7 +8071,7 @@
         "id": "Q207548"
       },
       {
-        "goals": 4,
+        "goals": 6,
         "id": "Q160206"
       },
       {
@@ -7700,6 +8114,10 @@
     ],
     "Q6651": [
       {
+        "goals": 6,
+        "id": "Q472159"
+      },
+      {
         "goals": 2,
         "id": "Q186478"
       },
@@ -7724,10 +8142,6 @@
         "id": "Q3737804"
       },
       {
-        "goals": 6,
-        "id": "Q472159"
-      },
-      {
         "goals": 7,
         "id": "Q211151"
       },
@@ -7743,7 +8157,15 @@
     "Q6703": [
       {
         "goals": 1,
+        "id": "Q761549"
+      },
+      {
+        "goals": 2,
         "id": "Q2258886"
+      },
+      {
+        "goals": 1,
+        "id": "Q2247063"
       },
       {
         "goals": 13,
@@ -7751,11 +8173,15 @@
         "topScorerRank": 10
       },
       {
+        "goals": 3,
+        "id": "Q75580"
+      },
+      {
         "goals": 1,
         "id": "Q3757012"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q471802"
       },
       {
@@ -7764,11 +8190,15 @@
       },
       {
         "goals": 1,
-        "id": "Q75580"
+        "id": "Q986739"
       },
       {
         "goals": 1,
-        "id": "Q986739"
+        "id": "Q310965"
+      },
+      {
+        "goals": 1,
+        "id": "Q44097"
       }
     ],
     "Q8408": [
@@ -7777,7 +8207,7 @@
         "id": "Q314368"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q290913"
       },
       {
@@ -7785,7 +8215,7 @@
         "id": "Q316852"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2360347"
       },
       {
@@ -7803,15 +8233,19 @@
     ],
     "Q8476": [
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q560651"
+      },
+      {
+        "goals": 1,
+        "id": "Q330245"
       },
       {
         "goals": 1,
         "id": "Q2291334"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1337293"
       },
       {

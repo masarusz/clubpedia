@@ -10,6 +10,20 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q2052",
+        "goalMatches": [
+          "it-1995-Q2052-Q1886",
+          "it-1995-Q2052-Q2768",
+          "it-1995-Q2052-Q2768",
+          "it-1995-Q2052-Q8428"
+        ],
+        "goals": 4,
+        "league": "it",
+        "recordedGoals": 4,
+        "season": "it-1995",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1900",
         "goalMatches": [
           "it-1996-Q2609-Q1900",
@@ -1603,12 +1617,16 @@
       {
         "club": "Q162317",
         "goalMatches": [
+          "de-1993-Q101959-Q162317",
+          "de-1993-Q162317-Q104770",
           "de-1993-Q162317-Q38245",
-          "de-1993-Q41420-Q162317"
+          "de-1993-Q32494-Q162317",
+          "de-1993-Q41420-Q162317",
+          "de-1993-Q51976-Q162317"
         ],
-        "goals": 2,
+        "goals": 6,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 6,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -1899,13 +1917,23 @@
       {
         "club": "Q8682",
         "goalMatches": [
-          "es-1993-Q8682-Q10333",
-          "es-1993-Q8749-Q8682"
+          "es-1993-Q8682-Q12236"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "es",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "es-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8682",
+        "goalMatches": [
+          "es-1994-Q8682-Q12236"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
         "topScorerRank": null
       }
     ]
@@ -2087,11 +2115,12 @@
           "de-2025-Q22707-Q4512",
           "de-2025-Q4512-Q105254",
           "de-2025-Q4512-Q141971",
+          "de-2025-Q4512-Q51974",
           "de-2025-Q51976-Q4512"
         ],
-        "goals": 6,
+        "goals": 7,
         "league": "de",
-        "recordedGoals": 6,
+        "recordedGoals": 7,
         "season": "de-2025",
         "topScorerRank": null
       }

@@ -605,6 +605,17 @@
         "recordedGoals": 1,
         "season": "it-1993",
         "topScorerRank": null
+      },
+      {
+        "club": "Q289707",
+        "goalMatches": [
+          "it-1994-Q289707-Q2052"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1994",
+        "topScorerRank": null
       }
     ]
   },
@@ -938,13 +949,14 @@
         "goalMatches": [
           "it-2003-Q1457-Q2798",
           "it-2003-Q2609-Q2798",
+          "it-2003-Q2798-Q16344",
           "it-2003-Q2798-Q2609",
           "it-2003-Q2798-Q6651",
           "it-2003-Q2798-Q6651"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "it-2003",
         "topScorerRank": null
       },
@@ -1622,6 +1634,17 @@
         "recordedGoals": 1,
         "season": "de-1998",
         "topScorerRank": null
+      },
+      {
+        "club": "Q154293",
+        "goalMatches": [
+          "de-1999-Q14551982-Q154293"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
       }
     ]
   },
@@ -1672,36 +1695,6 @@
         "league": "es",
         "recordedGoals": 2,
         "season": "es-2022",
-        "topScorerRank": null
-      }
-    ]
-  },
-  "Q2842954": {
-    "birthDate": "1976-12-10",
-    "en": "Álvaro Benito",
-    "id": "Q2842954",
-    "ja": {
-      "display": "アルバロ ベニート",
-      "mode": "katakana"
-    },
-    "japan": null,
-    "photo": true,
-    "photoCredit": {
-      "artist": "Gochy5",
-      "licence": "Public domain",
-      "licenceUrl": "",
-      "source": "https://commons.wikimedia.org/wiki/File:Pignoise.jpg"
-    },
-    "seasons": [
-      {
-        "club": "Q8682",
-        "goalMatches": [
-          "es-1995-Q8682-Q8749"
-        ],
-        "goals": 1,
-        "league": "es",
-        "recordedGoals": 1,
-        "season": "es-1995",
         "topScorerRank": null
       }
     ]
@@ -1985,15 +1978,27 @@
       {
         "club": "Q19451",
         "goalMatches": [
+          "en-2002-Q1128631-Q19451",
           "en-2002-Q18708-Q19451",
           "en-2002-Q18747-Q19451",
           "en-2002-Q19451-Q18716",
           "en-2002-Q19451-Q18716"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "en",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "en-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18661",
+        "goalMatches": [
+          "en-2003-Q1128631-Q18661"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2003",
         "topScorerRank": null
       }
     ]
@@ -2031,6 +2036,30 @@
         "league": "fr",
         "recordedGoals": 3,
         "season": "fr-2005",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q3702626": {
+    "birthDate": "1968-01-11",
+    "en": "Dario Morello",
+    "id": "Q3702626",
+    "ja": {
+      "display": "Dario Morello",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q289707",
+        "goalMatches": [
+          "it-1993-Q289707-Q459794",
+          "it-1993-Q459794-Q289707"
+        ],
+        "goals": 2,
+        "league": "it",
+        "recordedGoals": 2,
+        "season": "it-1993",
         "topScorerRank": null
       }
     ]
@@ -2767,6 +2796,17 @@
       {
         "club": "Q19462",
         "goalMatches": [
+          "en-1998-Q19462-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q19462",
+        "goalMatches": [
           "en-2000-Q18716-Q19462",
           "en-2000-Q9617-Q19462"
         ],
@@ -2892,11 +2932,12 @@
       {
         "club": "Q102720",
         "goalMatches": [
+          "de-1999-Q102720-Q14551982",
           "de-1999-Q102720-Q38245"
         ],
         "goals": 12,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "de-1999",
         "topScorerRank": 7
       },
@@ -3082,6 +3123,17 @@
       {
         "club": "Q4512",
         "goalMatches": [
+          "de-1999-Q4512-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q4512",
+        "goalMatches": [
           "de-2003-Q101859-Q4512"
         ],
         "goals": 1,
@@ -3218,6 +3270,29 @@
         "league": "fr",
         "recordedGoals": 1,
         "season": "fr-2007",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q7329777": {
+    "birthDate": "1977-11-08",
+    "en": "Richard Walker",
+    "id": "Q7329777",
+    "ja": {
+      "display": "Richard Walker",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18711",
+        "goalMatches": [
+          "en-1999-Q18711-Q2714"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
         "topScorerRank": null
       }
     ]

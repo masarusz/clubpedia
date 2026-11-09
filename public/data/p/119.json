@@ -40,6 +40,17 @@
     },
     "seasons": [
       {
+        "club": "Q105853",
+        "goalMatches": [
+          "de-1993-Q105853-Q162317"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
+        "topScorerRank": null
+      },
+      {
         "club": "Q154293",
         "goalMatches": [
           "de-1994-Q154293-Q105861"
@@ -328,12 +339,14 @@
       {
         "club": "Q162317",
         "goalMatches": [
+          "de-1993-Q104770-Q162317",
           "de-1993-Q162317-Q104761",
+          "de-1993-Q162317-Q154293",
           "de-1993-Q38245-Q162317"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "de-1993",
         "topScorerRank": null
       }
@@ -2612,11 +2625,12 @@
           "es-2025-Q8723-Q10315",
           "es-2025-Q8723-Q10512",
           "es-2025-Q8723-Q7156",
+          "es-2025-Q8723-Q8806",
           "es-2025-Q8780-Q8723"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "es",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "es-2025",
         "topScorerRank": null
       }
@@ -3584,6 +3598,17 @@
     },
     "seasons": [
       {
+        "club": "Q6703",
+        "goalMatches": [
+          "it-2002-Q6703-Q459794"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2002",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2693",
         "goalMatches": [
           "it-2006-Q2693-Q1886"
@@ -3619,10 +3644,12 @@
     "seasons": [
       {
         "club": "Q32494",
-        "goalMatches": [],
+        "goalMatches": [
+          "de-1999-Q14551982-Q32494"
+        ],
         "goals": 14,
         "league": "de",
-        "recordedGoals": 0,
+        "recordedGoals": 1,
         "season": "de-1999",
         "topScorerRank": 3
       },
@@ -3928,6 +3955,17 @@
         "recordedGoals": 1,
         "season": "en-1993",
         "topScorerRank": null
+      },
+      {
+        "club": "Q19580",
+        "goalMatches": [
+          "en-1999-Q19580-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
+        "topScorerRank": null
       }
     ]
   },
@@ -3948,6 +3986,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Marcelo_Bordon.jpg"
     },
     "seasons": [
+      {
+        "club": "Q4512",
+        "goalMatches": [
+          "de-1999-Q14551982-Q4512"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      },
       {
         "club": "Q4512",
         "goalMatches": [
@@ -4933,6 +4982,18 @@
         "league": "it",
         "recordedGoals": 2,
         "season": "it-1992",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2693",
+        "goalMatches": [
+          "it-1995-Q2693-Q1900",
+          "it-1995-Q2693-Q759482"
+        ],
+        "goals": 2,
+        "league": "it",
+        "recordedGoals": 2,
+        "season": "it-1995",
         "topScorerRank": null
       }
     ]

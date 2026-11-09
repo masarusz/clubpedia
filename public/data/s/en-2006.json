@@ -696,10 +696,21 @@
     {
       "away": "Q18741",
       "awayGoals": 0,
+      "date": "2006-09-09",
       "home": "Q18656",
       "homeGoals": 1,
       "key": "en-2006-Q18656-Q18741",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Giggs",
+            "minute": "8",
+            "player": "Q10524"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1122,10 +1133,42 @@
     {
       "away": "Q18741",
       "awayGoals": 3,
+      "date": "2007-04-28",
       "home": "Q18661",
       "homeGoals": 2,
       "key": "en-2006-Q18661-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Keane",
+            "minute": "12",
+            "player": "Q184612"
+          },
+          {
+            "display": "Berbatov",
+            "minute": "47",
+            "player": "Q170235"
+          },
+          {
+            "display": "Keane",
+            "minute": "83",
+            "player": "Q184612"
+          }
+        ],
+        "home": [
+          {
+            "display": "Viduka",
+            "minute": "66",
+            "player": "Q239513"
+          },
+          {
+            "display": "Pogatetz",
+            "minute": "89",
+            "player": "Q310504"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2508,10 +2551,37 @@
     {
       "away": "Q18741",
       "awayGoals": 1,
+      "date": "2006-12-23",
       "home": "Q18716",
       "homeGoals": 3,
       "key": "en-2006-Q18716-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Murphy",
+            "minute": "15",
+            "player": "Q296589"
+          }
+        ],
+        "home": [
+          {
+            "display": "Dyer",
+            "minute": "2",
+            "player": "Q299455"
+          },
+          {
+            "display": "Martins",
+            "minute": "7",
+            "player": "Q207548"
+          },
+          {
+            "display": "Parker",
+            "minute": "34",
+            "player": "Q213989"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3301,19 +3371,68 @@
     {
       "away": "Q18656",
       "awayGoals": 4,
+      "date": "2007-02-04",
       "home": "Q18741",
       "homeGoals": 0,
       "key": "en-2006-Q18741-Q18656",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ronaldo",
+            "minute": "45",
+            "penalty": true,
+            "player": "Q11571"
+          },
+          {
+            "display": "Vidić",
+            "minute": "48",
+            "player": "Q163564"
+          },
+          {
+            "display": "Scholes",
+            "minute": "54",
+            "player": "Q45613"
+          },
+          {
+            "display": "Giggs",
+            "minute": "77",
+            "player": "Q10524"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q18661",
       "awayGoals": 1,
+      "date": "2006-12-05",
       "home": "Q18741",
       "homeGoals": 2,
       "key": "en-2006-Q18741-Q18661",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Huth",
+            "minute": "80",
+            "player": "Q155461"
+          }
+        ],
+        "home": [
+          {
+            "display": "Berbatov",
+            "minute": "48",
+            "player": "Q170235"
+          },
+          {
+            "display": "Keane",
+            "minute": "84",
+            "player": "Q184612"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3349,7 +3468,7 @@
         "home": [
           {
             "display": "Defoe",
-            "minute": "67",
+            "minute": "58",
             "player": "Q188746"
           },
           {
@@ -3364,10 +3483,42 @@
     {
       "away": "Q18716",
       "awayGoals": 3,
+      "date": "2007-01-14",
       "home": "Q18741",
       "homeGoals": 2,
       "key": "en-2006-Q18741-Q18716",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Huntington",
+            "minute": "16",
+            "player": "Q2607437"
+          },
+          {
+            "display": "Martins",
+            "minute": "72",
+            "player": "Q207548"
+          },
+          {
+            "display": "Butt",
+            "minute": "73",
+            "player": "Q295506"
+          }
+        ],
+        "home": [
+          {
+            "display": "Defoe",
+            "minute": "14",
+            "player": "Q188746"
+          },
+          {
+            "display": "Berbatov",
+            "minute": "54",
+            "player": "Q170235"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3414,10 +3565,37 @@
     {
       "away": "Q18750",
       "awayGoals": 1,
+      "date": "2006-11-26",
       "home": "Q18741",
       "homeGoals": 3,
       "key": "en-2006-Q18741-Q18750",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Camara",
+            "minute": "25",
+            "player": "Q316799"
+          }
+        ],
+        "home": [
+          {
+            "display": "Defoe",
+            "minute": "43",
+            "player": "Q188746"
+          },
+          {
+            "display": "Berbatov",
+            "minute": "44",
+            "player": "Q170235"
+          },
+          {
+            "display": "Lennon",
+            "minute": "90",
+            "player": "Q175303"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3438,7 +3616,7 @@
         ],
         "home": [
           {
-            "display": "Jermain Defoe",
+            "display": "Defoe",
             "minute": "67",
             "player": "Q188746"
           }
@@ -3491,10 +3669,48 @@
     {
       "away": "Q19462",
       "awayGoals": 1,
+      "date": "2006-12-09",
       "home": "Q18741",
       "homeGoals": 5,
       "key": "en-2006-Q18741-Q19462",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Dawson",
+            "minute": "43",
+            "ownGoal": true,
+            "player": "Q59192"
+          }
+        ],
+        "home": [
+          {
+            "display": "Berbatov",
+            "minute": "31",
+            "player": "Q170235"
+          },
+          {
+            "display": "Tainio",
+            "minute": "33",
+            "player": "Q316501"
+          },
+          {
+            "display": "Malbranque",
+            "minute": "55",
+            "player": "Q13054"
+          },
+          {
+            "display": "Defoe",
+            "minute": "63",
+            "player": "Q188746"
+          },
+          {
+            "display": "Berbatov",
+            "minute": "66",
+            "player": "Q170235"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3532,19 +3748,62 @@
     {
       "away": "Q19607",
       "awayGoals": 0,
+      "date": "2006-08-22",
       "home": "Q18741",
       "homeGoals": 2,
       "key": "en-2006-Q18741-Q19607",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Berbatov",
+            "minute": "7",
+            "player": "Q170235"
+          },
+          {
+            "display": "Jenas",
+            "minute": "17",
+            "player": "Q296621"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q2714",
       "awayGoals": 1,
+      "date": "2007-03-17",
       "home": "Q18741",
       "homeGoals": 3,
       "key": "en-2006-Q18741-Q2714",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Henderson",
+            "minute": "89",
+            "player": "Q3016183"
+          }
+        ],
+        "home": [
+          {
+            "display": "Jenas",
+            "minute": "41",
+            "player": "Q296621"
+          },
+          {
+            "display": "Robinson",
+            "minute": "63",
+            "player": "Q215824"
+          },
+          {
+            "display": "Ghaly",
+            "minute": "85",
+            "player": "Q375518"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3664,7 +3923,7 @@
           },
           {
             "display": "Jenas",
-            "minute": "90+5",
+            "minute": "90",
             "player": "Q296621"
           }
         ]
@@ -3862,47 +4121,6 @@
       "homeGoals": 3,
       "key": "en-2006-Q18747-Q18741",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Defoe",
-            "minute": "51",
-            "player": "Q188746"
-          },
-          {
-            "display": "Tainio",
-            "minute": "63",
-            "player": "Q316501"
-          },
-          {
-            "display": "Berbatov",
-            "minute": "89",
-            "player": "Q170235"
-          },
-          {
-            "display": "Stalteri",
-            "minute": "90",
-            "player": "Q312091"
-          }
-        ],
-        "home": [
-          {
-            "display": "Noble",
-            "minute": "16",
-            "player": "Q158814"
-          },
-          {
-            "display": "Tevez",
-            "minute": "41",
-            "player": "Q50600"
-          },
-          {
-            "display": "Zamora",
-            "minute": "85",
-            "player": "Q152286"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -4293,10 +4511,47 @@
     {
       "away": "Q18741",
       "awayGoals": 3,
+      "date": "2007-04-15",
       "home": "Q18750",
       "homeGoals": 3,
       "key": "en-2006-Q18750-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Berbatov",
+            "minute": "4",
+            "player": "Q170235"
+          },
+          {
+            "display": "Keane",
+            "minute": "35",
+            "player": "Q184612"
+          },
+          {
+            "display": "Keane",
+            "minute": "68",
+            "player": "Q184612"
+          }
+        ],
+        "home": [
+          {
+            "display": "Heskey",
+            "minute": "2",
+            "player": "Q191162"
+          },
+          {
+            "display": "Baines",
+            "minute": "30",
+            "player": "Q187989"
+          },
+          {
+            "display": "Kilbane",
+            "minute": "60",
+            "player": "Q350802"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4789,7 +5044,7 @@
       "scorers": {
         "away": [
           {
-            "display": "Jermain Defoe",
+            "display": "Defoe",
             "minute": "62",
             "penalty": true,
             "player": "Q188746"
@@ -5802,10 +6057,26 @@
     {
       "away": "Q18741",
       "awayGoals": 2,
+      "date": "2007-05-07",
       "home": "Q19462",
       "homeGoals": 0,
       "key": "en-2006-Q19462-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Berbatov",
+            "minute": "7",
+            "player": "Q170235"
+          },
+          {
+            "display": "Defoe",
+            "minute": "90",
+            "player": "Q188746"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6670,10 +6941,33 @@
     {
       "away": "Q18741",
       "awayGoals": 1,
+      "date": "2007-02-10",
       "home": "Q19607",
       "homeGoals": 2,
       "key": "en-2006-Q19607-Q18741",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jenas",
+            "minute": "2",
+            "player": "Q296621"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hulse",
+            "minute": "27",
+            "player": "Q785933"
+          },
+          {
+            "display": "Jagielka",
+            "minute": "62",
+            "penalty": true,
+            "player": "Q208933"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7036,10 +7330,15 @@
     {
       "away": "Q18741",
       "awayGoals": 0,
+      "date": "2006-10-28",
       "home": "Q2714",
       "homeGoals": 0,
       "key": "en-2006-Q2714-Q18741",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -9448,7 +9747,7 @@
     ],
     "Q18656": [
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q10524"
       },
       {
@@ -9456,8 +9755,12 @@
         "id": "Q18976"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q45613"
+      },
+      {
+        "goals": 1,
+        "id": "Q483417"
       },
       {
         "goals": 5,
@@ -9482,15 +9785,11 @@
         "id": "Q306351"
       },
       {
-        "goals": 1,
-        "id": "Q483417"
-      },
-      {
         "goals": 2,
         "id": "Q50603"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q163564"
       },
       {
@@ -9504,7 +9803,7 @@
     ],
     "Q18661": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q310504"
       },
       {
@@ -9543,6 +9842,10 @@
       },
       {
         "goals": 1,
+        "id": "Q155461"
+      },
+      {
+        "goals": 1,
         "id": "Q74178"
       }
     ],
@@ -9550,6 +9853,10 @@
       {
         "goals": 3,
         "id": "Q10556"
+      },
+      {
+        "goals": 2,
+        "id": "Q697271"
       },
       {
         "goals": 2,
@@ -9566,10 +9873,6 @@
       {
         "goals": 1,
         "id": "Q246651"
-      },
-      {
-        "goals": 2,
-        "id": "Q697271"
       },
       {
         "goals": 8,
@@ -9672,8 +9975,12 @@
     ],
     "Q18716": [
       {
-        "goals": 6,
+        "goals": 8,
         "id": "Q207548"
+      },
+      {
+        "goals": 1,
+        "id": "Q295506"
       },
       {
         "goals": 2,
@@ -9688,16 +9995,12 @@
         "id": "Q313085"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q299455"
       },
       {
-        "goals": 1,
-        "id": "Q213989"
-      },
-      {
         "goals": 2,
-        "id": "Q516985"
+        "id": "Q213989"
       },
       {
         "goals": 2,
@@ -9705,7 +10008,15 @@
       },
       {
         "goals": 2,
+        "id": "Q516985"
+      },
+      {
+        "goals": 2,
         "id": "Q202569"
+      },
+      {
+        "goals": 1,
+        "id": "Q2607437"
       },
       {
         "goals": 1,
@@ -9713,6 +10024,10 @@
       }
     ],
     "Q18729": [
+      {
+        "goals": 1,
+        "id": "Q353013"
+      },
       {
         "goals": 1,
         "id": "Q523818"
@@ -9765,10 +10080,6 @@
       {
         "goals": 2,
         "id": "Q359789"
-      },
-      {
-        "goals": 1,
-        "id": "Q353013"
       }
     ],
     "Q18741": [
@@ -9778,27 +10089,23 @@
         "topScorerRank": 8
       },
       {
-        "goals": 1,
-        "id": "Q312091"
-      },
-      {
-        "goals": 1,
+        "goals": 2,
         "id": "Q296589"
       },
       {
-        "goals": 6,
+        "goals": 11,
         "id": "Q184612"
       },
       {
-        "goals": 6,
-        "id": "Q188746"
-      },
-      {
-        "goals": 1,
+        "goals": 2,
         "id": "Q13054"
       },
       {
-        "goals": 3,
+        "goals": 9,
+        "id": "Q188746"
+      },
+      {
+        "goals": 6,
         "id": "Q296621"
       },
       {
@@ -9810,12 +10117,20 @@
         "id": "Q316501"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q175303"
       },
       {
         "goals": 1,
         "id": "Q276358"
+      },
+      {
+        "goals": 1,
+        "id": "Q215824"
+      },
+      {
+        "goals": 1,
+        "id": "Q375518"
       },
       {
         "goals": 1,
@@ -9848,7 +10163,7 @@
         "id": "Q226125"
       },
       {
-        "goals": 8,
+        "goals": 7,
         "id": "Q152286"
       },
       {
@@ -9860,7 +10175,7 @@
         "id": "Q276379"
       },
       {
-        "goals": 6,
+        "goals": 5,
         "id": "Q50600"
       },
       {
@@ -9869,21 +10184,25 @@
       },
       {
         "goals": 2,
-        "id": "Q158814"
+        "id": "Q945233"
       },
       {
-        "goals": 2,
-        "id": "Q945233"
+        "goals": 1,
+        "id": "Q158814"
       }
     ],
     "Q18750": [
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q191162"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q316799"
+      },
+      {
+        "goals": 1,
+        "id": "Q350802"
       },
       {
         "goals": 2,
@@ -9900,6 +10219,10 @@
       {
         "goals": 1,
         "id": "Q971539"
+      },
+      {
+        "goals": 1,
+        "id": "Q187989"
       },
       {
         "goals": 1,
@@ -9971,12 +10294,12 @@
         "id": "Q148699"
       },
       {
-        "goals": 5,
-        "id": "Q988626"
-      },
-      {
         "goals": 1,
         "id": "Q533629"
+      },
+      {
+        "goals": 5,
+        "id": "Q988626"
       },
       {
         "goals": 4,
@@ -10010,6 +10333,10 @@
       },
       {
         "goals": 1,
+        "id": "Q995049"
+      },
+      {
+        "goals": 1,
         "id": "Q470738"
       },
       {
@@ -10027,10 +10354,6 @@
       },
       {
         "goals": 1,
-        "id": "Q995049"
-      },
-      {
-        "goals": 1,
         "id": "Q460512"
       }
     ],
@@ -10038,6 +10361,10 @@
       {
         "goals": 3,
         "id": "Q216928"
+      },
+      {
+        "goals": 1,
+        "id": "Q214734"
       },
       {
         "goals": 10,
@@ -10049,15 +10376,11 @@
       },
       {
         "goals": 1,
-        "id": "Q214734"
+        "id": "Q731946"
       },
       {
         "goals": 2,
         "id": "Q318520"
-      },
-      {
-        "goals": 1,
-        "id": "Q731946"
       },
       {
         "goals": 2,
@@ -10098,7 +10421,7 @@
         "id": "Q1406968"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q785933"
       },
       {
@@ -10114,7 +10437,7 @@
         "id": "Q3015330"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q208933"
       },
       {
@@ -10136,7 +10459,7 @@
         "id": "Q10588"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3016183"
       },
       {

@@ -31,12 +31,20 @@ def crop_box(image_width, image_height, face):
     return left, top, left + crop_width, top + crop_height
 
 
-def manifest_entries(path, exclusion_path):
+def player_ids(path):
+    ids = set()
+    for bucket_path in path.glob("*.json"):
+        ids.update(json.loads(bucket_path.read_text(encoding="utf-8")))
+    return ids
+
+
+def manifest_entries(path, exclusion_path, players_path):
     manifest = json.loads(path.read_text(encoding="utf-8"))
     exclusions = json.loads(exclusion_path.read_text(encoding="utf-8")) if exclusion_path.is_file() else {}
+    players = player_ids(players_path)
     entries = []
     for player_id, photo in manifest.items():
-        if player_id == "_about" or player_id in exclusions:
+        if player_id == "_about" or player_id in exclusions or player_id not in players:
             continue
         face = photo.get("face")
         if (not isinstance(face, list) or len(face) != 4
@@ -47,8 +55,8 @@ def manifest_entries(path, exclusion_path):
     return sorted(entries)
 
 
-def build(manifest_path, exclusion_path, original_root, output_root):
-    entries = manifest_entries(manifest_path, exclusion_path)
+def build(manifest_path, exclusion_path, players_path, original_root, output_root):
+    entries = manifest_entries(manifest_path, exclusion_path, players_path)
     output_root.mkdir(parents=True, exist_ok=True)
     wanted = {player_id for player_id, _photo in entries}
     for stale in output_root.glob("*.webp"):
@@ -87,10 +95,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", type=Path, default=ROOT / "curated/photos.json")
     parser.add_argument("--exclusions", type=Path, default=ROOT / "curated/photo-exclusions.json")
+    parser.add_argument("--players", type=Path, default=ROOT / "public/data/p")
     parser.add_argument("--orig", type=Path, default=ROOT / ".cache/sources/photos/orig")
     parser.add_argument("--out", type=Path, default=ROOT / "public/assets/players")
     args = parser.parse_args()
-    build(args.manifest, args.exclusions, args.orig, args.out)
+    build(args.manifest, args.exclusions, args.players, args.orig, args.out)
 
 
 if __name__ == "__main__":

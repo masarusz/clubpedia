@@ -1539,11 +1539,12 @@
       {
         "club": "Q8408",
         "goalMatches": [
-          "it-2002-Q2739-Q8408"
+          "it-2002-Q2739-Q8408",
+          "it-2002-Q8408-Q459794"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -2195,12 +2196,11 @@
         "goalMatches": [
           "it-2001-Q1543-Q16344",
           "it-2001-Q1543-Q2052",
-          "it-2001-Q1543-Q2798",
-          "it-2001-Q459794-Q1543"
+          "it-2001-Q1543-Q2798"
         ],
-        "goals": 4,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 3,
         "season": "it-2001",
         "topScorerRank": null
       },
@@ -4168,6 +4168,29 @@
       }
     ]
   },
+  "Q6182385": {
+    "birthDate": "1975-10-21",
+    "en": "Jermaine Wright",
+    "id": "Q6182385",
+    "ja": {
+      "display": "Jermaine Wright",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q9653",
+        "goalMatches": [
+          "en-2000-Q1128631-Q9653"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q61886": {
     "birthDate": "1988-06-02",
     "en": "Takashi Inui",
@@ -4468,6 +4491,18 @@
         "recordedGoals": 1,
         "season": "en-1993",
         "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1998-Q18741-Q1128631",
+          "en-1998-Q19490-Q1128631"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-1998",
+        "topScorerRank": null
       }
     ]
   },
@@ -4760,40 +4795,64 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q19470",
+        "goalMatches": [
+          "en-1998-Q1128631-Q19470"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
         "club": "Q2052",
         "goalMatches": [
+          "it-1992-Q108749828-Q2052",
+          "it-1992-Q2052-Q108749828",
+          "it-1992-Q2052-Q139399",
+          "it-1992-Q2052-Q139399",
           "it-1992-Q2052-Q1457",
           "it-1992-Q2052-Q1457",
           "it-1992-Q2052-Q1543",
-          "it-1992-Q2693-Q2052"
+          "it-1992-Q2074-Q2052",
+          "it-1992-Q2693-Q2052",
+          "it-1992-Q2710-Q2052"
         ],
-        "goals": 4,
+        "goals": 10,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 10,
         "season": "it-1992",
         "topScorerRank": null
       },
       {
         "club": "Q2052",
         "goalMatches": [
-          "it-1994-Q1422-Q2052",
           "it-1994-Q1457-Q2052"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "it-1994",
         "topScorerRank": null
       },
       {
         "club": "Q2052",
         "goalMatches": [
+          "it-1995-Q1886-Q2052",
           "it-1995-Q2052-Q1543",
-          "it-1995-Q2052-Q459794"
+          "it-1995-Q2052-Q1900",
+          "it-1995-Q2052-Q1900",
+          "it-1995-Q2052-Q2798",
+          "it-1995-Q2052-Q459794",
+          "it-1995-Q2052-Q759482",
+          "it-1995-Q2052-Q8428",
+          "it-1995-Q2768-Q2052",
+          "it-1995-Q6641-Q2052"
         ],
-        "goals": 2,
+        "goals": 10,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 10,
         "season": "it-1995",
         "topScorerRank": null
       },
@@ -4857,6 +4916,17 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q104761",
+        "goalMatches": [
+          "de-1999-Q104761-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      },
+      {
         "club": "Q101859",
         "goalMatches": [
           "de-2001-Q101859-Q101959",
@@ -4909,11 +4979,12 @@
           "it-1996-Q1422-Q2641",
           "it-1996-Q16344-Q2641",
           "it-1996-Q1886-Q2641",
+          "it-1996-Q2641-Q2052",
           "it-1996-Q289707-Q2641"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-1996",
         "topScorerRank": null
       }

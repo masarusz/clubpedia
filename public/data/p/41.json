@@ -756,6 +756,17 @@
         "recordedGoals": 1,
         "season": "es-2010",
         "topScorerRank": null
+      },
+      {
+        "club": "Q8806",
+        "goalMatches": [
+          "es-2025-Q8806-Q8723"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2025",
+        "topScorerRank": null
       }
     ]
   },
@@ -849,11 +860,12 @@
         "club": "Q2037",
         "goalMatches": [
           "it-2011-Q2037-Q2641",
-          "it-2011-Q2037-Q6664"
+          "it-2011-Q2037-Q6664",
+          "it-2011-Q2756-Q2037"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-2011",
         "topScorerRank": null
       },
@@ -1765,13 +1777,14 @@
           "it-1992-Q1543-Q2798",
           "it-1992-Q2693-Q2798",
           "it-1992-Q2798-Q1457",
+          "it-1992-Q2798-Q2052",
           "it-1992-Q2798-Q2693",
           "it-1992-Q2798-Q631",
           "it-1992-Q631-Q2798"
         ],
         "goals": 21,
         "league": "it",
-        "recordedGoals": 7,
+        "recordedGoals": 8,
         "season": "it-1992",
         "topScorerRank": 2
       },
@@ -2089,6 +2102,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Legia_tren_(2).jpg"
     },
     "seasons": [
+      {
+        "club": "Q19446",
+        "goalMatches": [
+          "en-2001-Q19446-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2001",
+        "topScorerRank": null
+      },
       {
         "club": "Q19446",
         "goalMatches": [
@@ -2483,11 +2507,13 @@
         "club": "Q2074",
         "goalMatches": [
           "it-1992-Q2074-Q1422",
+          "it-1992-Q2074-Q2052",
+          "it-1992-Q2074-Q2052",
           "it-1992-Q2074-Q2609"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "it-1992",
         "topScorerRank": null
       },
@@ -2495,26 +2521,28 @@
         "club": "Q2074",
         "goalMatches": [
           "it-1993-Q2739-Q2074",
+          "it-1993-Q459794-Q2074",
           "it-1993-Q631-Q2074"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1993",
         "topScorerRank": null
       },
       {
         "club": "Q2074",
         "goalMatches": [
+          "it-1994-Q2052-Q2074",
           "it-1994-Q2074-Q1457",
           "it-1994-Q2074-Q1543",
           "it-1994-Q2074-Q2739",
           "it-1994-Q2074-Q6651",
           "it-1994-Q6651-Q2074"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "it-1994",
         "topScorerRank": null
       }
@@ -2767,11 +2795,12 @@
         "goalMatches": [
           "es-1994-Q216661-Q10308",
           "es-1994-Q216661-Q8749",
-          "es-1994-Q216661-Q8760"
+          "es-1994-Q216661-Q8760",
+          "es-1994-Q8682-Q216661"
         ],
         "goals": 15,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "es-1994",
         "topScorerRank": 7
       },
@@ -2781,13 +2810,15 @@
           "es-1995-Q10308-Q216661",
           "es-1995-Q216661-Q10333",
           "es-1995-Q216661-Q856416",
+          "es-1995-Q216661-Q8682",
+          "es-1995-Q216661-Q8682",
           "es-1995-Q216661-Q8760",
           "es-1995-Q7156-Q216661",
           "es-1995-Q8749-Q216661"
         ],
         "goals": 31,
         "league": "es",
-        "recordedGoals": 6,
+        "recordedGoals": 8,
         "season": "es-1995",
         "topScorerRank": 1
       },
@@ -3003,6 +3034,29 @@
       }
     ]
   },
+  "Q598161": {
+    "birthDate": "1973-06-09",
+    "en": "Christian Wück",
+    "id": "Q598161",
+    "ja": {
+      "display": "クリスティアン ヴュック",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q15786",
+        "goalMatches": [
+          "de-1993-Q15786-Q162317"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q604475": {
     "birthDate": "1961-11-08",
     "en": "Micky Adams",
@@ -3182,11 +3236,12 @@
       {
         "club": "Q19462",
         "goalMatches": [
+          "en-2002-Q1128631-Q19462",
           "en-2002-Q19462-Q18744"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "en-2002",
         "topScorerRank": null
       },
@@ -3276,6 +3331,17 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-1997",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18741",
+        "goalMatches": [
+          "en-1998-Q18741-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
         "topScorerRank": null
       }
     ]
@@ -3463,11 +3529,12 @@
         "club": "Q15786",
         "goalMatches": [
           "de-1993-Q15786-Q141931",
+          "de-1993-Q15786-Q162317",
           "de-1993-Q15786-Q38245"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1993",
         "topScorerRank": null
       }
@@ -3508,6 +3575,18 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1999-Q1128631-Q2714",
+          "en-1999-Q19580-Q1128631"
+        ],
+        "goals": 2,
+        "league": "en",
+        "recordedGoals": 2,
+        "season": "en-1999",
         "topScorerRank": null
       },
       {

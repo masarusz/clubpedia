@@ -478,6 +478,29 @@
       }
     ]
   },
+  "Q1343780": {
+    "birthDate": "1976-02-27",
+    "en": "Enrico Fantini",
+    "id": "Q1343780",
+    "ja": {
+      "display": "Enrico Fantini",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q759482",
+        "goalMatches": [
+          "it-1995-Q2052-Q759482"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1995",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q134729": {
     "birthDate": "1990-03-27",
     "en": "Joselu",
@@ -1652,13 +1675,16 @@
           "es-2012-Q10329-Q7156",
           "es-2012-Q7156-Q8687",
           "es-2012-Q7156-Q8823",
+          "es-2012-Q7156-Q8835",
+          "es-2012-Q7156-Q8835",
+          "es-2012-Q7156-Q8835",
           "es-2012-Q7156-Q8857",
           "es-2012-Q8823-Q7156",
           "es-2012-Q8857-Q7156"
         ],
-        "goals": 8,
+        "goals": 11,
         "league": "es",
-        "recordedGoals": 8,
+        "recordedGoals": 11,
         "season": "es-2012",
         "topScorerRank": null
       },
@@ -3140,11 +3166,12 @@
       {
         "club": "Q12236",
         "goalMatches": [
-          "es-2002-Q12236-Q223620"
+          "es-2002-Q12236-Q223620",
+          "es-2002-Q12236-Q8682"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "es",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "es-2002",
         "topScorerRank": null
       }
@@ -3277,12 +3304,13 @@
       {
         "club": "Q16344",
         "goalMatches": [
+          "it-2002-Q16344-Q1120838",
           "it-2002-Q16344-Q631",
           "it-2002-Q1886-Q16344"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-2002",
         "topScorerRank": null
       }
@@ -3586,11 +3614,12 @@
         "club": "Q102720",
         "goalMatches": [
           "de-2011-Q102720-Q22707",
-          "de-2011-Q102720-Q22707"
+          "de-2011-Q102720-Q22707",
+          "de-2011-Q105254-Q102720"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-2011",
         "topScorerRank": null
       },

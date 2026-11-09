@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
-import { allHistoryTopScorers, discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
+import { allHistoryTopScorers, applyReviewedCorrection, discrepancies, metadataIndex, normalizeTitle } from '../tools/lib/core-data.mjs';
 import { dateInSeason, parseMatchDate } from '../tools/lib/scorers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -132,8 +132,20 @@ export function register(test, equal, deepEqual) {
     equal(row.position, 9); equal(row.points, 50); equal(row.w, 14); equal(row.d, 8);
     equal(row.correctedFrom.w, 15);
 
-    const unreconciled = JSON.parse(await readFile(join(DATA, 's/es-2012.json'), 'utf8'));
-    const unreconciledMatch = unreconciled.matches.find((match) => match.key === 'es-2012-Q8682-Q8835');
+    const unreconciled = {
+      id: 'fixture-2000',
+      pointSystem: { win: 3, draw: 1, loss: 0 },
+      table: [
+        { club: 'Q1', position: 1, w: 0, d: 0, l: 0, gf: 0, ga: 0, adjustment: 0 },
+        { club: 'Q2', position: 2, w: 0, d: 0, l: 0, gf: 0, ga: 0, adjustment: 0 },
+      ],
+      matches: [{ key: 'fixture-2000-Q1-Q2', home: 'Q1', away: 'Q2', homeGoals: 1, awayGoals: 0, gridValue: '1–0' }],
+    };
+    applyReviewedCorrection(unreconciled, {
+      status: 'reviewed',
+      actions: [{ type: 'unreconciled', match: 'fixture-2000-Q1-Q2', grid: '1–0', evidence: ['fixture'] }],
+    });
+    const unreconciledMatch = unreconciled.matches[0];
     equal(unreconciledMatch.unreconciled, true);
     equal(unreconciled.table.find((item) => item.club === unreconciledMatch.home).unreconciled, true);
     equal(unreconciled.table.find((item) => item.club === unreconciledMatch.away).unreconciled, true);
@@ -166,7 +178,8 @@ export function register(test, equal, deepEqual) {
   });
   test('every output club id is curated and all discrepancies are explicit', async () => {
     const corrections = JSON.parse(await readFile(join(ROOT, 'curated/results-corrections.json'), 'utf8'));
-    equal(corrections.length, 14);
+    // es-2012, fr-2024, and fr-2025 now reconcile with their refreshed sources.
+    equal(corrections.length, 11);
     for (const summary of index.seasons) {
       const season = JSON.parse(await readFile(join(DATA, 's', `${summary.id}.json`), 'utf8'));
       for (const row of season.table) equal(Boolean(clubs[row.club]), true, `${summary.id} ${row.club}`);
@@ -259,7 +272,7 @@ export function register(test, equal, deepEqual) {
       equal(bytes <= 300 * 1024, true, bucketFile);
     }
     const japan = JSON.parse(await readFile(join(DATA, 'japan.json'), 'utf8'));
-    equal(japan.players.length, 101);
+    equal(japan.players.length, 103);
     const mitoma = japan.players.find((player) => player.en === 'Kaoru Mitoma');
     equal(mitoma.ja.mode, 'kanji');
     equal(mitoma.ja.ruby, '{三笘|みとま} {薫|かおる}');
@@ -420,15 +433,31 @@ export function register(test, equal, deepEqual) {
 
   test('built photos have matching credits and player photo flags', async () => {
     const photos = (await readdir(join(ROOT, 'public/assets/players'))).filter((name) => name.endsWith('.webp')).sort();
-    const manifest = JSON.parse(await readFile(join(ROOT, 'curated/photos.json'), 'utf8'));
     const credits = JSON.parse(await readFile(join(DATA, 'photo-credits.json'), 'utf8'));
-    equal(photos.length, Object.keys(manifest).filter((id) => id !== '_about').length);
-    deepEqual(Object.keys(credits).sort(), photos.map((name) => name.slice(0, -5)));
-    for (const id of Object.keys(credits)) {
-      const bucketId = String(Math.abs([...id].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 0)) % 128).padStart(2, '0');
-      const bucket = JSON.parse(await readFile(join(DATA, 'p', `${bucketId}.json`), 'utf8'));
-      equal(bucket[id]?.photo, true, id);
+    const flagged = [];
+    for (const bucketFile of await readdir(join(DATA, 'p'))) {
+      const bucket = JSON.parse(await readFile(join(DATA, 'p', bucketFile), 'utf8'));
+      flagged.push(...Object.values(bucket).filter((player) => player.photo).map((player) => player.id));
     }
+    const photoIds = photos.map((name) => name.slice(0, -5));
+    deepEqual(Object.keys(credits).sort(), photoIds);
+    deepEqual(flagged.sort(), photoIds);
+  });
+
+  test('every published player with a curated, non-excluded photo publishes it', async () => {
+    const manifest = JSON.parse(await readFile(join(ROOT, 'curated/photos.json'), 'utf8'));
+    const exclusions = JSON.parse(await readFile(join(ROOT, 'curated/photo-exclusions.json'), 'utf8'));
+    const publishedAssets = new Set((await readdir(join(ROOT, 'public/assets/players')))
+      .filter((name) => name.endsWith('.webp')).map((name) => name.slice(0, -5)));
+    const missing = [];
+    for (const bucketFile of await readdir(join(DATA, 'p'))) {
+      const bucket = JSON.parse(await readFile(join(DATA, 'p', bucketFile), 'utf8'));
+      for (const player of Object.values(bucket)) {
+        if (!manifest[player.id] || exclusions[player.id]) continue;
+        if (player.photo !== true || !publishedAssets.has(player.id)) missing.push(player.id);
+      }
+    }
+    deepEqual(missing.sort(), [], 'published players missing curated photos');
   });
 
   test('photo crop is deterministic and removes stale WebPs', async () => {

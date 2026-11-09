@@ -345,11 +345,12 @@
         "club": "Q2768",
         "goalMatches": [
           "it-1993-Q2609-Q2768",
-          "it-1993-Q2768-Q1457"
+          "it-1993-Q2768-Q1457",
+          "it-1993-Q459794-Q2768"
         ],
         "goals": 17,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-1993",
         "topScorerRank": 3
       },
@@ -1023,7 +1024,7 @@
       {
         "club": "Q2052",
         "goalMatches": [
-          "it-1994-Q2052-Q2641"
+          "it-1994-Q2052-Q2768"
         ],
         "goals": 1,
         "league": "it",
@@ -1491,13 +1492,15 @@
       {
         "club": "Q8806",
         "goalMatches": [
+          "es-2025-Q10300-Q8806",
           "es-2025-Q8780-Q8806",
           "es-2025-Q8806-Q10512",
-          "es-2025-Q8806-Q12297"
+          "es-2025-Q8806-Q12297",
+          "es-2025-Q8806-Q223620"
         ],
-        "goals": 3,
+        "goals": 5,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 5,
         "season": "es-2025",
         "topScorerRank": null
       }
@@ -3147,11 +3150,12 @@
           "fr-2025-Q191843-Q180305",
           "fr-2025-Q191843-Q19516",
           "fr-2025-Q191843-Q221525",
-          "fr-2025-Q191843-Q845137"
+          "fr-2025-Q191843-Q845137",
+          "fr-2025-Q218372-Q191843"
         ],
         "goals": 11,
         "league": "fr",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "fr-2025",
         "topScorerRank": 8
       },
@@ -3415,14 +3419,24 @@
     "japan": null,
     "seasons": [
       {
+        "club": "Q2768",
+        "goalMatches": [
+          "it-1995-Q2768-Q2693"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1995",
+        "topScorerRank": null
+      },
+      {
         "club": "Q459794",
         "goalMatches": [
-          "it-1997-Q2052-Q459794",
           "it-1997-Q2641-Q459794"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "it-1997",
         "topScorerRank": null
       },
@@ -3659,6 +3673,17 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-2004",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18750",
+        "goalMatches": [
+          "en-2006-Q18750-Q18741"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2006",
         "topScorerRank": null
       },
       {
@@ -4054,23 +4079,25 @@
       {
         "club": "Q18661",
         "goalMatches": [
+          "en-2002-Q18661-Q1128631",
           "en-2002-Q18661-Q19446",
           "en-2002-Q18741-Q18661"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2002",
         "topScorerRank": null
       },
       {
         "club": "Q18661",
         "goalMatches": [
+          "en-2003-Q1128631-Q18661",
           "en-2003-Q18661-Q18708"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -4451,11 +4478,12 @@
         "club": "Q6703",
         "goalMatches": [
           "it-2002-Q1886-Q6703",
+          "it-2002-Q6703-Q459794",
           "it-2002-Q6703-Q631"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -4907,12 +4935,11 @@
       {
         "club": "Q1543",
         "goalMatches": [
-          "it-2012-Q1543-Q1422",
-          "it-2012-Q1543-Q2756"
+          "it-2012-Q1543-Q1422"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "it-2012",
         "topScorerRank": null
       },

@@ -1963,7 +1963,6 @@
         "goalMatches": [
           "it-2003-Q1457-Q2693",
           "it-2003-Q1543-Q2693",
-          "it-2003-Q16344-Q2693",
           "it-2003-Q2037-Q2693",
           "it-2003-Q2693-Q13391",
           "it-2003-Q2693-Q13391",
@@ -1984,7 +1983,7 @@
         ],
         "goals": 23,
         "league": "it",
-        "recordedGoals": 20,
+        "recordedGoals": 19,
         "season": "it-2003",
         "topScorerRank": 2
       },
@@ -2214,6 +2213,7 @@
           "it-2013-Q2052-Q2074",
           "it-2013-Q2074-Q2052",
           "it-2013-Q2074-Q2609",
+          "it-2013-Q2074-Q2693",
           "it-2013-Q2074-Q2798",
           "it-2013-Q2074-Q2798",
           "it-2013-Q2609-Q2074",
@@ -2221,7 +2221,7 @@
         ],
         "goals": 15,
         "league": "it",
-        "recordedGoals": 8,
+        "recordedGoals": 9,
         "season": "it-2013",
         "topScorerRank": 10
       },
@@ -2477,6 +2477,29 @@
       }
     ]
   },
+  "Q1877042": {
+    "birthDate": "1980-11-18",
+    "en": "Luke Chadwick",
+    "id": "Q1877042",
+    "ja": {
+      "display": "ルーク チャドウィック",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18656",
+        "goalMatches": [
+          "en-2000-Q1128631-Q18656"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q192131": {
     "birthDate": "1910-08-23",
     "en": "Giuseppe Meazza",
@@ -2608,11 +2631,13 @@
       {
         "club": "Q18711",
         "goalMatches": [
-          "en-1997-Q18711-Q9617"
+          "en-1997-Q18711-Q1128631",
+          "en-1997-Q18711-Q9617",
+          "en-1997-Q19470-Q18711"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "en-1997",
         "topScorerRank": null
       },
@@ -2629,23 +2654,27 @@
       },
       {
         "club": "Q18656",
-        "goalMatches": [],
+        "goalMatches": [
+          "en-1999-Q18656-Q1128631",
+          "en-1999-Q18656-Q1128631"
+        ],
         "goals": 20,
         "league": "en",
-        "recordedGoals": 0,
+        "recordedGoals": 2,
         "season": "en-1999",
         "topScorerRank": 3
       },
       {
         "club": "Q18656",
         "goalMatches": [
+          "en-2000-Q18656-Q1128631",
           "en-2000-Q18656-Q9617",
           "en-2000-Q18656-Q9617",
           "en-2000-Q18656-Q9617"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "en-2000",
         "topScorerRank": null
       },
@@ -2894,28 +2923,90 @@
       {
         "club": "Q1128631",
         "goalMatches": [
-          "en-2001-Q1128631-Q18741",
-          "en-2001-Q1130849-Q1128631"
+          "en-1998-Q1128631-Q18741",
+          "en-1998-Q1128631-Q19462",
+          "en-1998-Q18656-Q1128631",
+          "en-1998-Q18716-Q1128631",
+          "en-1998-Q19470-Q1128631",
+          "en-1998-Q19481-Q1128631"
+        ],
+        "goals": 6,
+        "league": "en",
+        "recordedGoals": 6,
+        "season": "en-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-1999-Q1128631-Q18661",
+          "en-1999-Q1128631-Q18711",
+          "en-1999-Q1128631-Q18716",
+          "en-1999-Q1128631-Q18741",
+          "en-1999-Q1128631-Q19482",
+          "en-1999-Q1128631-Q19580",
+          "en-1999-Q19481-Q1128631",
+          "en-1999-Q19498-Q1128631",
+          "en-1999-Q2714-Q1128631",
+          "en-1999-Q5794-Q1128631"
+        ],
+        "goals": 10,
+        "league": "en",
+        "recordedGoals": 10,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2000-Q1128631-Q18732",
+          "en-2000-Q1128631-Q48879"
         ],
         "goals": 2,
         "league": "en",
         "recordedGoals": 2,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2001-Q1128631-Q18741",
+          "en-2001-Q1128631-Q19446",
+          "en-2001-Q1128631-Q19470",
+          "en-2001-Q1128631-Q19470",
+          "en-2001-Q1128631-Q19481",
+          "en-2001-Q1130849-Q1128631",
+          "en-2001-Q19446-Q1128631",
+          "en-2001-Q19446-Q1128631"
+        ],
+        "goals": 8,
+        "league": "en",
+        "recordedGoals": 8,
         "season": "en-2001",
         "topScorerRank": null
       },
       {
         "club": "Q1128631",
         "goalMatches": [
+          "en-2002-Q1128631-Q18656",
+          "en-2002-Q1128631-Q18732",
+          "en-2002-Q1128631-Q19451",
+          "en-2002-Q1128631-Q19462",
           "en-2002-Q1128631-Q9617",
+          "en-2002-Q18732-Q1128631",
           "en-2002-Q18744-Q1128631",
           "en-2002-Q18747-Q1128631",
           "en-2002-Q18747-Q1128631",
+          "en-2002-Q19462-Q1128631",
+          "en-2002-Q19462-Q1128631",
           "en-2002-Q50602-Q1128631",
+          "en-2002-Q9616-Q1128631",
           "en-2002-Q9617-Q1128631"
         ],
         "goals": 14,
         "league": "en",
-        "recordedGoals": 6,
+        "recordedGoals": 14,
         "season": "en-2002",
         "topScorerRank": 8
       },
@@ -3309,6 +3400,19 @@
         "league": "en",
         "recordedGoals": 2,
         "season": "en-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q5794",
+        "goalMatches": [
+          "en-2003-Q5794-Q1128631",
+          "en-2003-Q5794-Q1128631",
+          "en-2003-Q5794-Q1128631"
+        ],
+        "goals": 3,
+        "league": "en",
+        "recordedGoals": 3,
+        "season": "en-2003",
         "topScorerRank": null
       }
     ]
@@ -4807,6 +4911,31 @@
       }
     ]
   },
+  "Q325825": {
+    "birthDate": "1963-07-08",
+    "en": "Janusz Góra",
+    "id": "Q325825",
+    "ja": {
+      "display": "Janusz Góra",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q14551982",
+        "goalMatches": [
+          "de-1999-Q142005-Q14551982",
+          "de-1999-Q14551982-Q106394",
+          "de-1999-Q14551982-Q8466"
+        ],
+        "goals": 3,
+        "league": "de",
+        "recordedGoals": 3,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q342237": {
     "birthDate": "1981-01-30",
     "en": "Afonso Alves",
@@ -4920,6 +5049,17 @@
         "league": "es",
         "recordedGoals": 4,
         "season": "es-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8682",
+        "goalMatches": [
+          "es-1994-Q8682-Q216661"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
         "topScorerRank": null
       }
     ]
@@ -5807,17 +5947,6 @@
       {
         "club": "Q2798",
         "goalMatches": [
-          "it-2012-Q2756-Q2798"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-2012",
-        "topScorerRank": null
-      },
-      {
-        "club": "Q2798",
-        "goalMatches": [
           "it-2013-Q2074-Q2798",
           "it-2013-Q2739-Q2798"
         ],
@@ -6075,6 +6204,19 @@
         "league": "es",
         "recordedGoals": 3,
         "season": "es-2001",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8760",
+        "goalMatches": [
+          "es-2003-Q8749-Q8760",
+          "es-2003-Q8749-Q8760",
+          "es-2003-Q8749-Q8760"
+        ],
+        "goals": 3,
+        "league": "es",
+        "recordedGoals": 3,
+        "season": "es-2003",
         "topScorerRank": null
       }
     ]

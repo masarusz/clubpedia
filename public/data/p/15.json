@@ -73,11 +73,14 @@
         "goalMatches": [
           "es-2025-Q8682-Q8806",
           "es-2025-Q8806-Q12297",
-          "es-2025-Q8806-Q8687"
+          "es-2025-Q8806-Q8687",
+          "es-2025-Q8806-Q8723",
+          "es-2025-Q8806-Q8835",
+          "es-2025-Q8806-Q8835"
         ],
-        "goals": 3,
+        "goals": 6,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 6,
         "season": "es-2025",
         "topScorerRank": null
       },
@@ -1491,8 +1494,6 @@
           "it-2003-Q1457-Q13391",
           "it-2003-Q1457-Q13391",
           "it-2003-Q1457-Q1422",
-          "it-2003-Q1457-Q16344",
-          "it-2003-Q1457-Q16344",
           "it-2003-Q1457-Q20706646",
           "it-2003-Q1457-Q2756",
           "it-2003-Q1457-Q6651",
@@ -1500,9 +1501,9 @@
           "it-2003-Q16344-Q1457",
           "it-2003-Q2798-Q1457"
         ],
-        "goals": 11,
+        "goals": 9,
         "league": "it",
-        "recordedGoals": 11,
+        "recordedGoals": 9,
         "season": "it-2003",
         "topScorerRank": null
       },
@@ -1717,6 +1718,17 @@
       {
         "club": "Q1130849",
         "goalMatches": [
+          "en-2000-Q1128631-Q1130849"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1130849",
+        "goalMatches": [
           "en-2001-Q1130849-Q19462",
           "en-2001-Q1130849-Q9616",
           "en-2001-Q1130849-Q9653",
@@ -1869,11 +1881,12 @@
           "es-2013-Q12297-Q8780",
           "es-2013-Q8687-Q8780",
           "es-2013-Q8780-Q10329",
+          "es-2013-Q8780-Q8749",
           "es-2013-Q8857-Q8780"
         ],
-        "goals": 9,
+        "goals": 10,
         "league": "es",
-        "recordedGoals": 9,
+        "recordedGoals": 10,
         "season": "es-2013",
         "topScorerRank": null
       },
@@ -1886,7 +1899,6 @@
           "es-2014-Q10407-Q8780",
           "es-2014-Q7156-Q8780",
           "es-2014-Q770740-Q8780",
-          "es-2014-Q8749-Q8780",
           "es-2014-Q8780-Q10512",
           "es-2014-Q8780-Q8687",
           "es-2014-Q8780-Q8806",
@@ -1896,7 +1908,7 @@
         ],
         "goals": 14,
         "league": "es",
-        "recordedGoals": 13,
+        "recordedGoals": 12,
         "season": "es-2014",
         "topScorerRank": 10
       },
@@ -2185,17 +2197,6 @@
       "source": "https://commons.wikimedia.org/wiki/File:Lu%C3%ADs_Boa_Morte_crop.jpg"
     },
     "seasons": [
-      {
-        "club": "Q18708",
-        "goalMatches": [
-          "en-2002-Q18711-Q18708"
-        ],
-        "goals": 1,
-        "league": "en",
-        "recordedGoals": 1,
-        "season": "en-2002",
-        "topScorerRank": null
-      },
       {
         "club": "Q18708",
         "goalMatches": [
@@ -3364,11 +3365,13 @@
         "club": "Q2693",
         "goalMatches": [
           "it-2013-Q1886-Q2693",
+          "it-2013-Q2693-Q1457",
+          "it-2013-Q2693-Q2074",
           "it-2013-Q2693-Q8639"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "it-2013",
         "topScorerRank": null
       },
@@ -4243,6 +4246,28 @@
     },
     "seasons": [
       {
+        "club": "Q2693",
+        "goalMatches": [
+          "it-1993-Q459794-Q2693"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8428",
+        "goalMatches": [
+          "it-1994-Q2052-Q8428"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1994",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1457",
         "goalMatches": [
           "it-1995-Q1422-Q1457",
@@ -4603,14 +4628,6 @@
         "league": "de",
         "season": "2025–26",
         "source": "ja"
-      },
-      {
-        "apps": 0,
-        "club": "Q106394",
-        "goals": 0,
-        "league": "de",
-        "season": "2026–27",
-        "source": "ja"
       }
     ],
     "photo": true,
@@ -4634,16 +4651,6 @@
         "league": "de",
         "recordedGoals": 4,
         "season": "de-2025",
-        "topScorerRank": null
-      },
-      {
-        "apps": 0,
-        "club": "Q106394",
-        "goalMatches": [],
-        "goals": 0,
-        "league": "de",
-        "recordedGoals": 0,
-        "season": "de-2026",
         "topScorerRank": null
       },
       {

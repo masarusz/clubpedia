@@ -212,10 +212,47 @@
     {
       "away": "Q8682",
       "awayGoals": 5,
+      "date": "1995-09-02",
       "home": "Q10300",
       "homeGoals": 1,
       "key": "es-1995-Q10300-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Amavisca",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "Sandro",
+            "minute": "54",
+            "player": null
+          },
+          {
+            "display": "Hierro",
+            "minute": "66",
+            "player": null
+          },
+          {
+            "display": "Hierro",
+            "minute": "71",
+            "player": null
+          },
+          {
+            "display": "Quique Sánchez Flores",
+            "minute": "86",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Alves",
+            "minute": "77",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -539,6 +576,17 @@
       "homeGoals": 0,
       "key": "es-1995-Q10308-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hierro",
+            "minute": "19",
+            "penalty": true,
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -839,6 +887,7 @@
     {
       "away": "Q8682",
       "awayGoals": 1,
+      "date": "1996-03-23",
       "home": "Q10315",
       "homeGoals": 1,
       "key": "es-1995-Q10315-Q8682",
@@ -1163,10 +1212,31 @@
     {
       "away": "Q8682",
       "awayGoals": 3,
+      "date": "1996-05-11",
       "home": "Q10319",
       "homeGoals": 0,
       "key": "es-1995-Q10319-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lasa",
+            "minute": "78",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "80",
+            "player": null
+          },
+          {
+            "display": "Guti",
+            "minute": "84",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1458,10 +1528,21 @@
     {
       "away": "Q8682",
       "awayGoals": 1,
+      "date": "1996-04-12",
       "home": "Q10329",
       "homeGoals": 0,
       "key": "es-1995-Q10329-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Laudrup",
+            "minute": "82",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1879,6 +1960,48 @@
       "homeGoals": 4,
       "key": "es-1995-Q10333-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Laudrup",
+            "minute": "51",
+            "penalty": true,
+            "player": "Q188720"
+          },
+          {
+            "display": "Alkorta",
+            "minute": "65",
+            "player": "Q122329"
+          },
+          {
+            "display": "Míchel",
+            "minute": "89",
+            "player": "Q558689"
+          }
+        ],
+        "home": [
+          {
+            "display": "Galvez",
+            "minute": "24",
+            "player": null
+          },
+          {
+            "display": "Fernando",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "Mijatović",
+            "minute": "39",
+            "player": "Q237964"
+          },
+          {
+            "display": "Arroyo",
+            "minute": "83",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2244,10 +2367,26 @@
     {
       "away": "Q8682",
       "awayGoals": 0,
+      "date": "1995-11-11",
       "home": "Q12236",
       "homeGoals": 2,
       "key": "es-1995-Q12236-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Moreno",
+            "minute": "25",
+            "player": null
+          },
+          {
+            "display": "Adepojou",
+            "minute": "79",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2604,10 +2743,15 @@
     {
       "away": "Q8682",
       "awayGoals": 0,
+      "date": "1995-11-25",
       "home": "Q12278",
       "homeGoals": 0,
       "key": "es-1995-Q12278-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3110,12 +3254,12 @@
           {
             "display": "Pizzi",
             "minute": "54",
-            "player": null
+            "player": "Q508489"
           },
           {
             "display": "Pizzi",
             "minute": "87",
-            "player": null
+            "player": "Q508489"
           }
         ]
       },
@@ -3516,10 +3660,32 @@
     {
       "away": "Q8682",
       "awayGoals": 2,
+      "date": "1996-01-27",
       "home": "Q271574",
       "homeGoals": 1,
       "key": "es-1995-Q271574-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Raúl",
+            "minute": "7",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "83",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Carlos",
+            "minute": "37",
+            "player": "Q606707"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3785,10 +3951,27 @@
     {
       "away": "Q8682",
       "awayGoals": 1,
+      "date": "1995-10-27",
       "home": "Q576285",
       "homeGoals": 1,
       "key": "es-1995-Q576285-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Raúl",
+            "minute": "44",
+            "player": "Q11576"
+          }
+        ],
+        "home": [
+          {
+            "display": "Maqueda",
+            "minute": "87",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4095,10 +4278,26 @@
     {
       "away": "Q8682",
       "awayGoals": 2,
+      "date": "1995-10-15",
       "home": "Q697353",
       "homeGoals": 0,
       "key": "es-1995-Q697353-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zamorano",
+            "minute": "12",
+            "player": null
+          },
+          {
+            "display": "Amavisca",
+            "minute": "72",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -4931,6 +5130,7 @@
     {
       "away": "Q8682",
       "awayGoals": 2,
+      "date": "1996-01-06",
       "home": "Q856416",
       "homeGoals": 2,
       "key": "es-1995-Q856416-Q8682",
@@ -5036,53 +5236,200 @@
     {
       "away": "Q10300",
       "awayGoals": 2,
+      "date": "1996-01-20",
       "home": "Q8682",
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q10300",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Guilherme",
+            "minute": "1",
+            "player": null
+          },
+          {
+            "display": "Guilherme",
+            "minute": "63",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "4",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q10308",
       "awayGoals": 2,
-      "date": "1996-01-14",
+      "date": "1996-01-13",
       "home": "Q8682",
       "homeGoals": 2,
       "key": "es-1995-Q8682-Q10308",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Morientes",
+            "minute": "41",
+            "player": null
+          },
+          {
+            "display": "Rambert",
+            "minute": "67",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Zamorano",
+            "minute": "83",
+            "player": null
+          },
+          {
+            "display": "Amavisca",
+            "minute": "89",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q10315",
       "awayGoals": 2,
+      "date": "1995-11-03",
       "home": "Q8682",
       "homeGoals": 3,
       "key": "es-1995-Q8682-Q10315",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "De Pedro",
+            "minute": "75",
+            "player": null
+          },
+          {
+            "display": "Idiakez",
+            "minute": "83",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "39",
+            "player": null
+          },
+          {
+            "display": "Laudrup",
+            "minute": "52",
+            "player": null
+          },
+          {
+            "display": "Michel",
+            "minute": "85",
+            "penalty": true,
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q10319",
       "awayGoals": 1,
+      "date": "1996-01-02",
       "home": "Q8682",
       "homeGoals": 4,
       "key": "es-1995-Q8682-Q10319",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Fernando",
+            "minute": "26",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Gómez",
+            "minute": "35",
+            "player": "Q3323857"
+          },
+          {
+            "display": "Hierro",
+            "minute": "40",
+            "penalty": true,
+            "player": null
+          },
+          {
+            "display": "Hierro",
+            "minute": "43",
+            "penalty": true,
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "50",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q10329",
       "awayGoals": 1,
+      "date": "1995-12-01",
       "home": "Q8682",
       "homeGoals": 4,
       "key": "es-1995-Q8682-Q10329",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Moya",
+            "minute": "49",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Alkorta",
+            "minute": "1",
+            "player": null
+          },
+          {
+            "display": "Alvaro Benito",
+            "minute": "13",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "21",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "58",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q10333",
       "awayGoals": 0,
-      "date": "1996-02-17",
+      "date": "1996-02-16",
       "home": "Q8682",
       "homeGoals": 0,
       "key": "es-1995-Q8682-Q10333",
@@ -5096,19 +5443,53 @@
     {
       "away": "Q12236",
       "awayGoals": 2,
+      "date": "1996-03-26",
       "home": "Q8682",
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q12236",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Álvaro Cervera",
+            "minute": "56",
+            "player": null
+          },
+          {
+            "display": "Merino",
+            "minute": "86",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Michel",
+            "minute": "67",
+            "penalty": true,
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q12278",
       "awayGoals": 1,
+      "date": "1996-04-05",
       "home": "Q8682",
       "homeGoals": 0,
       "key": "es-1995-Q8682-Q12278",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Velasco",
+            "minute": "13",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -5139,28 +5520,107 @@
     {
       "away": "Q271574",
       "awayGoals": 3,
+      "date": "1995-09-16",
       "home": "Q8682",
       "homeGoals": 2,
       "key": "es-1995-Q8682-Q271574",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "González",
+            "minute": "9",
+            "player": null
+          },
+          {
+            "display": "González",
+            "minute": "43",
+            "player": null
+          },
+          {
+            "display": "Rivas",
+            "minute": "47",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Zamorano",
+            "minute": "2",
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "29",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q576285",
       "awayGoals": 0,
+      "date": "1996-03-15",
       "home": "Q8682",
       "homeGoals": 2,
       "key": "es-1995-Q8682-Q576285",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Luis Enrique",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "89",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q697353",
       "awayGoals": 0,
+      "date": "1996-03-01",
       "home": "Q8682",
       "homeGoals": 5,
       "key": "es-1995-Q8682-Q697353",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "26",
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "41",
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "78",
+            "player": null
+          },
+          {
+            "display": "Laudrup",
+            "minute": "78",
+            "player": null
+          },
+          {
+            "display": "Luis Enrique",
+            "minute": "89",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5171,40 +5631,73 @@
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q7156",
       "note": null,
+      "status": "played"
+    },
+    {
+      "away": "Q856416",
+      "awayGoals": 0,
+      "date": "1996-05-18",
+      "home": "Q8682",
+      "homeGoals": 4,
+      "key": "es-1995-Q8682-Q856416",
+      "note": null,
       "scorers": {
-        "away": [
-          {
-            "display": "Roger",
-            "minute": "31",
-            "player": "Q943194"
-          }
-        ],
+        "away": [],
         "home": [
           {
+            "display": "Míchel",
+            "minute": "13",
+            "penalty": true,
+            "player": null
+          },
+          {
             "display": "Raúl",
-            "minute": "12",
-            "player": "Q11576"
+            "minute": "27",
+            "player": null
+          },
+          {
+            "display": "Ivan Perez",
+            "minute": "29",
+            "player": null
+          },
+          {
+            "display": "Míchel",
+            "minute": "72",
+            "player": null
           }
         ]
       },
       "status": "played"
     },
     {
-      "away": "Q856416",
-      "awayGoals": 0,
-      "home": "Q8682",
-      "homeGoals": 4,
-      "key": "es-1995-Q8682-Q856416",
-      "note": null,
-      "status": "played"
-    },
-    {
       "away": "Q8687",
       "awayGoals": 2,
+      "date": "1995-09-09",
       "home": "Q8682",
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q8687",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Etxeberria",
+            "minute": "79",
+            "player": null
+          },
+          {
+            "display": "Ziganda",
+            "minute": "87",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Raúl",
+            "minute": "49",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5219,68 +5712,129 @@
     {
       "away": "Q8723",
       "awayGoals": 2,
+      "date": "1996-02-03",
       "home": "Q8682",
       "homeGoals": 4,
       "key": "es-1995-Q8682-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Stosic",
+            "minute": "28",
+            "player": "Q2542989"
+          },
+          {
+            "display": "Alfonso",
+            "minute": "33",
+            "player": "Q317322"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sanchis",
+            "minute": "7",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "39",
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "53",
+            "player": null
+          },
+          {
+            "display": "Redondo",
+            "minute": "74",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8749",
       "awayGoals": 0,
-      "date": "1995-12-17",
+      "date": "1995-12-16",
       "home": "Q8682",
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q8749",
       "note": null,
-      "scorers": {
-        "away": [],
-        "home": [
-          {
-            "display": "Benito",
-            "minute": "29",
-            "player": "Q2842954"
-          }
-        ]
-      },
       "status": "played"
     },
     {
       "away": "Q8760",
       "awayGoals": 0,
-      "date": "1996-05-05",
+      "date": "1996-05-04",
       "home": "Q8682",
       "homeGoals": 1,
       "key": "es-1995-Q8682-Q8760",
       "note": null,
+      "status": "played"
+    },
+    {
+      "away": "Q8780",
+      "awayGoals": 2,
+      "date": "1996-04-20",
+      "home": "Q8682",
+      "homeGoals": 1,
+      "key": "es-1995-Q8682-Q8780",
+      "note": null,
       "scorers": {
-        "away": [],
+        "away": [
+          {
+            "display": "Lardín",
+            "minute": "50",
+            "player": null
+          },
+          {
+            "display": "Lardín",
+            "minute": "53",
+            "player": null
+          }
+        ],
         "home": [
           {
-            "display": "Enrique",
-            "minute": "61",
-            "player": "Q222789"
+            "display": "Raúl",
+            "minute": "52",
+            "player": null
           }
         ]
       },
       "status": "played"
     },
     {
-      "away": "Q8780",
-      "awayGoals": 2,
-      "home": "Q8682",
-      "homeGoals": 1,
-      "key": "es-1995-Q8682-Q8780",
-      "note": null,
-      "status": "played"
-    },
-    {
       "away": "Q929753",
       "awayGoals": 1,
+      "date": "1995-10-08",
       "home": "Q8682",
       "homeGoals": 2,
       "key": "es-1995-Q8682-Q929753",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ramón",
+            "minute": "10",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Hierro",
+            "minute": "27",
+            "player": null
+          },
+          {
+            "display": "Zamorano",
+            "minute": "28",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5429,10 +5983,41 @@
     {
       "away": "Q8682",
       "awayGoals": 5,
+      "date": "1996-01-23",
       "home": "Q8687",
       "homeGoals": 0,
       "key": "es-1995-Q8687-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zamorano",
+            "minute": "14",
+            "player": null
+          },
+          {
+            "display": "Laudrup",
+            "minute": "58",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "74",
+            "player": null
+          },
+          {
+            "display": "Laudrup",
+            "minute": "77",
+            "player": null
+          },
+          {
+            "display": "Luis Milla",
+            "minute": "88",
+            "player": null
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6086,10 +6671,15 @@
     {
       "away": "Q8682",
       "awayGoals": 0,
+      "date": "1995-09-22",
       "home": "Q8723",
       "homeGoals": 0,
       "key": "es-1995-Q8723-Q8682",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -6550,22 +7140,6 @@
       "homeGoals": 1,
       "key": "es-1995-Q8749-Q8682",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Zamorano",
-            "minute": "11",
-            "player": "Q192035"
-          }
-        ],
-        "home": [
-          {
-            "display": "Sánchez",
-            "minute": "12",
-            "player": "Q2447155"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -7567,6 +8141,32 @@
       "homeGoals": 3,
       "key": "es-1995-Q8780-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Laudrup",
+            "minute": "88",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "Alfaro",
+            "minute": "16",
+            "player": null
+          },
+          {
+            "display": "Benitez",
+            "minute": "75",
+            "player": null
+          },
+          {
+            "display": "Lardín",
+            "minute": "83",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7853,10 +8453,47 @@
     {
       "away": "Q8682",
       "awayGoals": 3,
+      "date": "1996-02-24",
       "home": "Q929753",
       "homeGoals": 3,
       "key": "es-1995-Q929753-Q8682",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Zamorano",
+            "minute": "16",
+            "player": null
+          },
+          {
+            "display": "Raúl",
+            "minute": "48",
+            "player": null
+          },
+          {
+            "display": "Hierro",
+            "minute": "55",
+            "player": "Q205499"
+          }
+        ],
+        "home": [
+          {
+            "display": "Fabiano",
+            "minute": "45",
+            "player": null
+          },
+          {
+            "display": "Christensen",
+            "minute": "61",
+            "player": null
+          },
+          {
+            "display": "Hernández",
+            "minute": "89",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8160,16 +8797,16 @@
         "id": "Q505800"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q606707"
-      },
-      {
-        "goals": 1,
-        "id": "Q379767"
       },
       {
         "goals": 3,
         "id": "Q3780217"
+      },
+      {
+        "goals": 1,
+        "id": "Q379767"
       },
       {
         "goals": 1,
@@ -8238,6 +8875,10 @@
         "id": "Q318546"
       },
       {
+        "goals": 9,
+        "id": "Q293353"
+      },
+      {
         "goals": 1,
         "id": "Q164038"
       },
@@ -8254,11 +8895,7 @@
         "id": "Q317004"
       },
       {
-        "goals": 9,
-        "id": "Q293353"
-      },
-      {
-        "goals": 4,
+        "goals": 3,
         "id": "Q943194"
       },
       {
@@ -8301,11 +8938,15 @@
       },
       {
         "goals": 1,
-        "id": "Q192035"
+        "id": "Q205499"
       },
       {
         "goals": 1,
-        "id": "Q222789"
+        "id": "Q188720"
+      },
+      {
+        "goals": 1,
+        "id": "Q558689"
       },
       {
         "goals": 1,
@@ -8313,7 +8954,11 @@
       },
       {
         "goals": 1,
-        "id": "Q2842954"
+        "id": "Q122329"
+      },
+      {
+        "goals": 1,
+        "id": "Q3323857"
       }
     ],
     "Q8687": [
@@ -8368,6 +9013,10 @@
       },
       {
         "goals": 1,
+        "id": "Q317322"
+      },
+      {
+        "goals": 2,
         "id": "Q2542989"
       }
     ],
@@ -8406,7 +9055,7 @@
         "id": "Q3391777"
       },
       {
-        "goals": 10,
+        "goals": 9,
         "id": "Q2447155"
       },
       {

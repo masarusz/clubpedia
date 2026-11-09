@@ -98,6 +98,29 @@
       }
     ]
   },
+  "Q108982": {
+    "birthDate": "1977-11-29",
+    "en": "Kai Oswald",
+    "id": "Q108982",
+    "ja": {
+      "display": "Kai Oswald",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q142005",
+        "goalMatches": [
+          "de-1999-Q142005-Q14551982"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q112819181": {
     "birthDate": "1999-12-30",
     "en": "Jeffinho",
@@ -1309,7 +1332,6 @@
           "it-2012-Q1543-Q2018",
           "it-2012-Q1543-Q2037",
           "it-2012-Q1543-Q2052",
-          "it-2012-Q1543-Q2756",
           "it-2012-Q1893-Q1543",
           "it-2012-Q1893-Q1543",
           "it-2012-Q1893-Q1543",
@@ -1317,7 +1339,7 @@
         ],
         "goals": 15,
         "league": "it",
-        "recordedGoals": 11,
+        "recordedGoals": 10,
         "season": "it-2012",
         "topScorerRank": 5
       },
@@ -1436,11 +1458,24 @@
       {
         "club": "Q1128631",
         "goalMatches": [
-          "en-2003-Q1128631-Q18708"
+          "en-1999-Q1128631-Q2714"
         ],
         "goals": 1,
         "league": "en",
         "recordedGoals": 1,
+        "season": "en-1999",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2003-Q1128631-Q18708",
+          "en-2003-Q1128631-Q19481",
+          "en-2003-Q19500-Q1128631"
+        ],
+        "goals": 3,
+        "league": "en",
+        "recordedGoals": 3,
         "season": "en-2003",
         "topScorerRank": null
       }
@@ -3833,15 +3868,16 @@
       {
         "club": "Q19446",
         "goalMatches": [
+          "en-2001-Q1128631-Q19446",
           "en-2001-Q1130849-Q19446",
           "en-2001-Q19446-Q1130849",
           "en-2001-Q19446-Q18747",
           "en-2001-Q19446-Q9617",
           "en-2001-Q19446-Q9617"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "en",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "en-2001",
         "topScorerRank": null
       },

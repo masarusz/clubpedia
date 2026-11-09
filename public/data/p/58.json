@@ -18,10 +18,30 @@
     "seasons": [
       {
         "club": "Q1128631",
-        "goalMatches": [],
+        "goalMatches": [
+          "en-1999-Q1128631-Q18661",
+          "en-1999-Q1128631-Q18716",
+          "en-1999-Q1128631-Q18732",
+          "en-1999-Q1128631-Q19481",
+          "en-1999-Q1128631-Q19580",
+          "en-1999-Q1128631-Q2714",
+          "en-1999-Q1128631-Q5794",
+          "en-1999-Q18716-Q1128631",
+          "en-1999-Q18732-Q1128631",
+          "en-1999-Q18732-Q1128631",
+          "en-1999-Q18732-Q1128631",
+          "en-1999-Q18739-Q1128631",
+          "en-1999-Q19498-Q1128631",
+          "en-1999-Q19580-Q1128631",
+          "en-1999-Q2714-Q1128631",
+          "en-1999-Q48879-Q1128631",
+          "en-1999-Q48879-Q1128631",
+          "en-1999-Q5794-Q1128631",
+          "en-1999-Q5794-Q1128631"
+        ],
         "goals": 19,
         "league": "en",
-        "recordedGoals": 0,
+        "recordedGoals": 19,
         "season": "en-1999",
         "topScorerRank": 4
       }
@@ -165,8 +185,8 @@
     "en": "Chema Andrés",
     "id": "Q127932393",
     "ja": {
-      "display": "Chema Andrés",
-      "mode": "latin"
+      "display": "チェマ アンドレス",
+      "mode": "katakana"
     },
     "japan": null,
     "seasons": [
@@ -1705,6 +1725,7 @@
           "es-2002-Q10286-Q10315",
           "es-2002-Q10315-Q10319",
           "es-2002-Q10315-Q223620",
+          "es-2002-Q10315-Q8682",
           "es-2002-Q10315-Q8687",
           "es-2002-Q10315-Q8687",
           "es-2002-Q10315-Q8701",
@@ -1719,10 +1740,22 @@
           "es-2002-Q8723-Q10315",
           "es-2002-Q8723-Q10315"
         ],
-        "goals": 16,
+        "goals": 17,
         "league": "es",
-        "recordedGoals": 16,
+        "recordedGoals": 17,
         "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q10315",
+        "goalMatches": [
+          "es-2003-Q8749-Q10315",
+          "es-2003-Q8749-Q10315"
+        ],
+        "goals": 2,
+        "league": "es",
+        "recordedGoals": 2,
+        "season": "es-2003",
         "topScorerRank": null
       },
       {
@@ -2096,12 +2129,11 @@
         "club": "Q459794",
         "goalMatches": [
           "it-2002-Q2609-Q459794",
-          "it-2002-Q459794-Q1886",
-          "it-2002-Q459794-Q1893"
+          "it-2002-Q459794-Q1886"
         ],
-        "goals": 3,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 2,
         "season": "it-2002",
         "topScorerRank": null
       }
@@ -2193,12 +2225,24 @@
       {
         "club": "Q12236",
         "goalMatches": [
+          "es-2002-Q12236-Q8682",
           "es-2002-Q8701-Q12236"
+        ],
+        "goals": 2,
+        "league": "es",
+        "recordedGoals": 2,
+        "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8760",
+        "goalMatches": [
+          "es-2003-Q8760-Q8749"
         ],
         "goals": 1,
         "league": "es",
         "recordedGoals": 1,
-        "season": "es-2002",
+        "season": "es-2003",
         "topScorerRank": null
       },
       {
@@ -2274,6 +2318,17 @@
         "recordedGoals": 1,
         "season": "en-1997",
         "topScorerRank": null
+      },
+      {
+        "club": "Q18747",
+        "goalMatches": [
+          "en-2000-Q1128631-Q18747"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
       }
     ]
   },
@@ -2310,6 +2365,17 @@
     },
     "japan": null,
     "seasons": [
+      {
+        "club": "Q2756",
+        "goalMatches": [
+          "it-2011-Q2074-Q2756"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2011",
+        "topScorerRank": null
+      },
       {
         "club": "Q1886",
         "goalMatches": [

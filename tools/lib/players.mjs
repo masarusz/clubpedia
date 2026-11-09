@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { normalizeTitle } from './core-data.mjs';
+import { LAST_SEASON_START_YEAR, normalizeTitle } from './core-data.mjs';
 import { articleJapaneseName, needsJapaneseReading, preferKatakanaOrLatin, rubyFromLead } from './japanese-names.mjs';
 import { topFlightLeague, parseDomesticSeasons, parseEnglishCareerSeasons } from './japan-domestic.mjs';
 import { safeName } from './source-api.mjs';
@@ -185,11 +185,12 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
     for (const entry of domestic) {
       const league = topFlightLeague(entry.country, entry.league);
       if (!league) continue;
+      const seasonYear = Number(entry.season.slice(0, 4));
+      if (seasonYear > LAST_SEASON_START_YEAR) continue;
       const clubName = entry.clubTarget ?? plainText(entry.clubRaw).trim();
       const clubMeta = entry.clubTarget ? byJaTitle.get(normalizeTitle(entry.clubTarget)) : null;
       const clubId = clubMeta?.wikibaseItem ?? japaneseClubAliases[clubName] ?? null;
       if (!clubId) japaneseUnmappedClubs.push({ player: id, en: enTitle, season: entry.season, club: entry.clubTarget ?? entry.clubRaw, league });
-      const seasonYear = Number(entry.season.slice(0, 4));
       const seasonId = `${league}-${seasonYear}`;
       let bucket = player.seasons.find((item) => item.league === league && item.season === seasonId && item.club === clubId);
       if (!bucket) { bucket = { league, season: seasonId, club: clubId, apps: entry.apps, goals: entry.goals, recordedGoals: 0, goalMatches: [], topScorerRank: null }; player.seasons.push(bucket); }
@@ -207,7 +208,7 @@ export async function buildPlayers({ seasons, metadata, cacheRoot, japanesePlaye
       const enContent = JSON.parse(await readFile(join(cacheRoot, 'enwiki', enFile), 'utf8')).content;
       const english = parseEnglishCareerSeasons(enContent);
       for (const listEntry of expected) {
-        for (let year = 1992; year <= 2025; year += 1) {
+        for (let year = 1992; year <= LAST_SEASON_START_YEAR; year += 1) {
           const listed = listEntry.years.some((range) => year >= range.start && (range.endExclusive == null || year < range.endExclusive));
           if (!listed || player.japan.some((item) => item.league === listEntry.league && Number(item.season.slice(0, 4)) === year)) continue;
           const label = `${year}\u2013${String((year + 1) % 100).padStart(2, '0')}`;

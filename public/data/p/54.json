@@ -306,13 +306,14 @@
         "goalMatches": [
           "it-2013-Q1422-Q1457",
           "it-2013-Q1457-Q1893",
+          "it-2013-Q1457-Q6767",
           "it-2013-Q1893-Q1457",
           "it-2013-Q2052-Q1457",
           "it-2013-Q2768-Q1457"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "it-2013",
         "topScorerRank": null
       },
@@ -744,12 +745,13 @@
       {
         "club": "Q51976",
         "goalMatches": [
+          "de-1999-Q14551982-Q51976",
           "de-1999-Q51976-Q38245",
           "de-1999-Q51976-Q38245"
         ],
         "goals": 12,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1999",
         "topScorerRank": 7
       },
@@ -1312,6 +1314,17 @@
       {
         "club": "Q10333",
         "goalMatches": [
+          "es-2002-Q8682-Q10333"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q10333",
+        "goalMatches": [
           "es-2003-Q8682-Q10333"
         ],
         "goals": 1,
@@ -1634,14 +1647,6 @@
         "league": "de",
         "season": "2025–26",
         "source": "ja"
-      },
-      {
-        "apps": 0,
-        "club": "Q38245",
-        "goals": 0,
-        "league": "de",
-        "season": "2026–27",
-        "source": "ja"
       }
     ],
     "photo": true,
@@ -1737,16 +1742,6 @@
         "league": "de",
         "recordedGoals": 5,
         "season": "de-2025",
-        "topScorerRank": null
-      },
-      {
-        "apps": 0,
-        "club": "Q38245",
-        "goalMatches": [],
-        "goals": 0,
-        "league": "de",
-        "recordedGoals": 0,
-        "season": "de-2026",
         "topScorerRank": null
       }
     ]
@@ -3702,6 +3697,17 @@
         "topScorerRank": null
       },
       {
+        "club": "Q1893",
+        "goalMatches": [
+          "it-2003-Q1893-Q16344"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2003",
+        "topScorerRank": null
+      },
+      {
         "club": "Q1457",
         "goalMatches": [
           "it-2004-Q1457-Q2756",
@@ -3955,6 +3961,29 @@
         "league": "en",
         "recordedGoals": 2,
         "season": "en-2023",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q377019": {
+    "birthDate": "1977-01-08",
+    "en": "Andrea Ardito",
+    "id": "Q377019",
+    "ja": {
+      "display": "Andrea Ardito",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q2756",
+        "goalMatches": [
+          "it-2003-Q16344-Q2756"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-2003",
         "topScorerRank": null
       }
     ]

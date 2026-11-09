@@ -19,6 +19,17 @@
         "recordedGoals": 1,
         "season": "en-1998",
         "topScorerRank": null
+      },
+      {
+        "club": "Q18661",
+        "goalMatches": [
+          "en-2000-Q18661-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
+        "topScorerRank": null
       }
     ]
   },
@@ -341,11 +352,12 @@
       {
         "club": "Q16344",
         "goalMatches": [
-          "it-2003-Q1543-Q16344"
+          "it-2003-Q1543-Q16344",
+          "it-2003-Q16344-Q1893"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2003",
         "topScorerRank": null
       }
@@ -515,6 +527,40 @@
         "league": "it",
         "recordedGoals": 1,
         "season": "it-2001",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1409060": {
+    "birthDate": "1962-01-21",
+    "en": "Gabriele Pin",
+    "id": "Q1409060",
+    "ja": {
+      "display": "ガブリエーレ ピン",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q2693",
+        "goalMatches": [
+          "it-1994-Q2052-Q2693"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1994",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q2693",
+        "goalMatches": [
+          "it-1995-Q2693-Q1886"
+        ],
+        "goals": 1,
+        "league": "it",
+        "recordedGoals": 1,
+        "season": "it-1995",
         "topScorerRank": null
       }
     ]
@@ -1331,13 +1377,14 @@
       {
         "club": "Q19451",
         "goalMatches": [
+          "en-2003-Q1128631-Q19451",
           "en-2003-Q18708-Q19451",
           "en-2003-Q18732-Q19451",
           "en-2003-Q19451-Q19446"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "en",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "en-2003",
         "topScorerRank": null
       },
@@ -1701,11 +1748,13 @@
         "club": "Q162317",
         "goalMatches": [
           "de-1993-Q104761-Q162317",
+          "de-1993-Q105853-Q162317",
+          "de-1993-Q162317-Q105853",
           "de-1993-Q162317-Q41420"
         ],
-        "goals": 2,
+        "goals": 4,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 4,
         "season": "de-1993",
         "topScorerRank": null
       }
@@ -4550,6 +4599,17 @@
         "league": "es",
         "recordedGoals": 2,
         "season": "es-1993",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8701",
+        "goalMatches": [
+          "es-1994-Q8682-Q8701"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1994",
         "topScorerRank": null
       }
     ]

@@ -1416,28 +1416,6 @@
       "homeGoals": 2,
       "key": "it-2012-Q1543-Q2756",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Paolucci",
-            "minute": "87",
-            "player": "Q511055"
-          }
-        ],
-        "home": [
-          {
-            "display": "Robinho",
-            "minute": "67",
-            "player": "Q58441"
-          },
-          {
-            "display": "Pazzini",
-            "minute": "80",
-            "penalty": true,
-            "player": "Q219389"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -1881,7 +1859,7 @@
         "away": [
           {
             "display": "Reginaldo",
-            "minute": "59",
+            "minute": "60",
             "player": "Q1343384"
           }
         ],
@@ -2930,7 +2908,7 @@
           },
           {
             "display": "Calaiò",
-            "minute": "90+2",
+            "minute": "90+3",
             "player": "Q736053"
           }
         ],
@@ -8585,7 +8563,7 @@
         "home": [
           {
             "display": "Paci",
-            "minute": "54",
+            "minute": "55",
             "player": "Q2548011"
           }
         ]
@@ -8605,7 +8583,7 @@
         "home": [
           {
             "display": "Emeghara",
-            "minute": "6",
+            "minute": "7",
             "player": "Q677926"
           },
           {
@@ -8651,7 +8629,7 @@
     {
       "away": "Q2674",
       "awayGoals": 0,
-      "date": "2012-10-28",
+      "date": "2012-10-27",
       "home": "Q2756",
       "homeGoals": 0,
       "key": "it-2012-Q2756-Q2674",
@@ -8704,32 +8682,6 @@
       "homeGoals": 1,
       "key": "it-2012-Q2756-Q2739",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Destro",
-            "minute": "63",
-            "player": "Q380830"
-          },
-          {
-            "display": "Perrotta",
-            "minute": "86",
-            "player": "Q232789"
-          },
-          {
-            "display": "Destro",
-            "minute": "90+1",
-            "player": "Q380830"
-          }
-        ],
-        "home": [
-          {
-            "display": "Neto",
-            "minute": "25",
-            "player": "Q428603"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -8754,33 +8706,6 @@
       "homeGoals": 2,
       "key": "it-2012-Q2756-Q2798",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Basta",
-            "minute": "3",
-            "player": "Q464524"
-          },
-          {
-            "display": "Di Natale",
-            "minute": "5",
-            "player": "Q167281"
-          }
-        ],
-        "home": [
-          {
-            "display": "Calaiò",
-            "minute": "70",
-            "player": "Q736053"
-          },
-          {
-            "display": "Zé Eduardo",
-            "minute": "77",
-            "penalty": true,
-            "player": "Q2451217"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -8812,7 +8737,7 @@
           },
           {
             "display": "Rosina",
-            "minute": "54",
+            "minute": "55",
             "penalty": true,
             "player": "Q459728"
           }
@@ -10467,7 +10392,7 @@
         "id": "Q193768"
       },
       {
-        "goals": 2,
+        "goals": 1,
         "id": "Q58441"
       },
       {
@@ -10533,15 +10458,15 @@
       },
       {
         "goals": 2,
+        "id": "Q3839710"
+      },
+      {
+        "goals": 2,
         "id": "Q349162"
       },
       {
         "goals": 2,
         "id": "Q653385"
-      },
-      {
-        "goals": 2,
-        "id": "Q3839710"
       },
       {
         "goals": 1,
@@ -10840,12 +10765,12 @@
         "id": "Q381207"
       },
       {
-        "goals": 1,
-        "id": "Q891749"
-      },
-      {
         "goals": 11,
         "id": "Q44097"
+      },
+      {
+        "goals": 1,
+        "id": "Q891749"
       },
       {
         "goals": 1,
@@ -10934,6 +10859,10 @@
         "id": "Q311956"
       },
       {
+        "goals": 1,
+        "id": "Q508010"
+      },
+      {
         "goals": 4,
         "id": "Q213102"
       },
@@ -10956,10 +10885,6 @@
       {
         "goals": 5,
         "id": "Q298448"
-      },
-      {
-        "goals": 1,
-        "id": "Q508010"
       },
       {
         "goals": 4,
@@ -11001,11 +10926,11 @@
       },
       {
         "goals": 1,
-        "id": "Q316591"
+        "id": "Q3839710"
       },
       {
         "goals": 1,
-        "id": "Q3839710"
+        "id": "Q316591"
       },
       {
         "goals": 3,
@@ -11156,11 +11081,7 @@
         "id": "Q20110"
       },
       {
-        "goals": 1,
-        "id": "Q232789"
-      },
-      {
-        "goals": 6,
+        "goals": 4,
         "id": "Q380830"
       },
       {
@@ -11194,7 +11115,7 @@
         "id": "Q979918"
       },
       {
-        "goals": 4,
+        "goals": 3,
         "id": "Q736053"
       },
       {
@@ -11214,7 +11135,7 @@
         "id": "Q459728"
       },
       {
-        "goals": 2,
+        "goals": 1,
         "id": "Q511055"
       },
       {
@@ -11227,23 +11148,15 @@
       },
       {
         "goals": 1,
+        "id": "Q1098196"
+      },
+      {
+        "goals": 1,
         "id": "Q466671"
       },
       {
         "goals": 1,
         "id": "Q2254057"
-      },
-      {
-        "goals": 1,
-        "id": "Q1098196"
-      },
-      {
-        "goals": 1,
-        "id": "Q428603"
-      },
-      {
-        "goals": 1,
-        "id": "Q2451217"
       }
     ],
     "Q2768": [
@@ -11349,10 +11262,6 @@
       {
         "goals": 1,
         "id": "Q587731"
-      },
-      {
-        "goals": 1,
-        "id": "Q464524"
       },
       {
         "goals": 2,
@@ -11718,7 +11627,7 @@
       "points": 30,
       "position": 19,
       "result": "Relegation to Serie B",
-      "sourceTitle": "Siena FC SSD",
+      "sourceTitle": "Siena FC",
       "status": "R",
       "w": 9
     },

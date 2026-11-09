@@ -3296,10 +3296,28 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2017-02-26",
       "home": "Q12278",
       "homeGoals": 1,
       "key": "es-2016-Q12278-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Aspas",
+            "minute": "75",
+            "player": "Q26380"
+          }
+        ],
+        "home": [
+          {
+            "display": "Gómez",
+            "minute": "49",
+            "penalty": true,
+            "player": "Q3884280"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5435,10 +5453,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2016-11-19",
       "home": "Q770740",
       "homeGoals": 1,
       "key": "es-2016-Q770740-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Rico",
+            "minute": "9",
+            "player": "Q2486129"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -5941,10 +5970,27 @@
     {
       "away": "Q8749",
       "awayGoals": 2,
+      "date": "2017-01-28",
       "home": "Q856119",
       "homeGoals": 0,
       "key": "es-2016-Q856119-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Lemos",
+            "minute": "32",
+            "player": "Q12403049"
+          },
+          {
+            "display": "Guidetti",
+            "minute": "66",
+            "penalty": true,
+            "player": "Q372276"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8497,10 +8543,34 @@
     {
       "away": "Q12278",
       "awayGoals": 1,
+      "date": "2016-09-21",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-2016-Q8749-Q12278",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Čop",
+            "minute": "80",
+            "penalty": true,
+            "player": "Q1283439"
+          }
+        ],
+        "home": [
+          {
+            "display": "Hugo Mallo",
+            "minute": "66",
+            "player": "Q1825157"
+          },
+          {
+            "display": "Aspas",
+            "minute": "87",
+            "penalty": true,
+            "player": "Q26380"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8526,6 +8596,7 @@
     {
       "away": "Q223620",
       "awayGoals": 0,
+      "date": "2017-01-15",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-2016-Q8749-Q223620",
@@ -8598,19 +8669,46 @@
     {
       "away": "Q770740",
       "awayGoals": 2,
+      "date": "2017-04-09",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-2016-Q8749-Q770740",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Kike",
+            "minute": "13",
+            "player": "Q1748315"
+          },
+          {
+            "display": "León",
+            "minute": "51",
+            "player": "Q310007"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q856119",
       "awayGoals": 1,
+      "date": "2016-08-22",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-2016-Q8749-Q856119",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Díaz",
+            "minute": "75",
+            "player": "Q970462"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8845,7 +8943,7 @@
             "player": "Q14948183"
           },
           {
-            "display": "Diop",
+            "display": "Cheikh",
             "minute": "90+3",
             "player": "Q22004066"
           }
@@ -8864,7 +8962,7 @@
       "scorers": {
         "away": [
           {
-            "display": "Wass",
+            "display": "Was",
             "minute": "86",
             "ownGoal": true,
             "player": "Q316854"
@@ -11362,7 +11460,7 @@
     ],
     "Q12278": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q3884280"
       },
       {
@@ -11378,7 +11476,7 @@
         "id": "Q514145"
       },
       {
-        "goals": 7,
+        "goals": 8,
         "id": "Q1283439"
       },
       {
@@ -11606,7 +11704,7 @@
         "id": "Q2070240"
       },
       {
-        "goals": 8,
+        "goals": 9,
         "id": "Q310007"
       },
       {
@@ -11614,7 +11712,7 @@
         "id": "Q377945"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2486129"
       },
       {
@@ -11634,7 +11732,7 @@
         "id": "Q2070654"
       },
       {
-        "goals": 5,
+        "goals": 6,
         "id": "Q1748315"
       },
       {
@@ -11698,6 +11796,10 @@
       {
         "goals": 1,
         "id": "Q2758078"
+      },
+      {
+        "goals": 1,
+        "id": "Q970462"
       }
     ],
     "Q8682": [
@@ -11988,10 +12090,6 @@
         "id": "Q3898700"
       },
       {
-        "goals": 1,
-        "id": "Q6990957"
-      },
-      {
         "goals": 2,
         "id": "Q17996881"
       },
@@ -12004,8 +12102,12 @@
         "id": "Q316854"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q372276"
+      },
+      {
+        "goals": 1,
+        "id": "Q1825157"
       },
       {
         "goals": 1,
@@ -12014,6 +12116,10 @@
       {
         "goals": 1,
         "id": "Q2978523"
+      },
+      {
+        "goals": 1,
+        "id": "Q12403049"
       },
       {
         "goals": 3,
@@ -12026,6 +12132,10 @@
       {
         "goals": 1,
         "id": "Q14639070"
+      },
+      {
+        "goals": 1,
+        "id": "Q6990957"
       },
       {
         "goals": 1,
@@ -12569,7 +12679,7 @@
     {
       "club": "Q7156",
       "goals": 29,
-      "player": "Luis Suárez",
+      "player": "Luis Suárez (Uruguayan footballer)",
       "playerId": "Q26517",
       "rank": 2
     },

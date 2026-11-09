@@ -194,28 +194,8 @@
       "mode": "kanji",
       "ruby": "{佐藤|さとう} {龍之介|りゅうのすけ}"
     },
-    "japan": [
-      {
-        "apps": 0,
-        "club": "Q10333",
-        "goals": 0,
-        "league": "es",
-        "season": "2026–27",
-        "source": "ja"
-      }
-    ],
-    "seasons": [
-      {
-        "apps": 0,
-        "club": "Q10333",
-        "goalMatches": [],
-        "goals": 0,
-        "league": "es",
-        "recordedGoals": 0,
-        "season": "es-2026",
-        "topScorerRank": null
-      }
-    ]
+    "japan": [],
+    "seasons": []
   },
   "Q112130343": {
     "birthDate": "2004-09-15",
@@ -1287,17 +1267,6 @@
         "recordedGoals": 1,
         "season": "en-2005",
         "topScorerRank": null
-      },
-      {
-        "club": "Q18741",
-        "goalMatches": [
-          "en-2006-Q18747-Q18741"
-        ],
-        "goals": 1,
-        "league": "en",
-        "recordedGoals": 1,
-        "season": "en-2006",
-        "topScorerRank": null
       }
     ]
   },
@@ -1413,6 +1382,29 @@
       }
     ]
   },
+  "Q3430389": {
+    "birthDate": "1975-06-13",
+    "en": "Riccardo Scimeca",
+    "id": "Q3430389",
+    "ja": {
+      "display": "Riccardo Scimeca",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q18711",
+        "goalMatches": [
+          "en-1998-Q18711-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1998",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q3703629": {
     "birthDate": "1981-07-29",
     "en": "Davide Sinigaglia",
@@ -1449,13 +1441,15 @@
       {
         "club": "Q6703",
         "goalMatches": [
+          "it-1997-Q2052-Q6703",
           "it-1997-Q6703-Q1457",
           "it-1997-Q6703-Q1457",
-          "it-1997-Q6703-Q2609"
+          "it-1997-Q6703-Q2609",
+          "it-1997-Q6703-Q2693"
         ],
-        "goals": 3,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 5,
         "season": "it-1997",
         "topScorerRank": null
       }
@@ -1727,14 +1721,17 @@
         "club": "Q8428",
         "goalMatches": [
           "it-1995-Q1422-Q8428",
+          "it-1995-Q2052-Q8428",
+          "it-1995-Q2052-Q8428",
           "it-1995-Q631-Q8428",
           "it-1995-Q631-Q8428",
           "it-1995-Q8428-Q1543",
-          "it-1995-Q8428-Q2609"
+          "it-1995-Q8428-Q2609",
+          "it-1995-Q8428-Q2693"
         ],
         "goals": 14,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 8,
         "season": "it-1995",
         "topScorerRank": 8
       },
@@ -1809,13 +1806,15 @@
       {
         "club": "Q1120838",
         "goalMatches": [
+          "it-2002-Q1120838-Q16344",
           "it-2002-Q1120838-Q1893",
           "it-2002-Q1120838-Q1893",
-          "it-2002-Q1120838-Q2693"
+          "it-2002-Q1120838-Q2693",
+          "it-2002-Q459794-Q1120838"
         ],
-        "goals": 3,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 3,
+        "recordedGoals": 5,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -2146,15 +2145,18 @@
           "it-2011-Q2052-Q2756",
           "it-2011-Q2756-Q13391",
           "it-2011-Q2756-Q13391",
+          "it-2011-Q2756-Q1900",
+          "it-2011-Q2756-Q2037",
           "it-2011-Q2756-Q2609",
           "it-2011-Q2756-Q2609",
           "it-2011-Q2756-Q2641",
           "it-2011-Q2756-Q2739",
-          "it-2011-Q2756-Q6664"
+          "it-2011-Q2756-Q6664",
+          "it-2011-Q8416-Q2756"
         ],
-        "goals": 8,
+        "goals": 11,
         "league": "it",
-        "recordedGoals": 8,
+        "recordedGoals": 11,
         "season": "it-2011",
         "topScorerRank": null
       },
@@ -2163,12 +2165,11 @@
         "goalMatches": [
           "it-2012-Q1900-Q2756",
           "it-2012-Q2756-Q1422",
-          "it-2012-Q2756-Q1893",
-          "it-2012-Q2756-Q2798"
+          "it-2012-Q2756-Q1893"
         ],
-        "goals": 4,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 3,
         "season": "it-2012",
         "topScorerRank": null
       },

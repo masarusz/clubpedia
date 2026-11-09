@@ -33,6 +33,7 @@
     {
       "away": "Q18711",
       "awayGoals": 0,
+      "date": "2009-03-22",
       "home": "Q1130849",
       "homeGoals": 5,
       "key": "en-2008-Q1130849-Q18711",
@@ -414,6 +415,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "2009-04-05",
       "home": "Q18656",
       "homeGoals": 3,
       "key": "en-2008-Q18656-Q18711",
@@ -770,6 +772,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "2009-05-16",
       "home": "Q18661",
       "homeGoals": 1,
       "key": "en-2008-Q18661-Q18711",
@@ -1112,6 +1115,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "2009-05-09",
       "home": "Q18708",
       "homeGoals": 3,
       "key": "en-2008-Q18708-Q18711",
@@ -1465,24 +1469,35 @@
     {
       "away": "Q1130849",
       "awayGoals": 0,
+      "date": "2008-08-31",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-2008-Q18711-Q1130849",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q18656",
       "awayGoals": 0,
+      "date": "2008-11-22",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-2008-Q18711-Q18656",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q18661",
       "awayGoals": 2,
+      "date": "2008-11-09",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-2008-Q18711-Q18661",
@@ -1492,10 +1507,15 @@
     {
       "away": "Q18708",
       "awayGoals": 0,
+      "date": "2008-11-29",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-2008-Q18711-Q18708",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1522,6 +1542,7 @@
     {
       "away": "Q18736",
       "awayGoals": 2,
+      "date": "2009-03-01",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-2008-Q18711-Q18736",
@@ -1531,6 +1552,7 @@
     {
       "away": "Q18739",
       "awayGoals": 1,
+      "date": "2008-09-27",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-2008-Q18711-Q18739",
@@ -1571,6 +1593,7 @@
     {
       "away": "Q18744",
       "awayGoals": 1,
+      "date": "2009-01-10",
       "home": "Q18711",
       "homeGoals": 2,
       "key": "en-2008-Q18711-Q18744",
@@ -1606,10 +1629,15 @@
     {
       "away": "Q18750",
       "awayGoals": 0,
+      "date": "2009-01-31",
       "home": "Q18711",
       "homeGoals": 0,
       "key": "en-2008-Q18711-Q18750",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1703,6 +1731,7 @@
     {
       "away": "Q19477",
       "awayGoals": 0,
+      "date": "2009-05-04",
       "home": "Q18711",
       "homeGoals": 1,
       "key": "en-2008-Q18711-Q19477",
@@ -2482,6 +2511,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "2008-08-23",
       "home": "Q18736",
       "homeGoals": 3,
       "key": "en-2008-Q18736-Q18711",
@@ -2842,6 +2872,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "2009-01-17",
       "home": "Q18739",
       "homeGoals": 1,
       "key": "en-2008-Q18739-Q18711",
@@ -3623,6 +3654,7 @@
     {
       "away": "Q18711",
       "awayGoals": 2,
+      "date": "2008-09-21",
       "home": "Q18744",
       "homeGoals": 1,
       "key": "en-2008-Q18744-Q18711",
@@ -4549,6 +4581,7 @@
     {
       "away": "Q18711",
       "awayGoals": 4,
+      "date": "2008-10-26",
       "home": "Q18750",
       "homeGoals": 0,
       "key": "en-2008-Q18750-Q18711",
@@ -5904,6 +5937,7 @@
     {
       "away": "Q18711",
       "awayGoals": 1,
+      "date": "2008-12-30",
       "home": "Q19477",
       "homeGoals": 0,
       "key": "en-2008-Q19477-Q18711",
@@ -9059,12 +9093,12 @@
         "id": "Q319180"
       },
       {
-        "goals": 3,
-        "id": "Q294387"
-      },
-      {
         "goals": 4,
         "id": "Q731946"
+      },
+      {
+        "goals": 3,
+        "id": "Q294387"
       },
       {
         "goals": 1,
@@ -9135,12 +9169,12 @@
         "id": "Q191162"
       },
       {
-        "goals": 3,
-        "id": "Q191855"
-      },
-      {
         "goals": 2,
         "id": "Q191136"
+      },
+      {
+        "goals": 3,
+        "id": "Q191855"
       },
       {
         "goals": 1,
@@ -9280,6 +9314,10 @@
     ],
     "Q18741": [
       {
+        "goals": 1,
+        "id": "Q296635"
+      },
+      {
         "goals": 5,
         "id": "Q184612"
       },
@@ -9315,10 +9353,6 @@
       {
         "goals": 1,
         "id": "Q470340"
-      },
-      {
-        "goals": 1,
-        "id": "Q296635"
       },
       {
         "goals": 3,
@@ -9393,12 +9427,12 @@
         "id": "Q342246"
       },
       {
-        "goals": 3,
-        "id": "Q158814"
-      },
-      {
         "goals": 1,
         "id": "Q945233"
+      },
+      {
+        "goals": 3,
+        "id": "Q158814"
       },
       {
         "goals": 1,
@@ -9766,6 +9800,10 @@
       },
       {
         "goals": 1,
+        "id": "Q187989"
+      },
+      {
+        "goals": 1,
         "id": "Q311990"
       },
       {
@@ -9775,10 +9813,6 @@
       {
         "goals": 8,
         "id": "Q275169"
-      },
-      {
-        "goals": 1,
-        "id": "Q187989"
       },
       {
         "goals": 3,

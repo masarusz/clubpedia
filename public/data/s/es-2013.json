@@ -1506,13 +1506,13 @@
             "player": "Q455611"
           },
           {
-            "display": "López",
+            "display": "Á. López",
             "minute": "28",
             "player": "Q2754070"
           },
           {
             "display": "Rafinha",
-            "minute": "56",
+            "minute": "57",
             "player": "Q455611"
           }
         ],
@@ -1947,10 +1947,31 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2013-12-16",
       "home": "Q10319",
       "homeGoals": 3,
       "key": "es-2013-Q10319-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Guerra",
+            "minute": "60",
+            "player": "Q2268130"
+          },
+          {
+            "display": "Guerra",
+            "minute": "67",
+            "player": "Q2268130"
+          },
+          {
+            "display": "Guerra",
+            "minute": "86",
+            "player": "Q2268130"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2448,7 +2469,7 @@
       "scorers": {
         "away": [
           {
-            "display": "López",
+            "display": "Á. López",
             "minute": "47",
             "player": "Q2754070"
           }
@@ -4050,6 +4071,7 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2014-03-01",
       "home": "Q10512",
       "homeGoals": 1,
       "key": "es-2013-Q10512-Q8749",
@@ -6404,7 +6426,7 @@
         "away": [
           {
             "display": "Charles",
-            "minute": "11",
+            "minute": "14",
             "player": "Q5076849"
           },
           {
@@ -7496,10 +7518,32 @@
     {
       "away": "Q8749",
       "awayGoals": 2,
+      "date": "2013-08-25",
       "home": "Q8723",
       "homeGoals": 1,
       "key": "es-2013-Q8723-Q8749",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Charles",
+            "minute": "67",
+            "player": "Q5076849"
+          },
+          {
+            "display": "Nolito",
+            "minute": "74",
+            "player": "Q456617"
+          }
+        ],
+        "home": [
+          {
+            "display": "Castro",
+            "minute": "90",
+            "player": "Q631157"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -7665,6 +7709,7 @@
     {
       "away": "Q10319",
       "awayGoals": 1,
+      "date": "2014-04-28",
       "home": "Q8749",
       "homeGoals": 4,
       "key": "es-2013-Q8749-Q10319",
@@ -7746,7 +7791,7 @@
             "player": "Q367851"
           },
           {
-            "display": "Borja Oubiña",
+            "display": "Oubiña",
             "minute": "49",
             "player": "Q392718"
           },
@@ -7762,10 +7807,21 @@
     {
       "away": "Q10512",
       "awayGoals": 1,
+      "date": "2013-09-29",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-2013-Q8749-Q10512",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Márquez",
+            "minute": "62",
+            "player": "Q1188833"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -7880,24 +7936,89 @@
     {
       "away": "Q8723",
       "awayGoals": 2,
+      "date": "2014-01-24",
       "home": "Q8749",
       "homeGoals": 4,
       "key": "es-2013-Q8749-Q8723",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Castro",
+            "minute": "17",
+            "player": "Q631157"
+          },
+          {
+            "display": "Castro",
+            "minute": "78",
+            "player": "Q631157"
+          }
+        ],
+        "home": [
+          {
+            "display": "Orellana",
+            "minute": "22",
+            "player": "Q367851"
+          },
+          {
+            "display": "Charles",
+            "minute": "31",
+            "player": "Q5076849"
+          },
+          {
+            "display": "Orellana",
+            "minute": "39",
+            "player": "Q367851"
+          },
+          {
+            "display": "Nolito",
+            "minute": "73",
+            "player": "Q456617"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8780",
       "awayGoals": 2,
+      "date": "2013-08-19",
       "home": "Q8749",
       "homeGoals": 2,
       "key": "es-2013-Q8749-Q8780",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Sánchez",
+            "minute": "53",
+            "player": "Q316487"
+          },
+          {
+            "display": "Bifouma",
+            "minute": "75",
+            "player": "Q2637074"
+          }
+        ],
+        "home": [
+          {
+            "display": "Á. López",
+            "minute": "41",
+            "player": "Q2754070"
+          },
+          {
+            "display": "Charles",
+            "minute": "47",
+            "player": "Q5076849"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8806",
       "awayGoals": 1,
+      "date": "2014-02-22",
       "home": "Q8749",
       "homeGoals": 1,
       "key": "es-2013-Q8749-Q8806",
@@ -7933,10 +8054,21 @@
     {
       "away": "Q8823",
       "awayGoals": 1,
+      "date": "2013-10-21",
       "home": "Q8749",
       "homeGoals": 0,
       "key": "es-2013-Q8749-Q8823",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Diop",
+            "minute": "89",
+            "player": "Q124608"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -8294,10 +8426,21 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2014-01-18",
       "home": "Q8780",
       "homeGoals": 1,
       "key": "es-2013-Q8780-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "García",
+            "minute": "88",
+            "player": "Q313201"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -8693,10 +8836,26 @@
     {
       "away": "Q8749",
       "awayGoals": 0,
+      "date": "2013-09-26",
       "home": "Q8806",
       "homeGoals": 2,
       "key": "es-2013-Q8806-Q8749",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "López",
+            "minute": "44",
+            "player": "Q719334"
+          },
+          {
+            "display": "Arroyo",
+            "minute": "50",
+            "player": "Q6172727"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -9545,6 +9704,7 @@
     {
       "away": "Q8749",
       "awayGoals": 1,
+      "date": "2014-03-15",
       "home": "Q8823",
       "homeGoals": 0,
       "key": "es-2013-Q8823-Q8749",
@@ -9974,7 +10134,7 @@
       "scorers": {
         "away": [
           {
-            "display": "López",
+            "display": "Á. López",
             "minute": "6",
             "player": "Q2754070"
           },
@@ -9984,7 +10144,7 @@
             "player": "Q545665"
           },
           {
-            "display": "López",
+            "display": "Á. López",
             "minute": "64",
             "player": "Q2754070"
           },
@@ -10490,7 +10650,7 @@
         "id": "Q517943"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1188833"
       },
       {
@@ -10814,7 +10974,7 @@
     ],
     "Q8723": [
       {
-        "goals": 2,
+        "goals": 5,
         "id": "Q631157"
       },
       {
@@ -10856,7 +11016,7 @@
     ],
     "Q8749": [
       {
-        "goals": 9,
+        "goals": 11,
         "id": "Q456617"
       },
       {
@@ -10864,7 +11024,7 @@
         "id": "Q392718"
       },
       {
-        "goals": 3,
+        "goals": 5,
         "id": "Q367851"
       },
       {
@@ -10880,7 +11040,7 @@
         "id": "Q545665"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q2754070"
       },
       {
@@ -10888,7 +11048,7 @@
         "id": "Q455611"
       },
       {
-        "goals": 8,
+        "goals": 11,
         "id": "Q5076849"
       },
       {
@@ -10902,7 +11062,7 @@
         "id": "Q209847"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q2637074"
       },
       {
@@ -10910,8 +11070,12 @@
         "id": "Q2608851"
       },
       {
-        "goals": 9,
+        "goals": 10,
         "id": "Q313201"
+      },
+      {
+        "goals": 1,
+        "id": "Q316487"
       },
       {
         "goals": 3,
@@ -10968,8 +11132,12 @@
         "id": "Q714546"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q719334"
+      },
+      {
+        "goals": 1,
+        "id": "Q6172727"
       }
     ],
     "Q8812": [
@@ -11040,7 +11208,7 @@
         "id": "Q923225"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q124608"
       },
       {

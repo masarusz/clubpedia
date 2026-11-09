@@ -11,6 +11,9 @@ export const LEAGUE_INFO = Object.freeze({
   fr: { name: 'リーグ・アン', championList: 'List of French football champions', championColumn: 2, first: 1932, scorerList: 'List of Ligue 1 top scorers' },
 });
 
+/** Final season start year included in the main five-league data window. */
+export const LAST_SEASON_START_YEAR = 2025;
+
 /** First-choice kit colour from a football-club infobox. */
 export function clubKitColour(articleText) {
   const infobox = findTemplates(articleText).find((template) => /^infobox football club$/i.test(template.name.trim()));

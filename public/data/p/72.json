@@ -985,6 +985,17 @@
         "recordedGoals": 2,
         "season": "es-2001",
         "topScorerRank": null
+      },
+      {
+        "club": "Q10308",
+        "goalMatches": [
+          "es-2003-Q8749-Q10308"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
+        "topScorerRank": null
       }
     ]
   },
@@ -1157,11 +1168,12 @@
       {
         "club": "Q1900",
         "goalMatches": [
-          "it-2013-Q1900-Q2798"
+          "it-2013-Q1900-Q2798",
+          "it-2013-Q6767-Q1900"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "it-2013",
         "topScorerRank": null
       },
@@ -3193,12 +3205,11 @@
       {
         "club": "Q1422",
         "goalMatches": [
-          "it-1994-Q2052-Q1422",
           "it-1994-Q2609-Q1422"
         ],
-        "goals": 2,
+        "goals": 1,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 1,
         "season": "it-1994",
         "topScorerRank": null
       },
@@ -3765,6 +3776,29 @@
       }
     ]
   },
+  "Q727388": {
+    "birthDate": "1975-09-22",
+    "en": "Javier López Vallejo",
+    "id": "Q727388",
+    "ja": {
+      "display": "ハビエル ロペス バジェホ",
+      "mode": "katakana"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q12297",
+        "goalMatches": [
+          "es-2002-Q8682-Q12297"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2002",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q7816609": {
     "birthDate": "1994-12-03",
     "en": "Tom Lockyer",
@@ -3962,11 +3996,12 @@
           "it-2013-Q2018-Q1886",
           "it-2013-Q2018-Q1893",
           "it-2013-Q2018-Q2739",
-          "it-2013-Q2018-Q2768"
+          "it-2013-Q2018-Q2768",
+          "it-2013-Q2018-Q6767"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "it",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "it-2013",
         "topScorerRank": null
       },

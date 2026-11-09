@@ -286,6 +286,30 @@
       }
     ]
   },
+  "Q1269108": {
+    "birthDate": "1972-11-21",
+    "en": "Oliver Otto",
+    "id": "Q1269108",
+    "ja": {
+      "display": "Oliver Otto",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q14551982",
+        "goalMatches": [
+          "de-1999-Q14551982-Q131603",
+          "de-1999-Q14551982-Q158121"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q131366878": {
     "birthDate": "2005-10-22",
     "en": "Abdoul Ouattara",
@@ -370,6 +394,17 @@
         "league": "es",
         "recordedGoals": 1,
         "season": "es-2001",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8857",
+        "goalMatches": [
+          "es-2003-Q8857-Q8749"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-2003",
         "topScorerRank": null
       }
     ]
@@ -1385,11 +1420,12 @@
         "goalMatches": [
           "es-2014-Q10300-Q8806",
           "es-2014-Q10315-Q10300",
+          "es-2014-Q8749-Q10300",
           "es-2014-Q8812-Q10300"
         ],
-        "goals": 3,
+        "goals": 4,
         "league": "es",
-        "recordedGoals": 3,
+        "recordedGoals": 4,
         "season": "es-2014",
         "topScorerRank": null
       },
@@ -1603,17 +1639,6 @@
     },
     "seasons": [
       {
-        "club": "Q8682",
-        "goalMatches": [
-          "es-1993-Q8682-Q8749"
-        ],
-        "goals": 1,
-        "league": "es",
-        "recordedGoals": 1,
-        "season": "es-1993",
-        "topScorerRank": null
-      },
-      {
         "club": "Q216661",
         "goalMatches": [
           "es-1994-Q216661-Q7156",
@@ -1767,11 +1792,12 @@
         "club": "Q2037",
         "goalMatches": [
           "it-2002-Q1893-Q2037",
+          "it-2002-Q2037-Q16344",
           "it-2002-Q2609-Q2037"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "it-2002",
         "topScorerRank": null
       }
@@ -2286,6 +2312,21 @@
         "topScorerRank": null
       },
       {
+        "club": "Q8682",
+        "goalMatches": [
+          "es-2002-Q10329-Q8682",
+          "es-2002-Q8682-Q10300",
+          "es-2002-Q8682-Q10300",
+          "es-2002-Q8682-Q8857",
+          "es-2002-Q8682-Q8857"
+        ],
+        "goals": 5,
+        "league": "es",
+        "recordedGoals": 5,
+        "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
         "club": "Q10333",
         "goalMatches": [
           "es-2006-Q10333-Q8701",
@@ -2768,6 +2809,29 @@
         "league": "es",
         "recordedGoals": 3,
         "season": "es-2016",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q6770142": {
+    "birthDate": "1967-04-06",
+    "en": "Mark Venus",
+    "id": "Q6770142",
+    "ja": {
+      "display": "Mark Venus",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q9653",
+        "goalMatches": [
+          "en-2000-Q9653-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2000",
         "topScorerRank": null
       }
     ]

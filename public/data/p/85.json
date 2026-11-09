@@ -653,6 +653,29 @@
       }
     ]
   },
+  "Q1717431": {
+    "birthDate": "1967-12-08",
+    "en": "Jürgen Luginger",
+    "id": "Q1717431",
+    "ja": {
+      "display": "Jürgen Luginger",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q32494",
+        "goalMatches": [
+          "de-1993-Q162317-Q32494"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q172792": {
     "birthDate": "1984-02-01",
     "en": "Darren Fletcher",
@@ -944,11 +967,15 @@
       {
         "club": "Q2693",
         "goalMatches": [
-          "it-1995-Q631-Q2693"
+          "it-1995-Q1886-Q2693",
+          "it-1995-Q2693-Q2052",
+          "it-1995-Q631-Q2693",
+          "it-1995-Q8428-Q2693",
+          "it-1995-Q8428-Q2693"
         ],
-        "goals": 1,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 5,
         "season": "it-1995",
         "topScorerRank": null
       }
@@ -2518,11 +2545,12 @@
         "club": "Q1128631",
         "goalMatches": [
           "en-2000-Q1128631-Q9617",
-          "en-2000-Q18716-Q1128631"
+          "en-2000-Q18716-Q1128631",
+          "en-2000-Q5794-Q1128631"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "en",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "en-2000",
         "topScorerRank": null
       },
@@ -3004,11 +3032,12 @@
       {
         "club": "Q51974",
         "goalMatches": [
+          "de-1999-Q14551982-Q51974",
           "de-1999-Q51974-Q38245"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "de-1999",
         "topScorerRank": null
       },
@@ -3599,12 +3628,40 @@
     "seasons": [
       {
         "club": "Q18711",
+        "goalMatches": [
+          "en-1997-Q18711-Q18747",
+          "en-1997-Q18711-Q18747",
+          "en-1997-Q9616-Q18711"
+        ],
+        "goals": 3,
+        "league": "en",
+        "recordedGoals": 3,
+        "season": "en-1997",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18711",
         "goalMatches": [],
         "goals": 14,
         "league": "en",
         "recordedGoals": 0,
         "season": "en-1998",
         "topScorerRank": 7
+      },
+      {
+        "club": "Q18711",
+        "goalMatches": [
+          "en-1999-Q18661-Q18711",
+          "en-1999-Q18661-Q18711",
+          "en-1999-Q18711-Q1128631",
+          "en-1999-Q18711-Q5794",
+          "en-1999-Q18716-Q18711"
+        ],
+        "goals": 5,
+        "league": "en",
+        "recordedGoals": 5,
+        "season": "en-1999",
+        "topScorerRank": null
       },
       {
         "club": "Q18711",
@@ -3680,36 +3737,6 @@
         "league": "fr",
         "recordedGoals": 1,
         "season": "fr-2024",
-        "topScorerRank": null
-      }
-    ]
-  },
-  "Q705929": {
-    "birthDate": "1972-09-30",
-    "en": "Sergei Gurenko",
-    "id": "Q705929",
-    "ja": {
-      "display": "セルゲイ グレンコ",
-      "mode": "katakana"
-    },
-    "japan": null,
-    "photo": true,
-    "photoCredit": {
-      "artist": "Динамо Минск",
-      "licence": "CC BY 3.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Sergei_Gurenko.png"
-    },
-    "seasons": [
-      {
-        "club": "Q459794",
-        "goalMatches": [
-          "it-2002-Q1543-Q459794"
-        ],
-        "goals": 1,
-        "league": "it",
-        "recordedGoals": 1,
-        "season": "it-2002",
         "topScorerRank": null
       }
     ]
@@ -4037,6 +4064,17 @@
         "league": "en",
         "recordedGoals": 1,
         "season": "en-1997",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q18741",
+        "goalMatches": [
+          "en-1999-Q18741-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-1999",
         "topScorerRank": null
       }
     ]

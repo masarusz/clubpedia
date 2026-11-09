@@ -269,12 +269,13 @@
           "es-2016-Q12278-Q8682",
           "es-2016-Q12278-Q8687",
           "es-2016-Q8687-Q12278",
+          "es-2016-Q8749-Q12278",
           "es-2016-Q8780-Q12278",
           "es-2016-Q8857-Q12278"
         ],
-        "goals": 7,
+        "goals": 8,
         "league": "es",
-        "recordedGoals": 7,
+        "recordedGoals": 8,
         "season": "es-2016",
         "topScorerRank": null
       },
@@ -1879,7 +1880,6 @@
           "it-1994-Q1422-Q2739",
           "it-1994-Q1422-Q2739",
           "it-1994-Q1543-Q1422",
-          "it-1994-Q2052-Q1422",
           "it-1994-Q2074-Q1422",
           "it-1994-Q2641-Q1422",
           "it-1994-Q2693-Q1422",
@@ -1888,7 +1888,7 @@
         ],
         "goals": 15,
         "league": "it",
-        "recordedGoals": 15,
+        "recordedGoals": 14,
         "season": "it-1994",
         "topScorerRank": 9
       },
@@ -1941,14 +1941,15 @@
       {
         "club": "Q16344",
         "goalMatches": [
-          "it-2003-Q1457-Q16344",
           "it-2003-Q16344-Q1422",
+          "it-2003-Q16344-Q1893",
           "it-2003-Q2739-Q16344",
+          "it-2003-Q2756-Q16344",
           "it-2003-Q6651-Q16344"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-2003",
         "topScorerRank": null
       }
@@ -2069,6 +2070,18 @@
       "source": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B0%D1%80%D0%BA%D0%BE_%D0%9F%D0%B0%D0%BD%D1%87%D0%B5%D0%B2_2020.png"
     },
     "seasons": [
+      {
+        "club": "Q162317",
+        "goalMatches": [
+          "de-1993-Q105853-Q162317",
+          "de-1993-Q154293-Q162317"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1993",
+        "topScorerRank": null
+      },
       {
         "club": "Q151747",
         "goalMatches": [
@@ -3061,6 +3074,17 @@
         "league": "es",
         "recordedGoals": 7,
         "season": "es-1992",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q8760",
+        "goalMatches": [
+          "es-1993-Q8760-Q8682"
+        ],
+        "goals": 1,
+        "league": "es",
+        "recordedGoals": 1,
+        "season": "es-1993",
         "topScorerRank": null
       },
       {

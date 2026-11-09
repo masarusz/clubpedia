@@ -214,6 +214,29 @@
       }
     ]
   },
+  "Q1254629": {
+    "birthDate": "1964-09-30",
+    "en": "Dragan Trkulja",
+    "id": "Q1254629",
+    "ja": {
+      "display": "Dragan Trkulja",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q14551982",
+        "goalMatches": [
+          "de-1999-Q14551982-Q51974"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q14816335": {
     "birthDate": "1993-09-08",
     "en": "Alexander Hack",
@@ -1241,11 +1264,23 @@
       {
         "club": "Q10315",
         "goalMatches": [
-          "es-2003-Q10333-Q10315"
+          "es-2002-Q10315-Q8682"
         ],
         "goals": 1,
         "league": "es",
         "recordedGoals": 1,
+        "season": "es-2002",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q10315",
+        "goalMatches": [
+          "es-2003-Q10333-Q10315",
+          "es-2003-Q8749-Q10315"
+        ],
+        "goals": 2,
+        "league": "es",
+        "recordedGoals": 2,
         "season": "es-2003",
         "topScorerRank": null
       },
@@ -1432,11 +1467,12 @@
           "es-2025-Q8687-Q8723",
           "es-2025-Q8723-Q10315",
           "es-2025-Q8723-Q10512",
-          "es-2025-Q8723-Q12297"
+          "es-2025-Q8723-Q12297",
+          "es-2025-Q8723-Q8806"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "es",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "es-2025",
         "topScorerRank": null
       }
@@ -1836,6 +1872,16 @@
       "source": "https://commons.wikimedia.org/wiki/File:Mario_Magnozzi.png"
     },
     "seasons": [
+      {
+        "club": null,
+        "goalMatches": [],
+        "goals": null,
+        "league": "it",
+        "recordedGoals": 0,
+        "season": "it-1919",
+        "seasonLabel": "1919–20",
+        "topScorerRank": 1
+      },
       {
         "club": null,
         "goalMatches": [],
@@ -2334,11 +2380,12 @@
           "it-2011-Q1893-Q2674",
           "it-2011-Q2674-Q13391",
           "it-2011-Q2674-Q2693",
+          "it-2011-Q2674-Q2756",
           "it-2011-Q2674-Q631"
         ],
-        "goals": 4,
+        "goals": 5,
         "league": "it",
-        "recordedGoals": 4,
+        "recordedGoals": 5,
         "season": "it-2011",
         "topScorerRank": null
       },
@@ -2911,15 +2958,16 @@
       {
         "club": "Q8749",
         "goalMatches": [
+          "es-2018-Q11971-Q8749",
           "es-2018-Q12297-Q8749",
           "es-2018-Q8723-Q8749",
           "es-2018-Q8749-Q770740",
           "es-2018-Q8749-Q8682",
           "es-2018-Q8749-Q8823"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "es",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "es-2018",
         "topScorerRank": null
       },
@@ -3242,11 +3290,12 @@
       {
         "club": "Q15786",
         "goalMatches": [
-          "de-1993-Q141931-Q15786"
+          "de-1993-Q141931-Q15786",
+          "de-1993-Q15786-Q162317"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "de-1993",
         "topScorerRank": null
       },
@@ -4357,15 +4406,19 @@
         "club": "Q8749",
         "goalMatches": [
           "es-2014-Q7156-Q8749",
+          "es-2014-Q8749-Q10300",
+          "es-2014-Q8749-Q10300",
           "es-2014-Q8749-Q10315",
           "es-2014-Q8749-Q12297",
           "es-2014-Q8749-Q8687",
           "es-2014-Q8749-Q8806",
+          "es-2014-Q8749-Q8823",
+          "es-2014-Q8749-Q8823",
           "es-2014-Q8760-Q8749"
         ],
-        "goals": 6,
+        "goals": 10,
         "league": "es",
-        "recordedGoals": 6,
+        "recordedGoals": 10,
         "season": "es-2014",
         "topScorerRank": null
       },
@@ -5382,11 +5435,12 @@
       {
         "club": "Q15786",
         "goalMatches": [
-          "de-1993-Q15786-Q15789"
+          "de-1993-Q15786-Q15789",
+          "de-1993-Q162317-Q15786"
         ],
-        "goals": 1,
+        "goals": 2,
         "league": "de",
-        "recordedGoals": 1,
+        "recordedGoals": 2,
         "season": "de-1993",
         "topScorerRank": null
       }

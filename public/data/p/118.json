@@ -106,6 +106,30 @@
       }
     ]
   },
+  "Q121038": {
+    "birthDate": "1969-08-22",
+    "en": "Jörg Bode",
+    "id": "Q121038",
+    "ja": {
+      "display": "Jörg Bode",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q105844",
+        "goalMatches": [
+          "de-1999-Q105844-Q14551982",
+          "de-1999-Q105844-Q14551982"
+        ],
+        "goals": 2,
+        "league": "de",
+        "recordedGoals": 2,
+        "season": "de-1999",
+        "topScorerRank": null
+      }
+    ]
+  },
   "Q121903982": {
     "birthDate": "2004-10-26",
     "en": "Patrick Dorgu",
@@ -350,6 +374,29 @@
         "league": "fr",
         "recordedGoals": 11,
         "season": "fr-2021",
+        "topScorerRank": null
+      }
+    ]
+  },
+  "Q1445171": {
+    "birthDate": "1969-02-24",
+    "en": "Franklin Bittencourt",
+    "id": "Q1445171",
+    "ja": {
+      "display": "Franklin Bittencourt",
+      "mode": "latin"
+    },
+    "japan": null,
+    "seasons": [
+      {
+        "club": "Q162317",
+        "goalMatches": [
+          "de-1993-Q162317-Q32494"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
+        "season": "de-1993",
         "topScorerRank": null
       }
     ]
@@ -706,6 +753,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Sakho,_Lamine.jpg"
     },
     "seasons": [
+      {
+        "club": "Q1128631",
+        "goalMatches": [
+          "en-2003-Q18661-Q1128631"
+        ],
+        "goals": 1,
+        "league": "en",
+        "recordedGoals": 1,
+        "season": "en-2003",
+        "topScorerRank": null
+      },
       {
         "club": "Q132885",
         "goalMatches": [
@@ -1086,11 +1144,12 @@
         "club": "Q191843",
         "goalMatches": [
           "fr-2024-Q191843-Q180305",
-          "fr-2024-Q191843-Q192071"
+          "fr-2024-Q191843-Q192071",
+          "fr-2024-Q208228-Q191843"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "fr",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "fr-2024",
         "topScorerRank": null
       },
@@ -1982,12 +2041,11 @@
           "es-1993-Q8749-Q10319",
           "es-1993-Q8749-Q10329",
           "es-1993-Q8749-Q216661",
-          "es-1993-Q8749-Q8682",
           "es-1993-Q8749-Q8701"
         ],
-        "goals": 9,
+        "goals": 8,
         "league": "es",
-        "recordedGoals": 9,
+        "recordedGoals": 8,
         "season": "es-1993",
         "topScorerRank": null
       }
@@ -2044,6 +2102,9 @@
       {
         "club": "Q8749",
         "goalMatches": [
+          "es-2015-Q10315-Q8749",
+          "es-2015-Q10315-Q8749",
+          "es-2015-Q770740-Q8749",
           "es-2015-Q8682-Q8749",
           "es-2015-Q8749-Q10315",
           "es-2015-Q8749-Q7156",
@@ -2056,9 +2117,9 @@
           "es-2015-Q8812-Q8749",
           "es-2015-Q8823-Q8749"
         ],
-        "goals": 11,
+        "goals": 14,
         "league": "es",
-        "recordedGoals": 11,
+        "recordedGoals": 14,
         "season": "es-2015",
         "topScorerRank": null
       },
@@ -2069,12 +2130,14 @@
           "es-2016-Q10333-Q8749",
           "es-2016-Q11979-Q8749",
           "es-2016-Q11979-Q8749",
+          "es-2016-Q12278-Q8749",
           "es-2016-Q223620-Q8749",
           "es-2016-Q8687-Q8749",
           "es-2016-Q8723-Q8749",
           "es-2016-Q8723-Q8749",
           "es-2016-Q8749-Q10286",
           "es-2016-Q8749-Q10315",
+          "es-2016-Q8749-Q12278",
           "es-2016-Q8749-Q7156",
           "es-2016-Q8749-Q8760",
           "es-2016-Q8749-Q8760",
@@ -2085,7 +2148,7 @@
         ],
         "goals": 19,
         "league": "es",
-        "recordedGoals": 17,
+        "recordedGoals": 19,
         "season": "es-2016",
         "topScorerRank": 4
       },
@@ -2114,6 +2177,7 @@
         "goalMatches": [
           "es-2018-Q10333-Q8749",
           "es-2018-Q11945-Q8749",
+          "es-2018-Q11971-Q8749",
           "es-2018-Q8687-Q8749",
           "es-2018-Q8749-Q10300",
           "es-2018-Q8749-Q10300",
@@ -2122,6 +2186,8 @@
           "es-2018-Q8749-Q10319",
           "es-2018-Q8749-Q10319",
           "es-2018-Q8749-Q11945",
+          "es-2018-Q8749-Q11971",
+          "es-2018-Q8749-Q11971",
           "es-2018-Q8749-Q12297",
           "es-2018-Q8749-Q12297",
           "es-2018-Q8749-Q7156",
@@ -2132,7 +2198,7 @@
         ],
         "goals": 20,
         "league": "es",
-        "recordedGoals": 17,
+        "recordedGoals": 20,
         "season": "es-2018",
         "topScorerRank": 4
       },
@@ -2792,11 +2858,13 @@
       {
         "club": "Q2693",
         "goalMatches": [
-          "it-2013-Q1893-Q2693"
+          "it-2013-Q1893-Q2693",
+          "it-2013-Q2693-Q8603",
+          "it-2013-Q6767-Q2693"
         ],
-        "goals": 1,
+        "goals": 3,
         "league": "it",
-        "recordedGoals": 1,
+        "recordedGoals": 3,
         "season": "it-2013",
         "topScorerRank": null
       },
@@ -3112,11 +3180,12 @@
           "es-2016-Q770740-Q12297",
           "es-2016-Q770740-Q8723",
           "es-2016-Q770740-Q8812",
+          "es-2016-Q8749-Q770740",
           "es-2016-Q8812-Q770740"
         ],
-        "goals": 8,
+        "goals": 9,
         "league": "es",
-        "recordedGoals": 8,
+        "recordedGoals": 9,
         "season": "es-2016",
         "topScorerRank": null
       },
@@ -4010,12 +4079,11 @@
           "en-2002-Q18744-Q18747",
           "en-2002-Q18747-Q1128631",
           "en-2002-Q18747-Q18661",
-          "en-2002-Q18747-Q18708",
-          "en-2002-Q18747-Q18711"
+          "en-2002-Q18747-Q18708"
         ],
-        "goals": 8,
+        "goals": 7,
         "league": "en",
-        "recordedGoals": 8,
+        "recordedGoals": 7,
         "season": "en-2002",
         "topScorerRank": null
       },
@@ -4369,7 +4437,6 @@
       {
         "club": "Q2609",
         "goalMatches": [
-          "it-2002-Q16344-Q2609",
           "it-2002-Q2609-Q1120838",
           "it-2002-Q2609-Q2037",
           "it-2002-Q2609-Q459794",
@@ -4380,9 +4447,9 @@
           "it-2002-Q6703-Q2609",
           "it-2002-Q8476-Q2609"
         ],
-        "goals": 10,
+        "goals": 9,
         "league": "it",
-        "recordedGoals": 10,
+        "recordedGoals": 9,
         "season": "it-2002",
         "topScorerRank": null
       },
@@ -4708,7 +4775,7 @@
     ]
   },
   "Q59490": {
-    "birthDate": "1995-07-14",
+    "birthDate": "1990-07-14",
     "en": "Serge Gnabry",
     "id": "Q59490",
     "ja": {
@@ -5161,12 +5228,13 @@
           "en-2006-Q19604-Q19607",
           "en-2006-Q19607-Q1130849",
           "en-2006-Q19607-Q18729",
+          "en-2006-Q19607-Q18741",
           "en-2006-Q19607-Q19451",
           "en-2006-Q19607-Q5794"
         ],
-        "goals": 5,
+        "goals": 6,
         "league": "en",
-        "recordedGoals": 5,
+        "recordedGoals": 6,
         "season": "en-2006",
         "topScorerRank": null
       }
