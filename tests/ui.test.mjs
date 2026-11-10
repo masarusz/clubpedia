@@ -84,7 +84,7 @@ export function register(test, equal, deepEqual) {
       equal(todayRows.every((row) => !/Q\d+/.test(row)), true, 'today-history uses club names, not Wikidata ids');
       equal(todayRows.every((row) => !row.includes('0年')), true, 'today-history uses real years');
       equal(todayRows.every((row) => /^\d{4}年 .+ \d+–\d+ .+$/u.test(row)), true, 'today-history row shape');
-      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=1.1.0');
+      const { clearDataCache, playerBucket } = await import('../public/js/data.js?v=1.1.1');
       const renderedRoutes = ['#/credits'];
       for (const league of ['en', 'es', 'de', 'it', 'fr']) renderedRoutes.push(`#/l/${league}`, `#/s/${league}/2025`, `#/s/${league}/2026`);
       renderedRoutes.push('#/s/it/2004', '#/s/fr/1992', '#/s/es/2003');
@@ -216,7 +216,7 @@ export function register(test, equal, deepEqual) {
           equal(dataRequests.length <= 2, true, `${hash} fetches only its player bucket and names`);
           equal(dataRequests.includes('data/photo-credits.json'), false, `${hash} does not fetch photo credits`);
           const images = descendants(appRoot).filter((node) => node.tagName === 'IMG');
-          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=1.1.0')), true, 'Kubo player photo renders');
+          equal(images.some((image) => image.getAttribute('src')?.endsWith('Q27067753.webp?v=1.1.1')), true, 'Kubo player photo renders');
           equal(body.includes('写真:'), true, 'Kubo player photo credit renders');
         }
         if (hash === '#/p/Q43666') {
@@ -352,7 +352,7 @@ export function register(test, equal, deepEqual) {
     equal(releaseSources.some((value) => /v=0\.2\.0\b/.test(value)), false, 'stale 0.2.0 asset version');
     equal(releaseSources.some((value) => /v=0\.2\.1\b/.test(value)), false, 'stale 0.2.1 asset version');
     equal(/\.brand-copy small\s*\{[^}]*white-space:\s*nowrap/u.test(css), true, 'header subtitle element has white-space nowrap');
-    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '1.1.0'"), true, 'footer version');
+    equal(readFileSync(join(ROOT, 'public/js/version.js'), 'utf8').includes("VERSION = '1.1.1'"), true, 'footer version');
     const remSizes = [...css.matchAll(/font-size:\s*([0-9.]+)rem/g)].map((match) => Number(match[1]));
     const pixelSizes = [...css.matchAll(/font-size:\s*([0-9.]+)px/g)].map((match) => Number(match[1]));
     equal(remSizes.every((size) => size >= 0.875), true, 'rem text is at least 14px at the 16px root');

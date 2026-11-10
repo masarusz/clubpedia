@@ -1,10 +1,10 @@
-import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadOpenLigaPlayers, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=1.1.0';
-import { el, replace, rubyEl, rubyNodes } from './dom.js?v=1.1.0';
-import { backDecision } from './navigation.js?v=1.1.0';
-import { prepareIndex } from './search.js?v=1.1.0';
-import { STRINGS } from './strings.js?v=1.1.0';
-import { VERSION } from './version.js?v=1.1.0';
-import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=1.1.0';
+import { loadClub, loadDay, loadHistory, loadIndex, loadJapan, loadNames, loadOpenLiga, loadOpenLigaPlayers, loadPhotoCredits, loadPlayers, loadRankings, loadSearch, loadSeason } from './data.js?v=1.1.1';
+import { el, replace, rubyEl, rubyNodes } from './dom.js?v=1.1.1';
+import { backDecision } from './navigation.js?v=1.1.1';
+import { prepareIndex } from './search.js?v=1.1.1';
+import { STRINGS } from './strings.js?v=1.1.1';
+import { VERSION } from './version.js?v=1.1.1';
+import { clubView, creditsView, errorView, homeView, japanView, leagueView, matchView, meikanChooserView, meikanView, notFoundView, photoCreditsView, playerView, rankingsView, searchView, seasonView } from './views.js?v=1.1.1';
 
 const root = document.querySelector('#app');
 

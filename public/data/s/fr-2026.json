@@ -722,6 +722,27 @@
       "homeGoals": 1,
       "key": "fr-2026-Q191843-Q132885",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Gouiri",
+            "minute": "2",
+            "player": "Q30045780"
+          },
+          {
+            "display": "Abdallah",
+            "minute": "82",
+            "player": "Q125520705"
+          }
+        ],
+        "home": [
+          {
+            "display": "Thauvin",
+            "minute": "20",
+            "player": "Q27476"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1967,7 +1988,7 @@
       {
         "goals": 4,
         "id": "Q126436400",
-        "topScorerRank": 7
+        "topScorerRank": 10
       }
     ],
     "Q132885": [
@@ -1984,9 +2005,9 @@
         "id": "Q31871265"
       },
       {
-        "goals": 6,
+        "goals": 7,
         "id": "Q30045780",
-        "topScorerRank": 3
+        "topScorerRank": 2
       },
       {
         "goals": 1,
@@ -2001,7 +2022,7 @@
         "id": "Q65548497"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q125520705"
       },
       {
@@ -2046,7 +2067,7 @@
       {
         "goals": 4,
         "id": "Q114876723",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 1,
@@ -2057,7 +2078,7 @@
       {
         "goals": 6,
         "id": "Q66779547",
-        "topScorerRank": 3
+        "topScorerRank": 4
       }
     ],
     "Q185163": [
@@ -2068,7 +2089,7 @@
       {
         "goals": 6,
         "id": "Q104215027",
-        "topScorerRank": 3
+        "topScorerRank": 4
       }
     ],
     "Q191843": [
@@ -2077,9 +2098,9 @@
         "id": "Q714116"
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q27476",
-        "topScorerRank": 7
+        "topScorerRank": 6
       },
       {
         "goals": 1,
@@ -2092,14 +2113,14 @@
     ],
     "Q19509": [
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q27671219",
-        "topScorerRank": 7
+        "topScorerRank": 6
       },
       {
-        "goals": 4,
+        "goals": 5,
         "id": "Q57603663",
-        "topScorerRank": 7
+        "topScorerRank": 6
       },
       {
         "goals": 1,
@@ -2121,7 +2142,7 @@
       {
         "goals": 4,
         "id": "Q25935553",
-        "topScorerRank": 7
+        "topScorerRank": 10
       }
     ],
     "Q19516": [
@@ -2174,7 +2195,7 @@
       {
         "goals": 4,
         "id": "Q50505421",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 1,
@@ -2193,7 +2214,7 @@
       {
         "goals": 4,
         "id": "Q110495519",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 1,
@@ -2208,7 +2229,7 @@
       {
         "goals": 4,
         "id": "Q27063921",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 1,
@@ -2242,7 +2263,7 @@
       {
         "goals": 4,
         "id": "Q44297797",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 2,
@@ -2312,7 +2333,7 @@
       {
         "goals": 4,
         "id": "Q111584129",
-        "topScorerRank": 7
+        "topScorerRank": 10
       },
       {
         "goals": 1,
@@ -2634,10 +2655,17 @@
   "topScorers": [
     {
       "club": "Q1051013",
-      "goals": 8,
+      "goals": 9,
       "player": "Lassine Sinayoko",
       "playerId": "Q106457287",
       "rank": 1
+    },
+    {
+      "club": "Q132885",
+      "goals": 7,
+      "player": "Amine Gouiri",
+      "playerId": "Q30045780",
+      "rank": 2
     },
     {
       "club": "Q19509",
@@ -2647,25 +2675,32 @@
       "rank": 2
     },
     {
-      "club": "Q132885",
-      "goals": 6,
-      "player": "Amine Gouiri",
-      "playerId": "Q30045780",
-      "rank": 3
-    },
-    {
       "club": "Q182876",
       "goals": 6,
       "player": "Cameron Archer",
       "playerId": "Q66779547",
-      "rank": 3
+      "rank": 4
     },
     {
       "club": "Q185163",
       "goals": 6,
       "player": "Elye Wahi",
       "playerId": "Q104215027",
-      "rank": 3
+      "rank": 4
+    },
+    {
+      "club": "Q19509",
+      "goals": 5,
+      "player": "Ludovic Ajorque",
+      "playerId": "Q27671219",
+      "rank": 6
+    },
+    {
+      "club": "Q19509",
+      "goals": 5,
+      "player": "Boulaye Dia",
+      "playerId": "Q57603663",
+      "rank": 6
     },
     {
       "club": "Q19518",
@@ -2675,81 +2710,67 @@
       "rank": 6
     },
     {
+      "club": "Q191843",
+      "goals": 5,
+      "player": "Florian Thauvin",
+      "playerId": "Q27476",
+      "rank": 6
+    },
+    {
       "club": "Q126334",
       "goals": 4,
       "player": "Gessime Yassine",
       "playerId": "Q126436400",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q180305",
       "goals": 4,
       "player": "Paris Brunner",
       "playerId": "Q114876723",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q218372",
       "goals": 4,
       "player": "Kamory Doumbia",
       "playerId": "Q110495519",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q210864",
       "goals": 4,
       "player": "Louis Mafouta",
       "playerId": "Q50505421",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q483020",
       "goals": 4,
       "player": "Ferran Torres",
       "playerId": "Q44297797",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q328658",
       "goals": 4,
       "player": "Josh Maja",
       "playerId": "Q27063921",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q704",
       "goals": 4,
       "player": "Ernest Nuamah",
       "playerId": "Q111584129",
-      "rank": 7
-    },
-    {
-      "club": "Q191843",
-      "goals": 4,
-      "player": "Florian Thauvin",
-      "playerId": "Q27476",
-      "rank": 7
-    },
-    {
-      "club": "Q19509",
-      "goals": 4,
-      "player": "Boulaye Dia",
-      "playerId": "Q57603663",
-      "rank": 7
+      "rank": 10
     },
     {
       "club": "Q19509",
       "goals": 4,
       "player": "Sebastian Szymański",
       "playerId": "Q25935553",
-      "rank": 7
-    },
-    {
-      "club": "Q19509",
-      "goals": 4,
-      "player": "Ludovic Ajorque",
-      "playerId": "Q27671219",
-      "rank": 7
+      "rank": 10
     }
   ],
   "year": 2026

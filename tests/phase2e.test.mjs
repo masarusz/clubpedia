@@ -102,6 +102,8 @@ export function register(test, equal, deepEqual) {
 
   test('Wikidata-label displays exactly match cached katakana labels and respect one-word Latin names', async () => {
     const players = await allPlayers();
+    // This is a floor because Wikidata gains labels over time.
+    const WIKIDATA_LABEL_FLOOR = 719;
     let wikidataLabels = 0; let oneWordLatin = 0;
     for (const player of players.values()) {
       if (player.ja?.source === 'wikidata-label') {
@@ -118,7 +120,7 @@ export function register(test, equal, deepEqual) {
         oneWordLatin += 1;
       }
     }
-    equal(wikidataLabels, 719, 'pinned Wikidata-label count');
+    equal(wikidataLabels >= WIKIDATA_LABEL_FLOOR, true, `Wikidata-label count ${wikidataLabels} below floor`);
     equal(oneWordLatin > 0, true, 'one-word Latin cases exercised');
   });
 

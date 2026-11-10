@@ -2727,7 +2727,7 @@
         "topScorerRank": null
       },
       {
-        "asOf": "2026-11-08",
+        "asOf": "2026-11-09",
         "club": "Q19453",
         "goalMatches": [
           "en-2026-Q19453-Q19571",
@@ -2940,7 +2940,7 @@
         "topScorerRank": null
       },
       {
-        "asOf": "2026-11-08",
+        "asOf": "2026-11-09",
         "club": "Q19477",
         "goalMatches": [
           "en-2026-Q19477-Q5794"
@@ -3041,11 +3041,12 @@
         "club": "Q8466",
         "goalMatches": [
           "de-1998-Q131603-Q8466",
-          "de-1998-Q8466-Q105861"
+          "de-1998-Q8466-Q105861",
+          "de-1998-Q8466-Q32494"
         ],
         "goals": 12,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
         "season": "de-1998",
         "topScorerRank": 10
       }
@@ -3296,11 +3297,23 @@
         "club": "Q131603",
         "goalMatches": [
           "de-1998-Q131603-Q15789",
+          "de-1998-Q131603-Q32494",
           "de-1998-Q131603-Q38245"
         ],
-        "goals": 2,
+        "goals": 3,
         "league": "de",
-        "recordedGoals": 2,
+        "recordedGoals": 3,
+        "season": "de-1998",
+        "topScorerRank": null
+      },
+      {
+        "club": "Q32494",
+        "goalMatches": [
+          "de-1998-Q32494-Q131603"
+        ],
+        "goals": 1,
+        "league": "de",
+        "recordedGoals": 1,
         "season": "de-1998",
         "topScorerRank": null
       }

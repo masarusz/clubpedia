@@ -10,7 +10,7 @@ iPad. A sibling of [Wcupedia](https://github.com/masarusz/wcupedia).
 
 A static site: no accounts, no tracking, no server.
 
-> Status: v1.1.0: leagues, seasons, matches, clubs, players, Japanese
+> Status: v1.1.1: leagues, seasons, matches, clubs, players, Japanese
 > players, a player guide with photos, search, rankings and today's history.
 
 ## Data
@@ -42,6 +42,8 @@ node scripts/serve.mjs 4183 public   # serve locally
 explicit allowlist and verifies every published file on the live site.
 
 ## Changelog
+
+- **v1.1.1** — Monthly data refresh (2026-11-10).
 
 - **v1.1.0** — The 2026-27 season in progress (途中経過, with the date of the
   data), refreshed monthly: tables, played matches, scorers, and where each
