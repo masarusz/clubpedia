@@ -139,10 +139,15 @@
     {
       "away": "Q32494",
       "awayGoals": 0,
+      "date": "1998-10-02",
       "home": "Q101859",
       "homeGoals": 0,
       "key": "de-1998-Q101859-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -353,10 +358,31 @@
     {
       "away": "Q32494",
       "awayGoals": 0,
+      "date": "1998-08-15",
       "home": "Q101959",
       "homeGoals": 3,
       "key": "de-1998-Q101959-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Toni Polster",
+            "minute": "2",
+            "player": "Q311520"
+          },
+          {
+            "display": "Jörgen Pettersson",
+            "minute": "10",
+            "player": null
+          },
+          {
+            "display": "Matthias Hagner",
+            "minute": "80",
+            "player": "Q98095"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -567,10 +593,26 @@
     {
       "away": "Q32494",
       "awayGoals": 0,
+      "date": "1998-09-09",
       "home": "Q102720",
       "homeGoals": 2,
       "key": "de-1998-Q102720-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Kjetil Rekdal",
+            "minute": "65",
+            "player": "Q431107"
+          },
+          {
+            "display": "René Tretschok",
+            "minute": "75",
+            "player": "Q317566"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -790,6 +832,22 @@
       "homeGoals": 1,
       "key": "de-1998-Q104761-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Youri Mulder",
+            "minute": "56",
+            "player": "Q951412"
+          }
+        ],
+        "home": [
+          {
+            "display": "Stefan Beinlich",
+            "minute": "36",
+            "player": "Q600987"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1198,13 +1256,13 @@
       "scorers": {
         "away": [
           {
-            "display": "Eijkelkamp",
+            "display": "René Eijkelkamp",
             "minute": "52",
             "player": "Q590811"
           },
           {
-            "display": "Eijkelkamp",
-            "minute": "70",
+            "display": "René Eijkelkamp",
+            "minute": "71",
             "player": "Q590811"
           }
         ],
@@ -1511,6 +1569,21 @@
       "homeGoals": 0,
       "key": "de-1998-Q106394-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ünal Alpuğan",
+            "minute": "70",
+            "player": "Q334909"
+          },
+          {
+            "display": "Sascha Wolf",
+            "minute": "85",
+            "player": "Q1670995"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -1716,10 +1789,62 @@
     {
       "away": "Q32494",
       "awayGoals": 5,
+      "date": "1999-05-29",
       "home": "Q131603",
       "homeGoals": 4,
       "key": "de-1998-Q131603-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Hami Mandıralı",
+            "minute": "9",
+            "player": "Q1151281"
+          },
+          {
+            "display": "Jiří Němec",
+            "minute": "19",
+            "player": "Q1247743"
+          },
+          {
+            "display": "Martin Max",
+            "minute": "41",
+            "player": "Q703757"
+          },
+          {
+            "display": "Olaf Thon",
+            "minute": "68",
+            "player": "Q366493"
+          },
+          {
+            "display": "Hami Mandıralı",
+            "minute": "90",
+            "player": "Q1151281"
+          }
+        ],
+        "home": [
+          {
+            "display": "Harald Cerny",
+            "minute": "4",
+            "player": "Q698901"
+          },
+          {
+            "display": "Bernd Hobsch",
+            "minute": "18",
+            "player": "Q468717"
+          },
+          {
+            "display": "Bernd Hobsch",
+            "minute": "42",
+            "player": "Q468717"
+          },
+          {
+            "display": "Marco Kurz",
+            "minute": "44",
+            "player": "Q65976"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -1972,10 +2097,37 @@
     {
       "away": "Q32494",
       "awayGoals": 2,
+      "date": "1998-10-24",
       "home": "Q142005",
       "homeGoals": 2,
       "key": "de-1998-Q142005-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Martin Max",
+            "minute": "81",
+            "player": "Q703757"
+          },
+          {
+            "display": "Sascha Wolf",
+            "minute": "85",
+            "player": "Q1670995"
+          }
+        ],
+        "home": [
+          {
+            "display": "Igor Pamić",
+            "minute": "64",
+            "player": "Q949463"
+          },
+          {
+            "display": "Jens Dowe",
+            "minute": "66",
+            "player": "Q1687157"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2190,10 +2342,32 @@
     {
       "away": "Q32494",
       "awayGoals": 2,
+      "date": "1999-05-08",
       "home": "Q154293",
       "homeGoals": 1,
       "key": "de-1998-Q154293-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Andreas Müller",
+            "minute": "47",
+            "player": null
+          },
+          {
+            "display": "Youri Mulder",
+            "minute": "82",
+            "player": "Q951412"
+          }
+        ],
+        "home": [
+          {
+            "display": "Tomasz Hajto",
+            "minute": "37",
+            "player": "Q1349204"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2411,10 +2585,31 @@
     {
       "away": "Q32494",
       "awayGoals": 0,
+      "date": "1999-03-05",
       "home": "Q15786",
       "homeGoals": 3,
       "key": "de-1998-Q15786-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Pavel Kuka",
+            "minute": "36",
+            "player": "Q446177"
+          },
+          {
+            "display": "Saša Ćirić",
+            "minute": "45",
+            "player": "Q718997"
+          },
+          {
+            "display": "Pavel Kuka",
+            "minute": "60",
+            "player": "Q446177"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -2861,7 +3056,7 @@
       "scorers": {
         "away": [
           {
-            "display": "Held",
+            "display": "Oliver Held",
             "minute": "62",
             "player": "Q1232752"
           }
@@ -3090,37 +3285,80 @@
     {
       "away": "Q101859",
       "awayGoals": 0,
+      "date": "1999-04-03",
       "home": "Q32494",
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q101859",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Mike Büskens",
+            "minute": "60",
+            "player": "Q551610"
+          },
+          {
+            "display": "Johan de Kock",
+            "minute": "83",
+            "player": "Q960744"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q101959",
       "awayGoals": 0,
+      "date": "1998-12-19",
       "home": "Q32494",
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q101959",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Marc Wilmots",
+            "minute": "77",
+            "player": "Q346427"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q102720",
       "awayGoals": 0,
+      "date": "1999-02-28",
       "home": "Q32494",
       "homeGoals": 0,
       "key": "de-1998-Q32494-Q102720",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": []
+      },
       "status": "played"
     },
     {
       "away": "Q104761",
       "awayGoals": 1,
+      "date": "1998-09-26",
       "home": "Q32494",
       "homeGoals": 0,
       "key": "de-1998-Q32494-Q104761",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Ulf Kirsten",
+            "minute": "52",
+            "player": "Q310519"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3131,52 +3369,68 @@
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q105861",
       "note": null,
+      "status": "played"
+    },
+    {
+      "away": "Q106394",
+      "awayGoals": 1,
+      "date": "1998-11-03",
+      "home": "Q32494",
+      "homeGoals": 1,
+      "key": "de-1998-Q32494-Q106394",
+      "note": null,
       "scorers": {
         "away": [
           {
-            "display": "Reis",
-            "minute": "20",
-            "penalty": true,
-            "player": "Q2426747"
-          },
-          {
-            "display": "Baştürk",
-            "minute": "23",
-            "player": "Q76322"
+            "display": "Steffen Korell",
+            "minute": "71",
+            "player": "Q1371205"
           }
         ],
         "home": [
           {
-            "display": "Mulder",
-            "minute": "18",
-            "penalty": true,
-            "player": "Q951412"
-          },
-          {
-            "display": "Büskens",
-            "minute": "28",
-            "player": "Q551610"
+            "display": "Jiří Němec",
+            "minute": "24",
+            "player": "Q1247743"
           }
         ]
       },
       "status": "played"
     },
     {
-      "away": "Q106394",
-      "awayGoals": 1,
-      "home": "Q32494",
-      "homeGoals": 1,
-      "key": "de-1998-Q32494-Q106394",
-      "note": null,
-      "status": "played"
-    },
-    {
       "away": "Q131603",
       "awayGoals": 2,
+      "date": "1998-12-12",
       "home": "Q32494",
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q131603",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Markus Schroth",
+            "minute": "45",
+            "player": "Q879747"
+          },
+          {
+            "display": "Harald Cerny",
+            "minute": "49",
+            "player": "Q698901"
+          }
+        ],
+        "home": [
+          {
+            "display": "Sven Kmetsch",
+            "minute": "74",
+            "player": "Q464102"
+          },
+          {
+            "display": "Marco Kurz",
+            "minute": "90",
+            "player": "Q65976"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3186,24 +3440,77 @@
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q142005",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Sascha Wolf",
+            "minute": "76",
+            "player": "Q1670995"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q154293",
       "awayGoals": 0,
+      "date": "1998-11-20",
       "home": "Q32494",
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q154293",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "René Eijkelkamp",
+            "minute": "37",
+            "player": "Q590811"
+          },
+          {
+            "display": "Michaël Goossens",
+            "minute": "59",
+            "player": "Q581793"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q15786",
       "awayGoals": 2,
+      "date": "1998-09-12",
       "home": "Q32494",
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q15786",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Saša Ćirić",
+            "minute": "52",
+            "player": "Q718997"
+          },
+          {
+            "display": "Markus Kurth",
+            "minute": "69",
+            "player": null
+          }
+        ],
+        "home": [
+          {
+            "display": "René Eijkelkamp",
+            "minute": "30",
+            "player": "Q590811"
+          },
+          {
+            "display": "Martin Max",
+            "minute": "43",
+            "player": "Q703757"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3214,33 +3521,6 @@
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q15789",
       "note": null,
-      "scorers": {
-        "away": [
-          {
-            "display": "Eigenrauch",
-            "minute": "3",
-            "ownGoal": true,
-            "player": "Q531694"
-          },
-          {
-            "display": "Basler",
-            "minute": "40",
-            "player": "Q366109"
-          },
-          {
-            "display": "Jancker",
-            "minute": "65",
-            "player": "Q170150"
-          }
-        ],
-        "home": [
-          {
-            "display": "Eijkelkamp",
-            "minute": "20",
-            "player": "Q590811"
-          }
-        ]
-      },
       "status": "played"
     },
     {
@@ -3251,65 +3531,93 @@
       "homeGoals": 2,
       "key": "de-1998-Q32494-Q38245",
       "note": null,
+      "status": "played"
+    },
+    {
+      "away": "Q41420",
+      "awayGoals": 1,
+      "date": "1999-05-05",
+      "home": "Q32494",
+      "homeGoals": 1,
+      "key": "de-1998-Q32494-Q41420",
+      "note": null,
       "scorers": {
         "away": [
           {
-            "display": "Fjørtoft",
-            "minute": "24",
-            "player": "Q709585"
-          },
-          {
-            "display": "Sobotzik",
-            "minute": "54",
-            "penalty": true,
-            "player": "Q546988"
-          },
-          {
-            "display": "Janßen",
-            "minute": "75",
-            "player": "Q463879"
+            "display": "Alfred Nijhuis",
+            "minute": "3",
+            "player": "Q1365861"
           }
         ],
         "home": [
           {
-            "display": "Held",
-            "minute": "5",
-            "player": "Q1232752"
-          },
-          {
-            "display": "Mandıralı",
-            "minute": "14",
-            "player": "Q1151281"
+            "display": "Youri Mulder",
+            "minute": "32",
+            "player": "Q951412"
           }
         ]
       },
       "status": "played"
     },
     {
-      "away": "Q41420",
-      "awayGoals": 1,
-      "home": "Q32494",
-      "homeGoals": 1,
-      "key": "de-1998-Q32494-Q41420",
-      "note": null,
-      "status": "played"
-    },
-    {
       "away": "Q4512",
       "awayGoals": 0,
+      "date": "1998-08-22",
       "home": "Q32494",
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q4512",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Martin Max",
+            "minute": "55",
+            "player": "Q703757"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q51974",
       "awayGoals": 4,
+      "date": "1999-04-24",
       "home": "Q32494",
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q51974",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Andrej Panadić",
+            "minute": "22",
+            "player": "Q503002"
+          },
+          {
+            "display": "Martin Groth",
+            "minute": "36",
+            "player": "Q1903898"
+          },
+          {
+            "display": "Hans-Jörg Butt",
+            "minute": "61",
+            "player": "Q152354"
+          },
+          {
+            "display": "Tony Yeboah",
+            "minute": "72",
+            "player": "Q379603"
+          }
+        ],
+        "home": [
+          {
+            "display": "Olaf Thon",
+            "minute": "6",
+            "player": "Q366493"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -3320,15 +3628,52 @@
       "homeGoals": 1,
       "key": "de-1998-Q32494-Q51976",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Jens Todt",
+            "minute": "55",
+            "player": "Q66925"
+          },
+          {
+            "display": "Andi Herzog",
+            "minute": "59",
+            "player": "Q160403"
+          }
+        ],
+        "home": [
+          {
+            "display": "Nico Van Kerckhoven",
+            "minute": "87",
+            "player": "Q1339912"
+          }
+        ]
+      },
       "status": "played"
     },
     {
       "away": "Q8466",
       "awayGoals": 2,
+      "date": "1999-05-16",
       "home": "Q32494",
       "homeGoals": 0,
       "key": "de-1998-Q32494-Q8466",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Michael Schjønberg",
+            "minute": "73",
+            "player": "Q698661"
+          },
+          {
+            "display": "Jürgen Rische",
+            "minute": "89",
+            "player": "Q317383"
+          }
+        ],
+        "home": []
+      },
       "status": "played"
     },
     {
@@ -3653,12 +3998,12 @@
       "scorers": {
         "away": [
           {
-            "display": "van Hoogdalem",
+            "display": "Marco van Hoogdalem",
             "minute": "21",
             "player": "Q323193"
           },
           {
-            "display": "Kmetsch",
+            "display": "Sven Kmetsch",
             "minute": "38",
             "player": "Q464102"
           }
@@ -3973,10 +4318,31 @@
     {
       "away": "Q32494",
       "awayGoals": 0,
+      "date": "1998-11-14",
       "home": "Q41420",
       "homeGoals": 3,
       "key": "de-1998-Q41420-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Alfred Nijhuis",
+            "minute": "15",
+            "player": "Q1365861"
+          },
+          {
+            "display": "Thomas Häßler",
+            "minute": "45",
+            "player": "Q155911"
+          },
+          {
+            "display": "Andreas Möller",
+            "minute": "83",
+            "player": "Q155919"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4208,10 +4574,32 @@
     {
       "away": "Q32494",
       "awayGoals": 1,
+      "date": "1999-02-20",
       "home": "Q4512",
       "homeGoals": 2,
       "key": "de-1998-Q4512-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Youri Mulder",
+            "minute": "47",
+            "player": "Q951412"
+          }
+        ],
+        "home": [
+          {
+            "display": "Kristijan Đorđević",
+            "minute": "46",
+            "player": "Q1789277"
+          },
+          {
+            "display": "Saša Marković",
+            "minute": "81",
+            "player": null
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4433,10 +4821,37 @@
     {
       "away": "Q32494",
       "awayGoals": 2,
+      "date": "1998-11-07",
       "home": "Q51974",
       "homeGoals": 2,
       "key": "de-1998-Q51974-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Youri Mulder",
+            "minute": "77",
+            "player": "Q951412"
+          },
+          {
+            "display": "Martin Max",
+            "minute": "81",
+            "player": "Q703757"
+          }
+        ],
+        "home": [
+          {
+            "display": "Bernd Hollerbach",
+            "minute": "39",
+            "player": "Q823637"
+          },
+          {
+            "display": "Tony Yeboah",
+            "minute": "67",
+            "player": "Q379603"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4640,6 +5055,16 @@
       "homeGoals": 1,
       "key": "de-1998-Q51976-Q32494",
       "note": null,
+      "scorers": {
+        "away": [],
+        "home": [
+          {
+            "display": "Christoph Dabrowski",
+            "minute": "54",
+            "player": "Q531386"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4874,10 +5299,42 @@
     {
       "away": "Q32494",
       "awayGoals": 1,
+      "date": "1998-11-29",
       "home": "Q8466",
       "homeGoals": 4,
       "key": "de-1998-Q8466-Q32494",
       "note": null,
+      "scorers": {
+        "away": [
+          {
+            "display": "Martin Max",
+            "minute": "34",
+            "player": "Q703757"
+          }
+        ],
+        "home": [
+          {
+            "display": "Marian Hristov",
+            "minute": "9",
+            "player": "Q819582"
+          },
+          {
+            "display": "Uwe Rösler",
+            "minute": "67",
+            "player": "Q566127"
+          },
+          {
+            "display": "János Hrutka",
+            "minute": "71",
+            "player": "Q479967"
+          },
+          {
+            "display": "Olaf Marschall",
+            "minute": "74",
+            "player": "Q627376"
+          }
+        ]
+      },
       "status": "played"
     },
     {
@@ -4975,7 +5432,7 @@
     ],
     "Q101959": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q311520"
       },
       {
@@ -4985,6 +5442,10 @@
       {
         "goals": 1,
         "id": "Q463943"
+      },
+      {
+        "goals": 1,
+        "id": "Q98095"
       },
       {
         "goals": 2,
@@ -5015,7 +5476,15 @@
       },
       {
         "goals": 1,
+        "id": "Q317566"
+      },
+      {
+        "goals": 1,
         "id": "Q461660"
+      },
+      {
+        "goals": 1,
+        "id": "Q431107"
       },
       {
         "goals": 1,
@@ -5041,7 +5510,7 @@
         "id": "Q695858"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q600987"
       },
       {
@@ -5075,7 +5544,7 @@
         "id": "Q501333"
       },
       {
-        "goals": 5,
+        "goals": 4,
         "id": "Q2426747"
       },
       {
@@ -5097,10 +5566,6 @@
       {
         "goals": 1,
         "id": "Q1772472"
-      },
-      {
-        "goals": 1,
-        "id": "Q76322"
       },
       {
         "goals": 1,
@@ -5159,6 +5624,10 @@
       {
         "goals": 1,
         "id": "Q155477"
+      },
+      {
+        "goals": 1,
+        "id": "Q1371205"
       }
     ],
     "Q131603": [
@@ -5177,14 +5646,22 @@
       },
       {
         "goals": 2,
+        "id": "Q698901"
+      },
+      {
+        "goals": 2,
         "id": "Q465253"
+      },
+      {
+        "goals": 1,
+        "id": "Q879747"
       },
       {
         "goals": 1,
         "id": "Q308069"
       },
       {
-        "goals": 2,
+        "goals": 3,
         "id": "Q65976"
       },
       {
@@ -5195,7 +5672,15 @@
     "Q142005": [
       {
         "goals": 1,
+        "id": "Q1687157"
+      },
+      {
+        "goals": 1,
         "id": "Q2434885"
+      },
+      {
+        "goals": 1,
+        "id": "Q949463"
       },
       {
         "goals": 14,
@@ -5233,7 +5718,7 @@
         "id": "Q2445043"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1349204"
       },
       {
@@ -5256,7 +5741,7 @@
     ],
     "Q15786": [
       {
-        "goals": 1,
+        "goals": 3,
         "id": "Q446177"
       },
       {
@@ -5320,7 +5805,7 @@
         "id": "Q163040"
       },
       {
-        "goals": 5,
+        "goals": 4,
         "id": "Q366109"
       },
       {
@@ -5355,7 +5840,11 @@
     ],
     "Q32494": [
       {
-        "goals": 1,
+        "goals": 6,
+        "id": "Q703757"
+      },
+      {
+        "goals": 2,
         "id": "Q464102"
       },
       {
@@ -5363,24 +5852,60 @@
         "id": "Q551610"
       },
       {
-        "goals": 1,
+        "goals": 2,
+        "id": "Q366493"
+      },
+      {
+        "goals": 5,
         "id": "Q951412"
+      },
+      {
+        "goals": 1,
+        "id": "Q346427"
+      },
+      {
+        "goals": 1,
+        "id": "Q581793"
       },
       {
         "goals": 1,
         "id": "Q323193"
       },
       {
-        "goals": 3,
+        "goals": 4,
         "id": "Q590811"
       },
       {
+        "goals": 1,
+        "id": "Q334909"
+      },
+      {
+        "goals": 3,
+        "id": "Q1670995"
+      },
+      {
+        "goals": 1,
+        "id": "Q65976"
+      },
+      {
         "goals": 2,
+        "id": "Q1151281"
+      },
+      {
+        "goals": 2,
+        "id": "Q1247743"
+      },
+      {
+        "goals": 1,
         "id": "Q1232752"
       },
       {
         "goals": 1,
-        "id": "Q1151281"
+        "id": "Q960744"
+      },
+      {
+        "goals": 1,
+        "id": "Q1339912"
       }
     ],
     "Q38245": [
@@ -5391,10 +5916,6 @@
       {
         "goals": 1,
         "id": "Q446177"
-      },
-      {
-        "goals": 1,
-        "id": "Q463879"
       },
       {
         "goals": 6,
@@ -5421,11 +5942,11 @@
         "id": "Q152458"
       },
       {
-        "goals": 7,
+        "goals": 6,
         "id": "Q546988"
       },
       {
-        "goals": 6,
+        "goals": 5,
         "id": "Q709585"
       },
       {
@@ -5471,8 +5992,16 @@
         "id": "Q506919"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q155919"
+      },
+      {
+        "goals": 1,
+        "id": "Q155911"
+      },
+      {
+        "goals": 2,
+        "id": "Q1365861"
       }
     ],
     "Q4512": [
@@ -5494,6 +6023,10 @@
       },
       {
         "goals": 1,
+        "id": "Q1789277"
+      },
+      {
+        "goals": 1,
         "id": "Q478499"
       }
     ],
@@ -5508,21 +6041,29 @@
         "id": "Q1676912"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q152354"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q1903898"
       },
       {
         "goals": 1,
+        "id": "Q503002"
+      },
+      {
+        "goals": 1,
         "id": "Q719648"
+      },
+      {
+        "goals": 1,
+        "id": "Q823637"
       }
     ],
     "Q51976": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q160403"
       },
       {
@@ -5531,16 +6072,24 @@
       },
       {
         "goals": 1,
+        "id": "Q66925"
+      },
+      {
+        "goals": 1,
         "id": "Q493072"
       },
       {
         "goals": 1,
         "id": "Q160363"
+      },
+      {
+        "goals": 1,
+        "id": "Q531386"
       }
     ],
     "Q8466": [
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q317383"
       },
       {
@@ -5557,16 +6106,24 @@
         "id": "Q883770"
       },
       {
-        "goals": 1,
+        "goals": 2,
         "id": "Q698661"
       },
       {
         "goals": 1,
+        "id": "Q819582"
+      },
+      {
+        "goals": 2,
         "id": "Q566127"
       },
       {
         "goals": 1,
         "id": "Q947349"
+      },
+      {
+        "goals": 1,
+        "id": "Q479967"
       },
       {
         "goals": 1,
